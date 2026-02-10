@@ -7,7 +7,7 @@
  * - The Claude Voice Portal
  */
 
-import { handleRealtimeRequest } from '../../../shared/api/realtime';
+import { handleRealtimeRequest } from '@shared/api/realtime';
 
 export async function POST(request: Request) {
   return handleRealtimeRequest(request);

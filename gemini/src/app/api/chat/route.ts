@@ -7,7 +7,7 @@
  * - The Unified Architecture Maestro
  */
 
-import { handleChatRequest, type ChatConfig } from '../../../../shared/api/chat';
+import { handleChatRequest, type ChatConfig } from '@shared/api/chat';
 
 // 🌟 Using nodejs runtime due to embeddings size (edge limit is 1MB)
 export const runtime = 'nodejs';
