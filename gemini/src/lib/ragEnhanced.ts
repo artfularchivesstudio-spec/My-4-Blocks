@@ -41,7 +41,7 @@ export async function initializeRAG(): Promise<void> {
     try {
       // 🎭 Dynamic import with type assertion to bypass strict JSON typing
       // The actual data structure is validated at runtime by loadEmbeddings
-      const data = await import("../../../shared/data/embeddings.json") as { default?: unknown };
+      const data = await import("../../shared/data/embeddings.json") as { default?: unknown };
       embeddingsData = (data.default || data) as unknown as EmbeddingsDatabase;
       console.log("💎 Loaded embeddings from shared/data");
     } catch {

@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { useChat } from '@ai-sdk/react'
-import { DefaultChatTransport } from 'ai'
 import { ChatMessage } from './chat-message'
 import { ChatInput, type ChatInputHandle } from './chat-input'
 import { SuggestedPrompts } from './suggested-prompts'
@@ -35,8 +34,9 @@ export function ChatContainer() {
   const [showScrollToLatest, setShowScrollToLatest] = useState(false)
   const [pulseScrollButton, setPulseScrollButton] = useState(false)
 
+  // 🌐 AI SDK v4 uses default transport (no explicit config needed)
   const { messages, sendMessage, status } = useChat({
-    transport: new DefaultChatTransport({ api: '/api/chat' }),
+    api: '/api/chat',
   })
 
   const isLoading = status === 'streaming' || status === 'submitted'

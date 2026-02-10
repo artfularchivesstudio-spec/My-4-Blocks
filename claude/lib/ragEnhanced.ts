@@ -38,7 +38,7 @@ export async function initializeRAG(): Promise<void> {
     let embeddingsData: EmbeddingsDatabase;
 
     try {
-      const data = await import("../../shared/data/embeddings.json");
+      const data = await import("../shared/data/embeddings.json");
       embeddingsData = data.default || data;
       console.log("💎 Loaded embeddings from shared/data");
     } catch {
