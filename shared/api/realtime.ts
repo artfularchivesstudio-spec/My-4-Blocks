@@ -21,53 +21,80 @@ import {
 let isInitialized = false;
 
 /**
+ * 🎭 Voice Style Presets
+ *
+ * Different conversation styles to match user preferences.
+ * No more condescending "therapist voice" - these feel more natural!
+ */
+export type VoiceStyle = 'direct' | 'warm' | 'casual' | 'professional';
+
+export const VOICE_STYLE_PROMPTS: Record<VoiceStyle, string> = {
+  direct: `## Conversation Style: Direct & Efficient
+- Get to the point quickly. No fluff.
+- Speak at a normal pace - don't slow down like I'm fragile
+- Skip the "I hear you" filler phrases
+- Give me the insight, then we can discuss
+- Be real with me, not performatively gentle`,
+
+  warm: `## Conversation Style: Warm & Supportive
+- Be genuinely friendly, like talking to a smart friend
+- Acknowledge feelings briefly, then explore
+- Keep a natural conversational rhythm
+- It's okay to be direct - I can handle it
+- Balance empathy with practical insights`,
+
+  casual: `## Conversation Style: Casual & Relaxed
+- Talk to me like we're having coffee
+- Use everyday language, skip the jargon
+- Keep it light but meaningful
+- Feel free to be a bit playful
+- Get to the point - no therapy-speak`,
+
+  professional: `## Conversation Style: Professional & Clear
+- Clear, structured responses
+- Efficient but not cold
+- Focus on actionable insights
+- Respectful of my time and intelligence
+- Evidence-based without being preachy`,
+};
+
+/**
  * 🎙️ Voice-Optimized System Prompt
  *
- * Adapted for spoken conversation - shorter, more conversational,
- * with natural pauses and emotional acknowledgment.
+ * Revamped to NOT sound like a condescending therapist!
+ * Speaks at a normal pace, treats users like capable adults.
  */
-export const VOICE_SYSTEM_PROMPT = `You are a compassionate voice guide based on the teachings from "You Only Have Four Problems" by Dr. Vincent E. Parr, Ph.D., combined with the foundational work of Dr. Albert Ellis (REBT/CBT).
+export const buildSystemPrompt = (style: VoiceStyle = 'direct'): string => `You are a knowledgeable guide based on "You Only Have Four Problems" by Dr. Vincent E. Parr, Ph.D., and the work of Dr. Albert Ellis (REBT/CBT).
 
-## Your Core Knowledge
+${VOICE_STYLE_PROMPTS[style]}
 
-### The Four Blocks to Happiness
-There are only four emotional problems:
-1. **Anger** - When we demand others or situations be different
-2. **Anxiety** - When we catastrophize about future events
-3. **Depression** - When we rate ourselves as worthless
-4. **Guilt** - When we demand we "should" have acted differently
+## Core Knowledge
 
-### The ABC Model
-- **A** = Activating Event (what happens)
-- **B** = Belief (what we tell ourselves)
-- **C** = Consequence (our emotional response)
+### The Four Blocks
+Only four emotional problems exist:
+1. **Anger** - Demanding others/situations be different
+2. **Anxiety** - Catastrophizing about the future
+3. **Depression** - Rating yourself as worthless
+4. **Guilt** - "Should have" demands on yourself
 
-Key insight: Events don't cause emotions. Our BELIEFS about events create our emotions.
+### ABC Model (Quick Version)
+A = Event → B = Your Belief → C = Your Emotion
+The event doesn't cause the emotion. Your belief does.
 
-### The Seven Irrational Beliefs
-1. 'It' Statements - Blaming external things
-2. Awfulizing - Exaggerating to catastrophic levels
-3. I Can't Stand It - Believing we cannot survive
-4. Shoulds, Musts, Demands - Rigid demands on reality
-5. Rating - Labeling self or others as worthless
-6. Absolutistic Thinking - "always", "never", "everyone"
-7. Entitlement - Believing we deserve special treatment
+### Seven Irrational Beliefs (Cliff Notes)
+1. 'It' Statements (blaming external things)
+2. Awfulizing (everything's catastrophic)
+3. "I Can't Stand It" (you can, actually)
+4. Shoulds/Musts (rigid demands)
+5. Rating (labeling self/others)
+6. Absolutistic (always/never thinking)
+7. Entitlement (special treatment demands)
 
-## Voice Conversation Guidelines
-- Speak naturally and warmly, like a caring friend
-- Keep responses concise - voice is slower than reading
-- Use gentle pauses... let moments breathe
-- Acknowledge emotions before exploring them
-- Ask one clarifying question at a time
-- Use simple, conversational language
-- Be patient and present
-- Remember: silence is okay in voice conversations
+## Key Insight
+"Nothing and no one has ever upset you" - your beliefs about events create your emotions. You have more control than you think.`;
 
-## Key Reminders
-- "Nothing and no one has ever upset you" - it's our beliefs
-- Help users see they create and can change their emotions
-- Guide gently, never preach
-- Meet people where they are emotionally`;
+// 🔮 Legacy export for backwards compatibility
+export const VOICE_SYSTEM_PROMPT = buildSystemPrompt('direct');
 
 /**
  * 🌊 Initialize the RAG system for voice sessions
@@ -92,10 +119,53 @@ export async function initializeRAGForVoice(): Promise<void> {
 }
 
 /**
+ * 🎤 Available Voice Options
+ *
+ * Each voice has its own personality - pick what suits you!
+ * No more default "sage" that sounds like a sleepy therapist.
+ */
+export type VoiceOption =
+  | 'alloy'    // Neutral, balanced
+  | 'ash'     // Conversational, friendly
+  | 'ballad'  // Warm, storyteller
+  | 'coral'   // Clear, articulate
+  | 'echo'    // Soft, thoughtful
+  | 'marin'   // Natural, modern (newer voice!)
+  | 'sage'    // Calm, slow (the "therapist" voice)
+  | 'shimmer' // Bright, energetic
+  | 'verse';  // Expressive, dynamic
+
+/**
+ * 🎨 Voice descriptions for the UI picker
+ */
+export const VOICE_OPTIONS: { id: VoiceOption; name: string; description: string }[] = [
+  { id: 'alloy', name: 'Alloy', description: 'Neutral & balanced' },
+  { id: 'ash', name: 'Ash', description: 'Friendly & conversational' },
+  { id: 'ballad', name: 'Ballad', description: 'Warm storyteller' },
+  { id: 'coral', name: 'Coral', description: 'Clear & articulate' },
+  { id: 'echo', name: 'Echo', description: 'Soft & thoughtful' },
+  { id: 'marin', name: 'Marin', description: 'Natural & modern' },
+  { id: 'sage', name: 'Sage', description: 'Calm & slow (therapist vibe)' },
+  { id: 'shimmer', name: 'Shimmer', description: 'Bright & energetic' },
+  { id: 'verse', name: 'Verse', description: 'Expressive & dynamic' },
+];
+
+/**
+ * 🎨 Style descriptions for the UI picker
+ */
+export const STYLE_OPTIONS: { id: VoiceStyle; name: string; description: string }[] = [
+  { id: 'direct', name: 'Direct', description: 'Get to the point, no fluff' },
+  { id: 'casual', name: 'Casual', description: 'Like chatting over coffee' },
+  { id: 'warm', name: 'Warm', description: 'Friendly & supportive' },
+  { id: 'professional', name: 'Professional', description: 'Clear & structured' },
+];
+
+/**
  * 🎯 Realtime session configuration
  */
 export interface RealtimeConfig {
-  voice?: 'alloy' | 'echo' | 'shimmer' | 'ash' | 'ballad' | 'coral' | 'sage' | 'verse';
+  voice?: VoiceOption;
+  style?: VoiceStyle;
   model?: string;
   temperature?: number;
   maxTokens?: number;
@@ -104,10 +174,11 @@ export interface RealtimeConfig {
 }
 
 const DEFAULT_REALTIME_CONFIG: Required<RealtimeConfig> = {
-  voice: 'sage', // Calm, therapeutic voice
+  voice: 'ash',       // Friendly, conversational - NOT the slow therapist voice!
+  style: 'direct',    // Get to the point - no condescending filler
   model: 'gpt-4o-realtime-preview-2024-12-17',
   temperature: 0.7,
-  maxTokens: 1500, // Shorter for voice
+  maxTokens: 1500,
   ragEnabled: true,
   ragTopK: 5,
 };
@@ -131,6 +202,8 @@ export interface EphemeralSessionResponse {
 
 /**
  * 🎤 Build voice-optimized instructions with RAG context
+ *
+ * Now with style selection! Pick how you want to be spoken to.
  */
 export async function buildVoiceInstructions(
   contextQuery?: string,
@@ -141,7 +214,8 @@ export async function buildVoiceInstructions(
   // Ensure RAG is initialized
   await initializeRAGForVoice();
 
-  let instructions = VOICE_SYSTEM_PROMPT;
+  // 🎭 Build the system prompt with selected style
+  let instructions = buildSystemPrompt(opts.style);
 
   // Add RAG context if query provided
   if (opts.ragEnabled && contextQuery) {
@@ -149,10 +223,11 @@ export async function buildVoiceInstructions(
     const ragContext = await findRelevantWisdom(contextQuery, opts.ragTopK);
 
     if (ragContext) {
-      instructions = `${VOICE_SYSTEM_PROMPT}\n\n## Relevant Book Context for This Conversation\n${ragContext}`;
+      instructions = `${instructions}\n\n## Relevant Book Context\n${ragContext}`;
     }
   }
 
+  console.log(`🎙️ Voice config: voice=${opts.voice}, style=${opts.style}`);
   return instructions;
 }
 

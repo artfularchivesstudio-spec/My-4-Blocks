@@ -4,15 +4,43 @@
  * "Where voice becomes the bridge between hearts,
  * and wisdom flows through the air like music."
  *
- * A reusable voice interface component that establishes
- * WebRTC connections with OpenAI's Realtime API.
+ * Now with voice & style selection! No more condescending
+ * therapist voice unless you actually want that.
  *
- * - The Voice Experience Architect
+ * - The Voice Experience Architect (who listens to feedback!)
  */
 
 'use client';
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+
+// 🎤 Voice & Style Types (imported from realtime API)
+export type VoiceOption =
+  | 'alloy' | 'ash' | 'ballad' | 'coral' | 'echo'
+  | 'marin' | 'sage' | 'shimmer' | 'verse';
+
+export type VoiceStyle = 'direct' | 'warm' | 'casual' | 'professional';
+
+// 🎨 Voice options for the picker - each has its own personality!
+export const VOICE_OPTIONS: { id: VoiceOption; name: string; description: string }[] = [
+  { id: 'ash', name: 'Ash', description: 'Friendly & conversational' },
+  { id: 'alloy', name: 'Alloy', description: 'Neutral & balanced' },
+  { id: 'ballad', name: 'Ballad', description: 'Warm storyteller' },
+  { id: 'coral', name: 'Coral', description: 'Clear & articulate' },
+  { id: 'echo', name: 'Echo', description: 'Soft & thoughtful' },
+  { id: 'marin', name: 'Marin', description: 'Natural & modern' },
+  { id: 'shimmer', name: 'Shimmer', description: 'Bright & energetic' },
+  { id: 'verse', name: 'Verse', description: 'Expressive & dynamic' },
+  { id: 'sage', name: 'Sage', description: 'Calm & slow (therapist vibe)' },
+];
+
+// 🎭 Style options - how you want to be spoken to
+export const STYLE_OPTIONS: { id: VoiceStyle; name: string; description: string }[] = [
+  { id: 'direct', name: 'Direct', description: 'Get to the point, no fluff' },
+  { id: 'casual', name: 'Casual', description: 'Like chatting over coffee' },
+  { id: 'warm', name: 'Warm', description: 'Friendly & supportive' },
+  { id: 'professional', name: 'Professional', description: 'Clear & structured' },
+];
 
 // 🔮 Types for the component
 export interface VoiceModeProps {
@@ -36,6 +64,12 @@ export interface VoiceModeProps {
   onActiveChange?: (active: boolean) => void;
   /** Custom render for the orb visualization */
   renderOrb?: (state: VoiceState) => React.ReactNode;
+  /** Default voice selection */
+  defaultVoice?: VoiceOption;
+  /** Default style selection */
+  defaultStyle?: VoiceStyle;
+  /** Whether to show voice/style picker */
+  showSettings?: boolean;
 }
 
 export type VoiceState = 'idle' | 'connecting' | 'connected' | 'listening' | 'speaking' | 'error';
@@ -56,7 +90,9 @@ interface AudioLevel {
  * 🎤 The VoiceMode Component
  *
  * Manages WebRTC connection to OpenAI Realtime API
- * with audio visualization and transcript handling.
+ * with audio visualization, transcript handling, AND
+ * voice/style selection because nobody wants to be
+ * talked to like a baby! 👶🚫
  */
 export function VoiceMode({
   onSessionStart,
@@ -69,6 +105,9 @@ export function VoiceMode({
   isActive = false,
   onActiveChange,
   renderOrb,
+  defaultVoice = 'ash',      // 🎤 Friendly voice, not the slow therapist one!
+  defaultStyle = 'direct',   // 🎭 Get to the point!
+  showSettings = true,       // 🎨 Let users customize by default
 }: VoiceModeProps) {
   // 🔮 State management
   const [voiceState, setVoiceState] = useState<VoiceState>('idle');
@@ -76,6 +115,11 @@ export function VoiceMode({
   const [audioLevel, setAudioLevel] = useState<AudioLevel>({ level: 0, frequency: 0 });
   const [transcripts, setTranscripts] = useState<TranscriptEntry[]>([]);
   const [error, setError] = useState<string | null>(null);
+
+  // 🎙️ Voice & Style preferences - your voice, your rules!
+  const [selectedVoice, setSelectedVoice] = useState<VoiceOption>(defaultVoice);
+  const [selectedStyle, setSelectedStyle] = useState<VoiceStyle>(defaultStyle);
+  const [showSettingsPanel, setShowSettingsPanel] = useState(false);
 
   // 🔗 WebRTC refs
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
@@ -112,17 +156,26 @@ export function VoiceMode({
 
   /**
    * 🎬 Start the voice session
+   *
+   * Now passes voice & style preferences to the API!
+   * No more one-size-fits-all condescending voice.
    */
   const startSession = useCallback(async () => {
     try {
       setError(null);
       setVoiceState('connecting');
 
-      // 1. Get ephemeral session token from our API
+      // 1. Get ephemeral session token from our API with voice/style prefs
       const response = await fetch(apiEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ contextQuery }),
+        body: JSON.stringify({
+          contextQuery,
+          config: {
+            voice: selectedVoice,
+            style: selectedStyle,
+          },
+        }),
       });
 
       if (!response.ok) {
@@ -226,7 +279,7 @@ export function VoiceMode({
       setError(err instanceof Error ? err.message : 'Failed to start voice session');
       setVoiceState('error');
     }
-  }, [apiEndpoint, contextQuery, analyzeAudio, onActiveChange, onSessionStart]);
+  }, [apiEndpoint, contextQuery, selectedVoice, selectedStyle, analyzeAudio, onActiveChange, onSessionStart]);
 
   /**
    * 📨 Handle data channel messages from OpenAI
@@ -445,14 +498,17 @@ export function VoiceMode({
 
   /**
    * 🔄 Handle active state changes
+   *
+   * NOTE: We no longer auto-start when isActive becomes true!
+   * Users now see the settings panel first and click "Start Voice Chat"
+   * when they're ready. This gives them time to pick their voice/style.
+   * We only auto-END when isActive becomes false.
    */
   useEffect(() => {
-    if (isActive && voiceState === 'idle') {
-      startSession();
-    } else if (!isActive && voiceState !== 'idle') {
+    if (!isActive && voiceState !== 'idle') {
       endSession();
     }
-  }, [isActive, voiceState, startSession, endSession]);
+  }, [isActive, voiceState, endSession]);
 
   /**
    * 🧹 Cleanup on unmount
@@ -538,6 +594,125 @@ export function VoiceMode({
           </div>
         )}
 
+        {/* 🎛️ Voice & Style Settings - customize your experience! */}
+        {voiceState === 'idle' && showSettings && (
+          <div style={{ width: '100%', maxWidth: '320px' }}>
+            {/* Settings Toggle Button */}
+            <button
+              onClick={() => setShowSettingsPanel(!showSettingsPanel)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+                width: '100%',
+                padding: '8px 16px',
+                borderRadius: '8px',
+                border: '1px solid #e2e8f0',
+                background: 'transparent',
+                color: '#64748b',
+                cursor: 'pointer',
+                fontSize: '0.875rem',
+                marginBottom: '12px',
+              }}
+            >
+              <span>⚙️</span>
+              <span>
+                {VOICE_OPTIONS.find(v => v.id === selectedVoice)?.name} • {STYLE_OPTIONS.find(s => s.id === selectedStyle)?.name}
+              </span>
+              <span style={{ marginLeft: 'auto' }}>{showSettingsPanel ? '▲' : '▼'}</span>
+            </button>
+
+            {/* Settings Panel */}
+            {showSettingsPanel && (
+              <div
+                style={{
+                  padding: '16px',
+                  background: '#f8fafc',
+                  borderRadius: '12px',
+                  marginBottom: '16px',
+                }}
+              >
+                {/* Voice Selection */}
+                <div style={{ marginBottom: '16px' }}>
+                  <label
+                    style={{
+                      display: 'block',
+                      fontSize: '0.75rem',
+                      fontWeight: 600,
+                      color: '#475569',
+                      marginBottom: '8px',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                    }}
+                  >
+                    🎤 Voice
+                  </label>
+                  <select
+                    value={selectedVoice}
+                    onChange={(e) => setSelectedVoice(e.target.value as VoiceOption)}
+                    style={{
+                      width: '100%',
+                      padding: '10px 12px',
+                      borderRadius: '8px',
+                      border: '1px solid #e2e8f0',
+                      background: 'white',
+                      fontSize: '0.875rem',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {VOICE_OPTIONS.map((voice) => (
+                      <option key={voice.id} value={voice.id}>
+                        {voice.name} - {voice.description}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Style Selection */}
+                <div>
+                  <label
+                    style={{
+                      display: 'block',
+                      fontSize: '0.75rem',
+                      fontWeight: 600,
+                      color: '#475569',
+                      marginBottom: '8px',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                    }}
+                  >
+                    🎭 Conversation Style
+                  </label>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                    {STYLE_OPTIONS.map((style) => (
+                      <button
+                        key={style.id}
+                        onClick={() => setSelectedStyle(style.id)}
+                        style={{
+                          padding: '10px 12px',
+                          borderRadius: '8px',
+                          border: selectedStyle === style.id ? '2px solid #3b82f6' : '1px solid #e2e8f0',
+                          background: selectedStyle === style.id ? '#eff6ff' : 'white',
+                          cursor: 'pointer',
+                          textAlign: 'left',
+                        }}
+                      >
+                        <div style={{ fontSize: '0.875rem', fontWeight: 500, color: '#1e293b' }}>
+                          {style.name}
+                        </div>
+                        <div style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '2px' }}>
+                          {style.description}
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
         {/* Start Button */}
         {voiceState === 'idle' && (
           <button
@@ -554,7 +729,7 @@ export function VoiceMode({
               boxShadow: '0 4px 15px rgba(59, 130, 246, 0.4)',
             }}
           >
-            Start Voice Chat
+            🎙️ Start Voice Chat
           </button>
         )}
       </div>
