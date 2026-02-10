@@ -96,10 +96,8 @@ export default function ChatPage() {
     setInput('')
     
     try {
-      await sendMessage({
-        role: 'user',
-        parts: [{ type: 'text', text: currentInput }]
-      })
+      // 🎯 AI SDK v6 expects simple { text } format, not { role, parts }
+      await sendMessage({ text: currentInput })
     } catch (err) {
       console.error("Error sending message:", err)
     }

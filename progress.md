@@ -32,3 +32,15 @@
 - Focus: Mobile/responsive layout issues
 - All variants: gemini, claude, v0
 
+---
+
+### 🔧 Streaming Fix Applied
+
+| Change | File | Status |
+|--------|------|--------|
+| Added `DefaultChatTransport` | gemini/src/components/ChatInterface.tsx | ✅ |
+| Fixed message format to `{ text }` | gemini/src/components/ChatInterface.tsx | ✅ |
+| Fixed message format to `{ text }` | claude/app/chat/page.tsx | ✅ |
+
+**Root Cause:** AI SDK v6's `sendMessage` expects `{ text }` format, not `{ role, parts: [...] }`
+

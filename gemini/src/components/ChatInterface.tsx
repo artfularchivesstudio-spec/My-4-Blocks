@@ -14,6 +14,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useChat } from '@ai-sdk/react';
+import { DefaultChatTransport } from 'ai';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, User, Bot, RefreshCw } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -30,7 +31,10 @@ const WISDOM_SEEDS = [
 export const ChatInterface = () => {
   // 🎨 Manual input state for this version of the AI SDK
   const [input, setInput] = useState('');
-  const { messages, sendMessage, status, error: chatError } = useChat();
+  // 🌐 The Streaming Portal - DefaultChatTransport ensures proper AI SDK v6 streaming!
+  const { messages, sendMessage, status, error: chatError } = useChat({
+    transport: new DefaultChatTransport({ api: '/api/chat' }),
+  });
   const isLoading = status === 'streaming' || status === 'submitted';
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -95,10 +99,8 @@ export const ChatInterface = () => {
     inputRef.current?.focus();
 
     try {
-      await sendMessage({
-        role: 'user',
-        parts: [{ type: 'text', text: currentInput }]
-      });
+      // 🎯 AI SDK v6 expects simple { text } format, not { role, parts }
+      await sendMessage({ text: currentInput });
     } catch (err) {
       console.error("🌩️ Error sending message:", err);
     }
