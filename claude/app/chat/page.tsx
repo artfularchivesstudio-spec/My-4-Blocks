@@ -1,7 +1,6 @@
 'use client'
 
 import { useChat } from '@ai-sdk/react'
-import { DefaultChatTransport } from 'ai'
 import { useState, useEffect, useRef } from 'react'
 import { motion } from "framer-motion"
 import Link from "next/link"
@@ -57,8 +56,9 @@ const suggestedPrompts = [
 export default function ChatPage() {
   const [input, setInput] = useState('')
   const [lottieData, setLottieData] = useState(null)
+  // 🌐 Simple API configuration
   const { messages, sendMessage, status } = useChat({
-    transport: new DefaultChatTransport({ api: '/api/chat' }),
+    api: '/api/chat',
   })
   const isLoading = status === 'streaming' || status === 'submitted'
   
@@ -159,7 +159,8 @@ export default function ChatPage() {
           alignItems: "center",
           gap: "clamp(8px, 1.5vw, 12px)"
         }}>
-          <Image src="/logo.webp" alt="Logo" width={60} height={60} style={{ width: "clamp(40px, 8vw, 60px)", height: "auto" }} unoptimized />
+          {/* 🎨 The Four Blocks Logo - Clean SVG */}
+          <Image src="/logo-blocks.svg" alt="My 4 Blocks Logo" width={60} height={60} style={{ width: "clamp(40px, 8vw, 60px)", height: "auto" }} />
           <h1 style={{
             fontSize: "clamp(1rem, 3vw, 1.25rem)",
             fontWeight: 600,

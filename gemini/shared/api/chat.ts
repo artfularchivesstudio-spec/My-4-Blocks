@@ -187,8 +187,8 @@ export async function handleChatRequest(
     maxOutputTokens: opts.maxTokens, // 🎭 AI SDK v6 uses maxOutputTokens
   });
 
-  // 🎭 AI SDK v6 uses toDataStreamResponse for the data stream protocol
-  return result.toDataStreamResponse();
+  // 🎭 Return text stream response
+  return result.toTextStreamResponse();
 }
 
 /**

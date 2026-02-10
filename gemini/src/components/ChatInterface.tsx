@@ -14,7 +14,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useChat } from '@ai-sdk/react';
-import { DefaultChatTransport } from 'ai';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, User, Bot, RefreshCw } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -31,9 +30,9 @@ const WISDOM_SEEDS = [
 export const ChatInterface = () => {
   // 🎨 Manual input state for this version of the AI SDK
   const [input, setInput] = useState('');
-  // 🌐 The Streaming Portal - DefaultChatTransport ensures proper AI SDK v6 streaming!
+  // 🌐 Simple API configuration
   const { messages, sendMessage, status, error: chatError } = useChat({
-    transport: new DefaultChatTransport({ api: '/api/chat' }),
+    api: '/api/chat',
   });
   const isLoading = status === 'streaming' || status === 'submitted';
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -113,12 +112,13 @@ export const ChatInterface = () => {
       <div className="p-4 sm:p-5 md:p-6 border-b border-black/5 flex items-center justify-between bg-black/5 safe-area-top">
         <div className="flex items-center gap-2 sm:gap-3">
           <div className="flex-shrink-0">
+            {/* 🎨 The Four Blocks Logo - Clean SVG replacing the hideous waveform */}
             <Image
-              src="/logo-small.webp"
-              alt="My 4 Blocks Small Logo"
+              src="/logo-blocks.svg"
+              alt="My 4 Blocks Logo"
               width={40}
               height={40}
-              className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg shadow-sm"
+              className="w-8 h-8 sm:w-10 sm:h-10"
             />
           </div>
           <div>
