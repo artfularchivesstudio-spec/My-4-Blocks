@@ -7,7 +7,7 @@
  * - The Unified Architecture Maestro
  */
 
-import { handleChatRequest, type ChatConfig } from '../../../../../shared/api/chat';
+import { handleChatRequest, type ChatConfig } from '../../../../shared/api/chat';
 
 // 🌟 Set the runtime to edge for maximum performance
 export const runtime = 'edge';
