@@ -53,6 +53,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+!shared/lib/
 lib64/
 parts/
 sdist/
@@ -66,5 +67,6 @@ share/python-wheels/
 MANIFEST
 
 # Large files (if embeddings get very large)
-data/embeddings.json
+# data/embeddings.json  # Needed for RAG
+!shared/data/
 .vercel
