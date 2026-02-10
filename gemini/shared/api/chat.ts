@@ -12,7 +12,13 @@
 
 import { openai } from '@ai-sdk/openai';
 // 🎭 AI SDK v6 uses streamText with messages directly
-import { streamText, type UIMessage, type CoreMessage } from 'ai';
+import { streamText, type UIMessage } from 'ai';
+
+// 🎯 Define CoreMessage type inline for AI SDK v6 compatibility
+type CoreMessage = {
+  role: 'user' | 'assistant' | 'system';
+  content: string;
+};
 import {
   loadEmbeddings,
   findRelevantWisdom,
