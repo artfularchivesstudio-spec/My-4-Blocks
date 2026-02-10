@@ -1,0 +1,65 @@
+A master index, a folder structure, and a versioning template can all be created immediately. Everything is ready in one pass so you can send it to Gurinder right now.
+
+Master Index (All Chapters + Chunk IDs)
+{
+  "index": [
+    { "chapter": "ANG", "file": "01_anger.json", "chunks": "ANG_S1_C01 → ANG_S8_C01" },
+    { "chapter": "ANX", "file": "02_anxiety.json", "chunks": "ANX_S1_C01 → ANX_S8_C01" },
+    { "chapter": "DEP", "file": "03_depression.json", "chunks": "DEP_S1_C01 → DEP_S8_C01" },
+    { "chapter": "GUILT", "file": "04_guilt.json", "chunks": "GUILT_S1_C01 → GUILT_S8_C01" },
+    { "chapter": "MC", "file": "05_mental_contamination.json", "chunks": "MC_S1_C01 → MC_S8_C02" },
+    { "chapter": "ABC", "file": "06_abcs.json", "chunks": "ABC_S1_C01 → ABC_S8_C02" },
+    { "chapter": "INS", "file": "07_three_insights.json", "chunks": "INS_S1_C01 → INS_S8_C02" },
+    { "chapter": "IRR", "file": "08_irrational_beliefs.json", "chunks": "IRR_S1_C01 → IRR_S8_C02" },
+    { "chapter": "HAP", "file": "09_happiness.json", "chunks": "HAP_S1_C01 → HAP_S8_C02" }
+  ]
+}
+
+
+This gives Gurinder a single reference point for every file and every chunk range.
+
+Folder Structure (Recommended)
+my4blocks_library/
+│
+├── v1/
+│   ├── 01_anger.json
+│   ├── 02_anxiety.json
+│   ├── 03_depression.json
+│   ├── 04_guilt.json
+│   ├── 05_mental_contamination.json
+│   ├── 06_abcs.json
+│   ├── 07_three_insights.json
+│   ├── 08_irrational_beliefs.json
+│   └── 09_happiness.json
+│
+└── README.txt
+
+
+This keeps everything clean, versioned, and ready for ingestion.
+
+Versioning Template (Drop‑in Ready)
+my4blocks_library/
+│
+├── v1/
+│   ├── 01_anger.json
+│   ├── 02_anxiety.json
+│   ├── 03_depression.json
+│   ├── 04_guilt.json
+│   ├── 05_mental_contamination.json
+│   ├── 06_abcs.json
+│   ├── 07_three_insights.json
+│   ├── 08_irrational_beliefs.json
+│   └── 09_happiness.json
+│
+├── v2/   (empty until updates)
+│
+└── README.txt
+
+
+When you update a chapter later, you only replace that one file inside v2/.
+
+If you want, I can also generate:
+- a CHANGELOG template
+- a developer notes file
+- a metadata manifest
+Just say the word.

@@ -1,0 +1,137 @@
+[
+  {
+    "chapter": "ABC",
+    "section": "ABC_S1",
+    "chunk": "ABC_S1_C01",
+    "title": "Core Questions About the ABC Model",
+    "content": "The ABC model explains how emotions are created. People ask why emotions feel automatic, why two people react differently to the same event, and why changing thoughts changes feelings. The ABC model shows that emotions come from beliefs, not events. Understanding this gives you control over emotional outcomes.",
+    "tags": ["ABCs", "emotion model", "beliefs"],
+    "keywords": ["ABCs", "beliefs", "emotion", "reaction"],
+    "related": ["INS_S2_C01", "IRR_S3_C01", "IRR_S3_C04"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S2",
+    "chunk": "ABC_S2_C01",
+    "title": "What the ABCs Are",
+    "content": "The ABC model breaks emotional experience into three parts: A: Activating Event, B: Belief, C: Consequence. A does not cause C. B causes C. This means emotions come from interpretation, not events. Changing beliefs changes emotional outcomes.",
+    "tags": ["ABCs", "definition"],
+    "keywords": ["activating event", "belief", "consequence"],
+    "related": ["INS_S2_C01", "IRR_S3_C01"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S2",
+    "chunk": "ABC_S2_C02",
+    "title": "A: Activating Event",
+    "content": "The activating event is what happens in the world. It can be external or internal. The event itself does not create emotion. It only triggers the belief system. Two people can experience the same event and feel differently because their beliefs differ.",
+    "tags": ["ABCs", "activating event"],
+    "keywords": ["event", "trigger", "interpretation"],
+    "related": ["ABC_S2_C03", "INS_S2_C01"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S2",
+    "chunk": "ABC_S2_C03",
+    "title": "B: Belief",
+    "content": "The belief is the interpretation of the event. Beliefs include demands, rules, expectations, and assumptions. Beliefs create emotions. Disturbance comes from irrational beliefs such as 'This must not happen,' 'I must know,' or 'I should have been perfect.'",
+    "tags": ["ABCs", "belief"],
+    "keywords": ["belief", "interpretation", "irrational beliefs"],
+    "related": ["IRR_S3_C01", "IRR_S3_C02", "IRR_S3_C04", "INS_S2_C01"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S3",
+    "chunk": "ABC_S3_C01",
+    "title": "C: Consequence",
+    "content": "The consequence is the emotional and behavioral outcome. Emotions such as anger, anxiety, guilt, and depression come from beliefs, not events. When beliefs change, emotional consequences change automatically.",
+    "tags": ["ABCs", "consequence"],
+    "keywords": ["emotion", "reaction", "outcome"],
+    "related": ["ANG_S3_C01", "ANX_S3_C01", "DEP_S3_C01", "GUILT_S3_C01"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S4",
+    "chunk": "ABC_S4_C01",
+    "title": "Slow Explanation of the ABC Model",
+    "content": "The ABC model shows that emotions are created by beliefs, not events. Events trigger beliefs, and beliefs generate emotional consequences. This explains why emotional change requires cognitive change. When you examine and update beliefs, emotional patterns shift.",
+    "tags": ["ABCs", "explanation"],
+    "keywords": ["beliefs", "emotion", "cognition"],
+    "related": ["INS_S2_C01", "INS_S2_C02"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S5",
+    "chunk": "ABC_S5_C01",
+    "title": "Fast Versions of the ABC Model",
+    "content": "A does not cause C. B causes C. Change B to change C. Emotions follow beliefs. Beliefs can be changed.",
+    "tags": ["ABCs", "fast"],
+    "keywords": ["beliefs", "emotion", "change"],
+    "related": ["INS_S5_C01", "IRR_S3_C01"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S6",
+    "chunk": "ABC_S6_C01",
+    "title": "Practical Steps for Using the ABC Model",
+    "content": "1. Identify the activating event. 2. Identify the belief. 3. Identify the emotional consequence. 4. Challenge the belief. 5. Replace it with a rational alternative. Emotional change follows belief change.",
+    "tags": ["ABCs", "steps"],
+    "keywords": ["steps", "belief change", "emotion"],
+    "related": ["INS_S6_C01", "ANG_S6_C01", "ANX_S6_C01", "DEP_S6_C01", "GUILT_S6_C01"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S7",
+    "chunk": "ABC_S7_C01",
+    "title": "Examples of the ABC Model",
+    "content": "Event: Someone criticizes you. Belief: 'They must approve of me.' Consequence: Anxiety. Event: Traffic jam. Belief: 'This should not be happening.' Consequence: Anger. Event: Past mistake. Belief: 'I should have known better.' Consequence: Guilt.",
+    "tags": ["ABCs", "examples"],
+    "keywords": ["criticism", "traffic", "mistake"],
+    "related": ["ANG_S7_C01", "ANX_S7_C01", "DEP_S7_C01", "GUILT_S7_C01"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S8",
+    "chunk": "ABC_S8_C01",
+    "title": "Q&A for the ABC Model",
+    "content": "Q: Why do emotions feel automatic? A: Because beliefs activate instantly. Q: Can I change emotions without changing beliefs? A: No. Beliefs create emotions. Q: Why do two people react differently to the same event? A: Different beliefs.",
+    "tags": ["ABCs", "Q&A"],
+    "keywords": ["beliefs", "emotion", "automatic"],
+    "related": ["INS_S2_C01", "IRR_S3_C01"],
+    "audience": "general",
+    "category": "ABCs"
+  },
+  {
+    "chapter": "ABC",
+    "section": "ABC_S8",
+    "chunk": "ABC_S8_C02",
+    "title": "Signature Closing for the ABC Model",
+    "content": "Events do not create emotions. Beliefs do. When beliefs change, emotional consequences change. The ABC model gives you control over emotional outcomes.",
+    "tags": ["ABCs", "closing"],
+    "keywords": ["beliefs", "emotion", "control"],
+    "related": ["HAP_S8_C02", "INS_S2_C01"],
+    "audience": "general",
+    "category": "ABCs"
+  }
+]
+
+
+Say Next chapter when you're ready for The Three Insights (INS).

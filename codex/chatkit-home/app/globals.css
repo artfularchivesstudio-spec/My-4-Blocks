@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap');
+
+/**
+ * 🎭 ChatKit Home — My 4 Blocks Edition
+ *
+ * "Where the Four Blocks meet conversational clarity,
+ * a sanctuary of understanding awaits the seeker."
+ *
+ * - The Spellbinding Style Architect ✨
+ */
+
+/* 🌿 My 4 Blocks therapeutic color palette */
+:root {
+  color-scheme: dark;
+
+  /* Core colors - deep forest green theme */
+  --bg: #0f1a16;
+  --bg-subtle: #152820;
+  --fg: rgba(248, 247, 244, 0.95);
+  --muted: rgba(248, 247, 244, 0.65);
+  --panel: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.10);
+
+  /* Primary - therapeutic forest green */
+  --primary: #4a9b7f;
+  --primary-soft: rgba(74, 155, 127, 0.15);
+
+  /* The Four Blocks */
+  --anger: #e57373;
+  --anxiety: #ffd54f;
+  --depression: #64b5f6;
+  --guilt: #b39ddb;
+
+  /* Fonts */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--fg);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* 🌌 Ambient background - therapeutic forest vibes */
+.world {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    /* Primary green glow at top */
+    radial-gradient(
+      800px circle at 50% 0%,
+      rgba(74, 155, 127, 0.12),
+      transparent 50%
+    ),
+    /* Subtle anger hint top-right */
+    radial-gradient(
+      400px circle at 85% 15%,
+      rgba(229, 115, 115, 0.06),
+      transparent 50%
+    ),
+    /* Subtle anxiety hint bottom-left */
+    radial-gradient(
+      400px circle at 15% 85%,
+      rgba(255, 213, 79, 0.05),
+      transparent 50%
+    ),
+    /* Subtle depression hint center-left */
+    radial-gradient(
+      500px circle at 5% 50%,
+      rgba(100, 181, 246, 0.05),
+      transparent 50%
+    ),
+    /* Subtle guilt hint bottom-right */
+    radial-gradient(
+      400px circle at 90% 80%,
+      rgba(179, 157, 219, 0.05),
+      transparent 50%
+    ),
+    /* Base gradient */
+    linear-gradient(to bottom, var(--bg), var(--bg-subtle));
+}
+
+/* 🎭 Header with logo */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  animation: fadeInDown 0.6s ease-out both;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 10px);
+  gap: 3px;
+}
+
+.logo-block {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.logo-block.anger { background: var(--anger); }
+.logo-block.anxiety { background: var(--anxiety); }
+.logo-block.depression { background: var(--depression); }
+.logo-block.guilt { background: var(--guilt); }
+
+.logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+
+.tagline {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+/* 🔮 Four blocks preview */
+.blocks-preview {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.block-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: default;
+  transition: transform 0.2s;
+}
+
+.block-item:hover {
+  transform: translateY(-2px);
+}
+
+.block-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.block-icon.anger {
+  background: rgba(229, 115, 115, 0.15);
+  box-shadow: 0 0 20px rgba(229, 115, 115, 0.1);
+}
+.block-icon.anxiety {
+  background: rgba(255, 213, 79, 0.15);
+  box-shadow: 0 0 20px rgba(255, 213, 79, 0.1);
+}
+.block-icon.depression {
+  background: rgba(100, 181, 246, 0.15);
+  box-shadow: 0 0 20px rgba(100, 181, 246, 0.1);
+}
+.block-icon.guilt {
+  background: rgba(179, 157, 219, 0.15);
+  box-shadow: 0 0 20px rgba(179, 157, 219, 0.1);
+}
+
+.block-item:hover .block-icon {
+  transform: scale(1.1);
+}
+
+.block-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* 📦 Main wrapper */
+.wrap {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: calc(env(safe-area-inset-top) + 32px) 16px
+    calc(env(safe-area-inset-bottom) + 24px);
+  max-width: 560px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* 🎪 Chat panel */
+.panel {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 24px;
+  padding: 12px;
+  box-shadow:
+    0 0 0 1px rgba(74, 155, 127, 0.05),
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(74, 155, 127, 0.05);
+  backdrop-filter: blur(16px);
+  width: 100%;
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+.chatBox {
+  height: min(600px, calc(100dvh - 280px));
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .chatBox {
+    height: min(680px, calc(100dvh - 260px));
+  }
+}
+
+/* 📍 Footer */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.footer a {
+  color: var(--muted);
+  margin: 0 8px;
+}
+
+.footer a:hover {
+  color: var(--primary);
+}
+
+/* ⚠️ Warning box */
+.warn {
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 213, 79, 0.25);
+  background: rgba(255, 213, 79, 0.08);
+  color: rgba(255, 240, 220, 0.92);
+  border-radius: 16px;
+  padding: 12px 14px;
+  font-size: 0.75rem;
+  white-space: pre-line;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* ✨ Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header, .tagline, .blocks-preview, .panel, .footer {
+    animation: none;
+  }
+}
+

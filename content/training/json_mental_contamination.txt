@@ -1,0 +1,125 @@
+[
+  {
+    "chapter": "MC",
+    "section": "MC_S1",
+    "chunk": "MC_S1_C01",
+    "title": "Core Questions About Mental Contamination",
+    "content": "Mental contamination refers to the intrusive, sticky, looping thoughts that feel foreign, unwanted, or out of alignment with your values. People ask why these thoughts appear, why they feel so disturbing, and why they seem to repeat even when you try to push them away. Mental contamination is not a reflection of character or intention; it is a mechanical process of the mind misfiring and attaching meaning to noise.",
+    "tags": ["mental contamination", "intrusive thoughts", "loops"],
+    "keywords": ["intrusive thoughts", "contamination", "loops", "mind noise"],
+    "related": ["INS_S2_C01", "INS_S2_C02", "ABC_S2_C03"],
+    "audience": "general",
+    "category": "mental_contamination"
+  },
+  {
+    "chapter": "MC",
+    "section": "MC_S2",
+    "chunk": "MC_S2_C01",
+    "title": "What Mental Contamination Is",
+    "content": "Mental contamination is the experience of feeling 'dirty,' 'wrong,' or 'tainted' by a thought, image, memory, or idea. It is not caused by the content itself but by the belief that the thought means something about you. The mind attaches moral weight to meaningless mental noise, creating distress.",
+    "tags": ["mental contamination", "definition"],
+    "keywords": ["contamination", "thoughts", "meaning", "distress"],
+    "related": ["INS_S2_C01", "IRR_S3_C06"],
+    "audience": "general",
+    "category": "mental_contamination"
+  },
+  {
+    "chapter": "MC",
+    "section": "MC_S2",
+    "chunk": "MC_S2_C02",
+    "title": "Why Mental Contamination Matters",
+    "content": "Mental contamination matters because it convinces people that their thoughts define them. This creates shame, fear, avoidance, and compulsive checking. The problem is not the thought but the interpretation: 'If I thought it, it must mean something about me.' Correcting the interpretation dissolves the contamination.",
+    "tags": ["mental contamination", "interpretation"],
+    "keywords": ["thoughts", "meaning", "shame", "fear"],
+    "related": ["INS_S2_C01", "IRR_S3_C06"],
+    "audience": "general",
+    "category": "mental_contamination"
+  },
+  {
+    "chapter": "MC",
+    "section": "MC_S3",
+    "chunk": "MC_S3_C01",
+    "title": "Narrator vs. Observer",
+    "content": "Mental contamination becomes powerful when you confuse the narrator with the observer. The narrator is the automatic voice that produces thoughts without your permission. The observer is the part of you that notices the thoughts. Contamination occurs when you believe the narrator is you. Relief comes from recognizing that you are the observer, not the narrator.",
+    "tags": ["mental contamination", "narrator", "observer"],
+    "keywords": ["narrator", "observer", "identity", "thoughts"],
+    "related": ["INS_S2_C01", "INS_S2_C02"],
+    "audience": "general",
+    "category": "mental_contamination"
+  },
+  {
+    "chapter": "MC",
+    "section": "MC_S4",
+    "chunk": "MC_S4_C01",
+    "title": "Slow Explanation of Mental Contamination",
+    "content": "Mental contamination is a misunderstanding of how thoughts work. The mind produces thousands of random thoughts daily. Some are pleasant, some neutral, some disturbing. When a disturbing thought appears, the mind sometimes attaches meaning to it, interpreting it as a reflection of character. This misinterpretation creates emotional contamination. When you see thoughts as random mental events, the contamination dissolves.",
+    "tags": ["mental contamination", "explanation"],
+    "keywords": ["thoughts", "random", "meaning", "misinterpretation"],
+    "related": ["INS_S2_C01", "INS_S2_C02", "IRR_S3_C06"],
+    "audience": "general",
+    "category": "mental_contamination"
+  },
+  {
+    "chapter": "MC",
+    "section": "MC_S5",
+    "chunk": "MC_S5_C01",
+    "title": "Fast Versions of Mental Contamination",
+    "content": "Thoughts are not intentions. Thoughts are not identity. Thoughts are not predictions. A thought is just a thought. Contamination occurs only when you believe the thought means something about you.",
+    "tags": ["mental contamination", "fast"],
+    "keywords": ["thoughts", "identity", "meaning"],
+    "related": ["INS_S5_C01", "IRR_S3_C06"],
+    "audience": "general",
+    "category": "mental_contamination"
+  },
+  {
+    "chapter": "MC",
+    "section": "MC_S6",
+    "chunk": "MC_S6_C01",
+    "title": "Practical Steps for Mental Contamination",
+    "content": "1. Notice the intrusive thought. 2. Label it as a narrator event. 3. Remind yourself that thoughts do not define you. 4. Allow the thought to exist without resisting it. 5. Let the nervous system update. Contamination reduces when thoughts lose their meaning.",
+    "tags": ["mental contamination", "steps"],
+    "keywords": ["intrusive thoughts", "steps", "observer"],
+    "related": ["INS_S6_C01", "ABC_S6_C01"],
+    "audience": "general",
+    "category": "mental_contamination"
+  },
+  {
+    "chapter": "MC",
+    "section": "MC_S7",
+    "chunk": "MC_S7_C01",
+    "title": "Examples of Mental Contamination",
+    "content": "Violent intrusive thought: 'What if I hurt someone?' → 'This is a narrator glitch, not a desire.' Moral intrusive thought: 'What if I'm a bad person?' → 'Thoughts are not identity.' Contamination drops when thoughts are seen as random mental events.",
+    "tags": ["mental contamination", "examples"],
+    "keywords": ["intrusive thoughts", "violence", "morality"],
+    "related": ["IRR_S3_C06", "INS_S2_C01"],
+    "audience": "general",
+    "category": "mental_contamination"
+  },
+  {
+    "chapter": "MC",
+    "section": "MC_S8",
+    "chunk": "MC_S8_C01",
+    "title": "Q&A for Mental Contamination",
+    "content": "Q: Why do intrusive thoughts feel so real? A: Because the mind attaches meaning to them. Q: Does having a disturbing thought mean something is wrong with me? A: No. Thoughts are random mental events. Q: Why do they repeat? A: Resistance reinforces them. Acceptance dissolves them.",
+    "tags": ["mental contamination", "Q&A"],
+    "keywords": ["intrusive thoughts", "meaning", "repetition"],
+    "related": ["INS_S2_C01", "INS_S2_C02"],
+    "audience": "general",
+    "category": "mental_contamination"
+  },
+  {
+    "chapter": "MC",
+    "section": "MC_S8",
+    "chunk": "MC_S8_C02",
+    "title": "Signature Closing for Mental Contamination",
+    "content": "Thoughts do not define you. They are not identity, intention, or truth. Mental contamination dissolves when you stop giving thoughts meaning they never had.",
+    "tags": ["mental contamination", "closing"],
+    "keywords": ["thoughts", "identity", "meaning"],
+    "related": ["HAP_S8_C02", "INS_S2_C01"],
+    "audience": "general",
+    "category": "mental_contamination"
+  }
+]
+
+
+Say Next chapter when you're ready for The ABCs (ABC).

@@ -1,0 +1,113 @@
+[
+  {
+    "chapter": "DEP",
+    "section": "DEP_S1",
+    "chunk": "DEP_S1_C01",
+    "title": "Core Questions About Depression",
+    "content": "Depression comes from demanding that the present moment be different than it is. People ask why depression feels heavy, why motivation disappears, and why it feels like life is stuck. Depression is created by the belief that something must change immediately for you to be okay. When the demand for immediate change drops, the heaviness lifts.",
+    "tags": ["depression", "four blocks", "change", "motivation"],
+    "keywords": ["depression", "must change", "stuck", "hopelessness"],
+    "related": ["IRR_S3_C01", "ABC_S2_C03", "INS_S2_C03", "HAP_S4_C01"],
+    "audience": "general",
+    "category": "depression"
+  },
+  {
+    "chapter": "DEP",
+    "section": "DEP_S2",
+    "chunk": "DEP_S2_C01",
+    "title": "What Depression Is",
+    "content": "Depression is the emotional result of demanding that the present moment be different. It is not caused by the situation itself but by the belief: 'This must change right now.' Depression is a collapse emotion, created by insisting that reality must shift immediately.",
+    "tags": ["depression", "definition"],
+    "keywords": ["depression", "demand", "change"],
+    "related": ["IRR_S3_C01", "INS_S2_C03"],
+    "audience": "general",
+    "category": "depression"
+  },
+  {
+    "chapter": "DEP",
+    "section": "DEP_S2",
+    "chunk": "DEP_S2_C02",
+    "title": "Why Depression Happens",
+    "content": "Depression happens when the mind concludes that something must change now and that it cannot. The belief creates the emotion, not the situation. Depression signals that a demand is active: 'This cannot stay this way.'",
+    "tags": ["depression", "beliefs"],
+    "keywords": ["depression", "demand", "hopelessness"],
+    "related": ["IRR_S3_C01", "ABC_S2_C03"],
+    "audience": "general",
+    "category": "depression"
+  },
+  {
+    "chapter": "DEP",
+    "section": "DEP_S3",
+    "chunk": "DEP_S3_C01",
+    "title": "Depression Formula",
+    "content": "A: Something unwanted exists. B: You tell yourself 'This must change right now.' C: Depression. The belief—not the situation—creates the emotion. Releasing the demand for immediate change reduces depression.",
+    "tags": ["depression", "formula"],
+    "keywords": ["depression", "ABCs", "change"],
+    "related": ["ABC_S2_C03", "IRR_S3_C01", "INS_S2_C03"],
+    "audience": "general",
+    "category": "depression"
+  },
+  {
+    "chapter": "DEP",
+    "section": "DEP_S4",
+    "chunk": "DEP_S4_C01",
+    "title": "Slow Explanation of Depression",
+    "content": "Depression is the mind insisting that life must be different immediately. When the mind believes change is both required and impossible, it collapses. Depression softens when the demand becomes a preference and the timeline becomes flexible.",
+    "tags": ["depression", "explanation"],
+    "keywords": ["depression", "timeline", "demand"],
+    "related": ["INS_S2_C03", "IRR_S3_C01"],
+    "audience": "general",
+    "category": "depression"
+  },
+  {
+    "chapter": "DEP",
+    "section": "DEP_S5",
+    "chunk": "DEP_S5_C01",
+    "title": "Fast Versions of Depression",
+    "content": "Depression is a demand for immediate change. Peace comes from allowing the present moment to exist without requiring instant transformation. Depression = 'This must change now.' Relief = 'I prefer change, but I can handle this moment as it is.'",
+    "tags": ["depression", "fast"],
+    "keywords": ["depression", "change", "preference"],
+    "related": ["HAP_S5_C01", "IRR_S3_C01"],
+    "audience": "general",
+    "category": "depression"
+  },
+  {
+    "chapter": "DEP",
+    "section": "DEP_S6",
+    "chunk": "DEP_S6_C01",
+    "title": "Practical Steps for Depression",
+    "content": "1. Notice the heaviness. 2. Identify the demand for immediate change. 3. Ask if immediate change is possible or required. 4. Replace the demand with a preference. 5. Let the nervous system update. Depression reduces when the timeline becomes flexible.",
+    "tags": ["depression", "steps"],
+    "keywords": ["depression", "steps", "change"],
+    "related": ["ABC_S6_C01", "INS_S6_C01"],
+    "audience": "general",
+    "category": "depression"
+  },
+  {
+    "chapter": "DEP",
+    "section": "DEP_S7",
+    "chunk": "DEP_S7_C01",
+    "title": "Examples of Depression",
+    "content": "Life progress: 'I should be further along.' → 'I prefer progress, but I can handle being here.' Relationships: 'This must change now.' → 'I want change, but I can handle this moment.' Depression drops when urgency drops.",
+    "tags": ["depression", "examples"],
+    "keywords": ["depression", "progress", "relationships"],
+    "related": ["HAP_S7_C01", "IRR_S3_C01"],
+    "audience": "general",
+    "category": "depression"
+  },
+  {
+    "chapter": "DEP",
+    "section": "DEP_S8",
+    "chunk": "DEP_S8_C01",
+    "title": "Signature Closing for Depression",
+    "content": "Depression is not caused by circumstances. It is caused by demanding that circumstances change immediately. When the demand becomes a preference, relief returns.",
+    "tags": ["depression", "closing"],
+    "keywords": ["depression", "change", "relief"],
+    "related": ["HAP_S8_C02", "INS_S2_C03"],
+    "audience": "general",
+    "category": "depression"
+  }
+]
+
+
+Say Next chapter when you're ready for Guilt (GUILT).

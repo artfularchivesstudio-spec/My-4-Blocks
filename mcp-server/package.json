@@ -1,0 +1,32 @@
+{
+  "name": "@my4blocks/mcp-server",
+  "version": "0.1.0",
+  "description": "🎭 MCP Server for My 4 Blocks - Atomic tools for emotional wellness workflows",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "chatgpt",
+    "openai",
+    "cbt",
+    "rebt",
+    "emotional-wellness",
+    "four-blocks"
+  ],
+  "author": "My 4 Blocks Team",
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "name": "Untitled widget",
+  "template": "{\"type\":\"Card\",\"children\":[{\"type\":\"Text\",\"value\":{{ (title) | tojson }}}]}",
+  "jsonSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "title"
+    ],
+    "additionalProperties": false
+  },
+  "outputJsonPreview": {
+    "type": "Card",
+    "children": [
+      {
+        "type": "Text",
+        "value": "Untitled widget"
+      }
+    ]
+  },
+  "encodedWidget": "eyJpZCI6IndpZ19yeWp4bHR4diIsIm5hbWUiOiJVbnRpdGxlZCB3aWRnZXQiLCJ2aWV3IjoiPENhcmQ-XG4gIDxUZXh0IHZhbHVlPXt0aXRsZX0gLz5cbjwvQ2FyZD4iLCJkZWZhdWx0U3RhdGUiOnsidGl0bGUiOiJVbnRpdGxlZCB3aWRnZXQifSwic2NoZW1hTW9kZSI6InpvZCIsImpzb25TY2hlbWEiOnsidHlwZSI6Im9iamVjdCIsInByb3BlcnRpZXMiOnsidGl0bGUiOnsidHlwZSI6InN0cmluZyJ9fSwicmVxdWlyZWQiOlsidGl0bGUiXSwiYWRkaXRpb25hbFByb3BlcnRpZXMiOmZhbHNlfSwic2NoZW1hIjoiaW1wb3J0IHsgeiB9IGZyb20gXCJ6b2RcIlxuXG5jb25zdCBXaWRnZXRTdGF0ZSA9IHouc3RyaWN0T2JqZWN0KHtcbiAgdGl0bGU6IHouc3RyaW5nKCksXG59KVxuXG5leHBvcnQgZGVmYXVsdCBXaWRnZXRTdGF0ZSIsInN0YXRlcyI6W10sInNjaGVtYVZhbGlkaXR5IjoidmFsaWQiLCJ2aWV3VmFsaWRpdHkiOiJ2YWxpZCIsImRlZmF1bHRTdGF0ZVZhbGlkaXR5IjoidmFsaWQifQ"
+}

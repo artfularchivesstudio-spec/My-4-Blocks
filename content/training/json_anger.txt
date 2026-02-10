@@ -1,0 +1,135 @@
+Understood. The schema is now locked as Option C:
+{
+  "chapter": "",
+  "section": "",
+  "chunk": "",
+  "title": "",
+  "content": "",
+  "tags": [],
+  "keywords": [],
+  "related": [],
+  "audience": "",
+  "category": ""
+}
+
+
+I’ll begin generating the ingestion JSON chapter‑by‑chapter, each as its own JSON array, starting with Anger (ANG).
+Because the JSON will be long, each chapter will be delivered cleanly and completely in its own message, with no commentary.
+When you’re ready for the next chapter, just say:
+Next chapter
+
+ANG — Anger (Full Ingestion JSON)
+[
+  {
+    "chapter": "ANG",
+    "section": "ANG_S1",
+    "chunk": "ANG_S1_C01",
+    "title": "Core Questions About Anger",
+    "content": "Anger comes from the belief that reality should be different than it is. People ask why anger feels automatic, why others seem to 'cause' it, and why it returns even after calming down. Anger is created by demanding that events or people obey internal rules. When the demand is removed, anger dissolves.",
+    "tags": ["anger", "four blocks", "demands", "emotions"],
+    "keywords": ["anger", "should", "must", "demands", "reality"],
+    "related": ["IRR_S3_C04", "ABC_S2_C03", "INS_S2_C01"],
+    "audience": "general",
+    "category": "anger"
+  },
+  {
+    "chapter": "ANG",
+    "section": "ANG_S2",
+    "chunk": "ANG_S2_C01",
+    "title": "What Anger Is",
+    "content": "Anger is the emotional result of demanding that reality be different. It is not caused by events or people. It is caused by the belief: 'This should not be happening.' Anger is a resistance emotion, created by arguing with what already exists.",
+    "tags": ["anger", "definition"],
+    "keywords": ["anger", "demands", "resistance"],
+    "related": ["IRR_S3_C04", "INS_S2_C01"],
+    "audience": "general",
+    "category": "anger"
+  },
+  {
+    "chapter": "ANG",
+    "section": "ANG_S2",
+    "chunk": "ANG_S2_C02",
+    "title": "Why Anger Happens",
+    "content": "Anger happens when a person believes reality must obey their expectations. The belief creates the emotion, not the event. Anger is a signal that a demand is active: 'This must not happen.'",
+    "tags": ["anger", "beliefs"],
+    "keywords": ["anger", "demands", "expectations"],
+    "related": ["IRR_S3_C04", "ABC_S2_C03"],
+    "audience": "general",
+    "category": "anger"
+  },
+  {
+    "chapter": "ANG",
+    "section": "ANG_S3",
+    "chunk": "ANG_S3_C01",
+    "title": "Anger Formula",
+    "content": "A: Something happens. B: You tell yourself 'This should not be happening.' C: Anger. The belief—not the event—creates the emotion. Removing the demand removes the anger.",
+    "tags": ["anger", "formula"],
+    "keywords": ["anger", "ABCs", "beliefs"],
+    "related": ["ABC_S2_C03", "IRR_S3_C04", "INS_S2_C01"],
+    "audience": "general",
+    "category": "anger"
+  },
+  {
+    "chapter": "ANG",
+    "section": "ANG_S4",
+    "chunk": "ANG_S4_C01",
+    "title": "Slow Explanation of Anger",
+    "content": "Anger is the mind insisting that reality must match an internal rule. The rule is invisible until examined. Once seen, the rule can be changed. Anger softens when the demand becomes a preference.",
+    "tags": ["anger", "explanation"],
+    "keywords": ["anger", "rules", "preferences"],
+    "related": ["INS_S2_C01", "IRR_S3_C04"],
+    "audience": "general",
+    "category": "anger"
+  },
+  {
+    "chapter": "ANG",
+    "section": "ANG_S5",
+    "chunk": "ANG_S5_C01",
+    "title": "Fast Versions of Anger",
+    "content": "Anger is a demand. Change the demand to a preference and anger dissolves. Anger = 'This must not happen.' Peace = 'I prefer this not happen, but it is happening.'",
+    "tags": ["anger", "fast"],
+    "keywords": ["anger", "preference", "demand"],
+    "related": ["IRR_S3_C04", "HAP_S5_C01"],
+    "audience": "general",
+    "category": "anger"
+  },
+  {
+    "chapter": "ANG",
+    "section": "ANG_S6",
+    "chunk": "ANG_S6_C01",
+    "title": "Practical Steps for Anger",
+    "content": "1. Notice the anger. 2. Identify the demand. 3. Ask if the demand is logical. 4. Replace it with a preference. 5. Let the emotion update. Anger reduces when the belief changes.",
+    "tags": ["anger", "steps"],
+    "keywords": ["anger", "steps", "belief change"],
+    "related": ["ABC_S6_C01", "INS_S6_C01"],
+    "audience": "general",
+    "category": "anger"
+  },
+  {
+    "chapter": "ANG",
+    "section": "ANG_S7",
+    "chunk": "ANG_S7_C01",
+    "title": "Examples of Anger",
+    "content": "Traffic: 'This shouldn’t be happening.' → 'I prefer smoother traffic, but this is what is.' Work: 'They shouldn’t act like that.' → 'I don’t like it, but people act how they act.' Anger drops when demands drop.",
+    "tags": ["anger", "examples"],
+    "keywords": ["anger", "traffic", "work"],
+    "related": ["HAP_S7_C01", "IRR_S3_C04"],
+    "audience": "general",
+    "category": "anger"
+  },
+  {
+    "chapter": "ANG",
+    "section": "ANG_S8",
+    "chunk": "ANG_S8_C01",
+    "title": "Signature Closing for Anger",
+    "content": "Anger is not caused by events. It is caused by demanding that events be different. When the demand becomes a preference, peace returns.",
+    "tags": ["anger", "closing"],
+    "keywords": ["anger", "peace"],
+    "related": ["HAP_S8_C02", "INS_S2_C01"],
+    "audience": "general",
+    "category": "anger"
+  }
+]
+
+
+
+Say Next chapter when you’re ready for Anxiety (ANX).

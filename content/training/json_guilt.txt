@@ -1,0 +1,113 @@
+[
+  {
+    "chapter": "GUILT",
+    "section": "GUILT_S1",
+    "chunk": "GUILT_S1_C01",
+    "title": "Core Questions About Guilt",
+    "content": "Guilt comes from demanding that you should have behaved perfectly in the past. People ask why guilt lingers, why it resurfaces years later, and why it feels morally heavy. Guilt is created by the belief that you violated an internal rule and therefore deserve emotional punishment. When the demand for past perfection drops, guilt softens.",
+    "tags": ["guilt", "four blocks", "past", "perfection"],
+    "keywords": ["guilt", "should", "past", "mistake", "perfection"],
+    "related": ["IRR_S3_C05", "IRR_S3_C06", "ABC_S2_C03", "INS_S2_C01"],
+    "audience": "general",
+    "category": "guilt"
+  },
+  {
+    "chapter": "GUILT",
+    "section": "GUILT_S2",
+    "chunk": "GUILT_S2_C01",
+    "title": "What Guilt Is",
+    "content": "Guilt is the emotional result of demanding that your past actions should have been perfect. It is not caused by the event itself but by the belief: 'I should not have done that.' Guilt is a moral emotion created by judging yourself against an unrealistic standard.",
+    "tags": ["guilt", "definition"],
+    "keywords": ["guilt", "should", "past", "self-judgment"],
+    "related": ["IRR_S3_C05", "INS_S2_C01"],
+    "audience": "general",
+    "category": "guilt"
+  },
+  {
+    "chapter": "GUILT",
+    "section": "GUILT_S2",
+    "chunk": "GUILT_S2_C02",
+    "title": "Why Guilt Happens",
+    "content": "Guilt happens when the mind insists that you should have acted differently even though you could not have, given who you were and what you knew at the time. The belief creates the emotion, not the event. Guilt signals that a perfectionistic rule is active: 'I must not make mistakes.'",
+    "tags": ["guilt", "beliefs"],
+    "keywords": ["guilt", "mistakes", "perfection", "rules"],
+    "related": ["IRR_S3_C05", "IRR_S3_C06", "ABC_S2_C03"],
+    "audience": "general",
+    "category": "guilt"
+  },
+  {
+    "chapter": "GUILT",
+    "section": "GUILT_S3",
+    "chunk": "GUILT_S3_C01",
+    "title": "Guilt Formula",
+    "content": "A: A past action occurred. B: You tell yourself 'I should not have done that.' C: Guilt. The belief—not the action—creates the emotion. Releasing the demand for past perfection reduces guilt.",
+    "tags": ["guilt", "formula"],
+    "keywords": ["guilt", "ABCs", "past", "perfection"],
+    "related": ["ABC_S2_C03", "IRR_S3_C05", "IRR_S3_C06", "INS_S2_C01"],
+    "audience": "general",
+    "category": "guilt"
+  },
+  {
+    "chapter": "GUILT",
+    "section": "GUILT_S4",
+    "chunk": "GUILT_S4_C01",
+    "title": "Slow Explanation of Guilt",
+    "content": "Guilt is the mind replaying the past with a new standard that did not exist at the time. You judge your past self using your present knowledge. This creates a false sense of wrongdoing. Guilt softens when you recognize that you could not have acted differently with the information and abilities you had then.",
+    "tags": ["guilt", "explanation"],
+    "keywords": ["guilt", "past", "knowledge", "self-judgment"],
+    "related": ["INS_S2_C01", "IRR_S3_C05"],
+    "audience": "general",
+    "category": "guilt"
+  },
+  {
+    "chapter": "GUILT",
+    "section": "GUILT_S5",
+    "chunk": "GUILT_S5_C01",
+    "title": "Fast Versions of Guilt",
+    "content": "Guilt is a demand for past perfection. Peace comes from accepting that you acted with the knowledge and abilities you had. Guilt = 'I should have known better.' Relief = 'I did the best I could with what I knew.'",
+    "tags": ["guilt", "fast"],
+    "keywords": ["guilt", "perfection", "acceptance"],
+    "related": ["HAP_S5_C01", "IRR_S3_C05", "IRR_S3_C06"],
+    "audience": "general",
+    "category": "guilt"
+  },
+  {
+    "chapter": "GUILT",
+    "section": "GUILT_S6",
+    "chunk": "GUILT_S6_C01",
+    "title": "Practical Steps for Guilt",
+    "content": "1. Notice the guilt. 2. Identify the demand for past perfection. 3. Ask whether you could have acted differently with the knowledge you had. 4. Replace the demand with understanding. 5. Let the nervous system update. Guilt reduces when the past is viewed accurately.",
+    "tags": ["guilt", "steps"],
+    "keywords": ["guilt", "steps", "past", "perfection"],
+    "related": ["ABC_S6_C01", "INS_S6_C01"],
+    "audience": "general",
+    "category": "guilt"
+  },
+  {
+    "chapter": "GUILT",
+    "section": "GUILT_S7",
+    "chunk": "GUILT_S7_C01",
+    "title": "Examples of Guilt",
+    "content": "Parenting: 'I should have known what to do.' → 'I acted with the knowledge I had.' Work: 'I should have handled that better.' → 'I did the best I could at the time.' Guilt drops when past perfection is no longer required.",
+    "tags": ["guilt", "examples"],
+    "keywords": ["guilt", "parenting", "work", "mistakes"],
+    "related": ["HAP_S7_C01", "IRR_S3_C05", "IRR_S3_C06"],
+    "audience": "general",
+    "category": "guilt"
+  },
+  {
+    "chapter": "GUILT",
+    "section": "GUILT_S8",
+    "chunk": "GUILT_S8_C01",
+    "title": "Signature Closing for Guilt",
+    "content": "Guilt is not caused by the past. It is caused by demanding that the past should have been perfect. When the demand becomes understanding, relief returns.",
+    "tags": ["guilt", "closing"],
+    "keywords": ["guilt", "past", "relief"],
+    "related": ["HAP_S8_C02", "INS_S2_C01"],
+    "audience": "general",
+    "category": "guilt"
+  }
+]
+
+
+Say Next chapter when you're ready for Mental Contamination (MC).

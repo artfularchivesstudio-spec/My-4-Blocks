@@ -1,0 +1,132 @@
+export default {
+  id: "wig_my4blocks_daily_retro",
+  name: "My 4 Blocks — Daily Retro",
+
+  view: `<Card size="md" asForm={true} status={{ text: "2 minutes. Honest answers." }} confirm={{ label: "Save retro", action: { type: "my4blocks.retro.save", payload: { source: "widget" }, loadingBehavior: "container" } }} cancel={{ label: "Plan tomorrow’s 4 Blocks", action: { type: "my4blocks.plan_tomorrow", payload: { source: "widget" } } }}>
+  <Col gap={12}>
+    <Title value="Daily Retro" />
+    <Caption value={dateLabel} color="secondary" />
+    <Divider />
+
+    <Col gap={10}>
+      <Col gap={6}>
+        <Text value="Block 1" weight="semibold" />
+        <Select name="b1Status" defaultValue={b1Status} options={[{ label: "Done", value: "done" }, { label: "Partial", value: "partial" }, { label: "Not done", value: "not_done" }]} />
+        <Text value={b1Note} color="secondary" editable={{ name: "b1Note", placeholder: "One-line note (optional)" }} />
+      </Col>
+
+      <Divider />
+
+      <Col gap={6}>
+        <Text value="Block 2" weight="semibold" />
+        <Select name="b2Status" defaultValue={b2Status} options={[{ label: "Done", value: "done" }, { label: "Partial", value: "partial" }, { label: "Not done", value: "not_done" }]} />
+        <Text value={b2Note} color="secondary" editable={{ name: "b2Note", placeholder: "One-line note (optional)" }} />
+      </Col>
+
+      <Divider />
+
+      <Col gap={6}>
+        <Text value="Block 3" weight="semibold" />
+        <Select name="b3Status" defaultValue={b3Status} options={[{ label: "Done", value: "done" }, { label: "Partial", value: "partial" }, { label: "Not done", value: "not_done" }]} />
+        <Text value={b3Note} color="secondary" editable={{ name: "b3Note", placeholder: "One-line note (optional)" }} />
+      </Col>
+
+      <Divider />
+
+      <Col gap={6}>
+        <Text value="Block 4" weight="semibold" />
+        <Select name="b4Status" defaultValue={b4Status} options={[{ label: "Done", value: "done" }, { label: "Partial", value: "partial" }, { label: "Not done", value: "not_done" }]} />
+        <Text value={b4Note} color="secondary" editable={{ name: "b4Note", placeholder: "One-line note (optional)" }} />
+      </Col>
+
+      <Divider />
+
+      <Col gap={6}>
+        <Text value="What got in the way?" weight="semibold" />
+        <Text value={friction} editable={{ name: "friction", placeholder: "Name the friction. Don’t moralize it." }} />
+      </Col>
+
+      <Col gap={6}>
+        <Text value="One win from today" weight="semibold" />
+        <Text value={win} editable={{ name: "win", placeholder: "Even a messy day has a win. Find it." }} />
+      </Col>
+    </Col>
+  </Col>
+</Card>`,
+
+  defaultState: {
+  "dateLabel": "Today",
+  "b1Status": "not_done",
+  "b1Note": "",
+  "b2Status": "not_done",
+  "b2Note": "",
+  "b3Status": "not_done",
+  "b3Note": "",
+  "b4Status": "not_done",
+  "b4Note": "",
+  "friction": "",
+  "win": ""
+},
+
+  schemaMode: "zod",
+
+  jsonSchema: {
+  "type": "object",
+  "properties": {
+    "dateLabel": {
+      "type": "string"
+    },
+    "b1Status": {
+      "type": "string"
+    },
+    "b1Note": {
+      "type": "string"
+    },
+    "b2Status": {
+      "type": "string"
+    },
+    "b2Note": {
+      "type": "string"
+    },
+    "b3Status": {
+      "type": "string"
+    },
+    "b3Note": {
+      "type": "string"
+    },
+    "b4Status": {
+      "type": "string"
+    },
+    "b4Note": {
+      "type": "string"
+    },
+    "friction": {
+      "type": "string"
+    },
+    "win": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "dateLabel",
+    "b1Status",
+    "b1Note",
+    "b2Status",
+    "b2Note",
+    "b3Status",
+    "b3Note",
+    "b4Status",
+    "b4Note",
+    "friction",
+    "win"
+  ],
+  "additionalProperties": false
+},
+
+  schema: "import { z } from \"zod\"\n\n// 🎭 The WidgetState — The Honest Mirror 🪞\n// No shame. Just signal.\nconst WidgetState = z.strictObject({\n  dateLabel: z.string(),\n\n  b1Status: z.string(),\n  b1Note: z.string(),\n\n  b2Status: z.string(),\n  b2Note: z.string(),\n\n  b3Status: z.string(),\n  b3Note: z.string(),\n\n  b4Status: z.string(),\n  b4Note: z.string(),\n\n  friction: z.string(),\n  win: z.string(),\n})\n\nexport default WidgetState\n",
+
+  states: [],
+  schemaValidity: "valid",
+  viewValidity: "valid",
+  defaultStateValidity: "valid",
+} as const;
