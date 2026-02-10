@@ -48,7 +48,8 @@ export async function initializeRAG(): Promise<void> {
 
       try {
         const localData = await import("../data/embeddings.json");
-        embeddingsData = localData.default || localData;
+        // 🎭 Type assertion to handle JSON import typing
+        embeddingsData = (localData.default || localData) as unknown as EmbeddingsDatabase;
         console.log("💎 Loaded embeddings from local data");
       } catch {
         console.log("🌙 No embeddings found, RAG will use keyword-only search");

@@ -69,7 +69,7 @@ export {
   type EmotionAnalysis,
 } from "./sentimentAnalysis";
 
-// 🤖 Local embeddings with Transformers.js (offline!)
+// 🤖 Local embeddings (stub for Vercel - actual uses OpenAI)
 export {
   initializeLocalEmbeddings,
   getLocalEmbedding,
