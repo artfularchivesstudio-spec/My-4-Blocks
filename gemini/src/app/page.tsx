@@ -26,11 +26,12 @@ export default function Home() {
               className="relative"
             >
               <div className="absolute inset-0 blur-xl bg-purple-500/20 rounded-full" />
-              <Image 
-                src="/logo.webp" 
-                alt="My 4 Blocks Logo" 
-                width={120} 
-                height={120} 
+              {/* 🎨 The Four Blocks Logo - Clean SVG */}
+              <Image
+                src="/logo-blocks.svg"
+                alt="My 4 Blocks Logo"
+                width={120}
+                height={120}
                 className="drop-shadow-sm relative z-10"
               />
             </motion.div>

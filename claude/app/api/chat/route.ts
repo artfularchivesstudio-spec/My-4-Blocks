@@ -21,22 +21,33 @@ export const maxDuration = 60;
  * We just pass through the messages and config.
  */
 export async function POST(req: Request) {
+  // 🔮 Check API key (shared API will also check, but fail fast)
+  if (!process.env.OPENAI_API_KEY) {
+    console.error('💥 OPENAI_API_KEY is missing!');
+    return new Response(
+      JSON.stringify({
+        error: 'Missing OPENAI_API_KEY',
+        hint: 'Set OPENAI_API_KEY in Vercel project env vars for production.',
+      }),
+      {
+        status: 500,
+        headers: { 'content-type': 'application/json' },
+      }
+    );
+  }
+
   try {
-    // 🔮 Check API key (shared API will also check, but fail fast)
-    if (!process.env.OPENAI_API_KEY) {
+    // 🎯 Parse incoming messages
+    const body = await req.json();
+    const { messages }: { messages: UIMessage[] } = body;
+
+    if (!messages || !Array.isArray(messages) || messages.length === 0) {
+      console.error('💥 Invalid messages payload:', JSON.stringify(body).substring(0, 200));
       return new Response(
-        JSON.stringify({
-          error: 'Missing OPENAI_API_KEY',
-          hint: 'Set OPENAI_API_KEY in Vercel project env vars for production.',
-        }),
-        {
-          status: 500,
-          headers: { 'content-type': 'application/json' },
-        }
+        JSON.stringify({ error: 'Invalid messages payload', received: typeof messages }),
+        { status: 400, headers: { 'content-type': 'application/json' } }
       );
     }
-
-    const { messages }: { messages: UIMessage[] } = await req.json();
 
     // 🌟 Configuration for this variant
     const config: ChatConfig = {
@@ -47,16 +58,23 @@ export async function POST(req: Request) {
     };
 
     console.log('🌐 ✨ CLAUDE PORTAL AWAKENS!');
-    return handleChatRequest(messages, config, req.signal);
+    console.log(`📨 Processing ${messages.length} messages`);
+
+    return await handleChatRequest(messages, config, req.signal);
 
   } catch (error) {
-    console.error('🌩️ Chat API error:', error);
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    // 🌩️ Catch any unhandled errors and report them
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    const errorStack = error instanceof Error ? error.stack : undefined;
+
+    console.error('💥 😭 CLAUDE CHAT API ERROR:', errorMessage);
+    if (errorStack) console.error('📜 Stack:', errorStack);
 
     return new Response(
       JSON.stringify({
-        error: 'An error occurred processing your request.',
-        details: errorMessage,
+        error: 'Internal server error',
+        message: errorMessage,
+        timestamp: new Date().toISOString(),
       }),
       {
         status: 500,

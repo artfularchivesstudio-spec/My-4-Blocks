@@ -10,3 +10,7 @@
 
 // 🎨 UI Components - The building blocks of our visual language
 export * from './ui'
+
+// 🎙️ Voice Mode Component - WebRTC voice interface
+export { VoiceMode, default as VoiceModeDefault } from './VoiceMode';
+export type { VoiceModeProps, VoiceState, TranscriptEntry } from './VoiceMode';

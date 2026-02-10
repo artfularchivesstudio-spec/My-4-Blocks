@@ -1,15 +1,16 @@
 'use client'
 
 import { useChat } from '@ai-sdk/react'
-import { useState, useEffect, useRef } from 'react'
-import { motion } from "framer-motion"
+import { useState, useEffect, useRef, useCallback } from 'react'
+import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronLeft, Send, Loader2, Flame, Cloud, Moon, Heart, Lightbulb, BookOpen } from "lucide-react"
+import { ChevronLeft, Send, Loader2, Flame, Cloud, Moon, Heart, Lightbulb, BookOpen, Mic, MicOff } from "lucide-react"
 import dynamic from 'next/dynamic'
 import { DotPattern } from "@/components/ui/dot-pattern"
 import { BlurFade } from "@/components/ui/blur-fade"
 import ReactMarkdown from 'react-markdown'
+import { VoiceMode, type VoiceState } from '../../shared/components'
 
 // Dynamically import Lottie to avoid SSR issues
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false })
@@ -59,8 +60,12 @@ export default function ChatPage() {
   // 🌐 Use default chat configuration (defaults to /api/chat)
   const { messages, sendMessage, status } = useChat()
   const isLoading = status === 'streaming' || status === 'submitted'
-  
+
   const messagesEndRef = useRef<HTMLDivElement>(null)
+
+  // 🎙️ Voice mode state - breathing orb vibes
+  const [voiceModeActive, setVoiceModeActive] = useState(false)
+  const [voiceState, setVoiceState] = useState<VoiceState>('idle')
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
@@ -99,6 +104,137 @@ export default function ChatPage() {
     } catch (err) {
       console.error("Error sending message:", err)
     }
+  }
+
+  /**
+   * 🎙️ Toggle Voice Mode - Switch between speaking and typing
+   */
+  const handleVoiceToggle = useCallback(() => {
+    setVoiceModeActive((prev) => !prev)
+  }, [])
+
+  /**
+   * 🌟 Voice session started - The sunrise awakens
+   */
+  const handleVoiceSessionStart = useCallback(() => {
+    console.log('🎙️ ✨ VOICE SESSION STARTED!')
+  }, [])
+
+  /**
+   * 🌙 Voice session ended - Sunset, peaceful
+   */
+  const handleVoiceSessionEnd = useCallback(() => {
+    console.log('🎙️ Voice session ended')
+    setVoiceState('idle')
+  }, [])
+
+  /**
+   * 📜 Voice transcript received
+   */
+  const handleVoiceTranscript = useCallback((text: string, role: 'user' | 'assistant') => {
+    console.log(`🎙️ [${role}]: ${text}`)
+  }, [])
+
+  /**
+   * 🌅 Sunrise-Inspired Voice Orb - Breathing animation style
+   *
+   * Matches the Lottie sunrise breathing animation aesthetic
+   */
+  const renderSunriseOrb = (state: VoiceState) => {
+    const stateColors = {
+      idle: { from: '#f97316', to: '#fb923c', glow: 'rgba(249, 115, 22, 0.3)' },
+      connecting: { from: '#3b82f6', to: '#60a5fa', glow: 'rgba(59, 130, 246, 0.4)' },
+      connected: { from: '#10b981', to: '#34d399', glow: 'rgba(16, 185, 129, 0.4)' },
+      listening: { from: '#8b5cf6', to: '#a78bfa', glow: 'rgba(139, 92, 246, 0.5)' },
+      speaking: { from: '#f59e0b', to: '#fbbf24', glow: 'rgba(245, 158, 11, 0.5)' },
+      error: { from: '#ef4444', to: '#f87171', glow: 'rgba(239, 68, 68, 0.4)' },
+    }
+
+    const colors = stateColors[state]
+
+    return (
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        style={{
+          position: 'relative',
+          width: 140,
+          height: 140,
+          borderRadius: '50%',
+          background: `linear-gradient(135deg, ${colors.from} 0%, ${colors.to} 100%)`,
+          boxShadow: `0 0 60px ${colors.glow}, 0 0 100px ${colors.glow}`,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        {/* Breathing pulse animation */}
+        <motion.div
+          animate={{
+            scale: state === 'idle' ? [1, 1.1, 1] : [1, 1.15, 1],
+            opacity: [0.6, 0.8, 0.6],
+          }}
+          transition={{
+            duration: state === 'speaking' ? 1.5 : 3,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            borderRadius: '50%',
+            background: `radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent)`,
+          }}
+        />
+
+        {/* Pulse rings for active states */}
+        {(state === 'listening' || state === 'speaking') && (
+          <>
+            <motion.div
+              animate={{ scale: [1, 1.4], opacity: [0.6, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              style={{
+                position: 'absolute',
+                inset: 0,
+                borderRadius: '50%',
+                border: `3px solid ${colors.from}`,
+              }}
+            />
+            <motion.div
+              animate={{ scale: [1, 1.4], opacity: [0.6, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, delay: 0.5 }}
+              style={{
+                position: 'absolute',
+                inset: 0,
+                borderRadius: '50%',
+                border: `3px solid ${colors.from}`,
+              }}
+            />
+          </>
+        )}
+
+        {/* State icon */}
+        <div style={{ position: 'relative', zIndex: 10 }}>
+          {state === 'connecting' && (
+            <Loader2 size={32} color="white" style={{ animation: 'spin 1s linear infinite' }} />
+          )}
+          {(state === 'connected' || state === 'listening' || state === 'idle') && (
+            <Mic size={32} color="white" />
+          )}
+          {state === 'speaking' && (
+            <motion.div
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 0.5, repeat: Infinity }}
+            >
+              <Send size={28} color="white" />
+            </motion.div>
+          )}
+          {state === 'error' && (
+            <MicOff size={32} color="white" />
+          )}
+        </div>
+      </motion.div>
+    )
   }
 
   return (
@@ -391,108 +527,190 @@ export default function ChatPage() {
       </div>
 
       {/* Input Area - Enhanced with safe-area-bottom for notched devices */}
-      <form onSubmit={handleSubmit} className="safe-area-bottom" style={{
+      <div className="safe-area-bottom" style={{
         padding: "clamp(16px, 3vw, 24px)",
         borderTop: "1px solid #e5e5e5",
         background: "linear-gradient(to top, #f8fafc, #fafafa)",
         position: "relative",
         zIndex: 2
       }}>
-        <div style={{
-          maxWidth: "min(800px, 100%)",
-          margin: "0 auto",
-          display: "flex",
-          gap: "clamp(10px, 2vw, 14px)",
-          alignItems: "center",
-          background: "white",
-          padding: "clamp(6px, 1vw, 8px)",
-          borderRadius: "16px",
-          border: "2px solid #e2e8f0",
-          boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(59, 130, 246, 0.05)",
-          transition: "all 0.3s ease"
-        }}>
-          {/* 🎯 The Hidden Label - Screen readers shall know thy purpose! */}
-          <label htmlFor="chat-input" className="sr-only">
-            Type your message
-          </label>
-          {/* 💬 The Thought Canvas - Where seekers articulate their inner world */}
-          <input
-            id="chat-input"
-            type="text"
-            value={input}
-            onChange={handleInputChange}
-            placeholder="Share what's on your mind..."
-            disabled={isLoading}
-            className="focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset"
-            style={{
-              flex: 1,
-              padding: "clamp(12px, 2vw, 16px) clamp(14px, 2.5vw, 20px)",
-              minHeight: "44px", // WCAG 2.5.5 touch target
-              borderRadius: "12px",
-              border: "none",
-              fontSize: "clamp(0.95rem, 2.2vw, 1.05rem)",
-              outline: "none",
-              background: "transparent",
-              color: "#1a1a1a"
-            }}
-          />
-          {/* 🚀 The Send Catalyst - Where thoughts transform into digital conversation */}
-          <button
-            type="submit"
-            disabled={isLoading || !input.trim()}
-            className="focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-            style={{
-              padding: "clamp(12px, 2vw, 14px) clamp(18px, 3.5vw, 24px)",
-              minHeight: "44px", // WCAG 2.5.5 touch target minimum
-              minWidth: "44px",
-              borderRadius: "12px",
-              background: isLoading || !input.trim()
-                ? "linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%)"
-                : "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)",
-              color: "white",
-              fontWeight: 600,
-              border: "none",
-              cursor: isLoading || !input.trim() ? "not-allowed" : "pointer",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "clamp(6px, 1.2vw, 8px)",
-              fontSize: "clamp(0.9rem, 2.2vw, 1rem)",
-              transition: "all 0.3s ease",
-              flexShrink: 0,
-              boxShadow: isLoading || !input.trim()
-                ? "none"
-                : "0 4px 15px rgba(59, 130, 246, 0.4), 0 2px 4px rgba(139, 92, 246, 0.3)",
-              transform: "scale(1)",
-              outline: "none" // Focus handled by className
-            }}
-            onMouseEnter={(e) => {
-              if (!isLoading && input.trim()) {
-                e.currentTarget.style.transform = "scale(1.05)"
-                e.currentTarget.style.boxShadow = "0 6px 20px rgba(59, 130, 246, 0.5), 0 4px 8px rgba(139, 92, 246, 0.4)"
-              }
-            }}
-            onMouseLeave={(e) => {
-              if (!isLoading && input.trim()) {
-                e.currentTarget.style.transform = "scale(1)"
-                e.currentTarget.style.boxShadow = "0 4px 15px rgba(59, 130, 246, 0.4), 0 2px 4px rgba(139, 92, 246, 0.3)"
-              }
-            }}
-          >
-            {isLoading ? (
-              <>
-                <Loader2 size={18} style={{ width: "clamp(16px, 2.5vw, 18px)", height: "clamp(16px, 2.5vw, 18px)", animation: "spin 1s linear infinite" }} />
-                <span className="hidden sm:inline">Thinking...</span>
-              </>
-            ) : (
-              <>
-                <Send size={18} style={{ width: "clamp(16px, 2.5vw, 18px)", height: "clamp(16px, 2.5vw, 18px)" }} />
-                <span className="hidden sm:inline">Send</span>
-              </>
-            )}
-          </button>
-        </div>
-      </form>
+        <AnimatePresence mode="wait">
+          {voiceModeActive ? (
+            /* 🎙️ Voice Mode - Sunrise breathing orb */
+            <motion.div
+              key="voice-mode"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              style={{
+                maxWidth: "min(800px, 100%)",
+                margin: "0 auto",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                padding: "clamp(16px, 3vw, 24px)"
+              }}
+            >
+              <VoiceMode
+                isActive={voiceModeActive}
+                onActiveChange={setVoiceModeActive}
+                onSessionStart={handleVoiceSessionStart}
+                onSessionEnd={handleVoiceSessionEnd}
+                onTranscript={handleVoiceTranscript}
+                showTranscript={false}
+                apiEndpoint="/api/realtime"
+                renderOrb={renderSunriseOrb}
+              />
+              <button
+                onClick={handleVoiceToggle}
+                style={{
+                  marginTop: '16px',
+                  padding: '8px 16px',
+                  fontSize: 'clamp(0.85rem, 2vw, 0.9rem)',
+                  color: '#64748b',
+                  background: 'transparent',
+                  border: 'none',
+                  cursor: 'pointer',
+                  transition: 'color 0.2s'
+                }}
+              >
+                Switch to text mode
+              </button>
+            </motion.div>
+          ) : (
+            /* ✍️ Text Input Mode */
+            <motion.form
+              key="text-mode"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              onSubmit={handleSubmit}
+            >
+              <div style={{
+                maxWidth: "min(800px, 100%)",
+                margin: "0 auto",
+                display: "flex",
+                gap: "clamp(10px, 2vw, 14px)",
+                alignItems: "center",
+                background: "white",
+                padding: "clamp(6px, 1vw, 8px)",
+                borderRadius: "16px",
+                border: "2px solid #e2e8f0",
+                boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(59, 130, 246, 0.05)",
+                transition: "all 0.3s ease"
+              }}>
+                {/* 🎯 The Hidden Label - Screen readers shall know thy purpose! */}
+                <label htmlFor="chat-input" className="sr-only">
+                  Type your message
+                </label>
+                {/* 💬 The Thought Canvas - Where seekers articulate their inner world */}
+                <input
+                  id="chat-input"
+                  type="text"
+                  value={input}
+                  onChange={handleInputChange}
+                  placeholder="Share what's on your mind..."
+                  disabled={isLoading}
+                  className="focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset"
+                  style={{
+                    flex: 1,
+                    padding: "clamp(12px, 2vw, 16px) clamp(14px, 2.5vw, 20px)",
+                    minHeight: "44px", // WCAG 2.5.5 touch target
+                    borderRadius: "12px",
+                    border: "none",
+                    fontSize: "clamp(0.95rem, 2.2vw, 1.05rem)",
+                    outline: "none",
+                    background: "transparent",
+                    color: "#1a1a1a"
+                  }}
+                />
+                {/* 🎙️ Voice Toggle Button - Sunrise aesthetic */}
+                <button
+                  type="button"
+                  onClick={handleVoiceToggle}
+                  disabled={isLoading}
+                  className="focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
+                  style={{
+                    padding: "clamp(12px, 2vw, 14px)",
+                    minHeight: "44px",
+                    minWidth: "44px",
+                    borderRadius: "12px",
+                    background: "linear-gradient(135deg, #f97316 0%, #fb923c 100%)",
+                    color: "white",
+                    border: "none",
+                    cursor: isLoading ? "not-allowed" : "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    transition: "all 0.3s ease",
+                    flexShrink: 0,
+                    boxShadow: "0 4px 15px rgba(249, 115, 22, 0.4)",
+                    opacity: isLoading ? 0.5 : 1,
+                    outline: "none"
+                  }}
+                >
+                  <Mic size={20} style={{ width: "clamp(18px, 2.5vw, 20px)", height: "clamp(18px, 2.5vw, 20px)" }} />
+                </button>
+                {/* 🚀 The Send Catalyst - Where thoughts transform into digital conversation */}
+                <button
+                  type="submit"
+                  disabled={isLoading || !input.trim()}
+                  className="focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                  style={{
+                    padding: "clamp(12px, 2vw, 14px) clamp(18px, 3.5vw, 24px)",
+                    minHeight: "44px", // WCAG 2.5.5 touch target minimum
+                    minWidth: "44px",
+                    borderRadius: "12px",
+                    background: isLoading || !input.trim()
+                      ? "linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%)"
+                      : "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)",
+                    color: "white",
+                    fontWeight: 600,
+                    border: "none",
+                    cursor: isLoading || !input.trim() ? "not-allowed" : "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "clamp(6px, 1.2vw, 8px)",
+                    fontSize: "clamp(0.9rem, 2.2vw, 1rem)",
+                    transition: "all 0.3s ease",
+                    flexShrink: 0,
+                    boxShadow: isLoading || !input.trim()
+                      ? "none"
+                      : "0 4px 15px rgba(59, 130, 246, 0.4), 0 2px 4px rgba(139, 92, 246, 0.3)",
+                    transform: "scale(1)",
+                    outline: "none" // Focus handled by className
+                  }}
+                  onMouseEnter={(e) => {
+                    if (!isLoading && input.trim()) {
+                      e.currentTarget.style.transform = "scale(1.05)"
+                      e.currentTarget.style.boxShadow = "0 6px 20px rgba(59, 130, 246, 0.5), 0 4px 8px rgba(139, 92, 246, 0.4)"
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (!isLoading && input.trim()) {
+                      e.currentTarget.style.transform = "scale(1)"
+                      e.currentTarget.style.boxShadow = "0 4px 15px rgba(59, 130, 246, 0.4), 0 2px 4px rgba(139, 92, 246, 0.3)"
+                    }
+                  }}
+                >
+                  {isLoading ? (
+                    <>
+                      <Loader2 size={18} style={{ width: "clamp(16px, 2.5vw, 18px)", height: "clamp(16px, 2.5vw, 18px)", animation: "spin 1s linear infinite" }} />
+                      <span className="hidden sm:inline">Thinking...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send size={18} style={{ width: "clamp(16px, 2.5vw, 18px)", height: "clamp(16px, 2.5vw, 18px)" }} />
+                      <span className="hidden sm:inline">Send</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </motion.form>
+          )}
+        </AnimatePresence>
+      </div>
 
       <style jsx>{`
         @keyframes spin {

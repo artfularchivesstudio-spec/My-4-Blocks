@@ -5,11 +5,18 @@ import React from "react"
 import { useState, useRef, useEffect, useImperativeHandle, forwardRef } from 'react'
 import { cn } from '@/lib/utils'
 import { Send, Loader2 } from 'lucide-react'
+import { VoiceToggle, type VoiceToggleState } from './voice-toggle'
 
 interface ChatInputProps {
   onSend: (message: string) => void
   disabled?: boolean
   placeholder?: string
+  /** Whether voice mode is active */
+  voiceActive?: boolean
+  /** Current voice connection state */
+  voiceState?: VoiceToggleState
+  /** Callback when voice toggle is clicked */
+  onVoiceToggle?: () => void
 }
 
 /**
@@ -31,7 +38,14 @@ export interface ChatInputHandle {
  */
 export const ChatInput = forwardRef<ChatInputHandle, ChatInputProps>(
   function ChatInput(
-    { onSend, disabled, placeholder = "Share what's on your mind..." },
+    {
+      onSend,
+      disabled,
+      placeholder = "Share what's on your mind...",
+      voiceActive = false,
+      voiceState = 'idle',
+      onVoiceToggle,
+    },
     ref
   ) {
     const [input, setInput] = useState('')
@@ -99,6 +113,16 @@ export const ChatInput = forwardRef<ChatInputHandle, ChatInputProps>(
               'min-h-[52px] sm:min-h-[56px] max-h-[200px]'
             )}
           />
+          {/* 🎙️ Voice Toggle - The Mystical Mode Switch */}
+          {onVoiceToggle && (
+            <VoiceToggle
+              state={voiceState}
+              isActive={voiceActive}
+              onToggle={onVoiceToggle}
+              disabled={disabled}
+              className="mr-1 mb-2"
+            />
+          )}
           <button
             type="submit"
             disabled={!input.trim() || disabled}

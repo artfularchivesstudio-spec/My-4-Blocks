@@ -11,8 +11,14 @@
  */
 
 import { openai } from '@ai-sdk/openai';
-// 🎭 AI SDK v4 uses convertToCoreMessages
-import { streamText, convertToCoreMessages, type UIMessage, type CoreMessage } from 'ai';
+// 🎭 AI SDK v6 uses streamText with messages directly
+import { streamText, type UIMessage } from 'ai';
+
+// 🎯 Define CoreMessage type inline for AI SDK v6 compatibility
+type CoreMessage = {
+  role: 'user' | 'assistant' | 'system';
+  content: string;
+};
 import {
   loadEmbeddings,
   findRelevantWisdom,
@@ -166,19 +172,24 @@ export async function handleChatRequest(
   }
 
   // 🌊 Stream the response
-  // 🎭 AI SDK v4 uses convertToCoreMessages
-  const coreMessages = await convertToCoreMessages(messages);
+  // 🎭 Convert UIMessages to CoreMessages manually (AI SDK v6 compatible)
+  const coreMessages: CoreMessage[] = messages.map((msg) => ({
+    role: msg.role as 'user' | 'assistant',
+    content: extractMessageContent(msg),
+  }));
+
   const result = streamText({
-    model: openai(opts.model) as any,
+    model: openai(opts.model),
     system: systemPrompt,
     messages: coreMessages,
     abortSignal,
     temperature: opts.temperature,
-    maxTokens: opts.maxTokens,
+    maxOutputTokens: opts.maxTokens, // 🎭 AI SDK v6 uses maxOutputTokens
   });
 
-  // 🎭 AI SDK v4 uses toDataStreamResponse
-  return result.toDataStreamResponse();
+  // 🎭 Return UI message stream response for useChat compatibility
+  // AI SDK v6 renamed toDataStreamResponse() to toUIMessageStreamResponse()
+  return result.toUIMessageStreamResponse();
 }
 
 /**

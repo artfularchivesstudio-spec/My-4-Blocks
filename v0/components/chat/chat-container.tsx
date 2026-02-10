@@ -1,11 +1,13 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { useChat } from '@ai-sdk/react'
 import { ChatMessage } from './chat-message'
 import { ChatInput, type ChatInputHandle } from './chat-input'
 import { SuggestedPrompts } from './suggested-prompts'
 import { WelcomeHeader } from './welcome-header'
+import { VoiceMode, type VoiceState as VoiceModeState } from '../../shared/components'
+import type { VoiceToggleState } from './voice-toggle'
 import { cn } from '@/lib/utils'
 import { Sparkles, ArrowDown } from 'lucide-react'
 
@@ -22,6 +24,17 @@ const THINKING_MESSAGES = [
  * Manages streaming messages, auto-scroll behavior, and layout so the input
  * stays visible (especially on mobile). Cozy, steady, and very un-jerky. ✨
  */
+/**
+ * 🎙️ Map VoiceMode states to VoiceToggle states
+ *
+ * The toggle button cares about: idle, connecting, connected, error
+ * VoiceMode has more granular states: idle, connecting, connected, listening, speaking, error
+ */
+function mapVoiceState(state: VoiceModeState): VoiceToggleState {
+  if (state === 'listening' || state === 'speaking') return 'connected';
+  return state as VoiceToggleState;
+}
+
 export function ChatContainer() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
@@ -34,10 +47,12 @@ export function ChatContainer() {
   const [showScrollToLatest, setShowScrollToLatest] = useState(false)
   const [pulseScrollButton, setPulseScrollButton] = useState(false)
 
-  // 🌐 AI SDK v4 uses default transport (no explicit config needed)
-  const { messages, sendMessage, status } = useChat({
-    api: '/api/chat',
-  })
+  // 🎙️ Voice mode state - the vocal manifestation of wisdom
+  const [voiceModeActive, setVoiceModeActive] = useState(false)
+  const [voiceState, setVoiceState] = useState<VoiceModeState>('idle')
+
+  // 🌐 AI SDK v6 uses default configuration - /api/chat by default
+  const { messages, sendMessage, status } = useChat()
 
   const isLoading = status === 'streaming' || status === 'submitted'
   const streamingAssistantMessageId =
@@ -169,6 +184,44 @@ export function ChatContainer() {
     sendMessage({ text })
   }
 
+  /**
+   * 🎙️ Toggle Voice Mode - Switch between speaking and typing
+   *
+   * Like choosing between singing your feelings or writing them down.
+   * Both are valid expressions of the soul! 🎭✨
+   */
+  const handleVoiceToggle = useCallback(() => {
+    setVoiceModeActive((prev) => !prev)
+  }, [])
+
+  /**
+   * 🌟 Handle Voice Session Start - The portal opens
+   */
+  const handleVoiceSessionStart = useCallback(() => {
+    console.log('🎙️ ✨ VOICE SESSION STARTED!')
+    setHasStarted(true) // Show conversation area
+  }, [])
+
+  /**
+   * 🌙 Handle Voice Session End - The portal closes
+   */
+  const handleVoiceSessionEnd = useCallback(() => {
+    console.log('🎙️ Voice session ended')
+    setVoiceState('idle')
+  }, [])
+
+  /**
+   * 📜 Handle Voice Transcript - Words materialize from thin air
+   *
+   * When the voice speaks or listens, transcripts appear
+   * like whispers becoming visible in the cosmic ether. 🌬️
+   */
+  const handleVoiceTranscript = useCallback((text: string, role: 'user' | 'assistant') => {
+    console.log(`🎙️ [${role}]: ${text}`)
+    // Transcripts are displayed in the VoiceMode component
+    // Could be added to messages array if desired
+  }, [])
+
   return (
     <div className="flex flex-col h-full min-h-0">
       {/* Messages area */}
@@ -238,7 +291,28 @@ export function ChatContainer() {
         )}
       >
         <div className="max-w-3xl mx-auto">
-          <ChatInput ref={chatInputRef} onSend={handleSendMessage} disabled={isLoading} />
+          {/* 🎙️ Voice Mode Interface - When the orbs awaken */}
+          {voiceModeActive ? (
+            <VoiceMode
+              isActive={voiceModeActive}
+              onActiveChange={setVoiceModeActive}
+              onSessionStart={handleVoiceSessionStart}
+              onSessionEnd={handleVoiceSessionEnd}
+              onTranscript={handleVoiceTranscript}
+              showTranscript={true}
+              apiEndpoint="/api/realtime"
+              className="py-4"
+            />
+          ) : (
+            <ChatInput
+              ref={chatInputRef}
+              onSend={handleSendMessage}
+              disabled={isLoading}
+              voiceActive={voiceModeActive}
+              voiceState={mapVoiceState(voiceState)}
+              onVoiceToggle={handleVoiceToggle}
+            />
+          )}
         </div>
       </div>
 
