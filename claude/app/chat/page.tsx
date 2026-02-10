@@ -56,10 +56,8 @@ const suggestedPrompts = [
 export default function ChatPage() {
   const [input, setInput] = useState('')
   const [lottieData, setLottieData] = useState(null)
-  // 🌐 Simple API configuration
-  const { messages, sendMessage, status } = useChat({
-    api: '/api/chat',
-  })
+  // 🌐 Use default chat configuration (defaults to /api/chat)
+  const { messages, sendMessage, status } = useChat()
   const isLoading = status === 'streaming' || status === 'submitted'
   
   const messagesEndRef = useRef<HTMLDivElement>(null)

@@ -30,10 +30,8 @@ const WISDOM_SEEDS = [
 export const ChatInterface = () => {
   // 🎨 Manual input state for this version of the AI SDK
   const [input, setInput] = useState('');
-  // 🌐 Simple API configuration
-  const { messages, sendMessage, status, error: chatError } = useChat({
-    api: '/api/chat',
-  });
+  // 🌐 Use default chat configuration (defaults to /api/chat)
+  const { messages, sendMessage, status, error: chatError } = useChat();
   const isLoading = status === 'streaming' || status === 'submitted';
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
