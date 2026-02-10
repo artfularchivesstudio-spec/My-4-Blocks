@@ -52,7 +52,9 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# Python lib folders (but not our Next.js lib folder)
+# lib/
+!lib/
 !shared/lib/
 lib64/
 parts/

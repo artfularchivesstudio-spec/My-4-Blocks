@@ -17,7 +17,7 @@ import {
   retrieveKeywordOnly,
   formatContextForPrompt,
   type EmbeddingsDatabase,
-} from "../../../shared/lib";
+} from "../../shared/lib";
 
 // 🔮 Track if embeddings are loaded
 let embeddingsLoaded = false;
