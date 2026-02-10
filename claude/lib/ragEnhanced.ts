@@ -39,7 +39,8 @@ export async function initializeRAG(): Promise<void> {
 
     try {
       const data = await import("../shared/data/embeddings.json");
-      embeddingsData = data.default || data;
+      // 🎭 Type assertion to handle JSON import typing
+      embeddingsData = (data.default || data) as unknown as EmbeddingsDatabase;
       console.log("💎 Loaded embeddings from shared/data");
     } catch {
       // 🌙 Fallback to local embeddings for backwards compatibility

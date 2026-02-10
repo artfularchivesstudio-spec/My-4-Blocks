@@ -9,8 +9,8 @@
 
 import { handleChatRequest, type ChatConfig } from '../../../../shared/api/chat';
 
-// 🌟 Set the runtime to edge for maximum performance
-export const runtime = 'edge';
+// 🌟 Using nodejs runtime due to embeddings size (edge limit is 1MB)
+export const runtime = 'nodejs';
 export const maxDuration = 60;
 
 /**
