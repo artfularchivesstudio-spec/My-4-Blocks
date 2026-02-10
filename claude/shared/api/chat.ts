@@ -11,9 +11,8 @@
  */
 
 import { openai } from '@ai-sdk/openai';
-// 🎭 AI SDK v4+ renamed convertToCoreMessages to convertToModelMessages
-// CoreMessage was also renamed/removed - we don't actually need it
-import { streamText, convertToModelMessages, type UIMessage } from 'ai';
+// 🎭 AI SDK v6 uses streamText with messages directly
+import { streamText, type UIMessage, type CoreMessage } from 'ai';
 import {
   loadEmbeddings,
   findRelevantWisdom,
@@ -167,20 +166,23 @@ export async function handleChatRequest(
   }
 
   // 🌊 Stream the response
-  // Cast model to any to handle AI SDK version differences between shared and gemini
-  // convertToModelMessages is async in newer versions of the AI SDK
-  const modelMessages = await convertToModelMessages(messages);
+  // 🎭 Convert UIMessages to CoreMessages manually (AI SDK v6 compatible)
+  const coreMessages: CoreMessage[] = messages.map((msg) => ({
+    role: msg.role as 'user' | 'assistant',
+    content: extractMessageContent(msg),
+  }));
+
   const result = streamText({
-    model: openai(opts.model) as any,
+    model: openai(opts.model),
     system: systemPrompt,
-    messages: modelMessages,
+    messages: coreMessages,
     abortSignal,
     temperature: opts.temperature,
-    maxOutputTokens: opts.maxTokens, // 🎭 Renamed from maxTokens in AI SDK v4+
+    maxTokens: opts.maxTokens,
   });
 
-  // 🎭 Method renamed from toDataStreamResponse in AI SDK v4+
-  return result.toTextStreamResponse();
+  // 🎭 AI SDK v6 uses toDataStreamResponse for the data stream protocol
+  return result.toDataStreamResponse();
 }
 
 /**
