@@ -184,7 +184,7 @@ export async function handleChatRequest(
     messages: coreMessages,
     abortSignal,
     temperature: opts.temperature,
-    maxTokens: opts.maxTokens,
+    maxOutputTokens: opts.maxTokens, // 🎭 AI SDK v6 uses maxOutputTokens
   });
 
   // 🎭 AI SDK v6 uses toDataStreamResponse for the data stream protocol
