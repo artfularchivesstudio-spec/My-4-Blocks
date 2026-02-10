@@ -80,18 +80,25 @@ export function Header({ onReset }: HeaderProps) {
       className={cn(
         'sticky top-0 z-50',
         'border-b border-border bg-background/80 backdrop-blur-md',
-        'transition-all duration-300'
+        'transition-all duration-300',
+        'safe-area-top' // 📱 Protects header from iPhone notch/Dynamic Island
       )}
     >
       {/* 🏛️ The Grand Container - Holding Our Navigation Universe Together */}
       <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* 🎨 The Sacred Logo - Four Blocks of Emotional Wisdom */}
-        <a href="/" className="flex items-center gap-3 group">
-          <div className="grid grid-cols-2 gap-0.5 transition-transform group-hover:scale-110">
-            <div className="h-2.5 w-2.5 rounded-sm bg-anger" />
-            <div className="h-2.5 w-2.5 rounded-sm bg-anxiety" />
-            <div className="h-2.5 w-2.5 rounded-sm bg-depression" />
-            <div className="h-2.5 w-2.5 rounded-sm bg-guilt" />
+        {/* 🎨 The Sacred Logo - Four Blocks of Emotional Wisdom
+         * Each block now has aria-label and title for screen readers and tooltips!
+         * Because color alone should never be the only identifier. 🌈♿ */}
+        <a href="/" className="flex items-center gap-3 group" aria-label="My 4 Blocks home">
+          <div
+            className="grid grid-cols-2 gap-0.5 transition-transform group-hover:scale-110"
+            role="img"
+            aria-label="Four emotional blocks: Anger, Anxiety, Depression, and Guilt"
+          >
+            <div className="h-2.5 w-2.5 rounded-sm bg-anger" aria-hidden="true" title="Anger" />
+            <div className="h-2.5 w-2.5 rounded-sm bg-anxiety" aria-hidden="true" title="Anxiety" />
+            <div className="h-2.5 w-2.5 rounded-sm bg-depression" aria-hidden="true" title="Depression" />
+            <div className="h-2.5 w-2.5 rounded-sm bg-guilt" aria-hidden="true" title="Guilt" />
           </div>
           <span className="font-serif text-xl font-semibold text-foreground">
             My 4 Blocks

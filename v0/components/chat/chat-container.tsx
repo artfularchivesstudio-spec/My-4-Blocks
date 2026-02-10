@@ -84,13 +84,20 @@ export function ChatContainer() {
    * 🧭 The Gentle Autoscroll - keeps the latest reply in view
    *
    * We only auto-scroll if the user is already near the bottom, which avoids
-   * the “yo-yo scroll” effect while streaming. Calm UX, no whiplash. 🎢❌
+   * the "yo-yo scroll" effect while streaming. Calm UX, no whiplash. 🎢❌
+   *
+   * Uses smooth scrolling after streaming completes, instant during active stream
+   * to keep up with rapid token arrival. The best of both worlds! 🌟
    */
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current
     if (!scrollContainer || !shouldAutoScrollRef.current) return
 
+    // 🎯 During streaming: instant scroll keeps up with tokens
+    // 🎯 After streaming: smooth scroll feels polished
     const behavior = isLoading ? 'auto' : 'smooth'
+
+    // Using requestAnimationFrame for paint-sync, then scrolling
     requestAnimationFrame(() => {
       scrollContainer.scrollTo({
         top: scrollContainer.scrollHeight,
@@ -98,6 +105,22 @@ export function ChatContainer() {
       })
     })
   }, [messages, isLoading])
+
+  /**
+   * 🎯 Focus the input when streaming completes
+   *
+   * After the assistant finishes responding, we gently return focus
+   * to the input so the user can continue their conversation flow. ✨
+   */
+  useEffect(() => {
+    const wasStreaming = previousStatusRef.current === 'streaming'
+    const isNowReady = status === 'ready'
+
+    if (wasStreaming && isNowReady) {
+      // Small delay to let the UI settle before focusing
+      setTimeout(() => chatInputRef.current?.focus(), 100)
+    }
+  }, [status])
 
   // 🎯 Track if the user is near the bottom so we don't hijack their scroll.
   const handleScroll = () => {
@@ -165,7 +188,9 @@ export function ChatContainer() {
               />
             </div>
           ) : (
-            <div className="space-y-6">
+            /* 🎭 The Live Message Arena - aria-live announces new messages to screen readers!
+             * Using "polite" so it doesn't interrupt, and atomic="false" so only new content is read */
+            <div className="space-y-6" aria-live="polite" aria-atomic="false" role="log">
               {messages.map((message) => (
                 <ChatMessage
                   key={message.id}
@@ -204,15 +229,16 @@ export function ChatContainer() {
         </div>
       </div>
 
-      {/* Input area */}
+      {/* Input area - with safe-area-bottom for notched devices */}
       <div
         className={cn(
           'sticky bottom-0 z-10 border-t border-border bg-background/90 backdrop-blur-sm',
-          'px-3 sm:px-4 py-3 sm:py-4'
+          'px-3 sm:px-4 py-3 sm:py-4',
+          'safe-area-bottom' // 📱 Protects input from iPhone home indicator
         )}
       >
         <div className="max-w-3xl mx-auto">
-          <ChatInput onSend={handleSendMessage} disabled={isLoading} />
+          <ChatInput ref={chatInputRef} onSend={handleSendMessage} disabled={isLoading} />
         </div>
       </div>
 

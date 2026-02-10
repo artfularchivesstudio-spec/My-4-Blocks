@@ -69,6 +69,10 @@ export const ChatInput = forwardRef<ChatInputHandle, ChatInputProps>(
 
     return (
       <form onSubmit={handleSubmit} className="relative">
+        {/* 🎯 The Hidden Label - Screen readers rejoice, sighted users none the wiser! */}
+        <label htmlFor="chat-input" className="sr-only">
+          Type your message
+        </label>
         <div
           className={cn(
             'relative flex items-end gap-2 rounded-2xl',
@@ -79,6 +83,7 @@ export const ChatInput = forwardRef<ChatInputHandle, ChatInputProps>(
           )}
         >
           <textarea
+            id="chat-input"
             ref={textareaRef}
             value={input}
             onChange={(e) => setInput(e.target.value)}

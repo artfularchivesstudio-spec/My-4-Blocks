@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2022"],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "jsx": "react-jsx",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -15,6 +16,6 @@
     "noEmit": true,
     "typeRoots": ["./types", "./node_modules/@types"]
   },
-  "include": ["lib/**/*", "api/**/*", "types/**/*"],
+  "include": ["lib/**/*", "api/**/*", "types/**/*", "components/**/*"],
   "exclude": ["node_modules", "data"]
 }

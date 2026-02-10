@@ -92,3 +92,6 @@ export type {
   HybridSearchOptions,
   RetrievalResult,
 } from "./types";
+
+// 🎨 Utilities (for shared UI components)
+export { cn } from "./utils";
