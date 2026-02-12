@@ -104,13 +104,14 @@ export function formatContextForPrompt(
       let header = `[Source ${idx + 1}`;
 
       if (includeMetadata) {
-        header += ` - ${chunk.metadata.title} (${chunk.block_type})`;
+        header += ` - ${chunk.metadata?.title ?? chunk.text.slice(0, 40) + "..."} (${chunk.block_type})`;
       }
       header += `]`;
 
       // 🎨 Include related chunks as "See also" for context expansion hints
-      const seeAlso = chunk.metadata.related.length > 0
-        ? `\nSee also: ${chunk.metadata.related.slice(0, 3).join(", ")}`
+      const related = chunk.metadata?.related ?? [];
+      const seeAlso = related.length > 0
+        ? `\nSee also: ${related.slice(0, 3).join(", ")}`
         : "";
 
       return `${header}:\n${chunk.text}${seeAlso}`;

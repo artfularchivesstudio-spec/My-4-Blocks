@@ -105,7 +105,7 @@ export function formatExpandedContext(
     sections.push("## Primary Sources");
     mainChunks.forEach((item, idx) => {
       sections.push(
-        `\n### [${idx + 1}] ${item.chunk.metadata.title} (${item.chunk.block_type})\n${item.chunk.text}`
+        `\n### [${idx + 1}] ${item.chunk.metadata?.title ?? item.chunk.text.slice(0, 50) + "..."} (${item.chunk.block_type})\n${item.chunk.text}`
       );
     });
   }
@@ -115,7 +115,7 @@ export function formatExpandedContext(
     sections.push("\n## Related Context");
     relatedChunks.forEach((chunk, idx) => {
       sections.push(
-        `\n### [Related ${idx + 1}] ${chunk.metadata.title}\n${chunk.text}`
+        `\n### [Related ${idx + 1}] ${chunk.metadata?.title ?? chunk.text.slice(0, 50) + "..."}\n${chunk.text}`
       );
     });
   }

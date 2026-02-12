@@ -1,0 +1,33 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'actorBkg': '#FEF3C7',
+    'actorBorder': '#F59E0B',
+    'actorTextColor': '#92400E',
+    'signalColor': '#64748B',
+    'signalTextColor': '#334155',
+    'noteBkgColor': '#E8F4FD',
+    'noteBorderColor': '#2563EB',
+    'noteTextColor': '#1E3A5F',
+    'fontSize': '13px'
+  }
+}}%%
+sequenceDiagram
+    participant U as User
+    participant M as Mic
+    participant W as WebRTC
+    participant O as OpenAI
+    participant S as Speaker
+
+    U->>M: Speak
+    M->>W: PCM 24kHz
+
+    rect rgb(232, 244, 253)
+        Note over W,O: Realtime API
+        W->>O: Audio stream
+        O->>O: Whisper + GPT-4o + TTS
+        O-->>W: Audio response
+    end
+
+    W-->>S: Play
+    S-->>U: Hear response

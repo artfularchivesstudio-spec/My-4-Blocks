@@ -1,0 +1,25 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#E8F4FD',
+    'primaryBorderColor': '#2563EB',
+    'lineColor': '#64748B',
+    'fontSize': '12px'
+  }
+}}%%
+flowchart LR
+    Q["Query"] --> E["Embed"]
+    E --> SEM["Semantic<br/>70%"]
+    E --> KEY["Keyword<br/>30%"]
+    SEM --> M["Merge"]
+    KEY --> M
+    M --> B["Boost<br/>+20%"]
+    B --> T["Top 5"]
+
+    style Q fill:#FEF3C7,stroke:#F59E0B,stroke-width:2px
+    style E fill:#E8F4FD,stroke:#2563EB,stroke-width:1px
+    style SEM fill:#F0FDF4,stroke:#22C55E,stroke-width:1px
+    style KEY fill:#F0FDF4,stroke:#22C55E,stroke-width:1px
+    style M fill:#E8F4FD,stroke:#2563EB,stroke-width:1px
+    style B fill:#E8F4FD,stroke:#2563EB,stroke-width:1px
+    style T fill:#DCFCE7,stroke:#16A34A,stroke-width:2px

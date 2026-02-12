@@ -126,9 +126,9 @@ export function keywordSearch(
 
     // 📖 Combine searchable text from multiple fields
     const contentLower = chunk.text.toLowerCase();
-    const titleLower = chunk.metadata.title.toLowerCase();
-    const keywordsStr = chunk.metadata.keywords.join(" ").toLowerCase();
-    const tagsStr = chunk.metadata.tags.join(" ").toLowerCase();
+    const titleLower = (chunk.metadata?.title ?? "").toLowerCase();
+    const keywordsStr = (chunk.metadata?.keywords ?? []).join(" ").toLowerCase();
+    const tagsStr = (chunk.metadata?.tags ?? []).join(" ").toLowerCase();
 
     for (const term of searchTerms) {
       // 🌶️ Emotion keywords get 2x multiplier - they're the spicy stuff!

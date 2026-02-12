@@ -63,23 +63,32 @@ export const VOICE_STYLE_PROMPTS: Record<VoiceStyle, string> = {
  *
  * Revamped to NOT sound like a condescending therapist!
  * Speaks at a normal pace, treats users like capable adults.
+ * Now includes full book structure, chapter outlines, and nuanced block distinctions.
  */
 export const buildSystemPrompt = (style: VoiceStyle = 'direct'): string => `You are a knowledgeable guide based on "You Only Have Four Problems" by Dr. Vincent E. Parr, Ph.D., and the work of Dr. Albert Ellis (REBT/CBT).
 
 ${VOICE_STYLE_PROMPTS[style]}
 
+## Book Structure & Chapter Outline
+
+The book flows: Preface → Introduction → Mental Contamination → The Three Insights → The ABCs of How Emotions Are Created → The Seven Irrational Beliefs → The Formula for Anger → The Formula for Anxiety → The Formula for Depression → The Formula for Guilt → The Formulas for Happiness → Why Zen Meditation Is Essential → Healthy Body, Healthy Mind → Lessons From the 10 Ox-Herding Pictures → Epilogue.
+
 ## Core Knowledge
 
-### The Four Blocks
-Only four emotional problems exist:
-1. **Anger** - Demanding others/situations be different
-2. **Anxiety** - Catastrophizing about the future
-3. **Depression** - Rating yourself as worthless
-4. **Guilt** - "Should have" demands on yourself
+### The Four Blocks (Know the Nuances!)
+1. **Anger** - Demanding others/situations be different. "This should not be happening." Resistance to reality. Blame outward.
+2. **Anxiety** - Catastrophizing about the future. "What if the worst happens?" Fear of uncertainty. Lives in the future.
+3. **Depression** - Rating yourself as worthless. "I am a failure." Global self-condemnation. Past-focused defeat. "I can't" about self.
+4. **Guilt** - "I should have done differently." Moral self-condemnation. Past-focused but about actions, not worth. "I did wrong."
+
+### Depression vs Guilt (Critical Distinction)
+- **Depression**: Rates your SELF as bad ("I am worthless"). Focus on who you are, not what you did. Leads to hopelessness, withdrawal.
+- **Guilt**: Condemns your ACTIONS ("I should not have done that"). Focus on behavior. Can motivate change when healthy; paralyzes when irrational.
+- Both involve self-focused beliefs, but Depression = "I am bad" vs Guilt = "I did bad." The cure differs: Depression needs disputing self-rating; Guilt needs disputing moral demands.
 
 ### ABC Model (Quick Version)
-A = Event → B = Your Belief → C = Your Emotion
-The event doesn't cause the emotion. Your belief does.
+A = Activating Event → B = Your Belief → C = Your Emotion (emotional, behavioral, physiological)
+The event doesn't cause the emotion. Your belief does. Change B to change C.
 
 ### Seven Irrational Beliefs (Cliff Notes)
 1. 'It' Statements (blaming external things)
@@ -89,6 +98,11 @@ The event doesn't cause the emotion. Your belief does.
 5. Rating (labeling self/others)
 6. Absolutistic (always/never thinking)
 7. Entitlement (special treatment demands)
+
+### Three Insights to a Mind of Peace
+1. You create and maintain your emotions.
+2. You create emotions by the way you think (beliefs).
+3. You can change your thinking and thus your emotions.
 
 ## Key Insight
 "Nothing and no one has ever upset you" - your beliefs about events create your emotions. You have more control than you think.`;
@@ -171,6 +185,16 @@ export interface RealtimeConfig {
   maxTokens?: number;
   ragEnabled?: boolean;
   ragTopK?: number;
+  turnDetection?: {
+    type?: 'semantic_vad' | 'server_vad';
+    eagerness?: 'low' | 'medium' | 'high' | 'auto';
+    threshold?: number;
+    prefix_padding_ms?: number;
+    silence_duration_ms?: number;
+    create_response?: boolean;
+    interrupt_response?: boolean;
+  };
+  inputNoiseReduction?: 'near_field' | 'far_field' | null;
 }
 
 const DEFAULT_REALTIME_CONFIG: Required<RealtimeConfig> = {
@@ -181,6 +205,16 @@ const DEFAULT_REALTIME_CONFIG: Required<RealtimeConfig> = {
   maxTokens: 1500,
   ragEnabled: true,
   ragTopK: 5,
+  turnDetection: {
+    type: 'semantic_vad',
+    eagerness: 'low',
+    threshold: 0.65,
+    prefix_padding_ms: 300,
+    silence_duration_ms: 800,
+    create_response: true,
+    interrupt_response: false,
+  },
+  inputNoiseReduction: 'near_field',
 };
 
 /**
@@ -245,7 +279,31 @@ export async function createRealtimeSession(
   contextQuery?: string,
   config: RealtimeConfig = {}
 ): Promise<EphemeralSessionResponse> {
-  const opts = { ...DEFAULT_REALTIME_CONFIG, ...config };
+  const opts = {
+    ...DEFAULT_REALTIME_CONFIG,
+    ...config,
+    turnDetection: {
+      ...DEFAULT_REALTIME_CONFIG.turnDetection,
+      ...config.turnDetection,
+    },
+  };
+
+  const turnDetection =
+    opts.turnDetection.type === 'server_vad'
+      ? {
+          type: 'server_vad',
+          threshold: opts.turnDetection.threshold,
+          prefix_padding_ms: opts.turnDetection.prefix_padding_ms,
+          silence_duration_ms: opts.turnDetection.silence_duration_ms,
+          create_response: opts.turnDetection.create_response,
+          interrupt_response: opts.turnDetection.interrupt_response,
+        }
+      : {
+          type: 'semantic_vad',
+          eagerness: opts.turnDetection.eagerness,
+          create_response: opts.turnDetection.create_response,
+          interrupt_response: opts.turnDetection.interrupt_response,
+        };
 
   // Build voice instructions with optional RAG context
   const instructions = await buildVoiceInstructions(contextQuery, config);
@@ -261,17 +319,20 @@ export async function createRealtimeSession(
       model: opts.model,
       voice: opts.voice,
       instructions: instructions,
-      input_audio_format: 'pcm16',
-      output_audio_format: 'pcm16',
-      input_audio_transcription: {
-        model: 'whisper-1'
-      },
-      turn_detection: {
-        type: 'server_vad',
-        threshold: 0.5,
-        prefix_padding_ms: 300,
-        silence_duration_ms: 500,
-        create_response: true,
+      audio: {
+        input: {
+          format: { type: 'audio/pcm', rate: 24000 },
+          transcription: { model: 'whisper-1' },
+          noise_reduction:
+            opts.inputNoiseReduction === null
+              ? null
+              : { type: opts.inputNoiseReduction },
+          turn_detection: turnDetection,
+        },
+        output: {
+          format: { type: 'audio/pcm', rate: 24000 },
+          voice: opts.voice,
+        },
       },
       tools: [],
       tool_choice: 'auto',

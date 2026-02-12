@@ -1,0 +1,42 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#E8F4FD',
+    'primaryBorderColor': '#2563EB',
+    'primaryTextColor': '#1E3A5F',
+    'secondaryColor': '#F0FDF4',
+    'secondaryBorderColor': '#22C55E',
+    'tertiaryColor': '#FEF3C7',
+    'tertiaryBorderColor': '#F59E0B',
+    'lineColor': '#64748B',
+    'textColor': '#334155',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TB
+    subgraph BRAIN["SHARED INTELLIGENCE"]
+        direction LR
+        C["Chat API"]
+        V["Voice API"]
+        R["RAG Engine"]
+        E["Embeddings"]
+        C --- R
+        V --- R
+        R --- E
+    end
+
+    subgraph UIS["UI VARIANTS"]
+        direction LR
+        CL["Claude"]
+        GE["Gemini"]
+        V0["V0"]
+    end
+
+    VM["Voice Mode"]
+
+    BRAIN --> UIS
+    BRAIN --> VM
+
+    style BRAIN fill:#E8F4FD,stroke:#2563EB,stroke-width:2px
+    style UIS fill:#F0FDF4,stroke:#22C55E,stroke-width:2px
+    style VM fill:#FEF3C7,stroke:#F59E0B,stroke-width:2px

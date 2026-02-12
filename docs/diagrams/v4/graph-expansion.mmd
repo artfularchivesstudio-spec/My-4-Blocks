@@ -1,0 +1,25 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#E8F4FD',
+    'primaryBorderColor': '#2563EB',
+    'lineColor': '#64748B',
+    'fontSize': '13px'
+  }
+}}%%
+flowchart LR
+    M["Main Result"]
+
+    M --> R1["ABC Model"]
+    M --> R2["Shoulds/Musts"]
+    M --> R3["ICSI"]
+
+    R1 --> E["Expanded Context"]
+    R2 --> E
+    R3 --> E
+
+    style M fill:#FEF3C7,stroke:#F59E0B,stroke-width:2px
+    style R1 fill:#E8F4FD,stroke:#2563EB,stroke-width:1px
+    style R2 fill:#E8F4FD,stroke:#2563EB,stroke-width:1px
+    style R3 fill:#E8F4FD,stroke:#2563EB,stroke-width:1px
+    style E fill:#DCFCE7,stroke:#16A34A,stroke-width:2px

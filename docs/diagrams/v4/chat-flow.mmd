@@ -1,0 +1,41 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'actorBkg': '#E8F4FD',
+    'actorBorder': '#2563EB',
+    'actorTextColor': '#1E3A5F',
+    'signalColor': '#64748B',
+    'signalTextColor': '#334155',
+    'labelBoxBkgColor': '#F8FAFC',
+    'labelBoxBorderColor': '#CBD5E1',
+    'noteBkgColor': '#FEF3C7',
+    'noteBorderColor': '#F59E0B',
+    'noteTextColor': '#92400E',
+    'fontSize': '13px'
+  },
+  'sequence': {
+    'mirrorActors': false,
+    'actorMargin': 60,
+    'messageMargin': 30
+  }
+}}%%
+sequenceDiagram
+    participant U as User
+    participant UI as UI
+    participant API as API
+    participant RAG as RAG
+    participant LLM as GPT-4o
+
+    U->>UI: Type message
+    UI->>API: POST /api/chat
+
+    rect rgb(240, 253, 244)
+        Note over API,RAG: Hybrid Search
+        API->>RAG: Query
+        RAG-->>API: Top 5 chunks
+    end
+
+    API->>LLM: System + Context
+    LLM-->>API: Stream tokens
+    API-->>UI: UIMessage
+    UI-->>U: Display

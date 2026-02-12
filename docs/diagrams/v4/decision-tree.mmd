@@ -1,0 +1,27 @@
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#E8F4FD',
+    'primaryBorderColor': '#2563EB',
+    'lineColor': '#64748B',
+    'fontSize': '14px'
+  }
+}}%%
+flowchart TD
+    START["Need guidance?"]
+
+    START -->|"Read and Reflect"| CHAT["Chat UI"]
+    START -->|"Talk it through"| VOICE["Voice Mode"]
+
+    VOICE --> D["Direct"]
+    VOICE --> W["Warm"]
+    VOICE --> C["Casual"]
+    VOICE --> P["Professional"]
+
+    style START fill:#FEF3C7,stroke:#F59E0B,stroke-width:2px
+    style CHAT fill:#E8F4FD,stroke:#2563EB,stroke-width:2px
+    style VOICE fill:#F0FDF4,stroke:#22C55E,stroke-width:2px
+    style D fill:#F1F5F9,stroke:#64748B,stroke-width:1px
+    style W fill:#F1F5F9,stroke:#64748B,stroke-width:1px
+    style C fill:#F1F5F9,stroke:#64748B,stroke-width:1px
+    style P fill:#F1F5F9,stroke:#64748B,stroke-width:1px

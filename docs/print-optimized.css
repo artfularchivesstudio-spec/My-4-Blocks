@@ -1,0 +1,184 @@
+/* Print-optimized styles for Voice & Chat Architecture PDF */
+
+/* ═══════════════════════════════════════════════════════════
+   Base styles (apply to puppeteer rendering AND print)
+   ═══════════════════════════════════════════════════════════ */
+
+@page {
+  size: letter;
+  margin: 0.75in;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  color: #000;
+  orphans: 3;
+  widows: 3;
+}
+
+/* ─── Headings ─── */
+h1 {
+  font-size: 24pt;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 18pt;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #666;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 14pt;
+  font-weight: 600;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+h1, h2, h3, h4 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/* ─── Tables ─── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10pt;
+  margin: 1em 0;
+  border: 1px solid #333;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #e5e7eb !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafb !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ─── Code Blocks ─── */
+pre, code {
+  font-family: "SF Mono", Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 9pt;
+  background-color: #f3f4f6 !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+pre {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.4;
+  overflow: visible;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+code {
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+}
+
+/* ─── Images ─── */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* ─── Blockquotes ─── */
+blockquote {
+  margin: 1em 0;
+  padding: 12px 20px;
+  border-left: 4px solid #2563eb;
+  background-color: #eff6ff !important;
+  font-style: italic;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ─── Horizontal Rules ─── */
+hr {
+  border: none;
+  border-top: 1px solid #9ca3af;
+  margin: 1.5em 0;
+}
+
+/* ─── Lists ─── */
+ul, ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.4em;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* ─── Keep Elements Together ─── */
+h2 + img, h2 + pre, h2 + table, h2 + p,
+h3 + img, h3 + pre, h3 + table, h3 + p {
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+/* ─── Page Break Controls ─── */
+.page-break,
+div[style*="page-break-after: always"] {
+  break-after: page;
+  page-break-after: always;
+}
+
+/* ─── Links ─── */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+@media print {
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  a[href^="#"]:after {
+    content: none;
+  }
+}

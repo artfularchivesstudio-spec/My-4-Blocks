@@ -120,6 +120,9 @@ export function VoiceMode({
   const [selectedVoice, setSelectedVoice] = useState<VoiceOption>(defaultVoice);
   const [selectedStyle, setSelectedStyle] = useState<VoiceStyle>(defaultStyle);
   const [showSettingsPanel, setShowSettingsPanel] = useState(false);
+  const [noiseSensitivity, setNoiseSensitivity] = useState(20);
+  const vadEagerness =
+    noiseSensitivity < 34 ? 'low' : noiseSensitivity < 67 ? 'medium' : 'high';
 
   // 🔗 WebRTC refs
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
@@ -174,6 +177,13 @@ export function VoiceMode({
           config: {
             voice: selectedVoice,
             style: selectedStyle,
+            turnDetection: {
+              type: 'semantic_vad',
+              eagerness: vadEagerness,
+              create_response: true,
+              interrupt_response: false,
+            },
+            inputNoiseReduction: 'near_field',
           },
         }),
       });
@@ -279,7 +289,43 @@ export function VoiceMode({
       setError(err instanceof Error ? err.message : 'Failed to start voice session');
       setVoiceState('error');
     }
-  }, [apiEndpoint, contextQuery, selectedVoice, selectedStyle, analyzeAudio, onActiveChange, onSessionStart]);
+  }, [
+    apiEndpoint,
+    contextQuery,
+    selectedVoice,
+    selectedStyle,
+    vadEagerness,
+    analyzeAudio,
+    onActiveChange,
+    onSessionStart,
+  ]);
+
+  /**
+   * 🔁 Update VAD sensitivity mid-session
+   */
+  useEffect(() => {
+    if (voiceState === 'idle') return;
+    const dataChannel = dataChannelRef.current;
+    if (!dataChannel || dataChannel.readyState !== 'open') return;
+
+    const timeout = window.setTimeout(() => {
+      dataChannel.send(
+        JSON.stringify({
+          type: 'session.update',
+          session: {
+            turn_detection: {
+              type: 'semantic_vad',
+              eagerness: vadEagerness,
+              create_response: true,
+              interrupt_response: false,
+            },
+          },
+        })
+      );
+    }, 200);
+
+    return () => window.clearTimeout(timeout);
+  }, [voiceState, vadEagerness]);
 
   /**
    * 📨 Handle data channel messages from OpenAI
@@ -595,7 +641,7 @@ export function VoiceMode({
         )}
 
         {/* 🎛️ Voice & Style Settings - customize your experience! */}
-        {voiceState === 'idle' && showSettings && (
+        {showSettings && (
           <div style={{ width: '100%', maxWidth: '320px' }}>
             {/* Settings Toggle Button */}
             <button
@@ -651,14 +697,15 @@ export function VoiceMode({
                   <select
                     value={selectedVoice}
                     onChange={(e) => setSelectedVoice(e.target.value as VoiceOption)}
+                    disabled={voiceState !== 'idle'}
                     style={{
                       width: '100%',
                       padding: '10px 12px',
                       borderRadius: '8px',
                       border: '1px solid #e2e8f0',
-                      background: 'white',
+                      background: voiceState === 'idle' ? 'white' : '#f1f5f9',
                       fontSize: '0.875rem',
-                      cursor: 'pointer',
+                      cursor: voiceState === 'idle' ? 'pointer' : 'not-allowed',
                     }}
                   >
                     {VOICE_OPTIONS.map((voice) => (
@@ -689,13 +736,15 @@ export function VoiceMode({
                       <button
                         key={style.id}
                         onClick={() => setSelectedStyle(style.id)}
+                        disabled={voiceState !== 'idle'}
                         style={{
                           padding: '10px 12px',
                           borderRadius: '8px',
                           border: selectedStyle === style.id ? '2px solid #3b82f6' : '1px solid #e2e8f0',
                           background: selectedStyle === style.id ? '#eff6ff' : 'white',
-                          cursor: 'pointer',
+                          cursor: voiceState === 'idle' ? 'pointer' : 'not-allowed',
                           textAlign: 'left',
+                          opacity: voiceState === 'idle' ? 1 : 0.6,
                         }}
                       >
                         <div style={{ fontSize: '0.875rem', fontWeight: 500, color: '#1e293b' }}>
@@ -706,6 +755,46 @@ export function VoiceMode({
                         </div>
                       </button>
                     ))}
+                  </div>
+                </div>
+
+                {/* Noise Sensitivity */}
+                <div style={{ marginTop: '16px' }}>
+                  <label
+                    style={{
+                      display: 'block',
+                      fontSize: '0.75rem',
+                      fontWeight: 600,
+                      color: '#475569',
+                      marginBottom: '8px',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                    }}
+                  >
+                    🔊 Noise Sensitivity
+                  </label>
+                  <input
+                    type="range"
+                    min={0}
+                    max={100}
+                    value={noiseSensitivity}
+                    onChange={(event) => setNoiseSensitivity(Number(event.target.value))}
+                    style={{ width: '100%' }}
+                  />
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      fontSize: '0.75rem',
+                      color: '#64748b',
+                      marginTop: '6px',
+                    }}
+                  >
+                    <span>Less sensitive</span>
+                    <span>More sensitive</span>
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: '#475569', marginTop: '6px' }}>
+                    Current: {vadEagerness.charAt(0).toUpperCase() + vadEagerness.slice(1)}
                   </div>
                 </div>
               </div>
