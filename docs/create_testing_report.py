@@ -307,11 +307,25 @@ def add_screenshots(story, styles, screenshots_dir):
         if os.path.exists(filepath):
             story.append(Paragraph(description, styles['SubsectionHeader']))
 
-            # Add image scaled to fit page width
-            img = Image(filepath, width=6*inch, height=4*inch)
+            # 🎨 Add image preserving aspect ratio with max dimensions
+            # Screenshots are typically taller than wide, so constrain by height
+            max_width = 5.5 * inch
+            max_height = 7 * inch
+
+            # Create image and let it calculate natural size first
+            img = Image(filepath)
+            img_width, img_height = img.imageWidth, img.imageHeight
+
+            # Calculate scale to fit within max dimensions while preserving ratio
+            width_ratio = max_width / img_width
+            height_ratio = max_height / img_height
+            scale = min(width_ratio, height_ratio)
+
+            # Apply scaled dimensions
+            img = Image(filepath, width=img_width * scale, height=img_height * scale)
             img.hAlign = 'CENTER'
             story.append(img)
-            story.append(Spacer(1, 0.2*inch))
+            story.append(Spacer(1, 0.3*inch))
 
     story.append(PageBreak())
 

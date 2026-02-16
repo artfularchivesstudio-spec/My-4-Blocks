@@ -1,0 +1,2 @@
+# Ignore shared library's node_modules - use project deps instead
+shared/node_modules

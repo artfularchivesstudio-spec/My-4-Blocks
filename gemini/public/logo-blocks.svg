@@ -1,0 +1,11 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 🎭 The Four Blocks Logo - Representing the four emotional blocks -->
+  <!-- Top-left: Anger (Red) -->
+  <rect x="2" y="2" width="17" height="17" rx="3" fill="#E57373"/>
+  <!-- Top-right: Anxiety (Orange/Amber) -->
+  <rect x="21" y="2" width="17" height="17" rx="3" fill="#FFB74D"/>
+  <!-- Bottom-left: Depression (Blue) -->
+  <rect x="2" y="21" width="17" height="17" rx="3" fill="#64B5F6"/>
+  <!-- Bottom-right: Guilt (Purple) -->
+  <rect x="21" y="21" width="17" height="17" rx="3" fill="#CE93D8"/>
+</svg>

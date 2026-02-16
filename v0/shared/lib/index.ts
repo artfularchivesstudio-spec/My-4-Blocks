@@ -95,3 +95,30 @@ export type {
 
 // 🎨 Utilities (for shared UI components)
 export { cn } from "./utils";
+
+// 🧪 A/B Testing System - Two roads diverged in a prompt!
+export {
+  storeABTest,
+  recordChoice,
+  getABStats,
+  exportABData,
+  getABTest,
+  clearABData,
+  type ABTestEntry,
+} from "./abTesting";
+
+// 🎭 Dual Response Generation - The cosmic fork
+export {
+  generateDualResponses,
+  detectEmotionalContext,
+  type DualResponse,
+} from "./dualResponseGenerator";
+
+// 📐 Response Blueprints - The template theater
+export {
+  RESPONSE_BLUEPRINT_A,
+  RESPONSE_BLUEPRINT_B,
+  RAG_CHUNK_LABELS,
+  FOUR_BLOCKS_REFERENCE,
+  detectBlockFromQuery as detectBlockFromQueryBlueprint,
+} from "./responseBlueprints";

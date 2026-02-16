@@ -53,7 +53,7 @@ export async function POST(req: Request) {
 
     // 🌟 Configuration for this variant
     const config: ChatConfig = {
-      model: 'gpt-4o-mini', // 💰 Cost-effective wisdom delivery
+      model: 'gpt-4o', // 🧠 Upgraded for A/B testing - deeper reasoning for emotional guidance!
       temperature: 0.7,
       ragEnabled: true,
       ragTopK: 5,

@@ -1,0 +1,7 @@
+# 🔮 My-4-Blocks RAG Ingestion Pipeline
+# PDF extraction + Chonkie chunking + OpenAI embeddings
+
+pdfplumber>=0.10.0
+chonkie>=1.5.0
+openai>=1.0.0
+python-dotenv>=1.0.0

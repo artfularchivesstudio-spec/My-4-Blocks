@@ -1,0 +1,30 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#E9E5FF', 'primaryTextColor': '#1e1b4b', 'primaryBorderColor': '#7C3AED', 'lineColor': '#7C3AED', 'secondaryColor': '#F5F3FF', 'tertiaryColor': '#EDE9FE', 'fontSize': '20px'}, 'flowchart': { 'nodeSpacing': 80, 'rankSpacing': 80 }}}%%
+flowchart TB
+    Q[User Query] --> DET[detectLikelyBlock]
+
+    DET --> ANG{{"🔥 ANGER<br/>Frustration + DEMAND"}}
+    DET --> ANX{{"😰 ANXIETY<br/>Concern + CATASTROPHIZING"}}
+    DET --> DEP{{"😢 DEPRESSION<br/>Disappointment + SELF-RATING"}}
+    DET --> GUL{{"😔 GUILT<br/>Regret + MORAL DEMAND"}}
+
+    ANG --> SHIFT1["They SHOULD → I'd prefer"]
+    ANX --> SHIFT2["What if! → I can cope"]
+    DEP --> SHIFT3["I AM failure → I failed at X"]
+    GUL --> SHIFT4["I shouldn't have → I wish I hadn't"]
+
+    SHIFT1 --> RESP[Enhanced Response]
+    SHIFT2 --> RESP
+    SHIFT3 --> RESP
+    SHIFT4 --> RESP
+
+    style ANG fill:#FEE2E2,stroke:#EF4444,color:#1e1b4b
+    style ANX fill:#FEF3C7,stroke:#F59E0B,color:#1e1b4b
+    style DEP fill:#DBEAFE,stroke:#3B82F6,color:#1e1b4b
+    style GUL fill:#E0E7FF,stroke:#6366F1,color:#1e1b4b
+    style RESP fill:#DDD6FE,stroke:#7C3AED,color:#1e1b4b
+    style DET fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style SHIFT1 fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style SHIFT2 fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style SHIFT3 fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style SHIFT4 fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style Q fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b

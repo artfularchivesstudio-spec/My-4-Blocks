@@ -14,3 +14,7 @@ export * from './ui'
 // 🎙️ Voice Mode Component - WebRTC voice interface
 export { VoiceMode, default as VoiceModeDefault, VOICE_OPTIONS, STYLE_OPTIONS } from './VoiceMode';
 export type { VoiceModeProps, VoiceState, TranscriptEntry, VoiceOption, VoiceStyle } from './VoiceMode';
+
+// 🎭 A/B Testing Component - Side-by-side response comparison
+export { ABResponseComparison, default as ABResponseComparisonDefault } from './ABResponseComparison';
+export type { ABResponseComparisonProps } from './ABResponseComparison';

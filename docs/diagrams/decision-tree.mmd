@@ -1,0 +1,11 @@
+flowchart TB
+    START["Need emotional guidance?"] --> READ{"Want to read and reflect?"}
+    READ -->|Yes| CHAT["Use Chat (Claude/Gemini/V0 UI)"]
+
+    READ -->|No| TALK["Want to talk it through?"]
+    TALK --> STYLE{"Prefer which style?"}
+
+    STYLE -->|Direct| V1["Voice: Direct style"]
+    STYLE -->|Warm| V2["Voice: Warm style"]
+    STYLE -->|Casual| V3["Voice: Casual style"]
+    STYLE -->|Professional| V4["Voice: Professional style"]

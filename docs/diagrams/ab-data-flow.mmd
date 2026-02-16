@@ -1,0 +1,68 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#E9E5FF', 'primaryTextColor': '#1e1b4b', 'primaryBorderColor': '#7C3AED', 'lineColor': '#7C3AED', 'secondaryColor': '#F5F3FF', 'tertiaryColor': '#EDE9FE', 'fontSize': '20px'}, 'flowchart': { 'nodeSpacing': 80, 'rankSpacing': 80 }}}%%
+flowchart LR
+    subgraph INPUT["📝 INPUT"]
+        U[User Message]
+    end
+
+    subgraph PROCESS["⚙️ PROCESSING"]
+        DET[detectLikelyBlock]
+        RAG[RAG Retrieval]
+        PROMPT[Build Prompts]
+    end
+
+    subgraph GENERATE["🤖 GENERATION"]
+        direction TB
+        API1[GPT-5.2 API<br/>Blueprint A]
+        API2[GPT-5.2 API<br/>Blueprint B]
+    end
+
+    subgraph STORE["💾 STORAGE"]
+        SAVE[storeABTest]
+    end
+
+    subgraph DISPLAY["🖥️ DISPLAY"]
+        COMP[ABResponseComparison]
+        RA[Response A]
+        RB[Response B]
+    end
+
+    subgraph CHOICE["🎯 CHOICE"]
+        SEL[User Selects]
+        REC[recordChoice]
+        STATS[getABStats]
+    end
+
+    U --> DET
+    DET --> RAG
+    RAG --> PROMPT
+    PROMPT --> API1
+    PROMPT --> API2
+    API1 --> SAVE
+    API2 --> SAVE
+    SAVE --> COMP
+    COMP --> RA
+    COMP --> RB
+    RA --> SEL
+    RB --> SEL
+    SEL --> REC
+    REC --> STATS
+
+    style INPUT fill:#F5F3FF,stroke:#7C3AED,color:#1e1b4b
+    style PROCESS fill:#F5F3FF,stroke:#7C3AED,color:#1e1b4b
+    style GENERATE fill:#EDE9FE,stroke:#A78BFA,color:#1e1b4b
+    style STORE fill:#F5F3FF,stroke:#7C3AED,color:#1e1b4b
+    style DISPLAY fill:#F5F3FF,stroke:#7C3AED,color:#1e1b4b
+    style CHOICE fill:#F5F3FF,stroke:#7C3AED,color:#1e1b4b
+    style U fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style DET fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style RAG fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style PROMPT fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style API1 fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style API2 fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style SAVE fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style COMP fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style RA fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style RB fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style SEL fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style REC fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style STATS fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b

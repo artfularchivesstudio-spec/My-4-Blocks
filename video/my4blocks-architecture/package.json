@@ -1,0 +1,29 @@
+{
+  "name": "my4blocks-architecture",
+  "version": "1.0.0",
+  "description": "Remotion video for My4Blocks V4 architecture",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "remotion build",
+    "dev": "remotion dev",
+    "preview": "remotion preview",
+    "render": "remotion render"
+  },
+  "dependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "remotion": "^4.0.421"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "remotion",
+    "video",
+    "architecture",
+    "my4blocks"
+  ],
+  "author": "My4Blocks Team",
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+flowchart TB
+    USER["User speaks"] --> MIC["Microphone (browser)"]
+    MIC --> WEBRTC["WebRTC Peer Conn"]
+    WEBRTC --> REALTIME["OpenAI Realtime API (Two-way audio)"]
+
+    REALTIME --> WHISPER["INPUT: Whisper-1 (Speech→Text)"]
+    REALTIME --> TTS["OUTPUT: TTS (Text→Speech)"]
+
+    WHISPER --> GPT
+    TTS --> GPT["GPT-4o Realtime + Instructions + RAG Context"]
+
+    GPT --> VOICE["Voice Response (Spoken back)"]
+    GPT --> TRANS["Transcript Events (Text log)"]

@@ -1,0 +1,15 @@
+flowchart TB
+    QUERY["User Query: I'm always angry at my boss"] --> EMBED["1. Query Embedding (OpenAI API, 1536 dims)"]
+
+    EMBED --> SEM["2. Semantic Search (Cosine Similarity)"]
+    EMBED --> KEY["3. Keyword Search (TF-IDF + Boosts)"]
+
+    SEM --> MERGE["4. Hybrid Merge (Combined scores)"]
+    KEY --> MERGE
+
+    SEM -.->|70% weight| MERGE
+    KEY -.->|30% weight| MERGE
+
+    MERGE --> BOOST["5. Block Boost (If angry detected, +20%)"]
+    BOOST --> TOP["6. Top K Results (Default: 5)"]
+    TOP --> FORMAT["7. Format for LLM Prompt"]

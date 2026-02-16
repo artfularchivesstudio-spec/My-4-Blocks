@@ -1,69 +1,180 @@
+// @ts-nocheck
+
 export default {
   id: "wig_my4blocks_four_blocks_planner",
   name: "My 4 Blocks — Four Blocks Planner",
 
-  view: `<Card size="md" asForm={true} status={{ text: "Pick 4. Everything else is noise." }} confirm={{ label: "Commit my 4 Blocks", action: { type: "my4blocks.commit", payload: { source: "widget" }, loadingBehavior: "container" } }} cancel={{ label: "Suggest Blocks", action: { type: "my4blocks.suggest", payload: { source: "widget" } } }}>
+  view: `
+<Card
+  size="md"
+  asForm={true}
+  status={{ text: "Pick 4. Everything else is noise." }}
+  confirm={{
+    label: "Commit my 4 Blocks",
+    action: {
+      type: "my4blocks.commit",
+      payload: { source: "widget" },
+      loadingBehavior: "container",
+    },
+  }}
+  cancel={{
+    label: "Suggest Blocks",
+    action: {
+      type: "my4blocks.suggest",
+      payload: { source: "widget" },
+    },
+  }}
+>
   <Col gap={12}>
-    <Title value="Today’s 4 Blocks" />
+    <Title value="Today's 4 Blocks" />
     <Caption value={dateLabel} color="secondary" />
     <Divider />
 
     <Col gap={10}>
       <Col gap={6}>
         <Text value="Block 1" weight="semibold" />
-        <Text value={block1Title} editable={{ name: "block1Title", required: true, placeholder: "Give this Block a name." }} />
-        <Text value={block1Why} color="secondary" editable={{ name: "block1Why", placeholder: "Why it matters (optional)" }} />
-        <Select name="block1Time" placeholder="Time box (optional)" defaultValue={block1Time} options={[{ label: "15m", value: "15m" }, { label: "30m", value: "30m" }, { label: "45m", value: "45m" }, { label: "1h", value: "1h" }, { label: "2h", value: "2h" }]} />
+        <Text
+          value={block1Title}
+          editable={{
+            name: "block1Title",
+            required: true,
+            placeholder: "Give this Block a name.",
+          }}
+        />
+        <Text
+          value={block1Why}
+          color="secondary"
+          editable={{ name: "block1Why", placeholder: "Why it matters (optional)" }}
+        />
+        <Select
+          name="block1Time"
+          placeholder="Time box (optional)"
+          defaultValue={block1Time}
+          options={[
+            { label: "15m", value: "15m" },
+            { label: "30m", value: "30m" },
+            { label: "45m", value: "45m" },
+            { label: "1h", value: "1h" },
+            { label: "2h", value: "2h" },
+          ]}
+        />
       </Col>
 
       <Divider />
 
       <Col gap={6}>
         <Text value="Block 2" weight="semibold" />
-        <Text value={block2Title} editable={{ name: "block2Title", required: true, placeholder: "Give this Block a name." }} />
-        <Text value={block2Why} color="secondary" editable={{ name: "block2Why", placeholder: "Why it matters (optional)" }} />
-        <Select name="block2Time" placeholder="Time box (optional)" defaultValue={block2Time} options={[{ label: "15m", value: "15m" }, { label: "30m", value: "30m" }, { label: "45m", value: "45m" }, { label: "1h", value: "1h" }, { label: "2h", value: "2h" }]} />
+        <Text
+          value={block2Title}
+          editable={{
+            name: "block2Title",
+            required: true,
+            placeholder: "Give this Block a name.",
+          }}
+        />
+        <Text
+          value={block2Why}
+          color="secondary"
+          editable={{ name: "block2Why", placeholder: "Why it matters (optional)" }}
+        />
+        <Select
+          name="block2Time"
+          placeholder="Time box (optional)"
+          defaultValue={block2Time}
+          options={[
+            { label: "15m", value: "15m" },
+            { label: "30m", value: "30m" },
+            { label: "45m", value: "45m" },
+            { label: "1h", value: "1h" },
+            { label: "2h", value: "2h" },
+          ]}
+        />
       </Col>
 
       <Divider />
 
       <Col gap={6}>
         <Text value="Block 3" weight="semibold" />
-        <Text value={block3Title} editable={{ name: "block3Title", required: true, placeholder: "Give this Block a name." }} />
-        <Text value={block3Why} color="secondary" editable={{ name: "block3Why", placeholder: "Why it matters (optional)" }} />
-        <Select name="block3Time" placeholder="Time box (optional)" defaultValue={block3Time} options={[{ label: "15m", value: "15m" }, { label: "30m", value: "30m" }, { label: "45m", value: "45m" }, { label: "1h", value: "1h" }, { label: "2h", value: "2h" }]} />
+        <Text
+          value={block3Title}
+          editable={{
+            name: "block3Title",
+            required: true,
+            placeholder: "Give this Block a name.",
+          }}
+        />
+        <Text
+          value={block3Why}
+          color="secondary"
+          editable={{ name: "block3Why", placeholder: "Why it matters (optional)" }}
+        />
+        <Select
+          name="block3Time"
+          placeholder="Time box (optional)"
+          defaultValue={block3Time}
+          options={[
+            { label: "15m", value: "15m" },
+            { label: "30m", value: "30m" },
+            { label: "45m", value: "45m" },
+            { label: "1h", value: "1h" },
+            { label: "2h", value: "2h" },
+          ]}
+        />
       </Col>
 
       <Divider />
 
       <Col gap={6}>
         <Text value="Block 4" weight="semibold" />
-        <Text value={block4Title} editable={{ name: "block4Title", required: true, placeholder: "Give this Block a name." }} />
-        <Text value={block4Why} color="secondary" editable={{ name: "block4Why", placeholder: "Why it matters (optional)" }} />
-        <Select name="block4Time" placeholder="Time box (optional)" defaultValue={block4Time} options={[{ label: "15m", value: "15m" }, { label: "30m", value: "30m" }, { label: "45m", value: "45m" }, { label: "1h", value: "1h" }, { label: "2h", value: "2h" }]} />
+        <Text
+          value={block4Title}
+          editable={{
+            name: "block4Title",
+            required: true,
+            placeholder: "Give this Block a name.",
+          }}
+        />
+        <Text
+          value={block4Why}
+          color="secondary"
+          editable={{ name: "block4Why", placeholder: "Why it matters (optional)" }}
+        />
+        <Select
+          name="block4Time"
+          placeholder="Time box (optional)"
+          defaultValue={block4Time}
+          options={[
+            { label: "15m", value: "15m" },
+            { label: "30m", value: "30m" },
+            { label: "45m", value: "45m" },
+            { label: "1h", value: "1h" },
+            { label: "2h", value: "2h" },
+          ]}
+        />
       </Col>
     </Col>
 
     <Divider />
-    <Caption value="If it isn’t a Block, it isn’t happening." color="secondary" />
+    <Caption value="If it isn't a Block, it isn't happening." color="secondary" />
   </Col>
-</Card>`,
+</Card>
+`,
 
   defaultState: {
-  "dateLabel": "Today",
-  "block1Title": "",
-  "block1Why": "",
-  "block1Time": "",
-  "block2Title": "",
-  "block2Why": "",
-  "block2Time": "",
-  "block3Title": "",
-  "block3Why": "",
-  "block3Time": "",
-  "block4Title": "",
-  "block4Why": "",
-  "block4Time": ""
-},
+    dateLabel: "Today",
+    block1Title: "",
+    block1Why: "",
+    block1Time: "",
+    block2Title: "",
+    block2Why: "",
+    block2Time: "",
+    block3Title: "",
+    block3Why: "",
+    block3Time: "",
+    block4Title: "",
+    block4Why: "",
+    block4Time: "",
+  },
 
   schemaMode: "zod",
 
@@ -135,3 +246,64 @@ export default {
   viewValidity: "valid",
   defaultStateValidity: "valid",
 } as const;
+
+{
+  "id": "wig_my4blocks_four_blocks_planner",
+  "name": "My 4 Blocks — Four Blocks Planner",
+  "view": "<Card\n  size=\"md\"\n  asForm={true}\n  status={{ text: \"Pick 4. Everything else is noise.\" }}\n  confirm={{\n    label: \"Commit my 4 Blocks\",\n    action: {\n      type: \"my4blocks.commit\",\n      payload: { source: \"widget\" },\n      loadingBehavior: \"container\"\n    }\n  }}\n  cancel={{\n    label: \"Suggest Blocks\",\n    action: {\n      type: \"my4blocks.suggest\",\n      payload: { source: \"widget\" }\n    }\n  }}\n>\n  <Col gap={12}>\n    <Title value=\"Today's 4 Blocks\" />\n    <Caption value={dateLabel} color=\"secondary\" />\n    <Divider />\n\n    <Col gap={10}>\n      <Col gap={6}>\n        <Text value=\"Block 1\" weight=\"semibold\" />\n        <Text value={block1Title} editable={{ name: \"block1Title\", required: true, placeholder: \"Give this Block a name.\" }} />\n        <Text value={block1Why} color=\"secondary\" editable={{ name: \"block1Why\", placeholder: \"Why it matters (optional)\" }} />\n        <Select\n          name=\"block1Time\"\n          placeholder=\"Time box (optional)\"\n          defaultValue={block1Time}\n          options={[{ label: \"15m\", value: \"15m\" }, { label: \"30m\", value: \"30m\" }, { label: \"45m\", value: \"45m\" }, { label: \"1h\", value: \"1h\" }, { label: \"2h\", value: \"2h\" }]}\n        />\n      </Col>\n\n      <Divider />\n\n      <Col gap={6}>\n        <Text value=\"Block 2\" weight=\"semibold\" />\n        <Text value={block2Title} editable={{ name: \"block2Title\", required: true, placeholder: \"Give this Block a name.\" }} />\n        <Text value={block2Why} color=\"secondary\" editable={{ name: \"block2Why\", placeholder: \"Why it matters (optional)\" }} />\n        <Select\n          name=\"block2Time\"\n          placeholder=\"Time box (optional)\"\n          defaultValue={block2Time}\n          options={[{ label: \"15m\", value: \"15m\" }, { label: \"30m\", value: \"30m\" }, { label: \"45m\", value: \"45m\" }, { label: \"1h\", value: \"1h\" }, { label: \"2h\", value: \"2h\" }]}\n        />\n      </Col>\n\n      <Divider />\n\n      <Col gap={6}>\n        <Text value=\"Block 3\" weight=\"semibold\" />\n        <Text value={block3Title} editable={{ name: \"block3Title\", required: true, placeholder: \"Give this Block a name.\" }} />\n        <Text value={block3Why} color=\"secondary\" editable={{ name: \"block3Why\", placeholder: \"Why it matters (optional)\" }} />\n        <Select\n          name=\"block3Time\"\n          placeholder=\"Time box (optional)\"\n          defaultValue={block3Time}\n          options={[{ label: \"15m\", value: \"15m\" }, { label: \"30m\", value: \"30m\" }, { label: \"45m\", value: \"45m\" }, { label: \"1h\", value: \"1h\" }, { label: \"2h\", value: \"2h\" }]}\n        />\n      </Col>\n\n      <Divider />\n\n      <Col gap={6}>\n        <Text value=\"Block 4\" weight=\"semibold\" />\n        <Text value={block4Title} editable={{ name: \"block4Title\", required: true, placeholder: \"Give this Block a name.\" }} />\n        <Text value={block4Why} color=\"secondary\" editable={{ name: \"block4Why\", placeholder: \"Why it matters (optional)\" }} />\n        <Select\n          name=\"block4Time\"\n          placeholder=\"Time box (optional)\"\n          defaultValue={block4Time}\n          options={[{ label: \"15m\", value: \"15m\" }, { label: \"30m\", value: \"30m\" }, { label: \"45m\", value: \"45m\" }, { label: \"1h\", value: \"1h\" }, { label: \"2h\", value: \"2h\" }]}\n        />\n      </Col>\n    </Col>\n\n    <Divider />\n    <Caption value=\"If it isn't a Block, it isn't happening.\" color=\"secondary\" />\n  </Col>\n</Card>",
+  "defaultState": {
+    "dateLabel": "Today",
+    "block1Title": "",
+    "block1Why": "",
+    "block1Time": "",
+    "block2Title": "",
+    "block2Why": "",
+    "block2Time": "",
+    "block3Title": "",
+    "block3Why": "",
+    "block3Time": "",
+    "block4Title": "",
+    "block4Why": "",
+    "block4Time": ""
+  },
+  "schemaMode": "zod",
+  "jsonSchema": {
+    "type": "object",
+    "properties": {
+      "dateLabel": { "type": "string" },
+      "block1Title": { "type": "string" },
+      "block1Why": { "type": "string" },
+      "block1Time": { "type": "string" },
+      "block2Title": { "type": "string" },
+      "block2Why": { "type": "string" },
+      "block2Time": { "type": "string" },
+      "block3Title": { "type": "string" },
+      "block3Why": { "type": "string" },
+      "block3Time": { "type": "string" },
+      "block4Title": { "type": "string" },
+      "block4Why": { "type": "string" },
+      "block4Time": { "type": "string" }
+    },
+    "required": [
+      "dateLabel",
+      "block1Title",
+      "block1Why",
+      "block1Time",
+      "block2Title",
+      "block2Why",
+      "block2Time",
+      "block3Title",
+      "block3Why",
+      "block3Time",
+      "block4Title",
+      "block4Why",
+      "block4Time"
+    ],
+    "additionalProperties": false
+  },
+  "schema": "import { z } from \"zod\"\n\n// 🎭 The WidgetState — The Ritual Ledger ✍️\n// Keep it strict, keep it small, keep it honest.\nconst WidgetState = z.strictObject({\n  dateLabel: z.string(),\n\n  block1Title: z.string(),\n  block1Why: z.string(),\n  block1Time: z.string(),\n\n  block2Title: z.string(),\n  block2Why: z.string(),\n  block2Time: z.string(),\n\n  block3Title: z.string(),\n  block3Why: z.string(),\n  block3Time: z.string(),\n\n  block4Title: z.string(),\n  block4Why: z.string(),\n  block4Time: z.string(),\n})\n\nexport default WidgetState\n",
+  "states": [],
+  "schemaValidity": "valid",
+  "viewValidity": "valid",
+  "defaultStateValidity": "valid"
+}

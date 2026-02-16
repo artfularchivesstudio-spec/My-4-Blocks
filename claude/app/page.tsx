@@ -41,84 +41,20 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         style={{ marginBottom: "clamp(24px, 4vw, 32px)", position: "relative", zIndex: 1 }}
       >
-        <Image 
-          src="/logo.webp" 
-          alt="My 4 Blocks Logo" 
-          width={100} 
+{/* 🎨 The Four Blocks Logo - Clean SVG with accessibility */}
+        <Image
+          src="/logo-blocks.svg"
+          alt="My 4 Blocks Logo - Four emotional blocks: Anger, Anxiety, Depression, and Guilt"
+          width={100}
           height={100}
-          style={{ 
+          style={{
             objectFit: "contain",
             display: "block",
-            marginBottom: "clamp(16px, 3vw, 24px)",
             width: "clamp(80px, 15vw, 100px)",
             height: "auto"
           }}
           priority
-          unoptimized
         />
-        {/* 🎨 The Four Blocks - Now with aria-label for screen readers!
-         * Because color alone should never be the only identifier. 🌈♿ */}
-        <div
-          role="img"
-          aria-label="Four emotional blocks: Anger, Anxiety, Depression, and Guilt"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gap: "clamp(4px, 1vw, 6px)",
-            marginBottom: "clamp(12px, 2vw, 16px)",
-            maxWidth: "60px",
-            margin: "0 auto clamp(12px, 2vw, 16px)"
-          }}
-        >
-          <div
-            aria-hidden="true"
-            title="Anger"
-            style={{
-              width: "clamp(16px, 3vw, 20px)",
-              height: "clamp(16px, 3vw, 20px)",
-              borderRadius: "4px",
-              background: "#ef4444",
-              opacity: 0.8,
-              animation: "pulse 2s ease-in-out infinite"
-            }}
-          />
-          <div
-            aria-hidden="true"
-            title="Anxiety"
-            style={{
-              width: "clamp(16px, 3vw, 20px)",
-              height: "clamp(16px, 3vw, 20px)",
-              borderRadius: "4px",
-              background: "#f59e0b",
-              opacity: 0.8,
-              animation: "pulse 2s ease-in-out infinite 0.2s"
-            }}
-          />
-          <div
-            aria-hidden="true"
-            title="Depression"
-            style={{
-              width: "clamp(16px, 3vw, 20px)",
-              height: "clamp(16px, 3vw, 20px)",
-              borderRadius: "4px",
-              background: "#3b82f6",
-              opacity: 0.8,
-              animation: "pulse 2s ease-in-out infinite 0.4s"
-            }}
-          />
-          <div
-            aria-hidden="true"
-            title="Guilt"
-            style={{
-              width: "clamp(16px, 3vw, 20px)",
-              height: "clamp(16px, 3vw, 20px)",
-              borderRadius: "4px",
-              background: "#a855f7",
-              opacity: 0.8,
-              animation: "pulse 2s ease-in-out infinite 0.6s"
-            }}
-          />
-        </div>
       </motion.div>
 
       {/* Title with Animated Gradient */}
@@ -229,10 +165,6 @@ export default function Home() {
       </motion.div>
 
       <style jsx>{`
-        @keyframes pulse {
-          0%, 100% { opacity: 0.8; }
-          50% { opacity: 1; }
-        }
         @keyframes gradient {
           0% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }

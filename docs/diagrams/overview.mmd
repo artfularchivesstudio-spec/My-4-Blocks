@@ -1,0 +1,23 @@
+flowchart TB
+    subgraph SHARED["SHARED INTELLIGENCE LAYER"]
+        subgraph CORE[" "]
+            A["shared/api/chat.ts - Chat Gateway"]
+            B["shared/api/realtime.ts - Voice Gateway"]
+            C["shared/lib/ - RAG Engine (280 chunks)"]
+            D["shared/data/embeddings.json - Pre-computed knowledge"]
+        end
+    end
+
+    SHARED --> CLAUDE
+    SHARED --> GEMINI
+    SHARED --> V0
+
+    subgraph UIS["UI Variants"]
+        CLAUDE["Claude UI"]
+        GEMINI["Gemini UI"]
+        V0["V0 UI"]
+    end
+
+    CLAUDE --> VOICE["Voice Mode (WebRTC)"]
+    GEMINI --> VOICE
+    V0 --> VOICE

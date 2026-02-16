@@ -57,9 +57,9 @@ export async function POST(req: Request) {
       };
     });
 
-    // 🌟 Configuration for this variant
+    // 🌟 Configuration for this variant - UPGRADED for A/B testing!
     const config: ChatConfig = {
-      model: 'gpt-4o-mini', // 💰 Using the cost-effective model
+      model: 'gpt-4o', // 🚀 Upgraded to gpt-4o for deeper, more meaningful responses
       temperature: 0.7,
       ragEnabled: true,
       ragTopK: 5,

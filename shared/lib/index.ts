@@ -95,3 +95,67 @@ export type {
 
 // 🎨 Utilities (for shared UI components)
 export { cn } from "./utils";
+
+// 🏆 A/B Testing Arena (in-memory experiment tracking!)
+export {
+  storeABTest,
+  recordChoice,
+  getABStats,
+  exportABData,
+  getABTest,
+  clearABData,
+  getRecentABTests,
+  filterABTests,
+  getWinRateByMetadata,
+  getStorageInfo,
+  type ABTestEntry,
+  type ABTestMetadata,
+  type ABStats,
+} from "./abTesting";
+
+// 🎭 Response Blueprints for A/B Testing (the structured vs warm showdown!)
+export {
+  RESPONSE_BLUEPRINT_A,
+  RESPONSE_BLUEPRINT_B,
+  getBlueprintConfig,
+  getRandomBlueprint,
+  detectLikelyBlock,
+  getBlockFormula,
+  buildEnhancedSystemPrompt,
+  createResponseMetadata,
+  type EmotionalBlock,
+  type BlueprintVariant,
+  type BlueprintConfig,
+  type ResponseMetadata,
+} from "./responseBlueprints";
+
+// 🎭 Dual Response Generator - Parallel Wisdom Creation ✨
+// Generate two responses simultaneously for A/B comparison!
+// Like running two theatrical productions at once - may the best show win!
+export {
+  // 🌟 Main generation functions
+  generateDualResponses,
+  streamDualResponses,
+  // 🆔 ID Generation
+  generateGenerationId,
+  // 🎨 Preparation helpers
+  prepareDualGeneration,
+  createDualResponseResult,
+  // 🔀 Order randomization
+  shouldRandomizeOrder,
+  swapResponses,
+  // 📊 Comparison utilities
+  compareGenerationTimes,
+  compareResponseLengths,
+  // 📈 Progress tracking
+  createInitialProgress,
+  updateProgress,
+  // 📋 Logging
+  generateComparisonSummary,
+  // 📐 Types
+  type DualGenerationOptions,
+  type DualResponseResult,
+  type DualStreamingCallbacks,
+  type DualGenerationState,
+  type DualGenerationProgress,
+} from "./dualResponseGenerator";

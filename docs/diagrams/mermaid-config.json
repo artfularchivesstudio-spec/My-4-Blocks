@@ -1,0 +1,21 @@
+{
+  "theme": "base",
+  "themeVariables": {
+    "primaryColor": "#E9E5FF",
+    "primaryTextColor": "#1e1b4b",
+    "primaryBorderColor": "#7C3AED",
+    "secondaryColor": "#F5F3FF",
+    "secondaryTextColor": "#1e1b4b",
+    "tertiaryColor": "#EDE9FE",
+    "tertiaryTextColor": "#1e1b4b",
+    "lineColor": "#7C3AED",
+    "textColor": "#1e1b4b",
+    "fontSize": "20px",
+    "fontFamily": "arial, sans-serif"
+  },
+  "flowchart": {
+    "nodeSpacing": 80,
+    "rankSpacing": 80,
+    "padding": 25
+  }
+}

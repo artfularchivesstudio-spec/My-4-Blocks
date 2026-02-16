@@ -1,0 +1,16 @@
+flowchart TB
+    USER["User (browser)"] --> UI["UI (Claude/Gemini/V0)"]
+    UI --> API["API Route /api/chat"]
+    API --> HANDLER["shared/api/chat.ts handleChatRequest()"]
+    HANDLER --> RAG["1. Initialize RAG\n2. Extract query\n3. Find wisdom\n4. Build prompt"]
+
+    RAG --> SYS["System Prompt (book knowledge)"]
+    RAG --> CTX["RAG Context (relevant chunks)"]
+    SYS --> GPT
+    CTX --> GPT["OpenAI GPT-4o (streamText)"]
+
+    GPT --> STREAM["Stream Response (token by token)"]
+
+    STREAM --> C1["Claude Browser"]
+    STREAM --> C2["Gemini Browser"]
+    STREAM --> C3["V0 Browser"]

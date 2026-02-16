@@ -1,0 +1,38 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#E9E5FF', 'primaryTextColor': '#1e1b4b', 'primaryBorderColor': '#7C3AED', 'lineColor': '#7C3AED', 'secondaryColor': '#F5F3FF', 'tertiaryColor': '#EDE9FE', 'fontSize': '20px'}, 'flowchart': { 'nodeSpacing': 80, 'rankSpacing': 80 }}}%%
+flowchart TB
+    subgraph BPA["📘 Blueprint A – Structured"]
+        direction TB
+        A1[1. Safety + Validation]
+        A2[2. Identify Block]
+        A3[3. Map Situation]
+        A4[4. Key Shift]
+        A5[5. Strengths]
+        A6[6. Targeted Question]
+        A1 --> A2 --> A3 --> A4 --> A5 --> A6
+    end
+
+    subgraph BPB["📙 Blueprint B – Conversational"]
+        direction TB
+        B1[Open with Acknowledgment]
+        B2[Gently Introduce Framework]
+        B3["Explore with 'I wonder if...'"]
+        B4[Offer Shift as Invitation]
+        B5[End with Curiosity]
+        B1 --> B2 --> B3 --> B4 --> B5
+    end
+
+    USER[User Query] --> BPA
+    USER --> BPB
+
+    BPA --> COMPA[Structured Response]
+    BPB --> COMPB[Warm Response]
+
+    COMPA --> VS{User Chooses}
+    COMPB --> VS
+
+    style BPA fill:#DBEAFE,stroke:#3B82F6,color:#1e1b4b
+    style BPB fill:#FEF3C7,stroke:#F59E0B,color:#1e1b4b
+    style VS fill:#DDD6FE,stroke:#7C3AED,color:#1e1b4b
+    style USER fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style COMPA fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style COMPB fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b

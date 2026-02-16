@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "model": "text-embedding-3-small",
+  "total_chunks": 1,
+  "chunks": [
+    {
+      "id": "chunk_1",
+      "text": "You Only Have Four Problems: The Cure for Anger, Anxiety, Depression & Guilt. Vincent E. Parr, Ph.D. The unexamined life is not worth living. Everyone thinks they have thousands of different problems. But what I saw clearly over time was that everyone was coming in with only four—four emotional blocks to their personal joy and happiness. People described thousands of different examples of Anger, thousands of examples of Anxiety, and many thousands more of Depression and Guilt. I capitalize these four words throughout this book because they are more than just negative emotions—they are the four most critical blocks to happiness and contentment in life.",
+      "embedding": [0.0, 0.0, 0.0],
+      "block_type": "General",
+      "metadata": {
+        "chunk_index": 1,
+        "token_count": 120,
+        "block": "General"
+      }
+    }
+  ],
+  "metadata": {
+    "source": "You Only Have Four Problems",
+    "author": "Dr. Vincent E. Parr",
+    "blocks": ["Anger", "Anxiety", "Depression", "Guilt"],
+    "description": "RAG foundation for Four Blocks Chat - SAMPLE DATA - Run python scripts/process_book.py to generate real embeddings"
+  }
+}

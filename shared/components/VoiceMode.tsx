@@ -1,3 +1,7 @@
+// 🌙 Voice Mode temporarily disabled for A/B testing focus
+// Uncomment when ready to re-enable voice features
+// The show must go on... just without the voice for now! 🎭
+
 /**
  * 🎙️ VoiceMode Component - WebRTC Voice Interface ✨
  *
@@ -6,6 +10,8 @@
  *
  * Now with voice & style selection! No more condescending
  * therapist voice unless you actually want that.
+ *
+ * ⚠️ TEMPORARILY DISABLED FOR A/B TESTING - Returns null
  *
  * - The Voice Experience Architect (who listens to feedback!)
  */
@@ -109,6 +115,13 @@ export function VoiceMode({
   defaultStyle = 'direct',   // 🎭 Get to the point!
   showSettings = true,       // 🎨 Let users customize by default
 }: VoiceModeProps) {
+  // 🌙 ============================================================
+  // VOICE MODE DISABLED FOR A/B TESTING - The silence is golden! 🔇
+  // We're focusing on text-based A/B testing right now.
+  // When the stars align and A/B testing is complete, uncomment below.
+  // ============================================================
+  return null;
+  // 🌙 END OF EARLY RETURN - Everything below is temporarily dormant
   // 🔮 State management
   const [voiceState, setVoiceState] = useState<VoiceState>('idle');
   const [isMuted, setIsMuted] = useState(false);

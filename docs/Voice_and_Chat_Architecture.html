@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voice_and_Chat_Architecture.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="my-4-blocks-voice--chat-architecture">My 4 Blocks: Voice &amp; Chat Architecture</h1>
+<blockquote>
+<p><em>A guide to how typed chat and voice mode work—including system prompts, RAG retrieval, and information flow.</em></p>
+</blockquote>
+<hr>
+<h2 id="overview">Overview</h2>
+<p>My 4 Blocks offers two ways to interact with the AI guide:</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Input</th>
+<th>Output</th>
+<th>API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Chat</strong></td>
+<td>Typed text</td>
+<td>Streamed text (markdown)</td>
+<td>Vercel AI SDK → OpenAI Chat</td>
+</tr>
+<tr>
+<td><strong>Voice</strong></td>
+<td>Live speech</td>
+<td>Real-time speech</td>
+<td>OpenAI Realtime API (WebRTC)</td>
+</tr>
+</tbody>
+</table>
+<p>Both modes share the same <strong>RAG retrieval system</strong> and <strong>core knowledge base</strong>, but differ in how they deliver that knowledge to the user.</p>
+<hr>
+<h2 id="architecture-diagram">Architecture Diagram</h2>
+<pre class="hljs"><code><div>┌─────────────────────────────────────────────────────────────────────────────┐
+│                         MY 4 BLOCKS ARCHITECTURE                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────┐                    ┌──────────────────┐
+│     CHAT MODE     │                    │    VOICE MODE    │
+│   (Typed Input)   │                    │  (Live Speech)   │
+└────────┬─────────┘                    └────────┬─────────┘
+         │                                        │
+         │  POST /api/chat                        │  POST /api/realtime
+         │  (messages)                            │  (contextQuery, config)
+         ▼                                        ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        SHARED RAG SYSTEM                                     │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐            │
+│  │ loadEmbeddings() │  │ findRelevantWisdom() │  │ embeddings.json  │        │
+│  │ (280 chunks)    │  │ (query → top 5)  │  │ (shared/data/)   │            │
+│  └────────┬────────┘  └────────┬────────┘  └─────────────────┘            │
+│           │                    │                                              │
+│           │                    │  Hybrid Search (70% semantic + 30% keyword)  │
+│           │                    │  Graph expansion (optional)                   │
+│           │                    │  OpenAI text-embedding-3-small               │
+│           └────────────────────┴──────────────────────────────────────────────│
+└─────────────────────────────────────────────────────────────────────────────┘
+         │                                        │
+         │  systemPrompt +                        │  instructions (prompt)
+         │  RAG context                            │  + RAG context
+         ▼                                        ▼
+┌──────────────────┐                    ┌──────────────────┐
+│     CHAT API     │                    │   REALTIME API   │
+│  streamText()    │                    │  Ephemeral Session│
+│  gpt-4o-mini     │                    │  gpt-4o-realtime │
+└────────┬─────────┘                    └────────┬─────────┘
+         │                                        │
+         │  Streaming Response                    │  WebRTC connection
+         │  (UIMessage)                           │  (audio PCM 24kHz)
+         ▼                                        ▼
+┌──────────────────┐                    ┌──────────────────┐
+│  Chat UI         │                    │  VoiceMode UI    │
+│  (ReactMarkdown) │                    │  (Orb + transcript)│
+└──────────────────┘                    └──────────────────┘
+</div></code></pre>
+<hr>
+<h2 id="chat-mode">Chat Mode</h2>
+<h3 id="flow">Flow</h3>
+<ol>
+<li><strong>User types</strong> → <code>sendMessage()</code> from <code>useChat()</code></li>
+<li><strong>Client</strong> sends <code>POST /api/chat</code> with full message history</li>
+<li><strong>Server</strong> (<code>handleChatRequest</code>):
+<ul>
+<li>Loads RAG embeddings (lazy init)</li>
+<li>Extracts query from last user message</li>
+<li>Calls <code>findRelevantWisdom(query, 5)</code> → hybrid search</li>
+<li>Builds <code>systemPrompt = SYSTEM_PROMPT + &quot;\n\n## Relevant Book Context\n&quot; + ragContext</code></li>
+<li>Streams via <code>streamText()</code> with <code>system</code>, <code>messages</code>, <code>temperature</code>, <code>maxTokens</code></li>
+</ul>
+</li>
+<li><strong>Response</strong> streamed back as <code>UIMessage</code> stream</li>
+<li><strong>Client</strong> renders markdown with <code>ReactMarkdown</code></li>
+</ol>
+<h3 id="system-prompt-chat">System Prompt (Chat)</h3>
+<p>The chat system prompt is <strong>richer</strong> and includes:</p>
+<ul>
+<li><strong>Book structure</strong> – Chapter outline</li>
+<li><strong>Four Blocks</strong> – Nuanced definitions (Anger, Anxiety, Depression, Guilt)</li>
+<li><strong>Depression vs Guilt</strong> – Exact distinction</li>
+<li><strong>ABC Model</strong> – A–E (Activating Event, Belief, Consequence, Disputing, Effective new belief)</li>
+<li><strong>Seven Irrational Beliefs</strong> – Full list</li>
+<li><strong>Three Insights</strong> – Core principles</li>
+<li><strong>Narrator vs Observer</strong> – Mindfulness framing</li>
+<li><strong>Communication style</strong> – Warm, compassionate, non-judgmental</li>
+<li><strong>Key quotes</strong> – Dr. Parr, Dōgen</li>
+</ul>
+<p>RAG adds <strong>top 5 relevant chunks</strong> from the book under <code>## Relevant Book Context</code>.</p>
+<h3 id="configuration">Configuration</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model</code></td>
+<td><code>gpt-4o-mini</code></td>
+<td>Chat model</td>
+</tr>
+<tr>
+<td><code>temperature</code></td>
+<td>0.7</td>
+<td>Response randomness</td>
+</tr>
+<tr>
+<td><code>maxTokens</code></td>
+<td>2000</td>
+<td>Max tokens per response</td>
+</tr>
+<tr>
+<td><code>ragEnabled</code></td>
+<td>true</td>
+<td>RAG retrieval</td>
+</tr>
+<tr>
+<td><code>ragTopK</code></td>
+<td>5</td>
+<td>Chunks retrieved</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="voice-mode">Voice Mode</h2>
+<h3 id="flow">Flow</h3>
+<ol>
+<li><strong>User</strong> starts voice session → <code>VoiceMode</code> component calls <code>POST /api/realtime</code></li>
+<li><strong>Request</strong> body: <code>{ contextQuery?, config? }</code> (voice, style, ragEnabled, etc.)</li>
+<li><strong>Server</strong> (<code>handleRealtimeRequest</code>):
+<ul>
+<li>Loads RAG embeddings (lazy init)</li>
+<li>Calls <code>buildVoiceInstructions(contextQuery, config)</code>:
+<ul>
+<li>Builds voice system prompt with style</li>
+<li>If <code>ragEnabled</code> and <code>contextQuery</code>, adds RAG context</li>
+</ul>
+</li>
+<li>Creates ephemeral session via <code>POST https://api.openai.com/v1/realtime/sessions</code></li>
+<li>Returns <code>{ client_secret, id, ... }</code> for WebRTC</li>
+</ul>
+</li>
+<li><strong>Client</strong>:
+<ul>
+<li>Uses <code>client_secret</code> to establish WebRTC connection</li>
+<li>Sends audio (PCM 24kHz) via WebRTC</li>
+<li>Receives audio stream, plays via <code>AudioContext</code></li>
+<li>Shows transcript from <code>data</code> channel</li>
+</ul>
+</li>
+</ol>
+<h3 id="system-prompt-voice">System Prompt (Voice)</h3>
+<p>Voice uses the same knowledge base but <strong>style-specific</strong> instructions:</p>
+<ul>
+<li><strong>Style</strong> – <code>direct</code> (default), <code>warm</code>, <code>casual</code>, <code>professional</code></li>
+<li><strong>Book structure</strong> – Same chapter outline</li>
+<li><strong>Four Blocks</strong> – Same definitions</li>
+<li><strong>Depression vs Guilt</strong> – Same distinction</li>
+<li><strong>ABC Model</strong> – A → B → C</li>
+<li><strong>Seven Irrational Beliefs</strong> – Short list</li>
+<li><strong>Three Insights</strong> – Same core principles</li>
+</ul>
+<p>RAG adds <strong>top 5 relevant chunks</strong> from the book under <code>## Relevant Book Context</code>.</p>
+<h3 id="voice-style-presets">Voice Style Presets</h3>
+<table>
+<thead>
+<tr>
+<th>Style</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>direct</strong></td>
+<td>Get to the point; no fluff; normal pace</td>
+</tr>
+<tr>
+<td><strong>warm</strong></td>
+<td>Friendly, supportive; natural rhythm</td>
+</tr>
+<tr>
+<td><strong>casual</strong></td>
+<td>Casual, conversational; everyday language</td>
+</tr>
+<tr>
+<td><strong>professional</strong></td>
+<td>Clear, structured; evidence-based</td>
+</tr>
+</tbody>
+</table>
+<h3 id="voice-options">Voice Options</h3>
+<p>9 voices: <code>ash</code>, <code>alloy</code>, <code>ballad</code>, <code>coral</code>, <code>echo</code>, <code>marin</code>, <code>sage</code>, <code>shimmer</code>, <code>verse</code>.</p>
+<h3 id="configuration">Configuration</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>voice</code></td>
+<td><code>ash</code></td>
+<td>TTS voice</td>
+</tr>
+<tr>
+<td><code>style</code></td>
+<td><code>direct</code></td>
+<td>Conversation style</td>
+</tr>
+<tr>
+<td><code>model</code></td>
+<td><code>gpt-4o-realtime-preview-2024-12-17</code></td>
+<td>Realtime model</td>
+</tr>
+<tr>
+<td><code>ragEnabled</code></td>
+<td>true</td>
+<td>RAG retrieval</td>
+</tr>
+<tr>
+<td><code>ragTopK</code></td>
+<td>5</td>
+<td>Chunks retrieved</td>
+</tr>
+<tr>
+<td><code>turnDetection</code></td>
+<td><code>semantic_vad</code>, <code>low</code></td>
+<td>When to treat user as finished speaking</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="rag-retrieval-augmented-generation">RAG: Retrieval-Augmented Generation</h2>
+<h3 id="data-source">Data Source</h3>
+<ul>
+<li><strong>Source</strong>: full PDF of <em>You Only Have Four Problems by Dr. Vincent E. Parr</em></li>
+<li><strong>Chunking</strong>: Chonkie <code>TokenChunker</code> (500 tokens, 100 overlap)</li>
+<li><strong>Embeddings</strong>: OpenAI <code>text-embedding-3-small</code> (1536 dims)</li>
+<li><strong>Storage</strong>: <code>shared/data/embeddings.json</code> (~280 chunks)</li>
+</ul>
+<h3 id="retrieval-pipeline">Retrieval Pipeline</h3>
+<pre class="hljs"><code><div>User Query
+    │
+    ▼
+┌───────────────────────────────────────────────────────────────────┐
+│ 1. getQueryEmbedding(query)                                        │
+│    → OpenAI text-embedding-3-small → 1536-dim vector                │
+└───────────────────────────────────────────────────────────────────┘
+    │
+    ▼
+┌───────────────────────────────────────────────────────────────────┐
+│ 2. hybridSearch(query, queryEmbedding, allChunks)                   │
+│    • Semantic: cosine similarity (query ↔ chunk embeddings)        │
+│    • Keyword:  term matching (title, keywords, tags, content)       │
+│    • Weights:  70% semantic, 30% keyword                            │
+│    • Block boost: +20% if query matches block type (e.g. &quot;anger&quot;)   │
+└───────────────────────────────────────────────────────────────────┘
+    │
+    ▼
+┌───────────────────────────────────────────────────────────────────┐
+│ 3. expandWithRelated() [optional]                                   │
+│    • Uses metadata.related (cross-links) for graph expansion        │
+│    • Adds related chunks from same knowledge graph                  │
+└───────────────────────────────────────────────────────────────────┘
+    │
+    ▼
+┌───────────────────────────────────────────────────────────────────┐
+│ 4. formatContextForPrompt() / formatExpandedContext()              │
+│    → &quot;[Source 1 - Anger]: ...\n\n---\n\n[Source 2 - ABCs]: ...&quot;   │
+└───────────────────────────────────────────────────────────────────┘
+    │
+    ▼
+Appended to system prompt as &quot;## Relevant Book Context&quot;
+</div></code></pre>
+<h3 id="fallback">Fallback</h3>
+<p>If the embedding API fails, the system falls back to <strong>keyword-only</strong> search.</p>
+<hr>
+<h2 id="information-management-summary">Information Management Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Chat</th>
+<th>Voice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Context window</strong></td>
+<td>Full message history sent each request</td>
+<td>Ephemeral session; instructions fixed at session start</td>
+</tr>
+<tr>
+<td><strong>RAG trigger</strong></td>
+<td>Query = last user message</td>
+<td>Query = optional <code>contextQuery</code> (e.g. suggested prompt)</td>
+</tr>
+<tr>
+<td><strong>Streaming</strong></td>
+<td>Text stream (UIMessage)</td>
+<td>Audio stream (WebRTC)</td>
+</tr>
+<tr>
+<td><strong>Transcription</strong></td>
+<td>N/A</td>
+<td>Whisper-1 on server</td>
+</tr>
+<tr>
+<td><strong>Turn detection</strong></td>
+<td>N/A</td>
+<td>Semantic VAD (server decides when user finished)</td>
+</tr>
+<tr>
+<td><strong>Session persistence</strong></td>
+<td>Client maintains conversation</td>
+<td>Session ends when WebRTC disconnected</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="file-reference">File Reference</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>shared/api/chat.ts</code></td>
+<td>Chat API handler, <code>SYSTEM_PROMPT</code>, <code>handleChatRequest</code></td>
+</tr>
+<tr>
+<td><code>shared/api/realtime.ts</code></td>
+<td>Voice API handler, <code>buildSystemPrompt</code>, <code>createRealtimeSession</code></td>
+</tr>
+<tr>
+<td><code>shared/lib/rag.ts</code></td>
+<td><code>getRAGContext</code>, <code>findRelevantWisdom</code>, <code>loadEmbeddings</code></td>
+</tr>
+<tr>
+<td><code>shared/lib/hybridSearch.ts</code></td>
+<td>Hybrid semantic + keyword search</td>
+</tr>
+<tr>
+<td><code>shared/lib/embeddings.ts</code></td>
+<td>Query embedding (OpenAI or local)</td>
+</tr>
+<tr>
+<td><code>shared/lib/vectorSearch.ts</code></td>
+<td>Cosine similarity, <code>formatContextForPrompt</code></td>
+</tr>
+<tr>
+<td><code>shared/lib/keywordSearch.ts</code></td>
+<td>Keyword search, emotion keyword expansion</td>
+</tr>
+<tr>
+<td><code>shared/lib/graphExpansion.ts</code></td>
+<td>Cross-link expansion via <code>metadata.related</code></td>
+</tr>
+<tr>
+<td><code>shared/data/embeddings.json</code></td>
+<td>Pre-computed embeddings (280 chunks)</td>
+</tr>
+<tr>
+<td><code>shared/components/VoiceMode.tsx</code></td>
+<td>Voice UI, WebRTC, orb, transcript</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="suggested-prompts-chat-page">Suggested Prompts (Chat Page)</h2>
+<p>When the user starts a chat, they can choose from suggested prompts:</p>
+<ul>
+<li><strong>Managing Anger</strong> – &quot;I keep getting angry at things I can't control. How can I stop?&quot;</li>
+<li><strong>Understanding Anxiety</strong> – &quot;I'm worried about what might happen. How can I stop worrying?&quot;</li>
+<li><strong>Overcoming Depression</strong> – &quot;I feel hopeless and unmotivated. What can I do?&quot;</li>
+<li><strong>Releasing Guilt</strong> – &quot;I feel guilty about something I did. How can I let it go?&quot;</li>
+<li><strong>The ABCs Model</strong> – &quot;How do my thoughts create my emotions?&quot;</li>
+<li><strong>Core Beliefs</strong> – &quot;What are the irrational beliefs that cause suffering?&quot;</li>
+</ul>
+<p>These prompts are used both as <strong>chat starters</strong> and as <strong>contextQuery</strong> for voice sessions when the user starts voice mode from a suggested prompt.</p>
+<hr>
+<p><em>Document generated for My 4 Blocks—the emotional wellness chat powered by the Four Blocks framework.</em></p>
+
+</body>
+</html>

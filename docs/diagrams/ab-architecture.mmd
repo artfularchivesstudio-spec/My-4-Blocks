@@ -1,0 +1,57 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#E9E5FF', 'primaryTextColor': '#1e1b4b', 'primaryBorderColor': '#7C3AED', 'lineColor': '#7C3AED', 'secondaryColor': '#F5F3FF', 'tertiaryColor': '#EDE9FE', 'fontSize': '20px'}, 'flowchart': { 'nodeSpacing': 80, 'rankSpacing': 80 }}}%%
+flowchart TB
+    subgraph UI["🎨 UI LAYER"]
+        CI[Chat Input]
+        ABC[ABResponseComparison]
+        CS[Choice Submit]
+    end
+
+    subgraph API["🌐 API LAYER"]
+        CAB[POST /api/chat/ab]
+        ACH[POST /api/ab-choice]
+    end
+
+    subgraph GEN["⚡ GENERATION LAYER"]
+        DRG[dualResponseGenerator.ts]
+        subgraph PAR["PARALLEL STREAMING"]
+            BPA["Blueprint A: Structured"]
+            BPB["Blueprint B: Conversational"]
+        end
+    end
+
+    subgraph ANA["📊 ANALYTICS LAYER"]
+        ABS[abTesting.ts]
+        ST[storeABTest]
+        RC[recordChoice]
+        GS[getABStats]
+    end
+
+    CI -->|messages| CAB
+    CAB --> DRG
+    DRG --> BPA
+    DRG --> BPB
+    BPA --> ABC
+    BPB --> ABC
+    DRG --> ST
+    ABC -->|user selects| CS
+    CS -->|choice| ACH
+    ACH --> RC
+    RC --> GS
+
+    style UI fill:#F5F3FF,stroke:#7C3AED,color:#1e1b4b
+    style API fill:#F5F3FF,stroke:#7C3AED,color:#1e1b4b
+    style GEN fill:#F5F3FF,stroke:#7C3AED,color:#1e1b4b
+    style ANA fill:#F5F3FF,stroke:#7C3AED,color:#1e1b4b
+    style PAR fill:#EDE9FE,stroke:#A78BFA,color:#1e1b4b
+    style CI fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style ABC fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style CS fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style CAB fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style ACH fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style DRG fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style BPA fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style BPB fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style ABS fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style ST fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style RC fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
+    style GS fill:#E9E5FF,stroke:#7C3AED,color:#1e1b4b
