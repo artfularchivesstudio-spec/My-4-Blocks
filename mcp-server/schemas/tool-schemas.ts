@@ -213,7 +213,7 @@ export type FindBeliefOutput = z.infer<typeof FindBeliefOutputSchema>
  * ⚔️ dispute_belief - Input schema
  *
  * Use this when: A belief has been identified and the user is ready to
- * challenge it with REBT disputation questions.
+ * challenge it with Four Blocks disputation questions.
  */
 export const DisputeBeliefInputSchema = z.object({
   belief_statement: z
@@ -240,7 +240,7 @@ export const DisputeBeliefOutputSchema = z.object({
     z.object({
       question: z.string().describe('The disputation question'),
       purpose: z.string().describe('Why this question helps challenge the belief'),
-      source: z.enum(['ellis', 'byron_katie', 'stoic', 'general']).describe(
+      source: z.enum(['four_blocks', 'byron_katie', 'stoic', 'general']).describe(
         'The therapeutic tradition this question comes from'
       ),
     })

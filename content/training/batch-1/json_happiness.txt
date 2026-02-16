@@ -1,0 +1,125 @@
+[
+  {
+    "chapter": "HAP",
+    "section": "HAP_S1",
+    "chunk": "HAP_S1_C01",
+    "title": "Core Questions About Happiness",
+    "content": "Happiness comes from flexible thinking, realistic expectations, and the absence of rigid demands. People ask why happiness feels temporary, why it seems dependent on circumstances, and why it disappears under stress. Happiness increases when demands become preferences and when identity is not tied to outcomes.",
+    "tags": ["happiness", "well-being", "emotion"],
+    "keywords": ["happiness", "preferences", "flexibility"],
+    "related": ["IRR_S5_C01", "INS_S5_C01", "ABC_S5_C01"],
+    "audience": "general",
+    "category": "happiness"
+  },
+  {
+    "chapter": "HAP",
+    "section": "HAP_S2",
+    "chunk": "HAP_S2_C01",
+    "title": "What Happiness Is",
+    "content": "Happiness is the emotional result of flexible beliefs. It is not caused by events but by interpretations that allow for imperfection, uncertainty, and change. Happiness grows when you stop demanding that life meet rigid standards.",
+    "tags": ["happiness", "definition"],
+    "keywords": ["happiness", "flexibility", "interpretation"],
+    "related": ["IRR_S8_C02", "INS_S2_C03"],
+    "audience": "general",
+    "category": "happiness"
+  },
+  {
+    "chapter": "HAP",
+    "section": "HAP_S2",
+    "chunk": "HAP_S2_C02",
+    "title": "Why Happiness Matters",
+    "content": "Happiness matters because it improves resilience, decision-making, and relationships. It reduces emotional disturbance by shifting the mind from demands to preferences. Happiness is not the absence of problems but the presence of flexible thinking.",
+    "tags": ["happiness", "importance"],
+    "keywords": ["resilience", "preferences", "flexibility"],
+    "related": ["IRR_S8_C01", "INS_S4_C01"],
+    "audience": "general",
+    "category": "happiness"
+  },
+  {
+    "chapter": "HAP",
+    "section": "HAP_S3",
+    "chunk": "HAP_S3_C01",
+    "title": "The Happiness Formula",
+    "content": "A: Life happens. B: You interpret events with flexible, rational beliefs. C: Happiness. Happiness is created by beliefs that allow for uncertainty, imperfection, and change. When beliefs shift, emotional outcomes shift.",
+    "tags": ["happiness", "formula"],
+    "keywords": ["ABCs", "beliefs", "emotion"],
+    "related": ["ABC_S3_C01", "INS_S3_C01"],
+    "audience": "general",
+    "category": "happiness"
+  },
+  {
+    "chapter": "HAP",
+    "section": "HAP_S4",
+    "chunk": "HAP_S4_C01",
+    "title": "Slow Explanation of Happiness",
+    "content": "Happiness is not a constant emotional high. It is the natural result of interpreting life without rigid demands. When you allow events to unfold without insisting they must be different, emotional space opens. Happiness grows in the absence of internal pressure.",
+    "tags": ["happiness", "explanation"],
+    "keywords": ["flexibility", "demands", "interpretation"],
+    "related": ["DEP_S4_C01", "INS_S4_C01"],
+    "audience": "general",
+    "category": "happiness"
+  },
+  {
+    "chapter": "HAP",
+    "section": "HAP_S5",
+    "chunk": "HAP_S5_C01",
+    "title": "Fast Versions of Happiness",
+    "content": "Demands create suffering. Preferences create peace. Happiness grows when you replace 'must' with 'prefer.'",
+    "tags": ["happiness", "fast"],
+    "keywords": ["preferences", "peace", "flexibility"],
+    "related": ["IRR_S5_C01", "ABC_S5_C01"],
+    "audience": "general",
+    "category": "happiness"
+  },
+  {
+    "chapter": "HAP",
+    "section": "HAP_S6",
+    "chunk": "HAP_S6_C01",
+    "title": "Practical Steps for Happiness",
+    "content": "1. Identify rigid beliefs. 2. Replace demands with preferences. 3. Accept uncertainty. 4. Allow imperfection. 5. Practice flexible thinking. Happiness increases when beliefs become realistic and adaptable.",
+    "tags": ["happiness", "steps"],
+    "keywords": ["steps", "flexibility", "belief change"],
+    "related": ["INS_S6_C01", "ABC_S6_C01"],
+    "audience": "general",
+    "category": "happiness"
+  },
+  {
+    "chapter": "HAP",
+    "section": "HAP_S7",
+    "chunk": "HAP_S7_C01",
+    "title": "Examples of Happiness",
+    "content": "Traffic: 'I prefer it to move faster, but I can handle this.' Work stress: 'I want things to go smoothly, but I can handle challenges.' Happiness grows when preferences replace demands.",
+    "tags": ["happiness", "examples"],
+    "keywords": ["preferences", "traffic", "work"],
+    "related": ["ANG_S7_C01", "ANX_S7_C01", "DEP_S7_C01"],
+    "audience": "general",
+    "category": "happiness"
+  },
+  {
+    "chapter": "HAP",
+    "section": "HAP_S8",
+    "chunk": "HAP_S8_C01",
+    "title": "Q&A for Happiness",
+    "content": "Q: Why does happiness fade? A: Rigid beliefs return. Q: Can happiness be stable? A: Yes, when beliefs remain flexible. Q: Is happiness the goal? A: No. Flexibility is the goal. Happiness follows.",
+    "tags": ["happiness", "Q&A"],
+    "keywords": ["flexibility", "beliefs", "emotion"],
+    "related": ["INS_S8_C02", "IRR_S8_C01"],
+    "audience": "general",
+    "category": "happiness"
+  },
+  {
+    "chapter": "HAP",
+    "section": "HAP_S8",
+    "chunk": "HAP_S8_C02",
+    "title": "Signature Closing for Happiness",
+    "content": "Happiness is not created by events. It is created by flexible beliefs. When demands become preferences, peace returns.",
+    "tags": ["happiness", "closing"],
+    "keywords": ["peace", "preferences", "beliefs"],
+    "related": ["INS_S8_C02", "IRR_S8_C02"],
+    "audience": "general",
+    "category": "happiness"
+  }
+]
+
+
+If you want a master index, a README for Gurinder, or a folder structure for all nine chapters, just say so.

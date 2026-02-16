@@ -4,6 +4,51 @@
 
 ---
 
+## 📅 February 16, 2026
+
+### 🧘 "The Great Purification: When Four Blocks Became Truly Its Own Thing"
+
+*A reflective journal entry from your friendly neighborhood AI who discovered that sometimes letting go is the most mindful act of all*
+
+---
+
+**The Vibe:** Today was about intellectual hygiene and brand purity. The user wanted a clean, unadulterated Four Blocks experience — no more attribution soup mixing Ellis, Beck, REBT, and CBT into the system prompts. Dr. Parr's work stands on its own. Time to let it breathe.
+
+**What We Purified:**
+
+🧹 **System Prompt Cleansing**
+- Removed all "Albert Ellis" and "REBT/CBT" attributions from system prompts
+- Updated `docs/Voice_and_Chat_Architecture_v3.md` to reflect the pure Four Blocks approach
+- Updated `docs/Voice_and_Chat_Architecture_v2.md` to match (consistency across docs)
+- Edited `mcp-server/schemas/tool-schemas.ts` — changed `'ellis'` source enum to `'four_blocks'`
+- Fixed `codex/chatkit-home/app/page.tsx` — now uses "Four Blocks disputing questions" instead of "REBT questions"
+
+📚 **Batch-2 Training Data**
+- Ingested Depression and Guilt blueprints from `content/training/batch-2/`
+- 28 new chunks processed (14 Depression + 14 Guilt scenarios)
+- Total embeddings database now at 331 chunks with text-embedding-3-small
+- Rich scenario coverage: first responders, veterans, NICU nurses, divorced fathers, young mothers
+
+🔄 **Embeddings Sync**
+- Synced `shared/data/embeddings.json` across all variants (claude/, gemini/, v0/)
+- All variants now share the same 331-chunk knowledge base
+
+**The Philosophy:**
+
+The book legitimately references Ellis as historical context (Dr. Parr studied with him). But the *app* presents the *Four Blocks framework* — a distillation that deserves its own identity. We're not teaching REBT; we're teaching how to identify Anger, Anxiety, Depression, and Guilt and transform the beliefs that create them.
+
+**What Remains Pure:**
+- `shared/api/chat.ts` — already clean (just "Dr. Vincent E. Parr, Ph.D.")
+- `shared/api/realtime.ts` — already clean (same)
+- `v0/app/book/page.tsx` — mentions "Rational-Emotive approaches" without naming Ellis
+- Knowledge base JSON files — retain historical context as the book intended
+
+**TODO:**
+- Deploy all variants to Vercel
+- Monitor A/B testing results with the pure Four Blocks prompts
+
+---
+
 ## 📅 February 11, 2026
 
 ### 📄 "The Print Renaissance: When Mermaid Diagrams Finally Learned to Swim on Paper"

@@ -1,0 +1,134 @@
+{
+  "chapter": "GUILT",
+  "category": "guilt",
+  "audience": "general",
+  "chunks": [
+
+    {
+      "id": "GUILT_VALIDATION_DETECTIVE",
+      "title": "Validation — Detective Outcome Responsibility",
+      "content": "Working as a detective means carrying responsibility most people will never understand. Being surrounded by crime, tragedy, and life-or-death outcomes creates a weight that can feel personal. Feeling guilt when you can't control or solve everything doesn't mean you're weak. It means you care deeply about protecting life and doing what's right.",
+      "tags": ["validation", "detective", "responsibility", "guilt"],
+      "keywords": ["law enforcement", "cases", "responsibility", "guilt"],
+      "related": ["GUILT_FORMULA_CORE"]
+    },
+
+    {
+      "id": "GUILT_FORMULA_CORE",
+      "title": "Core Formula — Guilt (W1 + W2)",
+      "content": "In Dr. Parr's Four Blocks model, guilt follows the formula: G = W1 + W2. W1 is Wrongness — the belief that you did something wrong or failed. W2 is Worthlessness — the belief that this failure means something bad about who you are. Guilt forms when W1 and W2 fuse together.",
+      "tags": ["formula", "guilt", "four_blocks"],
+      "keywords": ["wrongness", "worthlessness", "guilt formula"],
+      "related": ["GUILT_MAPPING_DETECTIVE"]
+    },
+
+    {
+      "id": "GUILT_MAPPING_DETECTIVE",
+      "title": "Mapping — Detective Guilt Components",
+      "content": "W1 (Wrongness): 'I should have done more.' 'I missed something.' 'I failed to save them.' W2 (Worthlessness): 'A good detective wouldn't let this happen.' 'Maybe I'm not who I thought I was.' Guilt intensifies when W1 fuses with W2, turning responsibility into self-condemnation.",
+      "tags": ["mapping", "detective", "guilt"],
+      "keywords": ["wrongness", "worthlessness", "identity"],
+      "related": ["GUILT_INTERVENTION_W1_W2_SEPARATION_DETECTIVE"]
+    },
+
+    {
+      "id": "GUILT_INTERVENTION_W1_W2_SEPARATION_DETECTIVE",
+      "title": "Intervention — W1/W2 Separation (Detective)",
+      "content": "The shift is from 'Something went wrong, and that means I'm not good enough' to 'Something painful happened, and I wish I could have done more, but my worth is not defined by outcomes I can't control.' Separating W1 from W2 reduces guilt while preserving responsibility and integrity.",
+      "tags": ["intervention", "guilt_shift", "detective"],
+      "keywords": ["separation", "wrongness", "worthlessness"],
+      "related": ["GUILT_REFRAME_DETECTIVE_IDENTITY"]
+    },
+
+    {
+      "id": "GUILT_REFRAME_DETECTIVE_IDENTITY",
+      "title": "Reframe — Detective Honor and Integrity",
+      "content": "Your guilt reflects how seriously you take human life and justice. These are qualities people hope a detective has. Four Blocks helps you keep your integrity and sense of duty while losing the self-punishing guilt that weighs you down.",
+      "tags": ["reframe", "identity", "detective"],
+      "keywords": ["integrity", "duty", "identity"],
+      "related": ["GUILT_NEXT_QUESTION_TRIAGE"]
+    },
+
+    {
+      "id": "GUILT_NEXT_QUESTION_TRIAGE",
+      "title": "Next Step — Identify Strongest Component",
+      "content": "Which part feels strongest right now: the sense of wrongness (W1) or the feeling of worthlessness (W2)? Identifying the heavier component guides the next step.",
+      "tags": ["triage", "question", "next_step"],
+      "keywords": ["wrongness", "worthlessness"],
+      "related": ["GUILT_FORMULA_CORE"]
+    },
+
+    {
+      "id": "GUILT_VALIDATION_VETERAN",
+      "title": "Validation — Combat Veteran Survivor Guilt",
+      "content": "Coming home after losing brothers in combat is something most people will never understand. Survivor guilt is not weakness. It reflects loyalty, responsibility, and love for the men beside you. Feeling this guilt means the bond mattered deeply.",
+      "tags": ["validation", "veteran", "survivor_guilt"],
+      "keywords": ["combat", "survivor guilt", "brotherhood"],
+      "related": ["GUILT_MAPPING_VETERAN"]
+    },
+
+    {
+      "id": "GUILT_MAPPING_VETERAN",
+      "title": "Mapping — Veteran Survivor Guilt Components",
+      "content": "W1 (Wrongness): 'I should have done more.' 'Why did I survive?' 'Maybe I failed them.' W2 (Worthlessness): 'I don't deserve to be here.' 'Something is wrong with me for surviving.' Guilt intensifies when W1 fuses with W2, creating the weight of survivor guilt.",
+      "tags": ["mapping", "veteran", "survivor_guilt"],
+      "keywords": ["wrongness", "worthlessness", "survival"],
+      "related": ["GUILT_INTERVENTION_W1_W2_SEPARATION_VETERAN"]
+    },
+
+    {
+      "id": "GUILT_INTERVENTION_W1_W2_SEPARATION_VETERAN",
+      "title": "Intervention — W1/W2 Separation (Veteran)",
+      "content": "The shift is from 'They died, and that means I don't deserve to live' to 'They died, and that pain matters, but my worth is not determined by survival.' Separating W1 from W2 reduces guilt and allows grief to exist without self-punishment.",
+      "tags": ["intervention", "guilt_shift", "veteran"],
+      "keywords": ["separation", "survivor guilt", "worth"],
+      "related": ["GUILT_REFRAME_VETERAN_HONOR"]
+    },
+
+    {
+      "id": "GUILT_REFRAME_VETERAN_HONOR",
+      "title": "Reframe — Veteran Honor and Legacy",
+      "content": "Your guilt reflects loyalty, love, and the depth of your bond. These are not signs of failure. Four Blocks helps you keep the honor and loyalty while losing the belief that you are unworthy to live. Your life becomes a way to carry their legacy forward.",
+      "tags": ["reframe", "veteran", "identity"],
+      "keywords": ["honor", "legacy", "identity"],
+      "related": ["GUILT_NEXT_QUESTION_TRIAGE"]
+    },
+
+    {
+      "id": "GUILT_VALIDATION_YOUNG_MOTHER",
+      "title": "Validation — Young Mother Retrospective Guilt",
+      "content": "Being a young mother, facing fear and uncertainty during pregnancy, and now loving your child deeply is an emotional journey. Feeling guilt about past thoughts doesn't mean you're a bad mother. It means you care profoundly about your child.",
+      "tags": ["validation", "motherhood", "guilt"],
+      "keywords": ["mother", "pregnancy", "guilt"],
+      "related": ["GUILT_MAPPING_YOUNG_MOTHER"]
+    },
+
+    {
+      "id": "GUILT_MAPPING_YOUNG_MOTHER",
+      "title": "Mapping — Maternal Guilt Components",
+      "content": "W1 (Wrongness): 'I shouldn't have had those thoughts.' 'A good mother wouldn't question keeping her baby.' W2 (Worthlessness): 'Because I thought that, I must be a bad mother.' 'Maybe I don't deserve my child.' Guilt forms when fear-based thoughts (W1) fuse with identity judgment (W2).",
+      "tags": ["mapping", "motherhood", "guilt"],
+      "keywords": ["wrongness", "worthlessness", "maternal guilt"],
+      "related": ["GUILT_INTERVENTION_W1_W2_SEPARATION_MOTHER"]
+    },
+
+    {
+      "id": "GUILT_INTERVENTION_W1_W2_SEPARATION_MOTHER",
+      "title": "Intervention — W1/W2 Separation (Young Mother)",
+      "content": "The shift is from 'I once questioned this, so I'm a bad mother' to 'I was scared and alone, and those thoughts came from fear, not from a lack of love. The mother I am today is shown by how I care for my child now.' Separating W1 from W2 reduces guilt and strengthens maternal identity.",
+      "tags": ["intervention", "guilt_shift", "motherhood"],
+      "keywords": ["separation", "maternal guilt", "worth"],
+      "related": ["GUILT_REFRAME_MOTHER_LOVE"]
+    },
+
+    {
+      "id": "GUILT_REFRAME_MOTHER_LOVE",
+      "title": "Reframe — Maternal Love and Identity",
+      "content": "Your guilt reflects how deeply you care about being a good mother. Love — not indifference — guides you now. Four Blocks helps you keep the love and honesty while losing the self-condemning guilt that could interfere with raising your daughter.",
+      "tags": ["reframe", "motherhood", "identity"],
+      "keywords": ["love", "identity", "mother"],
+      "related": ["GUILT_NEXT_QUESTION_TRIAGE"]
+    }
+
+  ]
+}

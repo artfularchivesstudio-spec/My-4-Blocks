@@ -44,7 +44,7 @@ export default function HomePage() {
           },
           {
             label: 'Dispute a thought',
-            prompt: 'Here is the sentence in my head: "…". Help me dispute it using REBT questions.',
+            prompt: 'Here is the sentence in my head: "…". Help me dispute it using Four Blocks disputing questions.',
             icon: 'write' as const,
           },
           {

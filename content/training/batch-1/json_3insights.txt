@@ -1,0 +1,137 @@
+[
+  {
+    "chapter": "INS",
+    "section": "INS_S1",
+    "chunk": "INS_S1_C01",
+    "title": "Core Questions About the Three Insights",
+    "content": "The Three Insights explain why emotions arise, why they feel automatic, and why they persist even when you understand them logically. People ask why thoughts feel personal, why emotions feel real, and why changing thinking is difficult. The Three Insights reveal the mechanics behind experience: thoughts appear automatically, consciousness makes them feel real, and the mind identifies with them. Seeing these mechanics reduces emotional disturbance.",
+    "tags": ["three insights", "mechanics of mind", "emotion"],
+    "keywords": ["insights", "thoughts", "consciousness", "identity"],
+    "related": ["ABC_S2_C03", "IRR_S3_C01", "MC_S3_C01"],
+    "audience": "general",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S2",
+    "chunk": "INS_S2_C01",
+    "title": "Insight #1: Thoughts Are Automatic",
+    "content": "Thoughts arise on their own without your permission. The mind produces a constant stream of mental activity, including images, memories, predictions, and commentary. You do not choose your thoughts any more than you choose your heartbeat. Emotional disturbance begins when you believe you are the author of every thought.",
+    "tags": ["three insights", "thoughts"],
+    "keywords": ["automatic thoughts", "mind activity", "narrator"],
+    "related": ["MC_S3_C01", "ABC_S2_C03"],
+    "audience": "general",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S2",
+    "chunk": "INS_S2_C02",
+    "title": "Insight #2: Consciousness Makes Thoughts Feel Real",
+    "content": "Consciousness brings thoughts to life. When a thought appears, consciousness highlights it, making it feel vivid, important, or threatening. This is why intrusive thoughts feel real even when they are irrational. Consciousness does not judge thoughts; it simply illuminates them.",
+    "tags": ["three insights", "consciousness"],
+    "keywords": ["consciousness", "thoughts", "intrusive thoughts"],
+    "related": ["MC_S4_C01", "ANX_S4_C01"],
+    "audience": "general",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S2",
+    "chunk": "INS_S2_C03",
+    "title": "Insight #3: Identity Creates Emotional Impact",
+    "content": "Emotions intensify when you identify with thoughts. When you believe 'this thought is me' or 'this thought means something about me,' the emotional consequence becomes stronger. Disturbance arises from identification, not from the thought itself. When you see thoughts as mental events rather than identity, emotional intensity decreases.",
+    "tags": ["three insights", "identity"],
+    "keywords": ["identity", "self", "thought attachment"],
+    "related": ["MC_S3_C01", "DEP_S4_C01"],
+    "audience": "general",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S3",
+    "chunk": "INS_S3_C01",
+    "title": "How the Three Insights Work Together",
+    "content": "Thoughts arise automatically, consciousness makes them feel real, and identity makes them feel personal. This sequence explains why emotions feel powerful. When you interrupt any part of the sequence—automatic thought, consciousness, or identity—the emotional impact decreases. Understanding the mechanics reduces suffering.",
+    "tags": ["three insights", "mechanics"],
+    "keywords": ["thoughts", "consciousness", "identity"],
+    "related": ["ABC_S4_C01", "MC_S4_C01"],
+    "audience": "general",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S4",
+    "chunk": "INS_S4_C01",
+    "title": "Slow Explanation of the Three Insights",
+    "content": "The mind produces thoughts automatically. Consciousness highlights them. Identity attaches meaning to them. This creates emotional experience. When you see that thoughts are not chosen, not inherently meaningful, and not you, emotional disturbance decreases. The Three Insights reveal that experience is constructed, not imposed.",
+    "tags": ["three insights", "explanation"],
+    "keywords": ["thoughts", "consciousness", "identity", "experience"],
+    "related": ["MC_S4_C01", "ABC_S4_C01"],
+    "audience": "general",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S5",
+    "chunk": "INS_S5_C01",
+    "title": "Fast Versions of the Three Insights",
+    "content": "Thoughts appear automatically. Consciousness makes them feel real. Identity makes them feel personal. You are the observer, not the narrator.",
+    "tags": ["three insights", "fast"],
+    "keywords": ["observer", "narrator", "thoughts"],
+    "related": ["MC_S5_C01", "ABC_S5_C01"],
+    "audience": "general",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S6",
+    "chunk": "INS_S6_C01",
+    "title": "Practical Steps for Using the Three Insights",
+    "content": "1. Notice the thought. 2. Label it as automatic. 3. Recognize that consciousness is highlighting it. 4. Remind yourself that the thought is not you. 5. Allow the thought to pass without resistance. Emotional intensity decreases when identity is removed from the thought.",
+    "tags": ["three insights", "steps"],
+    "keywords": ["steps", "observer", "thoughts"],
+    "related": ["MC_S6_C01", "ABC_S6_C01"],
+    "audience": "general",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S7",
+    "chunk": "INS_S7_C01",
+    "title": "Examples of the Three Insights",
+    "content": "Intrusive thought: 'What if I lose control?' Insight #1: The thought appeared automatically. Insight #2: Consciousness made it feel real. Insight #3: Identity made it feel personal. When you see the mechanics, the emotional charge decreases.",
+    "tags": ["three insights", "examples"],
+    "keywords": ["intrusive thoughts", "identity", "consciousness"],
+    "related": ["MC_S7_C01", "ANX_S7_C01"],
+    "audience": "general",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S8",
+    "chunk": "INS_S8_C01",
+    "title": "First Responder Version of the Three Insights",
+    "content": "High-stress roles create rapid, automatic thoughts. Consciousness amplifies them, and identity makes them feel personal. Seeing the mechanics helps first responders separate themselves from intrusive or high-intensity thoughts. You are the observer, not the thought.",
+    "tags": ["three insights", "first responders"],
+    "keywords": ["first responders", "intrusive thoughts", "identity"],
+    "related": ["ANX_S7_C01", "MC_S7_C01"],
+    "audience": "first_responder",
+    "category": "three_insights"
+  },
+  {
+    "chapter": "INS",
+    "section": "INS_S8",
+    "chunk": "INS_S8_C02",
+    "title": "Signature Closing for the Three Insights",
+    "content": "Thoughts arise automatically. Consciousness makes them feel real. Identity makes them feel personal. You are the observer of thoughts, not the thoughts themselves.",
+    "tags": ["three insights", "closing"],
+    "keywords": ["observer", "thoughts", "identity"],
+    "related": ["HAP_S8_C02", "MC_S8_C02"],
+    "audience": "general",
+    "category": "three_insights"
+  }
+]
+
+
+Say Next chapter when you're ready for The Seven Irrational Beliefs (IRR).

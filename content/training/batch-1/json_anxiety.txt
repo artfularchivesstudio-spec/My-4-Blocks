@@ -1,0 +1,113 @@
+[
+  {
+    "chapter": "ANX",
+    "section": "ANX_S1",
+    "chunk": "ANX_S1_C01",
+    "title": "Core Questions About Anxiety",
+    "content": "Anxiety comes from demanding certainty about the future. People ask why anxiety feels automatic, why it spikes without warning, and why it persists even when nothing is wrong. Anxiety is created by the belief that something bad might happen and that you must be certain it won’t. When the demand for certainty drops, anxiety decreases.",
+    "tags": ["anxiety", "four blocks", "certainty", "future thinking"],
+    "keywords": ["anxiety", "certainty", "what if", "future", "fear"],
+    "related": ["IRR_S3_C02", "IRR_S3_C03", "ABC_S2_C03", "INS_S2_C02"],
+    "audience": "general",
+    "category": "anxiety"
+  },
+  {
+    "chapter": "ANX",
+    "section": "ANX_S2",
+    "chunk": "ANX_S2_C01",
+    "title": "What Anxiety Is",
+    "content": "Anxiety is the emotional result of demanding certainty about what will happen. It is not caused by danger itself but by the belief: 'Something bad might happen, and I must be sure it won’t.' Anxiety is a prediction emotion, created by trying to control the future.",
+    "tags": ["anxiety", "definition"],
+    "keywords": ["anxiety", "certainty", "prediction"],
+    "related": ["IRR_S3_C02", "INS_S2_C02"],
+    "audience": "general",
+    "category": "anxiety"
+  },
+  {
+    "chapter": "ANX",
+    "section": "ANX_S2",
+    "chunk": "ANX_S2_C02",
+    "title": "Why Anxiety Happens",
+    "content": "Anxiety happens when the mind demands certainty in an uncertain world. The belief creates the emotion, not the situation. Anxiety signals that a 'what if' belief is active: 'What if something bad happens and I can’t handle it?'",
+    "tags": ["anxiety", "beliefs"],
+    "keywords": ["anxiety", "what if", "uncertainty"],
+    "related": ["IRR_S3_C02", "IRR_S3_C03", "ABC_S2_C03"],
+    "audience": "general",
+    "category": "anxiety"
+  },
+  {
+    "chapter": "ANX",
+    "section": "ANX_S3",
+    "chunk": "ANX_S3_C01",
+    "title": "Anxiety Formula",
+    "content": "A: Something uncertain exists. B: You tell yourself 'I must know what will happen.' C: Anxiety. The belief—not the uncertainty—creates the emotion. Releasing the demand for certainty reduces anxiety.",
+    "tags": ["anxiety", "formula"],
+    "keywords": ["anxiety", "ABCs", "certainty"],
+    "related": ["ABC_S2_C03", "IRR_S3_C02", "IRR_S3_C03", "INS_S2_C02"],
+    "audience": "general",
+    "category": "anxiety"
+  },
+  {
+    "chapter": "ANX",
+    "section": "ANX_S4",
+    "chunk": "ANX_S4_C01",
+    "title": "Slow Explanation of Anxiety",
+    "content": "Anxiety is the mind trying to guarantee safety by predicting the future. The problem is that certainty is impossible. The more certainty you demand, the more anxious you feel. Anxiety softens when the demand becomes a preference.",
+    "tags": ["anxiety", "explanation"],
+    "keywords": ["anxiety", "certainty", "safety"],
+    "related": ["INS_S2_C02", "IRR_S3_C02", "IRR_S3_C03"],
+    "audience": "general",
+    "category": "anxiety"
+  },
+  {
+    "chapter": "ANX",
+    "section": "ANX_S5",
+    "chunk": "ANX_S5_C01",
+    "title": "Fast Versions of Anxiety",
+    "content": "Anxiety is a demand for certainty. Peace comes from accepting uncertainty. Anxiety = 'I must know.' Calm = 'I prefer to know, but I can handle not knowing.'",
+    "tags": ["anxiety", "fast"],
+    "keywords": ["anxiety", "uncertainty", "preference"],
+    "related": ["IRR_S3_C02", "IRR_S3_C03", "HAP_S5_C01"],
+    "audience": "general",
+    "category": "anxiety"
+  },
+  {
+    "chapter": "ANX",
+    "section": "ANX_S6",
+    "chunk": "ANX_S6_C01",
+    "title": "Practical Steps for Anxiety",
+    "content": "1. Notice the anxiety. 2. Identify the demand for certainty. 3. Ask if certainty is possible. 4. Replace the demand with a preference. 5. Let the nervous system update. Anxiety reduces when certainty is no longer required.",
+    "tags": ["anxiety", "steps"],
+    "keywords": ["anxiety", "steps", "certainty"],
+    "related": ["ABC_S6_C01", "INS_S6_C01"],
+    "audience": "general",
+    "category": "anxiety"
+  },
+  {
+    "chapter": "ANX",
+    "section": "ANX_S7",
+    "chunk": "ANX_S7_C01",
+    "title": "Examples of Anxiety",
+    "content": "Health: 'What if something is wrong?' → 'I prefer certainty, but I can handle uncertainty.' Work: 'What if I fail?' → 'I want success, but I don’t need certainty to be okay.' Anxiety drops when certainty stops being required.",
+    "tags": ["anxiety", "examples"],
+    "keywords": ["anxiety", "health", "work"],
+    "related": ["HAP_S7_C01", "IRR_S3_C02", "IRR_S3_C03"],
+    "audience": "general",
+    "category": "anxiety"
+  },
+  {
+    "chapter": "ANX",
+    "section": "ANX_S8",
+    "chunk": "ANX_S8_C01",
+    "title": "Signature Closing for Anxiety",
+    "content": "Anxiety is not caused by uncertainty. It is caused by demanding certainty. When the demand becomes a preference, calm returns.",
+    "tags": ["anxiety", "closing"],
+    "keywords": ["anxiety", "certainty", "calm"],
+    "related": ["HAP_S8_C02", "INS_S2_C02"],
+    "audience": "general",
+    "category": "anxiety"
+  }
+]
+
+
+Say Next chapter when you're ready for Depression (DEP).

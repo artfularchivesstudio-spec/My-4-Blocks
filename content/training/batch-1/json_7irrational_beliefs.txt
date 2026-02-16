@@ -1,0 +1,211 @@
+[
+  {
+    "chapter": "IRR",
+    "section": "IRR_S1",
+    "chunk": "IRR_S1_C01",
+    "title": "Core Questions About the Seven Irrational Beliefs",
+    "content": "The Seven Irrational Beliefs explain why emotional disturbance occurs. People ask why emotions feel extreme, why reactions feel automatic, and why certain patterns repeat. These beliefs create anger, anxiety, guilt, and depression by demanding that reality, the future, the past, or other people obey rigid rules. Understanding and correcting these beliefs reduces emotional suffering.",
+    "tags": ["irrational beliefs", "cognitive model", "emotion"],
+    "keywords": ["irrational beliefs", "demands", "rules", "emotion"],
+    "related": ["ABC_S2_C03", "INS_S2_C01", "ANG_S2_C02"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S2",
+    "chunk": "IRR_S2_C01",
+    "title": "What the Irrational Beliefs Are",
+    "content": "The Seven Irrational Beliefs are rigid, absolute demands about how life must be. They include demands about comfort, certainty, fairness, approval, perfection, and control. These beliefs create emotional disturbance because they conflict with how reality works.",
+    "tags": ["irrational beliefs", "definition"],
+    "keywords": ["demands", "rules", "rigidity"],
+    "related": ["ABC_S2_C03", "INS_S2_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S2",
+    "chunk": "IRR_S2_C02",
+    "title": "How Irrational Beliefs Show Up",
+    "content": "Irrational beliefs appear as 'musts,' 'shoulds,' and 'have to' statements. They create emotional intensity by demanding that reality conform to internal rules. When these rules are violated, emotional disturbance occurs.",
+    "tags": ["irrational beliefs", "belief patterns"],
+    "keywords": ["should", "must", "rules"],
+    "related": ["ANG_S2_C02", "ANX_S2_C02", "DEP_S2_C02", "GUILT_S2_C02"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S2",
+    "chunk": "IRR_S2_C03",
+    "title": "Overview of All Seven Irrational Beliefs",
+    "content": "1. I must be approved of. 2. Others must treat me fairly. 3. Life must be easy and comfortable. 4. Things must go my way. 5. I must perform perfectly. 6. I must be certain. 7. I must control everything. Each belief creates a specific emotional consequence.",
+    "tags": ["irrational beliefs", "overview"],
+    "keywords": ["approval", "fairness", "comfort", "certainty", "control"],
+    "related": ["IRR_S3_C01", "IRR_S3_C02", "IRR_S3_C03", "IRR_S3_C04", "IRR_S3_C05", "IRR_S3_C06", "IRR_S3_C07"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+
+  {
+    "chapter": "IRR",
+    "section": "IRR_S3",
+    "chunk": "IRR_S3_C01",
+    "title": "Irrational Belief #1: I Must Be Approved Of",
+    "content": "This belief demands universal approval. It creates anxiety, guilt, and depression when approval is not received. The rational alternative is: 'I prefer approval, but I do not need it to be okay.'",
+    "tags": ["irrational beliefs", "approval"],
+    "keywords": ["approval", "validation", "acceptance"],
+    "related": ["ANX_S7_C01", "GUILT_S7_C01", "ABC_S7_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S3",
+    "chunk": "IRR_S3_C02",
+    "title": "Irrational Belief #2: Others Must Treat Me Fairly",
+    "content": "This belief demands fairness from others. It creates anger and resentment when violated. The rational alternative is: 'I prefer fairness, but I can handle unfairness when it occurs.'",
+    "tags": ["irrational beliefs", "fairness"],
+    "keywords": ["fairness", "justice", "anger"],
+    "related": ["ANG_S7_C01", "ANX_S7_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S3",
+    "chunk": "IRR_S3_C03",
+    "title": "Irrational Belief #3: Life Must Be Easy and Comfortable",
+    "content": "This belief demands comfort and ease. It creates anxiety and avoidance when life becomes difficult. The rational alternative is: 'I prefer comfort, but I can tolerate discomfort.'",
+    "tags": ["irrational beliefs", "comfort"],
+    "keywords": ["comfort", "ease", "avoidance"],
+    "related": ["ANX_S7_C01", "DEP_S7_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S3",
+    "chunk": "IRR_S3_C04",
+    "title": "Irrational Belief #4: Things Must Go My Way",
+    "content": "This belief demands that reality follow personal expectations. It creates anger when things do not go as planned. The rational alternative is: 'I prefer things to go my way, but I can handle it when they do not.'",
+    "tags": ["irrational beliefs", "control"],
+    "keywords": ["control", "expectations", "anger"],
+    "related": ["ANG_S2_C02", "ANG_S7_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S3",
+    "chunk": "IRR_S3_C05",
+    "title": "Irrational Belief #5: I Must Perform Perfectly",
+    "content": "This belief demands flawless performance. It creates guilt, shame, and depression when mistakes occur. The rational alternative is: 'I prefer to do well, but I do not need perfection to be okay.'",
+    "tags": ["irrational beliefs", "perfection"],
+    "keywords": ["perfection", "performance", "mistakes"],
+    "related": ["GUILT_S2_C02", "DEP_S2_C02"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S3",
+    "chunk": "IRR_S3_C06",
+    "title": "Irrational Belief #6: I Must Be Certain",
+    "content": "This belief demands absolute certainty. It creates anxiety and compulsive checking. The rational alternative is: 'I prefer certainty, but I can tolerate uncertainty.'",
+    "tags": ["irrational beliefs", "certainty"],
+    "keywords": ["certainty", "anxiety", "what if"],
+    "related": ["ANX_S2_C02", "MC_S4_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S3",
+    "chunk": "IRR_S3_C07",
+    "title": "Irrational Belief #7: I Must Control Everything",
+    "content": "This belief demands total control over outcomes, people, and emotions. It creates anxiety, anger, and exhaustion. The rational alternative is: 'I prefer control, but I can handle uncertainty and unpredictability.'",
+    "tags": ["irrational beliefs", "control"],
+    "keywords": ["control", "uncertainty", "anger"],
+    "related": ["ANX_S2_C02", "ANG_S2_C02"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+
+  {
+    "chapter": "IRR",
+    "section": "IRR_S4",
+    "chunk": "IRR_S4_C01",
+    "title": "Slow Explanation of the Irrational Beliefs",
+    "content": "Irrational beliefs create emotional disturbance because they demand that reality conform to rigid rules. When reality violates these rules, the emotional system reacts. Understanding that these beliefs are optional interpretations—not truths—reduces emotional intensity.",
+    "tags": ["irrational beliefs", "explanation"],
+    "keywords": ["beliefs", "rules", "emotion"],
+    "related": ["ABC_S4_C01", "INS_S4_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S5",
+    "chunk": "IRR_S5_C01",
+    "title": "Fast Versions of the Irrational Beliefs",
+    "content": "Demands create disturbance. Preferences create peace. Replace 'must' with 'prefer' to reduce emotional intensity.",
+    "tags": ["irrational beliefs", "fast"],
+    "keywords": ["must", "prefer", "emotion"],
+    "related": ["HAP_S5_C01", "ABC_S5_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S6",
+    "chunk": "IRR_S6_C01",
+    "title": "Practical Steps for Correcting Irrational Beliefs",
+    "content": "1. Identify the demand. 2. Ask whether the demand is realistic. 3. Replace the demand with a preference. 4. Observe the emotional shift. Emotional change follows belief change.",
+    "tags": ["irrational beliefs", "steps"],
+    "keywords": ["steps", "belief change", "emotion"],
+    "related": ["ABC_S6_C01", "INS_S6_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S7",
+    "chunk": "IRR_S7_C01",
+    "title": "Examples of the Irrational Beliefs",
+    "content": "Approval: 'They must like me.' → Anxiety. Fairness: 'They must treat me right.' → Anger. Perfection: 'I must not make mistakes.' → Guilt. Comfort: 'This must not be hard.' → Anxiety. Control: 'This must go my way.' → Anger.",
+    "tags": ["irrational beliefs", "examples"],
+    "keywords": ["approval", "fairness", "perfection", "comfort"],
+    "related": ["ANG_S7_C01", "ANX_S7_C01", "DEP_S7_C01", "GUILT_S7_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S8",
+    "chunk": "IRR_S8_C01",
+    "title": "Why the Irrational Beliefs Matter",
+    "content": "The Seven Irrational Beliefs are the root of emotional disturbance. They create anger, anxiety, guilt, and depression. Correcting them reduces emotional suffering and increases resilience.",
+    "tags": ["irrational beliefs", "importance"],
+    "keywords": ["emotion", "disturbance", "beliefs"],
+    "related": ["HAP_S2_C02", "INS_S2_C01"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  },
+  {
+    "chapter": "IRR",
+    "section": "IRR_S8",
+    "chunk": "IRR_S8_C02",
+    "title": "Signature Closing for the Irrational Beliefs",
+    "content": "Demands create suffering. Preferences create peace. Replacing rigid rules with flexible preferences reduces emotional disturbance.",
+    "tags": ["irrational beliefs", "closing"],
+    "keywords": ["peace", "belief change", "emotion"],
+    "related": ["HAP_S8_C02", "INS_S8_C02"],
+    "audience": "general",
+    "category": "irrational_beliefs"
+  }
+]
+
+
+Say Next chapter when you're ready for Happiness (HAP) — the final chapter.

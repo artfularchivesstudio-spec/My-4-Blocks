@@ -1,0 +1,158 @@
+Absolutely, James — here is your complete, production‑ready ANGER JSON file, built with the same precision, chunking logic, and deterministic structure as the Depression file.
+Everything below is fully ingestion‑ready for Gurinder’s RAG system.
+
+📦 ANGER.JSON
+(Structured exactly according to our universal schema and chunking rules)
+{
+  "chapter": "ANGER",
+  "category": "anger",
+  "audience": "general",
+  "chunks": [
+
+    {
+      "id": "ANG_VALIDATION_FIREFIGHTER_PROTECTOR",
+      "title": "Validation — Firefighter Moral-Injury Anger",
+      "content": "What you’re carrying as a firefighter and a father of three is not small. Seeing children burned, carrying them out, and then going home to your own kids hits a man in a deep place. Feeling angry doesn’t mean you’re a bad person. It means something inside you cares fiercely about protecting life.",
+      "tags": ["validation", "firefighter", "protector", "anger"],
+      "keywords": ["moral injury", "child harm", "firefighter", "anger"],
+      "related": ["ANG_FORMULA_CORE"]
+    },
+
+    {
+      "id": "ANG_FORMULA_CORE",
+      "title": "Core Formula — Anger (Egocentric Thinking Model)",
+      "content": "In Dr. Parr’s Four Blocks model, anger follows the Egocentric Thinking Formula: I’m Right + You’re Wrong + You Shouldn’t = Anger. This formula must be stated before interpretation or intervention.",
+      "tags": ["formula", "anger", "four_blocks"],
+      "keywords": ["egocentric thinking", "should thinking", "anger formula"],
+      "related": ["ANG_MAPPING_FIREFIGHTER"]
+    },
+
+    {
+      "id": "ANG_MAPPING_FIREFIGHTER",
+      "title": "Mapping — Firefighter Anger Components",
+      "content": "I’m Right: 'A father is supposed to protect his family.' 'This was preventable.' They’re Wrong: 'They failed their job.' 'They were careless or stupid.' They Shouldn’t: 'This must not happen.' 'Parents should never let this happen.' These map directly onto the anger formula.",
+      "tags": ["mapping", "firefighter", "anger"],
+      "keywords": ["im right", "youre wrong", "should", "child injury"],
+      "related": ["ANG_INTERVENTION_SHOULD_TO_WISH_FIREFIGHTER"]
+    },
+
+    {
+      "id": "ANG_INTERVENTION_SHOULD_TO_WISH_FIREFIGHTER",
+      "title": "Intervention — Should to Wish Shift (Firefighter)",
+      "content": "The shift is from 'They should never do this' to 'I hate when this happens. I wish every parent protected their kids, but some people make terrible choices, and my job is to protect life when they do.' This softens rage, preserves strength, and restores control.",
+      "tags": ["intervention", "should_shift", "anger"],
+      "keywords": ["wish", "preference", "cognitive shift"],
+      "related": ["ANG_REFRAME_PROTECTOR_IDENTITY"]
+    },
+
+    {
+      "id": "ANG_REFRAME_PROTECTOR_IDENTITY",
+      "title": "Reframe — Protector Identity",
+      "content": "Your anger intensity comes from something honorable: you love your children, you believe fathers should protect their families, and you run toward danger. These are strengths. Four Blocks helps you keep the strength and lose the chronic anger.",
+      "tags": ["reframe", "identity", "protector"],
+      "keywords": ["protector", "identity", "strength"],
+      "related": ["ANG_NEXT_QUESTION_TRIAGE"]
+    },
+
+    {
+      "id": "ANG_NEXT_QUESTION_TRIAGE",
+      "title": "Next Step — Identify Strongest Component",
+      "content": "Which part feels strongest right now: the sense that you’re right, the focus on how they’re wrong, or the feeling that they shouldn’t be doing this? Identifying the strongest component guides the next step.",
+      "tags": ["triage", "question", "next_step"],
+      "keywords": ["im right", "youre wrong", "should"],
+      "related": ["ANG_FORMULA_CORE"]
+    },
+
+
+
+    {
+      "id": "ANG_VALIDATION_BETRAYED_SPOUSE",
+      "title": "Validation — Betrayed Spouse",
+      "content": "Finding out your husband of 28 years has been cheating is a deep betrayal. Feeling intensely angry doesn’t mean you’re broken. It means something inside you recognizes you were hurt and something important was violated.",
+      "tags": ["validation", "betrayal", "marriage"],
+      "keywords": ["infidelity", "betrayal", "anger"],
+      "related": ["ANG_MAPPING_BETRAYED_SPOUSE"]
+    },
+
+    {
+      "id": "ANG_MAPPING_BETRAYED_SPOUSE",
+      "title": "Mapping — Betrayal Anger Components",
+      "content": "I’m Right: 'I was faithful.' 'I gave everything to this marriage.' He’s Wrong: 'He lied.' 'He betrayed our marriage.' He Shouldn’t: 'He should never have done this.' 'This must not happen in a real marriage.' These map directly onto the anger formula.",
+      "tags": ["mapping", "betrayal", "anger"],
+      "keywords": ["im right", "youre wrong", "should", "infidelity"],
+      "related": ["ANG_INTERVENTION_SHOULD_TO_WISH_BETRAYAL"]
+    },
+
+    {
+      "id": "ANG_INTERVENTION_SHOULD_TO_WISH_BETRAYAL",
+      "title": "Intervention — Should to Wish Shift (Betrayal)",
+      "content": "The shift is from 'He should never have done this' to 'I hate that he chose this. I wish he had been faithful, but he made his choices, and now I get to decide what kind of life I build next.' This softens anger and restores personal power.",
+      "tags": ["intervention", "should_shift", "betrayal"],
+      "keywords": ["wish", "preference", "cognitive shift"],
+      "related": ["ANG_REFRAME_DIGNITY_RESTORATION"]
+    },
+
+    {
+      "id": "ANG_REFRAME_DIGNITY_RESTORATION",
+      "title": "Reframe — Dignity and Self-Worth",
+      "content": "Your anger reflects your capacity to love and commit. Betrayal reflects his choices, not your worth. Four Blocks helps you keep your self-respect and lose the chronic anger that keeps you tied to the betrayal.",
+      "tags": ["reframe", "dignity", "identity"],
+      "keywords": ["self-worth", "identity", "betrayal"],
+      "related": ["ANG_NEXT_QUESTION_TRIAGE"]
+    },
+
+
+
+    {
+      "id": "ANG_VALIDATION_EMERGING_ADULT",
+      "title": "Validation — Emerging Adult Independence Anger",
+      "content": "Being 18 and preparing to step into your own life is a major transition. Feeling angry when your parents still treat you like a child doesn’t make you a bad son. It usually means something inside you is pushing for independence and respect.",
+      "tags": ["validation", "emerging_adult", "independence"],
+      "keywords": ["independence", "parents", "anger"],
+      "related": ["ANG_MAPPING_EMERGING_ADULT"]
+    },
+
+    {
+      "id": "ANG_MAPPING_EMERGING_ADULT",
+      "title": "Mapping — Emerging Adult Anger Components",
+      "content": "Egocentric Thinking (ET): 'I’m an adult now.' 'I should make my own choices.' 'They’re controlling.' Should Thinking (S): 'They shouldn’t treat me like this.' 'They must respect me now.' ET + S = Anger. These map directly onto the anger formula.",
+      "tags": ["mapping", "emerging_adult", "anger"],
+      "keywords": ["egocentric thinking", "should thinking", "independence"],
+      "related": ["ANG_INTERVENTION_SHOULD_TO_WISH_EMERGING_ADULT"]
+    },
+
+    {
+      "id": "ANG_INTERVENTION_SHOULD_TO_WISH_EMERGING_ADULT",
+      "title": "Intervention — Should to Wish Shift (Emerging Adult)",
+      "content": "The shift is from 'They shouldn’t treat me like this' to 'I want their respect and freedom, and I wish they trusted me more, but they’re going through their own transition, and I can still choose who I become.' Softening S reduces anger and increases maturity.",
+      "tags": ["intervention", "should_shift", "independence"],
+      "keywords": ["wish", "preference", "cognitive shift"],
+      "related": ["ANG_REFRAME_MATURITY"]
+    },
+
+    {
+      "id": "ANG_REFRAME_MATURITY",
+      "title": "Reframe — Maturity and Identity",
+      "content": "Your self-awareness shows maturity. Wanting respect is part of becoming an adult. Four Blocks helps you keep your independence and self-respect while losing the anger that could follow you into adulthood.",
+      "tags": ["reframe", "maturity", "identity"],
+      "keywords": ["maturity", "identity", "independence"],
+      "related": ["ANG_NEXT_QUESTION_TRIAGE"]
+    }
+
+  ]
+}
+
+
+
+✔️ Your Anger JSON file is complete.
+It is:
+- Fully chunked
+- Deterministically labeled
+- Cross‑linked
+- Blueprint‑aligned
+- RAG‑optimized
+- Ready for ingestion
+You now have Depression.json and Anger.json — two full chapters done.
+Whenever you’re ready, we can move straight into:
+Guilt Prompt 1
+and begin building the next chapter.
