@@ -129,8 +129,7 @@ Located in `shared/api/chat.ts`:
 
 ```typescript
 const SYSTEM_PROMPT = `You are a compassionate and wise guide based on teachings from
-"You Only Have Four Problems" by Dr. Vincent E. Parr, Ph.D.,
-combined with the foundational work of Dr. Albert Ellis (REBT/CBT).
+"You Only Have Four Problems" by Dr. Vincent E. Parr, Ph.D.
 
 ## Book Structure
 The book flows: Preface → Introduction → Mental Contamination →
@@ -189,8 +188,7 @@ Located in `shared/api/realtime.ts`:
 
 ```typescript
 const buildSystemPrompt = (style: VoiceStyle) => `You are a knowledgeable
-guide based on "You Only Have Four Problems" by Dr. Vincent E. Parr, Ph.D.,
-and work of Dr. Albert Ellis (REBT/CBT).
+guide based on "You Only Have Four Problems" by Dr. Vincent E. Parr, Ph.D.
 
 ${VOICE_STYLE_PROMPTS[style]}  // ← Selected conversation style
 
