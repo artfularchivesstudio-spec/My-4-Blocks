@@ -10,7 +10,15 @@ import dynamic from 'next/dynamic'
 import { DotPattern } from "@/components/ui/dot-pattern"
 import { BlurFade } from "@/components/ui/blur-fade"
 import ReactMarkdown from 'react-markdown'
-import { VoiceMode, type VoiceState } from '../../shared/components'
+
+// 🎙️ VoiceState type definition for the sunrise orb
+type VoiceState = 'idle' | 'connecting' | 'connected' | 'listening' | 'speaking' | 'error'
+
+// 🎙️ Dynamically import VoiceMode to avoid SSR prerendering issues
+const VoiceMode = dynamic(
+  () => import('../../shared/components/VoiceMode').then(mod => mod.VoiceMode),
+  { ssr: false }
+)
 
 // 🧪 Dynamically import ABResponseComparison to avoid SSR issues
 const ABResponseComparison = dynamic(
