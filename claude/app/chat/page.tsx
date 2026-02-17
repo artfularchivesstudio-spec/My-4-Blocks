@@ -5,12 +5,20 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronLeft, Send, Loader2, Flame, Cloud, Moon, Heart, Lightbulb, BookOpen, Mic, MicOff } from "lucide-react"
+import { ChevronLeft, Send, Loader2, Flame, Cloud, Moon, Heart, Lightbulb, BookOpen, Mic, MicOff, FlaskConical } from "lucide-react"
 import dynamic from 'next/dynamic'
 import { DotPattern } from "@/components/ui/dot-pattern"
 import { BlurFade } from "@/components/ui/blur-fade"
 import ReactMarkdown from 'react-markdown'
-import { VoiceMode, type VoiceState } from '../../shared/components'
+import { VoiceMode, type VoiceState, ABResponseComparison } from '../../shared/components'
+
+// 🧪 A/B Response State - The dual-response showdown tracker
+interface ABResponseState {
+  testId: string
+  responseA: string
+  responseB: string
+  query: string
+}
 
 // Dynamically import Lottie to avoid SSR issues
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false })
@@ -59,13 +67,18 @@ export default function ChatPage() {
   const [lottieData, setLottieData] = useState(null)
   // 🌐 Use default chat configuration (defaults to /api/chat)
   const { messages, sendMessage, status } = useChat()
-  const isLoading = status === 'streaming' || status === 'submitted'
+  const isLoading = status === 'streaming' || status === 'submitted' || abLoading
 
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
   // 🎙️ Voice mode state - breathing orb vibes
   const [voiceModeActive, setVoiceModeActive] = useState(false)
   const [voiceState, setVoiceState] = useState<VoiceState>('idle')
+
+  // 🧪 A/B Testing Mode - The Great Response Showdown Arena! 🎭
+  const [abModeEnabled, setAbModeEnabled] = useState(false)
+  const [abResponse, setAbResponse] = useState<ABResponseState | null>(null)
+  const [abLoading, setAbLoading] = useState(false)
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
@@ -94,17 +107,69 @@ export default function ChatPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!input.trim() || isLoading) return
-    
+
     const currentInput = input
     setInput('')
-    
-    try {
-      // 🎯 AI SDK v6 expects simple { text } format, not { role, parts }
-      await sendMessage({ text: currentInput })
-    } catch (err) {
-      console.error("Error sending message:", err)
+
+    if (abModeEnabled) {
+      // 🧪 A/B Mode: Summon dual responses from the showdown arena!
+      setAbLoading(true)
+      setAbResponse(null)
+
+      try {
+        console.log('🧪 ✨ A/B MODE ENGAGED! Summoning dual responses...')
+
+        const response = await fetch('/api/chat/ab', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            messages: [{ role: 'user', content: currentInput }],
+          }),
+        })
+
+        if (!response.ok) {
+          throw new Error(`A/B portal returned ${response.status}: ${response.statusText}`)
+        }
+
+        const data = await response.json()
+        console.log('🎭 ✨ DUAL RESPONSES RECEIVED!', data.abTestId)
+
+        setAbResponse({
+          testId: data.abTestId,
+          responseA: data.responses.A,
+          responseB: data.responses.B,
+          query: currentInput,
+        })
+      } catch (err) {
+        console.error('🌩️ A/B portal hiccup:', err)
+        await sendMessage({ text: currentInput })
+      } finally {
+        setAbLoading(false)
+      }
+    } else {
+      try {
+        // 🎯 AI SDK v6 expects simple { text } format, not { role, parts }
+        await sendMessage({ text: currentInput })
+      } catch (err) {
+        console.error("Error sending message:", err)
+      }
     }
   }
+
+  /**
+   * 🏆 handleABChoice - When the User Crowns Their Champion
+   */
+  const handleABChoice = useCallback((choice: 'A' | 'B') => {
+    if (!abResponse) return
+
+    console.log(`🏆 ✨ THE PEOPLE HAVE SPOKEN! Response ${choice} is the champion!`)
+
+    sendMessage({ text: abResponse.query })
+
+    setTimeout(() => {
+      setAbResponse(null)
+    }, 100)
+  }, [abResponse, sendMessage])
 
   /**
    * 🎙️ Toggle Voice Mode - Switch between speaking and typing
@@ -306,7 +371,27 @@ export default function ChatPage() {
             My 4 Blocks Chat
           </h1>
         </div>
-        <div style={{ width: "clamp(40px, 8vw, 60px)", flexShrink: 0 }} />
+        {/* 🧪 A/B Testing Toggle - The Experiment Button */}
+        <button
+          onClick={() => setAbModeEnabled(!abModeEnabled)}
+          title={abModeEnabled ? 'A/B Mode Active - Comparing Responses' : 'Enable A/B Testing Mode'}
+          style={{
+            padding: "8px",
+            borderRadius: "8px",
+            border: "none",
+            background: abModeEnabled ? "linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%)" : "transparent",
+            color: abModeEnabled ? "white" : "#64748b",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transition: "all 0.2s ease",
+            minWidth: "44px",
+            minHeight: "44px"
+          }}
+        >
+          <FlaskConical size={20} style={{ animation: abModeEnabled ? "pulse 2s infinite" : "none" }} />
+        </button>
       </header>
 
       {/* Main Content */}
@@ -524,6 +609,45 @@ export default function ChatPage() {
             <div ref={messagesEndRef} />
           </div>
         )}
+
+        {/* 🧪 A/B Response Comparison Arena */}
+        {abResponse && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            style={{
+              maxWidth: "min(900px, 100%)",
+              margin: "0 auto",
+              padding: "clamp(16px, 3vw, 24px)"
+            }}
+          >
+            <div style={{
+              textAlign: "center",
+              marginBottom: "16px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px"
+            }}>
+              <FlaskConical size={20} style={{ color: "#8b5cf6" }} />
+              <span style={{ fontWeight: 600, color: "#1a1a1a" }}>Compare Responses</span>
+            </div>
+            <p style={{
+              textAlign: "center",
+              color: "#64748b",
+              fontSize: "0.9rem",
+              marginBottom: "20px"
+            }}>
+              Your question: &quot;{abResponse.query}&quot;
+            </p>
+            <ABResponseComparison
+              abTestId={abResponse.testId}
+              responseA={abResponse.responseA}
+              responseB={abResponse.responseB}
+              onChoice={handleABChoice}
+            />
+          </motion.div>
+        )}
       </div>
 
       {/* Input Area - Enhanced with safe-area-bottom for notched devices */}
@@ -716,6 +840,10 @@ export default function ChatPage() {
         @keyframes spin {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.6; }
         }
       `}</style>
     </div>

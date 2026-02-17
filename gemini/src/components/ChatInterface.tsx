@@ -28,7 +28,7 @@ const WISDOM_SEEDS = [
   { id: 'racket', label: "What is my 'racket'?", prompt: "Can you explain what Dr. Parr means by a 'racket' and how I can identify mine?" },
   { id: 'anxiety', label: "Formula for Anxiety", prompt: "What is the formula for Anxiety according to the book?" },
   { id: 'four-problems', label: "The Four Problems", prompt: "What are the only four problems we ever really have?" },
-  { id: 'wu-hsin', label: "Who is Wu Hsin?", prompt: "Tell me about the Wu Hsin quote at the beginning of the book." },
+  { id: 'abc-model', label: "The ABC Model", prompt: "Explain the ABC model of emotions and how beliefs create our feelings." },
 ];
 
 export const ChatInterface = () => {
