@@ -10,7 +10,13 @@ import dynamic from 'next/dynamic'
 import { DotPattern } from "@/components/ui/dot-pattern"
 import { BlurFade } from "@/components/ui/blur-fade"
 import ReactMarkdown from 'react-markdown'
-import { VoiceMode, type VoiceState, ABResponseComparison } from '../../shared/components'
+import { VoiceMode, type VoiceState } from '../../shared/components'
+
+// 🧪 Dynamically import ABResponseComparison to avoid SSR issues
+const ABResponseComparison = dynamic(
+  () => import('../../shared/components/ABResponseComparison').then(mod => mod.ABResponseComparison),
+  { ssr: false }
+)
 
 // 🧪 A/B Response State - The dual-response showdown tracker
 interface ABResponseState {
@@ -65,6 +71,12 @@ const suggestedPrompts = [
 export default function ChatPage() {
   const [input, setInput] = useState('')
   const [lottieData, setLottieData] = useState(null)
+
+  // 🧪 A/B Testing Mode - The Great Response Showdown Arena! 🎭
+  const [abModeEnabled, setAbModeEnabled] = useState(false)
+  const [abResponse, setAbResponse] = useState<ABResponseState | null>(null)
+  const [abLoading, setAbLoading] = useState(false)
+
   // 🌐 Use default chat configuration (defaults to /api/chat)
   const { messages, sendMessage, status } = useChat()
   const isLoading = status === 'streaming' || status === 'submitted' || abLoading
@@ -74,11 +86,6 @@ export default function ChatPage() {
   // 🎙️ Voice mode state - breathing orb vibes
   const [voiceModeActive, setVoiceModeActive] = useState(false)
   const [voiceState, setVoiceState] = useState<VoiceState>('idle')
-
-  // 🧪 A/B Testing Mode - The Great Response Showdown Arena! 🎭
-  const [abModeEnabled, setAbModeEnabled] = useState(false)
-  const [abResponse, setAbResponse] = useState<ABResponseState | null>(null)
-  const [abLoading, setAbLoading] = useState(false)
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })

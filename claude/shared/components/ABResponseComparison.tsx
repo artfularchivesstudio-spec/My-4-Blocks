@@ -1,3 +1,5 @@
+'use client';
+
 /**
  * 🎭 The ABResponseComparison Component - The Ultimate AI Response Showdown
  *
@@ -10,8 +12,6 @@
  *
  * - The A/B Testing Arena Architect
  */
-
-'use client';
 
 import React, { useState, useCallback } from 'react';
 import { cn } from '../lib/utils';
