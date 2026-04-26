@@ -22,7 +22,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { useToast } from '@/components/ui/use-toast'
 import { Settings, Loader2, Save, Sparkles, Zap } from 'lucide-react'
 import { getActiveConfig, saveConfig } from '@/lib/admin-config'
-import { type ChatConfig } from '@/shared/api/chat'
+import { type ChatConfig, SYSTEM_PROMPT } from '@/shared/api/chat'
 
 export function ConfigTab() {
   // 🌟 The cosmic state of our digital parameters
@@ -31,7 +31,7 @@ export function ConfigTab() {
     temperature: 0.7,
     ragEnabled: true,
     ragTopK: 5,
-    systemPrompt: '',
+    systemPrompt: SYSTEM_PROMPT,
     dspyOptimizerModel: 'openai/gpt-4o',
     dspyEvalModel: 'openai/gpt-4o-mini',
     dspyJudgeModel: 'openai/gpt-4o',

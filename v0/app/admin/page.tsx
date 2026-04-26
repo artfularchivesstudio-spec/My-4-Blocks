@@ -93,10 +93,20 @@ export default function AdminPage() {
                 />
               </div>
               {error && <p className="text-sm text-destructive text-center font-medium">🌩️ {error}</p>}
-              <Button type="submit" className="w-full gap-2">
-                <ShieldCheck className="w-4 h-4" />
-                Unseal the Gates
-              </Button>
+              <div className="flex flex-col gap-2">
+                <Button type="submit" className="w-full gap-2">
+                  <ShieldCheck className="w-4 h-4" />
+                  Unseal the Gates
+                </Button>
+                <Button 
+                  type="button" 
+                  variant="ghost" 
+                  className="w-full text-muted-foreground"
+                  onClick={() => window.location.href = '/'}
+                >
+                  Return to Sanctuary Home
+                </Button>
+              </div>
             </form>
           </CardContent>
         </Card>

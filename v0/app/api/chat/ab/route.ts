@@ -31,6 +31,7 @@ import {
   detectLikelyBlock,
   type EmotionalBlock,
 } from '@shared/lib/responseBlueprints';
+import { getActiveConfig } from '@/lib/admin-config';
 
 // 🌟 Using nodejs runtime for embeddings (edge limit is 1MB)
 // Vercel's edge runtime is like a cozy apartment - no room for our wisdom library! 🏠
@@ -193,6 +194,9 @@ export async function POST(req: Request) {
     console.log('🎭 ✨ V0 A/B PORTAL AWAKENS! Two responses shall compete!');
     const startTime = Date.now();
 
+    // 🕵️‍♂️ Fetch dynamic config from Admin Page (Supabase)
+    const adminConfig = await getActiveConfig();
+
     // 🔮 Ensure RAG is ready - can't have a wisdom battle without wisdom!
     await initializeRAG();
 
@@ -220,7 +224,10 @@ export async function POST(req: Request) {
 
     // 🔍 Get RAG context for both responses - same source, different styles!
     console.log('🔍 V0 A/B Arena: Retrieving RAG context for:', query.substring(0, 50));
-    const ragContext = await findRelevantWisdom(query, 5);
+    const ragTopK = adminConfig.ragTopK ?? 5;
+    const ragContext = adminConfig.ragEnabled !== false 
+      ? await findRelevantWisdom(query, ragTopK)
+      : null;
 
     // 🎭 Detect emotional context using both quick-check and sophisticated detector
     const { emotionDetected, blockType } = detectEmotionalContext(query);
@@ -234,15 +241,32 @@ export async function POST(req: Request) {
     // 🏛️ Build the two competing system prompts using shared blueprints
     // Blueprint A: The Structured Sage - methodical, step-by-step guidance
     // Blueprint B: The Warm Friend - conversational, exploratory approach
+    // 🌟 If admin prompt is provided, we use it as the base!
+    const basePrompt = adminConfig.systemPrompt;
     const blueprintA = buildEnhancedSystemPrompt('A', ragContext || undefined);
     const blueprintB = buildEnhancedSystemPrompt('B', ragContext || undefined);
 
     // 🌊 Generate BOTH responses in parallel - the gladiator showdown begins! ⚔️
     // Promise.all is our colosseum - may the best response win!
     console.log('🏟️ Generating dual responses in parallel...');
+    const model = adminConfig.model || 'gpt-4o';
+    const temperature = adminConfig.temperature ?? 0.7;
+
     const [responseA, responseB] = await Promise.all([
-      generateResponse(query, blueprintA, history),
-      generateResponse(query, blueprintB, history),
+      generateText({
+        model: openai(model),
+        system: basePrompt || blueprintA,
+        messages: [...history, { role: 'user' as const, content: query }],
+        temperature,
+        maxTokens: 2000,
+      }).then(r => r.text),
+      generateText({
+        model: openai(model),
+        system: basePrompt || blueprintB,
+        messages: [...history, { role: 'user' as const, content: query }],
+        temperature,
+        maxTokens: 2000,
+      }).then(r => r.text),
     ]);
 
     const endTime = Date.now();
@@ -254,8 +278,9 @@ export async function POST(req: Request) {
       responseB,
       userChoice: null,
       metadata: {
-        modelA: 'gpt-4o',
-        modelB: 'gpt-4o',
+        modelA: model,
+        modelB: model,
+        temperature,
         emotionDetected: emotionDetected || undefined,
         blockType: finalBlockType || undefined,
       },
