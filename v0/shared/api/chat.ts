@@ -249,6 +249,7 @@ export async function handleChatRequest(
 
   // 🌟 Build enhanced system prompt
   let systemPrompt = opts.systemPrompt || SYSTEM_PROMPT;
+  let usedGraphExpansion = false;
 
   if (opts.ragEnabled && queryText) {
     console.log('🔍 Retrieving RAG context for:', queryText.substring(0, 50));
@@ -256,6 +257,7 @@ export async function handleChatRequest(
 
     if (ragContext) {
       systemPrompt = `${SYSTEM_PROMPT}\n\n## Relevant Book Context\n${ragContext}`;
+      usedGraphExpansion = ragContext.includes('## Related Context');
     }
   }
 
