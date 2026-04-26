@@ -8,8 +8,9 @@
 - **The Golden Gateway**: Password-protected (default: `admin123`) command center for system directors.
 - **Dynamic Configuration Matrix**: Real-time control over LLM model selection (GPT-4o/mini), temperature, and RAG retrieval parameters (Top-K).
 - **The Living Constitution**: Direct editing of the `System Prompt` source-of-truth, instantly synced across all UI variants via Supabase.
-- **Evolutionary Observatory**: 
+    - **Evolutionary Observatory**: 
     - **GEPA Reports Portal**: Interactive browser for self-evolution run artifacts (baseline vs. evolved skills).
+    - **Digital Chronicles (RUN_HISTORY)**: A comprehensive memory of every GEPA/DSPy run, prompts, and decisions.
     - **Knowledge Graph Tapestry**: Embedded interactive visualization of the emotional constellation.
 - **Data Alchemist's Forge**: API-driven management of the training corpus (list/view/edit/upload).
 

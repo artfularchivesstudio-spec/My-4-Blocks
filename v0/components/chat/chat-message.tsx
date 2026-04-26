@@ -104,6 +104,9 @@ function formatMessage(text: string): string {
     // Convert *italic* to <em> (but not if it's a list marker)
     line = line.replace(/(?<!\s)\*([^*\n]+)\*(?!\s)/g, '<em>$1</em>')
 
+    // 📚 Citation Magic - Wrap [number] in a sparkly tooltip
+    line = line.replace(/\[(\d+)\]/g, '<span class="citation-sparkle" title="Cited wisdom from page $1">[$1]</span>')
+
     // Headers: ### Header -> <h4>, ## Header -> <h3>, # Header -> <h2>
     if (line.match(/^#{1,4}\s/)) {
       // Close any open list

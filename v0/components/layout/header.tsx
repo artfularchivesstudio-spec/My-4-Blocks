@@ -30,7 +30,7 @@ const navigationLinks: NavigationLink[] = [
   { href: '/faq', label: 'FAQ' },
   { href: '/eval', label: 'v2 Eval' },
   { href: '/privacy', label: 'Privacy' },
-  { href: 'https://testflight.apple.com/join/placeholder', label: 'Try the App ✨' },
+  { href: 'https://testflight.apple.com/join/Ay3BWxKW', label: 'Try the App ✨' },
 ]
 
 interface HeaderProps {
@@ -118,7 +118,8 @@ export function Header({ onReset }: HeaderProps) {
                 'px-2 lg:px-3 py-2 rounded-lg text-sm transition-all duration-200',
                 isActiveLink(link.href)
                   ? 'text-primary font-medium bg-primary/10'
-                  : 'text-muted-foreground hover:text-foreground hover:bg-accent'
+                  : 'text-muted-foreground hover:text-foreground hover:bg-accent',
+                link.label.includes('✨') && 'animate-pulse-soft text-primary font-medium'
               )}
             >
               {link.label}

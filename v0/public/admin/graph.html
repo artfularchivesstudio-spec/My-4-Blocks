@@ -33,6 +33,29 @@
   .legend-label { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .legend-count { color: #666; font-size: 11px; }
   #stats { padding: 10px 14px; border-top: 1px solid #2a2a4e; font-size: 11px; color: #555; }
+  
+  /* ✨ Graph Magic Enhancements */
+  .vis-network { outline: none; }
+  .vis-tooltip {
+    background: rgba(15, 15, 26, 0.9) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+    color: white !important;
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+  }
+  .magic-node-info {
+    border-left: 3px solid var(--node-color);
+    padding-left: 10px;
+    margin-bottom: 12px;
+    animation: fade-in 0.5s ease-out;
+  }
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateX(10px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
 </style>
 </head>
 <body>

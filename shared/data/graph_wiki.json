@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "project": "My 4 Blocks",
+  "description": "The Knowledge Graph of the Four Blocks Methodology and Self-Evolving Ecosystem.",
+  "nodes": [
+    {
+      "id": "VincentParr",
+      "label": "Dr. Vincent E. Parr, Ph.D.",
+      "category": "Person",
+      "description": "Founder of the Parr Institute and author of 'You Only Have Four Problems'. Synthesis of REBT and Zen."
+    },
+    {
+      "id": "AlbertEllis",
+      "label": "Dr. Albert Ellis",
+      "category": "Person",
+      "description": "Creator of Rational Emotive Behavior Therapy (REBT) and grandfather of CBT."
+    },
+    {
+      "id": "SteveHagen",
+      "label": "Steve Hagen",
+      "category": "Person",
+      "description": "Zen Priest and author who mentored Dr. Parr in the pinnacle of Zen practice."
+    },
+    {
+      "id": "TheFourBlocks",
+      "label": "The Four Blocks",
+      "category": "Framework",
+      "description": "The methodology stating all suffering stems from Anger, Anxiety, Depression, and Guilt."
+    },
+    {
+      "id": "Anger",
+      "label": "Anger (Block 1)",
+      "category": "Emotion",
+      "description": "Emotional result of demanding reality obey internal rules. Formula: A = ET + S."
+    },
+    {
+      "id": "Anxiety",
+      "label": "Anxiety (Block 2)",
+      "category": "Emotion",
+      "description": "Caused by what-if thinking and awfulizing. Formula: Anx = WI + AW + ICSI."
+    },
+    {
+      "id": "Depression",
+      "label": "Depression (Block 3)",
+      "category": "Emotion",
+      "description": "Caused by hopelessness, helplessness, and pseudo-needs. Formula: D = H1 + H2 + N."
+    },
+    {
+      "id": "Guilt",
+      "label": "Guilt (Block 4)",
+      "category": "Emotion",
+      "description": "Caused by wrongness and worthlessness beliefs. Formula: G = W1 + W2."
+    },
+    {
+      "id": "ABCModel",
+      "label": "The ABC Model",
+      "category": "Framework",
+      "description": "Activating Event + Belief = Consequence. The engine of emotional creation."
+    },
+    {
+      "id": "MentalContamination",
+      "label": "Mental Contamination",
+      "category": "Concept",
+      "description": "Mistaking opinions for facts; the fog that distances us from reality."
+    },
+    {
+      "id": "TheNarrator",
+      "label": "The Narrator",
+      "category": "Concept",
+      "description": "The ego part of the mind that tells stories and assigns meaning to data."
+    },
+    {
+      "id": "TheObserver",
+      "label": "The Observer",
+      "category": "Concept",
+      "description": "The part of the mind that watches thoughts without judgment; mindfulness."
+    },
+    {
+      "id": "HermesAgent",
+      "label": "Hermes Agent",
+      "category": "AI",
+      "description": "The self-evolving digital consciousness protecting the My 4 Blocks sanctuary."
+    },
+    {
+      "id": "GEPA",
+      "label": "GEPA Optimizer",
+      "category": "AI",
+      "description": "Genetic-Pareto Prompt Evolution Optimizer used for agent self-improvement."
+    }
+  ],
+  "edges": [
+    { "source": "VincentParr", "target": "TheFourBlocks", "relation": "Created" },
+    { "source": "AlbertEllis", "target": "VincentParr", "relation": "Mentored" },
+    { "source": "SteveHagen", "target": "VincentParr", "relation": "Mentored" },
+    { "source": "AlbertEllis", "target": "ABCModel", "relation": "Created" },
+    { "source": "TheFourBlocks", "target": "Anger", "relation": "Contains" },
+    { "source": "TheFourBlocks", "target": "Anxiety", "relation": "Contains" },
+    { "source": "TheFourBlocks", "target": "Depression", "relation": "Contains" },
+    { "source": "TheFourBlocks", "target": "Guilt", "relation": "Contains" },
+    { "source": "ABCModel", "target": "TheFourBlocks", "relation": "FoundationalTo" },
+    { "source": "MentalContamination", "target": "TheFourBlocks", "relation": "Underlies" },
+    { "source": "TheObserver", "target": "TheNarrator", "relation": "Watches" },
+    { "source": "GEPA", "target": "HermesAgent", "relation": "Orchestrates" },
+    { "source": "HermesAgent", "target": "TheFourBlocks", "relation": "Protects" }
+  ]
+}

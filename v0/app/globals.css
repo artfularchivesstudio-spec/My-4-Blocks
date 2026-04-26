@@ -413,3 +413,49 @@
   padding-top: env(safe-area-inset-top, 0);
   padding-bottom: env(safe-area-inset-bottom, 0);
 }
+
+/* 📚 Citation Sparkle & Tooltip Styles */
+.citation-sparkle {
+  @apply inline-flex items-center justify-center px-1.5 py-0.5 mx-0.5 rounded-md;
+  @apply bg-primary/10 text-primary text-[11px] font-bold cursor-help;
+  @apply border border-primary/20 transition-all duration-300;
+  vertical-align: super;
+}
+
+.citation-sparkle:hover {
+  @apply bg-primary text-primary-foreground scale-110 -translate-y-0.5 shadow-md;
+  box-shadow: 0 0 12px oklch(0.35 0.08 160 / 0.3);
+}
+
+/* ✨ Celebratory Burst Animation */
+@keyframes celebratory-burst {
+  0% { transform: scale(0.8); opacity: 0; filter: blur(10px); }
+  50% { opacity: 1; filter: blur(0px); }
+  100% { transform: scale(1.2); opacity: 0; filter: blur(5px); }
+}
+
+.celebratory-burst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, oklch(0.35 0.08 160 / 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  animation: celebratory-burst 2s ease-out forwards;
+}
+
+@keyframes rainbow-border {
+  0% { border-color: oklch(0.60 0.18 25); }
+  25% { border-color: oklch(0.65 0.15 85); }
+  50% { border-color: oklch(0.50 0.12 250); }
+  75% { border-color: oklch(0.55 0.15 320); }
+  100% { border-color: oklch(0.60 0.18 25); }
+}
+
+.rainbow-glow {
+  animation: rainbow-border 8s linear infinite;
+}
