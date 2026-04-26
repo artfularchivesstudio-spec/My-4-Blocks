@@ -176,7 +176,28 @@ const enhancedPrompt = `${SYSTEM_PROMPT}\n\n## Relevant Context\n${ragContext}`;
 - If semantic search fails → Falls back to keyword-only search
 - If no results found → Returns general context from first few chunks
 
-## 📈 Performance
+## 🛠️ Dynamic Admin Configuration
+The RAG library and chat endpoints now support dynamic overrides from the `/admin` dashboard.
+- **Admin Configuration**: Persisted in Supabase `admin_config` table.
+- **System Prompt**: Can be hot-swapped via the admin UI.
+- **Model Parameters**: Temperature, Top-K, and LLM model selection are now dynamic.
+
+### Usage with Overrides
+```typescript
+import { getActiveConfig } from '@/lib/admin-config';
+
+// Fetch dynamic overrides
+const adminConfig = await getActiveConfig();
+
+// Merge with defaults
+const config = {
+  model: adminConfig.model || 'gpt-4o',
+  temperature: adminConfig.temperature ?? 0.7,
+  ragEnabled: adminConfig.ragEnabled ?? true,
+  ragTopK: adminConfig.ragTopK ?? 5,
+  systemPrompt: adminConfig.systemPrompt || DEFAULT_PROMPT
+};
+```
 
 - **Embeddings**: 86 chunks, ~50KB with embeddings
 - **Search Time**: <100ms for hybrid search

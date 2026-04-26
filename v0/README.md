@@ -24,7 +24,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Learn More
+## Admin Sanctuary
+The system features a password-protected admin portal at `/admin` (Default password: `admin123`). This portal allows for:
+- Live configuration of AI models and RAG parameters.
+- Editing and managing training data files.
+- Viewing GEPA self-evolution reports and the Knowledge Graph.
+
+The configuration is persisted via Supabase in the `admin_config` table.
 
 To learn more, take a look at the following resources:
 

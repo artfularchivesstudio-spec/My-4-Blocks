@@ -6,17 +6,29 @@ An AI-powered emotional education platform based on Dr. Vincent E. Parr's book *
 
 ## ✨ Features
 
+### 🛠️ Admin Sanctuary
+- **System Mastery Portal**: Password-protected `/admin` dashboard for real-time system orchestration.
+- **Dynamic Configuration**: Hot-swappable LLM models (GPT-4o/mini/turbo), temperature control, and RAG Top-K tuning.
+- **Constitution Editor**: Live editing of the `System Prompt` (the core laws of the Four Blocks guide).
+- **Dataset Orchestration**: In-browser manager for the `content/training/` corpus with JSON validation and file uploads.
+- **Evolution Visibility**: Integrated GEPA reports and interactive Knowledge Graph visualization.
+
 ### 💬 Chat Mode
 - **Three UI Variants**: Claude, Gemini, V0 — same intelligence, different aesthetics
 - **Hybrid RAG Search**: 70% semantic + 30% keyword matching
-- **331 Retrievable Chunks**: Hybrid RAG over `shared/data/embeddings.json` (book-derived content with emotion-aware retrieval)
-- **Streaming Responses**: Real-time token streaming via GPT-4o-mini
+- **346 Retrievable Chunks**: Expanded RAG over `shared/data/embeddings.json` (now includes Preface, Introduction, Ch 10 Zen, and Ch 11 Healthy Body)
+- **Streaming Responses**: Real-time token streaming via GPT-4o-mini (overridable via Admin)
 
 ### 🎙️ Voice Mode
 - **WebRTC Realtime**: Low-latency speech-to-speech via OpenAI's Realtime API
 - **9 Voice Options**: From friendly `ash` to calm `sage`
 - **4 Conversation Styles**: Direct, Casual, Warm, Professional
 - **RAG-Injected Instructions**: Same knowledge base, optimized for voice
+
+### 🏛️ Data Source & Training
+- **Canonical Corpus**: Verbatim chunks from the full 205-page paperback in `docs/GEPA-DSPy-m1/refined-rag-dataset v1/`.
+- **Expanded Coverage**: Recently reconciled Preface, Introduction, Chapter 10 (Zen), and Chapter 11 (Healthy Body) into the RAG corpus.
+- **Admin Orchestration**: The `/admin` portal now acts as the primary source of truth for runtime parameters, persisting changes to Supabase and updating all Vercel instances instantly.
 
 ## 🏗️ Architecture
 
