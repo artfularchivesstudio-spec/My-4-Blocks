@@ -1,0 +1,147 @@
+[
+
+  // ============================================================
+  // TIER 1 — TOP-LEVEL FRAMEWORKS (3 PILLARS OF PHYSICAL HEALTH)
+  // ============================================================
+
+  {
+    "concept": "Healthy Body, Healthy Mind — Chapter Premise",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "No matter how much you study, practice, and meditate, if you neglect your physical health you will find it more difficult to develop a mind of peace and happiness. You would do well to support your healthy thinking habits with healthy physical habits. Restorative sleep, regular exercise, and a nutritious diet are all directly connected to a sense of calm and wellbeing, whereas poor sleep, lack of exercise, and insufficient nutrition negatively impact our mental and emotional health.",
+    "type": "framework",
+    "references": "Zen Meditation (Chapter 10); The Formulas for Happiness (Chapter 9); The ABCs of How Emotions are Created (Chapter 3)"
+  },
+
+  {
+    "concept": "Sleep — Top-Level Importance",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Outside of reprogramming your genetic code, quality sleep is the greatest contributor to mental and physical health. Current research indicates that 7-8.5 hours of quality sleep per night is essential for mental acuity, longevity, and performance. Most people know to avoid caffeine or long naps after a certain time of day, but there are a number of other factors affecting your rest that may surprise you.",
+    "type": "definition",
+    "references": "Healthy Body, Healthy Mind — Chapter Premise; Sleep / Manage Your Mood; Sleep / Reserve Your Bed for Bedroom Activities; Sleep / Say Goodnight to Your Brain; Sleep / Get Comfy"
+  },
+
+  {
+    "concept": "Exercise — Top-Level Importance",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Often we think of exercise as a means of increasing physical strength or preventing and reducing weight gain (often with a great deal of groaning and complaining!) but current scientific evidence has shown long-term mental and emotional benefits, too. Regular moderate exercise has been shown to promote clear thinking, improve sleep, and lower stress levels. A University of British Columbia study found that regular cardio workouts appear to enlarge the hippocampus, the part of the brain responsible for visual memory and learning. The researchers looked primarily at brisk walking, but pretty much any exercise that raises your heart rate can improve mood, relieve stress, decrease anxiety, improve ADHD symptoms, and reduce the risk of mild or moderate depression. A 2019 study by Harvard School of Public Health found that just 15 minutes a day of walking or running reduced the risk of major depression by 26%. Physical activity is especially essential for the physically, emotional, and intellectual development of children. The US Physical Activity Guidelines for Americans published in 2019 recommends around 3 hours a day of active play for kids ages 3–5. Children ages 6–17 need at least 60 minutes of bone-, body-, and brain-building exercise such as sports or playground activities. Over time, being active improves cognition and reduces the risk of depression just as in adults.",
+    "type": "definition",
+    "references": "Healthy Body, Healthy Mind — Chapter Premise; Exercise / Forms; Exercise / Karmel Choi Quote; The Formula for Depression (Chapter 7); The Formula for Anxiety (Chapter 6)"
+  },
+
+  {
+    "concept": "Nutrition — Top-Level Importance and the Gut-Brain Axis",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Have you ever looked at something disturbing and felt nauseous? Been unable to eat because of 'butterflies' before a presentation? Most, if not all of us have experienced digestive issues related to emotionally charged situations. While REBT and Zen are integral to managing emotions, our diet plays a big role in supporting our efforts. Scientists have known for many years that stress, anxiety, and depression cause or contribute to digestive issues like IBS, nausea, pain, bloating, and constipation. But current research now shows the signals may go both ways; your digestive system may also influence your mood.",
+    "type": "definition",
+    "references": "Healthy Body, Healthy Mind — Chapter Premise; Nutrition / Gut-Brain Axis (ENS); Nutrition / Increase Quality, Reduce Quantity; Nutrition / Hydrate the Machine; Nutrition / Make Mealtimes Calm; Zen Meditation (Chapter 10)"
+  },
+
+  // ============================================================
+  // TIER 2 — SLEEP SUB-SECTIONS
+  // ============================================================
+
+  {
+    "concept": "Sleep / Manage Your Mood",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Do you ever find your mind racing as you lie in bed watching the hours tick by? Explore your thoughts and feelings. Are you anxious? Depressed? Frustrated? That stressful chatter in your head can be a major factor in insomnia. Go back to the ABCs and look for the activating events you may be focused on. Then use the 4 Steps of Disputing to find, dispute, and destroy irrational thoughts. Use the Centered Breathing technique from the chapter on Anxiety to center yourself, release tension, and breathe, 'Let go.'",
+    "type": "framework",
+    "references": "Sleep — Top-Level Importance; The ABCs of How Emotions are Created (Chapter 3); The 4 Steps to Disputing (Chapter 4); Centered Breathing (Chapter 6); The Formula for Anxiety (Chapter 6)"
+  },
+
+  {
+    "concept": "Sleep / Reserve Your Bed for Bedroom Activities",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Try not to use your bedroom for work or watching TV. Think about it—when you bring your laptop to bed, you're bringing all your worries with it! If you only use your bedroom for rest and sex, you'll actually strengthen your brain's association between 'bed' and 'sleep.' If you're not sleepy at bedtime, go to another room or area and do something relaxing like read a book or meditate.",
+    "type": "framework",
+    "references": "Sleep — Top-Level Importance; Zen Meditation (Chapter 10)"
+  },
+
+  {
+    "concept": "Sleep / Say Goodnight to Your Brain",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "and signal 'bedtime' to your brain. Turn off electronics, dim the lights, and maybe have a cup of herbal tea or a bath before climbing into bed. Recent studies by the National Sleep Foundation have noted that meditation can also improve quantity and quality of sleep by calming the mind.",
+    "type": "framework",
+    "references": "Sleep — Top-Level Importance; Zen Meditation (Chapter 10)"
+  },
+
+  {
+    "concept": "Sleep / Get Comfy",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Make sure your environment is clean, comfortable, and relaxing. A dark, cool, quiet room will minimize invasive distractions that keep you from falling asleep. Soft sheets and a good mattress will help reduce tossing and turning so you can stay asleep!",
+    "type": "framework",
+    "references": "Sleep — Top-Level Importance"
+  },
+
+  // ============================================================
+  // TIER 2 — EXERCISE SUB-SECTIONS
+  // ============================================================
+
+  {
+    "concept": "Exercise / Forms — Tai Chi, Yoga, Walking, Household Activities",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Exercise doesn't have to be a don't-stop-till-you-drop activity to be beneficial. Tai chi, yoga, or walking in nature can help you connect to awareness and focus the mind while building strength, coordination, and endurance. Household activities are often mindlessly repetitive efforts that get your heart pumping and make you sweat while freeing the mind to a Zen state. If you're having trouble committing to a regular routine, try joining a class, setting goals and tracking your progress, working out with a friend who will hold you accountable, or hiring a personal trainer (I find the threat of wasting hard-earned money is a good motivator!).",
+    "type": "list",
+    "references": "Exercise — Top-Level Importance; Zen Meditation (Chapter 10)"
+  },
+
+  {
+    "concept": "Exercise / Karmel Choi Quote — Something Is Better Than Nothing",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "While 150–300 minutes a week seems to be the recommended amount of activity, any amount has some benefit. As Karmel Choi, a postdoctoral fellow at Harvard noted, '…even if you are already feeling depressed, physical activity helps…. I would say: Start somewhere—remember that something is better than nothing at all.'",
+    "type": "example",
+    "references": "Exercise — Top-Level Importance; The Formula for Depression (Chapter 7)"
+  },
+
+  // ============================================================
+  // TIER 2 — NUTRITION SUB-SECTIONS
+  // ============================================================
+
+  {
+    "concept": "Nutrition / Gut-Brain Axis (ENS) — The Second Brain",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Our entire gastrointestinal tract is lined with two thin layers of nerve cells—the enteric nervous system (ENS)—that functions like a little brain in our gut. It communicates with our central nervous system (CNS) or our 'big brain' via what's known as the 'gut-brain axis.' Now, the ENS can't think like our brain—it's not going to balance our checkbook or take notes during a meeting—but its role in transmitting and translating information to and from the brain is critical to our health. This is the path of communication that allows psychosocial factors to influence the physiology of the digestive system. Your emotions travel from your central nervous system, through the gut-brain axis to the ENS. The ENS translates those emotions into signals that can cause or exacerbate chronic digestive issues. The flow of information also goes the other direction; the health of your gut can influence your mood. That post-M&M 'sugar high' and subsequent letdown is not a figment of your imagination! A good deal of recent research shows that the community of bacteria in your digestive system—the microbiota of the gut—can have a direct effect on your emotions. Balanced, healthy microbiota have been shown to have a positive effect on emotional and cognitive health, whereas a gut populated by 'bad' bacteria or under attack by infection and inflammation has been linked to depression and anxiety. You are—emotionally and mentally—what you eat! This is why mind-body therapies like REBT and CBT have been shown to support not only the thinking brain, but the food-processing one as well. The research by scientists like Jay Pasricha, M.D., director of the Johns Hopkins Center for Neurogastroenterology have discovered the profound influence our digestive system has on our thought centers. 'Our two brains \"talk\" to each other, so therapies that help one may help the other,' Pasricha says. 'In a way, gastroenterologists (doctors who specialize in digestive conditions) are like counselors looking for ways to soothe the second brain.'",
+    "type": "definition",
+    "references": "Nutrition — Top-Level Importance and the Gut-Brain Axis; The Formula for Depression (Chapter 7); The Formula for Anxiety (Chapter 6)"
+  },
+
+  {
+    "concept": "Nutrition / Increase Quality, Reduce Quantity",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Quality input = quality output\nGarbage in = Garbage out\n\nCaloric restriction, intermittent fasting and small portions in general allow the body to regulate itself the way it always intended to. In fact, intermittent fasting (minimum of 12-hour breaks from eating) has been shown to reset stem cells in the body, contribute to mental alertness and improved focus, better physical health, and improved mood. The second half to Step 1 is to make sure you break your fast with the highest quality foods available. When you're truly hungry, your body is eager to absorb nutrients. If you think it is too expensive to eat healthy, let me assure you, it's a lot more affordable than getting cancer, taking pharmaceutical medications, and spending your valuable time feeling miserable.",
+    "type": "framework",
+    "references": "Nutrition — Top-Level Importance and the Gut-Brain Axis; Nutrition / Gut-Brain Axis (ENS)"
+  },
+
+  {
+    "concept": "Nutrition / Hydrate the Machine",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "Water is the second most essential element to the survival of the human body, yet most of us don't drink nearly enough to replenish what we use every day! Your body is a complex mechanism that requires fluid to survive. The adult human body is 60–80% water! Your brain, blood, skin, organs, and even your bones can't function properly without it. The National Academy of Medicine (NAM) traditionally recommended eight 8-ounce glasses per day. Yet according to the Centers for Disease Control and Prevention (CDC), about half of all adults are drinking 1-4 cups a day and 7% don't even drink one cup! This is significantly less than necessary for an average-sized adult, and that deficit can have some surprisingly unpleasant side effects on both your body and mind. A 2012 study by the European Hydration Institute found '…hydration is a key factor for mental health.' Your brain is 75% water, so it makes sense that it would suffer when we're under-hydrated. Circulation slows, lowering blood flow, reducing oxygen to all areas of the body, including the brain. According to study conducted by the School of Psychology and Clinical Language Sciences in 2013, a lack of sufficient water in the body impacts cognitive functions like short-term memory and vision, and causes significant mood disturbance. A good way to determine your own hydration needs is divide your body weight in half—that's how many ounces you should aim for every day. Increase the amount for caffeine, alcohol, and strenuous exercise. The National Academy of Medicine now recommends setting a goal of about 3.7 liters (15 cups) for the average adult male and 2.7 liters (11 cups) for the average adult female. This may seem like a lot, but remember you can get a good portion of your hydration needs from caffeine-free and sugar-free beverages like herbal tea or milk, and from nutritious soups, meat, fruits, and vegetables.",
+    "type": "framework",
+    "references": "Nutrition — Top-Level Importance and the Gut-Brain Axis"
+  },
+
+  {
+    "concept": "Nutrition / Hydrate the Machine — Case Example: The Coffee-and-Coke Patient",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "A man once complained to me that he was feeling unwell but couldn't point to anything specific. He was having trouble swallowing, his vision was blurry, he was groggy and cranky, had persistent headaches, and his heart would race erratically. When I asked him how much water he was drinking every day, he looked at me blankly. 'I drink, like, 6 cups of coffee and a couple cans of Coke. Does that count?' Well, no. That's actually the opposite of hydrating because caffeine is a diuretic—it squeezes water out of your body! He agreed to reduce the coffee and replace the soda with 90 ounces of water (about 3 liters) per day. After two weeks of drinking the recommended amount, he reported nearly all his symptoms had completely disappeared!",
+    "type": "example",
+    "references": "Nutrition / Hydrate the Machine"
+  },
+
+  {
+    "concept": "Nutrition / Make Mealtimes Calm — PSNS vs. Fight-or-Flight",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "The ENS works alongside the parasympathetic nervous system (PSNS)—the 'rest-and-digest' response—affecting every part of the digestive process; swallowing, breaking down food, helping nutrient absorption, and regulating elimination. Rest-and-digest is the opposite of the fight-or-flight response created by the sympathetic nervous system; it functions best when you are relaxed. When you're stressed around mealtimes—a rushed lunch between meetings, shoveling a candy bar while dropping the kids off, or rushing around to feed the family—your adrenaline is surging, triggered by your 'fight-or-flight' response. Your body is unable to produce the gastric juices to absorb nutrients, vitamins, and minerals needed to support mental health. You may have trouble swallowing or find you feel nauseous. The key to engaging the essential 'rest-and-digest' state is feeling calm, but many times the very act of preparing or sitting down to a meal can be hectic and stressful. It takes a little effort and focus, but with practice you can create an atmosphere of tranquility wherever you are. Take a pause. Examine your thoughts. Practice the Centered Breath. Acknowledge stressful, irrational thoughts and let them go. Think of mealtimes as a way to nourish both body and mind, because that's exactly what you're doing! Your work, kids, and life will be there after lunch. Deal with them then. And above all, no emotional problem solving or arguing at meal times! Pause, rest, nourish, and relax.",
+    "type": "framework",
+    "references": "Nutrition / Gut-Brain Axis (ENS); The Formula for Anxiety (Chapter 6); Centered Breathing (Chapter 6); The 4 Steps to Disputing (Chapter 4)"
+  },
+
+  {
+    "concept": "Healthy Body, Healthy Mind — Closing Synthesis",
+    "chapter": "Chapter 11: Healthy Body, Healthy Mind",
+    "content": "These steps have the potential to change your life for the better! When incorporated with daily meditation and rational thinking, these three physical factors can literally change your mind. You will displace long-standing irrational thoughts, feelings, and behaviors and replace them with new, healthy habits. Give it time, keep practicing, and you will live a more productive, healthy, and happy life!",
+    "type": "framework",
+    "references": "Sleep — Top-Level Importance; Exercise — Top-Level Importance; Nutrition — Top-Level Importance and the Gut-Brain Axis; Zen Meditation (Chapter 10); The Formulas for Happiness (Chapter 9)"
+  }
+
+]

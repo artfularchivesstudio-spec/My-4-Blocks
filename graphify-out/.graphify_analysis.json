@@ -1,0 +1,2348 @@
+{
+  "communities": {
+    "0": [
+      "dataset_builder_evaldataset",
+      "dataset_builder_evaldataset_save",
+      "dataset_builder_evalexample",
+      "dataset_builder_evalexample_to_dict",
+      "dataset_builder_goldendatasetloader",
+      "dataset_builder_rationale_55",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_core_external_importers_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_tests_core_test_external_importers_py",
+      "external_importers_build_dataset_from_external",
+      "external_importers_claudecodeimporter",
+      "external_importers_contains_secret",
+      "external_importers_copilotimporter",
+      "external_importers_extract_messages",
+      "external_importers_hermessessionimporter",
+      "external_importers_is_relevant_to_skill",
+      "external_importers_load_skill_text",
+      "external_importers_main",
+      "external_importers_parse_copilot_events",
+      "external_importers_parse_scoring_json",
+      "external_importers_rationale_1",
+      "external_importers_rationale_122",
+      "external_importers_rationale_158",
+      "external_importers_rationale_169",
+      "external_importers_rationale_211",
+      "external_importers_rationale_226",
+      "external_importers_rationale_261",
+      "external_importers_rationale_276",
+      "external_importers_rationale_335",
+      "external_importers_rationale_350",
+      "external_importers_rationale_423",
+      "external_importers_rationale_431",
+      "external_importers_rationale_456",
+      "external_importers_rationale_547",
+      "external_importers_rationale_614",
+      "external_importers_rationale_697",
+      "external_importers_rationale_744",
+      "external_importers_rationale_79",
+      "external_importers_rationale_89",
+      "external_importers_read_copilot_workspace",
+      "external_importers_relevancefilter",
+      "external_importers_relevancefilter_filter_and_score",
+      "external_importers_relevancefilter_init",
+      "external_importers_scorerelevance",
+      "external_importers_validate_eval_example",
+      "test_external_importers_mock_dspy",
+      "test_external_importers_rationale_1",
+      "test_external_importers_rationale_1036",
+      "test_external_importers_rationale_1046",
+      "test_external_importers_rationale_1063",
+      "test_external_importers_rationale_1081",
+      "test_external_importers_rationale_1100",
+      "test_external_importers_rationale_1117",
+      "test_external_importers_rationale_1120",
+      "test_external_importers_rationale_1153",
+      "test_external_importers_rationale_1219",
+      "test_external_importers_rationale_160",
+      "test_external_importers_rationale_206",
+      "test_external_importers_rationale_230",
+      "test_external_importers_rationale_238",
+      "test_external_importers_rationale_243",
+      "test_external_importers_rationale_373",
+      "test_external_importers_rationale_392",
+      "test_external_importers_rationale_451",
+      "test_external_importers_rationale_456",
+      "test_external_importers_rationale_49",
+      "test_external_importers_rationale_563",
+      "test_external_importers_rationale_591",
+      "test_external_importers_rationale_595",
+      "test_external_importers_rationale_694",
+      "test_external_importers_rationale_697",
+      "test_external_importers_rationale_790",
+      "test_external_importers_rationale_807",
+      "test_external_importers_rationale_815",
+      "test_external_importers_rationale_866",
+      "test_external_importers_rationale_950",
+      "test_external_importers_testbuilddataset",
+      "test_external_importers_testbuilddataset_test_builds_dataset_with_splits",
+      "test_external_importers_testbuilddataset_test_multiple_sources",
+      "test_external_importers_testbuilddataset_test_no_messages_returns_empty_dataset",
+      "test_external_importers_testbuilddataset_test_no_relevant_examples_returns_empty_dataset",
+      "test_external_importers_testbuilddataset_test_unknown_source_ignored",
+      "test_external_importers_testclaudecodeimporter",
+      "test_external_importers_testclaudecodeimporter_test_handles_missing_file",
+      "test_external_importers_testclaudecodeimporter_test_parses_history_jsonl",
+      "test_external_importers_testclaudecodeimporter_test_respects_limit",
+      "test_external_importers_testclaudecodeimporter_test_skips_empty_lines",
+      "test_external_importers_testclaudecodeimporter_test_skips_malformed_json_lines",
+      "test_external_importers_testcli",
+      "test_external_importers_testcli_test_dry_run",
+      "test_external_importers_testcli_test_help_flag",
+      "test_external_importers_testcli_test_missing_skill_exits_with_error",
+      "test_external_importers_testcopilothelpers",
+      "test_external_importers_testcopilothelpers_test_parse_copilot_events_file_not_found",
+      "test_external_importers_testcopilothelpers_test_parse_copilot_events_malformed_json",
+      "test_external_importers_testcopilothelpers_test_parse_copilot_events_permission_error",
+      "test_external_importers_testcopilothelpers_test_read_workspace_missing_file",
+      "test_external_importers_testcopilothelpers_test_read_workspace_no_cwd",
+      "test_external_importers_testcopilothelpers_test_read_workspace_with_cwd",
+      "test_external_importers_testcopilotimporter",
+      "test_external_importers_testcopilotimporter_test_empty_events_file",
+      "test_external_importers_testcopilotimporter_test_filters_secrets_from_copilot",
+      "test_external_importers_testcopilotimporter_test_handles_missing_dir",
+      "test_external_importers_testcopilotimporter_test_multiline_assistant_response",
+      "test_external_importers_testcopilotimporter_test_parses_events_jsonl",
+      "test_external_importers_testcopilotimporter_test_unpaired_user_message_dropped",
+      "test_external_importers_testendtoendroundtrip",
+      "test_external_importers_testendtoendroundtrip_test_full_pipeline_with_copilot_events",
+      "test_external_importers_testendtoendroundtrip_test_output_loadable_by_golden_loader",
+      "test_external_importers_testevalexampleformat",
+      "test_external_importers_testevalexampleformat_test_golden_jsonl_format",
+      "test_external_importers_testevalexampleformat_test_roundtrip_serialization",
+      "test_external_importers_testhermessessionimporter",
+      "test_external_importers_testhermessessionimporter_test_filters_secrets",
+      "test_external_importers_testhermessessionimporter_test_handles_malformed_json",
+      "test_external_importers_testhermessessionimporter_test_handles_missing_dir",
+      "test_external_importers_testhermessessionimporter_test_handles_no_assistant_response",
+      "test_external_importers_testhermessessionimporter_test_parses_session_json",
+      "test_external_importers_testhermessessionimporter_test_respects_limit",
+      "test_external_importers_testhermessessionimporter_test_skips_short_messages",
+      "test_external_importers_testloadskilltext",
+      "test_external_importers_testloadskilltext_test_ignores_dir_without_skill_md",
+      "test_external_importers_testloadskilltext_test_loads_skill_from_directory",
+      "test_external_importers_testloadskilltext_test_loads_skill_from_subdirectory",
+      "test_external_importers_testloadskilltext_test_raises_on_missing_skill",
+      "test_external_importers_testmindatasetsizewarning",
+      "test_external_importers_testmindatasetsizewarning_test_small_dataset_still_returned",
+      "test_external_importers_testrelevancefilter",
+      "test_external_importers_testrelevancefilter_test_irrelevant_messages_filtered_out",
+      "test_external_importers_testrelevancefilter_test_malformed_llm_output_counted_as_error",
+      "test_external_importers_testrelevancefilter_test_max_examples_cap_respected",
+      "test_external_importers_testrelevancefilter_test_relevant_messages_become_examples",
+      "test_external_importers_testrelevancefilter_test_scorer_exception_counted_as_error",
+      "test_external_importers_testrelevanceheuristics",
+      "test_external_importers_testrelevanceheuristics_test_matches_skill_content_keywords",
+      "test_external_importers_testrelevanceheuristics_test_matches_skill_name_keyword",
+      "test_external_importers_testrelevanceheuristics_test_rejects_unrelated",
+      "test_external_importers_testrelevanceheuristics_test_short_skill_name_words_ignored",
+      "test_external_importers_testrelevanceheuristics_test_single_keyword_not_enough",
+      "test_external_importers_testscoringjsonparser",
+      "test_external_importers_testscoringjsonparser_test_clean_json",
+      "test_external_importers_testscoringjsonparser_test_direct_parse_fast_path",
+      "test_external_importers_testscoringjsonparser_test_empty_string_returns_none",
+      "test_external_importers_testscoringjsonparser_test_json_in_markdown",
+      "test_external_importers_testscoringjsonparser_test_json_with_surrounding_text",
+      "test_external_importers_testscoringjsonparser_test_malformed_json_returns_none",
+      "test_external_importers_testscoringjsonparser_test_nested_braces_in_values",
+      "test_external_importers_testscoringjsonparser_test_no_json_returns_none",
+      "test_external_importers_testscoringjsonparser_test_non_dict_json_returns_none",
+      "test_external_importers_testskillnamematching",
+      "test_external_importers_testskillnamematching_test_hyphenated_skill_name_matches",
+      "test_external_importers_testskillnamematching_test_short_skill_name_matches_exact",
+      "test_external_importers_testskillnamematching_test_short_skill_name_tdd",
+      "test_external_importers_testvalidationintegration",
+      "test_external_importers_testvalidationintegration_test_empty_expected_behavior_drops_example",
+      "test_external_importers_testvalidationintegration_test_invalid_difficulty_normalized",
+      "test_external_importers_testvalidationintegration_test_missing_source_field_drops_message",
+      "test_external_importers_testvalidationintegration_test_missing_task_input_drops_message"
+    ],
+    "1": [
+      "config_evolutionconfig",
+      "config_rationale_11",
+      "constraints_constraintresult",
+      "constraints_constraintvalidator",
+      "constraints_constraintvalidator_check_growth",
+      "constraints_constraintvalidator_check_non_empty",
+      "constraints_constraintvalidator_check_size",
+      "constraints_constraintvalidator_check_skill_structure",
+      "constraints_constraintvalidator_init",
+      "constraints_constraintvalidator_run_test_suite",
+      "constraints_constraintvalidator_validate_all",
+      "constraints_rationale_1",
+      "constraints_rationale_151",
+      "constraints_rationale_17",
+      "constraints_rationale_25",
+      "constraints_rationale_36",
+      "constraints_rationale_56",
+      "dataset_builder_all_examples",
+      "dataset_builder_evaldataset_to_dspy_examples",
+      "dataset_builder_from_dict",
+      "dataset_builder_generatetestcases",
+      "dataset_builder_load",
+      "dataset_builder_rationale_1",
+      "dataset_builder_rationale_121",
+      "dataset_builder_rationale_173",
+      "dataset_builder_rationale_177",
+      "dataset_builder_rationale_22",
+      "dataset_builder_rationale_45",
+      "dataset_builder_rationale_64",
+      "dataset_builder_rationale_78",
+      "dataset_builder_rationale_90",
+      "dataset_builder_rationale_97",
+      "dataset_builder_syntheticdatasetbuilder",
+      "dataset_builder_syntheticdatasetbuilder_generate",
+      "dataset_builder_syntheticdatasetbuilder_init",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_code_init_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_core_constraints_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_core_dataset_builder_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_core_fitness_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_core_init_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_init_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_monitor_init_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_prompts_init_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_skills_evolve_skill_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_skills_init_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_tools_init_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_tests_core_test_constraints_py",
+      "evolution_core_config",
+      "evolution_core_constraints",
+      "evolution_core_dataset_builder",
+      "evolution_core_external_importers",
+      "evolution_skills_skill_module",
+      "evolve_skill_gepa_skill_fitness_metric",
+      "evolve_skill_main",
+      "evolve_skill_rationale_1",
+      "evolve_skill_rationale_319",
+      "evolve_skill_rationale_37",
+      "evolve_skill_rationale_55",
+      "fitness_composite",
+      "fitness_fitnessscore",
+      "fitness_judgesignature",
+      "fitness_llmjudge",
+      "fitness_llmjudge_init",
+      "fitness_llmjudge_score",
+      "fitness_parse_score",
+      "fitness_rationale_1",
+      "fitness_rationale_108",
+      "fitness_rationale_140",
+      "fitness_rationale_16",
+      "fitness_rationale_25",
+      "fitness_rationale_35",
+      "fitness_rationale_42",
+      "fitness_rationale_73",
+      "fitness_skill_fitness_metric",
+      "generate_report_py",
+      "gepa_dspy_pipeline",
+      "init_rationale_1",
+      "skill_module_rationale_85",
+      "skill_module_skillmodule",
+      "skill_module_skillmodule_forward",
+      "skill_module_skillmodule_init",
+      "test_constraints",
+      "test_constraints_rationale_1",
+      "test_constraints_rationale_74",
+      "test_constraints_testgrowthconstraints",
+      "test_constraints_testgrowthconstraints_test_acceptable_growth",
+      "test_constraints_testgrowthconstraints_test_excessive_growth",
+      "test_constraints_testgrowthconstraints_test_shrinkage_is_ok",
+      "test_constraints_testnonempty",
+      "test_constraints_testnonempty_test_empty_fails",
+      "test_constraints_testnonempty_test_non_empty_passes",
+      "test_constraints_testnonempty_test_whitespace_only_fails",
+      "test_constraints_testsizeconstraints",
+      "test_constraints_testsizeconstraints_test_skill_over_limit",
+      "test_constraints_testsizeconstraints_test_skill_under_limit",
+      "test_constraints_testsizeconstraints_test_tool_description_over_limit",
+      "test_constraints_testsizeconstraints_test_tool_description_under_limit",
+      "test_constraints_testskillstructure",
+      "test_constraints_testskillstructure_test_body_fragment_without_frontmatter_passes",
+      "test_constraints_testskillstructure_test_missing_description",
+      "test_constraints_testskillstructure_test_missing_name",
+      "test_constraints_testskillstructure_test_valid_skill",
+      "test_constraints_testvalidateall",
+      "test_constraints_testvalidateall_test_empty_skill_fails",
+      "test_constraints_testvalidateall_test_valid_skill_passes_all",
+      "test_constraints_validator",
+      "test_external_importers",
+      "test_skill_module"
+    ],
+    "2": [
+      "book_abc_model",
+      "book_activating_event",
+      "book_albert_ellis",
+      "book_amor_fati",
+      "book_anger",
+      "book_anger_formula",
+      "book_anxiety",
+      "book_anxiety_awfulizing",
+      "book_anxiety_formula",
+      "book_atoc_thinking",
+      "book_behavior_equals_behavior",
+      "book_belief",
+      "book_bs_equation",
+      "book_byron_katie",
+      "book_cbt",
+      "book_centering_breath",
+      "book_cognitive_stoppage",
+      "book_comfortable_misery",
+      "book_compassion",
+      "book_consequence",
+      "book_creative_absorption",
+      "book_demanding_philosophy",
+      "book_depression",
+      "book_depression_formula",
+      "book_desiring_philosophy",
+      "book_disputing",
+      "book_dvsf_framework",
+      "book_effective_belief",
+      "book_egocentric_thinking",
+      "book_equanimity",
+      "book_exercise",
+      "book_fhb",
+      "book_four_blocks",
+      "book_four_challenge_questions",
+      "book_four_immeasurables",
+      "book_four_needs_four_fears",
+      "book_four_steps_disputing",
+      "book_greater_happiness",
+      "book_guilt",
+      "book_guilt_formula",
+      "book_gut_brain_axis",
+      "book_happiness_long_formula",
+      "book_hassle_factor",
+      "book_healthy_body_mind",
+      "book_helplessness",
+      "book_hopelessness",
+      "book_ib1_it_statements",
+      "book_ib2_awfulizing",
+      "book_ib3_icsi",
+      "book_ib4_smds",
+      "book_ib5_rating",
+      "book_ib6_absolutistic",
+      "book_ib7_entitlement",
+      "book_in_vivo_desensitization",
+      "book_insight_1",
+      "book_insight_2",
+      "book_insight_3",
+      "book_irrational_belief",
+      "book_kathleen_bishop",
+      "book_lovingkindness",
+      "book_mastery_course",
+      "book_medication_critique",
+      "book_mental_contamination",
+      "book_mind_of_totality",
+      "book_monkey_mind",
+      "book_narrator",
+      "book_need_certainty",
+      "book_need_comfort",
+      "book_need_love_approval",
+      "book_need_success",
+      "book_negative_feedback_loop",
+      "book_nutrition",
+      "book_observer",
+      "book_panic_attacks",
+      "book_parr_institute",
+      "book_procrastination",
+      "book_pseudo_need",
+      "book_racket",
+      "book_rational_belief",
+      "book_reactive_mind",
+      "book_rebt",
+      "book_red_flagging",
+      "book_satori",
+      "book_seven_irrational_beliefs",
+      "book_should_component",
+      "book_sixth_sense_thinking",
+      "book_sleep",
+      "book_sos_framework",
+      "book_staying_now",
+      "book_steve_hagen",
+      "book_stoic_philosophy",
+      "book_sympathetic_joy",
+      "book_ten_ox_herding",
+      "book_thinking_mind",
+      "book_three_goals",
+      "book_three_insights",
+      "book_three_reasons_bad_behavior",
+      "book_uaow",
+      "book_unconditional_self_acceptance",
+      "book_vincent_parr",
+      "book_what_if",
+      "book_worry",
+      "book_worthlessness",
+      "book_wrongness",
+      "book_you_only_have_four_problems",
+      "book_zen_meditation"
+    ],
+    "3": [
+      "claude_deployment_precomputed_rationale",
+      "claude_deployment_vercel_guide",
+      "claude_enhancements_ai_reference",
+      "claude_enhancements_anger_formula",
+      "claude_enhancements_anxiety_formula",
+      "claude_enhancements_depression_formula",
+      "claude_enhancements_guilt_formula",
+      "claude_impl_nextjs_app",
+      "claude_impl_rag_flow",
+      "claude_impl_tech_stack",
+      "claude_live_deployment_url",
+      "claude_next_steps_embedding_gen",
+      "claude_plan_chunk_strategy",
+      "claude_readme_disclaimer",
+      "claude_readme_four_blocks_architecture",
+      "claude_scripts_requirements_python",
+      "claude_shared_readme_rag_library",
+      "codex_agent_builder_guide_system_instructions",
+      "codex_agent_builder_guide_widgets",
+      "codex_chatkit_home_readme",
+      "codex_chatkit_home_session",
+      "codex_opus_plan_atomic_tools",
+      "codex_opus_plan_claude_skills",
+      "codex_opus_plan_display_modes",
+      "codex_opus_plan_mcp_server",
+      "codex_opus_plan_privacy_policy",
+      "codex_opus_plan_session_refresh",
+      "codex_starting_prompt_daily_ritual",
+      "codex_starting_prompt_four_block_widget",
+      "codex_starting_prompt_retro_widget",
+      "codex_studio_start_here",
+      "codex_studio_widget_builder",
+      "concept_abcs_model",
+      "concept_chatkit_react",
+      "concept_chonkie_library",
+      "concept_cosine_similarity",
+      "concept_dr_vincent_parr",
+      "concept_four_blocks_framework",
+      "concept_framer_motion",
+      "concept_openai_agent_builder",
+      "concept_openai_api",
+      "concept_seven_irrational_beliefs",
+      "concept_streaming_responses",
+      "concept_text_embedding_3_small",
+      "concept_vercel_platform",
+      "concept_you_only_have_four_problems",
+      "concept_zen_mindfulness",
+      "gemini_features_glassmorphic_ui",
+      "gemini_features_knowledge_base",
+      "gemini_features_rag_guidance",
+      "gemini_plan_typescript_first",
+      "gemini_plan_web_lite",
+      "gemini_plan_wisdom_seeds",
+      "gemini_readme_nextjs_project",
+      "gemini_roadmap_phase1_portal",
+      "shared_readme_embedded_chunk",
+      "shared_readme_fallback_behavior",
+      "shared_readme_graph_expansion",
+      "shared_readme_hybrid_search",
+      "shared_readme_rag_library"
+    ],
+    "4": [
+      "author_dr_parr",
+      "book_four_problems",
+      "ch4_cognitive_stoppage",
+      "ch4_disputing",
+      "ch4_four_challenge_questions",
+      "ch4_four_steps_disputing",
+      "ch4_golden_rule_rational_living",
+      "ch4_ib1_it_statements",
+      "ch4_ib2_awfulizing",
+      "ch4_ib3_icsi",
+      "ch4_ib4_smds",
+      "ch4_ib5_rating",
+      "ch4_ib6_absolutistic",
+      "ch4_ib7_entitlement",
+      "ch4_if_then_logic",
+      "ch4_red_flagging",
+      "ch4_sos_framework",
+      "ch5_acceptance_not_endorsement",
+      "ch5_egocentric_thinking",
+      "ch5_formula_anger",
+      "ch5_should_anger",
+      "ch5_three_reasons_poor_behavior",
+      "ch6_centering_breath",
+      "ch6_fhb",
+      "ch6_formula_anxiety",
+      "ch6_in_vivo_method",
+      "ch6_what_if",
+      "ch6_worry_reduction_program",
+      "ch6_worry_vs_anxiety",
+      "ch7_comfortable_misery",
+      "ch7_formula_depression",
+      "ch7_four_pseudo_needs_fears",
+      "ch7_helplessness",
+      "ch7_hopelessness",
+      "ch7_medication_nation",
+      "ch7_mind_of_totality",
+      "ch7_need_pseudo",
+      "ch9_creative_absorption",
+      "ch9_greater_happiness",
+      "ch9_hassle_factor",
+      "ch9_long_happiness",
+      "ch9_short_happiness",
+      "ch9_staying_now",
+      "ch9_uaow",
+      "ch9_usa",
+      "chapter4_seven_irrational_beliefs",
+      "chapter5_formula_anger",
+      "chapter6_formula_anxiety",
+      "chapter7_formula_depression",
+      "chapter9_formulas_happiness",
+      "rag_dataset_readme"
+    ],
+    "5": [
+      "cbt_abc_model_chapter",
+      "cbt_anger_chapter",
+      "cbt_anxiety_batch2",
+      "cbt_anxiety_chapter",
+      "cbt_depression_chapter",
+      "cbt_guilt_chapter",
+      "cbt_happiness_chapter",
+      "cbt_irrational_beliefs_chapter",
+      "cbt_mental_contamination_chapter",
+      "cbt_three_insights_chapter",
+      "chatkit_daily_retro",
+      "chatkit_energy_check",
+      "chatkit_focus_sprint",
+      "chatkit_four_blocks_planner",
+      "chatkit_morning_priorities",
+      "chatkit_readme",
+      "chatkit_streak_saver",
+      "chatkit_weekly_review",
+      "concept_abc_model",
+      "concept_anger",
+      "concept_anxiety",
+      "concept_bs_equation",
+      "concept_demands_vs_preferences",
+      "concept_depression",
+      "concept_fallible_human_being",
+      "concept_four_blocks",
+      "concept_guilt",
+      "concept_happiness",
+      "concept_irrational_beliefs",
+      "concept_mental_contamination",
+      "concept_narrator_observer",
+      "concept_three_insights",
+      "rag_chapter1_raw",
+      "rag_chapter2_raw",
+      "rag_chapter3_raw",
+      "rag_chapter8_raw",
+      "training_master_index",
+      "training_readme_gurinder"
+    ],
+    "6": [
+      "test_external_importers_testsecretdetection",
+      "test_external_importers_testsecretdetection_test_detects_anthropic_key",
+      "test_external_importers_testsecretdetection_test_detects_aws_access_key",
+      "test_external_importers_testsecretdetection_test_detects_aws_secret_env_var",
+      "test_external_importers_testsecretdetection_test_detects_bearer_token",
+      "test_external_importers_testsecretdetection_test_detects_database_url_env_var",
+      "test_external_importers_testsecretdetection_test_detects_env_var_anthropic",
+      "test_external_importers_testsecretdetection_test_detects_env_var_openai",
+      "test_external_importers_testsecretdetection_test_detects_github_pat",
+      "test_external_importers_testsecretdetection_test_detects_github_token_env_var",
+      "test_external_importers_testsecretdetection_test_detects_github_user_token",
+      "test_external_importers_testsecretdetection_test_detects_long_sk_prefix",
+      "test_external_importers_testsecretdetection_test_detects_notion_token",
+      "test_external_importers_testsecretdetection_test_detects_openrouter_env_var",
+      "test_external_importers_testsecretdetection_test_detects_openrouter_key",
+      "test_external_importers_testsecretdetection_test_detects_password_assignment",
+      "test_external_importers_testsecretdetection_test_detects_pem_private_key",
+      "test_external_importers_testsecretdetection_test_detects_secret_assignment",
+      "test_external_importers_testsecretdetection_test_detects_slack_app_token",
+      "test_external_importers_testsecretdetection_test_detects_slack_bot_token",
+      "test_external_importers_testsecretdetection_test_detects_slack_bot_token_env_var",
+      "test_external_importers_testsecretdetection_test_detects_token_assignment_long_value",
+      "test_external_importers_testsecretdetection_test_ignores_ask_substring",
+      "test_external_importers_testsecretdetection_test_ignores_code_token_discussion",
+      "test_external_importers_testsecretdetection_test_ignores_normal_text",
+      "test_external_importers_testsecretdetection_test_ignores_password_in_prose",
+      "test_external_importers_testsecretdetection_test_ignores_prose_with_key_word",
+      "test_external_importers_testsecretdetection_test_ignores_secret_in_prose",
+      "test_external_importers_testsecretdetection_test_ignores_short_sk_prefix",
+      "test_external_importers_testsecretdetection_test_ignores_token_assignment_short_value",
+      "test_external_importers_testsecretdetection_test_ignores_word_bearer_in_prose"
+    ],
+    "7": [
+      "config_EvolutionConfig",
+      "config_get_hermes_agent_path",
+      "config_rationale_1",
+      "config_rationale_48",
+      "constraints_ConstraintResult",
+      "constraints_ConstraintValidator",
+      "dataset_builder_EvalDataset",
+      "dataset_builder_EvalExample",
+      "dataset_builder_GoldenDatasetLoader",
+      "dataset_builder_SyntheticDatasetBuilder",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_core_config_py",
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_evolution_skills_skill_module_py",
+      "evolution_core_init",
+      "evolve_skill_evolve",
+      "ext_importers_ClaudeCodeImporter",
+      "ext_importers_CopilotImporter",
+      "ext_importers_HermesSessionImporter",
+      "ext_importers_RelevanceFilter",
+      "ext_importers_build_dataset_from_external",
+      "fitness_FitnessScore",
+      "fitness_LLMJudge",
+      "skill_module_SkillModule",
+      "skill_module_find_skill",
+      "skill_module_load_skill",
+      "skill_module_rationale_1",
+      "skill_module_rationale_118",
+      "skill_module_rationale_16",
+      "skill_module_rationale_59",
+      "skill_module_rationale_95",
+      "skill_module_reassemble_skill",
+      "skill_module_taskwithskill"
+    ],
+    "8": [
+      "claude_app_api_ab_choice_route_ts",
+      "claude_app_api_chat_ab_route_ts",
+      "claude_app_api_chat_route_ts",
+      "claude_app_api_realtime_route_ts",
+      "codex_chatkit_home_app_api_chatkit_session_route_ts",
+      "gemini_src_app_api_ab_choice_route_ts",
+      "gemini_src_app_api_chat_ab_route_ts",
+      "gemini_src_app_api_chat_route_ts",
+      "gemini_src_app_api_realtime_route_ts",
+      "route_createdailyplan",
+      "route_detectemotionalcontext",
+      "route_disputebelief",
+      "route_extractcontent",
+      "route_findirrationalbelief",
+      "route_generateinsights",
+      "route_generateresponse",
+      "route_get",
+      "route_getenv",
+      "route_identifyblock",
+      "route_initializerag",
+      "route_post",
+      "route_reflectonday",
+      "route_refreshsession",
+      "v0_app_api_ab_choice_route_ts",
+      "v0_app_api_chat_ab_route_ts",
+      "v0_app_api_chat_route_ts",
+      "v0_app_api_mcp_route_ts",
+      "v0_app_api_realtime_route_ts",
+      "v0_app_api_version_route_ts"
+    ],
+    "9": [
+      "android_app_build_gradle",
+      "android_build_gradle",
+      "android_gen_plugin_reg_java",
+      "android_mainactivity_kt",
+      "android_settings_gradle",
+      "concept_app_links",
+      "concept_flutter_plugin_registration",
+      "concept_flutter_secure_storage",
+      "concept_my4blocks_mobile_app_id",
+      "concept_url_launcher",
+      "linux_gen_plugin_reg_cc",
+      "linux_gen_plugin_reg_h",
+      "linux_main_cc",
+      "linux_myapplication_cc",
+      "linux_myapplication_h",
+      "windows_flutter_window_cpp",
+      "windows_flutter_window_h",
+      "windows_gen_plugin_reg_cc",
+      "windows_gen_plugin_reg_h",
+      "windows_main_cpp",
+      "windows_utils_cpp",
+      "windows_utils_h",
+      "windows_win32_window_h"
+    ],
+    "10": [
+      "mobile_windows_runner_win32_window_cpp",
+      "win32_window_create",
+      "win32_window_destroy",
+      "win32_window_enablefulldpisupportifavailable",
+      "win32_window_getclientarea",
+      "win32_window_gethandle",
+      "win32_window_getthisfromhandle",
+      "win32_window_getwindowclass",
+      "win32_window_messagehandler",
+      "win32_window_oncreate",
+      "win32_window_ondestroy",
+      "win32_window_scale",
+      "win32_window_setchildcontent",
+      "win32_window_setquitonclose",
+      "win32_window_show",
+      "win32_window_unregisterwindowclass",
+      "win32_window_updatetheme",
+      "win32_window_win32window",
+      "win32_window_windowclassregistrar",
+      "win32_window_windowclassregistrar_windowclassregistrar",
+      "win32_window_wndproc"
+    ],
+    "11": [
+      "test_external_importers_testvalidateevalexample",
+      "test_external_importers_testvalidateevalexample_test_all_valid_difficulties_accepted",
+      "test_external_importers_testvalidateevalexample_test_category_stripped",
+      "test_external_importers_testvalidateevalexample_test_difficulty_case_insensitive",
+      "test_external_importers_testvalidateevalexample_test_difficulty_stripped",
+      "test_external_importers_testvalidateevalexample_test_empty_category_defaults_to_general",
+      "test_external_importers_testvalidateevalexample_test_empty_difficulty_defaults_to_medium",
+      "test_external_importers_testvalidateevalexample_test_empty_expected_behavior_returns_none",
+      "test_external_importers_testvalidateevalexample_test_empty_task_input_returns_none",
+      "test_external_importers_testvalidateevalexample_test_expected_behavior_stripped",
+      "test_external_importers_testvalidateevalexample_test_invalid_difficulty_defaults_to_medium",
+      "test_external_importers_testvalidateevalexample_test_none_category_defaults_to_general",
+      "test_external_importers_testvalidateevalexample_test_none_difficulty_defaults_to_medium",
+      "test_external_importers_testvalidateevalexample_test_none_expected_behavior_returns_none",
+      "test_external_importers_testvalidateevalexample_test_none_task_input_returns_none",
+      "test_external_importers_testvalidateevalexample_test_task_input_capped_at_2000_chars",
+      "test_external_importers_testvalidateevalexample_test_valid_input_passes_through",
+      "test_external_importers_testvalidateevalexample_test_whitespace_category_defaults_to_general",
+      "test_external_importers_testvalidateevalexample_test_whitespace_expected_behavior_returns_none",
+      "test_external_importers_testvalidateevalexample_test_whitespace_task_input_returns_none"
+    ],
+    "12": [
+      "dualresponsegenerator_comparegenerationtimes",
+      "dualresponsegenerator_compareresponselengths",
+      "dualresponsegenerator_createdualresponseresult",
+      "dualresponsegenerator_createinitialprogress",
+      "dualresponsegenerator_detectemotionalcontext",
+      "dualresponsegenerator_generatecomparisonsummary",
+      "dualresponsegenerator_generatedualresponses",
+      "dualresponsegenerator_generategenerationid",
+      "dualresponsegenerator_generateresponse",
+      "dualresponsegenerator_preparedualgeneration",
+      "dualresponsegenerator_shouldrandomizeorder",
+      "dualresponsegenerator_streamdualresponses",
+      "dualresponsegenerator_swapresponses",
+      "dualresponsegenerator_updateprogress",
+      "gemini_shared_lib_dualresponsegenerator_ts",
+      "v0_shared_lib_dualresponsegenerator_ts"
+    ],
+    "13": [
+      "aireference_aireference",
+      "blockspreview_blockspreview",
+      "chatcontainer_lowercase",
+      "chatcontainer_uppercase",
+      "chatinput_chatinput",
+      "chatmessage_chatmessage",
+      "claude_components_suggestedprompts_tsx",
+      "openai_openailib",
+      "processbook_processbook",
+      "ragenhanced_ragenhanced",
+      "realtime_realtimeapi",
+      "suggestedprompts_suggestedprompts",
+      "vectorsearch_vectorsearch",
+      "voicetoggle_voicetoggle",
+      "welcomeheader_welcomeheader"
+    ],
+    "14": [
+      "aireference_ts",
+      "chatkit_home_layout",
+      "chatkit_home_page",
+      "chatkit_session_route",
+      "embed_chatkit_react",
+      "fastapi_chatkit_session",
+      "four_blocks_framework",
+      "openai_chatkit_api",
+      "prompts_ts",
+      "server_stream_widget",
+      "widget_daily_retro",
+      "widget_energy_check",
+      "widget_four_blocks_planner",
+      "widget_four_blocks_planner_schema",
+      "widget_morning_priorities"
+    ],
+    "15": [
+      "animatedgradienttext_animatedgradienttext",
+      "animatedgridpattern_animatedgridpattern",
+      "blurfade_blurfade",
+      "borderbeam_borderbeam",
+      "claude_components_ui_particles_tsx",
+      "claude_lib_utils_ts",
+      "claude_shared_lib_utils_ts",
+      "gemini_shared_lib_utils_ts",
+      "gemini_src_lib_utils_ts",
+      "particles_particles",
+      "shimmerbutton_shimmerbutton",
+      "utils_cn",
+      "v0_lib_utils_ts",
+      "v0_shared_lib_utils_ts"
+    ],
+    "16": [
+      "abtesting_clearabdata",
+      "abtesting_exportabdata",
+      "abtesting_filterabtests",
+      "abtesting_generatetestid",
+      "abtesting_getabstats",
+      "abtesting_getabtest",
+      "abtesting_getrecentabtests",
+      "abtesting_getstorageinfo",
+      "abtesting_getwinratebymetadata",
+      "abtesting_recordchoice",
+      "abtesting_storeabtest",
+      "claude_shared_lib_abtesting_ts",
+      "gemini_shared_lib_abtesting_ts",
+      "v0_shared_lib_abtesting_ts"
+    ],
+    "17": [
+      "claude_shared_lib_embeddings_ts",
+      "embeddings_getbatchembeddings",
+      "embeddings_getembeddingmode",
+      "embeddings_getembeddingmodelinfo",
+      "embeddings_getexpecteddimensions",
+      "embeddings_getopenaiclient",
+      "embeddings_getqueryembedding",
+      "embeddings_getqueryembeddinglocal",
+      "embeddings_getqueryembeddingopenai",
+      "embeddings_setembeddingmode",
+      "embeddings_validateembedding",
+      "gemini_shared_lib_embeddings_ts",
+      "v0_shared_lib_embeddings_ts"
+    ],
+    "18": [
+      "mobile_flutter_app",
+      "mobile_ios_launch_image",
+      "mobile_linux_cmake",
+      "mobile_linux_flutter_cmake",
+      "mobile_linux_runner_cmake",
+      "mobile_windows_cmake",
+      "mobile_windows_flutter_cmake",
+      "mobile_windows_runner_cmake",
+      "v0_apple_icon",
+      "v0_icon_dark_32",
+      "v0_icon_light_32",
+      "v0_icon_svg"
+    ],
+    "19": [
+      "claude_shared_lib_rag_ts",
+      "gemini_shared_lib_rag_ts",
+      "gemini_src_lib_rag_ts",
+      "rag_findrelevantwisdom",
+      "rag_getembeddings",
+      "rag_getragcontext",
+      "rag_getragstats",
+      "rag_loadembeddings",
+      "rag_retrieve",
+      "rag_retrievekeywordonly",
+      "v0_shared_lib_rag_ts"
+    ],
+    "20": [
+      "claude_shared_lib_localembeddings_ts",
+      "gemini_shared_lib_localembeddings_ts",
+      "localembeddings_findsimilarlocal",
+      "localembeddings_getembeddingdimension",
+      "localembeddings_getlocalembedding",
+      "localembeddings_getlocalembeddings",
+      "localembeddings_initializelocalembeddings",
+      "localembeddings_islocalembeddingsready",
+      "localembeddings_localcosinesimilarity",
+      "localembeddings_testlocalembeddings",
+      "v0_shared_lib_localembeddings_ts"
+    ],
+    "21": [
+      "claude_scripts_process_book_py",
+      "process_book_chunk_text",
+      "process_book_detect_block_type",
+      "process_book_extract_text_from_pdf",
+      "process_book_get_embedding",
+      "process_book_process_book",
+      "process_book_rationale_42",
+      "process_book_rationale_57",
+      "process_book_rationale_66",
+      "process_book_rationale_89",
+      "process_book_rationale_98"
+    ],
+    "22": [
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_tests_skills_test_skill_module_py",
+      "test_skill_module_rationale_1",
+      "test_skill_module_testloadskill",
+      "test_skill_module_testloadskill_test_parses_body",
+      "test_skill_module_testloadskill_test_parses_frontmatter",
+      "test_skill_module_testloadskill_test_path_is_stored",
+      "test_skill_module_testloadskill_test_raw_contains_everything",
+      "test_skill_module_testreassembleskill",
+      "test_skill_module_testreassembleskill_test_evolved_body_replaces_original",
+      "test_skill_module_testreassembleskill_test_preserves_frontmatter",
+      "test_skill_module_testreassembleskill_test_roundtrip"
+    ],
+    "23": [
+      "concept_dspy",
+      "concept_gepa_optimizer",
+      "concept_miprov2",
+      "gepa_baseline_skill_output",
+      "gepa_evolved_failed_output",
+      "gepa_evolved_skill_output",
+      "gepa_setup_progress",
+      "hermes_agent",
+      "hermes_self_evolution_plan",
+      "hermes_self_evolution_readme",
+      "skill_github_code_review"
+    ],
+    "24": [
+      "claude_shared_lib_sentimentanalysis_ts",
+      "gemini_shared_lib_sentimentanalysis_ts",
+      "sentimentanalysis_analyzesentiment",
+      "sentimentanalysis_detectintensitymarkers",
+      "sentimentanalysis_getemotionalcontext",
+      "sentimentanalysis_getemotionsummary",
+      "sentimentanalysis_isnegative",
+      "sentimentanalysis_ispositive",
+      "sentimentanalysis_scoretointensity",
+      "v0_shared_lib_sentimentanalysis_ts"
+    ],
+    "25": [
+      "sheet_sheet",
+      "sheet_sheetclose",
+      "sheet_sheetdescription",
+      "sheet_sheetfooter",
+      "sheet_sheetheader",
+      "sheet_sheetoverlay",
+      "sheet_sheetportal",
+      "sheet_sheettitle",
+      "sheet_sheettrigger",
+      "v0_components_ui_sheet_tsx"
+    ],
+    "26": [
+      "sidebar_cn",
+      "sidebar_handlekeydown",
+      "sidebar_sidebarfooter",
+      "sidebar_sidebarheader",
+      "sidebar_sidebarmenu",
+      "sidebar_sidebarmenubutton",
+      "sidebar_sidebarmenuitem",
+      "sidebar_sidebarseparator",
+      "sidebar_usesidebar",
+      "v0_components_ui_sidebar_tsx"
+    ],
+    "27": [
+      "select_select",
+      "select_selectgroup",
+      "select_selectitem",
+      "select_selectlabel",
+      "select_selectscrolldownbutton",
+      "select_selectscrollupbutton",
+      "select_selectseparator",
+      "select_selecttrigger",
+      "select_selectvalue",
+      "v0_components_ui_select_tsx"
+    ],
+    "28": [
+      "claude_shared_lib_responseblueprints_ts",
+      "gemini_shared_lib_responseblueprints_ts",
+      "responseblueprints_buildenhancedsystemprompt",
+      "responseblueprints_createresponsemetadata",
+      "responseblueprints_detectblockfromquery",
+      "responseblueprints_detectlikelyblock",
+      "responseblueprints_getblockformula",
+      "responseblueprints_getblueprintconfig",
+      "responseblueprints_getrandomblueprint",
+      "v0_shared_lib_responseblueprints_ts"
+    ],
+    "29": [
+      "mobile_linux_runner_my_application_cc",
+      "my_application_first_frame_cb",
+      "my_application_my_application_activate",
+      "my_application_my_application_class_init",
+      "my_application_my_application_dispose",
+      "my_application_my_application_init",
+      "my_application_my_application_local_command_line",
+      "my_application_my_application_new",
+      "my_application_my_application_shutdown",
+      "my_application_my_application_startup"
+    ],
+    "30": [
+      "claude_logo_blocks_svg",
+      "claude_logo_small_webp",
+      "claude_logo_webp",
+      "claude_sunrise_gif",
+      "content_logo_small_jpeg",
+      "content_logo_small_webp",
+      "content_logo_webp",
+      "gemini_logo_blocks_svg",
+      "gemini_logo_small_webp",
+      "gemini_logo_webp"
+    ],
+    "31": [
+      "claude_lib_vectorsearch_ts",
+      "claude_shared_lib_vectorsearch_ts",
+      "gemini_shared_lib_vectorsearch_ts",
+      "v0_shared_lib_vectorsearch_ts",
+      "vectorsearch_buildchunkindex",
+      "vectorsearch_cosinesimilarity",
+      "vectorsearch_filterbyblocktype",
+      "vectorsearch_formatcontextforprompt",
+      "vectorsearch_searchembeddings"
+    ],
+    "32": [
+      "claude_shared_api_realtime_ts",
+      "gemini_shared_api_realtime_ts",
+      "realtime_buildsystemprompt",
+      "realtime_buildvoiceinstructions",
+      "realtime_createrealtimesession",
+      "realtime_getvoiceragstats",
+      "realtime_handlerealtimerequest",
+      "realtime_initializeragforvoice",
+      "v0_shared_api_realtime_ts"
+    ],
+    "33": [
+      "drawer_cn",
+      "drawer_drawer",
+      "drawer_drawerclose",
+      "drawer_drawerdescription",
+      "drawer_draweroverlay",
+      "drawer_drawerportal",
+      "drawer_drawertitle",
+      "drawer_drawertrigger",
+      "v0_components_ui_drawer_tsx"
+    ],
+    "34": [
+      "appdelegate_appdelegate",
+      "appdelegate_appdelegate_application",
+      "appdelegate_appdelegate_applicationshouldterminateafterlastwindowclosed",
+      "appdelegate_appdelegate_applicationsupportssecurerestorablestate",
+      "appdelegate_appdelegate_didinitializeimplicitflutterengine",
+      "flutterappdelegate",
+      "flutterimplicitenginedelegate",
+      "mobile_ios_runner_appdelegate_swift",
+      "mobile_macos_runner_appdelegate_swift"
+    ],
+    "35": [
+      "ios_AppDelegate",
+      "ios_BridgingHeader",
+      "ios_GeneratedPluginRegistrantH",
+      "ios_GeneratedPluginRegistrantM",
+      "ios_SceneDelegate",
+      "ios_flutter_lldb_helper",
+      "macos_AppDelegate",
+      "macos_GeneratedPluginRegistrant",
+      "macos_MainFlutterWindow"
+    ],
+    "36": [
+      "android_launcher_hdpi",
+      "android_launcher_mdpi",
+      "android_launcher_xhdpi",
+      "android_launcher_xxhdpi",
+      "android_launcher_xxxhdpi",
+      "ios_appicon_29x29_2x",
+      "ios_appicon_40x40_3x",
+      "ios_appicon_60x60_2x",
+      "ios_appicon_76x76_1x"
+    ],
+    "37": [
+      "use_toast_addtoremovequeue",
+      "use_toast_dispatch",
+      "use_toast_genid",
+      "use_toast_reducer",
+      "use_toast_toast",
+      "use_toast_usetoast",
+      "v0_components_ui_use_toast_ts",
+      "v0_hooks_use_toast_ts"
+    ],
+    "38": [
+      "concept_four_blocks_methodology",
+      "concept_shared_rag_library",
+      "concept_vercel_ai_sdk",
+      "gemini_changelog",
+      "gemini_todo",
+      "v0_readme",
+      "v0_shared_readme",
+      "v0_text_to_ui_prompt"
+    ],
+    "39": [
+      "claude_shared_lib_types_sentiment_d_ts",
+      "claude_shared_types_sentiment_d_ts",
+      "gemini_shared_lib_types_sentiment_d_ts",
+      "gemini_shared_types_sentiment_d_ts",
+      "sentiment_d_sentiment",
+      "v0_shared_lib_types_sentiment_d_ts",
+      "v0_shared_types_sentiment_d_ts"
+    ],
+    "40": [
+      "claude_shared_lib_graphexpansion_ts",
+      "gemini_shared_lib_graphexpansion_ts",
+      "graphexpansion_analyzeconnectivity",
+      "graphexpansion_expandwithrelated",
+      "graphexpansion_formatexpandedcontext",
+      "graphexpansion_getallrelatedids",
+      "v0_shared_lib_graphexpansion_ts"
+    ],
+    "41": [
+      "chat_extractmessagecontent",
+      "chat_getchatapistats",
+      "chat_handlechatrequest",
+      "chat_initializerag",
+      "claude_shared_api_chat_ts",
+      "gemini_shared_api_chat_ts",
+      "v0_shared_api_chat_ts"
+    ],
+    "42": [
+      "pagination_cn",
+      "pagination_pagination",
+      "pagination_paginationcontent",
+      "pagination_paginationellipsis",
+      "pagination_paginationitem",
+      "pagination_paginationnext",
+      "v0_components_ui_pagination_tsx"
+    ],
+    "43": [
+      "breadcrumb_breadcrumb",
+      "breadcrumb_breadcrumbellipsis",
+      "breadcrumb_breadcrumblink",
+      "breadcrumb_breadcrumbpage",
+      "breadcrumb_breadcrumbseparator",
+      "breadcrumb_cn",
+      "v0_components_ui_breadcrumb_tsx"
+    ],
+    "44": [
+      "codex_chatkit_studio_tools_widget_import_link_py",
+      "widget_import_link_base64url_encode",
+      "widget_import_link_build_import_url",
+      "widget_import_link_main",
+      "widget_import_link_rationale_1",
+      "widget_import_link_rationale_19",
+      "widget_import_link_rationale_31"
+    ],
+    "45": [
+      "page_calcmetrics",
+      "page_checkdot",
+      "page_metricbar",
+      "page_mobilestatusbadge",
+      "page_verdicticon",
+      "v0_app_eval_page_tsx"
+    ],
+    "46": [
+      "claude_shared_lib_keywordsearch_ts",
+      "gemini_shared_lib_keywordsearch_ts",
+      "keywordsearch_detectblockfromquery",
+      "keywordsearch_expandterm",
+      "keywordsearch_keywordsearch",
+      "v0_shared_lib_keywordsearch_ts"
+    ],
+    "47": [
+      "menubar_cn",
+      "menubar_menubarlabel",
+      "menubar_menubarportal",
+      "menubar_menubarradioitem",
+      "menubar_menubarsubcontent",
+      "v0_components_ui_menubar_tsx"
+    ],
+    "48": [
+      "dialog_dialog",
+      "dialog_dialogclose",
+      "dialog_dialogoverlay",
+      "dialog_dialogportal",
+      "dialog_dialogtrigger",
+      "v0_components_ui_dialog_tsx"
+    ],
+    "49": [
+      "chat_container_handlescroll",
+      "chat_container_handlescrolltolatest",
+      "chat_container_handlesendmessage",
+      "chat_container_mapvoicestate",
+      "claude_components_chat_container_tsx",
+      "v0_components_chat_chat_container_tsx"
+    ],
+    "50": [
+      "claude_app_chat_page_tsx",
+      "page_handleinputchange",
+      "page_handlepromptclick",
+      "page_handlesubmit",
+      "page_rendersunriseorb",
+      "page_scrolltobottom"
+    ],
+    "51": [
+      "flutter_window_flutterwindow",
+      "flutter_window_messagehandler",
+      "flutter_window_oncreate",
+      "flutter_window_ondestroy",
+      "mobile_windows_runner_flutter_window_cpp",
+      "mobile_windows_runner_flutter_window_h"
+    ],
+    "52": [
+      "chatkit_studio_widgets",
+      "widget_focus_sprint",
+      "widget_import_link",
+      "widget_quick_email",
+      "widget_streak_saver",
+      "widget_weekly_review"
+    ],
+    "53": [
+      "evolution_code_placeholder",
+      "evolution_monitor_placeholder",
+      "evolution_package",
+      "evolution_prompts_placeholder",
+      "evolution_skills_init",
+      "evolution_tools_placeholder"
+    ],
+    "54": [
+      "ios_appicon",
+      "ios_launch_image",
+      "macos_appicon",
+      "my4blocks_brand",
+      "web_favicon",
+      "web_pwa_icon"
+    ],
+    "55": [
+      "claude_shared_components_voicemode_tsx",
+      "gemini_shared_components_voicemode_tsx",
+      "v0_shared_components_voicemode_tsx",
+      "voicemode_renderorb",
+      "voicemode_useeffect"
+    ],
+    "56": [
+      "button_cn",
+      "claude_shared_components_ui_button_tsx",
+      "gemini_shared_components_ui_button_tsx",
+      "v0_components_ui_button_tsx",
+      "v0_shared_components_ui_button_tsx"
+    ],
+    "57": [
+      "claude_shared_lib_hybridsearch_ts",
+      "gemini_shared_lib_hybridsearch_ts",
+      "hybridsearch_hybridsearch",
+      "hybridsearch_hybridsearchkeywordonly",
+      "v0_shared_lib_hybridsearch_ts"
+    ],
+    "58": [
+      "navigation_menu_cn",
+      "navigation_menu_navigationmenucontent",
+      "navigation_menu_navigationmenutrigger",
+      "navigation_menu_navigationmenuviewport",
+      "v0_components_ui_navigation_menu_tsx"
+    ],
+    "59": [
+      "table_cn",
+      "table_table",
+      "table_tablebody",
+      "table_tableheader",
+      "v0_components_ui_table_tsx"
+    ],
+    "60": [
+      "context_menu_cn",
+      "context_menu_contextmenu",
+      "context_menu_contextmenulabel",
+      "context_menu_contextmenuradioitem",
+      "v0_components_ui_context_menu_tsx"
+    ],
+    "61": [
+      "form_cn",
+      "form_formcontrol",
+      "form_formdescription",
+      "form_formmessage",
+      "v0_components_ui_form_tsx"
+    ],
+    "62": [
+      "carousel_carousel",
+      "carousel_carouselnext",
+      "carousel_cn",
+      "carousel_usecarousel",
+      "v0_components_ui_carousel_tsx"
+    ],
+    "63": [
+      "claude_lib_ragenhanced_ts",
+      "gemini_src_lib_ragenhanced_ts",
+      "ragenhanced_findrelevantwisdom",
+      "ragenhanced_initializerag",
+      "v0_lib_ragenhanced_ts"
+    ],
+    "64": [
+      "codex_chatkit_studio_snippets_fastapi_chatkit_session_py",
+      "fastapi_chatkit_session_create_chatkit_session",
+      "fastapi_chatkit_session_rationale_1",
+      "fastapi_chatkit_session_rationale_23",
+      "fastapi_chatkit_session_rationale_33"
+    ],
+    "65": [
+      "mobile_ios_runnertests_runnertests_swift",
+      "mobile_macos_runnertests_runnertests_swift",
+      "runnertests_runnertests",
+      "runnertests_runnertests_testexample",
+      "xctestcase"
+    ],
+    "66": [
+      "generatedpluginregistrant_generatedpluginregistrant",
+      "generatedpluginregistrant_generatedpluginregistrant_registerwith",
+      "generatedpluginregistrant_generatedpluginregistrant_registerwithregistry",
+      "mobile_android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java",
+      "mobile_ios_runner_generatedpluginregistrant_m"
+    ],
+    "67": [
+      "alert_dialog_alertdialog",
+      "alert_dialog_alertdialogdescription",
+      "alert_dialog_cn",
+      "v0_components_ui_alert_dialog_tsx"
+    ],
+    "68": [
+      "card_carddescription",
+      "card_cardfooter",
+      "card_cn",
+      "v0_components_ui_card_tsx"
+    ],
+    "69": [
+      "input_otp_cn",
+      "input_otp_inputotp",
+      "input_otp_inputotpgroup",
+      "v0_components_ui_input_otp_tsx"
+    ],
+    "70": [
+      "accordion_accordion",
+      "accordion_accordionitem",
+      "accordion_accordiontrigger",
+      "v0_components_ui_accordion_tsx"
+    ],
+    "71": [
+      "item_cn",
+      "item_itemgroup",
+      "item_itemseparator",
+      "v0_components_ui_item_tsx"
+    ],
+    "72": [
+      "toggle_group_cn",
+      "toggle_group_togglegroup",
+      "toggle_group_togglegroupitem",
+      "v0_components_ui_toggle_group_tsx"
+    ],
+    "73": [
+      "dropdown_menu_cn",
+      "dropdown_menu_dropdownmenu",
+      "dropdown_menu_dropdownmenusubcontent",
+      "v0_components_ui_dropdown_menu_tsx"
+    ],
+    "74": [
+      "chat_input_handlekeydown",
+      "chat_input_handlesubmit",
+      "claude_components_chat_input_tsx",
+      "v0_components_chat_chat_input_tsx"
+    ],
+    "75": [
+      "claude_app_layout_tsx",
+      "codex_chatkit_home_app_layout_tsx",
+      "gemini_src_app_layout_tsx",
+      "layout_rootlayout"
+    ],
+    "76": [
+      "chatinterface_handleinputchange",
+      "chatinterface_handlesubmit",
+      "chatinterface_onseedclick",
+      "gemini_src_components_chatinterface_tsx"
+    ],
+    "77": [
+      "chatcontainer_handlescroll",
+      "chatcontainer_handlescrolltolatest",
+      "chatcontainer_mapvoicestate",
+      "claude_components_chatcontainer_tsx"
+    ],
+    "78": [
+      "blocks_preview_blockcard",
+      "blocks_preview_cn",
+      "claude_components_home_blocks_preview_tsx",
+      "v0_components_home_blocks_preview_tsx"
+    ],
+    "79": [
+      "codex_chatkit_studio_snippets_server_stream_widget_example_py",
+      "server_stream_widget_example_rationale_1",
+      "server_stream_widget_example_rationale_19",
+      "server_stream_widget_example_stream_four_blocks_widget"
+    ],
+    "80": [
+      "mainflutterwindow_mainflutterwindow",
+      "mainflutterwindow_mainflutterwindow_awakefromnib",
+      "mobile_macos_runner_mainflutterwindow_swift",
+      "nswindow"
+    ],
+    "81": [
+      "flutter_lldb_helper_handle_new_rx_page",
+      "flutter_lldb_helper_lldb_init_module",
+      "flutter_lldb_helper_rationale_8",
+      "mobile_ios_flutter_ephemeral_flutter_lldb_helper_py"
+    ],
+    "82": [
+      "mobile_windows_runner_utils_cpp",
+      "utils_createandattachconsole",
+      "utils_getcommandlinearguments",
+      "utils_utf8fromutf16"
+    ],
+    "83": [
+      "book_environmental_conditioning",
+      "book_genetic_predisposition",
+      "book_self_conditioning",
+      "book_three_causes"
+    ],
+    "84": [
+      "page_accordionitem",
+      "page_handletoggle",
+      "v0_app_faq_page_tsx"
+    ],
+    "85": [
+      "use_mobile_useismobile",
+      "v0_components_ui_use_mobile_tsx",
+      "v0_hooks_use_mobile_ts"
+    ],
+    "86": [
+      "tabs_cn",
+      "tabs_tabs",
+      "v0_components_ui_tabs_tsx"
+    ],
+    "87": [
+      "slider_cn",
+      "slider_slider",
+      "v0_components_ui_slider_tsx"
+    ],
+    "88": [
+      "popover_popover",
+      "popover_popovertrigger",
+      "v0_components_ui_popover_tsx"
+    ],
+    "89": [
+      "chart_cn",
+      "chart_usechart",
+      "v0_components_ui_chart_tsx"
+    ],
+    "90": [
+      "scroll_area_scrollarea",
+      "scroll_area_scrollbar",
+      "v0_components_ui_scroll_area_tsx"
+    ],
+    "91": [
+      "alert_alert",
+      "alert_cn",
+      "v0_components_ui_alert_tsx"
+    ],
+    "92": [
+      "radio_group_radiogroup",
+      "radio_group_radiogroupitem",
+      "v0_components_ui_radio_group_tsx"
+    ],
+    "93": [
+      "command_cn",
+      "command_commanditem",
+      "v0_components_ui_command_tsx"
+    ],
+    "94": [
+      "avatar_avatar",
+      "avatar_avatarfallback",
+      "v0_components_ui_avatar_tsx"
+    ],
+    "95": [
+      "claude_components_ui_flickering_grid_tsx",
+      "flickering_grid_flickeringgrid",
+      "v0_components_ui_flickering_grid_tsx"
+    ],
+    "96": [
+      "claude_components_voice_toggle_tsx",
+      "v0_components_chat_voice_toggle_tsx",
+      "voice_toggle_voicetoggle"
+    ],
+    "97": [
+      "chat_message_formatmessage",
+      "claude_components_chat_message_tsx",
+      "v0_components_chat_chat_message_tsx"
+    ],
+    "98": [
+      "header_handlemobilenavclick",
+      "header_isactivelink",
+      "v0_components_layout_header_tsx"
+    ],
+    "99": [
+      "gemini_scripts_ingest_wisdom_ts",
+      "ingest_wisdom_chunktext",
+      "ingest_wisdom_ingest"
+    ],
+    "100": [
+      "chatinterface_handlesendmessage",
+      "chatinterface_scrolltobottom",
+      "claude_components_chatinterface_tsx"
+    ],
+    "101": [
+      "chatinterface_chatinterface",
+      "claude_components_messagebubble_tsx",
+      "messagebubble_messagebubble"
+    ],
+    "102": [
+      "claude_lib_openai_ts",
+      "openai_getembedding",
+      "openai_getopenaiclient"
+    ],
+    "103": [
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_generate_report_py",
+      "generate_report_build_report",
+      "generate_report_rationale_1"
+    ],
+    "104": [
+      "flutterscenedelegate",
+      "mobile_ios_runner_scenedelegate_swift",
+      "scenedelegate_scenedelegate"
+    ],
+    "105": [
+      "claude_file_svg",
+      "gemini_file_svg",
+      "v0_placeholder_svg"
+    ],
+    "106": [
+      "content_tmp_xkrt_hn_png",
+      "content_tmpch8h_8ha_png",
+      "content_tmpxqcj4yyk_png"
+    ],
+    "107": [
+      "page_home",
+      "v0_app_page_tsx"
+    ],
+    "108": [
+      "page_privacypage",
+      "v0_app_privacy_page_tsx"
+    ],
+    "109": [
+      "page_frameworkpage",
+      "v0_app_the_framework_page_tsx"
+    ],
+    "110": [
+      "page_aboutpage",
+      "v0_app_about_page_tsx"
+    ],
+    "111": [
+      "page_howitworkspage",
+      "v0_app_how_it_works_page_tsx"
+    ],
+    "112": [
+      "route_test_createmockrequest",
+      "v0_app_api_chat_tests_route_test_ts"
+    ],
+    "113": [
+      "theme_provider_themeprovider",
+      "v0_components_theme_provider_tsx"
+    ],
+    "114": [
+      "aspect_ratio_aspectratio",
+      "v0_components_ui_aspect_ratio_tsx"
+    ],
+    "115": [
+      "button_group_buttongroup",
+      "v0_components_ui_button_group_tsx"
+    ],
+    "116": [
+      "input_group_cn",
+      "v0_components_ui_input_group_tsx"
+    ],
+    "117": [
+      "hover_card_hovercard",
+      "v0_components_ui_hover_card_tsx"
+    ],
+    "118": [
+      "field_cn",
+      "v0_components_ui_field_tsx"
+    ],
+    "119": [
+      "label_label",
+      "v0_components_ui_label_tsx"
+    ],
+    "120": [
+      "sonner_toaster",
+      "v0_components_ui_sonner_tsx"
+    ],
+    "121": [
+      "empty_cn",
+      "v0_components_ui_empty_tsx"
+    ],
+    "122": [
+      "tooltip_tooltipcontent",
+      "v0_components_ui_tooltip_tsx"
+    ],
+    "123": [
+      "switch_switch",
+      "v0_components_ui_switch_tsx"
+    ],
+    "124": [
+      "calendar_cn",
+      "v0_components_ui_calendar_tsx"
+    ],
+    "125": [
+      "kbd_cn",
+      "v0_components_ui_kbd_tsx"
+    ],
+    "126": [
+      "badge_badge",
+      "v0_components_ui_badge_tsx"
+    ],
+    "127": [
+      "separator_separator",
+      "v0_components_ui_separator_tsx"
+    ],
+    "128": [
+      "checkbox_checkbox",
+      "v0_components_ui_checkbox_tsx"
+    ],
+    "129": [
+      "spinner_spinner",
+      "v0_components_ui_spinner_tsx"
+    ],
+    "130": [
+      "collapsible_collapsible",
+      "v0_components_ui_collapsible_tsx"
+    ],
+    "131": [
+      "textarea_cn",
+      "v0_components_ui_textarea_tsx"
+    ],
+    "132": [
+      "input_input",
+      "v0_components_ui_input_tsx"
+    ],
+    "133": [
+      "skeleton_skeleton",
+      "v0_components_ui_skeleton_tsx"
+    ],
+    "134": [
+      "about_section_aboutsection",
+      "v0_components_sections_about_section_tsx"
+    ],
+    "135": [
+      "book_section_booksection",
+      "v0_components_sections_book_section_tsx"
+    ],
+    "136": [
+      "ambient_background_cn",
+      "v0_components_layout_ambient_background_tsx"
+    ],
+    "137": [
+      "footer_footer",
+      "v0_components_layout_footer_tsx"
+    ],
+    "138": [
+      "concept_card_cn",
+      "v0_components_display_modes_concept_card_tsx"
+    ],
+    "139": [
+      "animated_grid_pattern_animatedgridpattern",
+      "claude_components_ui_animated_grid_pattern_tsx"
+    ],
+    "140": [
+      "claude_components_ui_dot_pattern_tsx",
+      "dot_pattern_dotpattern"
+    ],
+    "141": [
+      "animated_gradient_text_animatedgradienttext",
+      "claude_components_ui_animated_gradient_text_tsx"
+    ],
+    "142": [
+      "blur_fade_blurfade",
+      "claude_components_ui_blur_fade_tsx"
+    ],
+    "143": [
+      "claude_lib_prompts_ts",
+      "prompts_buildragprompt"
+    ],
+    "144": [
+      "codex_chatkit_home_app_page_tsx",
+      "page_homepage"
+    ],
+    "145": [
+      "codex_chatkit_studio_snippets_embed_chatkit_react_tsx",
+      "embed_chatkit_react_my4blockschat"
+    ],
+    "146": [
+      "generatedpluginregistrant_registergeneratedplugins",
+      "mobile_macos_flutter_generatedpluginregistrant_swift"
+    ],
+    "147": [
+      "main_main",
+      "mobile_linux_runner_main_cc"
+    ],
+    "148": [
+      "generated_plugin_registrant_fl_register_plugins",
+      "mobile_linux_flutter_generated_plugin_registrant_cc"
+    ],
+    "149": [
+      "mainactivity_mainactivity",
+      "mobile_android_app_src_main_kotlin_com_my4blocks_my4blocks_mobile_mainactivity_kt"
+    ],
+    "150": [
+      "main_wwinmain",
+      "mobile_windows_runner_main_cpp"
+    ],
+    "151": [
+      "generated_plugin_registrant_registerplugins",
+      "mobile_windows_flutter_generated_plugin_registrant_cc"
+    ],
+    "152": [
+      "windows_resource_h",
+      "windows_win32_window_cpp"
+    ],
+    "153": [
+      "concept_strapi_cms",
+      "gemini_roadmap_phase2_observatory"
+    ],
+    "154": [
+      "codex_studio_client_secret_rule",
+      "codex_studio_usage_snippets"
+    ],
+    "155": [
+      "concept_graph_rag",
+      "gemini_roadmap_phase3_sanctuary"
+    ],
+    "156": [
+      "v0_placeholder_logo_png",
+      "v0_placeholder_logo_svg"
+    ],
+    "157": [
+      "claude_vercel_svg",
+      "gemini_vercel_svg"
+    ],
+    "158": [
+      "claude_next_svg",
+      "gemini_next_svg"
+    ],
+    "159": [
+      "claude_globe_svg",
+      "gemini_globe_svg"
+    ],
+    "160": [
+      "claude_window_svg",
+      "gemini_window_svg"
+    ],
+    "161": [
+      "book_acceptance",
+      "book_happiness_short_formula"
+    ],
+    "162": [
+      "v0_next_env_d_ts"
+    ],
+    "163": [
+      "v0_vitest_config_ts"
+    ],
+    "164": [
+      "v0_vitest_setup_ts"
+    ],
+    "165": [
+      "v0_app_layout_tsx"
+    ],
+    "166": [
+      "v0_app_book_page_tsx"
+    ],
+    "167": [
+      "v0_shared_components_index_ts"
+    ],
+    "168": [
+      "v0_shared_components_abresponsecomparison_tsx"
+    ],
+    "169": [
+      "v0_shared_components_ui_index_ts"
+    ],
+    "170": [
+      "v0_shared_lib_types_ts"
+    ],
+    "171": [
+      "v0_shared_lib_index_ts"
+    ],
+    "172": [
+      "v0_shared_lib_tests_sentiment_test_ts"
+    ],
+    "173": [
+      "v0_shared_lib_tests_rag_test_ts"
+    ],
+    "174": [
+      "v0_shared_lib_tests_integration_test_ts"
+    ],
+    "175": [
+      "v0_components_ui_progress_tsx"
+    ],
+    "176": [
+      "v0_components_ui_toaster_tsx"
+    ],
+    "177": [
+      "v0_components_ui_resizable_tsx"
+    ],
+    "178": [
+      "v0_components_ui_toggle_tsx"
+    ],
+    "179": [
+      "v0_components_ui_toast_tsx"
+    ],
+    "180": [
+      "v0_components_chat_welcome_header_tsx"
+    ],
+    "181": [
+      "v0_components_chat_suggested_prompts_tsx"
+    ],
+    "182": [
+      "v0_components_chat_index_ts"
+    ],
+    "183": [
+      "v0_components_display_modes_daily_plan_card_tsx"
+    ],
+    "184": [
+      "v0_components_display_modes_index_ts"
+    ],
+    "185": [
+      "v0_components_display_modes_inline_belief_card_tsx"
+    ],
+    "186": [
+      "gemini_next_env_d_ts"
+    ],
+    "187": [
+      "gemini_next_config_ts"
+    ],
+    "188": [
+      "gemini_shared_components_index_ts"
+    ],
+    "189": [
+      "gemini_shared_components_ui_index_ts"
+    ],
+    "190": [
+      "gemini_shared_lib_types_ts"
+    ],
+    "191": [
+      "gemini_shared_lib_index_ts"
+    ],
+    "192": [
+      "gemini_shared_lib_tests_sentiment_test_ts"
+    ],
+    "193": [
+      "gemini_shared_lib_tests_rag_test_ts"
+    ],
+    "194": [
+      "gemini_shared_lib_tests_integration_test_ts"
+    ],
+    "195": [
+      "gemini_src_app_page_tsx"
+    ],
+    "196": [
+      "gemini_src_components_ui_flickering_grid_tsx"
+    ],
+    "197": [
+      "claude_next_env_d_ts"
+    ],
+    "198": [
+      "claude_next_config_ts"
+    ],
+    "199": [
+      "claude_types_embeddings_ts"
+    ],
+    "200": [
+      "claude_app_page_tsx"
+    ],
+    "201": [
+      "claude_shared_components_index_ts"
+    ],
+    "202": [
+      "claude_shared_components_abresponsecomparison_tsx"
+    ],
+    "203": [
+      "claude_shared_components_ui_index_ts"
+    ],
+    "204": [
+      "claude_shared_lib_types_ts"
+    ],
+    "205": [
+      "claude_shared_lib_index_ts"
+    ],
+    "206": [
+      "claude_shared_lib_tests_sentiment_test_ts"
+    ],
+    "207": [
+      "claude_shared_lib_tests_rag_test_ts"
+    ],
+    "208": [
+      "claude_shared_lib_tests_integration_test_ts"
+    ],
+    "209": [
+      "claude_components_welcome_header_tsx"
+    ],
+    "210": [
+      "claude_components_ui_shimmer_button_tsx"
+    ],
+    "211": [
+      "claude_components_ui_border_beam_tsx"
+    ],
+    "212": [
+      "claude_lib_aireference_ts"
+    ],
+    "213": [
+      "codex_chatkit_home_next_env_d_ts"
+    ],
+    "214": [
+      "codex_chatkit_studio_exports_widgets_04_focus_sprint_jsx"
+    ],
+    "215": [
+      "codex_chatkit_studio_exports_widgets_02_four_blocks_planner_jsx"
+    ],
+    "216": [
+      "codex_chatkit_studio_exports_widgets_05_energy_check_jsx"
+    ],
+    "217": [
+      "codex_chatkit_studio_exports_widgets_02_four_blocks_planner_widget_ts"
+    ],
+    "218": [
+      "codex_chatkit_studio_exports_widgets_07_streak_saver_jsx"
+    ],
+    "219": [
+      "codex_chatkit_studio_exports_widgets_06_weekly_review_jsx"
+    ],
+    "220": [
+      "codex_chatkit_studio_exports_widgets_03_morning_priorities_jsx"
+    ],
+    "221": [
+      "codex_chatkit_studio_exports_widgets_01_daily_retro_jsx"
+    ],
+    "222": [
+      "codex_chatkit_studio_exports_widgets_08_quick_email_jsx"
+    ],
+    "223": [
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_tests_init_py"
+    ],
+    "224": [
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_tests_core_init_py"
+    ],
+    "225": [
+      "docs_gepa_dspy_m1_hermes_agent_self_evolution_tests_skills_init_py"
+    ],
+    "226": [
+      "mobile_ios_runner_runner_bridging_header_h"
+    ],
+    "227": [
+      "mobile_ios_runner_generatedpluginregistrant_h"
+    ],
+    "228": [
+      "mobile_linux_runner_my_application_h"
+    ],
+    "229": [
+      "mobile_linux_flutter_generated_plugin_registrant_h"
+    ],
+    "230": [
+      "mobile_android_build_gradle_kts"
+    ],
+    "231": [
+      "mobile_android_settings_gradle_kts"
+    ],
+    "232": [
+      "mobile_android_app_build_gradle_kts"
+    ],
+    "233": [
+      "mobile_windows_runner_utils_h"
+    ],
+    "234": [
+      "mobile_windows_runner_win32_window_h"
+    ],
+    "235": [
+      "mobile_windows_runner_resource_h"
+    ],
+    "236": [
+      "mobile_windows_flutter_generated_plugin_registrant_h"
+    ],
+    "237": [
+      "dotpattern_dotpattern"
+    ],
+    "238": [
+      "flickeringgrid_flickeringgrid"
+    ],
+    "239": [
+      "macos_RunnerTests"
+    ],
+    "240": [
+      "ios_RunnerTests"
+    ],
+    "241": [
+      "claude_next_steps_openai_key"
+    ],
+    "242": [
+      "claude_quickstart_guide"
+    ],
+    "243": [
+      "v0_placeholder_jpg"
+    ],
+    "244": [
+      "mobile_app_icon_16_png"
+    ]
+  },
+  "cohesion": {
+    "0": 0.04,
+    "1": 0.03,
+    "2": 0.02,
+    "3": 0.05,
+    "4": 0.05,
+    "5": 0.11,
+    "6": 0.06,
+    "7": 0.08,
+    "8": 0.13,
+    "9": 0.12,
+    "10": 0.17,
+    "11": 0.1,
+    "12": 0.23,
+    "13": 0.21,
+    "14": 0.16,
+    "15": 0.14,
+    "16": 0.32,
+    "17": 0.44,
+    "18": 0.17,
+    "19": 0.49,
+    "20": 0.44,
+    "21": 0.25,
+    "22": 0.18,
+    "23": 0.36,
+    "24": 0.56,
+    "25": 0.2,
+    "26": 0.22,
+    "27": 0.2,
+    "28": 0.42,
+    "29": 0.2,
+    "30": 0.24,
+    "31": 0.53,
+    "32": 0.61,
+    "33": 0.22,
+    "34": 0.22,
+    "35": 0.22,
+    "36": 0.31,
+    "37": 0.57,
+    "38": 0.29,
+    "39": 0.29,
+    "40": 0.57,
+    "41": 0.67,
+    "42": 0.29,
+    "43": 0.29,
+    "44": 0.38,
+    "45": 0.33,
+    "46": 0.6,
+    "47": 0.33,
+    "48": 0.33,
+    "49": 0.4,
+    "50": 0.33,
+    "51": 0.33,
+    "52": 0.33,
+    "53": 0.33,
+    "54": 0.6,
+    "55": 0.6,
+    "56": 0.4,
+    "57": 0.6,
+    "58": 0.4,
+    "59": 0.4,
+    "60": 0.4,
+    "61": 0.4,
+    "62": 0.5,
+    "63": 0.7,
+    "64": 0.4,
+    "65": 0.4,
+    "66": 0.4,
+    "67": 0.5,
+    "68": 0.5,
+    "69": 0.5,
+    "70": 0.5,
+    "71": 0.5,
+    "72": 0.5,
+    "73": 0.5,
+    "74": 0.83,
+    "75": 0.5,
+    "76": 0.5,
+    "77": 0.5,
+    "78": 0.67,
+    "79": 0.5,
+    "80": 0.5,
+    "81": 0.5,
+    "82": 0.67,
+    "83": 0.5,
+    "84": 0.67,
+    "85": 0.67,
+    "86": 0.67,
+    "87": 0.67,
+    "88": 0.67,
+    "89": 0.67,
+    "90": 0.67,
+    "91": 0.67,
+    "92": 0.67,
+    "93": 0.67,
+    "94": 0.67,
+    "95": 0.67,
+    "96": 0.67,
+    "97": 0.67,
+    "98": 0.67,
+    "99": 1.0,
+    "100": 0.67,
+    "101": 0.67,
+    "102": 1.0,
+    "103": 0.67,
+    "104": 0.67,
+    "105": 0.67,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0,
+    "145": 1.0,
+    "146": 1.0,
+    "147": 1.0,
+    "148": 1.0,
+    "149": 1.0,
+    "150": 1.0,
+    "151": 1.0,
+    "152": 1.0,
+    "153": 1.0,
+    "154": 1.0,
+    "155": 1.0,
+    "156": 1.0,
+    "157": 1.0,
+    "158": 1.0,
+    "159": 1.0,
+    "160": 1.0,
+    "161": 1.0,
+    "162": 1.0,
+    "163": 1.0,
+    "164": 1.0,
+    "165": 1.0,
+    "166": 1.0,
+    "167": 1.0,
+    "168": 1.0,
+    "169": 1.0,
+    "170": 1.0,
+    "171": 1.0,
+    "172": 1.0,
+    "173": 1.0,
+    "174": 1.0,
+    "175": 1.0,
+    "176": 1.0,
+    "177": 1.0,
+    "178": 1.0,
+    "179": 1.0,
+    "180": 1.0,
+    "181": 1.0,
+    "182": 1.0,
+    "183": 1.0,
+    "184": 1.0,
+    "185": 1.0,
+    "186": 1.0,
+    "187": 1.0,
+    "188": 1.0,
+    "189": 1.0,
+    "190": 1.0,
+    "191": 1.0,
+    "192": 1.0,
+    "193": 1.0,
+    "194": 1.0,
+    "195": 1.0,
+    "196": 1.0,
+    "197": 1.0,
+    "198": 1.0,
+    "199": 1.0,
+    "200": 1.0,
+    "201": 1.0,
+    "202": 1.0,
+    "203": 1.0,
+    "204": 1.0,
+    "205": 1.0,
+    "206": 1.0,
+    "207": 1.0,
+    "208": 1.0,
+    "209": 1.0,
+    "210": 1.0,
+    "211": 1.0,
+    "212": 1.0,
+    "213": 1.0,
+    "214": 1.0,
+    "215": 1.0,
+    "216": 1.0,
+    "217": 1.0,
+    "218": 1.0,
+    "219": 1.0,
+    "220": 1.0,
+    "221": 1.0,
+    "222": 1.0,
+    "223": 1.0,
+    "224": 1.0,
+    "225": 1.0,
+    "226": 1.0,
+    "227": 1.0,
+    "228": 1.0,
+    "229": 1.0,
+    "230": 1.0,
+    "231": 1.0,
+    "232": 1.0,
+    "233": 1.0,
+    "234": 1.0,
+    "235": 1.0,
+    "236": 1.0,
+    "237": 1.0,
+    "238": 1.0,
+    "239": 1.0,
+    "240": 1.0,
+    "241": 1.0,
+    "242": 1.0,
+    "243": 1.0,
+    "244": 1.0
+  },
+  "gods": [
+    {
+      "id": "dataset_builder_evaldataset",
+      "label": "EvalDataset",
+      "edges": 82
+    },
+    {
+      "id": "dataset_builder_evalexample",
+      "label": "EvalExample",
+      "edges": 76
+    },
+    {
+      "id": "dataset_builder_goldendatasetloader",
+      "label": "GoldenDatasetLoader",
+      "edges": 54
+    },
+    {
+      "id": "external_importers_relevancefilter",
+      "label": "RelevanceFilter",
+      "edges": 54
+    },
+    {
+      "id": "external_importers_claudecodeimporter",
+      "label": "ClaudeCodeImporter",
+      "edges": 51
+    },
+    {
+      "id": "external_importers_copilotimporter",
+      "label": "CopilotImporter",
+      "edges": 51
+    },
+    {
+      "id": "external_importers_hermessessionimporter",
+      "label": "HermesSessionImporter",
+      "edges": 51
+    },
+    {
+      "id": "config_evolutionconfig",
+      "label": "EvolutionConfig",
+      "edges": 49
+    },
+    {
+      "id": "test_external_importers_testsecretdetection",
+      "label": "TestSecretDetection",
+      "edges": 39
+    },
+    {
+      "id": "test_external_importers_testvalidateevalexample",
+      "label": "TestValidateEvalExample",
+      "edges": 28
+    }
+  ],
+  "surprises": [
+    {
+      "source": "My 4 Blocks Logo with Head Silhouette JPEG",
+      "target": "My 4 Blocks Small Logo WebP (Gemini)",
+      "source_files": [
+        "content/logo Small.jpeg",
+        "gemini/public/logo-small.webp"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `My 4 Blocks Small Logo WebP (Gemini)` unexpectedly reaches hub `My 4 Blocks Logo with Head Silhouette JPEG`"
+    },
+    {
+      "source": "My 4 Blocks Logo with Head Silhouette JPEG",
+      "target": "Four Emotional Blocks Logo SVG (Gemini)",
+      "source_files": [
+        "content/logo Small.jpeg",
+        "gemini/public/logo-blocks.svg"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `Four Emotional Blocks Logo SVG (Gemini)` unexpectedly reaches hub `My 4 Blocks Logo with Head Silhouette JPEG`"
+    },
+    {
+      "source": "My 4 Blocks Logo with Head Silhouette JPEG",
+      "target": "My 4 Blocks Small Logo WebP (Claude)",
+      "source_files": [
+        "content/logo Small.jpeg",
+        "claude/public/logo-small.webp"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link; peripheral node `My 4 Blocks Small Logo WebP (Claude)` unexpectedly reaches hub `My 4 Blocks Logo with Head Silhouette JPEG`"
+    },
+    {
+      "source": "RAG Dataset Chapter 8 \u2014 Guilt Formula Raw",
+      "target": "CBT Guilt Chapter (Batch-1 Training JSON)",
+      "source_files": [
+        "docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_8_raw.txt",
+        "content/training/batch-1/json_guilt.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "RAG Dataset Chapter 1 \u2014 Mental Contamination Raw",
+      "target": "CBT Mental Contamination Chapter (Batch-1 Training JSON)",
+      "source_files": [
+        "docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_1_raw.txt",
+        "content/training/batch-1/json_mental_contamination.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `EvolutionConfig` connect `Community 1` to `Community 0`, `Community 7`?",
+      "why": "High betweenness centrality (0.019) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `EvalDataset` connect `Community 0` to `Community 1`, `Community 11`, `Community 6`?",
+      "why": "High betweenness centrality (0.016) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `GoldenDatasetLoader` connect `Community 0` to `Community 1`, `Community 11`, `Community 6`?",
+      "why": "High betweenness centrality (0.010) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 76 inferred relationships involving `EvalDataset` (e.g. with `TestSecretDetection` and `TestRelevanceHeuristics`) actually correct?",
+      "why": "`EvalDataset` has 76 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 72 inferred relationships involving `EvalExample` (e.g. with `TestSecretDetection` and `TestRelevanceHeuristics`) actually correct?",
+      "why": "`EvalExample` has 72 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 52 inferred relationships involving `GoldenDatasetLoader` (e.g. with `TestSecretDetection` and `TestRelevanceHeuristics`) actually correct?",
+      "why": "`GoldenDatasetLoader` has 52 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 49 inferred relationships involving `RelevanceFilter` (e.g. with `TestSecretDetection` and `TestRelevanceHeuristics`) actually correct?",
+      "why": "`RelevanceFilter` has 49 INFERRED edges - model-reasoned connections that need verification."
+    }
+  ]
+}

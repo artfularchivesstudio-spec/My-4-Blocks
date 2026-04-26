@@ -1,0 +1,846 @@
+{
+  "nodes": [
+    {
+      "id": "linux_main_cc",
+      "label": "Linux Runner Entry Point (main.cc)",
+      "file_type": "code",
+      "source_file": "mobile/linux/runner/main.cc",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "linux_myapplication_h",
+      "label": "Linux MyApplication Header (GtkApplication subclass)",
+      "file_type": "code",
+      "source_file": "mobile/linux/runner/my_application.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "linux_myapplication_cc",
+      "label": "Linux MyApplication Implementation",
+      "file_type": "code",
+      "source_file": "mobile/linux/runner/my_application.cc",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "linux_gen_plugin_reg_cc",
+      "label": "Linux Generated Plugin Registrant (cc)",
+      "file_type": "code",
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "linux_gen_plugin_reg_h",
+      "label": "Linux Generated Plugin Registrant Header",
+      "file_type": "code",
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "android_build_gradle",
+      "label": "Android Root Build Configuration (build.gradle.kts)",
+      "file_type": "code",
+      "source_file": "mobile/android/build.gradle.kts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "android_settings_gradle",
+      "label": "Android Settings (settings.gradle.kts)",
+      "file_type": "code",
+      "source_file": "mobile/android/settings.gradle.kts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "android_app_build_gradle",
+      "label": "Android App Build Configuration (app/build.gradle.kts)",
+      "file_type": "code",
+      "source_file": "mobile/android/app/build.gradle.kts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "android_gen_plugin_reg_java",
+      "label": "Android GeneratedPluginRegistrant (Java)",
+      "file_type": "code",
+      "source_file": "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "android_mainactivity_kt",
+      "label": "Android MainActivity (Kotlin)",
+      "file_type": "code",
+      "source_file": "mobile/android/app/src/main/kotlin/com/my4blocks/my4blocks_mobile/MainActivity.kt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_flutter_window_h",
+      "label": "Windows FlutterWindow Header (Win32Window subclass)",
+      "file_type": "code",
+      "source_file": "mobile/windows/runner/flutter_window.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_flutter_window_cpp",
+      "label": "Windows FlutterWindow Implementation",
+      "file_type": "code",
+      "source_file": "mobile/windows/runner/flutter_window.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_win32_window_h",
+      "label": "Windows Win32Window Header (DPI-aware base class)",
+      "file_type": "code",
+      "source_file": "mobile/windows/runner/win32_window.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_win32_window_cpp",
+      "label": "Windows Win32Window Implementation",
+      "file_type": "code",
+      "source_file": "mobile/windows/runner/win32_window.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_utils_h",
+      "label": "Windows Runner Utilities Header",
+      "file_type": "code",
+      "source_file": "mobile/windows/runner/utils.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_utils_cpp",
+      "label": "Windows Runner Utilities (UTF-16/UTF-8 conversion, console attach)",
+      "file_type": "code",
+      "source_file": "mobile/windows/runner/utils.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_resource_h",
+      "label": "Windows Resource Constants (app icon ID)",
+      "file_type": "code",
+      "source_file": "mobile/windows/runner/resource.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_main_cpp",
+      "label": "Windows Runner Entry Point (main.cpp)",
+      "file_type": "code",
+      "source_file": "mobile/windows/runner/main.cpp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_gen_plugin_reg_cc",
+      "label": "Windows Generated Plugin Registrant (cc)",
+      "file_type": "code",
+      "source_file": "mobile/windows/flutter/generated_plugin_registrant.cc",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "windows_gen_plugin_reg_h",
+      "label": "Windows Generated Plugin Registrant Header",
+      "file_type": "code",
+      "source_file": "mobile/windows/flutter/generated_plugin_registrant.h",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "v0_readme",
+      "label": "v0 Project README (Next.js bootstrapped with v0.app)",
+      "file_type": "document",
+      "source_file": "v0/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "v0_text_to_ui_prompt",
+      "label": "v0 Text-to-UI Prompt for My 4 Blocks",
+      "file_type": "document",
+      "source_file": "v0/V0_TEXT_TO_UI_PROMPT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "v0_shared_readme",
+      "label": "Shared RAG Library README",
+      "file_type": "document",
+      "source_file": "v0/shared/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gemini_changelog",
+      "label": "Gemini Variant Changelog",
+      "file_type": "document",
+      "source_file": "gemini/Changelog.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gemini_todo",
+      "label": "Gemini Variant TODO",
+      "file_type": "document",
+      "source_file": "gemini/TODO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_four_blocks_methodology",
+      "label": "Four Blocks Methodology (Anger, Anxiety, Depression, Guilt)",
+      "file_type": "document",
+      "source_file": "v0/V0_TEXT_TO_UI_PROMPT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_flutter_plugin_registration",
+      "label": "Flutter Plugin Registration Pattern (cross-platform)",
+      "file_type": "code",
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_flutter_secure_storage",
+      "label": "flutter_secure_storage Plugin (Android/Linux/Windows)",
+      "file_type": "code",
+      "source_file": "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_url_launcher",
+      "label": "url_launcher Plugin (Android/Linux/Windows)",
+      "file_type": "code",
+      "source_file": "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_app_links",
+      "label": "app_links Plugin (Android/Windows)",
+      "file_type": "code",
+      "source_file": "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_shared_rag_library",
+      "label": "Shared RAG Library (Hybrid Search + Graph Expansion)",
+      "file_type": "document",
+      "source_file": "v0/shared/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_my4blocks_mobile_app_id",
+      "label": "My4Blocks Mobile App ID (com.my4blocks.my4blocks_mobile)",
+      "file_type": "code",
+      "source_file": "mobile/android/app/build.gradle.kts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_vercel_ai_sdk",
+      "label": "Vercel AI SDK Integration",
+      "file_type": "document",
+      "source_file": "gemini/TODO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "linux_main_cc",
+      "target": "linux_myapplication_h",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/runner/main.cc",
+      "source_location": "line 4",
+      "weight": 1.0
+    },
+    {
+      "source": "linux_myapplication_cc",
+      "target": "linux_myapplication_h",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/runner/my_application.cc",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "linux_myapplication_cc",
+      "target": "linux_gen_plugin_reg_h",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/runner/my_application.cc",
+      "source_location": "line 8, line 76 fl_register_plugins",
+      "weight": 1.0
+    },
+    {
+      "source": "linux_gen_plugin_reg_cc",
+      "target": "linux_gen_plugin_reg_h",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc",
+      "source_location": "line 7",
+      "weight": 1.0
+    },
+    {
+      "source": "linux_gen_plugin_reg_cc",
+      "target": "concept_flutter_secure_storage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc",
+      "source_location": "line 9, 14-16",
+      "weight": 1.0
+    },
+    {
+      "source": "linux_gen_plugin_reg_cc",
+      "target": "concept_url_launcher",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc",
+      "source_location": "line 11, 20-22",
+      "weight": 1.0
+    },
+    {
+      "source": "linux_gen_plugin_reg_cc",
+      "target": "concept_flutter_plugin_registration",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc",
+      "source_location": "line 13",
+      "weight": 1.0
+    },
+    {
+      "source": "android_mainactivity_kt",
+      "target": "concept_my4blocks_mobile_app_id",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/android/app/src/main/kotlin/com/my4blocks/my4blocks_mobile/MainActivity.kt",
+      "source_location": "line 1 package declaration",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_build_gradle",
+      "target": "concept_my4blocks_mobile_app_id",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/android/app/build.gradle.kts",
+      "source_location": "line 9 applicationId",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_build_gradle",
+      "target": "android_settings_gradle",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "mobile/android/app/build.gradle.kts",
+      "source_location": null,
+      "weight": 0.8
+    },
+    {
+      "source": "android_settings_gradle",
+      "target": "android_build_gradle",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "mobile/android/settings.gradle.kts",
+      "source_location": "line 19 evaluationDependsOn :app",
+      "weight": 0.85
+    },
+    {
+      "source": "android_gen_plugin_reg_java",
+      "target": "concept_app_links",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "line 19",
+      "weight": 1.0
+    },
+    {
+      "source": "android_gen_plugin_reg_java",
+      "target": "concept_flutter_secure_storage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "line 24",
+      "weight": 1.0
+    },
+    {
+      "source": "android_gen_plugin_reg_java",
+      "target": "concept_url_launcher",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "line 44",
+      "weight": 1.0
+    },
+    {
+      "source": "android_gen_plugin_reg_java",
+      "target": "concept_flutter_plugin_registration",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "line 17 registerWith(FlutterEngine)",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_flutter_window_h",
+      "target": "windows_win32_window_h",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/runner/flutter_window.h",
+      "source_location": "line 12 class FlutterWindow : public Win32Window",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_flutter_window_cpp",
+      "target": "windows_gen_plugin_reg_h",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/runner/flutter_window.cpp",
+      "source_location": "line 5, 27 RegisterPlugins",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_flutter_window_cpp",
+      "target": "windows_win32_window_h",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/runner/flutter_window.cpp",
+      "source_location": "line 13 Win32Window::OnCreate, line 47 Win32Window::OnDestroy",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_main_cpp",
+      "target": "windows_flutter_window_h",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/runner/main.cpp",
+      "source_location": "line 5, 27 FlutterWindow window(project)",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_main_cpp",
+      "target": "windows_utils_h",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/runner/main.cpp",
+      "source_location": "line 6, 13 CreateAndAttachConsole, line 23 GetCommandLineArguments",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_win32_window_cpp",
+      "target": "windows_resource_h",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/runner/win32_window.cpp",
+      "source_location": "line 6, line 99 IDI_APP_ICON",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_utils_cpp",
+      "target": "windows_utils_h",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/runner/utils.cpp",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_gen_plugin_reg_cc",
+      "target": "windows_gen_plugin_reg_h",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/flutter/generated_plugin_registrant.cc",
+      "source_location": "line 7",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_gen_plugin_reg_cc",
+      "target": "concept_app_links",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/flutter/generated_plugin_registrant.cc",
+      "source_location": "line 9, 14",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_gen_plugin_reg_cc",
+      "target": "concept_flutter_secure_storage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/flutter/generated_plugin_registrant.cc",
+      "source_location": "line 10, 15-17",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_gen_plugin_reg_cc",
+      "target": "concept_url_launcher",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/flutter/generated_plugin_registrant.cc",
+      "source_location": "line 11, 18",
+      "weight": 1.0
+    },
+    {
+      "source": "windows_gen_plugin_reg_cc",
+      "target": "concept_flutter_plugin_registration",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/flutter/generated_plugin_registrant.cc",
+      "source_location": "line 13 RegisterPlugins",
+      "weight": 1.0
+    },
+    {
+      "source": "linux_gen_plugin_reg_cc",
+      "target": "android_gen_plugin_reg_java",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "linux_gen_plugin_reg_cc",
+      "target": "windows_gen_plugin_reg_cc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "android_gen_plugin_reg_java",
+      "target": "windows_gen_plugin_reg_cc",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "v0_text_to_ui_prompt",
+      "target": "concept_four_blocks_methodology",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "v0/V0_TEXT_TO_UI_PROMPT.md",
+      "source_location": "Core concept section",
+      "weight": 1.0
+    },
+    {
+      "source": "v0_readme",
+      "target": "v0_text_to_ui_prompt",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "v0/README.md",
+      "source_location": null,
+      "weight": 0.8
+    },
+    {
+      "source": "v0_shared_readme",
+      "target": "concept_shared_rag_library",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "v0/shared/README.md",
+      "source_location": "Overview section",
+      "weight": 1.0
+    },
+    {
+      "source": "v0_shared_readme",
+      "target": "gemini_changelog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "v0/shared/README.md",
+      "source_location": "Gemini Project integration example",
+      "weight": 1.0
+    },
+    {
+      "source": "v0_shared_readme",
+      "target": "concept_four_blocks_methodology",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "v0/shared/README.md",
+      "source_location": "EmbeddedChunk block_type field: Anger, Anxiety, Depression, Guilt",
+      "weight": 0.8
+    },
+    {
+      "source": "gemini_todo",
+      "target": "concept_vercel_ai_sdk",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "gemini/TODO.md",
+      "source_location": "Integrate Vercel AI SDK todo item",
+      "weight": 1.0
+    },
+    {
+      "source": "gemini_todo",
+      "target": "concept_shared_rag_library",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "gemini/TODO.md",
+      "source_location": "Create Knowledge Base JSON todo item",
+      "weight": 0.7
+    },
+    {
+      "source": "gemini_changelog",
+      "target": "concept_four_blocks_methodology",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "gemini/Changelog.md",
+      "source_location": "Digital sanctuary / seeker of wisdom references",
+      "weight": 0.75
+    },
+    {
+      "source": "windows_main_cpp",
+      "target": "concept_my4blocks_mobile_app_id",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/runner/main.cpp",
+      "source_location": "line 30 Create(L\"my4blocks_mobile\")",
+      "weight": 1.0
+    },
+    {
+      "source": "linux_myapplication_cc",
+      "target": "concept_my4blocks_mobile_app_id",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/runner/my_application.cc",
+      "source_location": "line 48 gtk_header_bar_set_title / line 52 gtk_window_set_title: my4blocks_mobile",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "cross_platform_plugin_registration",
+      "label": "Cross-Platform Flutter Plugin Registration (Linux, Android, Windows)",
+      "nodes": [
+        "linux_gen_plugin_reg_cc",
+        "android_gen_plugin_reg_java",
+        "windows_gen_plugin_reg_cc",
+        "concept_flutter_plugin_registration"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc"
+    },
+    {
+      "id": "shared_plugin_flutter_secure_storage",
+      "label": "flutter_secure_storage Used Across Linux, Android, Windows",
+      "nodes": [
+        "linux_gen_plugin_reg_cc",
+        "android_gen_plugin_reg_java",
+        "windows_gen_plugin_reg_cc",
+        "concept_flutter_secure_storage"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc"
+    },
+    {
+      "id": "shared_plugin_url_launcher",
+      "label": "url_launcher Used Across Linux, Android, Windows",
+      "nodes": [
+        "linux_gen_plugin_reg_cc",
+        "android_gen_plugin_reg_java",
+        "windows_gen_plugin_reg_cc",
+        "concept_url_launcher"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/linux/flutter/generated_plugin_registrant.cc"
+    },
+    {
+      "id": "windows_runner_hierarchy",
+      "label": "Windows Runner Class Hierarchy (FlutterWindow extends Win32Window)",
+      "nodes": [
+        "windows_main_cpp",
+        "windows_flutter_window_h",
+        "windows_flutter_window_cpp",
+        "windows_win32_window_h",
+        "windows_win32_window_cpp"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mobile/windows/runner/flutter_window.h"
+    },
+    {
+      "id": "my4blocks_concept_layer",
+      "label": "My 4 Blocks Core Concept Layer (Four Blocks, RAG, UI)",
+      "nodes": [
+        "concept_four_blocks_methodology",
+        "concept_shared_rag_library",
+        "v0_text_to_ui_prompt",
+        "v0_shared_readme",
+        "gemini_changelog",
+        "gemini_todo"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "v0/V0_TEXT_TO_UI_PROMPT.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

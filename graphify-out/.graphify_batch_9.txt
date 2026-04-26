@@ -1,0 +1,9 @@
+mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png
+mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png
+mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png
+mobile/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png
+mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png

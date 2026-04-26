@@ -201,11 +201,15 @@ export async function initializeRAG(): Promise<void> {
  * 🎯 Chat request configuration
  */
 export interface ChatConfig {
-  model?: 'gpt-4o' | 'gpt-4o-mini' | 'gpt-4-turbo';
+  model?: string;
   temperature?: number;
   maxTokens?: number;
   ragEnabled?: boolean;
   ragTopK?: number;
+  systemPrompt?: string;
+  dspyOptimizerModel?: string;
+  dspyEvalModel?: string;
+  dspyJudgeModel?: string;
 }
 
 const DEFAULT_CONFIG: Required<ChatConfig> = {
@@ -214,6 +218,10 @@ const DEFAULT_CONFIG: Required<ChatConfig> = {
   maxTokens: 2000,
   ragEnabled: true,
   ragTopK: 5,
+  systemPrompt: SYSTEM_PROMPT,
+  dspyOptimizerModel: 'openai/gpt-4o',
+  dspyEvalModel: 'openai/gpt-4o-mini',
+  dspyJudgeModel: 'openai/gpt-4o',
 };
 
 /**
@@ -240,7 +248,7 @@ export async function handleChatRequest(
   const queryText = extractMessageContent(lastMessage);
 
   // 🌟 Build enhanced system prompt
-  let systemPrompt = SYSTEM_PROMPT;
+  let systemPrompt = opts.systemPrompt || SYSTEM_PROMPT;
 
   if (opts.ragEnabled && queryText) {
     console.log('🔍 Retrieving RAG context for:', queryText.substring(0, 50));

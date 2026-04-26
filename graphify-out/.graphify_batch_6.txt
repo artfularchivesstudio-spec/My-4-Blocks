@@ -1,0 +1,25 @@
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_9_raw.txt
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_5_raw.txt
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_4_raw.txt
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/README.txt
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_6_raw.txt
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_7_raw.txt
+mobile/README.md
+mobile/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+mobile/linux/CMakeLists.txt
+mobile/linux/runner/CMakeLists.txt
+mobile/linux/flutter/CMakeLists.txt
+mobile/windows/CMakeLists.txt
+mobile/windows/runner/CMakeLists.txt
+mobile/windows/flutter/CMakeLists.txt
+v0/V0_TEXT_TO_UI_PROMPT.pdf
+content/you-only-have-four-problems-book-text.pdf
+docs/GEPA-DSPy-m1/hermes-agent-self-evolution/reports/phase1_validation_report.pdf
+v0/public/placeholder-logo.svg
+v0/public/icon-light-32x32.png
+v0/public/icon-dark-32x32.png
+v0/public/apple-icon.png
+v0/public/icon.svg
+v0/public/placeholder-logo.png
+v0/public/placeholder-user.jpg
+v0/public/placeholder.jpg

@@ -1,0 +1,25 @@
+v0/public/placeholder.svg
+gemini/public/file.svg
+gemini/public/logo-small.webp
+gemini/public/logo.webp
+gemini/public/logo-blocks.svg
+gemini/public/vercel.svg
+gemini/public/next.svg
+gemini/public/globe.svg
+gemini/public/window.svg
+claude/public/Sunrise - Breathe in Breathe out.gif
+claude/public/file.svg
+claude/public/logo-small.webp
+claude/public/logo.webp
+claude/public/logo-blocks.svg
+claude/public/vercel.svg
+claude/public/next.svg
+claude/public/globe.svg
+claude/public/window.svg
+content/logo-small.webp
+content/logo.webp
+content/logo Small.jpeg
+content/tmp_xkrt_hn.png
+content/tmpxqcj4yyk.png
+content/tmpch8h_8ha.png
+mobile/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png

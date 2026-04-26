@@ -1,7 +1,20 @@
 {
   "version": "2.0",
-  "description": "My4Blocks Emotional Education Library - Unified Training Data",
-  "source": "Four Blocks Training Curriculum",
+  "_meta": {
+    "role": "brand-distilled-response-layer",
+    "layer": 2,
+    "purpose": "End-user-facing brand voice. Paraphrased, attribution-clean, used for system prompt and direct response style.",
+    "do_not_train_directly": true,
+    "source_corpus": "docs/GEPA-DSPy-m1/refined-rag-dataset v1/",
+    "source_corpus_role": "Layer 1 — verbatim, source-attributed, internal-only; the canonical retrieval target",
+    "source_book": "content/Four blocks paperback book (full).pdf",
+    "source_book_attribution": "Dr. Vincent E. Parr, Ph.D. — You Only Have Four Problems: The Cure for Anger, Anxiety, Depression & Guilt (2021, Parr Institute for Mental Wellness)",
+    "rationale": "The Four Blocks framework derives from Albert Ellis's Rational Emotive Behavior Therapy and Steve Hagen's Zen practice (per book Preface). v1 preserves these source attributions verbatim. This brand layer is paraphrased to suppress third-party attributions for user-facing surfaces while retrieval still grounds in the source.",
+    "hybrid_layer_doc": "docs/GEPA-DSPy-m1/SETUP_PROGRESS_AND_NEXT_STEPS.md (section 1.1) and docs/GEPA-DSPy-m1/refined-rag-dataset v1/README.txt (HYBRID TWO-LAYER ARCHITECTURE section)",
+    "last_audited": "2026-04-26"
+  },
+  "description": "My4Blocks Emotional Education Library — brand-distilled response layer (Layer 2). See _meta for role.",
+  "source": "Derived from refined-rag-dataset v1 (which is verbatim from the Parr 2021 book). See _meta.source_corpus.",
   "total_chunks": 86,
   "chapters": [
     { "code": "ANG", "name": "Anger", "count": 9 },

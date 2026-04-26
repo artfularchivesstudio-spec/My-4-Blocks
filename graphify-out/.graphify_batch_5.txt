@@ -1,0 +1,25 @@
+codex/chatkit-studio/exports/README.md
+codex/chatkit-studio/widgets/four-blocks-planner.md
+codex/chatkit-studio/widgets/daily-retro.md
+content/training/batch-1/json_7irrational_beliefs.txt
+content/training/batch-1/json_anxiety.txt
+content/training/batch-1/json_happiness.txt
+content/training/batch-1/README_Gurinder.txt
+content/training/batch-1/A master index_all_chapters&chunks.txt
+content/training/batch-1/json_ABC's.txt
+content/training/batch-1/json_mental_contamination.txt
+content/training/batch-1/json_anger.txt
+content/training/batch-1/json_3insights.txt
+content/training/batch-1/json_guilt.txt
+content/training/batch-1/json_depression.txt
+content/training/batch-2/json_anxiety.txt
+docs/GEPA-DSPy-m1/SETUP_PROGRESS_AND_NEXT_STEPS.md
+docs/GEPA-DSPy-m1/hermes-agent-self-evolution/README.md
+docs/GEPA-DSPy-m1/hermes-agent-self-evolution/PLAN.md
+docs/GEPA-DSPy-m1/hermes-agent-self-evolution/output/github-code-review/evolved_FAILED.md
+docs/GEPA-DSPy-m1/hermes-agent-self-evolution/output/github-code-review/20260426_173453/evolved_skill.md
+docs/GEPA-DSPy-m1/hermes-agent-self-evolution/output/github-code-review/20260426_173453/baseline_skill.md
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_2_raw.txt
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_3_raw.txt
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_1_raw.txt
+docs/GEPA-DSPy-m1/refined-rag-dataset v1/chapter_8_raw.txt

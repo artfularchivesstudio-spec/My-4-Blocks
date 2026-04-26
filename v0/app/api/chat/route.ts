@@ -9,6 +9,7 @@
 
 import { handleChatRequest, type ChatConfig } from '@shared/api/chat';
 import type { UIMessage } from 'ai';
+import { getActiveConfig } from '@/lib/admin-config';
 
 export const maxDuration = 60;
 // 🌟 Using nodejs runtime due to embeddings size (edge limit is 1MB)
@@ -51,12 +52,16 @@ export async function POST(req: Request) {
       );
     }
 
-    // 🌟 Configuration for this variant
+    // 🕵️‍♂️ Fetch dynamic config from Admin Page (Supabase)
+    const adminConfig = await getActiveConfig();
+
+    // 🌟 Configuration for this variant - merged with Admin overrides!
     const config: ChatConfig = {
-      model: 'gpt-4o', // 🧠 Upgraded for A/B testing - deeper reasoning for emotional guidance!
-      temperature: 0.7,
-      ragEnabled: true,
-      ragTopK: 5,
+      model: adminConfig.model || 'gpt-4o', // 🧠 Upgraded for A/B testing - deeper reasoning for emotional guidance!
+      temperature: adminConfig.temperature ?? 0.7,
+      ragEnabled: adminConfig.ragEnabled ?? true,
+      ragTopK: adminConfig.ragTopK ?? 5,
+      systemPrompt: adminConfig.systemPrompt, // This will override the default in handleChatRequest
     };
 
     console.log('🌐 ✨ V0 PORTAL AWAKENS!');
