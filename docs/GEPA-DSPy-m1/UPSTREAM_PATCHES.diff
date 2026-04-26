@@ -1,0 +1,184 @@
+# UPSTREAM_PATCHES.diff
+#
+# Hand-crafted unified diff for the local edits applied to the gitignored
+# upstream clone at docs/GEPA-DSPy-m1/hermes-agent-self-evolution/.
+#
+# Companion to UPSTREAM_PATCHES.md — see that file for prose justification.
+#
+# IMPORTANT: this diff is BEST-EFFORT.
+#
+#   - The upstream tree is gitignored, so no upstream baseline is checked
+#     into this repo to diff against.
+#   - Hunk headers (@@ -A,B +C,D @@) reference the POST-PATCH file as the
+#     authoritative target. The "-" lines reflect what the original
+#     upstream is expected to contain at the time these patches were
+#     authored (2026-04-26). If upstream has drifted, `git apply --check`
+#     will reject this diff and you should fall back to manual application
+#     per UPSTREAM_PATCHES.md Section 3.
+#   - Apply from the upstream root:
+#         cd docs/GEPA-DSPy-m1/hermes-agent-self-evolution
+#         git apply ../UPSTREAM_PATCHES.diff
+#     (or use `patch -p1` if not in a git context).
+
+--- a/evolution/skills/evolve_skill.py
++++ b/evolution/skills/evolve_skill.py
+@@ -1,8 +1,17 @@
+ """Evolve a Hermes Agent skill using DSPy + GEPA.
+
+ Usage:
+     python -m evolution.skills.evolve_skill --skill github-code-review --iterations 10
+     python -m evolution.skills.evolve_skill --skill arxiv --eval-source golden --dataset datasets/skills/arxiv/
++    python -m evolution.skills.evolve_skill --skill arxiv --use-llm-judge --judge-model openai/gpt-4o
++
++CLI flags (the trinity of models):
++    --optimizer-model   Model for GEPA reflective mutations (the architect)
++    --eval-model        Model that runs the agent during evaluation (the actor)
++    --judge-model       Model that scores agent output via LLM-as-judge (the critic)
++    --use-llm-judge     Switch GEPA's metric from keyword-overlap to LLM-as-judge
+ """
+
+ import json
+@@ -51,21 +60,38 @@ def evolve(
+     skill_name: str,
+     iterations: int = 10,
+     eval_source: str = "synthetic",
+     dataset_path: Optional[str] = None,
+     optimizer_model: str = "openai/gpt-4.1",
+     eval_model: str = "openai/gpt-4.1-mini",
++    judge_model: Optional[str] = None,
++    use_llm_judge: bool = False,
+     hermes_repo: Optional[str] = None,
+     run_tests: bool = False,
+     dry_run: bool = False,
+ ):
+-    """Main evolution function — orchestrates the full optimization loop."""
++    """Main evolution function — orchestrates the full optimization loop.
++
++    The Three-Model Trinity:
++      - optimizer_model -> GEPA's reflective architect (rewrites prompts)
++      - eval_model      -> the agent's voice during evaluation runs
++      - judge_model     -> LLM-as-judge's impartial gavel (falls back to eval_model)
++    """
++
++    # Resolve judge model with backward-compatible fallback to eval_model
++    resolved_judge_model = judge_model or eval_model
+
+     config = EvolutionConfig(
+         iterations=iterations,
+         optimizer_model=optimizer_model,
+         eval_model=eval_model,
++        judge_model=resolved_judge_model,
+         run_pytest=run_tests,
+     )
+     if hermes_repo:
+         config.hermes_agent_path = Path(hermes_repo)
+
+@@ -85,6 +93,12 @@ def evolve(
+     # ── 1. Find and load the skill ──────────────────────────────────────
+     console.print(f"\n[bold cyan]🧬 Hermes Agent Self-Evolution[/bold cyan] — Evolving skill: [bold]{skill_name}[/bold]\n")
+
++    # Announce the trinity of models early so logs make the cast list visible
++    console.print(f"  Optimizer model: [bold]{optimizer_model}[/bold]")
++    console.print(f"  Eval model:      [bold]{eval_model}[/bold]")
++    console.print(f"  Judge model:     [bold]{resolved_judge_model}[/bold]" + ("" if judge_model else " [dim](defaulted from --eval-model)[/dim]"))
++    console.print(f"  Use LLM judge:   [bold]{use_llm_judge}[/bold]")
++
+     skill_path = find_skill(skill_name, config.hermes_agent_path)
+     if not skill_path:
+         console.print(f"[red]✗ Skill '{skill_name}' not found in {config.hermes_agent_path / 'skills'}[/red]")
+
+@@ -166,6 +180,7 @@ def evolve(
+     console.print(f"  Optimizer: GEPA ({iterations} iterations)")
+     console.print(f"  Optimizer model: {optimizer_model}")
+     console.print(f"  Eval model: {eval_model}")
++    console.print(f"  Judge model: {config.judge_model}")
+
+     # Configure DSPy
+     lm = dspy.LM(eval_model)
+
+@@ -180,7 +195,28 @@ def evolve(
+     trainset = dataset.to_dspy_examples("train")
+     valset = dataset.to_dspy_examples("val")
+
+-    metric_fn = _gepa_skill_fitness_metric
++    # Choose the GEPA metric: keyword-overlap (fast) or LLM-as-judge (deep)
++    # The user toggles this with --use-llm-judge; default stays fast for backward compat
++    if use_llm_judge:
++        judge = LLMJudge(config)
++
++        def _gepa_metric(gold, pred, trace=None, pred_name=None, pred_trace=None):
++            # The mystical critic — uses LLMJudge against config.judge_model
++            # GEPA passes 5 args; we surface only what the judge needs to render verdict
++            score = judge.score(
++                task_input=getattr(gold, "task_input", "") or "",
++                expected_behavior=getattr(gold, "expected_behavior", "") or "",
++                agent_output=getattr(pred, "output", "") or "",
++                skill_text=skill["body"],
++            )
++            return score.composite
++
++        metric_fn = _gepa_metric
++        console.print(f"  Metric: [bold magenta]LLM-as-judge[/bold magenta] ({config.judge_model})")
++    else:
++        metric_fn = _gepa_skill_fitness_metric
++        console.print(f"  Metric: [bold]keyword-overlap[/bold] (fast)")
+
+     # ── 5. Run GEPA optimization ────────────────────────────────────────
+     console.print(f"\n[bold cyan]Running GEPA optimization ({iterations} iterations)...[/bold cyan]\n")
+
+@@ -325,6 +361,8 @@ def evolve(
+         "iterations": iterations,
+         "optimizer_model": optimizer_model,
+         "eval_model": eval_model,
++        "judge_model": config.judge_model,
++        "use_llm_judge": use_llm_judge,
+         "baseline_score": avg_baseline,
+         "evolved_score": avg_evolved,
+         "improvement": improvement,
+
+@@ -360,11 +398,13 @@ def evolve(
+ @click.option("--dataset-path", default=None, help="Path to existing eval dataset (JSONL)")
+ @click.option("--optimizer-model", default="openai/gpt-4.1", help="Model for GEPA reflections")
+ @click.option("--eval-model", default="openai/gpt-4.1-mini", help="Model for evaluations")
++@click.option("--judge-model", default=None, help="Model for LLM-as-judge scoring (only used when --use-llm-judge is set). Defaults to --eval-model.")
++@click.option("--use-llm-judge", is_flag=True, default=False, help="Use LLM-as-judge as the GEPA metric (slower, higher quality) instead of the default keyword-overlap metric")
+ @click.option("--hermes-repo", default=None, help="Path to hermes-agent repo")
+ @click.option("--run-tests", is_flag=True, help="Run full pytest suite as constraint gate")
+ @click.option("--dry-run", is_flag=True, help="Validate setup without running optimization")
+-def main(skill, iterations, eval_source, dataset_path, optimizer_model, eval_model, hermes_repo, run_tests, dry_run):
++def main(skill, iterations, eval_source, dataset_path, optimizer_model, eval_model, judge_model, use_llm_judge, hermes_repo, run_tests, dry_run):
+     """Evolve a Hermes Agent skill using DSPy + GEPA optimization."""
+     evolve(
+         skill_name=skill,
+         iterations=iterations,
+         eval_source=eval_source,
+         dataset_path=dataset_path,
+         optimizer_model=optimizer_model,
+         eval_model=eval_model,
++        judge_model=judge_model,
++        use_llm_judge=use_llm_judge,
+         hermes_repo=hermes_repo,
+         run_tests=run_tests,
+         dry_run=dry_run,
+     )
+
+--- a/evolution/core/fitness.py
++++ b/evolution/core/fitness.py
+@@ -70,9 +70,15 @@ class LLMJudge:
+         artifact_size: Optional[int] = None,
+         max_size: Optional[int] = None,
+     ) -> FitnessScore:
+-        """Score an agent output using LLM-as-judge."""
++        """Score an agent output using LLM-as-judge.
++
++        The judge wears its own robes — uses config.judge_model (NOT eval_model!).
++        The eval model runs the agent; the judge model evaluates the agent. Different roles,
++        different models. Mixing them up is the bug we're fixing here.
++        """
+
+-        lm = dspy.LM(self.config.eval_model)
++        # Use the dedicated judge model — the impartial arbiter of agent quality
++        lm = dspy.LM(self.config.judge_model)
+
+         with dspy.context(lm=lm):
+             result = self.judge(
