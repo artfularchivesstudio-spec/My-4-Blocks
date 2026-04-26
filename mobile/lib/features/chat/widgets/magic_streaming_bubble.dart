@@ -48,15 +48,21 @@ class MagicStreamingBubble extends StatelessWidget {
         .shimmer(duration: 1600.ms, color: primary.withAlpha(30))
         .boxShadow(
           begin: BoxShadow(color: primary.withAlpha(10), blurRadius: 10, spreadRadius: 0),
-          end: BoxShadow(color: primary.withAlpha(30), blurRadius: 22, spreadRadius: 2),
+          end: BoxShadow(color: primary.withAlpha(50), blurRadius: 25, spreadRadius: 4),
           duration: 1300.ms,
           curve: Curves.easeInOut,
         ).then(delay: 0.ms).boxShadow(
-          begin: BoxShadow(color: primary.withAlpha(30), blurRadius: 22, spreadRadius: 2),
+          begin: BoxShadow(color: primary.withAlpha(50), blurRadius: 25, spreadRadius: 4),
           end: BoxShadow(color: primary.withAlpha(10), blurRadius: 10, spreadRadius: 0),
           duration: 1300.ms,
           curve: Curves.easeInOut,
         );
+    } else {
+      // Sparkling entrance for finished messages
+      bubble = bubble.animate()
+        .fadeIn(duration: 400.ms)
+        .scale(begin: const Offset(0.9, 0.9), duration: 400.ms, curve: Curves.easeOutBack)
+        .blurXY(begin: 10, end: 0, duration: 600.ms);
     }
 
     return bubble;

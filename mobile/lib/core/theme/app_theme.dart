@@ -3,21 +3,21 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   // Serene, therapeutic color palette
-  static const Color background = Color(0xFFFAF9F6); // Warm cream
-  static const Color foreground = Color(0xFF1E293B); // Deep slate
-  static const Color primary = Color(0xFF166534); // Deep forest green
-  static const Color primaryForeground = Color(0xFFF0FDF4);
-  static const Color secondary = Color(0xFFF1F5F9);
-  static const Color secondaryForeground = Color(0xFF334155);
+  static const Color background = Color(0xFFFBFBF9); // Warm cream (oklch(0.98 0.005 90))
+  static const Color foreground = Color(0xFF1E2923); // Deep forest slate (oklch(0.20 0.02 150))
+  static const Color primary = Color(0xFF166534); // Deep forest green (oklch(0.35 0.08 160))
+  static const Color primaryForeground = Color(0xFFFBFBF9);
+  static const Color secondary = Color(0xFFF1F5F1); // Soft sage (oklch(0.96 0.01 90))
+  static const Color secondaryForeground = Color(0xFF166534);
   
   static const Color card = Colors.white;
-  static const Color border = Color(0xFFE2E8F0);
+  static const Color border = Color(0xFFE2E8E2);
   
-  // Custom blocks colors
-  static const Color anger = Color(0xFF991B1B);
-  static const Color anxiety = Color(0xFFD97706);
-  static const Color depression = Color(0xFF1E3A8A);
-  static const Color guilt = Color(0xFF6B21A8);
+  // Custom blocks colors (calming but distinct)
+  static const Color anger = Color(0xFFB91C1C); // oklch(0.60 0.18 25)
+  static const Color anxiety = Color(0xFFD97706); // oklch(0.65 0.15 85)
+  static const Color depression = Color(0xFF1E3A8A); // oklch(0.50 0.12 250)
+  static const Color guilt = Color(0xFF6B21A8); // oklch(0.55 0.15 320)
 
   static ThemeData get lightTheme {
     return ThemeData(
@@ -28,21 +28,39 @@ class AppTheme {
         onPrimary: primaryForeground,
         secondary: secondary,
         onSecondary: secondaryForeground,
-        background: background,
-        onBackground: foreground,
         surface: card,
         onSurface: foreground,
       ),
       scaffoldBackgroundColor: background,
       textTheme: GoogleFonts.dmSansTextTheme().copyWith(
-        displayLarge: GoogleFonts.dmSans(color: foreground, fontWeight: FontWeight.bold),
+        displayLarge: GoogleFonts.cormorantGaramond(
+          color: foreground, 
+          fontWeight: FontWeight.bold,
+          fontSize: 32,
+        ),
+        displayMedium: GoogleFonts.cormorantGaramond(
+          color: foreground, 
+          fontWeight: FontWeight.w600,
+          fontSize: 28,
+        ),
+        titleLarge: GoogleFonts.cormorantGaramond(
+          color: foreground, 
+          fontWeight: FontWeight.w600,
+          fontSize: 22,
+        ),
         bodyLarge: GoogleFonts.dmSans(color: foreground),
+        bodyMedium: GoogleFonts.dmSans(color: foreground.withAlpha(200)),
       ),
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: background,
         elevation: 0,
-        iconTheme: IconThemeData(color: foreground),
-        titleTextStyle: TextStyle(color: foreground, fontSize: 20, fontWeight: FontWeight.w600),
+        centerTitle: false,
+        iconTheme: const IconThemeData(color: foreground),
+        titleTextStyle: GoogleFonts.cormorantGaramond(
+          color: foreground, 
+          fontSize: 24, 
+          fontWeight: FontWeight.w600,
+        ),
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
@@ -76,11 +94,11 @@ class AppTheme {
 
   // Dark Theme
   static ThemeData get darkTheme {
-    // Implementing the dark palette from the css
-    const darkBackground = Color(0xFF0F172A);
-    const darkForeground = Color(0xFFF8FAFC);
-    const darkPrimary = Color(0xFF22C55E);
-    const darkCard = Color(0xFF1E293B);
+    // Earthy, deep forest dark mode (oklch(0.15 0.02 150))
+    const darkBackground = Color(0xFF161D19);
+    const darkForeground = Color(0xFFFBFBF9);
+    const darkPrimary = Color(0xFF22C55E); // oklch(0.65 0.10 160)
+    const darkCard = Color(0xFF1D2621); // oklch(0.18 0.02 150)
     
     return ThemeData(
       useMaterial3: true,
@@ -90,22 +108,39 @@ class AppTheme {
         onPrimary: darkBackground,
         secondary: darkCard,
         onSecondary: darkForeground,
-        background: darkBackground,
-        onBackground: darkForeground,
         surface: darkCard,
         onSurface: darkForeground,
       ),
       scaffoldBackgroundColor: darkBackground,
       textTheme: GoogleFonts.dmSansTextTheme().copyWith(
-        displayLarge: GoogleFonts.dmSans(color: darkForeground, fontWeight: FontWeight.bold),
+        displayLarge: GoogleFonts.cormorantGaramond(
+          color: darkForeground, 
+          fontWeight: FontWeight.bold,
+          fontSize: 32,
+        ),
+        displayMedium: GoogleFonts.cormorantGaramond(
+          color: darkForeground, 
+          fontWeight: FontWeight.w600,
+          fontSize: 28,
+        ),
+        titleLarge: GoogleFonts.cormorantGaramond(
+          color: darkForeground, 
+          fontWeight: FontWeight.w600,
+          fontSize: 22,
+        ),
         bodyLarge: GoogleFonts.dmSans(color: darkForeground),
-        bodyMedium: GoogleFonts.dmSans(color: darkForeground),
+        bodyMedium: GoogleFonts.dmSans(color: darkForeground.withAlpha(200)),
       ),
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: darkBackground,
         elevation: 0,
-        iconTheme: IconThemeData(color: darkForeground),
-        titleTextStyle: TextStyle(color: darkForeground, fontSize: 20, fontWeight: FontWeight.w600),
+        centerTitle: false,
+        iconTheme: const IconThemeData(color: darkForeground),
+        titleTextStyle: GoogleFonts.cormorantGaramond(
+          color: darkForeground, 
+          fontSize: 24, 
+          fontWeight: FontWeight.w600,
+        ),
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
