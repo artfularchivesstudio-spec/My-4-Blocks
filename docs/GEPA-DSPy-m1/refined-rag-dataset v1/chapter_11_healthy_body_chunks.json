@@ -1,9 +1,4 @@
 [
-
-  // ============================================================
-  // TIER 1 — TOP-LEVEL FRAMEWORKS (3 PILLARS OF PHYSICAL HEALTH)
-  // ============================================================
-
   {
     "concept": "Healthy Body, Healthy Mind — Chapter Premise",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -11,7 +6,6 @@
     "type": "framework",
     "references": "Zen Meditation (Chapter 10); The Formulas for Happiness (Chapter 9); The ABCs of How Emotions are Created (Chapter 3)"
   },
-
   {
     "concept": "Sleep — Top-Level Importance",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -19,7 +13,6 @@
     "type": "definition",
     "references": "Healthy Body, Healthy Mind — Chapter Premise; Sleep / Manage Your Mood; Sleep / Reserve Your Bed for Bedroom Activities; Sleep / Say Goodnight to Your Brain; Sleep / Get Comfy"
   },
-
   {
     "concept": "Exercise — Top-Level Importance",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -27,7 +20,6 @@
     "type": "definition",
     "references": "Healthy Body, Healthy Mind — Chapter Premise; Exercise / Forms; Exercise / Karmel Choi Quote; The Formula for Depression (Chapter 7); The Formula for Anxiety (Chapter 6)"
   },
-
   {
     "concept": "Nutrition — Top-Level Importance and the Gut-Brain Axis",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -35,11 +27,6 @@
     "type": "definition",
     "references": "Healthy Body, Healthy Mind — Chapter Premise; Nutrition / Gut-Brain Axis (ENS); Nutrition / Increase Quality, Reduce Quantity; Nutrition / Hydrate the Machine; Nutrition / Make Mealtimes Calm; Zen Meditation (Chapter 10)"
   },
-
-  // ============================================================
-  // TIER 2 — SLEEP SUB-SECTIONS
-  // ============================================================
-
   {
     "concept": "Sleep / Manage Your Mood",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -47,7 +34,6 @@
     "type": "framework",
     "references": "Sleep — Top-Level Importance; The ABCs of How Emotions are Created (Chapter 3); The 4 Steps to Disputing (Chapter 4); Centered Breathing (Chapter 6); The Formula for Anxiety (Chapter 6)"
   },
-
   {
     "concept": "Sleep / Reserve Your Bed for Bedroom Activities",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -55,7 +41,6 @@
     "type": "framework",
     "references": "Sleep — Top-Level Importance; Zen Meditation (Chapter 10)"
   },
-
   {
     "concept": "Sleep / Say Goodnight to Your Brain",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -63,7 +48,6 @@
     "type": "framework",
     "references": "Sleep — Top-Level Importance; Zen Meditation (Chapter 10)"
   },
-
   {
     "concept": "Sleep / Get Comfy",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -71,11 +55,6 @@
     "type": "framework",
     "references": "Sleep — Top-Level Importance"
   },
-
-  // ============================================================
-  // TIER 2 — EXERCISE SUB-SECTIONS
-  // ============================================================
-
   {
     "concept": "Exercise / Forms — Tai Chi, Yoga, Walking, Household Activities",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -83,7 +62,6 @@
     "type": "list",
     "references": "Exercise — Top-Level Importance; Zen Meditation (Chapter 10)"
   },
-
   {
     "concept": "Exercise / Karmel Choi Quote — Something Is Better Than Nothing",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -91,11 +69,6 @@
     "type": "example",
     "references": "Exercise — Top-Level Importance; The Formula for Depression (Chapter 7)"
   },
-
-  // ============================================================
-  // TIER 2 — NUTRITION SUB-SECTIONS
-  // ============================================================
-
   {
     "concept": "Nutrition / Gut-Brain Axis (ENS) — The Second Brain",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -103,7 +76,6 @@
     "type": "definition",
     "references": "Nutrition — Top-Level Importance and the Gut-Brain Axis; The Formula for Depression (Chapter 7); The Formula for Anxiety (Chapter 6)"
   },
-
   {
     "concept": "Nutrition / Increase Quality, Reduce Quantity",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -111,7 +83,6 @@
     "type": "framework",
     "references": "Nutrition — Top-Level Importance and the Gut-Brain Axis; Nutrition / Gut-Brain Axis (ENS)"
   },
-
   {
     "concept": "Nutrition / Hydrate the Machine",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -119,7 +90,6 @@
     "type": "framework",
     "references": "Nutrition — Top-Level Importance and the Gut-Brain Axis"
   },
-
   {
     "concept": "Nutrition / Hydrate the Machine — Case Example: The Coffee-and-Coke Patient",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -127,7 +97,6 @@
     "type": "example",
     "references": "Nutrition / Hydrate the Machine"
   },
-
   {
     "concept": "Nutrition / Make Mealtimes Calm — PSNS vs. Fight-or-Flight",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -135,7 +104,6 @@
     "type": "framework",
     "references": "Nutrition / Gut-Brain Axis (ENS); The Formula for Anxiety (Chapter 6); Centered Breathing (Chapter 6); The 4 Steps to Disputing (Chapter 4)"
   },
-
   {
     "concept": "Healthy Body, Healthy Mind — Closing Synthesis",
     "chapter": "Chapter 11: Healthy Body, Healthy Mind",
@@ -143,5 +111,4 @@
     "type": "framework",
     "references": "Sleep — Top-Level Importance; Exercise — Top-Level Importance; Nutrition — Top-Level Importance and the Gut-Brain Axis; Zen Meditation (Chapter 10); The Formulas for Happiness (Chapter 9)"
   }
-
 ]

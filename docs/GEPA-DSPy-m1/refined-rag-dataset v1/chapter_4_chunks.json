@@ -1,9 +1,4 @@
 [
-
-  // ============================================================
-  // TIER 1 — CHAPTER-WIDE FRAMEWORKS & TECHNIQUES
-  // ============================================================
-
   {
     "concept": "The Seven Irrational Beliefs — Master Numbered List",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -11,7 +6,6 @@
     "type": "list",
     "references": "The ABCs of How Emotions are Created (Chapter 3); The Formula for Anger; The Formula for Anxiety; The Formula for Depression; The Formula for Guilt"
   },
-
   {
     "concept": "What Makes a Thought or Belief Irrational — If/Then Logic Framework",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -19,7 +13,6 @@
     "type": "framework",
     "references": "Rational Belief vs. Irrational Belief (Chapter 3); Resistance to Reality (Chapter 3)"
   },
-
   {
     "concept": "Physiological Effects of Holding Irrational Beliefs",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -27,7 +20,6 @@
     "type": "framework",
     "references": "The Three Insights To A Mind Of Peace (Chapter 2); The Formula for Anger; The Formula for Anxiety; The Formula for Depression; The Formula for Guilt"
   },
-
   {
     "concept": "Red-Flagging — Definition and Clinical Role",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -35,7 +27,6 @@
     "type": "definition",
     "references": "The Seven Irrational Beliefs — Master List; The Narrator vs. The Observer (Chapter 1); Disputing — Definition"
   },
-
   {
     "concept": "Disputing — Definition and Clinical Role",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -43,7 +34,6 @@
     "type": "definition",
     "references": "Red-Flagging; The 4 Steps to Disputing; The Full ABCDE Model (Chapter 3)"
   },
-
   {
     "concept": "The 4 Steps to Disputing",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -51,7 +41,6 @@
     "type": "list",
     "references": "Red-Flagging; S.O.S. Framework; Disputing — Definition; The Seven Irrational Beliefs — Master List"
   },
-
   {
     "concept": "S.O.S. Framework — Self, Others, Situation",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -59,7 +48,6 @@
     "type": "framework",
     "references": "The 4 Steps to Disputing; The Observer (Chapter 1); Red-Flagging"
   },
-
   {
     "concept": "The Four Challenge Questions — Ellis and Byron Katie",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -67,7 +55,6 @@
     "type": "list",
     "references": "Disputing — Definition; The 4 Steps to Disputing; Red-Flagging"
   },
-
   {
     "concept": "Cognitive Stoppage — Definition",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -75,11 +62,6 @@
     "type": "definition",
     "references": "Red-Flagging; Disputing — Definition; Training the Observer (Chapter 1)"
   },
-
-  // ============================================================
-  // TIER 2 — IB1: 'IT' STATEMENTS
-  // ============================================================
-
   {
     "concept": "IB1: 'It' Statements — Definition",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -87,7 +69,6 @@
     "type": "definition",
     "references": "A-to-C Thinking (Chapter 3); Blaming (Chapter 2); The First Insight (Chapter 2)"
   },
-
   {
     "concept": "IB1: 'It' Statements — Red-Flag Phrases",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -95,7 +76,6 @@
     "type": "list",
     "references": "IB1: 'It' Statements — Definition; Red-Flagging"
   },
-
   {
     "concept": "IB1: 'It' Statements — Disputing Method",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -103,7 +83,6 @@
     "type": "framework",
     "references": "IB1: 'It' Statements — Definition; Disputing — Definition; Acceptance (Chapter 3)"
   },
-
   {
     "concept": "IB1: Case Example — Flat Tire, Traffic Jam, Copy Machine",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -111,11 +90,6 @@
     "type": "example",
     "references": "IB1: 'It' Statements — Definition; IB1: Disputing Method; A-to-C Thinking (Chapter 3)"
   },
-
-  // ============================================================
-  // TIER 2 — IB2: AWFULIZING
-  // ============================================================
-
   {
     "concept": "IB2: Awfulizing — Definition",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -123,7 +97,6 @@
     "type": "definition",
     "references": "Rational Belief vs. Irrational Belief (Chapter 3); IB4: Shoulds, Musts, and Demands"
   },
-
   {
     "concept": "IB2: Awfulizing — Red-Flag Phrases",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -131,7 +104,6 @@
     "type": "list",
     "references": "IB2: Awfulizing — Definition; Red-Flagging"
   },
-
   {
     "concept": "IB2: Awfulizing — Three Options for Disputing",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -139,11 +111,6 @@
     "type": "framework",
     "references": "IB2: Awfulizing — Definition; Disputing — Definition; IB4: Shoulds, Musts, and Demands; Resistance to Reality (Chapter 3)"
   },
-
-  // ============================================================
-  // TIER 2 — IB3: I CAN'T STAND IT (ICSI)
-  // ============================================================
-
   {
     "concept": "IB3: I Can't Stand It (ICSI) — Definition",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -151,7 +118,6 @@
     "type": "definition",
     "references": "Rational Belief vs. Irrational Belief (Chapter 3); IB2: Awfulizing"
   },
-
   {
     "concept": "IB3: I Can't Stand It (ICSI) — Red-Flag Phrases",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -159,7 +125,6 @@
     "type": "list",
     "references": "IB3: I Can't Stand It — Definition; Red-Flagging"
   },
-
   {
     "concept": "IB3: I Can't Stand It (ICSI) — Disputing Method",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -167,7 +132,6 @@
     "type": "framework",
     "references": "IB3: I Can't Stand It — Definition; Disputing — Definition; Acceptance (Chapter 3)"
   },
-
   {
     "concept": "IB3: Case Example — Red Light and Cockroach",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -175,11 +139,6 @@
     "type": "example",
     "references": "IB3: I Can't Stand It — Definition; IB3: Disputing Method; IB2: Awfulizing"
   },
-
-  // ============================================================
-  // TIER 2 — IB4: SHOULDS, MUSTS, AND DEMANDS (SMDs)
-  // ============================================================
-
   {
     "concept": "IB4: Shoulds, Musts, and Demands (SMDs) — Definition",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -187,7 +146,6 @@
     "type": "definition",
     "references": "Rational Belief vs. Irrational Belief (Chapter 3); Resistance to Reality (Chapter 3); IB2: Awfulizing; IB5: Rating"
   },
-
   {
     "concept": "IB4: Shoulds, Musts, and Demands — Red-Flag Phrases (17 SMDs)",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -195,7 +153,6 @@
     "type": "list",
     "references": "IB4: Shoulds, Musts, and Demands — Definition; Red-Flagging"
   },
-
   {
     "concept": "IB4: Three Patterns of Distorted Thinking (SMD Summary)",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -203,7 +160,6 @@
     "type": "list",
     "references": "IB4: Shoulds, Musts, and Demands — Definition; The Formula for Anger; The Formula for Depression; The Formula for Guilt"
   },
-
   {
     "concept": "IB4: Shoulds, Musts, and Demands — Disputing Method and Preference Replacements",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -211,11 +167,6 @@
     "type": "framework",
     "references": "IB4: Shoulds, Musts, and Demands — Definition; Disputing — Definition; Acceptance (Chapter 3)"
   },
-
-  // ============================================================
-  // TIER 2 — IB5: RATING
-  // ============================================================
-
   {
     "concept": "IB5: Rating — Definition",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -223,7 +174,6 @@
     "type": "definition",
     "references": "Mental Contamination (Chapter 1); IB4: Shoulds, Musts, and Demands; IB6: Absolutistic Statements"
   },
-
   {
     "concept": "IB5: Rating — Red-Flag Phrases",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -231,7 +181,6 @@
     "type": "list",
     "references": "IB5: Rating — Definition; Red-Flagging"
   },
-
   {
     "concept": "IB5: Rating — Disputing Method (Three Steps)",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -239,7 +188,6 @@
     "type": "framework",
     "references": "IB5: Rating — Definition; Disputing — Definition; The Narrator vs. The Observer (Chapter 1)"
   },
-
   {
     "concept": "IB5: The Golden Rule of Rational Living",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -247,7 +195,6 @@
     "type": "framework",
     "references": "IB5: Rating — Definition; IB5: Disputing Method; The Formulas for Happiness"
   },
-
   {
     "concept": "IB5: Case Example — Varsity Football Player (Rating Behavior vs. Self)",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -255,11 +202,6 @@
     "type": "example",
     "references": "IB5: Rating — Definition; IB5: Disputing Method"
   },
-
-  // ============================================================
-  // TIER 2 — IB6: ABSOLUTISTIC STATEMENTS
-  // ============================================================
-
   {
     "concept": "IB6: Absolutistic Statements — Definition",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -267,7 +209,6 @@
     "type": "definition",
     "references": "IB2: Awfulizing; IB5: Rating; Resistance to Reality (Chapter 3)"
   },
-
   {
     "concept": "IB6: Absolutistic Statements — Red-Flag Phrases",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -275,7 +216,6 @@
     "type": "list",
     "references": "IB6: Absolutistic Statements — Definition; Red-Flagging"
   },
-
   {
     "concept": "IB6: Absolutistic Statements — Disputing Method and Mental Health Definition",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -283,11 +223,6 @@
     "type": "framework",
     "references": "IB6: Absolutistic Statements — Definition; Disputing — Definition; Acceptance (Chapter 3)"
   },
-
-  // ============================================================
-  // TIER 2 — IB7: THE IDEA OF ENTITLEMENT
-  // ============================================================
-
   {
     "concept": "IB7: The Idea of Entitlement — Definition (Two Sides)",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -295,7 +230,6 @@
     "type": "definition",
     "references": "IB4: Shoulds, Musts, and Demands; IB5: Rating; The Formula for Guilt; The Formula for Depression"
   },
-
   {
     "concept": "IB7: The Idea of Entitlement — Red-Flag Phrases",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -303,7 +237,6 @@
     "type": "list",
     "references": "IB7: The Idea of Entitlement — Definition; Red-Flagging"
   },
-
   {
     "concept": "IB7: The Idea of Entitlement — Disputing Method",
     "chapter": "Chapter 4: The Seven Irrational Beliefs",
@@ -311,5 +244,4 @@
     "type": "framework",
     "references": "IB7: The Idea of Entitlement — Definition; Disputing — Definition; IB4: Shoulds, Musts, and Demands; Acceptance (Chapter 3)"
   }
-
 ]
