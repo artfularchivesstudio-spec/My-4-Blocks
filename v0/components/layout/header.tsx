@@ -30,6 +30,7 @@ const navigationLinks: NavigationLink[] = [
   { href: '/faq', label: 'FAQ' },
   { href: '/eval', label: 'v2 Eval' },
   { href: '/privacy', label: 'Privacy' },
+  { href: 'https://testflight.apple.com/join/placeholder', label: 'Try the App ✨' },
 ]
 
 interface HeaderProps {
