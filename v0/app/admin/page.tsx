@@ -16,13 +16,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { Lock, Settings, Database, FileText, Network, ShieldCheck } from 'lucide-react'
+import { Lock, Settings, Database, FileText, Network, ShieldCheck, MessageSquare } from 'lucide-react'
 import { ConfigTab } from '@/components/admin/ConfigTab'
 import { TrainingDataTab } from '@/components/admin/TrainingDataTab'
 import { GEPAReportsTab } from '@/components/admin/GEPAReportsTab'
 import { KnowledgeGraphTab } from '@/components/admin/KnowledgeGraphTab'
 
 export default function AdminPage() {
+  // ... rest of the code ...
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -125,9 +126,20 @@ export default function AdminPage() {
             </div>
             <h1 className="text-xl font-serif font-semibold tracking-tight">Admin Sanctuary</h1>
           </div>
-          <Button variant="ghost" size="sm" onClick={handleLogout} className="text-muted-foreground hover:text-foreground">
-            Seal the Gates
-          </Button>
+          <div className="flex items-center gap-4">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              onClick={() => window.location.href = '/'}
+              className="hidden sm:flex gap-2 text-muted-foreground hover:text-foreground"
+            >
+              <MessageSquare className="w-4 h-4" />
+              Return to Chat
+            </Button>
+            <Button variant="ghost" size="sm" onClick={handleLogout} className="text-muted-foreground hover:text-foreground">
+              Seal the Gates
+            </Button>
+          </div>
         </div>
       </header>
 
