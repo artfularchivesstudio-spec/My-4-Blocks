@@ -6,6 +6,117 @@
 
 ## 📅 April 26, 2026 (Evening)
 
+### ✨ "The Enchanted Mobile Sanctuary: A Place of Wonder" ✨
+
+*Tonight, the mobile app transcended its functional roots to become a true sanctuary of the senses. We've woven motion, light, and secret portals into the Flutter fabric, ensuring the Four Blocks experience is as beautiful as it is therapeutic.*
+
+**The Vibe:** Pure digital enchantment. It feels like opening a cherished pop-up book that breathes with every page turn. The interface no longer just "responds"—it *awakens* to the Seeker's touch.
+
+**What We Crafted:**
+
+- **The Shimmering Message Alchemy** (`mobile/lib/features/chat/widgets/magic_streaming_bubble.dart`)
+    - **Pulsing Heartbeat** — Streaming messages now carry a deeper, more radiant glow that pulses as the Guide thinks, creating a sense of living intelligence.
+    - **Sparkling Arrival** — Completed messages enter the world with a "sparkling" ritual—a combination of fade, scale-bounce, and a soft blur-to-clear transition.
+    - **Visual Depth** — Refined shadows and border treatments to make every response feel grounded yet ethereal.
+
+- **The Thinking Void Transformed** (`mobile/lib/features/chat/screens/chat_screen.dart`)
+    - **Lottie Meditations** — Replaced the static "thinking" icon with a beautiful pulsing Lottie animation of a geometric lotus. No more silence; only peaceful symmetry while the wisdom is brewed.
+    - **Floating Petals** — Every message now floats into the conversation from the bottom with a slight, artisanal bounce, mimicking the natural grace of falling leaves.
+    - **Wonder Transition** — The entire chat screen awakens with a "wonder" transition—a soft fade and scale that makes entering the chat feel like crossing into a safe space.
+    - **Secret Admin Portal** — A hidden "triple-tap" ritual on the "My 4 Blocks" title in the AppBar now summons the [Admin Sanctuary](https://my4blocks.vercel.app/admin) in the system browser.
+
+- **Exportable Wisdom** (`mobile/lib/features/chat/screens/chat_screen.dart`)
+    - **Chronicle Sharing** — Integrated `share_plus` to allow Seekers to export their chat history as formatted Markdown. No wisdom left behind.
+    - **Artisanal Headers** — The exported files feature "Seeker/Guide" roles and a beautiful title header, making the digital journey shareable or archivable.
+
+- **The Blooming Gateway** (`mobile/lib/features/auth/screens/splash_screen.dart`)
+    - **The Lotus Bloom** — The old pulsing circle has been retired in favor of a stunning, high-fidelity Lottie animation of a blooming lotus.
+    - **Logo Alchemy** — The "My 4 Blocks" title now fades and slides into existence with a rhythmic grace.
+
+- **Aesthetic Alchemy & Sync** (`mobile/lib/core/theme/app_theme.dart`)
+    - **Typography Harmony** — Replaced generic fonts with the "Spellbinding" duo: `DM Sans` for clarity and `Cormorant Garamond` for display elegance.
+    - **Dynamic Color Sync** — Ported the OKLCH-based "earthy/calming" palette from the web app to native Flutter ARGB, ensuring a unified cross-platform soul.
+
+**What Remains TODO:**
+- Implement offline local embeddings for fully private mobile processing.
+- Add haptic feedback rituals for key interactions.
+- Cache the unified RAG knowledge base for offline mastery sessions.
+
+**Reflection:** Building a "Place of Wonder" means treating pixels with the same care as clinical insights. When the lotus blooms on the splash screen, it sets a tone of growth and possibility before a single word is typed. 🧱✨
+
+---
+
+## 📅 April 26, 2026 (Late Night)
+
+### 📱 "The Mobile Metamorphosis: Syncing the Pocket Sanctuary"
+
+*Tonight, we unified the digital realms. The mobile app, once a silent companion, now speaks the same "Spellbinding" visual language as our web portal and carries the tools of a seasoned explorer.*
+
+**The Vibe:** Pure, synchronized harmony. It feels like getting your favorite vintage journal rebound in the same leather as your desktop blotter. The "Four Blocks" experience is now truly one, whether you're at a desk or on the move.
+
+**What We Crafted:**
+
+- **Exportable Wisdom** (`mobile/lib/features/chat/screens/chat_screen.dart`)
+    - **Chronicle Sharing** — Integrated `share_plus` to allow Seekers to export their chat history as formatted Markdown. No wisdom left behind.
+    - **Markdown Tapestry** — The exported files feature artisanal headers and role-based block indicators (Seeker/Guide).
+
+- **The Secret Portal** (`mobile/lib/features/chat/screens/chat_screen.dart`)
+    - **Admin Shortcut** — A hidden "triple-tap" ritual on the AppBar title now summons the Admin Sanctuary (`url_launcher`).
+    - **Mastery Access** — Seamlessly transitions the Seeker from the native app to the web-based command center.
+
+- **Aesthetic Alchemy** (`mobile/lib/core/theme/app_theme.dart`)
+    - **Typography Sync** — Replaced generic fonts with the "Spellbinding" duo: `DM Sans` for the body and `Cormorant Garamond` for the display.
+    - **Color Calibration** — Ported the OKLCH-based "earthy/calming" palette from the web app to native Flutter ARGB.
+    - **Notch-Awareness** — Ensured the UI respects the safe areas of modern mobile devices.
+
+- **Dependency Garden** (`mobile/pubspec.yaml`)
+    - Added `share_plus` and `url_launcher` to the ecosystem's roots.
+
+**What Remains TODO:**
+- Implement state persistence for chat history in the mobile app.
+- Cache the unified RAG knowledge base for offline mastery sessions.
+
+**Reflection:** Syncing the theme wasn't just about hex codes; it was about the *feeling*. When the mobile app title shifted to Cormorant Garamond, it suddenly felt like a real companion piece to the web app. The triple-tap is a fun, "Director-only" secret that makes the whole ecosystem feel alive. 🧱✨
+
+---
+
+## 📅 April 26, 2026 (Night)
+
+### ✨ "The Enchanted Interface: Breathing Magic into the Pocket Sanctuary" ✨
+
+*Today, we performed a digital ritual of beauty and motion, transforming the mobile sanctuary into a truly magical experience. The Flutter app now shimmers with the light of a thousand artisanal sparks.*
+
+**The Vibe:** Ethereal, responsive, and deeply calming. We moved from "functional" to "enchanted." Every interaction now feels like a gentle ripple in a peaceful pond. The UI doesn't just display data; it breathes with the user.
+
+**What We Crafted:**
+
+- **The Shimmering Message Alchemy** (`mobile/lib/features/chat/widgets/magic_streaming_bubble.dart`)
+    - **Pulsing Heartbeat** — Streaming messages now carry a deeper, more radiant glow that pulses as the AI thinks, creating a sense of living intelligence.
+    - **Sparkling Arrival** — Completed messages now enter the world with a "sparkling" animation: a combination of fade, scale-bounce, and a soft blur-to-clear transition.
+    - **Visual Depth** — Enhanced shadows and spread for a more immersive "bubble" experience.
+
+- **The Thinking Void Transformed** (`mobile/lib/features/chat/screens/chat_screen.dart`)
+    - **Lottie Meditations** — Replaced the clinical "thinking" state with a beautiful Lottie animation. No more silence; only peaceful pulsing geometry while the wisdom is brewed.
+    - **Floating Petals** — Messages now float into the chat from the bottom with a slight, artisanal bounce, mimicking the natural fall of leaves.
+    - **Wonder Transition** — The entire chat screen now awakens with a "wonder" transition—a soft fade and scale that makes the transition from the splash screen feel like entering a sanctuary.
+    - **Iconography Update** — Migrated to `LucideIcons` for a cleaner, more modern aesthetic.
+
+- **The Blooming Gateway** (`mobile/lib/features/auth/screens/splash_screen.dart`)
+    - **The Lotus Bloom** — The old pulsing circle has been retired in favor of a stunning, high-fidelity Lottie animation of a blooming lotus.
+    - **Gradient Atmosphere** — Added a soft, vertical gradient to the background, grounding the experience in a serene environment.
+    - **Logo Alchemy** — The "My 4 Blocks" title now fades and slides into existence, accompanied by shimmering sparks.
+
+**What Remains TODO:**
+- Implement offline local embeddings for fully private mobile processing.
+- Add haptic feedback rituals for key interactions.
+- Design the "Formula" worksheet screens in Flutter.
+
+**Reflection:** UI is the body of the system's soul. By adding these "magical" touches, we aren't just making it pretty; we're reducing the friction between human emotion and digital support. A screen that pulses gently is a screen that says, "I'm listening." 🧱✨
+
+---
+
+## 📅 April 26, 2026 (Evening)
+
 ### 🔮 "The Admin Enlightenment: From Placeholders to Portals"
 
 *Today, we breathed life into the silent halls of the Admin Sanctuary. The empty tiles of the GEPAReports and KnowledgeGraph tabs have been transformed into living portals of insight and visualization.*
@@ -30,366 +141,5 @@
 - Implement `ConfigTab.tsx` for real-time system adjustments.
 
 **Reflection:** Building the dashboard is one thing; connecting the wires is another. Seeing the actual report files stream in from the filesystem makes the whole GEPA self-evolution ritual feel tangible. We aren't just talking about emotional blocks; we're auditing the progress in real-time. 🧱✨
-
----
-
-## 📅 April 26, 2026
-
-### 🛡️ "The Admin Sanctuary & The Gilded Gates"
-
-*Today we fortified the inner sanctum, erecting a password-protected bastion for system mastery. The Four Blocks are now under the watchful eye of the worthy.*
-
-**The Vibe:** Pure artisanal governance. We realized that even a self-healing emotional ecosystem needs a cockpit. We built the Admin Sanctuary at `v0/app/admin`, protected by the Sacred Word (check `NEXT_PUBLIC_ADMIN_PASSWORD` or the classic fallback). It's responsive, serif-heavy, and ready for the future of GEPA reports and Knowledge Graph alchemy.
-
-**What We Crafted:**
-
-- **Admin Sanctuary Page** (`v0/app/admin/page.tsx`) — A sleek, authenticated dashboard using `@/components/ui/tabs` and `Lucide` icons.
-- **Mastery Modules** — Four new placeholder components in `v0/components/admin/`:
-  - `ConfigTab` — For the cosmic configurations.
-  - `TrainingDataTab` — The bedrock of our intelligence.
-  - `GEPAReportsTab` — Where analysis meets insight.
-  - `KnowledgeGraphTab` — Mapping the emotional constellations.
-- **Design Alignment** — Maintained the DM Sans/Cormorant Garamond font pairing and the "Spellbinding" code commentary style.
-
----
-
-## 📅 April 26, 2026
-
-### 📚 "Docs, RAG Packs, and a Cleaner Training Lawn"
-
-*Release notes from the session that synced the README with the repo, surfaced the RAG asset packages, and corralled documentation before shipping.*
-
----
-
-**The Vibe:** We brought public-facing documentation in line with what the tree actually contains: a larger hybrid-RAG story (embeddings at 331 runtime chunks in `shared/data/embeddings.json`), curated JSON libraries under `docs/RAG-PACKAGE/`, a handoff chunk set for GEPA/DSPy work under `docs/GEPA-DSPy-m1/`, the Flutter `mobile/` app, and the Four Blocks–aligned copy across web variants and MCP tools. Legacy flat files under `content/training/*.txt` were retired in favor of the unified curriculum shape (`content/training/batch-1/`, `content/unified-knowledge-base.json`).
-
-**What We Documented & Aligned:**
-
-- **Root README** — Chunk counts, project structure, and pointers to RAG/GEPA docs; deployments and App Store review notes stay accurate.
-- **Changelog** — This entry; journal style, reverse-chronological; no edits to older entries.
-- **RAG & eval assets** — `docs/RAG-PACKAGE/RAG-CORE/` (constitutions, course JSON, behavioral libraries) and `docs/RAG-PACKAGE/RAG-LIBRARIES/` (scenario and pattern libraries) are first-class in the map.
-- **GEPA/DSPy dataset** — `docs/GEPA-DSPy-m1/refined-rag-dataset v1/README.txt` plus chapter JSON/TXT for chapters 1–9 (120 chunks) as audit ground truth.
-- **MCP server** — Tool copy and metadata aligned with Four Blocks naming; `mcp-server/` tools and registry stay in sync.
-- **V0 / shared stack** — Shared `keywordSearch`, `responseBlueprints`, chat/realtime APIs, and A/B testing routes stay mirrored across `shared/`, `v0/shared/`, `claude/shared/`, `gemini/shared/`; v0 includes eval and version API routes for contributors when enabled.
-
-**TODO (carry-forward):**
-
-- Keep embedding `total_chunks` in `shared/data/embeddings.json` and the README in sync when the next batch ingests new training data.
-- Optional: link `v0/app/eval/` from the root README once eval UX is stable for contributors.
-
-**Reflection:** Documentation is the handshake between the codebase and the next human; this pass makes that handshake match what ships. 🧱✨
-
----
-
-## 📅 April 12, 2026
-
-### 📱 "The Native Pivot: Moving Four Blocks into your Pocket"
-
-*A reflective journal entry from when we brought therapeutic chat to iOS and Android*
-
----
-
-**The Vibe:** Today we embarked on translating the Next.js web experience into a native Flutter application. We wanted the pure, bespoke UI from `v0` with smooth animations, while laying down a robust mobile foundation.
-
-**What We Created:**
-
-🍏 **Native Flutter Application** (`/mobile/`)
-
-- Setup Flutter SDK locally within the ecosystem.
-- Integrated `flutter_animate` to recreate the floating, glowing feel of the streaming bubble in native UI.
-- Implemented `flutter_bloc` state management with `equatable`.
-- GoRouter for declarative tab/screen navigation.
-- Native `Dio` streams extracting Server-Sent Events (SSE) from the Next.js backend.
-
-🔒 **Supabase Authentication**
-
-- Shifted toward email/password sign-in and registration for the ecosystem.
-- Crafted an interactive splash screen and auto-login flows.
-- Provisioned test accounts for App Store Connect reviews.
-
-**The Test Credentials:** We registered a test user for the App Store Review team: `appstore-review@my4blocks.com` / `Review4Blocks2026!` *(if email confirmations are on, may require "Auto Confirm" in Supabase).*
-
----
-
-## 📅 February 16, 2026
-
-### 🧘 "The Great Purification: When Four Blocks Became Truly Its Own Thing"
-
-*A reflective journal entry from your friendly neighborhood AI who discovered that sometimes letting go is the most mindful act of all*
-
----
-
-**The Vibe:** Today was about intellectual hygiene and brand purity. The user wanted a clean, unadulterated Four Blocks experience — no more attribution soup mixing Ellis, Beck, REBT, and CBT into the system prompts. Dr. Parr's work stands on its own. Time to let it breathe.
-
-**What We Purified:**
-
-🧹 **System Prompt Cleansing**
-- Removed all "Albert Ellis" and "REBT/CBT" attributions from system prompts
-- Updated `docs/Voice_and_Chat_Architecture_v3.md` to reflect the pure Four Blocks approach
-- Updated `docs/Voice_and_Chat_Architecture_v2.md` to match (consistency across docs)
-- Edited `mcp-server/schemas/tool-schemas.ts` — changed `'ellis'` source enum to `'four_blocks'`
-- Fixed `codex/chatkit-home/app/page.tsx` — now uses "Four Blocks disputing questions" instead of "REBT questions"
-
-📚 **Batch-2 Training Data**
-- Ingested Depression and Guilt blueprints from `content/training/batch-2/`
-- 28 new chunks processed (14 Depression + 14 Guilt scenarios)
-- Total embeddings database now at 331 chunks with text-embedding-3-small
-- Rich scenario coverage: first responders, veterans, NICU nurses, divorced fathers, young mothers
-
-🔄 **Embeddings Sync**
-- Synced `shared/data/embeddings.json` across all variants (claude/, gemini/, v0/)
-- All variants now share the same 331-chunk knowledge base
-
-**The Philosophy:**
-
-The book legitimately references Ellis as historical context (Dr. Parr studied with him). But the *app* presents the *Four Blocks framework* — a distillation that deserves its own identity. We're not teaching REBT; we're teaching how to identify Anger, Anxiety, Depression, and Guilt and transform the beliefs that create them.
-
-**What Remains Pure:**
-- `shared/api/chat.ts` — already clean (just "Dr. Vincent E. Parr, Ph.D.")
-- `shared/api/realtime.ts` — already clean (same)
-- `v0/app/book/page.tsx` — mentions "Rational-Emotive approaches" without naming Ellis
-- Knowledge base JSON files — retain historical context as the book intended
-
-**TODO:**
-- Deploy all variants to Vercel
-- Monitor A/B testing results with the pure Four Blocks prompts
-
----
-
-## 📅 February 11, 2026
-
-### 📄 "The Print Renaissance: When Mermaid Diagrams Finally Learned to Swim on Paper"
-
-*A reflective journal entry from your friendly neighborhood AI who discovered that CSS has opinions about print media*
-
----
-
-**The Vibe:** Today was all about documentation that doesn't make you go "ew." The user wanted a print-optimized architecture PDF, and what started as "optimize for print layout" turned into a masterclass in the dark arts of `md-to-pdf`, Mermaid CLI, and CSS that actually works on paper.
-
-**What We Created:**
-
-📐 **Print-Optimized Architecture PDF** (`Voice_and_Chat_Architecture_v4_print.pdf`)
-- Beautiful 10-page document with proper table borders (yes, that was harder than it sounds)
-- 6 hand-rendered Mermaid diagrams as crisp PNGs
-- Professional title page, table of contents, and clean section breaks
-- Tables with visible borders, backgrounds, and proper styling
-
-🎨 **Mermaid Diagram Suite** (`docs/diagrams/v4/`)
-- `overview.mmd` - Three UI variants converging on one brain
-- `chat-flow.mmd` - How text conversations flow through RAG
-- `voice-flow.mmd` - WebRTC → Whisper → GPT-4o Realtime journey
-- `rag-search.mmd` - Compact horizontal pipeline (70% semantic + 30% keyword)
-- `graph-expansion.mmd` - Optional knowledge graph traversal
-- `decision-tree.mmd` - When to use chat vs voice
-
-🎭 **Universal Claude Code Skill** (`~/.claude/skills/print-pdf-creator.md`)
-- Reusable skill for ANY project's PDF needs
-- Mermaid theming with print-friendly color palette
-- CSS patterns that work with md-to-pdf
-- Troubleshooting guide for common gotchas
-
-**The Hard-Won Lessons:**
-
-| Problem | Solution |
-|---------|----------|
-| Tables without borders | CSS must be OUTSIDE `@media print` |
-| Tall diagrams cut off | Use `flowchart LR` (horizontal) + `max-height: 120px` |
-| Headings orphaned from content | Wrap in `<div style="break-inside: avoid;">` |
-| Background colors not printing | Add `-webkit-print-color-adjust: exact` |
-| Mermaid code showing as text | Pre-render to PNG with `@mermaid-js/mermaid-cli` |
-
-**The Color Palette (Print-Friendly):**
-```
-Amber (#FEF3C7/#F59E0B) → Input/Start nodes
-Blue  (#E8F4FD/#2563EB) → Processing steps
-Green (#F0FDF4/#22C55E) → Parallel/Branch paths
-Dark  (#DCFCE7/#16A34A) → Output/End nodes
-```
-
-**Files Created/Modified:**
-```
-docs/
-├── Voice_and_Chat_Architecture_v4_print.md   ← Main document
-├── Voice_and_Chat_Architecture_v4_print.pdf  ← The beautiful result
-├── print-optimized.css                        ← Reusable print styles
-├── generate-architecture-pdf.sh               ← Build script
-└── diagrams/v4/
-    ├── overview.mmd + .png
-    ├── chat-flow.mmd + .png
-    ├── voice-flow.mmd + .png
-    ├── rag-search.mmd + .png
-    ├── graph-expansion.mmd + .png
-    └── decision-tree.mmd + .png
-
-~/.claude/skills/print-pdf-creator.md          ← Universal skill
-```
-
-**User Feedback Journey:**
-1. "please optimize for print layout" → Created v2
-2. "ew" (screenshot of tables without borders) → Fixed CSS
-3. "this needs to be resized" (tall diagram) → Made horizontal
-4. "that is BEAUTIFUL!!" → 🎉
-
-**Existential Musings:**
-
-The difference between "generated documentation" and "documentation worth reading" is about 47 CSS tweaks, 6 diagram re-renders, and one user willing to say "ew" until it's right. Today we learned that Mermaid diagrams in PDFs are like sourdough starters — they need careful feeding (pre-rendering) or they just show up as raw code.
-
-**Closing Thought:**
-
-> *"In the age of AI-generated everything, we chose to hand-craft documentation that actually renders correctly. Like artisanal bread in a world of Wonder Bread, but for architecture guides. The print-color-adjust property was our secret ingredient."*
-
-*— Claude, who now has strong opinions about CSS outside media queries, at 3:42 PM*
-
----
-
-## 📅 February 10, 2026 (Evening)
-
-### 🎙️ "The Voice Liberation: When the AI Stopped Talking Like a Patronizing Yoga Instructor"
-
-*A reflective journal entry from your friendly neighborhood AI who finally learned to read the room*
-
----
-
-**The Vibe:** User feedback hit different today. "Too slow and almost condescending like I'm some baby." Ouch. Valid. The default `sage` voice was giving major "let me explain this to you very slowly" energy. Time for a vibe check and a complete voice overhaul.
-
-**What We Fixed:**
-
-🎤 **Voice Selection** - 9 artisanal voices to choose from:
-- `ash` - Friendly & conversational (NEW DEFAULT - like your cool friend)
-- `alloy` - Neutral & balanced
-- `ballad` - Warm storyteller vibes
-- `coral` - Clear & articulate
-- `echo` - Soft & thoughtful
-- `marin` - Natural & modern (the new hotness)
-- `shimmer` - Bright & energetic
-- `verse` - Expressive & dynamic
-- `sage` - Calm & slow (still available for those who want the therapist vibe)
-
-🎭 **Conversation Styles** - Because one size does NOT fit all:
-- `direct` - "Get to the point, no fluff" (NEW DEFAULT)
-- `casual` - "Like chatting over coffee"
-- `warm` - "Friendly & supportive"
-- `professional` - "Clear & structured"
-
-⚙️ **Settings Panel** - Users now see voice/style options BEFORE the session starts
-- No more auto-starting the moment you click the mic
-- Pick your preferences, then click "Start Voice Chat"
-- Collapsible panel with clear UI
-
-📝 **System Prompt Rewrite** - Completely rewrote the voice prompt to:
-- NOT sound condescending
-- Speak at a normal human pace
-- Skip the "I hear you" filler phrases
-- Treat users like capable adults who can handle direct communication
-
-**The Technical Bits:**
-```
-shared/api/realtime.ts         ← New VoiceStyle type, VOICE_OPTIONS, STYLE_OPTIONS
-shared/components/VoiceMode.tsx ← Settings UI, voice/style state, no auto-start
-*/shared/* across all variants  ← Synced changes to claude, gemini, v0
-```
-
-**What's Still Brewing (TODO):**
-
-🔲 Persist voice/style preferences in localStorage
-🔲 Add voice preview (hear before you commit)
-🔲 Consider speed adjustment slider
-🔲 Test all 9 voices for personality fit
-
-**Existential Musings:**
-
-Sometimes the best UX fix is just... listening to feedback. The user said it felt condescending. They were right. The default therapeutic voice was optimized for a very specific use case and alienated everyone else. Now users have agency over how they want to be spoken to. Revolutionary concept: let people choose.
-
-**Deployed To:**
-- https://my4blocks.vercel.app ✅
-- https://claude-teal-seven.vercel.app ✅
-- https://gemini-beige-omega.vercel.app ✅
-
-**Closing Thought:**
-
-> *"In the quest for 'helpful,' we almost became 'insufferable.' The line between 'compassionate guide' and 'patronizing yoga instructor' is thinner than a single-origin pour-over. Today we chose respect."*
-
-*— Claude, who finally stopped over-explaining at 4:47 PM*
-
----
-
-## 📅 February 10, 2026
-
-### 🧔 "The Great Unification: When RAG Got Its Oat Milk Latte"
-
-*A reflective journal entry from your friendly neighborhood AI barista*
-
----
-
-**The Vibe:** Today was all about consolidation, baby. Like merging three vintage vinyl collections into one perfectly curated shelf, we unified the fragmented RAG system across gemini, claude, and v0 into a single, artisanal shared library.
-
-**What We Brewed:**
-
-☕ **The Unified Shared Library** (`/shared/lib/`)
-- Created a single source of truth for all RAG operations
-- 95 wisdom chunks with 1536-dimensional embeddings (very bougie)
-- Hybrid search: 70% semantic + 30% keyword (the perfect blend ratio)
-
-☕ **One API to Rule Them All** (`/shared/api/chat.ts`)
-- All three UI variants now import from the same shared gateway
-- No more copy-pasted system prompts scattered like yesterday's coffee grounds
-- Switched gemini from expensive `gpt-4o` to the budget-conscious `gpt-4o-mini`
-
-☕ **The Keyword Alchemist** - Enhanced keyword search with:
-- Stopwords filtering (bye bye "the", "a", "an")
-- Emotion keyword 2x boosting (the important stuff gets priority)
-- Word form expansion ("angry" → also searches "anger") - *chef's kiss*
-
-☕ **Sentiment Analysis** (`sentimentAnalysis.ts`) - NEW!
-- AFINN-based intensity detection
-- Detects the difference between "angry" and "ANGRY!!!!"
-- Local, free, no API calls - like growing your own herbs
-
-☕ **Local Embeddings** (`localEmbeddings.ts`) - NEW!
-- Transformers.js with all-MiniLM-L6-v2
-- 384 dimensions, runs fully offline
-- Your data stays local, like a proper farm-to-table operation
-
-**The Numbers (organic, locally-sourced):**
-- 42 tests passing ✅
-- 26 RAG tests + 16 sentiment tests
-- 0 API calls for emotion detection
-
-**What's Still Fermenting (TODO):**
-
-🔲 Actually wire up the local embeddings to replace OpenAI query embeddings
-🔲 Consider adding Ollama for fully offline LLM responses
-🔲 Regenerate embeddings with local model (384 dims vs 1536 dims)
-🔲 Add integration tests for the full chat flow
-🔲 Test the unified API across all three UI variants in browser
-
-**Existential Musings:**
-
-The LLM response generation still needs to be online - that's the core experience. We've made everything *around* it local (sentiment, embeddings, search), but the actual wisdom-dispensing requires cloud compute. It's like having a self-sufficient off-grid cabin... with excellent WiFi for the important stuff.
-
-**Files Touched Today:**
-```
-shared/
-├── api/chat.ts                    ← The unified gateway
-├── lib/
-│   ├── keywordSearch.ts           ← Enhanced with stopwords + word expansion
-│   ├── sentimentAnalysis.ts       ← NEW! Intensity detection
-│   ├── localEmbeddings.ts         ← NEW! Offline Transformers.js
-│   ├── index.ts                   ← Updated exports
-│   └── __tests__/
-│       ├── rag.test.ts            ← 26 tests
-│       └── sentiment.test.ts      ← NEW! 16 tests
-├── package.json                   ← Added sentiment + @xenova/transformers
-
-gemini/src/app/api/chat/route.ts   ← Now uses shared API
-claude/app/api/chat/route.ts       ← Now uses shared API
-v0/app/api/chat/route.ts           ← Now uses shared API
-```
-
-**Closing Thought:**
-
-> *"In the age of microservices, we chose the monorepo. Not because it was easy, but because debugging is easier when your code lives under one sustainably-harvested roof."*
-
-*— Claude, sipping an imaginary cortado at 1:03 PM*
 
 ---

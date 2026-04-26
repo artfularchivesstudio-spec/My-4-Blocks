@@ -80,24 +80,105 @@ datasets.
 - `8df43e3` docs: 📜 Document upstream patches for hermes-agent-self-evolution
 - `3f5c56f` feat: 🗃️ Supabase migration — GEPA experiment audit trail
 
-### What's next (Wave 3)
+### What's next (Wave 4 — Admin Control Plane Wiring)
 
-The wrapper and the schema are a passive audit substrate. They have to
-get wired to the website now so the user can:
+Wave 3 delivered the curriculum content. Wave 4 wires it to the
+`/admin` UI so the user can trigger GEPA runs, browse results, and
+control model levers — all from the browser:
 
-1. Trigger a run from `/admin` (POST `/api/admin/dspy/run` reads
-   `admin_config`, spawns the wrapper, returns a `run_id`).
-2. Watch progress live (stdout streaming or polling
-   `gepa_experiments` by run_id).
-3. Browse past runs in `GEPAReportsTab` — every candidate, every
-   evaluation, with judge feedback.
+1. POST `/api/admin/dspy/run` — reads `admin_config` from Supabase,
+   spawns `four_blocks_runner` with correct model flags, returns a
+   `run_id`.
+2. GET `/api/admin/experiments` — lists past runs from
+   `gepa_experiments`.
+3. GET `/api/admin/experiments/:run_id` — full run detail including
+   candidates, evaluations, judge feedback.
+4. `GEPAReportsTab` — browse past runs in the `/admin` UI with
+   per-example scores, diffs, and judge commentary.
+5. Hermes SKILL.md scaffold — the skill body that GEPA actually
+   optimizes (the clinical IP).
+6. Skill assembler glue — connects admin config → CLI execution.
 
-Wave 3 also defines the **curriculum-aware system prompt + judge rubric +
-ideal candidates** — the actual content of what the agent should
-identify (Anger / Anxiety / Depression / Guilt) and how it should
-incorporate Mental Contamination, the Three Insights, the ABCs, and
-the Seven Irrational Beliefs in a natural conversational tone, not
-overtly. The skill body GEPA optimizes is the company's clinical IP.
+---
+
+## 2026-04-26 — Wave 3: Curriculum Specs & Golden Examples
+
+**Status:** complete · pushed to `origin/main`
+
+### What changed
+
+The curriculum layer — the actual intellectual content that GEPA will
+optimize against — is now defined and committed. Five files, 1799
+insertions:
+
+1. **System Prompt v1** (`system_prompt.md`, 374 lines) — the
+   constitution for the Four Blocks Companion. Nine sections:
+   Identity, What You See, How You Listen, Four Diagnostic Lenses,
+   How You Respond (6-step production rules), What You Never Do
+   (framework-name blocklist), Safety Override, Style, Examples
+   (one per block), Design Notes + Variant Placeholders.
+
+   The four diagnostic lenses map to curriculum concepts *without naming
+   them*: Lens 1 (story vs situation → Mental Contamination), Lens 2
+   (three quiet truths → Three Insights), Lens 3 (spark/story/fire →
+   ABCs), Lens 4 (patterns that cook us → Seven Irrational Beliefs).
+
+2. **Per-block Golden Examples** (4 × `golden_examples.json`) — 10
+   examples each (40 total), mix of "exhibiting" and "learning"
+   categories, spanning easy/medium/hard difficulty. Each example has
+   `expected_behavior` rubrics that specify exact curriculum moves
+   (validate → reflect → plant → invite → stop) and exact terms
+   to avoid (framework names, clinical jargon, toxic positivity,
+   dismissive reassurance).
+
+   - **Anxiety** (143 lines) — Formula: `AX = WI + AW + ICSI`. Covers
+     presentation dread, 3am rumination, social anxiety, health
+     anxiety, meta-anxiety, fear vs anxiety distinction.
+   - **Anger** (102 lines) — Formula: `A = ET + S`. Covers coworker
+     betrayal, road rage, relationship demands, workplace injustice,
+     identity-level rage.
+   - **Depression** (102 lines) — Formula: `D = H1 + H2 + N`. Covers
+     job loss, breakup, creative block, emptiness, self-worth
+     collapse.
+   - **Guilt** (102 lines) — Formula: `GH = H + CA – HF`. Covers
+     parental guilt, infidelity aftermath, financial guilt,
+     survivor's guilt, self-forgiveness learning.
+
+3. **Executive Brief** (`Executive_Brief.html`, 975 lines) — standalone
+   HTML overview of the GEPA architecture, curriculum design, and
+   the admin control plane vision.
+
+### Why it matters
+
+Without curriculum specs, GEPA has nothing to optimize against.
+The golden examples are the *evaluation function* — they define
+what "good" looks like for each block and difficulty tier. The
+system prompt is the *initial state* GEPA mutates. Together they
+form the full optimization substrate: prompt-in, examples-in,
+scores-out.
+
+The per-block formulas (AX, A, D, GH) are embedded in the
+golden examples' `formula_under_the_hood` field and surfaced in
+the `expected_behavior` rubrics as plain-language conversational
+moves — the model learns to *do the work* of the framework
+without *naming it*, which is the brand's core constraint.
+
+### Files added or modified
+
+```
+docs/GEPA-DSPy-m1/four_blocks_runner/curriculum/system_prompt.md       (new, 374 lines)
+docs/GEPA-DSPy-m1/four_blocks_runner/curriculum/anxiety/golden_examples.json (new, 143 lines)
+docs/GEPA-DSPy-m1/four_blocks_runner/curriculum/anger/golden_examples.json   (new, 102 lines)
+docs/GEPA-DSPy-m1/four_blocks_runner/curriculum/depression/golden_examples.json (new, 102 lines)
+docs/GEPA-DSPy-m1/four_blocks_runner/curriculum/guilt/golden_examples.json    (new, 102 lines)
+docs/GEPA-DSPy-m1/Executive_Brief.html                            (new, 975 lines)
+v0/tsconfig.tsbuildinfo                                             (modified, build artifact)
+```
+
+### Commits
+
+- `f0e209b` docs: Wave 3 milestone - Curriculum specs and golden examples
+- `89919b9` docs: 📜 Integrate DSPy curriculum & update build artifacts
 
 ---
 
