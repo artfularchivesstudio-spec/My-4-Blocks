@@ -61,7 +61,7 @@ Focusing on a "unique and elegant" feel.
 2. **RAG Logic**:
   - Perform a simple keyword/semantic search against the local `knowledge-base.json`.
     - Inject relevant book excerpts into the LLM context.
-3. **Tone & Style**: Configure the system prompt to reflect the wisdom of Dr. Vincent Parr, Albert Ellis, and Zen principles.
+3. **Tone & Style**: Configure the system prompt to reflect the wisdom of Dr. Vincent E. Parr and Zen principles.
 
 ---
 

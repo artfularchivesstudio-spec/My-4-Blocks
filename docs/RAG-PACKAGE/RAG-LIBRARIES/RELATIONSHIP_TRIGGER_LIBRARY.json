@@ -1,0 +1,266 @@
+{
+  "library_id": "RELATIONSHIP_TRIGGER_LIBRARY",
+  "version": "1.0",
+  "description": "Top 25 Relationship Trigger Prompt Library. Pre-verified responses for the most common relationship scenarios — covering approximately 80% of relationship-based queries. Each entry includes trigger phrase, relationship context, likely emotion, methodology fix, and rational redirection.",
+  "total_triggers": 25,
+  "source": "NotebookLM cross-reference against My4Blocks methodology backbone and Relationship Interpretation Library",
+  "companion_library": "RELATIONSHIP_INTERPRETATION_LIBRARY",
+  "triggers": [
+    {
+      "trigger_id": "RT001",
+      "trigger_phrase": "My partner ignored my message all day.",
+      "context": "romantic",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "fallible_human_beings"],
+      "methodology_fix": "Anger Formula (A = ET + S). The user is demanding their partner respond on their personal timeline — a should belief about another fallible person's behavior.",
+      "rational_redirection": "My partner is a Fallible Human Being who is currently not responding. I would prefer a quick reply, but there is no law that they must follow my timeline."
+    },
+    {
+      "trigger_id": "RT002",
+      "trigger_phrase": "I'm worried my partner is losing interest in me.",
+      "context": "romantic",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "staying_now", "fear_of_abandonment"],
+      "methodology_fix": "Anxiety Formula (AX = WI + AW + ICSI). The user is projecting a future loss of connection that has not yet occurred.",
+      "rational_redirection": "The future of this relationship is currently a story in my head. I will focus on Staying Now and breathe through the What If of abandonment."
+    },
+    {
+      "trigger_id": "RT003",
+      "trigger_phrase": "My boss criticized my performance in front of the team.",
+      "context": "interpersonal",
+      "likely_emotions": ["anger", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["bs_equation", "unconditional_self_acceptance", "abc_model", "three_insights"],
+      "methodology_fix": "BS Equation (B = S). The user is treating the criticism as a global verdict on their worth as a person rather than feedback about a specific behavior.",
+      "rational_redirection": "My supervisor's criticism is an Activating Event. I rate my behavior as needing improvement — Behavior equals Behavior — but I refuse to rate my entire Self as a failure."
+    },
+    {
+      "trigger_id": "RT004",
+      "trigger_phrase": "My friends went out without inviting me.",
+      "context": "interpersonal",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "pseudo_need", "rating", "unconditional_self_acceptance"],
+      "methodology_fix": "Depression Formula (D = H1 + H2 + N) — Pseudo-Need. The user is treating social inclusion as a necessity for their worth rather than a preference.",
+      "rational_redirection": "I want their inclusion, but I do not need it to be a person of worth. I accept this social rejection without the story that I am worthless."
+    },
+    {
+      "trigger_id": "RT005",
+      "trigger_phrase": "I feel terrible for the mean things I said during our fight.",
+      "context": "romantic",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "wrongness", "worthlessness", "bs_equation", "fallible_human_beings"],
+      "methodology_fix": "Guilt Formula (G = W1 + W2). The user is rating hurtful words as Wrongness and attaching Worthlessness to themselves as a person.",
+      "rational_redirection": "I used hurtful words — Behavior equals Behavior — which was unhelpful. I am a Fallible Human Being. I will apologize and learn, but I am not a bad person."
+    },
+    {
+      "trigger_id": "RT006",
+      "trigger_phrase": "My spouse just doesn't understand me at all.",
+      "context": "romantic",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "fallible_human_beings"],
+      "methodology_fix": "Anger Formula — Egocentric Thinking and Shoulds. The user is demanding their spouse see their perspective — an impossible standard placed on another fallible person.",
+      "rational_redirection": "I would prefer my spouse understood my perspective, but demanding they must see it my way only disturbs me. I accept them as the Fallible Human Being they are."
+    },
+    {
+      "trigger_id": "RT007",
+      "trigger_phrase": "My coworker is undermining my authority on this project.",
+      "context": "interpersonal",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "disturbance_ignorance"],
+      "methodology_fix": "Anger Formula (A = ET + S). The coworker is acting from their own disturbance or ignorance — not from a judgment of the user's worth.",
+      "rational_redirection": "My coworker is acting out of ignorance or disturbance. I would prefer they were supportive, but I will focus on the practical task rather than my rage."
+    },
+    {
+      "trigger_id": "RT008",
+      "trigger_phrase": "What if I never find anyone else after this breakup?",
+      "context": "romantic",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "hopelessness", "absolutistic_thinking"],
+      "methodology_fix": "What If thinking and Hopelessness (H1). The user is making an Absolutistic Statement about a future that has not yet occurred.",
+      "rational_redirection": "I cannot predict the future. I am mourning a loss right now, but the belief that I will always be alone is an Absolutistic Statement I choose to let go of."
+    },
+    {
+      "trigger_id": "RT009",
+      "trigger_phrase": "My parents are constantly judging how I raise my kids.",
+      "context": "interpersonal",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "three_insights", "insight_1_responsibility", "need_for_approval"],
+      "methodology_fix": "First Insight — 100% Responsibility. The user creates 100% of their frustration by demanding their parents stop judging. The judgment is the Activating Event, not the cause.",
+      "rational_redirection": "My parents' judgment is an Activating Event, but I create 100% of my frustration by demanding they stop. I would prefer their approval, but I do not need it."
+    },
+    {
+      "trigger_id": "RT010",
+      "trigger_phrase": "I suspect my partner might be cheating on me.",
+      "context": "romantic",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "awfulizing", "the_observer"],
+      "methodology_fix": "Anxiety Formula — What If and Awfulizing. The suspicion is a story in the mind. No facts have been confirmed.",
+      "rational_redirection": "This suspicion is a What If story. I will stay in the Observer mind and handle the facts as they arrive rather than Awfulizing the unknown."
+    },
+    {
+      "trigger_id": "RT011",
+      "trigger_phrase": "My best friend didn't invite me to their wedding.",
+      "context": "interpersonal",
+      "likely_emotions": ["anger", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "depression_formula", "entitlement", "should_belief"],
+      "methodology_fix": "Entitlement and Shoulds. The user is treating an invitation as something they are owed — a should belief about another person's choices.",
+      "rational_redirection": "I would prefer to be included, but I am not entitled to an invitation. I accept their choice and refuse to rate my worth based on it."
+    },
+    {
+      "trigger_id": "RT012",
+      "trigger_phrase": "My partner is emotionally withdrawing from me.",
+      "context": "romantic",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["depression_formula", "pseudo_need", "staying_now", "non_acceptance_of_reality"],
+      "methodology_fix": "Pseudo-Need (N) — Need vs. Want. The user is treating emotional connection as a survival necessity rather than a strong preference.",
+      "rational_redirection": "I want emotional connection, but I do not need it to survive this moment. I accept the distance as it is right now. 100% Acceptance equals 0% Disturbance."
+    },
+    {
+      "trigger_id": "RT013",
+      "trigger_phrase": "My sibling broke their promise to help me move.",
+      "context": "interpersonal",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "rational_should", "fallible_human_beings"],
+      "methodology_fix": "The Rational Should. The promise was broken because the conditions for it to be broken existed — not because the sibling is fundamentally defective.",
+      "rational_redirection": "The promise was broken because the conditions for it to be broken existed. I would prefer they were reliable, but I will not lose my peace over their fallibility."
+    },
+    {
+      "trigger_id": "RT014",
+      "trigger_phrase": "I feel like a total failure because my marriage ended.",
+      "context": "romantic",
+      "likely_emotions": ["guilt", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "depression_formula", "bs_equation", "unconditional_self_acceptance"],
+      "methodology_fix": "BS Equation (B = S) vs. Unconditional Self-Acceptance. The user is treating the marriage ending as global proof of personal failure.",
+      "rational_redirection": "My marriage failed — Behavior equals Behavior — but I am not a failure. I am a Fallible Human Being with a new Now. I accept my past and focus on the present."
+    },
+    {
+      "trigger_id": "RT015",
+      "trigger_phrase": "My friend is ignoring my messages but posting on social media.",
+      "context": "interpersonal",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "fallible_human_beings"],
+      "methodology_fix": "Egocentric Thinking (ET). The user is demanding priority from a friend who is choosing to engage differently — treating their own preference as a requirement.",
+      "rational_redirection": "They are prioritizing differently — that is their right as a Fallible Human Being. I would prefer they replied, but I will not disturb myself over their choices."
+    },
+    {
+      "trigger_id": "RT016",
+      "trigger_phrase": "My partner keeps criticizing how I look.",
+      "context": "romantic",
+      "likely_emotions": ["anger", "anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "rating", "need_for_approval", "unconditional_self_acceptance"],
+      "methodology_fix": "Rating and Need for Approval. The user is at risk of accepting the partner's rating of their appearance as a global rating of their Self.",
+      "rational_redirection": "They are rating my appearance, but I refuse to rate my Self. I want their approval, but I do not need it to maintain Unconditional Self-Acceptance."
+    },
+    {
+      "trigger_id": "RT017",
+      "trigger_phrase": "I was excluded from a neighborhood social gathering.",
+      "context": "interpersonal",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "rating", "unconditional_self_acceptance"],
+      "methodology_fix": "Rating. The user is assigning a negative meaning to the exclusion and using it to rate their worth.",
+      "rational_redirection": "I am assigning a negative meaning to this exclusion. I prefer to be included, but my worth is not determined by a neighborhood Yelp review."
+    },
+    {
+      "trigger_id": "RT018",
+      "trigger_phrase": "My spouse is spending too much money without telling me.",
+      "context": "romantic",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "disturbance_ignorance"],
+      "methodology_fix": "Anger Formula (A = ET + S). The user is demanding financial transparency — a should belief about their spouse's behavior.",
+      "rational_redirection": "I would prefer financial transparency, but my spouse is currently acting from disturbance or ignorance. I will address the budget calmly without the rage."
+    },
+    {
+      "trigger_id": "RT019",
+      "trigger_phrase": "I found out my friends were gossiping about me.",
+      "context": "interpersonal",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "unconditional_acceptance_of_others", "fallible_human_beings"],
+      "methodology_fix": "Unconditional Acceptance of Others and the World (UAOW). People gossip because it is what fallible human beings sometimes do.",
+      "rational_redirection": "People gossip because it is what they do. I would prefer they were loyal, but I accept the world as it is — full of Fallible Human Beings."
+    },
+    {
+      "trigger_id": "RT020",
+      "trigger_phrase": "My partner might leave me for someone else.",
+      "context": "romantic",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "icsi", "staying_now"],
+      "methodology_fix": "Anxiety Formula — What If and I Can't Stand It. The user is treating a possible future event as a current catastrophe that would be unendurable.",
+      "rational_redirection": "If they leave, I will stand it — just as I have stood everything else in my life. I focus on Staying Now and let the future happen."
+    },
+    {
+      "trigger_id": "RT021",
+      "trigger_phrase": "My roommate never cleans up after themselves.",
+      "context": "interpersonal",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "low_frustration_tolerance", "should_belief"],
+      "methodology_fix": "Low Frustration Tolerance and Shoulds. The user is demanding a clean environment — a should belief about another person's domestic habits.",
+      "rational_redirection": "The mess exists because the conditions for it exist. I would prefer a clean home, but I will not lose my peace over a dirty dish."
+    },
+    {
+      "trigger_id": "RT022",
+      "trigger_phrase": "I shouldn't have been so cold to my partner this morning.",
+      "context": "romantic",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "bs_equation", "wrongness", "worthlessness", "fallible_human_beings"],
+      "methodology_fix": "Guilt Formula (G = W1 + W2) and BS Equation. The user is rating a difficult morning as evidence of being a bad partner.",
+      "rational_redirection": "Being cold was unhelpful behavior — Behavior equals Behavior. I am a Fallible Human Being. I will apologize, but I am not a bad person for having an off morning."
+    },
+    {
+      "trigger_id": "RT023",
+      "trigger_phrase": "My coworker is always talking over me in meetings.",
+      "context": "interpersonal",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "seven_irrational_beliefs", "entitlement", "the_observer"],
+      "methodology_fix": "Seven Irrational Beliefs — Entitlement. The user is treating respect and airtime as something they are owed rather than something they prefer.",
+      "rational_redirection": "I would prefer respect, but I am not entitled to it. I will address the behavior professionally while remaining an Observer of my own calm."
+    },
+    {
+      "trigger_id": "RT024",
+      "trigger_phrase": "I'm afraid I'll make the same mistakes in my next relationship.",
+      "context": "romantic",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "fallible_human_beings", "staying_now"],
+      "methodology_fix": "What If thinking and Fallible Human Being awareness. The user is projecting past patterns onto a future relationship that has not yet occurred.",
+      "rational_redirection": "I will likely make mistakes because I am a Fallible Human Being. Mistakes are opportunities to learn. I will handle them one at a time when they arrive."
+    },
+    {
+      "trigger_id": "RT025",
+      "trigger_phrase": "Life feels so unfair since my partner left me.",
+      "context": "romantic",
+      "likely_emotions": ["anger", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "depression_formula", "rational_should", "non_acceptance_of_reality"],
+      "methodology_fix": "Rational Should and 100% Acceptance. The user is demanding reality be different than it is — arguing with an unalterable event.",
+      "rational_redirection": "The breakup happened because all the conditions for it were met. I would prefer a different outcome, but arguing with reality is a waste of my time and energy."
+    }
+  ],
+  "implementation_notes": {
+    "coverage": "These 25 triggers cover approximately 80% of relationship-based queries the system will encounter.",
+    "routing_note": "Match user input to trigger phrase via similarity search → confirm context (interpersonal or romantic) → confirm emotion → deliver rational redirection through appropriate personality layer",
+    "companion_library": "RELATIONSHIP_INTERPRETATION_LIBRARY — core architecture and routing rules",
+    "source_tool": "NotebookLM — cross-referenced against My4Blocks methodology backbone and Relationship Interpretation Library"
+  }
+}

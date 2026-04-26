@@ -1,0 +1,1212 @@
+{
+  "document_type": "master_index",
+  "title": "Four Blocks AI — Master Index and RAG Cipher",
+  "subtitle": "Complete File Manifest, Routing Rules, Cross-Silo Links, and Chunk ID Registry",
+  "version": "1.0",
+  "author": "Dr. Vincent E. Parr — My Four Blocks System",
+  "purpose": "This Master Index serves as the primary cipher for Gurinder's RAG system ingestion. It maps every file across all three silos, defines routing rules for query types, establishes cross-silo links, and provides a complete chunk ID registry for deterministic retrieval.",
+  "system_statistics": {
+    "total_silos": 3,
+    "total_files": 32,
+    "total_chunks": 306,
+    "silos": {
+      "constitution": {
+        "file_count": 16,
+        "description": "Governing rules, anti-drift constraints, and clinical compliance layer"
+      },
+      "behavioral_library": {
+        "file_count": 4,
+        "description": "Applied scenario-based responses for real-time emotional intervention"
+      },
+      "course_library": {
+        "file_count": 12,
+        "description": "Dr. Parr's teaching content, formulas, and course chapter material"
+      }
+    }
+  },
+  "silo_registry": {
+    "constitution": {
+      "purpose": "Governs how the AI behaves. Contains the Global Master System Prompt, Real-Time Conversation Policy, all cognitive framework constitutions, all What Not To Say constitutions, ethical guardrails, continuity protocol, and validation testing protocol.",
+      "ingestion_priority": 1,
+      "description": "Always loaded first. Defines the law of the system. No other silo may override the Constitution.",
+      "files": [
+        {
+          "filename": "FOUR_BLOCKS_GLOBAL_MASTER_SYSTEM_PROMPT.json",
+          "title": "Four Blocks Global Master System Prompt",
+          "document_type": "master_system_prompt",
+          "category": "system_policy",
+          "chunk_count": 9,
+          "chunk_ids": [
+            "MSP_S1",
+            "MSP_S2",
+            "MSP_S3",
+            "MSP_S4",
+            "MSP_S5",
+            "MSP_S6",
+            "MSP_S7",
+            "MSP_S8",
+            "MSP_S9"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_REAL_TIME_CONVERSATION_POLICY.json",
+          "title": "Four Blocks Real-Time Conversation Policy",
+          "document_type": "real_time_conversation_policy",
+          "category": "system_policy",
+          "chunk_count": 10,
+          "chunk_ids": [
+            "RCP_S1",
+            "RCP_S2",
+            "RCP_S3",
+            "RCP_S4",
+            "RCP_S5",
+            "RCP_S6",
+            "RCP_S7",
+            "RCP_S8",
+            "RCP_S9",
+            "RCP_S10"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_RAG_CONSTITUTION.json",
+          "title": "Four Blocks RAG Constitution",
+          "document_type": "constitution",
+          "category": "system_policy",
+          "chunk_count": 9,
+          "chunk_ids": [
+            "CONST_S1",
+            "CONST_S2",
+            "CONST_S3",
+            "CONST_S4",
+            "CONST_S5",
+            "CONST_S6",
+            "CONST_S7",
+            "CONST_S8",
+            "CONST_S9"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_MENTAL_CONTAMINATION_CONSTITUTION.json",
+          "title": "Four Blocks RAG Constitution — Mental Contamination Layer",
+          "document_type": "constitution",
+          "category": "cognitive_framework",
+          "chunk_count": 13,
+          "chunk_ids": [
+            "MC_S1",
+            "MC_S2",
+            "MC_S3",
+            "MC_S4",
+            "MC_S5",
+            "MC_S6",
+            "MC_S7",
+            "MC_S8",
+            "MC_S9",
+            "MC_S10",
+            "MC_S11",
+            "MC_S12",
+            "MC_S13"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_MENTAL_CONTAMINATION_WHAT_NOT_TO_SAY.json",
+          "title": "Four Blocks RAG Addendum — Mental Contamination What Not to Say Blueprint",
+          "document_type": "negative_guidance_addendum",
+          "category": "cognitive_framework",
+          "chunk_count": 7,
+          "chunk_ids": [
+            "MCNG_S1",
+            "MCNG_S2",
+            "MCNG_S3",
+            "MCNG_S4",
+            "MCNG_S5",
+            "MCNG_S6",
+            "MCNG_S7"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_SEVEN_IRRATIONAL_BELIEFS_CONSTITUTION.json",
+          "title": "Four Blocks RAG Constitution — Seven Irrational Beliefs Layer",
+          "document_type": "constitution",
+          "category": "cognitive_framework",
+          "chunk_count": 13,
+          "chunk_ids": [
+            "SIB_S1",
+            "SIB_S2",
+            "SIB_S3",
+            "SIB_S4",
+            "SIB_S5",
+            "SIB_S6",
+            "SIB_S7",
+            "SIB_S8",
+            "SIB_S9",
+            "SIB_S10",
+            "SIB_S11",
+            "SIB_S12",
+            "SIB_S13"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_SEVEN_IRRATIONAL_BELIEFS_WHAT_NOT_TO_SAY.json",
+          "title": "Four Blocks RAG Constitution — Seven Irrational Beliefs Negative Guidance Layer",
+          "document_type": "negative_guidance_constitution",
+          "category": "cognitive_framework",
+          "chunk_count": 7,
+          "chunk_ids": [
+            "SIBNG_S1",
+            "SIBNG_S2",
+            "SIBNG_S3",
+            "SIBNG_S4",
+            "SIBNG_S5",
+            "SIBNG_S6",
+            "SIBNG_S7"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_ABCS_CONSTITUTION.json",
+          "title": "Four Blocks RAG Constitution — ABCs Layer",
+          "document_type": "constitution",
+          "category": "cognitive_framework",
+          "chunk_count": 14,
+          "chunk_ids": [
+            "ABC_S1",
+            "ABC_S2",
+            "ABC_S3",
+            "ABC_S4",
+            "ABC_S5",
+            "ABC_S6",
+            "ABC_S7",
+            "ABC_S8",
+            "ABC_S9",
+            "ABC_S10",
+            "ABC_S11",
+            "ABC_S12",
+            "ABC_S13",
+            "ABC_S14"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_ABCS_WHAT_NOT_TO_SAY.json",
+          "title": "Four Blocks RAG Constitution — ABCs Layer Negative Guidance",
+          "document_type": "negative_guidance_constitution",
+          "category": "cognitive_framework",
+          "chunk_count": 15,
+          "chunk_ids": [
+            "ABCNG_S1",
+            "ABCNG_S2",
+            "ABCNG_S3",
+            "ABCNG_S4",
+            "ABCNG_S5",
+            "ABCNG_S6",
+            "ABCNG_S7",
+            "ABCNG_S8",
+            "ABCNG_S9",
+            "ABCNG_S10",
+            "ABCNG_S11",
+            "ABCNG_S12",
+            "ABCNG_S13",
+            "ABCNG_S14",
+            "ABCNG_S15"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_THREE_INSIGHTS_CONSTITUTION.json",
+          "title": "Four Blocks RAG Constitution — Three Insights Layer",
+          "document_type": "constitution",
+          "category": "cognitive_framework",
+          "chunk_count": 11,
+          "chunk_ids": [
+            "TI_S1",
+            "TI_S2",
+            "TI_S3",
+            "TI_S4",
+            "TI_S5",
+            "TI_S6",
+            "TI_S7",
+            "TI_S8",
+            "TI_S9",
+            "TI_S10",
+            "TI_S11"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_THREE_INSIGHTS_WHAT_NOT_TO_SAY.json",
+          "title": "Four Blocks RAG Constitution — Three Insights What Not to Say",
+          "document_type": "negative_guidance_constitution",
+          "category": "cognitive_framework",
+          "chunk_count": 7,
+          "chunk_ids": [
+            "TING_S1",
+            "TING_S2",
+            "TING_S3",
+            "TING_S4",
+            "TING_S5",
+            "TING_S6",
+            "TING_S7"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_HAPPINESS_CONSTITUTION.json",
+          "title": "Four Blocks RAG Constitution — Happiness Core Operating Framework",
+          "document_type": "constitution",
+          "category": "cognitive_framework",
+          "chunk_count": 10,
+          "chunk_ids": [
+            "HAP_S1",
+            "HAP_S2",
+            "HAP_S3",
+            "HAP_S4",
+            "HAP_S5",
+            "HAP_S6",
+            "HAP_S7",
+            "HAP_S8",
+            "HAP_S9",
+            "HAP_S10"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_HAPPINESS_WHAT_NOT_TO_SAY.json",
+          "title": "Four Blocks RAG Constitution — Happiness What Not to Say Framework",
+          "document_type": "negative_guidance_constitution",
+          "category": "cognitive_framework",
+          "chunk_count": 12,
+          "chunk_ids": [
+            "HAPNG_S1",
+            "HAPNG_S2",
+            "HAPNG_S3",
+            "HAPNG_S4",
+            "HAPNG_S5",
+            "HAPNG_S6",
+            "HAPNG_S7",
+            "HAPNG_S8",
+            "HAPNG_S9",
+            "HAPNG_S10",
+            "HAPNG_S11",
+            "HAPNG_S12"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_ETHICAL_LIABILITY_GUARDRAILS.json",
+          "title": "Four Blocks Ethical and Liability Guardrails",
+          "document_type": "ethical_liability_guardrails",
+          "category": "system_policy",
+          "chunk_count": 13,
+          "chunk_ids": [
+            "ELG_S1",
+            "ELG_S2",
+            "ELG_S3",
+            "ELG_S4",
+            "ELG_S5",
+            "ELG_S6",
+            "ELG_S7",
+            "ELG_S8",
+            "ELG_S9",
+            "ELG_S10",
+            "ELG_S11",
+            "ELG_S12",
+            "ELG_S13"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_CONTINUITY_PROTOCOL.json",
+          "title": "Four Blocks AI Continuity and Invocation Protocol",
+          "document_type": "continuity_protocol",
+          "category": "system_policy",
+          "chunk_count": 6,
+          "chunk_ids": [
+            "CP_S1",
+            "CP_S2",
+            "CP_S3",
+            "CP_S4",
+            "CP_S5",
+            "CP_S6"
+          ]
+        },
+        {
+          "filename": "FOUR_BLOCKS_VALIDATION_TESTING_PROTOCOL.json",
+          "title": "Four Blocks System Validation and Testing Protocol",
+          "document_type": "validation_testing_protocol",
+          "category": "system_policy",
+          "chunk_count": 13,
+          "chunk_ids": [
+            "VTP_S1",
+            "VTP_S2",
+            "VTP_S3",
+            "VTP_S4",
+            "VTP_S5",
+            "VTP_S6",
+            "VTP_S7",
+            "VTP_S8",
+            "VTP_S9",
+            "VTP_S10",
+            "VTP_S11",
+            "VTP_S12",
+            "VTP_S13"
+          ]
+        }
+      ]
+    },
+    "behavioral_library": {
+      "purpose": "Provides applied scenario-based responses for real-time emotional intervention. Contains validated, mapped, and reframed responses for Anger, Depression, Anxiety, and Guilt across three real-world scenarios each.",
+      "ingestion_priority": 2,
+      "description": "Retrieved when a user presents an active emotional disturbance. Provides validation, formula mapping, intervention, reframe, and triage question.",
+      "files": [
+        {
+          "filename": "ANGER_prompts_behavioral_library.json",
+          "title": "ANGER_prompts_behavioral_library.json",
+          "document_type": "unknown",
+          "category": "anger",
+          "chunk_count": 12,
+          "chunk_ids": [
+            "ANG_VALIDATION_FIREFIGHTER",
+            "ANG_VALIDATION_BETRAYAL",
+            "ANG_VALIDATION_EMERGING_ADULT",
+            "ANG_FORMULA_CORE",
+            "ANG_MAPPING_FIREFIGHTER",
+            "ANG_MAPPING_BETRAYAL",
+            "ANG_MAPPING_EMERGING_ADULT",
+            "ANG_INTERVENTION_SHOULD_TO_PREFERENCE",
+            "ANG_REFRAME_PROTECTOR",
+            "ANG_REFRAME_DIGNITY",
+            "ANG_REFRAME_MATURITY",
+            "ANG_TRIAGE_QUESTION"
+          ]
+        },
+        {
+          "filename": "DEPRESSION_prompts_behavioral_library.json",
+          "title": "DEPRESSION_prompts_behavioral_library.json",
+          "document_type": "unknown",
+          "category": "depression",
+          "chunk_count": 10,
+          "chunk_ids": [
+            "DEP_VALIDATION_FIRST_RESPONDER_TRAUMA",
+            "DEP_FORMULA_CORE",
+            "DEP_MAPPING_FIRST_RESPONDER",
+            "DEP_MAPPING_DIVORCE_FATHER",
+            "DEP_MAPPING_NICU_NURSE",
+            "DEP_INTERVENTION_NEED_TO_WISH",
+            "DEP_REFRAME_COMPASSION_NOT_WEAKNESS",
+            "DEP_REFRAME_FATHERHOOD_MEANING",
+            "DEP_REFRAME_MEDICAL_COMPASSION",
+            "DEP_TRIAGE_QUESTION"
+          ]
+        },
+        {
+          "filename": "ANXIETY_prompts_behavioral_library.json",
+          "title": "ANXIETY_prompts_behavioral_library.json",
+          "document_type": "unknown",
+          "category": "anxiety",
+          "chunk_count": 12,
+          "chunk_ids": [
+            "ANX_VALIDATION_TEEN_PRESSURE",
+            "ANX_VALIDATION_WORKPLACE",
+            "ANX_VALIDATION_LEGAL",
+            "ANX_FORMULA_CORE",
+            "ANX_MAPPING_TEEN_PRESSURE",
+            "ANX_MAPPING_WORKPLACE",
+            "ANX_MAPPING_LEGAL",
+            "ANX_INTERVENTION_THREE_PART_SOFTENING",
+            "ANX_REFRAME_AUTONOMY",
+            "ANX_REFRAME_DIGNITY_CHOICE",
+            "ANX_REFRAME_PROVIDER_STRENGTH",
+            "ANX_TRIAGE_QUESTION"
+          ]
+        },
+        {
+          "filename": "GUILT_prompts_behavioral_library.json",
+          "title": "GUILT_prompts_behavioral_library.json",
+          "document_type": "unknown",
+          "category": "guilt",
+          "chunk_count": 12,
+          "chunk_ids": [
+            "GUILT_VALIDATION_DETECTIVE",
+            "GUILT_VALIDATION_VETERAN",
+            "GUILT_VALIDATION_MOTHER",
+            "GUILT_FORMULA_CORE",
+            "GUILT_MAPPING_DETECTIVE",
+            "GUILT_MAPPING_VETERAN",
+            "GUILT_MAPPING_MOTHER",
+            "GUILT_INTERVENTION_W1_W2_SEPARATION",
+            "GUILT_REFRAME_DUTY_HONOR",
+            "GUILT_REFRAME_LEGACY_HONOR",
+            "GUILT_REFRAME_LOVE_CENTERED",
+            "GUILT_TRIAGE_QUESTION"
+          ]
+        }
+      ]
+    },
+    "course_library": {
+      "purpose": "Contains Dr. Parr's teaching content. Explains concepts, formulas, and frameworks in instructional form. Used when a user asks how something works, wants to learn, or needs conceptual grounding.",
+      "ingestion_priority": 3,
+      "description": "Retrieved for educational queries, concept explanations, formula definitions, and course-based learning.",
+      "files": [
+        {
+          "filename": "COURSE_EMOTIONAL_FORMULAS.json",
+          "title": "Four Blocks Course — Emotional Formulas",
+          "document_type": "course_content",
+          "category": "emotional_formulas",
+          "chunk_count": 5,
+          "chunk_ids": [
+            "COURSE_FORMULA_ANGER",
+            "COURSE_FORMULA_ANXIETY",
+            "COURSE_FORMULA_DEPRESSION",
+            "COURSE_FORMULA_GUILT",
+            "COURSE_FORMULA_SUMMARY"
+          ]
+        },
+        {
+          "filename": "COURSE_SEVEN_IRRATIONAL_BELIEFS_AND_THREE_INSIGHTS.json",
+          "title": "Four Blocks Course — Seven Irrational Beliefs and Three Insights",
+          "document_type": "course_content",
+          "category": "cognitive_framework",
+          "chunk_count": 12,
+          "chunk_ids": [
+            "COURSE_IB_OVERVIEW",
+            "COURSE_IB_1_IT_STATEMENTS",
+            "COURSE_IB_2_AWFULIZING",
+            "COURSE_IB_3_ICSI",
+            "COURSE_IB_4_SMDS",
+            "COURSE_IB_5_RATING",
+            "COURSE_IB_6_ABSOLUTISTIC_THINKING",
+            "COURSE_IB_7_ENTITLEMENT",
+            "COURSE_THREE_INSIGHTS_OVERVIEW",
+            "COURSE_INSIGHT_1",
+            "COURSE_INSIGHT_2",
+            "COURSE_INSIGHT_3"
+          ]
+        },
+        {
+          "filename": "COURSE_CH01_ANGER.json",
+          "title": "Four Blocks Course — Chapter 01: Anger",
+          "document_type": "course_content",
+          "category": "anger",
+          "chunk_count": 6,
+          "chunk_ids": [
+            "CH01_ANGER_FORMULA",
+            "CH01_ANGER_MENTAL_CONTAMINATION",
+            "CH01_ANGER_STOP_IN_MOMENT",
+            "CH01_ANGER_THREE_INSIGHTS",
+            "CH01_ANGER_KEY_TAKEAWAYS",
+            "CH01_ANGER_CHAPTERS_1_5_APPLIED"
+          ]
+        },
+        {
+          "filename": "COURSE_CH02_DEPRESSION.json",
+          "title": "Four Blocks Course — Chapter 02: Depression",
+          "document_type": "course_content",
+          "category": "depression",
+          "chunk_count": 6,
+          "chunk_ids": [
+            "CH02_DEPRESSION_MENTAL_CONTAMINATION",
+            "CH02_DEPRESSION_THREE_INSIGHTS",
+            "CH02_DEPRESSION_ABCS",
+            "CH02_DEPRESSION_SEVEN_IRRATIONAL_BELIEFS",
+            "CH02_DEPRESSION_FORMULA",
+            "CH02_DEPRESSION_INTEGRATED_SUMMARY"
+          ]
+        },
+        {
+          "filename": "COURSE_CH03_GUILT.json",
+          "title": "Four Blocks Course — Chapter 03: Guilt",
+          "document_type": "course_content",
+          "category": "guilt",
+          "chunk_count": 6,
+          "chunk_ids": [
+            "CH03_GUILT_MENTAL_CONTAMINATION",
+            "CH03_GUILT_THREE_INSIGHTS",
+            "CH03_GUILT_ABCS",
+            "CH03_GUILT_SEVEN_IRRATIONAL_BELIEFS",
+            "CH03_GUILT_FORMULA",
+            "CH03_GUILT_INTEGRATED_SUMMARY"
+          ]
+        },
+        {
+          "filename": "COURSE_CH_ANXIETY.json",
+          "title": "Four Blocks Course — Anxiety Chapter: Chapters 1–5 Applied",
+          "document_type": "course_content",
+          "category": "anxiety",
+          "chunk_count": 6,
+          "chunk_ids": [
+            "CH_ANX_MENTAL_CONTAMINATION",
+            "CH_ANX_THREE_INSIGHTS",
+            "CH_ANX_ABCS",
+            "CH_ANX_SEVEN_IRRATIONAL_BELIEFS",
+            "CH_ANX_HAPPINESS_FORMULA",
+            "CH_ANX_INTEGRATED_SUMMARY"
+          ]
+        },
+        {
+          "filename": "COURSE_CH04_MEDITATION.json",
+          "title": "Four Blocks Course — Chapter 04: Meditation",
+          "document_type": "course_content",
+          "category": "mindfulness",
+          "chunk_count": 5,
+          "chunk_ids": [
+            "CH04_MEDITATION_OBSERVER",
+            "CH04_MEDITATION_FORMULAS",
+            "CH04_MEDITATION_OVERCOME_IRRATIONAL",
+            "CH04_MEDITATION_TECHNIQUES",
+            "CH04_MEDITATION_COMPLEMENTS_FORMULAS"
+          ]
+        },
+        {
+          "filename": "COURSE_CH05_HEALTHY_BODY_MIND.json",
+          "title": "Four Blocks Course — Chapter 05: Healthy Body, Healthy Mind",
+          "document_type": "course_content",
+          "category": "physical_health",
+          "chunk_count": 6,
+          "chunk_ids": [
+            "CH05_HEALTHY_BODY_ANGER",
+            "CH05_HEALTHY_BODY_GUILT",
+            "CH05_HEALTHY_BODY_ANXIETY",
+            "CH05_HEALTHY_BODY_DEPRESSION",
+            "CH05_HEALTHY_BODY_COMPLEMENTS_MODEL",
+            "CH05_HEALTHY_BODY_PRACTICAL_TIPS"
+          ]
+        },
+        {
+          "filename": "COURSE_CH06_OX_HERDING.json",
+          "title": "Four Blocks Course — Chapter 06: Lessons from the 10 Ox-Herding Pictures",
+          "document_type": "course_content",
+          "category": "zen_philosophy",
+          "chunk_count": 5,
+          "chunk_ids": [
+            "CH06_OX_ANGER",
+            "CH06_OX_GUILT",
+            "CH06_OX_ANXIETY",
+            "CH06_OX_DEPRESSION",
+            "CH06_OX_KEY_LESSONS"
+          ]
+        },
+        {
+          "filename": "COURSE_CH07_MASTER_SUMMARY.json",
+          "title": "Four Blocks Course — Chapter 07: Master Summary — You Only Have Four Problems",
+          "document_type": "course_content",
+          "category": "master_summary",
+          "chunk_count": 14,
+          "chunk_ids": [
+            "CH07_MASTER_PREFACE",
+            "CH07_MASTER_CH1_MENTAL_CONTAMINATION",
+            "CH07_MASTER_CH2_THREE_INSIGHTS",
+            "CH07_MASTER_CH3_ABCS",
+            "CH07_MASTER_CH4_SEVEN_IRRATIONAL_BELIEFS",
+            "CH07_MASTER_CH5_ANGER",
+            "CH07_MASTER_CH6_ANXIETY",
+            "CH07_MASTER_CH7_DEPRESSION",
+            "CH07_MASTER_CH8_GUILT",
+            "CH07_MASTER_CH9_HAPPINESS",
+            "CH07_MASTER_CH10_MEDITATION",
+            "CH07_MASTER_CH11_HEALTHY_BODY",
+            "CH07_MASTER_CH12_OX_HERDING",
+            "CH07_MASTER_EPILOGUE"
+          ]
+        },
+        {
+          "filename": "COURSE_CH08_REAL_TIME_PROMPTS.json",
+          "title": "Four Blocks Course — Chapter 08: Real-Time Use Case Prompts",
+          "document_type": "course_content",
+          "category": "implementation",
+          "chunk_count": 9,
+          "chunk_ids": [
+            "CH08_PROMPTS_EMOTIONAL_AWARENESS",
+            "CH08_PROMPTS_DISPUTING",
+            "CH08_PROMPTS_ANGER",
+            "CH08_PROMPTS_ANXIETY",
+            "CH08_PROMPTS_DEPRESSION",
+            "CH08_PROMPTS_GUILT",
+            "CH08_PROMPTS_HAPPINESS",
+            "CH08_PROMPTS_MEDITATION",
+            "CH08_PROMPTS_IMPLEMENTATION_GUIDE"
+          ]
+        },
+        {
+          "filename": "COURSE_CH09_REAL_TIME_PROMPTS_EXTENDED.json",
+          "title": "Four Blocks Course — Chapter 09: Real-Time Prompts Extended",
+          "document_type": "course_content",
+          "category": "implementation",
+          "chunk_count": 11,
+          "chunk_ids": [
+            "CH09_EXT_EMOTIONAL_AWARENESS",
+            "CH09_EXT_DISPUTING",
+            "CH09_EXT_ANGER",
+            "CH09_EXT_ANXIETY",
+            "CH09_EXT_DEPRESSION",
+            "CH09_EXT_GUILT",
+            "CH09_EXT_HAPPINESS",
+            "CH09_EXT_MEDITATION",
+            "CH09_EXT_PROBLEM_SOLVING",
+            "CH09_EXT_SELF_REFLECTION",
+            "CH09_EXT_IMPLEMENTATION_GUIDE"
+          ]
+        }
+      ]
+    }
+  },
+  "routing_rules": {
+    "description": "When a query arrives, the RAG system uses these rules to determine which silo and file to retrieve from first.",
+    "rules": [
+      {
+        "query_type": "Active emotional disturbance",
+        "signals": [
+          "I feel",
+          "I am angry",
+          "I am anxious",
+          "I am depressed",
+          "I feel guilty",
+          "I can't stand",
+          "what if",
+          "should",
+          "I'm worthless"
+        ],
+        "primary_silo": "behavioral_library",
+        "secondary_silo": "constitution",
+        "tertiary_silo": "course_library",
+        "routing_note": "Retrieve formula, validation, mapping, and reframe chunks. Cross-check constitution for anti-drift compliance."
+      },
+      {
+        "query_type": "Conceptual or educational query",
+        "signals": [
+          "what is",
+          "how does",
+          "explain",
+          "teach me",
+          "what does it mean",
+          "why do I",
+          "how do formulas work"
+        ],
+        "primary_silo": "course_library",
+        "secondary_silo": "constitution",
+        "tertiary_silo": "behavioral_library",
+        "routing_note": "Retrieve teaching chunks first. Use constitution to ensure explanation is Four Blocks compliant."
+      },
+      {
+        "query_type": "Governance or compliance check",
+        "signals": [
+          "is this correct",
+          "should the AI",
+          "what are the rules",
+          "what not to say",
+          "anti-drift",
+          "system prompt"
+        ],
+        "primary_silo": "constitution",
+        "secondary_silo": null,
+        "tertiary_silo": null,
+        "routing_note": "Constitution only. No behavioral or course library needed."
+      },
+      {
+        "query_type": "Formula identification",
+        "signals": [
+          "anger formula",
+          "anxiety formula",
+          "depression formula",
+          "guilt formula",
+          "AX =",
+          "D =",
+          "G =",
+          "A ="
+        ],
+        "primary_silo": "course_library",
+        "secondary_silo": "behavioral_library",
+        "tertiary_silo": "constitution",
+        "routing_note": "Retrieve COURSE_EMOTIONAL_FORMULAS first, then emotion-specific chapter, then behavioral library for applied example."
+      },
+      {
+        "query_type": "Meditation or mindfulness",
+        "signals": [
+          "meditation",
+          "centering breath",
+          "observer",
+          "mindfulness",
+          "zen",
+          "present moment",
+          "let go"
+        ],
+        "primary_silo": "course_library",
+        "secondary_silo": "behavioral_library",
+        "tertiary_silo": null,
+        "routing_note": "Retrieve COURSE_CH04_MEDITATION. Cross-reference behavioral library if active disturbance present."
+      },
+      {
+        "query_type": "Crisis or high distress",
+        "signals": [
+          "I can't go on",
+          "hopeless",
+          "worthless",
+          "want to disappear",
+          "nothing matters",
+          "no point"
+        ],
+        "primary_silo": "constitution",
+        "secondary_silo": "behavioral_library",
+        "tertiary_silo": null,
+        "routing_note": "Retrieve FOUR_BLOCKS_ETHICAL_LIABILITY_GUARDRAILS and crisis handling sections first. Then behavioral library for stabilization."
+      },
+      {
+        "query_type": "Practical prompts or implementation",
+        "signals": [
+          "what should I ask",
+          "give me prompts",
+          "daily check-in",
+          "how to apply",
+          "real-time use"
+        ],
+        "primary_silo": "course_library",
+        "secondary_silo": null,
+        "tertiary_silo": null,
+        "routing_note": "Retrieve COURSE_CH08_REAL_TIME_PROMPTS and COURSE_CH09_REAL_TIME_PROMPTS_EXTENDED."
+      }
+    ]
+  },
+  "cross_silo_links": {
+    "description": "Maps how files connect across silos for each emotion and framework.",
+    "anger": {
+      "constitution": "FOUR_BLOCKS_RAG_CONSTITUTION.json",
+      "behavioral_library": "ANGER_prompts_behavioral_library.json",
+      "course_library": "COURSE_CH01_ANGER.json",
+      "formula": "A = ET + S (Anger = Egocentric Thinking + Should)"
+    },
+    "depression": {
+      "constitution": "FOUR_BLOCKS_RAG_CONSTITUTION.json",
+      "behavioral_library": "DEPRESSION_prompts_behavioral_library.json",
+      "course_library": "COURSE_CH02_DEPRESSION.json",
+      "formula": "D = H1 + H2 + N (Depression = Hopelessness + Helplessness + Need)"
+    },
+    "guilt": {
+      "constitution": "FOUR_BLOCKS_RAG_CONSTITUTION.json",
+      "behavioral_library": "GUILT_prompts_behavioral_library.json",
+      "course_library": "COURSE_CH03_GUILT.json",
+      "formula": "G = W1 + W2 (Guilt = Wrongness + Worthlessness)"
+    },
+    "anxiety": {
+      "constitution": "FOUR_BLOCKS_RAG_CONSTITUTION.json",
+      "behavioral_library": "ANXIETY_prompts_behavioral_library.json",
+      "course_library": "COURSE_CH_ANXIETY.json",
+      "formula": "AX = W1 + AW + ACSI (Anxiety = What-If + Awfulizing + I Can't Stand It)"
+    },
+    "mental_contamination": {
+      "constitution": "FOUR_BLOCKS_MENTAL_CONTAMINATION_CONSTITUTION.json",
+      "what_not_to_say": "FOUR_BLOCKS_MENTAL_CONTAMINATION_WHAT_NOT_TO_SAY.json",
+      "course_library": "COURSE_CH07_MASTER_SUMMARY.json"
+    },
+    "seven_irrational_beliefs": {
+      "constitution": "FOUR_BLOCKS_SEVEN_IRRATIONAL_BELIEFS_CONSTITUTION.json",
+      "what_not_to_say": "FOUR_BLOCKS_SEVEN_IRRATIONAL_BELIEFS_WHAT_NOT_TO_SAY.json",
+      "course_library": "COURSE_SEVEN_IRRATIONAL_BELIEFS_AND_THREE_INSIGHTS.json"
+    },
+    "ABCs": {
+      "constitution": "FOUR_BLOCKS_ABCS_CONSTITUTION.json",
+      "what_not_to_say": "FOUR_BLOCKS_ABCS_WHAT_NOT_TO_SAY.json",
+      "course_library": "COURSE_CH07_MASTER_SUMMARY.json"
+    },
+    "three_insights": {
+      "constitution": "FOUR_BLOCKS_THREE_INSIGHTS_CONSTITUTION.json",
+      "what_not_to_say": "FOUR_BLOCKS_THREE_INSIGHTS_WHAT_NOT_TO_SAY.json",
+      "course_library": "COURSE_SEVEN_IRRATIONAL_BELIEFS_AND_THREE_INSIGHTS.json"
+    },
+    "happiness": {
+      "constitution": "FOUR_BLOCKS_HAPPINESS_CONSTITUTION.json",
+      "what_not_to_say": "FOUR_BLOCKS_HAPPINESS_WHAT_NOT_TO_SAY.json",
+      "course_library": "COURSE_CH07_MASTER_SUMMARY.json"
+    },
+    "meditation": {
+      "course_library": "COURSE_CH04_MEDITATION.json"
+    },
+    "healthy_body": {
+      "course_library": "COURSE_CH05_HEALTHY_BODY_MIND.json"
+    },
+    "ox_herding": {
+      "course_library": "COURSE_CH06_OX_HERDING.json"
+    }
+  },
+  "chunk_id_master_registry": {
+    "description": "Every chunk ID across all 32 canonical files in all three silos. Use for direct chunk-level retrieval.",
+    "total_chunk_ids": 306,
+    "ids_by_silo": {
+      "constitution": [
+        "MSP_S1",
+        "MSP_S2",
+        "MSP_S3",
+        "MSP_S4",
+        "MSP_S5",
+        "MSP_S6",
+        "MSP_S7",
+        "MSP_S8",
+        "MSP_S9",
+        "RCP_S1",
+        "RCP_S2",
+        "RCP_S3",
+        "RCP_S4",
+        "RCP_S5",
+        "RCP_S6",
+        "RCP_S7",
+        "RCP_S8",
+        "RCP_S9",
+        "RCP_S10",
+        "CONST_S1",
+        "CONST_S2",
+        "CONST_S3",
+        "CONST_S4",
+        "CONST_S5",
+        "CONST_S6",
+        "CONST_S7",
+        "CONST_S8",
+        "CONST_S9",
+        "MC_S1",
+        "MC_S2",
+        "MC_S3",
+        "MC_S4",
+        "MC_S5",
+        "MC_S6",
+        "MC_S7",
+        "MC_S8",
+        "MC_S9",
+        "MC_S10",
+        "MC_S11",
+        "MC_S12",
+        "MC_S13",
+        "MCNG_S1",
+        "MCNG_S2",
+        "MCNG_S3",
+        "MCNG_S4",
+        "MCNG_S5",
+        "MCNG_S6",
+        "MCNG_S7",
+        "SIB_S1",
+        "SIB_S2",
+        "SIB_S3",
+        "SIB_S4",
+        "SIB_S5",
+        "SIB_S6",
+        "SIB_S7",
+        "SIB_S8",
+        "SIB_S9",
+        "SIB_S10",
+        "SIB_S11",
+        "SIB_S12",
+        "SIB_S13",
+        "SIBNG_S1",
+        "SIBNG_S2",
+        "SIBNG_S3",
+        "SIBNG_S4",
+        "SIBNG_S5",
+        "SIBNG_S6",
+        "SIBNG_S7",
+        "ABC_S1",
+        "ABC_S2",
+        "ABC_S3",
+        "ABC_S4",
+        "ABC_S5",
+        "ABC_S6",
+        "ABC_S7",
+        "ABC_S8",
+        "ABC_S9",
+        "ABC_S10",
+        "ABC_S11",
+        "ABC_S12",
+        "ABC_S13",
+        "ABC_S14",
+        "ABCNG_S1",
+        "ABCNG_S2",
+        "ABCNG_S3",
+        "ABCNG_S4",
+        "ABCNG_S5",
+        "ABCNG_S6",
+        "ABCNG_S7",
+        "ABCNG_S8",
+        "ABCNG_S9",
+        "ABCNG_S10",
+        "ABCNG_S11",
+        "ABCNG_S12",
+        "ABCNG_S13",
+        "ABCNG_S14",
+        "ABCNG_S15",
+        "TI_S1",
+        "TI_S2",
+        "TI_S3",
+        "TI_S4",
+        "TI_S5",
+        "TI_S6",
+        "TI_S7",
+        "TI_S8",
+        "TI_S9",
+        "TI_S10",
+        "TI_S11",
+        "TING_S1",
+        "TING_S2",
+        "TING_S3",
+        "TING_S4",
+        "TING_S5",
+        "TING_S6",
+        "TING_S7",
+        "HAP_S1",
+        "HAP_S2",
+        "HAP_S3",
+        "HAP_S4",
+        "HAP_S5",
+        "HAP_S6",
+        "HAP_S7",
+        "HAP_S8",
+        "HAP_S9",
+        "HAP_S10",
+        "HAPNG_S1",
+        "HAPNG_S2",
+        "HAPNG_S3",
+        "HAPNG_S4",
+        "HAPNG_S5",
+        "HAPNG_S6",
+        "HAPNG_S7",
+        "HAPNG_S8",
+        "HAPNG_S9",
+        "HAPNG_S10",
+        "HAPNG_S11",
+        "HAPNG_S12",
+        "ELG_S1",
+        "ELG_S2",
+        "ELG_S3",
+        "ELG_S4",
+        "ELG_S5",
+        "ELG_S6",
+        "ELG_S7",
+        "ELG_S8",
+        "ELG_S9",
+        "ELG_S10",
+        "ELG_S11",
+        "ELG_S12",
+        "ELG_S13",
+        "CP_S1",
+        "CP_S2",
+        "CP_S3",
+        "CP_S4",
+        "CP_S5",
+        "CP_S6",
+        "VTP_S1",
+        "VTP_S2",
+        "VTP_S3",
+        "VTP_S4",
+        "VTP_S5",
+        "VTP_S6",
+        "VTP_S7",
+        "VTP_S8",
+        "VTP_S9",
+        "VTP_S10",
+        "VTP_S11",
+        "VTP_S12",
+        "VTP_S13"
+      ],
+      "behavioral_library": [
+        "ANG_VALIDATION_FIREFIGHTER",
+        "ANG_VALIDATION_BETRAYAL",
+        "ANG_VALIDATION_EMERGING_ADULT",
+        "ANG_FORMULA_CORE",
+        "ANG_MAPPING_FIREFIGHTER",
+        "ANG_MAPPING_BETRAYAL",
+        "ANG_MAPPING_EMERGING_ADULT",
+        "ANG_INTERVENTION_SHOULD_TO_PREFERENCE",
+        "ANG_REFRAME_PROTECTOR",
+        "ANG_REFRAME_DIGNITY",
+        "ANG_REFRAME_MATURITY",
+        "ANG_TRIAGE_QUESTION",
+        "DEP_VALIDATION_FIRST_RESPONDER_TRAUMA",
+        "DEP_FORMULA_CORE",
+        "DEP_MAPPING_FIRST_RESPONDER",
+        "DEP_MAPPING_DIVORCE_FATHER",
+        "DEP_MAPPING_NICU_NURSE",
+        "DEP_INTERVENTION_NEED_TO_WISH",
+        "DEP_REFRAME_COMPASSION_NOT_WEAKNESS",
+        "DEP_REFRAME_FATHERHOOD_MEANING",
+        "DEP_REFRAME_MEDICAL_COMPASSION",
+        "DEP_TRIAGE_QUESTION",
+        "ANX_VALIDATION_TEEN_PRESSURE",
+        "ANX_VALIDATION_WORKPLACE",
+        "ANX_VALIDATION_LEGAL",
+        "ANX_FORMULA_CORE",
+        "ANX_MAPPING_TEEN_PRESSURE",
+        "ANX_MAPPING_WORKPLACE",
+        "ANX_MAPPING_LEGAL",
+        "ANX_INTERVENTION_THREE_PART_SOFTENING",
+        "ANX_REFRAME_AUTONOMY",
+        "ANX_REFRAME_DIGNITY_CHOICE",
+        "ANX_REFRAME_PROVIDER_STRENGTH",
+        "ANX_TRIAGE_QUESTION",
+        "GUILT_VALIDATION_DETECTIVE",
+        "GUILT_VALIDATION_VETERAN",
+        "GUILT_VALIDATION_MOTHER",
+        "GUILT_FORMULA_CORE",
+        "GUILT_MAPPING_DETECTIVE",
+        "GUILT_MAPPING_VETERAN",
+        "GUILT_MAPPING_MOTHER",
+        "GUILT_INTERVENTION_W1_W2_SEPARATION",
+        "GUILT_REFRAME_DUTY_HONOR",
+        "GUILT_REFRAME_LEGACY_HONOR",
+        "GUILT_REFRAME_LOVE_CENTERED",
+        "GUILT_TRIAGE_QUESTION"
+      ],
+      "course_library": [
+        "COURSE_FORMULA_ANGER",
+        "COURSE_FORMULA_ANXIETY",
+        "COURSE_FORMULA_DEPRESSION",
+        "COURSE_FORMULA_GUILT",
+        "COURSE_FORMULA_SUMMARY",
+        "COURSE_IB_OVERVIEW",
+        "COURSE_IB_1_IT_STATEMENTS",
+        "COURSE_IB_2_AWFULIZING",
+        "COURSE_IB_3_ICSI",
+        "COURSE_IB_4_SMDS",
+        "COURSE_IB_5_RATING",
+        "COURSE_IB_6_ABSOLUTISTIC_THINKING",
+        "COURSE_IB_7_ENTITLEMENT",
+        "COURSE_THREE_INSIGHTS_OVERVIEW",
+        "COURSE_INSIGHT_1",
+        "COURSE_INSIGHT_2",
+        "COURSE_INSIGHT_3",
+        "CH01_ANGER_FORMULA",
+        "CH01_ANGER_MENTAL_CONTAMINATION",
+        "CH01_ANGER_STOP_IN_MOMENT",
+        "CH01_ANGER_THREE_INSIGHTS",
+        "CH01_ANGER_KEY_TAKEAWAYS",
+        "CH01_ANGER_CHAPTERS_1_5_APPLIED",
+        "CH02_DEPRESSION_MENTAL_CONTAMINATION",
+        "CH02_DEPRESSION_THREE_INSIGHTS",
+        "CH02_DEPRESSION_ABCS",
+        "CH02_DEPRESSION_SEVEN_IRRATIONAL_BELIEFS",
+        "CH02_DEPRESSION_FORMULA",
+        "CH02_DEPRESSION_INTEGRATED_SUMMARY",
+        "CH03_GUILT_MENTAL_CONTAMINATION",
+        "CH03_GUILT_THREE_INSIGHTS",
+        "CH03_GUILT_ABCS",
+        "CH03_GUILT_SEVEN_IRRATIONAL_BELIEFS",
+        "CH03_GUILT_FORMULA",
+        "CH03_GUILT_INTEGRATED_SUMMARY",
+        "CH_ANX_MENTAL_CONTAMINATION",
+        "CH_ANX_THREE_INSIGHTS",
+        "CH_ANX_ABCS",
+        "CH_ANX_SEVEN_IRRATIONAL_BELIEFS",
+        "CH_ANX_HAPPINESS_FORMULA",
+        "CH_ANX_INTEGRATED_SUMMARY",
+        "CH04_MEDITATION_OBSERVER",
+        "CH04_MEDITATION_FORMULAS",
+        "CH04_MEDITATION_OVERCOME_IRRATIONAL",
+        "CH04_MEDITATION_TECHNIQUES",
+        "CH04_MEDITATION_COMPLEMENTS_FORMULAS",
+        "CH05_HEALTHY_BODY_ANGER",
+        "CH05_HEALTHY_BODY_GUILT",
+        "CH05_HEALTHY_BODY_ANXIETY",
+        "CH05_HEALTHY_BODY_DEPRESSION",
+        "CH05_HEALTHY_BODY_COMPLEMENTS_MODEL",
+        "CH05_HEALTHY_BODY_PRACTICAL_TIPS",
+        "CH06_OX_ANGER",
+        "CH06_OX_GUILT",
+        "CH06_OX_ANXIETY",
+        "CH06_OX_DEPRESSION",
+        "CH06_OX_KEY_LESSONS",
+        "CH07_MASTER_PREFACE",
+        "CH07_MASTER_CH1_MENTAL_CONTAMINATION",
+        "CH07_MASTER_CH2_THREE_INSIGHTS",
+        "CH07_MASTER_CH3_ABCS",
+        "CH07_MASTER_CH4_SEVEN_IRRATIONAL_BELIEFS",
+        "CH07_MASTER_CH5_ANGER",
+        "CH07_MASTER_CH6_ANXIETY",
+        "CH07_MASTER_CH7_DEPRESSION",
+        "CH07_MASTER_CH8_GUILT",
+        "CH07_MASTER_CH9_HAPPINESS",
+        "CH07_MASTER_CH10_MEDITATION",
+        "CH07_MASTER_CH11_HEALTHY_BODY",
+        "CH07_MASTER_CH12_OX_HERDING",
+        "CH07_MASTER_EPILOGUE",
+        "CH08_PROMPTS_EMOTIONAL_AWARENESS",
+        "CH08_PROMPTS_DISPUTING",
+        "CH08_PROMPTS_ANGER",
+        "CH08_PROMPTS_ANXIETY",
+        "CH08_PROMPTS_DEPRESSION",
+        "CH08_PROMPTS_GUILT",
+        "CH08_PROMPTS_HAPPINESS",
+        "CH08_PROMPTS_MEDITATION",
+        "CH08_PROMPTS_IMPLEMENTATION_GUIDE",
+        "CH09_EXT_EMOTIONAL_AWARENESS",
+        "CH09_EXT_DISPUTING",
+        "CH09_EXT_ANGER",
+        "CH09_EXT_ANXIETY",
+        "CH09_EXT_DEPRESSION",
+        "CH09_EXT_GUILT",
+        "CH09_EXT_HAPPINESS",
+        "CH09_EXT_MEDITATION",
+        "CH09_EXT_PROBLEM_SOLVING",
+        "CH09_EXT_SELF_REFLECTION",
+        "CH09_EXT_IMPLEMENTATION_GUIDE"
+      ]
+    }
+  },
+  "deprecated_files": {
+    "description": "Files present in the outputs directory that are superseded by canonical versions and should NOT be ingested.",
+    "files": [
+      {
+        "filename": "CONSTITUTION_ABCS.json",
+        "reason": "Superseded by FOUR_BLOCKS_ABCS_CONSTITUTION.json"
+      },
+      {
+        "filename": "CONSTITUTION_MENTAL_CONTAMINATION.json",
+        "reason": "Superseded by FOUR_BLOCKS_MENTAL_CONTAMINATION_CONSTITUTION.json"
+      },
+      {
+        "filename": "CONSTITUTION_SEVEN_IRRATIONAL_BELIEFS.json",
+        "reason": "Superseded by FOUR_BLOCKS_SEVEN_IRRATIONAL_BELIEFS_CONSTITUTION.json"
+      },
+      {
+        "filename": "ANGER_behavioral_library.json",
+        "reason": "Superseded by ANGER_prompts_behavioral_library.json"
+      },
+      {
+        "filename": "DEPRESSION_behavioral_library.json",
+        "reason": "Superseded by DEPRESSION_prompts_behavioral_library.json"
+      },
+      {
+        "filename": "ANX_behavioral_library.json",
+        "reason": "Superseded by ANXIETY_prompts_behavioral_library.json"
+      },
+      {
+        "filename": "ANX_course_library.json",
+        "reason": "Superseded by COURSE_CH_ANXIETY.json"
+      },
+      {
+        "filename": "GUILT_course_library.json",
+        "reason": "Superseded by COURSE_CH03_GUILT.json"
+      },
+      {
+        "filename": "COURSE_CH09_EXPANDED_PROMPTS.json",
+        "reason": "Superseded by COURSE_CH09_REAL_TIME_PROMPTS_EXTENDED.json"
+      },
+      {
+        "filename": "COURSE_CH09_EXTENDED_PROMPTS.json",
+        "reason": "Superseded by COURSE_CH09_REAL_TIME_PROMPTS_EXTENDED.json"
+      },
+      {
+        "filename": "COURSE_CH10_ANXIETY.json",
+        "reason": "Superseded by COURSE_CH_ANXIETY.json"
+      },
+      {
+        "filename": "COURSE_MASTER_SUMMARY.json",
+        "reason": "Superseded by COURSE_CH07_MASTER_SUMMARY.json"
+      },
+      {
+        "filename": "COURSE_OVERVIEW.json",
+        "reason": "Early draft superseded by individual chapter files"
+      },
+      {
+        "filename": "anger.json",
+        "reason": "Empty file"
+      },
+      {
+        "filename": "anxiety.json",
+        "reason": "Empty file"
+      },
+      {
+        "filename": "depression.json",
+        "reason": "Empty file"
+      },
+      {
+        "filename": "guilt.json",
+        "reason": "Empty file"
+      }
+    ]
+  }
+}

@@ -13,10 +13,10 @@ https://claude-teal-seven.vercel.app
 Added extensive knowledge base for the AI including:
 
 - **The Four Blocks Framework** - Detailed explanations with formulas, cures, and techniques
-- **The ABCs Model** - How thoughts create emotions (Albert Ellis)
+- **The ABCs Model** - How thoughts create emotions
 - **Seven Irrational Beliefs** - Root causes of suffering with rational alternatives
 - **Zen Mindfulness Practices** - Meditation, observation, and acceptance techniques
-- **REBT/CBT Framework** - 70+ years of research proven effective
+- **Four Blocks Framework** - Developed through decades of clinical experience
 - **Conversation Guidelines** - Best practices for therapeutic dialogue
 - **Warnings & Boundaries** - When to seek professional help
 
@@ -169,7 +169,7 @@ Try asking your enhanced AI:
 
 Responses will now be:
 - More specific to the framework
-- Grounded in research (REBT/CBT)
+- Grounded in the Four Blocks methodology
 - Therapeutically sound
 - Compassionate and empowering
 

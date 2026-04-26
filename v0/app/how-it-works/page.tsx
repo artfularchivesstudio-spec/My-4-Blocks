@@ -132,7 +132,7 @@ export default function HowItWorksPage() {
               </div>
             </section>
 
-            {/* 🧠 The ABC Model - The Heart of REBT */}
+            {/* 🧠 The ABC Model - The Heart of the Four Blocks */}
             <section className="rounded-2xl border border-border bg-card/70 p-6 sm:p-8 shadow-sm backdrop-blur-sm">
               <h2 className="font-serif text-2xl text-foreground mb-6 text-center">
                 The ABC Model
@@ -192,8 +192,8 @@ export default function HowItWorksPage() {
                 <li className="flex gap-3">
                   <span className="text-primary font-semibold flex-shrink-0">1.</span>
                   <span>
-                    <strong className="text-foreground">It&apos;s evidence-based</strong> — grounded in CBT and REBT,
-                    developed by Dr. Albert Ellis and used by therapists worldwide.
+                    <strong className="text-foreground">It&apos;s evidence-based</strong> — grounded in the Four Blocks
+                    framework by Dr. Vincent E. Parr, built on decades of clinical research.
                   </span>
                 </li>
                 <li className="flex gap-3">

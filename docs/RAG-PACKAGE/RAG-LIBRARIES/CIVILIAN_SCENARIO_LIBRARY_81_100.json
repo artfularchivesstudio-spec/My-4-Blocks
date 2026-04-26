@@ -1,0 +1,223 @@
+{
+  "library_id": "CIVILIAN_SCENARIO_LIBRARY_81_100",
+  "version": "1.0",
+  "description": "Civilian Everyday Life Scenario Library — scenarios 81 through 100. Covers loneliness, aging, identity, retirement anxiety, life transitions, and grief. Final batch of the civilian library. Each scenario includes activating event, likely emotions, Four Blocks methodology fix, and rational redirection protocol for RAG ingestion.",
+  "total_scenarios": 20,
+  "roles_covered": ["civilian"],
+  "source": "NotebookLM cross-reference against My4Blocks methodology backbone",
+  "scenarios": [
+    {
+      "scenario_id": "CIV081",
+      "role": "civilian",
+      "activating_event": "Feeling profoundly lonely after the death of a long-term spouse or life partner.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "mental_contamination", "three_insights", "hopelessness", "helplessness", "pseudo_need"],
+      "methodology_fix": "Depression Formula (D = H1 + H2 + N). The user believes they Need their partner's presence to exist and feels Helpless without them — creating Depression through non-acceptance of the loss.",
+      "rational_redirection": "Grief is a natural part of the 10,000 sorrows, but Depression is created by demanding reality be different. Practice Unconditional Acceptance of this loss to find peace in the Now."
+    },
+    {
+      "scenario_id": "CIV082",
+      "role": "civilian",
+      "activating_event": "Feeling anxious and uncertain about identity after retirement removes a long-held professional role.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "namelessness", "mental_contamination", "the_narrator", "rating"],
+      "methodology_fix": "Mental Contamination and Namelessness. The user is replaying a story that their worth and identity depend entirely on their professional role — now that the role is gone, the Self feels undefined.",
+      "rational_redirection": "You are an Ever-Changing System, not a job title. Use the Observer mind to watch these thoughts without rating your entire Self based on a past career."
+    },
+    {
+      "scenario_id": "CIV083",
+      "role": "civilian",
+      "activating_event": "Dreading the physical changes and limitations that come with aging.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "non_acceptance_of_reality", "awfulizing", "what_if_thinking", "staying_now"],
+      "methodology_fix": "Anxiety Formula (AX = WI + AW + ICSI) — Awfulizing the future limitations of the body. The user is treating anticipated physical decline as a catastrophe.",
+      "rational_redirection": "Aging is a provable fact of reality. Use Staying Now to stop the What If horror story about your health. You are standing this moment — you will stand the next."
+    },
+    {
+      "scenario_id": "CIV084",
+      "role": "civilian",
+      "activating_event": "Feeling invisible or irrelevant in social settings due to age.",
+      "likely_emotions": ["depression", "anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["depression_formula", "entitlement", "rating", "unconditional_self_acceptance"],
+      "methodology_fix": "Entitlement and Rating. The user is demanding that others provide specific treatment to validate the Self — and rating their worth based on the level of social attention received.",
+      "rational_redirection": "You would prefer to be noticed, but you do not need social validation to be a person of worth. Practice Unconditional Self-Acceptance regardless of external attention."
+    },
+    {
+      "scenario_id": "CIV085",
+      "role": "civilian",
+      "activating_event": "Grieving the loss of an adult child or close family member and struggling to find meaning afterward.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "three_insights", "non_acceptance_of_reality", "ten_thousand_sorrows"],
+      "methodology_fix": "Non-acceptance of Reality. The user is arguing with an unalterable loss — demanding the person still be present rather than accepting the reality of their absence.",
+      "rational_redirection": "This is part of life's 10,000 sorrows. Acceptance does not mean you are glad it happened — it means you stop fighting reality. 100% Acceptance equals 0% Disturbance."
+    },
+    {
+      "scenario_id": "CIV086",
+      "role": "civilian",
+      "activating_event": "Feeling lost and purposeless after children leave home.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "namelessness", "pseudo_need", "creative_absorption"],
+      "methodology_fix": "Pseudo-Need (N) and Namelessness. The user believes they Need the role of active parent to have purpose or identity — without it, the Self feels undefined.",
+      "rational_redirection": "Being a parent is a behavior, not your entire Self. Identify a new Creative Absorption to provide purpose and meaning in this new stage of life."
+    },
+    {
+      "scenario_id": "CIV087",
+      "role": "civilian",
+      "activating_event": "Anxiety about financial security and whether retirement savings will be sufficient.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "awfulizing", "what_if_thinking", "centering_breath"],
+      "methodology_fix": "Anxiety Formula — What If and Awfulizing (AX = WI + AW + ICSI). The user is projecting worst-case financial scenarios onto a future that has not yet arrived.",
+      "rational_redirection": "Money is a tool, not a necessity for intrinsic worth. Use the Centering Breath to let go of future worries and focus on effective practical action today."
+    },
+    {
+      "scenario_id": "CIV088",
+      "role": "civilian",
+      "activating_event": "Feeling regret about life choices when reflecting on a long career or relationship.",
+      "likely_emotions": ["depression", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "mental_contamination", "depression_formula", "should_belief", "bs_equation"],
+      "methodology_fix": "Guilt Formula (G = W1 + W2) and Mental Contamination. The Narrator is replaying the past with irrational Shoulds — demanding a different history and rating the Self for the choices made.",
+      "rational_redirection": "The past should have happened as it did because the conditions for it occurred. You are a Fallible Human Being. Learn from the memory — Behavior equals Behavior — and stop rating your Self."
+    },
+    {
+      "scenario_id": "CIV089",
+      "role": "civilian",
+      "activating_event": "Struggling to adapt to living alone for the first time after divorce or loss.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "three_insights", "fear_of_uncertainty", "icsi", "centering_breath"],
+      "methodology_fix": "Fear of Uncertainty and I Can't Stand It (ICSI). The user believes that being alone is unendurable — treating solitude as a catastrophic condition rather than a new reality to accept.",
+      "rational_redirection": "Uncertainty is a fact of life, not a threat. Use the Centering Breath to return to the Observer mind and accept your new environment as it is. You have stood everything so far."
+    },
+    {
+      "scenario_id": "CIV090",
+      "role": "civilian",
+      "activating_event": "Feeling angry and bitter about opportunities that seemed to pass by during life.",
+      "likely_emotions": ["anger", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "mental_contamination", "non_acceptance_of_reality", "egocentric_thinking", "should_belief"],
+      "methodology_fix": "Anger Formula (A = ET + S) and Mental Contamination. The user is making an Egocentric Demand that the past should have been different — arguing with an unalterable history.",
+      "rational_redirection": "Arguing with the past is a total waste of time. Replace the demand for a different history with Unconditional Acceptance of your life as it actually happened."
+    },
+    {
+      "scenario_id": "CIV091",
+      "role": "civilian",
+      "activating_event": "Dreading the loss of independence as health declines with age.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "awfulizing", "staying_now", "non_acceptance_of_reality"],
+      "methodology_fix": "Awfulizing and Non-acceptance. The user is predicting that a decline in independence will be unendurable — treating a possible future condition as a current catastrophe.",
+      "rational_redirection": "You cannot predict the exact conditions of your future health. Focus on Staying Now. If conditions change, you will handle them then — just as you have stood everything else in your life."
+    },
+    {
+      "scenario_id": "CIV092",
+      "role": "civilian",
+      "activating_event": "Feeling disconnected from younger generations and out of place in the modern world.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "namelessness", "non_acceptance_of_reality", "unconditional_acceptance_of_others"],
+      "methodology_fix": "Non-acceptance of the World. The user is demanding the modern world align with past expectations — generating depression from the refusal to accept cultural change.",
+      "rational_redirection": "The world is exactly as it should be because the conditions for this current culture exist. Practice Unconditional Acceptance of Others and the World — UAOW."
+    },
+    {
+      "scenario_id": "CIV093",
+      "role": "civilian",
+      "activating_event": "Feeling guilty about not visiting or calling aging parents or relatives more often.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "bs_equation", "wrongness", "worthlessness"],
+      "methodology_fix": "BS Equation (B = S). The user is rating the entire Self as bad for an inadequate behavior — treating infrequent contact as proof of being a worthless family member.",
+      "rational_redirection": "Your behavior was unhelpful — Behavior equals Behavior — but that does not make you a worthless person. Acknowledge the error and choose a more helpful behavior going forward."
+    },
+    {
+      "scenario_id": "CIV094",
+      "role": "civilian",
+      "activating_event": "Feeling anxious about mortality and the growing awareness that life is finite.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anxiety_formula", "mental_contamination", "three_insights", "the_narrator", "centering_breath"],
+      "methodology_fix": "Mental Contamination. The Narrator is generating a story about a future event — death — rather than allowing the user to be present in the life that is happening now.",
+      "rational_redirection": "Death is an inevitable condition of life. Stop the story. Use the Centering Breath and return to the only reality that exists — the breath in this moment."
+    },
+    {
+      "scenario_id": "CIV095",
+      "role": "civilian",
+      "activating_event": "Feeling unfulfilled and questioning whether life has been lived with enough meaning or purpose.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "namelessness", "pseudo_need", "hopelessness", "the_observer"],
+      "methodology_fix": "Depression Formula — Hopelessness and Pseudo-Need. The user believes they Need a grand meaning or purpose to validate their life — without it, the life feels worthless.",
+      "rational_redirection": "The meaning of life is simply to live it. Shift to the Observer and find the extraordinary in the ordinary — chopping wood and carrying water."
+    },
+    {
+      "scenario_id": "CIV096",
+      "role": "civilian",
+      "activating_event": "Struggling with the emotional transition from a full household to an empty nest.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "three_insights", "pseudo_need", "staying_now"],
+      "methodology_fix": "Pseudo-Need and Three Insights. The user believes a full household is necessary for happiness — treating the natural transition of children leaving as a loss of identity and purpose.",
+      "rational_redirection": "Your role has changed but your worth has not. Accept this transition fully. Focus on Staying Now and what this new stage makes possible."
+    },
+    {
+      "scenario_id": "CIV097",
+      "role": "civilian",
+      "activating_event": "Feeling angry about health limitations that prevent activities previously enjoyed.",
+      "likely_emotions": ["anger", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "non_acceptance_of_reality", "egocentric_thinking", "should_belief"],
+      "methodology_fix": "Anger Formula (A = ET + S) and Non-acceptance of Reality. The user is making a Should demand on their body — demanding it perform as it once did rather than accepting its current state.",
+      "rational_redirection": "Your body is as it is because of billions of biological conditions. Accept the hassle factor without the Anger. There is still joy available in what you can do."
+    },
+    {
+      "scenario_id": "CIV098",
+      "role": "civilian",
+      "activating_event": "Feeling isolated and forgotten after moving into assisted living or a care facility.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "namelessness", "hopelessness", "mental_contamination", "the_observer"],
+      "methodology_fix": "Depression Formula — Hopelessness (H1) and Mental Contamination. The user is deciding the current situation is permanent and wholly bad rather than accepting it as a current condition subject to change.",
+      "rational_redirection": "Everything is impermanent and constantly changing. Use the Observer mind to find peace in this environment. 100% Acceptance equals 0% Disturbance."
+    },
+    {
+      "scenario_id": "CIV099",
+      "role": "civilian",
+      "activating_event": "Reflecting on a life of sacrifice for others and wondering if personal dreams were abandoned.",
+      "likely_emotions": ["depression", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "mental_contamination", "guilt_formula", "non_acceptance_of_reality", "fallible_human_beings"],
+      "methodology_fix": "Guilt Formula and Mental Contamination. The user is replaying the past and rating it as catastrophic — generating depression and guilt from a story about what might have been.",
+      "rational_redirection": "You are a Fallible Human Being who made choices under the conditions that existed at the time. Accept your past self unconditionally and let go of the stories about what might have been."
+    },
+    {
+      "scenario_id": "CIV100",
+      "role": "civilian",
+      "activating_event": "Sitting with the accumulated weight of a full life — joys, losses, regrets, and gratitude — and seeking peace.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "three_insights", "ox_forgotten", "staying_now", "ten_thousand_sorrows"],
+      "methodology_fix": "The Ox Forgotten — Staying Now. This is the most advanced stage of the methodology: returning to the origin. The accumulated weight of life is neither good nor bad — it simply is.",
+      "rational_redirection": "You are returning to the origin. Every joy, loss, and regret has brought you to this ordinary extraordinary moment. Breathe and know that everything is exactly as it should be."
+    }
+  ],
+  "implementation_notes": {
+    "library_context": "Civilian Scenario Library — final batch. Covers loneliness, aging, identity, retirement, life transitions, and grief. CIV100 represents the culminating stage of the civilian library — the Ox Forgotten.",
+    "previous_file": "CIVILIAN_SCENARIO_LIBRARY_61_80",
+    "next_file": "None — this is the final civilian scenario library file",
+    "source_tool": "NotebookLM — cross-referenced against My4Blocks methodology backbone PDF",
+    "enhanced_fields": "Includes methodology_fix and rational_redirection fields consistent with full library format",
+    "routing_note": "Match scenario context to user input → identify stage → apply methodology fix → deliver rational redirection through civilian personality layer",
+    "stage_routing": {
+      "pre_event": "Route to anticipatory anxiety or pre-event behavior responses",
+      "during_event": "Route to active coping — SOS method, centering breath, just this task",
+      "post_event": "Route to processing responses — mental contamination protocol, formula application, rational redirection"
+    }
+  }
+}

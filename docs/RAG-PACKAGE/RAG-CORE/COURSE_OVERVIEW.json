@@ -1,0 +1,537 @@
+{
+  "document_type": "course_library",
+  "title": "My Four Blocks — Course Overview",
+  "subtitle": "Master Summary of Dr. Vincent E. Parr's Manual",
+  "version": "1.0",
+  "category": "course_overview",
+  "audience": "general",
+  "source": "Adobe AI Assistant summary of Dr. Parr's course manual",
+  "chunks": [
+    {
+      "id": "COURSE_OV_01",
+      "title": "Course Foundation — Four Primary Emotional Disturbances",
+      "content": "Dr. Parr's framework identifies four primary emotional disturbances that block personal happiness: Anger, Anxiety, Depression, and Guilt. These four emotions are viewed as the root causes of human suffering. Each is a block to happiness and contentment in life. They are universal human challenges experienced by everyone at some point.",
+      "tags": [
+        "overview",
+        "four_emotions",
+        "foundation"
+      ],
+      "keywords": [
+        "anger",
+        "anxiety",
+        "depression",
+        "guilt",
+        "emotional disturbance",
+        "happiness",
+        "four blocks"
+      ],
+      "related": [
+        "COURSE_OV_02",
+        "COURSE_OV_09",
+        "COURSE_OV_10",
+        "COURSE_OV_11",
+        "COURSE_OV_12"
+      ]
+    },
+    {
+      "id": "COURSE_OV_02",
+      "title": "Theoretical Foundation — REBT",
+      "content": "The framework is grounded in Rational Emotive Behavior Therapy (REBT), created by Dr. Albert Ellis. REBT teaches that thoughts shape emotions and that emotional disturbances stem from irrational beliefs and thought patterns. Dr. Parr has over 50 years of clinical experience applying these principles.",
+      "tags": [
+        "REBT",
+        "foundation",
+        "Ellis",
+        "irrational_beliefs"
+      ],
+      "keywords": [
+        "REBT",
+        "rational emotive behavior therapy",
+        "Albert Ellis",
+        "irrational beliefs",
+        "cognitive",
+        "clinical"
+      ],
+      "related": [
+        "COURSE_OV_01",
+        "COURSE_OV_07",
+        "COURSE_OV_08"
+      ]
+    },
+    {
+      "id": "COURSE_OV_03",
+      "title": "Mindfulness — Observer vs Narrator",
+      "content": "Mindfulness is presented as a crucial practice for achieving mental clarity and emotional stability. The Narrator represents the ego and creates stories based on beliefs and perceptions. The Observer is the part of the mind that can objectively view thoughts and experiences without attachment. Training the Observer allows individuals to detach from emotional reactions and make rational choices. The average person has between 60,000 and 74,000 thoughts daily, many of which go unchallenged.",
+      "tags": [
+        "mindfulness",
+        "observer",
+        "narrator",
+        "awareness"
+      ],
+      "keywords": [
+        "observer",
+        "narrator",
+        "mindfulness",
+        "ego",
+        "thoughts",
+        "detachment",
+        "awareness"
+      ],
+      "related": [
+        "COURSE_OV_04",
+        "COURSE_OV_05",
+        "COURSE_OV_06"
+      ]
+    },
+    {
+      "id": "COURSE_OV_04",
+      "title": "Mental Contamination",
+      "content": "Mental contamination is the misinterpretation of opinions and beliefs as facts. This contamination leads to emotional distress and irrational behavior. The average person has between 60,000 and 74,000 thoughts daily, many of which are unchallenged. Challenging unexamined beliefs is essential to reducing suffering.",
+      "tags": [
+        "mental_contamination",
+        "beliefs",
+        "facts",
+        "distortion"
+      ],
+      "keywords": [
+        "mental contamination",
+        "beliefs as facts",
+        "unchallenged thoughts",
+        "irrational",
+        "distress"
+      ],
+      "related": [
+        "COURSE_OV_03",
+        "COURSE_OV_07"
+      ]
+    },
+    {
+      "id": "COURSE_OV_05",
+      "title": "The Negative Feedback Loop",
+      "content": "Negative thoughts create a cycle of emotional distress. The feedback loop works as follows: negative thoughts lead to negative emotions, which lead to negative behaviors, which reinforce negative thoughts. Breaking this cycle requires two essential keys: training the Observer and disputing irrational beliefs.",
+      "tags": [
+        "feedback_loop",
+        "negative_thinking",
+        "cycle",
+        "disputation"
+      ],
+      "keywords": [
+        "negative feedback loop",
+        "cycle",
+        "observer training",
+        "disputation",
+        "irrational beliefs"
+      ],
+      "related": [
+        "COURSE_OV_03",
+        "COURSE_OV_08"
+      ]
+    },
+    {
+      "id": "COURSE_OV_06",
+      "title": "Thinking Mind vs Reactive Mind",
+      "content": "The thinking mind is characterized by awareness and problem-solving capabilities. The reactive mind leads to impulsive emotional responses and a lack of control. Training the thinking mind helps individuals respond effectively rather than reactively to situations.",
+      "tags": [
+        "thinking_mind",
+        "reactive_mind",
+        "awareness",
+        "impulse"
+      ],
+      "keywords": [
+        "thinking mind",
+        "reactive mind",
+        "awareness",
+        "impulsive",
+        "response vs reaction"
+      ],
+      "related": [
+        "COURSE_OV_03",
+        "COURSE_OV_05"
+      ]
+    },
+    {
+      "id": "COURSE_OV_07",
+      "title": "Emotional Responsibility",
+      "content": "Individuals are entirely responsible for their own thoughts, feelings, and behaviors. Emotions are created internally, not by external events or people. Blaming others for emotional disturbances blocks happiness and love. Taking responsibility for one's emotions is the first step toward emotional freedom.",
+      "tags": [
+        "responsibility",
+        "emotional_ownership",
+        "internal",
+        "freedom"
+      ],
+      "keywords": [
+        "emotional responsibility",
+        "internal creation",
+        "blame",
+        "freedom",
+        "ownership"
+      ],
+      "related": [
+        "COURSE_OV_08",
+        "COURSE_OV_02"
+      ]
+    },
+    {
+      "id": "COURSE_OV_08",
+      "title": "The ABC Model",
+      "content": "The ABC model outlines how emotions are formed through activating events, beliefs, and consequences. A is the Activating Event, any situation or behavior that triggers a response. B is the Belief, the internal narrative or belief system that interprets the event. C is the Consequence, the emotional and behavioral response resulting from the belief about the event. Events do not create emotions directly. Beliefs about events create emotions.",
+      "tags": [
+        "ABC_model",
+        "activating_event",
+        "belief",
+        "consequence"
+      ],
+      "keywords": [
+        "ABC model",
+        "activating event",
+        "belief",
+        "consequence",
+        "A B C",
+        "emotional origin"
+      ],
+      "related": [
+        "COURSE_OV_07",
+        "COURSE_OV_09"
+      ]
+    },
+    {
+      "id": "COURSE_OV_09",
+      "title": "Seven Irrational Beliefs",
+      "content": "Seven irrational beliefs contribute to human suffering and emotional disturbance. First, It Statements, blaming external factors for emotions. Second, Awfulizing, exaggerating situations to an extreme level of negativity. Third, I Can't Stand It, believing one cannot endure current conditions. Fourth, Shoulds Musts and Demands, imposing unrealistic expectations on oneself and others. Fifth, Rating, judging oneself or others as globally good or bad. Sixth, Absolutistic Thinking, viewing situations in black-and-white terms. Seventh, the Idea of Entitlement, believing one deserves certain outcomes without effort.",
+      "tags": [
+        "irrational_beliefs",
+        "seven_beliefs",
+        "distortion"
+      ],
+      "keywords": [
+        "irrational beliefs",
+        "awfulizing",
+        "I can't stand it",
+        "shoulds",
+        "musts",
+        "demands",
+        "rating",
+        "absolutistic thinking",
+        "entitlement"
+      ],
+      "related": [
+        "COURSE_OV_08",
+        "COURSE_OV_10"
+      ]
+    },
+    {
+      "id": "COURSE_OV_10",
+      "title": "Disputation Techniques",
+      "content": "Methods for recognizing and disputing irrational beliefs to achieve emotional stability include: Red-Flagging, noticing and marking irrational thoughts as they arise. Cognitive Stoppage, halting negative thought processes to prevent escalation. Using S.O.S., evaluating thoughts about Self, Others, and the Situation to identify disturbances. Replacing irrational beliefs with rational preferences fosters acceptance and peace.",
+      "tags": [
+        "disputation",
+        "red_flagging",
+        "cognitive_stoppage",
+        "SOS"
+      ],
+      "keywords": [
+        "disputation",
+        "red-flagging",
+        "cognitive stoppage",
+        "SOS",
+        "rational preferences",
+        "irrational beliefs"
+      ],
+      "related": [
+        "COURSE_OV_09",
+        "COURSE_OV_11"
+      ]
+    },
+    {
+      "id": "COURSE_OV_11",
+      "title": "Self-Acceptance and Absolutistic Thinking",
+      "content": "Self-acceptance is crucial for emotional well-being and reduces the need for external validation. Self-rating is irrational because performance does not define personal worth. Unconditional self-acceptance means embracing oneself regardless of traits or behaviors. Absolutistic thinking leads to distorted perceptions using terms like always, never, good, and bad. Reality exists in shades of gray, not black and white. Recognizing the fluidity of thoughts and circumstances leads to greater peace.",
+      "tags": [
+        "self_acceptance",
+        "absolutistic_thinking",
+        "self_rating",
+        "unconditional_worth"
+      ],
+      "keywords": [
+        "self-acceptance",
+        "unconditional worth",
+        "self-rating",
+        "absolutistic thinking",
+        "black and white",
+        "always never"
+      ],
+      "related": [
+        "COURSE_OV_09",
+        "COURSE_OV_16"
+      ]
+    },
+    {
+      "id": "COURSE_OV_12",
+      "title": "Formula — Anger",
+      "content": "Anger arises from egocentric thinking combined with demanding beliefs. The formula is: Anger = Egocentric Thinking + Should. Egocentric thinking places oneself at the center, leading to frustration when reality does not align with desires. Anger is a response to insisting that reality should be different than it is. Disputing irrational beliefs can help manage anger effectively.",
+      "tags": [
+        "anger",
+        "formula",
+        "egocentric_thinking",
+        "should"
+      ],
+      "keywords": [
+        "anger formula",
+        "egocentric thinking",
+        "should",
+        "demand",
+        "A = ET + S"
+      ],
+      "related": [
+        "COURSE_OV_01",
+        "COURSE_OV_09"
+      ]
+    },
+    {
+      "id": "COURSE_OV_13",
+      "title": "Formula — Anxiety",
+      "content": "Anxiety is a future-oriented emotion driven by irrational thoughts. The formula is: Anxiety = What If? + Awfulizing + I Can't Stand It. What If statements project fears about future events that may never occur. Awfulizing exaggerates the negative aspects of potential outcomes. I Can't Stand It (ICSI) leads to feelings of helplessness regarding future events. Addressing anxiety involves identifying What If statements, using rational thinking to challenge them, and engaging in gradual exposure to feared situations.",
+      "tags": [
+        "anxiety",
+        "formula",
+        "what_if",
+        "awfulizing",
+        "ACSI"
+      ],
+      "keywords": [
+        "anxiety formula",
+        "what if",
+        "awfulizing",
+        "I can't stand it",
+        "ICSI",
+        "ACSI",
+        "AX = W1 + AW + ACSI"
+      ],
+      "related": [
+        "COURSE_OV_01",
+        "COURSE_OV_09"
+      ]
+    },
+    {
+      "id": "COURSE_OV_14",
+      "title": "Formula — Depression",
+      "content": "Depression is characterized by feelings of hopelessness, helplessness, and need. The formula is: Depression = Hopelessness + Helplessness + Need. Hopelessness involves negative outlooks on the past, present, and future. Helplessness can stem from self-pity and a belief in one's inability to change circumstances. The Need component highlights that perceived needs are often just wants. True needs are limited to essentials like food, water, and shelter. Believing one needs love or approval to be happy leads to feelings of worthlessness. Depression is linked to irrational beliefs and can be countered by acceptance and contentment.",
+      "tags": [
+        "depression",
+        "formula",
+        "hopelessness",
+        "helplessness",
+        "need"
+      ],
+      "keywords": [
+        "depression formula",
+        "hopelessness",
+        "helplessness",
+        "need",
+        "self-pity",
+        "wants vs needs"
+      ],
+      "related": [
+        "COURSE_OV_01",
+        "COURSE_OV_09",
+        "COURSE_OV_15"
+      ]
+    },
+    {
+      "id": "COURSE_OV_15",
+      "title": "Four Pseudo-Needs and Associated Fears",
+      "content": "Four pseudo-needs and their associated fears drive emotional distress across anger, anxiety, and guilt. The four pseudo-needs are love and approval (fear of rejection), success (fear of failure), comfort (fear of pain), and certainty (fear of uncertainty). Recognizing these pseudo-needs and their associated fears helps individuals confront and manage their emotional responses rather than being controlled by self-defeating behaviors.",
+      "tags": [
+        "pseudo_needs",
+        "fears",
+        "love",
+        "approval",
+        "success",
+        "comfort",
+        "certainty"
+      ],
+      "keywords": [
+        "pseudo-needs",
+        "love and approval",
+        "success",
+        "comfort",
+        "certainty",
+        "rejection",
+        "failure",
+        "pain",
+        "uncertainty"
+      ],
+      "related": [
+        "COURSE_OV_14",
+        "COURSE_OV_09"
+      ]
+    },
+    {
+      "id": "COURSE_OV_16",
+      "title": "Formula — Guilt",
+      "content": "Guilt arises from feelings of wrongness and worthlessness, often leading to self-rejection and emotional distress. The formula is: Guilt = Wrongness + Worthlessness. The belief that one must be perfect leads to feelings of guilt when mistakes are made. Disputing irrational beliefs about guilt helps individuals move past feelings of shame and self-loathing. Unconditional self-acceptance is the antidote, embracing fallibility as a universal human trait.",
+      "tags": [
+        "guilt",
+        "formula",
+        "wrongness",
+        "worthlessness",
+        "self_acceptance"
+      ],
+      "keywords": [
+        "guilt formula",
+        "wrongness",
+        "worthlessness",
+        "G = W1 + W2",
+        "self-rejection",
+        "shame",
+        "fallibility"
+      ],
+      "related": [
+        "COURSE_OV_01",
+        "COURSE_OV_11"
+      ]
+    },
+    {
+      "id": "COURSE_OV_17",
+      "title": "Happiness Formulas",
+      "content": "Happiness can be achieved through acceptance and understanding of oneself and the world. The short formula for happiness is: Total Acceptance = Zero Disturbance. The long formula includes three components: Unconditional Self-Acceptance, Unconditional Acceptance of Others, and Staying Present. Practicing acceptance leads to reduced emotional disturbance and greater overall happiness. Happiness in this framework is the absence of irrational disturbance, not the presence of pleasure or excitement.",
+      "tags": [
+        "happiness",
+        "formula",
+        "acceptance",
+        "self_acceptance",
+        "present"
+      ],
+      "keywords": [
+        "happiness formula",
+        "total acceptance",
+        "zero disturbance",
+        "unconditional self-acceptance",
+        "staying present",
+        "contentment"
+      ],
+      "related": [
+        "COURSE_OV_11",
+        "COURSE_OV_01"
+      ]
+    },
+    {
+      "id": "COURSE_OV_18",
+      "title": "Zen Practice and Mindfulness Integration",
+      "content": "Zen meditation enhances awareness and helps manage emotional distress. Meditation helps individuals observe thoughts without reacting, fostering a calm mind. Regular practice improves emotional regulation and reduces symptoms of anxiety and depression. The Ten Ox-Herding Pictures illustrate stages of the journey toward enlightenment and self-realization. Discipline is essential for overcoming past conditioning. Enlightenment is not a destination but a continuous process of living authentically and mindfully in ordinary life.",
+      "tags": [
+        "zen",
+        "mindfulness",
+        "meditation",
+        "enlightenment",
+        "discipline"
+      ],
+      "keywords": [
+        "zen",
+        "meditation",
+        "ox-herding pictures",
+        "enlightenment",
+        "observer",
+        "mindfulness",
+        "discipline"
+      ],
+      "related": [
+        "COURSE_OV_03",
+        "COURSE_OV_06"
+      ]
+    },
+    {
+      "id": "COURSE_OV_19",
+      "title": "Physical Health and Mental Well-Being",
+      "content": "Maintaining physical health is essential for mental clarity and emotional stability. Quality sleep of 7 to 8.5 hours is crucial for mental acuity and emotional health. Regular exercise improves mood and reduces the risk of depression. A balanced diet and adequate hydration support both physical and mental health. Creating a calm atmosphere during mealtimes aids nutrient absorption and mental well-being. Practical tips for managing depression include avoiding isolation, engaging with positive people, practicing meditation, limiting alcohol, and avoiding negative media influences.",
+      "tags": [
+        "physical_health",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "lifestyle"
+      ],
+      "keywords": [
+        "sleep",
+        "exercise",
+        "nutrition",
+        "hydration",
+        "lifestyle",
+        "depression management",
+        "meditation",
+        "isolation"
+      ],
+      "related": [
+        "COURSE_OV_14",
+        "COURSE_OV_18"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve_for_general_orientation": [
+      "COURSE_OV_01",
+      "COURSE_OV_02",
+      "COURSE_OV_08"
+    ],
+    "retrieve_by_emotion": [
+      {
+        "emotion": "anger",
+        "chunks": [
+          "COURSE_OV_12",
+          "COURSE_OV_09"
+        ]
+      },
+      {
+        "emotion": "anxiety",
+        "chunks": [
+          "COURSE_OV_13",
+          "COURSE_OV_09"
+        ]
+      },
+      {
+        "emotion": "depression",
+        "chunks": [
+          "COURSE_OV_14",
+          "COURSE_OV_15"
+        ]
+      },
+      {
+        "emotion": "guilt",
+        "chunks": [
+          "COURSE_OV_16",
+          "COURSE_OV_11"
+        ]
+      }
+    ],
+    "retrieve_by_concept": [
+      {
+        "concept": "mindfulness OR observer OR narrator",
+        "chunks": [
+          "COURSE_OV_03",
+          "COURSE_OV_06",
+          "COURSE_OV_18"
+        ]
+      },
+      {
+        "concept": "irrational_beliefs OR disputation",
+        "chunks": [
+          "COURSE_OV_09",
+          "COURSE_OV_10"
+        ]
+      },
+      {
+        "concept": "happiness OR acceptance",
+        "chunks": [
+          "COURSE_OV_17",
+          "COURSE_OV_11"
+        ]
+      },
+      {
+        "concept": "ABC model OR emotional origin",
+        "chunks": [
+          "COURSE_OV_08",
+          "COURSE_OV_07"
+        ]
+      }
+    ]
+  }
+}

@@ -217,8 +217,8 @@ export default function PrivacyPage() {
               </h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-3">
                 <strong className="text-foreground">My 4 Blocks is not a replacement for professional
-                mental health care.</strong> While our AI companion is grounded in CBT and REBT
-                principles, it is an educational and supportive tool — not a licensed therapist.
+                mental health care.</strong> While our AI companion is grounded in the Four Blocks
+                framework, it is an educational and supportive tool — not a licensed therapist.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 If you&apos;re experiencing severe emotional distress, suicidal thoughts, or a mental

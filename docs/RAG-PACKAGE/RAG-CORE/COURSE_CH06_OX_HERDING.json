@@ -1,0 +1,234 @@
+{
+  "document_type": "course_content",
+  "title": "Four Blocks Course — Chapter 06: Lessons from the 10 Ox-Herding Pictures",
+  "subtitle": "Metaphorical Journey Toward Self-Awareness, Acceptance, and Enlightenment Applied to the Four Emotions",
+  "version": "1.0",
+  "category": "zen_philosophy",
+  "source": "Dr. Vincent E. Parr — My Four Blocks Course",
+  "audience": "general",
+  "chunks": [
+    {
+      "id": "CH06_OX_ANGER",
+      "title": "Ox-Herding Pictures Applied to Anger",
+      "overview": "Anger arises from egocentric thinking and Shoulds, Musts, and Demands. The Ox-Herding Pictures teach letting go of rigid expectations and embracing acceptance.",
+      "pictures_applied": [
+        {
+          "picture": "Picture 1 — Searching for the Ox",
+          "lesson": "Anger often stems from searching for control over external circumstances. The source of peace lies within, not in controlling others or the world.",
+          "application": "When anger arises, recognize it is caused by the belief that reality should conform to your preferences. Let go of the search for external validation and focus on observing thoughts and accepting the present moment."
+        },
+        {
+          "picture": "Picture 5 — Herding the Ox",
+          "lesson": "This picture emphasizes discipline and awareness. Anger can be managed by training the mind to observe irrational beliefs and replace them with rational ones.",
+          "application": "Use meditation and mindfulness to notice the Shoulds and Demands fueling anger. Practice letting go of these beliefs and accepting reality as it is."
+        }
+      ],
+      "tags": [
+        "ox_herding",
+        "anger",
+        "acceptance",
+        "discipline",
+        "should",
+        "egocentric_thinking"
+      ],
+      "keywords": [
+        "ox herding",
+        "anger",
+        "searching for ox",
+        "herding ox",
+        "acceptance",
+        "shoulds",
+        "discipline"
+      ]
+    },
+    {
+      "id": "CH06_OX_GUILT",
+      "title": "Ox-Herding Pictures Applied to Guilt",
+      "overview": "Guilt is rooted in wrongness and worthlessness, often accompanied by self-rejection. The Ox-Herding Pictures guide toward self-acceptance and the realization that essence is not defined by behavior.",
+      "pictures_applied": [
+        {
+          "picture": "Picture 3 — Seeing the Ox",
+          "lesson": "This picture represents recognition of your true nature. Guilt arises from self-rating and the belief that mistakes define worth. The true self is separate from behavior.",
+          "application": "When guilt arises, observe the belief that you are bad because of your actions. Dispute this by reminding yourself that behavior does not equal self-worth (B ≠ S). Your essence remains whole and complete regardless of mistakes."
+        },
+        {
+          "picture": "Picture 7 — The Ox Forgotten, Leaving the Man Alone",
+          "lesson": "This picture symbolizes the realization that the self and reality are not separate. Guilt stems from clinging to the past and rejecting yourself for perceived mistakes.",
+          "application": "Practice unconditional self-acceptance. Recognize that you are a fallible human being and that mistakes are part of life. Let go of the past and focus on the present moment."
+        }
+      ],
+      "tags": [
+        "ox_herding",
+        "guilt",
+        "self_acceptance",
+        "worthlessness",
+        "true_nature",
+        "fallible_human_being"
+      ],
+      "keywords": [
+        "ox herding",
+        "guilt",
+        "seeing ox",
+        "self-acceptance",
+        "behavior not equal self",
+        "fallible human being",
+        "non-duality"
+      ]
+    },
+    {
+      "id": "CH06_OX_ANXIETY",
+      "title": "Ox-Herding Pictures Applied to Anxiety",
+      "overview": "Anxiety is driven by What If thinking, Awfulizing, and ICSI beliefs. The Ox-Herding Pictures teach letting go of fear and embracing the present moment.",
+      "pictures_applied": [
+        {
+          "picture": "Picture 4 — Catching the Ox",
+          "lesson": "This picture emphasizes the struggle to overcome old habits and conditioning. Anxiety arises from deeply ingrained patterns of irrational thinking. Catching the Ox symbolizes the effort required to break free.",
+          "application": "Use meditation to observe What If thoughts and recognize them as stories created by the mind. Dispute these thoughts by asking: Is this true? Is it absolutely true? Replace them with rational beliefs."
+        },
+        {
+          "picture": "Picture 6 — Coming Home on the Ox's Back",
+          "lesson": "This picture represents the joy and tranquility that come from overcoming fear and anxiety. Riding the Ox symbolizes the ability to stay present and let go of irrational beliefs.",
+          "application": "When anxiety arises, use the Centering Breath to calm body and mind. Focus on the present moment and let go of catastrophic thinking about the future."
+        }
+      ],
+      "tags": [
+        "ox_herding",
+        "anxiety",
+        "what_if",
+        "present_moment",
+        "centering_breath",
+        "irrational_patterns"
+      ],
+      "keywords": [
+        "ox herding",
+        "anxiety",
+        "catching ox",
+        "coming home",
+        "what if",
+        "centering breath",
+        "catastrophic thinking"
+      ]
+    },
+    {
+      "id": "CH06_OX_DEPRESSION",
+      "title": "Ox-Herding Pictures Applied to Depression",
+      "overview": "Depression is caused by hopelessness, helplessness, and pseudo-needs. The Ox-Herding Pictures guide toward acceptance and the realization that the ultimate is found in the ordinary.",
+      "pictures_applied": [
+        {
+          "picture": "Picture 1 — Searching for the Ox",
+          "lesson": "Depression often involves searching for meaning or fulfillment outside of yourself. The answers we seek are already within us.",
+          "application": "When feeling depressed, recognize that pseudo-needs such as the need for love, success, or certainty are driving hopelessness and helplessness. Let go of these demands and focus on the present moment."
+        },
+        {
+          "picture": "Picture 9 — Returning to the Origin, Back to the Source",
+          "lesson": "This picture emphasizes the profound truths found in ordinary life. Depression stems from rejecting the present moment and longing for a different reality.",
+          "application": "Practice gratitude for simple, ordinary moments. Focus on the beauty of the present moment and let go of the belief that happiness depends on external circumstances."
+        }
+      ],
+      "tags": [
+        "ox_herding",
+        "depression",
+        "hopelessness",
+        "helplessness",
+        "pseudo_needs",
+        "acceptance",
+        "ordinary_life"
+      ],
+      "keywords": [
+        "ox herding",
+        "depression",
+        "searching for ox",
+        "returning to source",
+        "pseudo-needs",
+        "gratitude",
+        "ordinary life"
+      ]
+    },
+    {
+      "id": "CH06_OX_KEY_LESSONS",
+      "title": "Key Lessons from the Ox-Herding Pictures",
+      "lessons": [
+        {
+          "lesson": "Acceptance",
+          "description": "The pictures emphasize accepting reality as it is, not as you wish it to be. This aligns with Dr. Parr's formula for happiness: 100% Acceptance = 0% Disturbance.",
+          "application": "When you feel anger, guilt, anxiety, or depression, ask yourself: What am I not accepting in this moment? Practice letting go of resistance and embracing reality."
+        },
+        {
+          "lesson": "Non-Duality",
+          "description": "The pictures teach that the self and reality are not separate. This realization helps let go of self-rating and the belief that worth is tied to external circumstances.",
+          "application": "When feeling guilt or depression, remind yourself that your essence is not defined by behavior or circumstances. You are interconnected with all of existence."
+        },
+        {
+          "lesson": "Living in the Present",
+          "description": "The pictures emphasize staying in the Now. Emotional disturbance often arises from clinging to the past or worrying about the future.",
+          "application": "Use meditation to anchor yourself in the present moment. Focus on breath and let go of thoughts about the past or future."
+        },
+        {
+          "lesson": "Discipline and Practice",
+          "description": "The pictures highlight the importance of disciplined practice in overcoming old habits and irrational thinking. Consistent meditation and mindfulness train the Observer and dispute irrational beliefs.",
+          "application": "Commit to daily meditation and mindfulness practice. Use this time to observe thoughts, identify irrational beliefs, and replace them with rational ones."
+        },
+        {
+          "lesson": "Compassion and Creativity",
+          "description": "The final picture emphasizes sharing enlightened existence with others through compassion and creativity. Helping others reduces feelings of guilt and depression while fostering purpose and connection.",
+          "application": "Engage in acts of kindness and creative pursuits to shift focus from self-centered thinking to interconnectedness with others."
+        }
+      ],
+      "tags": [
+        "ox_herding",
+        "key_lessons",
+        "acceptance",
+        "non_duality",
+        "present_moment",
+        "discipline",
+        "compassion"
+      ],
+      "keywords": [
+        "acceptance",
+        "non-duality",
+        "present moment",
+        "discipline",
+        "compassion",
+        "creativity",
+        "100% acceptance 0% disturbance"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve_for_ox_herding_queries": [
+      "CH06_OX_KEY_LESSONS"
+    ],
+    "retrieve_by_context": [
+      {
+        "context": "ox herding AND anger",
+        "chunks": [
+          "CH06_OX_ANGER"
+        ]
+      },
+      {
+        "context": "ox herding AND guilt",
+        "chunks": [
+          "CH06_OX_GUILT"
+        ]
+      },
+      {
+        "context": "ox herding AND anxiety",
+        "chunks": [
+          "CH06_OX_ANXIETY"
+        ]
+      },
+      {
+        "context": "ox herding AND depression",
+        "chunks": [
+          "CH06_OX_DEPRESSION"
+        ]
+      },
+      {
+        "context": "acceptance OR non-duality OR present moment OR discipline AND four blocks",
+        "chunks": [
+          "CH06_OX_KEY_LESSONS"
+        ]
+      }
+    ]
+  }
+}

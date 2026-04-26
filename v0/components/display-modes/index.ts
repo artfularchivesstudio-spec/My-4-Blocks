@@ -21,7 +21,7 @@ export type { InlineBeliefCardProps } from './inline-belief-card'
 export { DailyPlanCard } from './daily-plan-card'
 export type { DailyPlanCardProps } from './daily-plan-card'
 
-// 💡 Concept Card - Bite-sized CBT/REBT educational content
+// 💡 Concept Card - Bite-sized Four Blocks educational content
 export { ConceptCard } from './concept-card'
 export type { ConceptCardProps } from './concept-card'
 

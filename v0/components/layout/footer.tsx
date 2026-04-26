@@ -27,10 +27,9 @@ export function Footer() {
             <span>by Dr. Vincent E. Parr</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <span>Inspired by</span>
-            <span className="text-foreground font-medium">Albert Ellis</span>
-            <span>&</span>
-            <span className="text-foreground font-medium">CBT</span>
+            <span>The</span>
+            <span className="text-foreground font-medium">Four Blocks</span>
+            <span>framework</span>
             <Heart className="h-3 w-3 text-guilt" />
           </div>
         </div>

@@ -6,7 +6,7 @@
  *
  * This tool weaves together morning intentions, block awareness, and evening
  * reflection into a structured daily practice. No toxic positivity here -
- * just rational, REBT-style affirmations that acknowledge reality while
+ * just rational, Four Blocks-style affirmations that acknowledge reality while
  * encouraging growth.
  *
  * - The Spellbinding Daily Orchestrator of My 4 Blocks
@@ -228,7 +228,7 @@ const EVENING_QUESTIONS: Record<'quick' | 'moderate' | 'extended', string[][]> =
       "What beliefs drove my emotional responses, and are they serving me?",
     ],
     [
-      'If I could go back with REBT wisdom, which moment would I approach differently?',
+      'If I could go back with Four Blocks wisdom, which moment would I approach differently?',
       'Where did I practice (or fail to practice) unconditional self-acceptance?',
       'What did today teach me about my relationship with discomfort?',
     ],
@@ -241,7 +241,7 @@ const EVENING_QUESTIONS: Record<'quick' | 'moderate' | 'extended', string[][]> =
 }
 
 /**
- * 🙏 Gratitude prompts - REBT-style (acknowledging reality, not toxic positivity)
+ * 🙏 Gratitude prompts - Four Blocks-style (acknowledging reality, not toxic positivity)
  *
  * "Gratitude is the art of seeing clearly, not the delusion of seeing rosily!" 🌹
  */
@@ -261,7 +261,7 @@ const GRATITUDE_PROMPTS: string[] = [
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
- * 💎 REBT-style affirmations - grounded, rational, and actually helpful
+ * 💎 Four Blocks-style affirmations - grounded, rational, and actually helpful
  * No "I am perfect just as I am" nonsense - just clear-eyed wisdom
  *
  * "A good affirmation is a compass, not a blindfold!" 🧭✨
@@ -431,7 +431,7 @@ function generateAffirmation(
  * 🎭 The Main Daily Plan Creation Function - The Grand Orchestrator
  *
  * Takes the user's input and weaves together a complete daily emotional
- * wellness plan using the 4 Blocks framework. This is REBT in action:
+ * wellness plan using the 4 Blocks framework. Dr. Parr's wisdom in action:
  * practical, rational, and compassionate without being saccharine.
  *
  * @param input - The user's preferences: focus areas, challenges, intentions, time available

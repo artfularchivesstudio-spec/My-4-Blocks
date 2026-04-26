@@ -21,7 +21,7 @@ After reviewing OpenAI's official ChatGPT Apps SDK documentation, I've identifie
 ### 1. Extract Atomic Actions from Current Implementation ⭐ **High Priority**
 
 **Current State:**
-- The main chat interface (`v0/`) provides general CBT/REBT conversation.
+- The main chat interface (`v0/`) provides general Four Blocks conversation.
 - ChatKit integration (`codex/chatkit-home/`) offers suggested prompts but lacks focused tools.
 
 **OpenAI Best Practice:**
@@ -76,7 +76,7 @@ After reviewing OpenAI's official ChatGPT Apps SDK documentation, several opport
 ### 1. Extract Atomic Actions from Current Implementation ⭐ **High Priority**
 
 **Current State**
-- The main chat interface (`v0/`) provides general CBT/REBT conversation.
+- The main chat interface (`v0/`) provides general Four Blocks conversation.
 - ChatKit integration (`codex/chatkit-home/`) offers suggested prompts but lacks focused tools.
 
 **OpenAI Best Practice**
@@ -148,7 +148,7 @@ After reviewing OpenAI's official ChatGPT Apps SDK documentation, several opport
 4. Move comprehensive documentation to external website, keep ChatGPT interface focused on active problem-solving
 
 **Files to Create/Modify**
-- New: `components/cards/concept-card.tsx` (for bite-sized CBT concepts)
+- New: `components/cards/concept-card.tsx` (for bite-sized Four Blocks concepts)
 - New: `components/cards/belief-card.tsx` (for displaying identified beliefs)
 - Modify: `app/about/page.tsx` → Convert to conversational FAQ format
 - Modify: `app/book/page.tsx` → External link or shortened version
@@ -338,7 +338,7 @@ When defining tools in the workflow, ensure proper annotations:
 
 | Criterion                            | Status   | Notes                                               |
 |---------------------------------------|----------|-----------------------------------------------------|
-| Conversational value                  | ✅        | Leverages natural language for CBT therapy          |
+| Conversational value                  | ✅        | Leverages natural language for emotional wellness          |
 | Beyond base ChatGPT                   | ✅        | Dr. Parr's framework & structured approach          |
 | Atomic, model-friendly actions        | ❌        | Need to extract into focused tools (see #1)         |
 | Helpful UI only                       | ⚠️        | Some pages are long-form content                    |
@@ -710,7 +710,7 @@ _UI Pattern:_ Progressive disclosure (show less, let users expand)
    - Screenshots/mockups of the chat experience
    - Example conversations (anonymized)
 2. `/the-framework` page (deep dive)
-   - Full explanation of REBT/CBT foundations
+   - Full explanation of the Four Blocks foundations
    - The Seven Irrational Beliefs in detail
    - Disputation techniques explained
    - Link to book for further reading

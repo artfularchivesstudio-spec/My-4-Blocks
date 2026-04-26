@@ -161,7 +161,7 @@ vercel deploy --prod
 - The ABCs of emotion creation
 - The Seven Irrational Beliefs
 - Zen mindfulness practices
-- Albert Ellis's REBT framework
+- Dr. Parr's cognitive approach
 
 ---
 

@@ -7,7 +7,7 @@
  *
  * This endpoint generates TWO distinct responses for the same query,
  * letting users compare and choose their preferred guidance style.
- * It's like a cognitive behavioral therapy showdown! 🎭
+ * It's like a Four Blocks framework showdown! 🎭
  *
  * Blueprint A = Structured & Methodical (the GPS navigator)
  * Blueprint B = Warm & Conversational (the wise coffee shop friend)

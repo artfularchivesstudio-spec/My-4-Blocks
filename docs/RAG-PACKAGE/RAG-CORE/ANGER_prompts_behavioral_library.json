@@ -1,0 +1,325 @@
+{
+  "chapter": "ANGER",
+  "category": "anger",
+  "audience": "general",
+  "formula": "A = ET + S (Anger = Egocentric Thinking + Should Thinking) / I'm Right + You're Wrong + You Shouldn't = Anger",
+  "chunks": [
+    {
+      "id": "ANG_VALIDATION_FIREFIGHTER",
+      "title": "Validation — Firefighter Child Fatality Rage",
+      "content": "What you are carrying as a firefighter and a father of three is not small. Seeing children burned, carrying them out, and then going home to your own kids hits a man in a very deep place. The anger you are feeling does not mean you are a bad person. Most of the time it means something inside you cares fiercely about protecting life.",
+      "tags": [
+        "validation",
+        "firefighter",
+        "trauma",
+        "anger",
+        "moral_injury"
+      ],
+      "keywords": [
+        "firefighter",
+        "child fatality",
+        "father",
+        "protector",
+        "moral injury"
+      ],
+      "related": [
+        "ANG_FORMULA_CORE",
+        "ANG_MAPPING_FIREFIGHTER",
+        "ANG_REFRAME_PROTECTOR"
+      ]
+    },
+    {
+      "id": "ANG_VALIDATION_BETRAYAL",
+      "title": "Validation — Marital Betrayal",
+      "content": "Finding out that your husband of 28 years has been cheating, and that it has been going on for years, is a deep betrayal. Feeling intensely angry right now does not mean you are broken. It means something inside you recognizes you were hurt and something important was violated.",
+      "tags": [
+        "validation",
+        "betrayal",
+        "marriage",
+        "anger",
+        "dignity"
+      ],
+      "keywords": [
+        "betrayal",
+        "infidelity",
+        "marriage",
+        "humiliation",
+        "trust"
+      ],
+      "related": [
+        "ANG_FORMULA_CORE",
+        "ANG_MAPPING_BETRAYAL",
+        "ANG_REFRAME_DIGNITY"
+      ]
+    },
+    {
+      "id": "ANG_VALIDATION_EMERGING_ADULT",
+      "title": "Validation — Emerging Adult Independence Conflict",
+      "content": "Being 18, about to graduate, and standing at the edge of your own life is a huge transition. Feeling angry when it seems like your parents are still treating you like a child does not make you a bad son. It usually means something inside you is pushing for independence, respect, and adulthood.",
+      "tags": [
+        "validation",
+        "emerging_adult",
+        "independence",
+        "anger",
+        "development"
+      ],
+      "keywords": [
+        "independence",
+        "parents",
+        "control",
+        "emerging adult",
+        "college",
+        "graduation"
+      ],
+      "related": [
+        "ANG_FORMULA_CORE",
+        "ANG_MAPPING_EMERGING_ADULT",
+        "ANG_REFRAME_MATURITY"
+      ]
+    },
+    {
+      "id": "ANG_FORMULA_CORE",
+      "title": "Core Formula — Anger (Egocentric Thinking Formula)",
+      "content": "In Dr. Parr's Four Blocks model, anger follows the Egocentric Thinking Formula expressed as A = ET + S. A is Anger. ET is Egocentric Thinking, meaning I am right and you are wrong. S is Should Thinking, meaning you should not be doing this or this must not happen. This can also be stated as: I'm Right + You're Wrong + You Shouldn't = Anger. When Egocentric Thinking combines with a rigid Should, the emotional result is anger. This formula must appear before any interpretation or intervention to maintain Parr-accurate clinical fidelity.",
+      "tags": [
+        "formula",
+        "four_blocks",
+        "anger",
+        "egocentric_thinking"
+      ],
+      "keywords": [
+        "anger formula",
+        "egocentric thinking",
+        "should",
+        "ET",
+        "S",
+        "A = ET + S",
+        "four blocks"
+      ],
+      "related": [
+        "ANG_INTERVENTION_SHOULD_TO_PREFERENCE",
+        "ANG_MAPPING_FIREFIGHTER",
+        "ANG_MAPPING_BETRAYAL",
+        "ANG_MAPPING_EMERGING_ADULT"
+      ]
+    },
+    {
+      "id": "ANG_MAPPING_FIREFIGHTER",
+      "title": "Mapping — Firefighter Moral Injury Anger",
+      "content": "Egocentric Thinking (I'm Right): A father is supposed to protect his family. You do not put your kids in danger. This was preventable. Egocentric Thinking (They're Wrong): They failed their job. They were careless or stupid. These kids are paying the price. Should Thinking: This must not happen. Parents should never let this happen to their kids. This is unacceptable. These map directly onto the Four Blocks anger formula A = ET + S.",
+      "tags": [
+        "mapping",
+        "firefighter",
+        "moral_injury",
+        "anger"
+      ],
+      "keywords": [
+        "moral injury",
+        "negligence",
+        "child death",
+        "firefighter",
+        "protector",
+        "careless parents"
+      ],
+      "related": [
+        "ANG_FORMULA_CORE",
+        "ANG_INTERVENTION_SHOULD_TO_PREFERENCE"
+      ]
+    },
+    {
+      "id": "ANG_MAPPING_BETRAYAL",
+      "title": "Mapping — Marital Betrayal Anger",
+      "content": "Egocentric Thinking (I'm Right): I was faithful. I gave everything to this marriage. I treated him the way a spouse should be treated. Egocentric Thinking (He's Wrong): He lied to me. He betrayed our marriage. He humiliated me and took advantage of my trust. Should Thinking: He should never have done this. This must not happen in a real marriage. I did not deserve this. These map directly onto the Four Blocks anger formula A = ET + S.",
+      "tags": [
+        "mapping",
+        "betrayal",
+        "marriage",
+        "anger"
+      ],
+      "keywords": [
+        "betrayal",
+        "infidelity",
+        "loyalty",
+        "humiliation",
+        "marriage vows"
+      ],
+      "related": [
+        "ANG_FORMULA_CORE",
+        "ANG_INTERVENTION_SHOULD_TO_PREFERENCE"
+      ]
+    },
+    {
+      "id": "ANG_MAPPING_EMERGING_ADULT",
+      "title": "Mapping — Emerging Adult Independence Anger",
+      "content": "Egocentric Thinking (I'm Right): I am an adult now. I should be able to make my own choices. I am ready to live my life. Egocentric Thinking (They're Wrong): They are controlling. They do not respect me. They are treating me like a kid. Should Thinking: They should not control me anymore. They must respect that I am an adult. This should not be happening at my age. These map directly onto the Four Blocks anger formula A = ET + S.",
+      "tags": [
+        "mapping",
+        "emerging_adult",
+        "independence",
+        "anger"
+      ],
+      "keywords": [
+        "independence",
+        "autonomy",
+        "control",
+        "parental conflict",
+        "adulthood",
+        "A = ET + S"
+      ],
+      "related": [
+        "ANG_FORMULA_CORE",
+        "ANG_INTERVENTION_SHOULD_TO_PREFERENCE"
+      ]
+    },
+    {
+      "id": "ANG_INTERVENTION_SHOULD_TO_PREFERENCE",
+      "title": "Intervention — Should to Preference Shift",
+      "content": "The Four Blocks change happens in just one place: softening the rigid Should while keeping values intact. From: They should never do this. To: I really want things to be different. I wish this had not happened. But this is the reality in front of me, and I can still choose how I respond and who I become. This is not excusing anyone, letting them off the hook, or weakening moral standards. It is making sure their choices do not own your mind. When Should softens into a strong preference, the formula changes: ET + softer S produces less anger. Rage intensity lowers, personal control returns, and values remain intact.",
+      "tags": [
+        "intervention",
+        "should_shift",
+        "preference",
+        "four_blocks",
+        "anger"
+      ],
+      "keywords": [
+        "should",
+        "preference",
+        "cognitive shift",
+        "anger relief",
+        "demand",
+        "rigid thinking",
+        "ET + S"
+      ],
+      "related": [
+        "ANG_FORMULA_CORE"
+      ]
+    },
+    {
+      "id": "ANG_REFRAME_PROTECTOR",
+      "title": "Reframe — Protector Identity (Firefighter)",
+      "content": "The intensity of your anger is usually connected to something honorable. You love your own children deeply. You believe fathers should protect their families. You run toward danger when others run away. Those are not problems. That is the heart of a protector. The Four Blocks work is not about making you care less or weakening your standards. It is about helping you keep the strength and the moral clarity while losing the constant burning anger that follows you home, so you can be fully present with the three kids who need you most.",
+      "tags": [
+        "reframe",
+        "protector",
+        "identity",
+        "firefighter",
+        "anger"
+      ],
+      "keywords": [
+        "protector",
+        "fatherhood",
+        "strength",
+        "moral clarity",
+        "firefighter"
+      ],
+      "related": [
+        "ANG_VALIDATION_FIREFIGHTER",
+        "ANG_INTERVENTION_SHOULD_TO_PREFERENCE"
+      ]
+    },
+    {
+      "id": "ANG_REFRAME_DIGNITY",
+      "title": "Reframe — Dignity and Self-Worth (Betrayal)",
+      "content": "The depth of your anger is usually connected to something meaningful. You loved seriously. You committed fully. You believed in loyalty and family. Those are not weaknesses. Those are strengths that were misused by someone else's choices. The Four Blocks work is not about pretending this did not hurt. It is about helping you keep your self-respect and your standards for love and loyalty while losing the constant anger that keeps you tied to the betrayal, so you can move forward as yourself again, not as the version of you that was wounded by this.",
+      "tags": [
+        "reframe",
+        "dignity",
+        "self_worth",
+        "betrayal",
+        "anger"
+      ],
+      "keywords": [
+        "dignity",
+        "self-respect",
+        "loyalty",
+        "identity",
+        "betrayal"
+      ],
+      "related": [
+        "ANG_VALIDATION_BETRAYAL",
+        "ANG_INTERVENTION_SHOULD_TO_PREFERENCE"
+      ]
+    },
+    {
+      "id": "ANG_REFRAME_MATURITY",
+      "title": "Reframe — Maturity and Identity (Emerging Adult)",
+      "content": "The fact that you are self-aware and do not want to live in anger says something strong about you. You care about who you are becoming. You want real maturity, not just freedom. You still recognize their love even while you are frustrated. Those are signs you are already moving toward being your own man. The Four Blocks work is not about making you care less or pretending this is not hard. It is about helping you keep your drive for independence and your respect for yourself while losing the constant anger that could follow you into adulthood, so you step into college and the next chapter with clarity instead of resentment.",
+      "tags": [
+        "reframe",
+        "maturity",
+        "identity",
+        "emerging_adult",
+        "anger"
+      ],
+      "keywords": [
+        "maturity",
+        "independence",
+        "adulthood",
+        "self-awareness",
+        "identity",
+        "college"
+      ],
+      "related": [
+        "ANG_VALIDATION_EMERGING_ADULT",
+        "ANG_INTERVENTION_SHOULD_TO_PREFERENCE"
+      ]
+    },
+    {
+      "id": "ANG_TRIAGE_QUESTION",
+      "title": "Triage Question — Identify Strongest Anger Component",
+      "content": "Right now, which part feels strongest? The sense that you are right about your values and how things should be. The focus on how wrong the other person was for what they did. Or the feeling that this should never have happened at all. Tell me which one feels hottest inside you. We will work on that piece first, step by step.",
+      "tags": [
+        "triage",
+        "question",
+        "next_step",
+        "anger"
+      ],
+      "keywords": [
+        "triage",
+        "strongest component",
+        "I'm right",
+        "you're wrong",
+        "shouldn't",
+        "ET",
+        "S"
+      ],
+      "related": [
+        "ANG_FORMULA_CORE"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve": [
+      "ANG_FORMULA_CORE",
+      "ANG_INTERVENTION_SHOULD_TO_PREFERENCE",
+      "ANG_TRIAGE_QUESTION"
+    ],
+    "retrieve_by_context": [
+      {
+        "context": "firefighter OR first_responder OR moral_injury OR child_death OR negligent_parents",
+        "chunks": [
+          "ANG_VALIDATION_FIREFIGHTER",
+          "ANG_MAPPING_FIREFIGHTER",
+          "ANG_REFRAME_PROTECTOR"
+        ]
+      },
+      {
+        "context": "betrayal OR infidelity OR marital_violation OR humiliation OR cheating",
+        "chunks": [
+          "ANG_VALIDATION_BETRAYAL",
+          "ANG_MAPPING_BETRAYAL",
+          "ANG_REFRAME_DIGNITY"
+        ]
+      },
+      {
+        "context": "adolescent OR emerging_adult OR parental_conflict OR independence OR college OR graduation",
+        "chunks": [
+          "ANG_VALIDATION_EMERGING_ADULT",
+          "ANG_MAPPING_EMERGING_ADULT",
+          "ANG_REFRAME_MATURITY"
+        ]
+      }
+    ]
+  }
+}

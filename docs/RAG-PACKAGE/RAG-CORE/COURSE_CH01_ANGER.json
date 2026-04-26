@@ -1,0 +1,382 @@
+{
+  "document_type": "course_content",
+  "title": "Four Blocks Course — Chapter 01: Anger",
+  "subtitle": "Formula, Mental Contamination, Disputation Process, and Three Insights Applied to Anger",
+  "version": "1.0",
+  "category": "anger",
+  "source": "Dr. Vincent E. Parr — My Four Blocks Course",
+  "audience": "general",
+  "chunks": [
+    {
+      "id": "CH01_ANGER_FORMULA",
+      "title": "Formula for Anger",
+      "formula": "A = ET + S",
+      "expanded": "Anger = Egocentric Thinking + Should",
+      "components": [
+        {
+          "id": "ET",
+          "label": "Egocentric Thinking",
+          "definition": "The belief that you are the center of the universe and that reality should conform to your preferences. It involves rejecting reality because it does not align with your desires."
+        },
+        {
+          "id": "S",
+          "label": "Should",
+          "definition": "Anger arises when you tell yourself that something should or must be a certain way, and you reject the reality of how things actually are."
+        }
+      ],
+      "core_principle": "Anger is created when we insist that reality should be different than it is. This insistence is irrational because reality cannot be changed in the present moment.",
+      "tags": [
+        "anger",
+        "formula",
+        "egocentric_thinking",
+        "should",
+        "four_blocks"
+      ],
+      "keywords": [
+        "anger formula",
+        "A = ET + S",
+        "egocentric thinking",
+        "should",
+        "must",
+        "demand",
+        "reality rejection"
+      ]
+    },
+    {
+      "id": "CH01_ANGER_MENTAL_CONTAMINATION",
+      "title": "How Mental Contamination Applies to Anger",
+      "definition": "Mental contamination is the process of mistaking opinions, ideas, and beliefs for facts and truth. It is a form of egocentric thinking where subjective thoughts are assigned absolute truth without questioning their validity.",
+      "connections_to_formula": [
+        {
+          "component": "Egocentric Thinking (ET)",
+          "explanation": "Mental contamination amplifies egocentric thinking by making us believe our opinions are absolute truths. Example: believing people should always treat you with respect becomes an unrealistic expectation that fuels anger when reality fails to comply."
+        },
+        {
+          "component": "Should Statements (S)",
+          "explanation": "Mental contamination produces rigid should statements such as: This person should not have cut me off in traffic. These shoulds are unprovable and irrational, creating emotional disturbance when reality does not meet the expectation."
+        }
+      ],
+      "addressing_mental_contamination": [
+        {
+          "method": "Train the Observer",
+          "description": "Shift from the reactive Narrator (the part of the mind that creates stories and irrational beliefs) to the Observer (the part that notices events without judgment). This detaches the mind from egocentric thinking and shoulds."
+        },
+        {
+          "method": "Dispute Irrational Beliefs",
+          "description": "Challenge the shoulds and egocentric thoughts that fuel anger. Ask: Is this belief true? Is it absolutely true? How do I feel holding this belief? How would I feel if I let it go?"
+        },
+        {
+          "method": "Accept Reality",
+          "description": "Recognize that reality is as it is because all conditions for it to exist have occurred. Acceptance does not mean endorsement. It means letting go of resistance to what is."
+        }
+      ],
+      "tags": [
+        "anger",
+        "mental_contamination",
+        "observer",
+        "narrator",
+        "disputation",
+        "acceptance"
+      ],
+      "keywords": [
+        "mental contamination",
+        "observer",
+        "narrator",
+        "egocentric thinking",
+        "should statements",
+        "reality acceptance",
+        "anger"
+      ]
+    },
+    {
+      "id": "CH01_ANGER_STOP_IN_MOMENT",
+      "title": "How to Stop Anger in the Moment — Step-by-Step Process",
+      "steps": [
+        {
+          "step": 1,
+          "label": "Observe Your Anger",
+          "action": "Pause and identify feelings. Notice physical sensations such as flushed face, racing heart, or clenched fists. Ask: How am I feeling and reacting in this situation?"
+        },
+        {
+          "step": 2,
+          "label": "Identify the Activating Event (A)",
+          "action": "Pinpoint the event that triggered the anger. Ask: What just happened that triggered my anger?"
+        },
+        {
+          "step": 3,
+          "label": "Find the Belief (B)",
+          "action": "Look for the irrational belief or should fueling the anger. Ask: What am I telling myself about this situation? What am I thinking about myself, others, or the situation that is making me angry?"
+        },
+        {
+          "step": 4,
+          "label": "Dispute the Irrational Belief (D)",
+          "action": "Challenge the should or must causing the anger. Ask: Why should this person or situation be different? Is it true this person must conform to my expectations? What evidence do I have? What would happen if I let go of this belief?"
+        },
+        {
+          "step": 5,
+          "label": "Replace the Irrational Belief with a Rational One (E)",
+          "action": "Replace the should with a preference. Instead of: They should not have cut me off. Say: I would prefer they did not cut me off, but it is not the end of the world."
+        },
+        {
+          "step": 6,
+          "label": "Use the Centering Breath",
+          "action": "Breathe in deeply and notice inner dialogue and physical tension. Pause briefly at the top of the breath. Exhale slowly while thinking: Let go. Release tension and the irrational belief causing the anger."
+        },
+        {
+          "step": 7,
+          "label": "Accept Reality",
+          "action": "Remind yourself that reality is as it is because all conditions for it to exist have occurred. Say: This moment does not have an option. It is what it is."
+        },
+        {
+          "step": 8,
+          "label": "Take Constructive Action",
+          "action": "Once calmed, decide on a rational and effective response. Focus on constructive action rather than emotional reaction."
+        }
+      ],
+      "tags": [
+        "anger",
+        "disputation",
+        "centering_breath",
+        "ABC_model",
+        "step_by_step"
+      ],
+      "keywords": [
+        "stop anger",
+        "centering breath",
+        "dispute",
+        "ABC model",
+        "activating event",
+        "belief",
+        "replace",
+        "accept reality"
+      ]
+    },
+    {
+      "id": "CH01_ANGER_THREE_INSIGHTS",
+      "title": "Three Insights Applied to Anger",
+      "insights": [
+        {
+          "insight": "Insight 1 — You Create 100% of Your Anger",
+          "application": "No one or nothing outside of you can make you angry. Anger is not caused by the activating event itself but by your beliefs about the event. The activating event is neutral. Anger arises from the belief such as: They should not have done that!",
+          "key_takeaway": "You are responsible for your anger because you create it through your thoughts and beliefs."
+        },
+        {
+          "insight": "Insight 2 — Become Aware of How You Create Anger",
+          "application": "Anger is caused by A-to-C thinking, where the activating event is mistakenly believed to directly cause anger. In reality, it is the belief (B) about the event that creates the emotional consequence (C). Two people can experience the same event and respond differently based entirely on their beliefs.",
+          "example": "Person A gets cut off in traffic and believes: That driver is so rude! Person A gets angry. Person B gets cut off and believes: That driver must be in a hurry. Person B remains calm. Same event, different beliefs, different emotions.",
+          "key_takeaway": "Becoming aware of your beliefs allows you to identify and dispute the irrational thoughts that fuel your anger."
+        },
+        {
+          "insight": "Insight 3 — Dispute and Let Go of Anger Rapidly",
+          "application": "Once irrational beliefs are identified, dispute them using rational thinking to release anger quickly.",
+          "disputation_steps": [
+            "Find the Should: identify the irrational should, must, or demand fueling the anger.",
+            "Challenge the Belief: ask why this should be true and what evidence supports it.",
+            "Replace the Belief: substitute the irrational demand with a rational preference."
+          ],
+          "key_takeaway": "Disputing irrational beliefs allows you to release anger and replace it with acceptance and peace."
+        }
+      ],
+      "tags": [
+        "anger",
+        "three_insights",
+        "insight_1",
+        "insight_2",
+        "insight_3",
+        "ABC_model",
+        "disputation"
+      ],
+      "keywords": [
+        "three insights",
+        "anger",
+        "emotional responsibility",
+        "ABC model",
+        "dispute",
+        "rational preference",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "CH01_ANGER_KEY_TAKEAWAYS",
+      "title": "Anger — Key Takeaways",
+      "takeaways": [
+        "Anger is caused by egocentric thinking and irrational shoulds.",
+        "To stop anger in the moment: observe feelings, identify the activating event, dispute irrational beliefs, and replace them with rational preferences.",
+        "Use the Centering Breath to calm the body and mind.",
+        "Accept reality as it is and focus on constructive action rather than emotional reaction.",
+        "You are responsible for your anger because you create it through your thoughts and beliefs.",
+        "Practicing these steps consistently trains the mind to respond to anger in a healthier, more rational way."
+      ],
+      "tags": [
+        "anger",
+        "summary",
+        "key_takeaways",
+        "four_blocks"
+      ],
+      "keywords": [
+        "anger",
+        "key takeaways",
+        "egocentric thinking",
+        "should",
+        "centering breath",
+        "acceptance",
+        "constructive action"
+      ]
+    },
+    {
+      "id": "CH01_ANGER_CHAPTERS_1_5_APPLIED",
+      "title": "Anger — Chapters 1–5 Applied (Cross-Chapter Integration)",
+      "description": "How Dr. Parr's methods from Chapters 1 through 5 apply to Anger in an integrated, step-by-step framework.",
+      "chapters": [
+        {
+          "chapter": "Chapter 1 — Mental Contamination",
+          "key_concept": "Mental contamination occurs when opinions, ideas, and beliefs are mistaken for facts and truth, leading to emotional disturbance including anger.",
+          "application_to_anger": "Anger is caused by mental contamination. The belief that reality should conform to expectations is not a fact. Example: being cut off in traffic triggers the thought: That driver is so rude, they should not have done that. This assigns personal meaning to a neutral event.",
+          "solution": "Train the Observer to notice thoughts and recognize them as thoughts, not facts. Let go of mental contamination by observing inner dialogue and disputing irrational beliefs."
+        },
+        {
+          "chapter": "Chapter 2 — The Three Insights",
+          "insights_applied": [
+            {
+              "insight": "Insight 1 — You Create 100% of Your Anger",
+              "application": "Anger is not caused by external events but by beliefs about those events. Example: criticism does not make you angry. The belief that they should not criticize me creates the anger."
+            },
+            {
+              "insight": "Insight 2 — Become Aware of How You Create Anger",
+              "application": "Use the ABC Model to trace anger to its source. A = someone criticizes you. B = they should not say that about me. C = anger."
+            },
+            {
+              "insight": "Insight 3 — Dispute and Let Go Rapidly",
+              "application": "Dispute the irrational belief. Replace: they should not criticize me. With: I would prefer they did not criticize me, but I can accept that people have opinions."
+            }
+          ]
+        },
+        {
+          "chapter": "Chapter 3 — The ABCs",
+          "key_concept": "Emotions are created through the ABC Model. A = Activating Event. B = Belief. C = Consequence.",
+          "application_to_anger": "Anger is caused by A-to-C thinking, where the activating event is mistakenly believed to directly cause anger. In reality it is the belief (B) about the event that creates the emotional consequence (C).",
+          "solution": "Train the mind to identify and dispute irrational beliefs at B to change the emotional response at C."
+        },
+        {
+          "chapter": "Chapter 4 — The Seven Irrational Beliefs",
+          "key_concept": "All emotional disturbance including anger is caused by irrational beliefs.",
+          "beliefs_applied_to_anger": [
+            {
+              "belief": "It Statements",
+              "example": "They made me angry!",
+              "dispute": "No one can make me angry. I create my own emotions."
+            },
+            {
+              "belief": "Awfulizing",
+              "example": "It is awful that they criticized me!",
+              "dispute": "It is unpleasant but not awful. I can handle it."
+            },
+            {
+              "belief": "I Can't Stand It",
+              "example": "I cannot stand being criticized!",
+              "dispute": "I do not like it but I can stand it. I have stood worse before."
+            },
+            {
+              "belief": "Shoulds, Musts, and Demands",
+              "example": "They should not criticize me!",
+              "dispute": "I would prefer they did not criticize me but I can accept that people have opinions."
+            },
+            {
+              "belief": "Rating",
+              "example": "They are a terrible person for criticizing me!",
+              "dispute": "Their behavior was unpleasant but that does not make them a terrible person."
+            },
+            {
+              "belief": "Absolutistic Thinking",
+              "example": "They always criticize me!",
+              "dispute": "They do not always criticize me. I am exaggerating."
+            },
+            {
+              "belief": "Entitlement",
+              "example": "I deserve respect and they should not criticize me!",
+              "dispute": "I would prefer respect but I cannot demand it from others."
+            }
+          ]
+        },
+        {
+          "chapter": "Chapter 5 — The Formula for Happiness Applied to Anger",
+          "happiness_formula": "H = USA + UAOW + SN",
+          "components": [
+            {
+              "id": "USA",
+              "label": "Unconditional Self-Acceptance",
+              "application": "Accept yourself as a fallible human being who makes mistakes. Do not put yourself down for feeling angry."
+            },
+            {
+              "id": "UAOW",
+              "label": "Unconditional Acceptance of Others and the World",
+              "application": "Accept that people and situations are as they are because all conditions for them to exist have occurred. You cannot control others, only your reaction to them."
+            },
+            {
+              "id": "SN",
+              "label": "Staying Now",
+              "application": "Focus on the present moment. Let go of the past and stop worrying about the future. Use the Centering Breath to return to the now."
+            }
+          ]
+        }
+      ],
+      "integrated_summary": [
+        "Mental Contamination: recognize that anger is caused by beliefs, not the event itself.",
+        "Three Insights: accept responsibility for anger, understand how beliefs create it, and dispute and let go rapidly.",
+        "ABCs: identify the activating event (A), the belief (B), and the consequence (C). Focus on disputing the belief.",
+        "Seven Irrational Beliefs: look for shoulds, awfulizing, and entitlement and dispute them with rational thinking.",
+        "Happiness Formula: practice unconditional self-acceptance, acceptance of others and the world, and staying present."
+      ],
+      "tags": [
+        "anger",
+        "cross_chapter",
+        "mental_contamination",
+        "three_insights",
+        "ABC_model",
+        "irrational_beliefs",
+        "happiness_formula"
+      ],
+      "keywords": [
+        "anger chapters 1-5",
+        "mental contamination",
+        "ABC model",
+        "seven irrational beliefs",
+        "happiness formula",
+        "integrated",
+        "cross-chapter"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve_for_anger_queries": [
+      "CH01_ANGER_FORMULA",
+      "CH01_ANGER_KEY_TAKEAWAYS"
+    ],
+    "retrieve_by_context": [
+      {
+        "context": "mental_contamination AND anger",
+        "chunks": [
+          "CH01_ANGER_MENTAL_CONTAMINATION"
+        ]
+      },
+      {
+        "context": "how to stop anger OR anger in the moment OR anger disputation steps",
+        "chunks": [
+          "CH01_ANGER_STOP_IN_MOMENT"
+        ]
+      },
+      {
+        "context": "three insights AND anger",
+        "chunks": [
+          "CH01_ANGER_THREE_INSIGHTS"
+        ]
+      },
+      {
+        "context": "chapters 1-5 AND anger OR cross-chapter anger integration",
+        "chunks": [
+          "CH01_ANGER_CHAPTERS_1_5_APPLIED"
+        ]
+      }
+    ]
+  }
+}

@@ -35,3 +35,10 @@ coverage/
 # Misc
 *.tgz
 .cache/
+
+# Local parallel worktrees (agent/scratch; do not commit)
+worktrees/
+
+# Nested clones under docs (keep refined-rag-dataset; exclude accidental repo copies)
+docs/GEPA-DSPy-m1/hermes-agent/
+docs/GEPA-DSPy-m1/hermes-agent-self-evolution/

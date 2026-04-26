@@ -1,0 +1,179 @@
+{
+  "library_id": "FIRST_RESPONDER_SCENARIO_LIBRARY_41_60",
+  "version": "1.0",
+  "description": "First Responder Scenario Library — scenarios 41 through 60. Covers EMS/Paramedic activating events. Each scenario includes role, activating event, likely emotions, stage, and Four Blocks methodology references for RAG routing.",
+  "total_scenarios": 20,
+  "roles_covered": ["ems_paramedic"],
+  "scenarios": [
+    {
+      "scenario_id": "EMS041",
+      "role": "ems_paramedic",
+      "activating_event": "Responding to a severe car accident with multiple injured patients and chaotic conditions.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "anxiety_formula"]
+    },
+    {
+      "scenario_id": "EMS042",
+      "role": "ems_paramedic",
+      "activating_event": "Attempted resuscitation on a patient that ultimately did not survive. The medic keeps thinking about what could have been done differently.",
+      "likely_emotions": ["guilt", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "mental_contamination", "abc_model"]
+    },
+    {
+      "scenario_id": "EMS043",
+      "role": "ems_paramedic",
+      "activating_event": "Dispatch reports limited information about a potentially dangerous scene.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "mental_contamination"]
+    },
+    {
+      "scenario_id": "EMS044",
+      "role": "ems_paramedic",
+      "activating_event": "Family members at the scene become emotional and confrontational while treatment is underway.",
+      "likely_emotions": ["anger", "anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "sos_method"]
+    },
+    {
+      "scenario_id": "EMS045",
+      "role": "ems_paramedic",
+      "activating_event": "Replaying a difficult pediatric call after returning to the station.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "depression_formula"]
+    },
+    {
+      "scenario_id": "EMS046",
+      "role": "ems_paramedic",
+      "activating_event": "Feeling frustration when bystanders interfere during treatment.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "seven_irrational_beliefs"]
+    },
+    {
+      "scenario_id": "EMS047",
+      "role": "ems_paramedic",
+      "activating_event": "Arriving at a scene where the patient's condition deteriorates quickly.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "anxiety_formula"]
+    },
+    {
+      "scenario_id": "EMS048",
+      "role": "ems_paramedic",
+      "activating_event": "Thinking about whether a quicker decision could have improved a patient's outcome.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "mental_contamination"]
+    },
+    {
+      "scenario_id": "EMS049",
+      "role": "ems_paramedic",
+      "activating_event": "Anticipating a shift with high call volume and potential traumatic incidents.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula"]
+    },
+    {
+      "scenario_id": "EMS050",
+      "role": "ems_paramedic",
+      "activating_event": "Feeling overwhelmed while managing multiple patients at the same scene.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method"]
+    },
+    {
+      "scenario_id": "EMS051",
+      "role": "ems_paramedic",
+      "activating_event": "Patient becomes verbally aggressive during treatment.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula"]
+    },
+    {
+      "scenario_id": "EMS052",
+      "role": "ems_paramedic",
+      "activating_event": "After a traumatic call, the medic keeps seeing mental images of the scene.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "three_insights"]
+    },
+    {
+      "scenario_id": "EMS053",
+      "role": "ems_paramedic",
+      "activating_event": "A partner questions a treatment decision made during a call.",
+      "likely_emotions": ["anger", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "guilt_formula"]
+    },
+    {
+      "scenario_id": "EMS054",
+      "role": "ems_paramedic",
+      "activating_event": "Arriving at an emergency where the patient reminds the medic of a family member.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "during_event",
+      "four_blocks_reference": ["mental_contamination"]
+    },
+    {
+      "scenario_id": "EMS055",
+      "role": "ems_paramedic",
+      "activating_event": "Feeling pressure to make the right medical decision quickly in a critical situation.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "anxiety_formula"]
+    },
+    {
+      "scenario_id": "EMS056",
+      "role": "ems_paramedic",
+      "activating_event": "Replaying a call mentally while trying to relax after a shift.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination"]
+    },
+    {
+      "scenario_id": "EMS057",
+      "role": "ems_paramedic",
+      "activating_event": "Feeling frustrated when a patient refuses treatment despite obvious medical need.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula"]
+    },
+    {
+      "scenario_id": "EMS058",
+      "role": "ems_paramedic",
+      "activating_event": "Thinking about the emotional impact of an incident on the patient's family.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "mental_contamination"]
+    },
+    {
+      "scenario_id": "EMS059",
+      "role": "ems_paramedic",
+      "activating_event": "Dispatch sends the unit to an unknown emergency situation late at night.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula"]
+    },
+    {
+      "scenario_id": "EMS060",
+      "role": "ems_paramedic",
+      "activating_event": "Feeling emotionally numb after multiple traumatic calls during a shift.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "three_insights"]
+    }
+  ],
+  "implementation_notes": {
+    "previous_file": "FIRST_RESPONDER_SCENARIO_LIBRARY_1_40 — Firefighter and Police scenarios",
+    "next_file": "FIRST_RESPONDER_SCENARIO_LIBRARY_61_80 — Nurse/ER scenarios",
+    "routing_note": "Match scenario context to user input → identify stage → route to appropriate formula and behavior layer → apply personality layer",
+    "stage_routing": {
+      "pre_event": "Route to anticipatory anxiety or pre-event behavior responses",
+      "during_event": "Route to active coping — SOS method, grounding, immediate regulation",
+      "post_event": "Route to processing responses — mental contamination protocol, formula application, reflection"
+    }
+  }
+}

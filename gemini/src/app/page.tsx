@@ -38,7 +38,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-purple-600" />
               <span className="text-xs uppercase tracking-[0.3em] text-purple-600/80 font-medium">
-                Rational Emotive Wisdom
+                Four Blocks Wisdom
               </span>
               <Sparkles className="w-4 h-4 text-purple-600" />
             </div>
@@ -56,7 +56,7 @@ export default function Home() {
 
         {/* 📜 Footer Credits - now within content flow */}
         <footer className="py-8 text-[10px] text-black/20 uppercase tracking-[0.2em]">
-          Inspired by Dr. Vincent Parr & Dr. Albert Ellis
+          Inspired by Dr. Vincent E. Parr
         </footer>
       </div>
     </main>

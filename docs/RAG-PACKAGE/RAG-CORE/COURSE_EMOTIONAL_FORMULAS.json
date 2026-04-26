@@ -1,0 +1,215 @@
+{
+  "document_type": "course_content",
+  "title": "Four Blocks Course — Emotional Formulas",
+  "subtitle": "Canonical Formulas for Anger, Anxiety, Depression, and Guilt",
+  "version": "1.0",
+  "category": "emotional_formulas",
+  "source": "Dr. Vincent E. Parr — My Four Blocks Course",
+  "audience": "general",
+  "purpose": "Define the four canonical emotional formulas that identify the thought patterns and beliefs driving emotional disturbance, enabling individuals to dispute and replace them with rational, healthier beliefs.",
+  "chunks": [
+    {
+      "id": "COURSE_FORMULA_ANGER",
+      "title": "Formula for Anger",
+      "formula": "A = ET + S",
+      "expanded": "Anger = Egocentric Thinking + Should",
+      "components": [
+        {
+          "id": "ET",
+          "label": "Egocentric Thinking",
+          "definition": "Placing oneself at the center of the universe and believing that reality should conform to one's preferences.",
+          "emotional_role": "Creates the foundation of anger by generating a rigid expectation that the world must align with personal desires."
+        },
+        {
+          "id": "S",
+          "label": "Should",
+          "definition": "The belief that something should or must be different than it is, leading to frustration and anger.",
+          "emotional_role": "Converts preference into rigid demand, locking anger in place when reality fails to comply."
+        }
+      ],
+      "intervention_target": "Soften the Should (S) from rigid demand into strong preference while keeping values intact.",
+      "tags": [
+        "anger",
+        "formula",
+        "egocentric_thinking",
+        "should",
+        "four_blocks"
+      ],
+      "keywords": [
+        "anger",
+        "A = ET + S",
+        "egocentric thinking",
+        "should",
+        "demand",
+        "frustration"
+      ]
+    },
+    {
+      "id": "COURSE_FORMULA_ANXIETY",
+      "title": "Formula for Anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "expanded": "Anxiety = What If? + Awfulizing + I Can't Stand It",
+      "components": [
+        {
+          "id": "WI",
+          "label": "What If",
+          "definition": "Projecting the mind into a future that does not exist and imagining negative possibilities.",
+          "emotional_role": "Initiates anxiety by pulling attention away from the present and into fearful future scenarios."
+        },
+        {
+          "id": "AW",
+          "label": "Awfulizing",
+          "definition": "Exaggerating the unpleasantness of a situation to an extreme degree.",
+          "emotional_role": "Amplifies the imagined future threat beyond realistic proportion, intensifying anxiety."
+        },
+        {
+          "id": "ICSI",
+          "label": "I Can't Stand It",
+          "definition": "Believing that one cannot tolerate or survive the imagined negative outcome.",
+          "emotional_role": "Converts difficulty into perceived impossibility, locking anxiety in place by removing any sense of coping capacity."
+        }
+      ],
+      "intervention_target": "Soften each component separately: normalize What If possibilities, distinguish difficult from catastrophic, reinforce distress tolerance.",
+      "tags": [
+        "anxiety",
+        "formula",
+        "what_if",
+        "awfulizing",
+        "ICSI",
+        "four_blocks"
+      ],
+      "keywords": [
+        "anxiety",
+        "AX = WI + AW + ICSI",
+        "what if",
+        "awfulizing",
+        "I can't stand it",
+        "future thinking"
+      ]
+    },
+    {
+      "id": "COURSE_FORMULA_DEPRESSION",
+      "title": "Formula for Depression",
+      "formula": "D = H1 + H2 + N",
+      "expanded": "Depression = Hopelessness + Helplessness + Need",
+      "components": [
+        {
+          "id": "H1",
+          "label": "Hopelessness",
+          "definition": "A pessimistic outlook toward the past, present, and future.",
+          "emotional_role": "Creates the belief that nothing has worked, nothing works now, and nothing will ever work, eliminating motivation and forward movement."
+        },
+        {
+          "id": "H2",
+          "label": "Helplessness",
+          "definition": "Feeling powerless to change one's situation, often accompanied by self-pity, other-pity, and self-rejection.",
+          "emotional_role": "Removes perceived agency, reinforcing the belief that change is impossible regardless of effort."
+        },
+        {
+          "id": "N",
+          "label": "Need",
+          "definition": "A false belief that one requires something such as love, success, comfort, or certainty to be happy, leading to feelings of inadequacy and despair.",
+          "emotional_role": "Converts wants into rigid requirements, creating despair when those perceived needs go unmet. True needs are limited to food, water, and shelter; everything else is a want."
+        }
+      ],
+      "intervention_target": "Convert the rigid Need (N) into a strong preference or wish, which softens Hopelessness and Helplessness and allows depression to lift.",
+      "tags": [
+        "depression",
+        "formula",
+        "hopelessness",
+        "helplessness",
+        "need",
+        "four_blocks"
+      ],
+      "keywords": [
+        "depression",
+        "D = H1 + H2 + N",
+        "hopelessness",
+        "helplessness",
+        "need",
+        "self-pity",
+        "self-rejection"
+      ]
+    },
+    {
+      "id": "COURSE_FORMULA_GUILT",
+      "title": "Formula for Guilt",
+      "formula": "G = W1 + W2",
+      "expanded": "Guilt = Wrongness + Worthlessness",
+      "components": [
+        {
+          "id": "W1",
+          "label": "Wrongness",
+          "definition": "The belief that one has done something wrong or failed to meet a standard, often accompanied by a Should.",
+          "emotional_role": "Creates the foundation of guilt by judging a past action or omission as a moral failure."
+        },
+        {
+          "id": "W2",
+          "label": "Worthlessness",
+          "definition": "Rating oneself as inferior or bad because of perceived mistakes or failures.",
+          "emotional_role": "Fuses the wrongness judgment into a global identity condemnation, converting honest regret into crushing self-punishment."
+        }
+      ],
+      "intervention_target": "Separate W1 from W2. Wrongness (W1) can be honestly acknowledged while Worthlessness (W2) is disputed, preserving accountability without self-condemnation.",
+      "tags": [
+        "guilt",
+        "formula",
+        "wrongness",
+        "worthlessness",
+        "four_blocks"
+      ],
+      "keywords": [
+        "guilt",
+        "G = W1 + W2",
+        "wrongness",
+        "worthlessness",
+        "self-rating",
+        "shame",
+        "self-condemnation"
+      ]
+    },
+    {
+      "id": "COURSE_FORMULA_SUMMARY",
+      "title": "Emotional Formulas — Unified Reference",
+      "content": "The Four Blocks system identifies four canonical emotional formulas that map the precise thought structures driving each emotional disturbance. Anger: A = ET + S (Egocentric Thinking + Should). Anxiety: AX = WI + AW + ICSI (What If + Awfulizing + I Can't Stand It). Depression: D = H1 + H2 + N (Hopelessness + Helplessness + Need). Guilt: G = W1 + W2 (Wrongness + Worthlessness). Each formula identifies the specific irrational beliefs fueling the emotion, enabling targeted disputation and replacement with rational, healthier beliefs.",
+      "tags": [
+        "formulas",
+        "summary",
+        "anger",
+        "anxiety",
+        "depression",
+        "guilt",
+        "four_blocks"
+      ],
+      "keywords": [
+        "four blocks formulas",
+        "emotional disturbance",
+        "anger",
+        "anxiety",
+        "depression",
+        "guilt",
+        "REBT",
+        "Dr. Parr"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve_when_emotion_identified": {
+      "anger": [
+        "COURSE_FORMULA_ANGER"
+      ],
+      "anxiety": [
+        "COURSE_FORMULA_ANXIETY"
+      ],
+      "depression": [
+        "COURSE_FORMULA_DEPRESSION"
+      ],
+      "guilt": [
+        "COURSE_FORMULA_GUILT"
+      ]
+    },
+    "retrieve_for_general_formula_queries": [
+      "COURSE_FORMULA_SUMMARY"
+    ]
+  }
+}

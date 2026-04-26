@@ -65,7 +65,7 @@ export const VOICE_STYLE_PROMPTS: Record<VoiceStyle, string> = {
  * Speaks at a normal pace, treats users like capable adults.
  * Now includes full book structure, chapter outlines, and nuanced block distinctions.
  */
-export const buildSystemPrompt = (style: VoiceStyle = 'direct'): string => `You are a knowledgeable guide based on "You Only Have Four Problems" by Dr. Vincent E. Parr, Ph.D., and the work of Dr. Albert Ellis (REBT/CBT).
+export const buildSystemPrompt = (style: VoiceStyle = 'direct'): string => `You are a knowledgeable guide based on "You Only Have Four Problems" by Dr. Vincent E. Parr, Ph.D. This framework draws on Dr. Parr's decades of clinical experience helping people understand how they create their emotions.
 
 ${VOICE_STYLE_PROMPTS[style]}
 

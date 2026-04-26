@@ -1,0 +1,268 @@
+{
+  "chapter": "DEPRESSION",
+  "category": "depression",
+  "audience": "general",
+  "formula": "Hopeless + Helpless + Need = Depression",
+  "chunks": [
+    {
+      "id": "DEP_VALIDATION_FIRST_RESPONDER_TRAUMA",
+      "title": "Validation — First Responder Child Fatality",
+      "content": "What you saw is not small. Being a first responder and witnessing a child die — especially twice in one month — hits the human part of you, not just the professional part. Feeling depressed after something like that makes sense. It means something inside you is hurting, not that you are weak.",
+      "tags": [
+        "validation",
+        "first_responder",
+        "trauma",
+        "depression"
+      ],
+      "keywords": [
+        "child fatality",
+        "accident",
+        "first responder",
+        "trauma exposure"
+      ],
+      "related": [
+        "DEP_FORMULA_CORE",
+        "DEP_MAPPING_FIRST_RESPONDER"
+      ]
+    },
+    {
+      "id": "DEP_FORMULA_CORE",
+      "title": "Core Formula — Depression",
+      "content": "In the Four Blocks model, depression forms when three ingredients combine: Hopeless + Helpless + Need = Depression. Hopeless means the future is judged as permanently bad. Helpless means no perceived power to change the outcome. Need is the rigid demand that reality must not be this way. This formula must appear before any interpretation or intervention.",
+      "tags": [
+        "formula",
+        "four_blocks",
+        "depression"
+      ],
+      "keywords": [
+        "hopeless",
+        "helpless",
+        "need",
+        "four blocks",
+        "depression formula"
+      ],
+      "related": [
+        "DEP_INTERVENTION_NEED_TO_WISH",
+        "DEP_MAPPING_FIRST_RESPONDER",
+        "DEP_MAPPING_DIVORCE_FATHER",
+        "DEP_MAPPING_NICU_NURSE"
+      ]
+    },
+    {
+      "id": "DEP_MAPPING_FIRST_RESPONDER",
+      "title": "Mapping — First Responder Child Fatality",
+      "content": "Hopeless thoughts may sound like: This keeps happening and it is never going to stop. Helpless thoughts may sound like: There is nothing I can do to save them. Need-based thoughts may sound like: This must not happen, especially to children. These thoughts arise naturally from repeated trauma exposure and map directly onto the Four Blocks depression formula.",
+      "tags": [
+        "mapping",
+        "first_responder",
+        "trauma",
+        "depression"
+      ],
+      "keywords": [
+        "hopelessness",
+        "helplessness",
+        "need",
+        "child death",
+        "first responder"
+      ],
+      "related": [
+        "DEP_FORMULA_CORE",
+        "DEP_INTERVENTION_NEED_TO_WISH"
+      ]
+    },
+    {
+      "id": "DEP_MAPPING_DIVORCE_FATHER",
+      "title": "Mapping — Divorce With Children",
+      "content": "Hopeless thoughts may sound like: My future is not what I thought it would be. I am going to be alone. This damage cannot be fixed. Helpless thoughts may sound like: I could not stop this. I cannot control what happens to my family now. I do not know how to make this better for my kids. Need-based thoughts may sound like: My family was supposed to stay together. This must not happen to my children. I should not be starting over at this age. These map directly onto the Four Blocks depression formula.",
+      "tags": [
+        "mapping",
+        "divorce",
+        "fatherhood",
+        "depression"
+      ],
+      "keywords": [
+        "hopelessness",
+        "helplessness",
+        "need",
+        "divorce",
+        "children",
+        "family"
+      ],
+      "related": [
+        "DEP_FORMULA_CORE",
+        "DEP_INTERVENTION_NEED_TO_WISH"
+      ]
+    },
+    {
+      "id": "DEP_MAPPING_NICU_NURSE",
+      "title": "Mapping — NICU Nurse Moral Distress",
+      "content": "Hopeless thoughts may sound like: This keeps happening and it is never really going to change. Some of these babies never get a fair chance. No matter how much we do, tragedy is always nearby. Helpless thoughts may sound like: I cannot control what parents did before the baby arrived. I cannot fix every outcome. Need-based thoughts may sound like: Babies should be born healthy. Parents should protect their children. This should not be happening over and over. These map directly onto the Four Blocks depression formula.",
+      "tags": [
+        "mapping",
+        "nicu",
+        "healthcare",
+        "moral_distress",
+        "depression"
+      ],
+      "keywords": [
+        "hopelessness",
+        "helplessness",
+        "need",
+        "NICU",
+        "nurse",
+        "moral distress"
+      ],
+      "related": [
+        "DEP_FORMULA_CORE",
+        "DEP_INTERVENTION_NEED_TO_WISH"
+      ]
+    },
+    {
+      "id": "DEP_INTERVENTION_NEED_TO_WISH",
+      "title": "Intervention — Need to Wish Shift",
+      "content": "The Four Blocks shift happens by changing the rigid demand into a deep honest wish. From: This must not be happening. To: I deeply wish this did not happen, but in reality tragic things sometimes do. This is not acceptance of tragedy or approval of suffering. It is releasing the impossible demand that reality obey a rule. When the Need softens into a wish, hopelessness softens because the future is no longer judged as permanently doomed, helplessness softens because the role becomes helping where possible rather than controlling everything, and depression begins to lift.",
+      "tags": [
+        "intervention",
+        "need_shift",
+        "wish",
+        "four_blocks",
+        "depression"
+      ],
+      "keywords": [
+        "need",
+        "wish",
+        "preference",
+        "cognitive shift",
+        "demand",
+        "depression relief"
+      ],
+      "related": [
+        "DEP_FORMULA_CORE"
+      ]
+    },
+    {
+      "id": "DEP_REFRAME_COMPASSION_NOT_WEAKNESS",
+      "title": "Reframe — Compassion, Not Weakness",
+      "content": "People who do not care do not feel this way. The depression a first responder, divorced father, or NICU nurse feels is connected to compassion, responsibility, and humanity. These are strengths. Without the right mental tools they turn into pain. The Four Blocks work helps keep the compassion and the humanity while losing the crushing weight.",
+      "tags": [
+        "reframe",
+        "compassion",
+        "identity",
+        "strength",
+        "depression"
+      ],
+      "keywords": [
+        "compassion",
+        "strength",
+        "identity",
+        "first responder",
+        "fatherhood",
+        "healthcare"
+      ],
+      "related": [
+        "DEP_VALIDATION_FIRST_RESPONDER_TRAUMA",
+        "DEP_REFRAME_FATHERHOOD_MEANING",
+        "DEP_REFRAME_MEDICAL_COMPASSION"
+      ]
+    },
+    {
+      "id": "DEP_REFRAME_FATHERHOOD_MEANING",
+      "title": "Reframe — Fatherhood Meaning",
+      "content": "The fact that you are hurting this much usually means you love your children deeply, you took your family seriously, and this mattered to you. Those are not weaknesses. Those are the exact qualities your children still need from you moving forward. The Four Blocks work helps keep the love and the responsibility while losing the crushing weight of depression.",
+      "tags": [
+        "reframe",
+        "fatherhood",
+        "identity",
+        "meaning",
+        "depression"
+      ],
+      "keywords": [
+        "fatherhood",
+        "love",
+        "meaning",
+        "identity",
+        "divorce"
+      ],
+      "related": [
+        "DEP_MAPPING_DIVORCE_FATHER",
+        "DEP_INTERVENTION_NEED_TO_WISH"
+      ]
+    },
+    {
+      "id": "DEP_REFRAME_MEDICAL_COMPASSION",
+      "title": "Reframe — Medical Compassion",
+      "content": "You have not become numb. You still protect life in your heart. You care about babies who cannot speak for themselves. Those are not weaknesses. That is the exact reason your presence in the NICU matters so much. The Four Blocks work is not about making you care less. It is about helping you keep the compassion and the meaning in your work while losing the constant weight of depression.",
+      "tags": [
+        "reframe",
+        "medical",
+        "compassion",
+        "identity",
+        "nicu",
+        "depression"
+      ],
+      "keywords": [
+        "compassion",
+        "identity",
+        "healthcare",
+        "NICU",
+        "meaning"
+      ],
+      "related": [
+        "DEP_MAPPING_NICU_NURSE",
+        "DEP_INTERVENTION_NEED_TO_WISH"
+      ]
+    },
+    {
+      "id": "DEP_TRIAGE_QUESTION",
+      "title": "Triage Question — Identify Strongest Component",
+      "content": "Right now, which part feels strongest? The hopeless feeling that things will never get better. The helpless feeling that you could not save them or fix this. Or the painful need that this must never happen. Tell me which one hits the hardest. We will work on that piece first, step by step.",
+      "tags": [
+        "triage",
+        "question",
+        "next_step",
+        "depression"
+      ],
+      "keywords": [
+        "hopeless",
+        "helpless",
+        "need",
+        "triage",
+        "strongest component"
+      ],
+      "related": [
+        "DEP_FORMULA_CORE"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve": [
+      "DEP_FORMULA_CORE",
+      "DEP_INTERVENTION_NEED_TO_WISH",
+      "DEP_TRIAGE_QUESTION"
+    ],
+    "retrieve_by_context": [
+      {
+        "context": "first_responder OR trauma exposure",
+        "chunks": [
+          "DEP_VALIDATION_FIRST_RESPONDER_TRAUMA",
+          "DEP_MAPPING_FIRST_RESPONDER",
+          "DEP_REFRAME_COMPASSION_NOT_WEAKNESS"
+        ]
+      },
+      {
+        "context": "divorce OR family separation",
+        "chunks": [
+          "DEP_MAPPING_DIVORCE_FATHER",
+          "DEP_REFRAME_FATHERHOOD_MEANING"
+        ]
+      },
+      {
+        "context": "healthcare_worker OR NICU OR moral_distress",
+        "chunks": [
+          "DEP_MAPPING_NICU_NURSE",
+          "DEP_REFRAME_MEDICAL_COMPASSION"
+        ]
+      }
+    ]
+  }
+}

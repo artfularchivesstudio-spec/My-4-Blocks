@@ -44,7 +44,7 @@ const TOOLS = {
   },
   dispute_belief: {
     name: 'dispute_belief',
-    description: 'Generate REBT disputation questions to challenge an irrational belief.',
+    description: 'Generate Four Blocks disputation questions to challenge an irrational belief.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -94,7 +94,7 @@ const BLOCK_PATTERNS = {
 
 // 🌟 Disputation questions by source
 const DISPUTATION_QUESTIONS = {
-  ellis: [
+  four_blocks: [
     { question: 'Is this belief logical?', purpose: 'Check for logical fallacies' },
     { question: 'Where is the evidence that this belief is true?', purpose: 'Demand empirical support' },
     { question: 'Is this belief helping you achieve your goals?', purpose: 'Assess pragmatic value' },

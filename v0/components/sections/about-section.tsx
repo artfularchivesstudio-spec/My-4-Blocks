@@ -14,9 +14,10 @@ export function AboutSection() {
           About
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          My 4 Blocks is a calm, supportive guide grounded in CBT/REBT principles.
-          It helps you recognize the beliefs that create Anger, Anxiety, Depression,
-          and Guilt—then gently challenges them so you can return to peace and clarity.
+          My 4 Blocks is a calm, supportive guide grounded in the Four Blocks methodology
+          by Dr. Vincent E. Parr. It helps you recognize the beliefs that create Anger,
+          Anxiety, Depression, and Guilt—then gently challenges them so you can return to
+          peace and clarity.
         </p>
       </div>
     </section>

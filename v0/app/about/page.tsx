@@ -8,7 +8,7 @@ import Link from 'next/link'
 /**
  * 🌟 The About Page - A gentle introduction to the philosophy
  *
- * Explains the CBT/REBT foundation and how My 4 Blocks helps users
+ * Explains the Four Blocks foundation and how My 4 Blocks helps users
  * understand their emotional landscape. Knowledge is power, served warm. 🫖
  */
 export default function AboutPage() {
@@ -38,9 +38,9 @@ export default function AboutPage() {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 My 4 Blocks is an AI-powered companion that helps you understand and
-                transform difficult emotions. It&apos;s based on Cognitive Behavioral
-                Therapy (CBT) and Rational Emotive Behavior Therapy (REBT) — proven
-                approaches developed by pioneers like Dr. Albert Ellis.
+                transform difficult emotions. It&apos;s based on the Four Blocks methodology
+                developed by Dr. Vincent E. Parr, Ph.D. through decades of clinical experience
+                and grounded in proven psychological principles.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 The name comes from the core insight: there are only <strong className="text-foreground">four emotional

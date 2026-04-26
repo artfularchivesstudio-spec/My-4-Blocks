@@ -15,7 +15,15 @@ export interface EmbeddedChunk {
   id: string;
   text: string;
   embedding: number[];
-  block_type: "Anger" | "Anxiety" | "Depression" | "Guilt" | "Mental Contamination" | "ABCs" | "Three Insights" | "Irrational Beliefs" | "Happiness" | "General";
+  block_type:
+    | "Anger" | "Anxiety" | "Depression" | "Guilt"
+    | "Mental Contamination" | "ABCs" | "Three Insights"
+    | "Irrational Beliefs" | "Happiness" | "General"
+    | "Course Overview" | "Real-Time Prompts"
+    | "Meditation" | "Healthy Living" | "Ox Herding"
+    | "Scenario" | "Detection" | "Personality" | "Memory"
+    | "Relationship" | "Constitution" | "Validation";
+  priority?: "constitution" | "course" | "behavioral" | "library";
   metadata: ChunkMetadata;
 }
 

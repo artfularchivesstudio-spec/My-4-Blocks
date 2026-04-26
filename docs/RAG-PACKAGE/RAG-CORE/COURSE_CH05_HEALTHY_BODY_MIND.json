@@ -1,0 +1,287 @@
+{
+  "document_type": "course_content",
+  "title": "Four Blocks Course — Chapter 05: Healthy Body, Healthy Mind",
+  "subtitle": "Physical Health as the Foundation for Emotional Well-Being and Rational Thinking",
+  "version": "1.0",
+  "category": "physical_health",
+  "source": "Dr. Vincent E. Parr — My Four Blocks Course",
+  "audience": "general",
+  "chunks": [
+    {
+      "id": "CH05_HEALTHY_BODY_ANGER",
+      "title": "Healthy Body Habits Applied to Anger",
+      "overview": "Anger is fueled by egocentric thinking and Shoulds, Musts, and Demands. A healthy body reduces the physiological responses that amplify anger such as increased heart rate, muscle tension, and adrenaline surges.",
+      "habits": [
+        {
+          "habit": "Sleep",
+          "application": "Poor sleep causes irritability and increases reactive thinking. Quality sleep regulates mood and equips the mind to pause and dispute irrational beliefs before reacting."
+        },
+        {
+          "habit": "Exercise",
+          "application": "Physical activity releases pent-up energy and reduces stress hormones like cortisol that exacerbate anger. Exercise boosts endorphins, promoting calm and reducing anger intensity."
+        },
+        {
+          "habit": "Nutrition",
+          "application": "A balanced diet stabilizes blood sugar and prevents mood swings that lead to irritability. Avoiding stimulants like caffeine reduces physical agitation that amplifies anger."
+        }
+      ],
+      "tags": [
+        "healthy_body",
+        "anger",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "physical_health"
+      ],
+      "keywords": [
+        "anger",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "cortisol",
+        "irritability",
+        "mood regulation"
+      ]
+    },
+    {
+      "id": "CH05_HEALTHY_BODY_GUILT",
+      "title": "Healthy Body Habits Applied to Guilt",
+      "overview": "Guilt stems from wrongness and worthlessness, often accompanied by self-rejection and self-rating. A healthy body supports self-compassion and rational thinking, making it easier to dispute these irrational beliefs.",
+      "habits": [
+        {
+          "habit": "Sleep",
+          "application": "Sleep deprivation impairs cognitive function, making it harder to identify and dispute irrational beliefs. Restorative sleep improves the ability to observe and challenge self-critical thoughts."
+        },
+        {
+          "habit": "Exercise",
+          "application": "Regular exercise boosts self-esteem and promotes self-acceptance, which are essential for overcoming guilt. Physical activity reduces stress and supports emotional control."
+        },
+        {
+          "habit": "Nutrition",
+          "application": "A healthy diet supports the gut-brain axis, which influences emotional health. Balanced microbiota can reduce feelings of worthlessness and self-rejection by promoting a more positive mood."
+        }
+      ],
+      "tags": [
+        "healthy_body",
+        "guilt",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "self_acceptance"
+      ],
+      "keywords": [
+        "guilt",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "self-esteem",
+        "gut-brain axis",
+        "self-acceptance",
+        "self-rejection"
+      ]
+    },
+    {
+      "id": "CH05_HEALTHY_BODY_ANXIETY",
+      "title": "Healthy Body Habits Applied to Anxiety",
+      "overview": "Anxiety is driven by What If thinking, Awfulizing, and ICSI beliefs. A healthy body calms the physiological symptoms of anxiety such as racing heart, shallow breathing, and muscle tension.",
+      "habits": [
+        {
+          "habit": "Sleep",
+          "application": "Lack of sleep exacerbates anxiety by increasing stress hormones and reducing rational thinking capacity. Quality sleep helps maintain calm and makes it easier to dispute irrational beliefs."
+        },
+        {
+          "habit": "Exercise",
+          "application": "Physical activity reduces physiological anxiety symptoms such as muscle tension and rapid heart rate. It boosts serotonin and endorphins, promoting relaxation and reducing worry."
+        },
+        {
+          "habit": "Nutrition",
+          "application": "A healthy diet stabilizes blood sugar, reducing physical sensations of anxiety. Avoiding stimulants like caffeine prevents jittery feelings that mimic and amplify anxiety."
+        }
+      ],
+      "tags": [
+        "healthy_body",
+        "anxiety",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "serotonin"
+      ],
+      "keywords": [
+        "anxiety",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "serotonin",
+        "muscle tension",
+        "racing heart",
+        "caffeine",
+        "blood sugar"
+      ]
+    },
+    {
+      "id": "CH05_HEALTHY_BODY_DEPRESSION",
+      "title": "Healthy Body Habits Applied to Depression",
+      "overview": "Depression is caused by hopelessness, helplessness, and pseudo-needs. A healthy body alleviates physical symptoms of depression such as fatigue, lethargy, and poor concentration while supporting rational thinking.",
+      "habits": [
+        {
+          "habit": "Sleep",
+          "application": "Depression often disrupts sleep, leading to fatigue and difficulty concentrating. Restorative sleep improves energy and mental clarity, making it easier to dispute irrational beliefs."
+        },
+        {
+          "habit": "Exercise",
+          "application": "Physical activity reduces depression symptoms by boosting serotonin and dopamine. Exercise provides a sense of accomplishment that directly counters feelings of helplessness and hopelessness."
+        },
+        {
+          "habit": "Nutrition",
+          "application": "A balanced diet supports brain health and emotional stability. Healthy gut microbiota positively influences mood and reduces feelings of depression."
+        }
+      ],
+      "tags": [
+        "healthy_body",
+        "depression",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "dopamine",
+        "serotonin"
+      ],
+      "keywords": [
+        "depression",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "dopamine",
+        "serotonin",
+        "fatigue",
+        "helplessness",
+        "hopelessness"
+      ]
+    },
+    {
+      "id": "CH05_HEALTHY_BODY_COMPLEMENTS_MODEL",
+      "title": "How Healthy Body Habits Complement the Four Blocks Model",
+      "mechanisms": [
+        {
+          "mechanism": "Improved Cognitive Function",
+          "description": "Sleep, exercise, and nutrition enhance brain function, making it easier to identify and dispute irrational beliefs.",
+          "example": "A well-rested mind is better equipped to recognize and challenge the belief: I am worthless because I made a mistake."
+        },
+        {
+          "mechanism": "Reduced Physiological Symptoms",
+          "description": "Anger, anxiety, guilt, and depression manifest as physical symptoms such as racing heart, muscle tension, and fatigue. Healthy habits reduce these symptoms, making it easier to focus on rational thinking.",
+          "example": "Exercise can release tension and calm the body, reducing the physical sensations of anger or anxiety."
+        },
+        {
+          "mechanism": "Enhanced Emotional Resilience",
+          "description": "A healthy body supports emotional resilience, helping bounce back from activating events more quickly.",
+          "example": "Nutritious diet and regular exercise stabilize mood, making it easier to let go of guilt or depression."
+        },
+        {
+          "mechanism": "Supports Meditation and Mindfulness",
+          "description": "Healthy habits create the physical and mental conditions necessary for effective meditation, which is key to training the Observer and disputing irrational beliefs.",
+          "example": "A calm, well-rested body makes it easier to focus on breath and observe thoughts during meditation."
+        }
+      ],
+      "tags": [
+        "healthy_body",
+        "four_blocks",
+        "cognitive_function",
+        "emotional_resilience",
+        "meditation",
+        "physiological_symptoms"
+      ],
+      "keywords": [
+        "cognitive function",
+        "emotional resilience",
+        "physiological symptoms",
+        "meditation support",
+        "observer",
+        "rational thinking"
+      ]
+    },
+    {
+      "id": "CH05_HEALTHY_BODY_PRACTICAL_TIPS",
+      "title": "Practical Tips for Healthy Body Emotional Management",
+      "tips": [
+        {
+          "category": "Sleep",
+          "recommendations": [
+            "Prioritize 7 to 8.5 hours of sleep each night to improve mood and cognitive function.",
+            "Use the Centering Breath to calm the mind before bed and release irrational thoughts that may keep you awake."
+          ]
+        },
+        {
+          "category": "Exercise",
+          "recommendations": [
+            "Engage in regular physical activity to reduce stress and boost mood. Even a 15-minute walk can alleviate symptoms of anxiety and depression.",
+            "Use exercise as a way to release pent-up anger or guilt. Focus on physical sensations of movement to stay present and let go of negative thoughts."
+          ]
+        },
+        {
+          "category": "Nutrition",
+          "recommendations": [
+            "Eat a balanced diet rich in whole foods to support gut health and emotional stability.",
+            "Avoid excessive caffeine and sugar, which can exacerbate anxiety and mood swings."
+          ]
+        }
+      ],
+      "closing_principle": "Physical health is foundational to emotional well-being. By improving sleep, exercise, and nutrition, you create the conditions for rational thinking, emotional resilience, and effective meditation, helping achieve a mind of peace and happiness.",
+      "tags": [
+        "healthy_body",
+        "practical_tips",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "emotional_management"
+      ],
+      "keywords": [
+        "sleep 7-8.5 hours",
+        "centering breath",
+        "15-minute walk",
+        "caffeine",
+        "sugar",
+        "gut health",
+        "practical tips"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve_for_healthy_body_queries": [
+      "CH05_HEALTHY_BODY_COMPLEMENTS_MODEL",
+      "CH05_HEALTHY_BODY_PRACTICAL_TIPS"
+    ],
+    "retrieve_by_context": [
+      {
+        "context": "healthy body AND anger",
+        "chunks": [
+          "CH05_HEALTHY_BODY_ANGER"
+        ]
+      },
+      {
+        "context": "healthy body AND guilt",
+        "chunks": [
+          "CH05_HEALTHY_BODY_GUILT"
+        ]
+      },
+      {
+        "context": "healthy body AND anxiety",
+        "chunks": [
+          "CH05_HEALTHY_BODY_ANXIETY"
+        ]
+      },
+      {
+        "context": "healthy body AND depression",
+        "chunks": [
+          "CH05_HEALTHY_BODY_DEPRESSION"
+        ]
+      },
+      {
+        "context": "sleep OR exercise OR nutrition AND emotional management",
+        "chunks": [
+          "CH05_HEALTHY_BODY_PRACTICAL_TIPS",
+          "CH05_HEALTHY_BODY_COMPLEMENTS_MODEL"
+        ]
+      }
+    ]
+  }
+}

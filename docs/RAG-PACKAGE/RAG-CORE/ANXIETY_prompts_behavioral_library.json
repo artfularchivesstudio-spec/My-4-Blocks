@@ -1,0 +1,338 @@
+{
+  "chapter": "ANXIETY",
+  "category": "anxiety",
+  "audience": "general",
+  "formula": "AX = W1 + AW + ACSI (Anxiety = What-If Thinking + Awfulizing + I Can't Stand It)",
+  "chunks": [
+    {
+      "id": "ANX_VALIDATION_TEEN_PRESSURE",
+      "title": "Validation — Teen Facing Parental Expectation Pressure",
+      "content": "Being 17 and standing at the edge of college and your future is already a huge emotional moment. Trying to hold onto your own dream while feeling the weight of your parents' expectations can create a constant sense of anxiety inside. Feeling anxious here does not mean you are weak. It usually means something important to your life feels uncertain and pressured.",
+      "tags": [
+        "validation",
+        "adolescent",
+        "parental_pressure",
+        "anxiety",
+        "identity"
+      ],
+      "keywords": [
+        "college applications",
+        "parental expectations",
+        "performing arts",
+        "Stanford",
+        "teenager",
+        "identity"
+      ],
+      "related": [
+        "ANX_FORMULA_CORE",
+        "ANX_MAPPING_TEEN_PRESSURE",
+        "ANX_REFRAME_AUTONOMY"
+      ]
+    },
+    {
+      "id": "ANX_VALIDATION_WORKPLACE",
+      "title": "Validation — Late-Career Workplace Scrutiny",
+      "content": "Reaching the later stage of your career and suddenly feeling like the workplace has become tense, scrutinized, and unfamiliar can be deeply unsettling, especially when these are people you once felt comfortable and respected around. The anxiety you are feeling does not mean you are weak or unable to handle life. Most of the time it means something important to your security, dignity, or stability feels uncertain or threatened.",
+      "tags": [
+        "validation",
+        "career",
+        "workplace",
+        "anxiety",
+        "dignity"
+      ],
+      "keywords": [
+        "HR scrutiny",
+        "workplace anxiety",
+        "late career",
+        "reprimand",
+        "dignity",
+        "respect"
+      ],
+      "related": [
+        "ANX_FORMULA_CORE",
+        "ANX_MAPPING_WORKPLACE",
+        "ANX_REFRAME_DIGNITY_CHOICE"
+      ]
+    },
+    {
+      "id": "ANX_VALIDATION_LEGAL",
+      "title": "Validation — Court Date Threatening Career and Family Security",
+      "content": "Having a court date hanging over your head, especially when the situation feels minor and unfair, can create a constant knot of anxiety. When your career, reputation, and ability to provide for your family feel connected to the outcome, that pressure naturally gets even stronger. Feeling anxious here does not mean you are weak. Most of the time it means something important to your security, stability, and future feels uncertain.",
+      "tags": [
+        "validation",
+        "legal",
+        "career",
+        "family",
+        "anxiety",
+        "provider"
+      ],
+      "keywords": [
+        "court date",
+        "misdemeanor",
+        "finance career",
+        "reputation",
+        "family provider",
+        "anxiety"
+      ],
+      "related": [
+        "ANX_FORMULA_CORE",
+        "ANX_MAPPING_LEGAL",
+        "ANX_REFRAME_PROVIDER_STRENGTH"
+      ]
+    },
+    {
+      "id": "ANX_FORMULA_CORE",
+      "title": "Core Formula — Anxiety",
+      "content": "In Dr. Parr's model, anxiety follows this exact structure: AX = W1 + AW + ACSI. W1 is What-If thinking, the fearful projection of negative future possibilities. AW is Awfulizing, the catastrophic interpretation of those outcomes. ACSI is I-Can't-Stand-It thinking, the belief that the distress would be intolerable or impossible to endure. When What-If thoughts, Awfulizing, and I-Can't-Stand-It beliefs combine, the emotional result is anxiety. This formula must appear before any interpretation or intervention to maintain Parr-accurate clinical fidelity.",
+      "tags": [
+        "formula",
+        "four_blocks",
+        "anxiety"
+      ],
+      "keywords": [
+        "anxiety formula",
+        "W1",
+        "AW",
+        "ACSI",
+        "what-if",
+        "awfulizing",
+        "I can't stand it",
+        "AX = W1 + AW + ACSI"
+      ],
+      "related": [
+        "ANX_INTERVENTION_THREE_PART_SOFTENING",
+        "ANX_MAPPING_TEEN_PRESSURE",
+        "ANX_MAPPING_WORKPLACE",
+        "ANX_MAPPING_LEGAL"
+      ]
+    },
+    {
+      "id": "ANX_MAPPING_TEEN_PRESSURE",
+      "title": "Mapping — Teen Parental Pressure Anxiety",
+      "content": "W1 (What-If) thoughts may sound like: What if I disappoint my parents? What if I choose the wrong path? What if my future falls apart? AW (Awfulizing) thoughts may sound like: That would be terrible. It would ruin everything. It would be a disaster if they were not proud of me. ACSI (I Can't Stand It) thoughts may sound like: I could not handle their disappointment. I would not be able to live with failing. This pressure is unbearable. These map directly onto the Four Blocks anxiety formula AX = W1 + AW + ACSI.",
+      "tags": [
+        "mapping",
+        "adolescent",
+        "parental_pressure",
+        "anxiety"
+      ],
+      "keywords": [
+        "what-if",
+        "awfulizing",
+        "ACSI",
+        "parental disapproval",
+        "college choice",
+        "performing arts"
+      ],
+      "related": [
+        "ANX_FORMULA_CORE",
+        "ANX_INTERVENTION_THREE_PART_SOFTENING"
+      ]
+    },
+    {
+      "id": "ANX_MAPPING_WORKPLACE",
+      "title": "Mapping — Late-Career Workplace Scrutiny Anxiety",
+      "content": "W1 (What-If) thoughts may sound like: What if I say the wrong thing? What if I get written up? What if I lose my job near the end of my career? AW (Awfulizing) thoughts may sound like: That would be terrible. It would ruin everything I have worked for. This would be a disaster at my age. ACSI (I Can't Stand It) thoughts may sound like: I could not handle losing respect. I cannot stand this pressure. I would not cope if this kept happening. These map directly onto the Four Blocks anxiety formula AX = W1 + AW + ACSI.",
+      "tags": [
+        "mapping",
+        "workplace",
+        "career",
+        "anxiety"
+      ],
+      "keywords": [
+        "what-if",
+        "awfulizing",
+        "ACSI",
+        "HR scrutiny",
+        "late career",
+        "reprimand",
+        "job loss"
+      ],
+      "related": [
+        "ANX_FORMULA_CORE",
+        "ANX_INTERVENTION_THREE_PART_SOFTENING"
+      ]
+    },
+    {
+      "id": "ANX_MAPPING_LEGAL",
+      "title": "Mapping — Legal Infraction Career Threat Anxiety",
+      "content": "W1 (What-If) thoughts may sound like: What if this goes on my record? What if my job finds out? What if this damages my career or reputation? AW (Awfulizing) thoughts may sound like: That would be terrible. It could ruin everything I have built. This would be a disaster for my family. ACSI (I Can't Stand It) thoughts may sound like: I could not handle losing my standing. I cannot stand this uncertainty. I would not cope if this affected my job. These map directly onto the Four Blocks anxiety formula AX = W1 + AW + ACSI.",
+      "tags": [
+        "mapping",
+        "legal",
+        "career",
+        "reputation",
+        "anxiety"
+      ],
+      "keywords": [
+        "what-if",
+        "awfulizing",
+        "ACSI",
+        "court date",
+        "career risk",
+        "reputation",
+        "family provider"
+      ],
+      "related": [
+        "ANX_FORMULA_CORE",
+        "ANX_INTERVENTION_THREE_PART_SOFTENING"
+      ]
+    },
+    {
+      "id": "ANX_INTERVENTION_THREE_PART_SOFTENING",
+      "title": "Intervention — Three-Part Formula Softening",
+      "content": "The Four Blocks change happens by softening each part of the formula separately. Step 1 — Soften W1: From: What if everything goes wrong? To: Many different outcomes are possible and I can respond to whatever actually happens. Step 2 — Soften AW: From: This would be terrible and ruin everything. To: It might be difficult or stressful, but difficult is not the same as catastrophic or life-destroying. Step 3 — Soften ACSI: From: I could not handle this. To: I would not like it, but I could tolerate it, think clearly, and decide my next step with strength. When W1, AW, and ACSI each soften, anxiety decreases, clear thinking returns, and choices become guided by values instead of fear.",
+      "tags": [
+        "intervention",
+        "three_part_softening",
+        "W1",
+        "AW",
+        "ACSI",
+        "anxiety",
+        "four_blocks"
+      ],
+      "keywords": [
+        "W1 softening",
+        "AW softening",
+        "ACSI softening",
+        "anxiety relief",
+        "cognitive shift",
+        "what-if",
+        "awfulizing"
+      ],
+      "related": [
+        "ANX_FORMULA_CORE"
+      ]
+    },
+    {
+      "id": "ANX_REFRAME_AUTONOMY",
+      "title": "Reframe — Autonomy and Maturity (Teen)",
+      "content": "The fact that you are thinking this deeply says something strong about you. You want a life with meaning, not just pressure. You still care about your parents' love and respect. You are trying to choose your future consciously and bravely. Those are signs of real maturity, not rebellion. The Four Blocks work is not about pushing you toward one path or another. It is about helping you lower the anxiety, keep the clarity of your dreams, and make decisions from strength instead of fear, so you step into college and adulthood feeling excited about life, not trapped by it.",
+      "tags": [
+        "reframe",
+        "autonomy",
+        "identity",
+        "adolescent",
+        "anxiety"
+      ],
+      "keywords": [
+        "autonomy",
+        "maturity",
+        "identity",
+        "performing arts",
+        "parental approval",
+        "college"
+      ],
+      "related": [
+        "ANX_VALIDATION_TEEN_PRESSURE",
+        "ANX_INTERVENTION_THREE_PART_SOFTENING"
+      ]
+    },
+    {
+      "id": "ANX_REFRAME_DIGNITY_CHOICE",
+      "title": "Reframe — Dignity and Choice (Late-Career Workplace)",
+      "content": "The fact that this bothers you this much usually means you care about doing your job well, you value respect and fairness, and you have invested years of your life into this work. Those are not weaknesses. They are signs of commitment and dignity. The Four Blocks work is not about making you tolerate mistreatment. It is about helping you lower the anxiety, keep your self-respect, and choose your next step from clarity instead of pressure, so whatever decision you make next comes from strength, not fear.",
+      "tags": [
+        "reframe",
+        "dignity",
+        "choice",
+        "career",
+        "anxiety"
+      ],
+      "keywords": [
+        "dignity",
+        "self-respect",
+        "commitment",
+        "career",
+        "choice",
+        "workplace"
+      ],
+      "related": [
+        "ANX_VALIDATION_WORKPLACE",
+        "ANX_INTERVENTION_THREE_PART_SOFTENING"
+      ]
+    },
+    {
+      "id": "ANX_REFRAME_PROVIDER_STRENGTH",
+      "title": "Reframe — Provider Identity and Calm Strength (Legal)",
+      "content": "The fact that this bothers you this much usually means you care deeply about providing for your family, you value your reputation and integrity, and you take responsibility for your future and stability. Those are not weaknesses. They are signs of commitment and maturity. The Four Blocks work is not about pretending this does not matter. It is about helping you lower the anxiety, keep your clarity and strength, and handle the situation from calm control instead of fear, so whatever happens in court, you face it with steady confidence, not panic.",
+      "tags": [
+        "reframe",
+        "provider",
+        "family",
+        "strength",
+        "legal",
+        "anxiety"
+      ],
+      "keywords": [
+        "family provider",
+        "reputation",
+        "integrity",
+        "calm strength",
+        "court",
+        "finance career"
+      ],
+      "related": [
+        "ANX_VALIDATION_LEGAL",
+        "ANX_INTERVENTION_THREE_PART_SOFTENING"
+      ]
+    },
+    {
+      "id": "ANX_TRIAGE_QUESTION",
+      "title": "Triage Question — Identify Strongest Anxiety Component",
+      "content": "Right now, which part of the anxiety formula feels strongest? The What-If fear about what might happen in the future. The feeling that it would be awful or catastrophic if things went badly. Or the belief that you could not stand or handle the outcome. Tell me which one feels heaviest. We will work on that piece first, step by step.",
+      "tags": [
+        "triage",
+        "question",
+        "next_step",
+        "anxiety"
+      ],
+      "keywords": [
+        "triage",
+        "W1",
+        "AW",
+        "ACSI",
+        "what-if",
+        "awfulizing",
+        "can't stand it",
+        "strongest component"
+      ],
+      "related": [
+        "ANX_FORMULA_CORE"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve": [
+      "ANX_FORMULA_CORE",
+      "ANX_INTERVENTION_THREE_PART_SOFTENING",
+      "ANX_TRIAGE_QUESTION"
+    ],
+    "retrieve_by_context": [
+      {
+        "context": "adolescent OR teen OR college_applications OR parental_pressure OR performing_arts",
+        "chunks": [
+          "ANX_VALIDATION_TEEN_PRESSURE",
+          "ANX_MAPPING_TEEN_PRESSURE",
+          "ANX_REFRAME_AUTONOMY"
+        ]
+      },
+      {
+        "context": "workplace OR HR OR late_career OR coworkers OR reprimand OR job_security",
+        "chunks": [
+          "ANX_VALIDATION_WORKPLACE",
+          "ANX_MAPPING_WORKPLACE",
+          "ANX_REFRAME_DIGNITY_CHOICE"
+        ]
+      },
+      {
+        "context": "court OR legal OR infraction OR career_reputation OR family_provider OR finance",
+        "chunks": [
+          "ANX_VALIDATION_LEGAL",
+          "ANX_MAPPING_LEGAL",
+          "ANX_REFRAME_PROVIDER_STRENGTH"
+        ]
+      }
+    ]
+  }
+}

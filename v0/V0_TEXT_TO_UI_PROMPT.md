@@ -7,7 +7,7 @@ Copy the prompt below into [v0.dev](https://v0.dev) to generate a UI that matche
 ## Prompt (paste this into v0)
 
 ```
-Build a single-page web UI for "My 4 Blocks" — a daily planning and emotional wellness app based on CBT/REBT (Albert Ellis / Seth Hagan style). The product is inspired by the idea "You Only Have Four Problems" and the book of the same name.
+Build a single-page web UI for "My 4 Blocks" — a daily planning and emotional wellness app based on the Four Blocks methodology by Dr. Vincent E. Parr. The product is inspired by the idea "You Only Have Four Problems" and the book of the same name.
 
 **Core concept**
 - User picks exactly 4 "blocks" (focus areas) for the day. Tagline: "Pick 4. Everything else is noise." and "If it isn't a Block, it isn't happening."

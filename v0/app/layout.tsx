@@ -22,8 +22,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'My 4 Blocks | Find Peace Through Understanding',
-  description: 'Discover how Anger, Anxiety, Depression, and Guilt are created—and learn to transform them into peace, contentment, and joy. Based on CBT principles by Dr. Vincent E. Parr.',
-  keywords: ['mental wellness', 'CBT', 'cognitive behavioral therapy', 'anger management', 'anxiety relief', 'depression help', 'emotional wellbeing', 'mindfulness'],
+  description: 'Discover how Anger, Anxiety, Depression, and Guilt are created—and learn to transform them into peace, contentment, and joy. Based on the Four Blocks framework by Dr. Vincent E. Parr.',
+  keywords: ['mental wellness', 'four blocks', 'emotional wellness', 'anger management', 'anxiety relief', 'depression help', 'emotional wellbeing', 'mindfulness'],
   authors: [{ name: 'Dr. Vincent E. Parr' }],
   openGraph: {
     title: 'My 4 Blocks | Find Peace Through Understanding',

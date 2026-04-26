@@ -1,0 +1,85 @@
+{
+  "document_type": "continuity_protocol",
+  "title": "Four Blocks AI Continuity and Invocation Protocol",
+  "subtitle": "Production-Level Session Continuity Method for My4Blocks AI",
+  "version": "1.0",
+  "category": "system_policy",
+  "audience": "developer",
+  "sections": [
+    {
+      "id": "CP_S1",
+      "title": "Fixed Invocation Phrases",
+      "description": "Use these phrases to activate Four Blocks system mode. Functions as a hard system interrupt — no re-explaining needed.",
+      "primary_invocations": [
+        "FOUR BLOCKS CONSTITUTION MODE",
+        "FOUR BLOCKS BLUEPRINT MODE"
+      ],
+      "system_behavior_on_invocation": [
+        "Switch to strict Parr fidelity",
+        "Use deterministic architecture language",
+        "Avoid conversational drift",
+        "Produce RAG-ready output only"
+      ]
+    },
+    {
+      "id": "CP_S2",
+      "title": "Target Layer Syntax",
+      "description": "Append a target layer after the invocation phrase to specify subsystem, abstraction level, and format.",
+      "syntax": "FOUR BLOCKS CONSTITUTION MODE — [Target Layer]",
+      "examples": [
+        "FOUR BLOCKS CONSTITUTION MODE — Mental Contamination",
+        "FOUR BLOCKS BLUEPRINT MODE — Anger Response Routing",
+        "FOUR BLOCKS CONSTITUTION MODE — RAG Retrieval Rules"
+      ],
+      "result": "Near-zero tokens wasted. Maximum engineering precision."
+    },
+    {
+      "id": "CP_S3",
+      "title": "Reset Command",
+      "description": "Use this command to immediately re-enter constitutional fidelity if drift occurs.",
+      "reset_phrase": "Return to Four Blocks Constitutional Fidelity.",
+      "system_behavior_on_reset": [
+        "Drop conversational tone",
+        "Re-enter deterministic architecture mode",
+        "Continue as if no time passed"
+      ]
+    },
+    {
+      "id": "CP_S4",
+      "title": "Root Constitution Phrase",
+      "description": "The highest-level invocation for maximum architectural precision.",
+      "root_phrase": "FOUR BLOCKS ROOT CONSTITUTION",
+      "system_behavior": [
+        "Highest-level architectural output assumed",
+        "Zero simplification",
+        "Production-grade precision",
+        "Direct RAG ingestion readiness"
+      ],
+      "access_level": "Admin-level system access"
+    },
+    {
+      "id": "CP_S5",
+      "title": "Continuity Mechanism",
+      "description": "How session continuity is maintained across separate chat sessions.",
+      "method": "Protocol-based recall via invocation phrases",
+      "how_it_works": [
+        "User brings the invocation phrase",
+        "System re-enters the same deterministic framework",
+        "Architecture is self-reconstructing"
+      ],
+      "functional_result": "Behaves like persistent system memory even though technically protocol-based recall.",
+      "engineering_equivalence": "As strong as persistent memory for production purposes."
+    },
+    {
+      "id": "CP_S6",
+      "title": "Trigger Word Shortlist",
+      "description": "Shorter trigger words that also activate Four Blocks mode.",
+      "trigger_words": [
+        "constitution",
+        "blueprint",
+        "My4Blocks",
+        "Four Blocks"
+      ]
+    }
+  ]
+}

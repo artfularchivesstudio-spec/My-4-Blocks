@@ -1,0 +1,221 @@
+{
+  "library_id": "CIVILIAN_SCENARIO_LIBRARY_61_80",
+  "version": "1.0",
+  "description": "Civilian Everyday Life Scenario Library — scenarios 61 through 80. Each scenario includes activating event, likely emotions, Four Blocks methodology fix, and rational redirection protocol for RAG ingestion.",
+  "total_scenarios": 20,
+  "roles_covered": ["civilian"],
+  "source": "NotebookLM cross-reference against My4Blocks methodology backbone",
+  "scenarios": [
+    {
+      "scenario_id": "CIV061",
+      "role": "civilian",
+      "activating_event": "Feeling lonely after moving to a new city.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "hopelessness", "helplessness", "namelessness"],
+      "methodology_fix": "Depression Formula (D = H1 + H2 + N). The user believes they Need immediate social connection to be happy and feels Helpless without it.",
+      "rational_redirection": "Loneliness is a feeling, not a permanent state. You want friends, but you do not need them to exist or be okay in this moment. Accept the now of being alone without the story that it will last forever."
+    },
+    {
+      "scenario_id": "CIV062",
+      "role": "civilian",
+      "activating_event": "Feeling anxious about growing older and the uncertainty of the future.",
+      "likely_emotions": ["anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "awfulizing", "staying_now"],
+      "methodology_fix": "Anxiety Formula (AX = WI + AW + ICSI). The Narrator is What-If-ing about age and Awfulizing the unknown future.",
+      "rational_redirection": "Aging is a fact of reality. Your anxiety comes from arguing with that reality. Stay in the Now. You are alive and standing this moment — that is the only truth you need."
+    },
+    {
+      "scenario_id": "CIV063",
+      "role": "civilian",
+      "activating_event": "Reflecting on past decisions and wondering if different choices should have been made.",
+      "likely_emotions": ["guilt", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "guilt_formula", "should_belief", "fallible_human_beings"],
+      "methodology_fix": "Mental Contamination. The user is replaying the past and applying an irrational Should to decisions that are unalterable.",
+      "rational_redirection": "The past is unalterable. You made those choices because you were a Fallible Human Being operating under those specific conditions. Those decisions should have been made exactly as they were because they were made. Learn, then let go."
+    },
+    {
+      "scenario_id": "CIV064",
+      "role": "civilian",
+      "activating_event": "Feeling discouraged when personal progress toward goals seems slow.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "hopelessness", "irrational_demands"],
+      "methodology_fix": "Hopelessness (H1). The user is deciding the present situation is unchangeable or bad because progress is not moving faster than demanded.",
+      "rational_redirection": "Your progress is as it is. Demanding it be faster is an irrational demand on reality. I would prefer to be further along, but I accept where I am right now."
+    },
+    {
+      "scenario_id": "CIV065",
+      "role": "civilian",
+      "activating_event": "Frustration when plans for the future do not unfold as expected.",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief"],
+      "methodology_fix": "Anger Formula (A = ET + S). An Egocentric Demand that the universe must follow the user's personal timeline.",
+      "rational_redirection": "The universe does not follow your plans. It follows the laws of physics and trillions of conditions. Replace your demand with a preference: I would have liked my plans to work, but I will handle reality as it arrives."
+    },
+    {
+      "scenario_id": "CIV066",
+      "role": "civilian",
+      "activating_event": "Anxiety before a major life decision such as relocating or changing careers.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "fear_of_uncertainty", "centering_breath", "fallible_human_beings"],
+      "methodology_fix": "Fear of Uncertainty. The belief that certainty is needed before any forward movement is possible.",
+      "rational_redirection": "Uncertainty is a fact of life. You cannot predict the future. Use the Centering Breath to quiet the Narrator and make the best decision you can as a Fallible Human Being."
+    },
+    {
+      "scenario_id": "CIV067",
+      "role": "civilian",
+      "activating_event": "Sadness after the loss of a loved one or the end of a relationship.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "three_insights", "non_acceptance_of_reality", "should_belief"],
+      "methodology_fix": "The Three Insights. Distinguishing between natural grief and the Block of Depression created by non-acceptance of the loss.",
+      "rational_redirection": "It is natural to feel sad, but Depression is created by demanding they should still be here. They are gone because the conditions for their life ended. 100% acceptance of this loss is the only path to peace."
+    },
+    {
+      "scenario_id": "CIV068",
+      "role": "civilian",
+      "activating_event": "Feeling guilty for not being able to help someone in need.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "wrongness", "worthlessness", "bs_equation"],
+      "methodology_fix": "Guilt Formula (G = W1 + W2). The user believes their inability to help (Wrongness) makes them a worthless person (Worthlessness). Behavior does not equal Self.",
+      "rational_redirection": "Your behavior of not helping does not equal your Self. You are a Fallible Human Being with limited resources. You can rate the situation as unfortunate without rating yourself as bad."
+    },
+    {
+      "scenario_id": "CIV069",
+      "role": "civilian",
+      "activating_event": "Feeling irritated when life circumstances feel unfair or unjust.",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "seven_irrational_beliefs", "entitlement", "should_belief"],
+      "methodology_fix": "Seven Irrational Beliefs — Entitlement and Shoulds. Demanding the world be fair on the user's personal terms.",
+      "rational_redirection": "The world is not fair — it is just reality. Everything that happens should happen because the conditions were met. Stop shoulding on the world and focus on what you can effectively change."
+    },
+    {
+      "scenario_id": "CIV070",
+      "role": "civilian",
+      "activating_event": "Anxiety about financial stability approaching retirement.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "awfulizing", "what_if_thinking"],
+      "methodology_fix": "Awfulizing (AW) the future. The mind is treating a possible financial outcome as a catastrophic certainty.",
+      "rational_redirection": "Money is a tool, not a need for your intrinsic worth. Solve the practical problem without the What If horror stories. You will stand whatever the bank balance is, just as you have stood everything else."
+    },
+    {
+      "scenario_id": "CIV071",
+      "role": "civilian",
+      "activating_event": "Thinking repeatedly about missed opportunities earlier in life.",
+      "likely_emotions": ["depression", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "the_narrator", "the_observer", "should_belief"],
+      "methodology_fix": "Mental Contamination. The Narrator is stuck in a Should Have loop about the past — opportunities that cannot be revisited or changed.",
+      "rational_redirection": "There are no missed opportunities — there is only what happened. Arguing with the past is a total waste of time. Return to the Observer and focus on the opportunities in this moment."
+    },
+    {
+      "scenario_id": "CIV072",
+      "role": "civilian",
+      "activating_event": "Feeling overwhelmed by uncertainty about future plans or direction.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "sos_method", "centering_breath", "shoulds_musts_demands"],
+      "methodology_fix": "SOS Method — identifying what the user is telling themselves about their Self, Others, and the Situation. The demand that direction must be known before action is possible.",
+      "rational_redirection": "You are telling yourself you must know the direction. This is a demand. Use the Centering Breath — inhale, exhale, and let go of the need to know. The direction will reveal itself as you take action."
+    },
+    {
+      "scenario_id": "CIV073",
+      "role": "civilian",
+      "activating_event": "Feeling discouraged when comparing personal achievements to others' success.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "rating", "unconditional_self_acceptance"],
+      "methodology_fix": "Rating. The user is assigning their worth based on an external comparison scale — measuring themselves against others' outcomes.",
+      "rational_redirection": "There is no Yelp review for human beings. Their success is their reality. Your life is your reality. Stop comparing and practice Unconditional Self-Acceptance."
+    },
+    {
+      "scenario_id": "CIV074",
+      "role": "civilian",
+      "activating_event": "Frustrated when life feels out of personal control.",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief"],
+      "methodology_fix": "Egocentric Thinking (ET). The demand that external conditions should be within the user's personal control.",
+      "rational_redirection": "You have almost no control over what happens outside of yourself. Mastery is over your internal world. Accept the lack of external control and you will find peace."
+    },
+    {
+      "scenario_id": "CIV075",
+      "role": "civilian",
+      "activating_event": "Feeling guilty about past decisions that affected family or loved ones.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "bs_equation", "wrongness", "worthlessness", "fallible_human_beings"],
+      "methodology_fix": "BS Equation (B = S). The user is rating themselves as a bad family member based on past behavior. Behavior does not equal Self.",
+      "rational_redirection": "Your past behavior was inadequate — Behavior equals Behavior — but you are not a failure as a human being. Apologize if appropriate, but stop punishing yourself for being fallible."
+    },
+    {
+      "scenario_id": "CIV076",
+      "role": "civilian",
+      "activating_event": "Feeling anxious about the future health and well-being of loved ones.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "awfulizing"],
+      "methodology_fix": "What If (WI) thinking. The user is anticipating a loss or health crisis that has not yet occurred and treating the possibility as near-certain.",
+      "rational_redirection": "This illness is currently a story in your head. If they are healthy now, enjoy it. If they are not, handle the fact without the Awfulizing story. Your anxiety will not make them healthier."
+    },
+    {
+      "scenario_id": "CIV077",
+      "role": "civilian",
+      "activating_event": "Feeling emotionally drained after long periods of stress or ongoing responsibility.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "helplessness", "shoulds_musts_demands"],
+      "methodology_fix": "Helplessness (H2). The belief that fatigue means the user is broken or done — and the demand that they must feel energetic to function or have value.",
+      "rational_redirection": "You are physically tired. This is a fact. You are not helpless. Accept the fatigue, rest the body, and refuse the story that you must feel high-energy to be happy."
+    },
+    {
+      "scenario_id": "CIV078",
+      "role": "civilian",
+      "activating_event": "Angry when personal goals are blocked by circumstances outside personal control.",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "low_frustration_tolerance", "should_belief"],
+      "methodology_fix": "Low Frustration Tolerance. The demand that the path to goals must be easy and unobstructed.",
+      "rational_redirection": "It would be nice if the path were clear, but it is not. I accept the hassle without the Anger. I will find a new way or accept the delay."
+    },
+    {
+      "scenario_id": "CIV079",
+      "role": "civilian",
+      "activating_event": "Reflecting on the meaning and purpose of life during times of uncertainty.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "the_narrator", "the_observer", "namelessness"],
+      "methodology_fix": "Mental Contamination. The user is confusing the search for meaning with a Need for a specific answer — and the Narrator is generating a story around the absence of that answer.",
+      "rational_redirection": "The meaning of life is to live it. If you are searching for an answer out there, you are in the Narrator's story. Be the Observer of your breath. That is your purpose right now."
+    },
+    {
+      "scenario_id": "CIV080",
+      "role": "civilian",
+      "activating_event": "Feeling uncertain about whether life is moving in the right direction.",
+      "likely_emotions": ["anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anxiety_formula", "absolutistic_thinking", "centering_breath"],
+      "methodology_fix": "Absolutistic Thinking — Right versus Wrong direction. The mind is applying a binary standard to a non-binary reality.",
+      "rational_redirection": "There is no right direction — only the direction you are moving. Accept where you are. Use the Centering Breath to stop the worry and just be where your feet are."
+    }
+  ],
+  "implementation_notes": {
+    "library_context": "Civilian Scenario Library — everyday life scenarios for non-first-responder users",
+    "previous_files": "FIRST_RESPONDER_SCENARIO_LIBRARY series covers FR001-FR100",
+    "source_tool": "NotebookLM — cross-referenced against My4Blocks methodology backbone PDF",
+    "enhanced_fields": "Includes methodology_fix and rational_redirection fields consistent with FR081-FR100 format",
+    "routing_note": "Match scenario context to user input → identify stage → apply methodology fix → deliver rational redirection through civilian personality layer",
+    "stage_routing": {
+      "pre_event": "Route to anticipatory anxiety or pre-event behavior responses",
+      "post_event": "Route to processing responses — mental contamination protocol, formula application, rational redirection"
+    }
+  }
+}

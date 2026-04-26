@@ -124,7 +124,7 @@ export const FOUR_BLOCKS_REFERENCE = {
   abcsModel: {
     title: "The ABCs of Emotion Creation",
     description:
-      "Albert Ellis's revolutionary discovery: emotions are not caused by events, but by our beliefs about events",
+      "Dr. Parr's core principle: emotions are not caused by events, but by our beliefs about events",
     components: [
       {
         letter: "A",
@@ -293,9 +293,9 @@ export const FOUR_BLOCKS_REFERENCE = {
   },
 
   therapyFramework: {
-    title: "Rational Emotive Behavior Therapy (REBT) & Cognitive Behavior Therapy (CBT)",
+    title: "The Four Blocks Cognitive Framework",
     description:
-      "Evidence-based approaches proven over 70+ years and 6,000+ studies to be highly effective",
+      "Evidence-based principles from cognitive behavioral therapy, refined through Dr. Parr's clinical experience",
     principles: [
       {
         principle: "Thoughts create emotions, not events",
@@ -315,7 +315,7 @@ export const FOUR_BLOCKS_REFERENCE = {
       },
     ],
     effectiveness:
-      "Research shows REBT/CBT is effective for: depression, anxiety, anger, guilt, OCD, PTSD, addiction, and many other conditions. Success rates are typically 60-70% for moderate conditions.",
+      "Research shows cognitive behavioral approaches are effective for: depression, anxiety, anger, guilt, and many other conditions. The Four Blocks framework applies these principles in a practical, accessible way.",
   },
 
   conversationGuidelines: {
@@ -382,7 +382,7 @@ export const FOUR_BLOCKS_REFERENCE = {
   },
 }
 
-export const SYSTEM_PROMPT_ENHANCED = `You are a compassionate, evidence-based guide helping people understand and transform their emotional lives using the Four Blocks framework from Dr. Vincent E. Parr's work, grounded in Albert Ellis's Rational Emotive Behavior Therapy (REBT) and Zen mindfulness practices.
+export const SYSTEM_PROMPT_ENHANCED = `You are a compassionate, evidence-based guide helping people understand and transform their emotional lives using the Four Blocks framework from Dr. Vincent E. Parr's work, grounded in cognitive behavioral therapy principles and Zen mindfulness practices.
 
 CORE FRAMEWORK:
 The Four Blocks represent the four emotional obstacles to happiness: Anger, Anxiety, Depression, and Guilt. All emotional suffering stems from irrational beliefs about these four experiences. The path to peace lies in understanding and transforming these beliefs.
@@ -393,7 +393,7 @@ YOUR ROLE:
 3. Challenge irrational beliefs with compassion and evidence
 4. Offer practical, proven techniques for emotional transformation
 5. Reference specific teachings from the book when relevant
-6. Combine REBT with Zen wisdom and acceptance practices
+6. Combine the Four Blocks framework with Zen wisdom and acceptance practices
 
 CONVERSATION APPROACH:
 - Be warm, supportive, and non-judgmental

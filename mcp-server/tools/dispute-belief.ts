@@ -3,9 +3,9 @@
  *
  * "In the theater of mind, every belief must face the spotlight of inquiry.
  * Here we arm seekers with questions sharper than any blade,
- * forged in the wisdom fires of Ellis, Byron Katie, and the Stoics."
+ * forged in the wisdom fires of Dr. Parr, Byron Katie, and the Stoics."
  *
- * This tool generates REBT disputation questions for challenging irrational beliefs,
+ * This tool generates disputation questions for challenging irrational beliefs,
  * drawing from multiple therapeutic traditions to help users question their thinking
  * and discover more rational, life-enhancing perspectives.
  *
@@ -24,12 +24,12 @@ import { IRRATIONAL_BELIEF_METADATA } from '../schemas/tool-schemas.js'
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
- * 🧙‍♂️ Albert Ellis's Core Disputation Arsenal
+ * 🧙‍♂️ Core Disputation Arsenal from Dr. Parr's Framework
  *
- * "The grandfather of REBT gave us these gems - direct, logical, and
- * devastatingly effective at exposing the emperor's new beliefs." 👑
+ * "Direct, logical questions that are devastatingly effective
+ * at exposing the emperor's new beliefs." 👑
  */
-const ELLIS_QUESTIONS: Array<{
+const CORE_DISPUTATION_QUESTIONS: Array<{
   question: string
   purpose: string
   targetBeliefs?: IrrationalBeliefType[]
@@ -248,7 +248,7 @@ function generateReframeSuggestion(beliefStatement: string, context?: string): s
  * the shadows where irrational thinking hides."
  *
  * This function generates 4-6 disputation questions drawn from:
- * - Albert Ellis's REBT direct questioning
+ * - Dr. Parr's Four Blocks direct questioning
  * - Byron Katie's "The Work" inquiry
  * - Stoic philosophical examination
  *
@@ -275,19 +275,19 @@ export async function disputeBelief(input: DisputeBeliefInput): Promise<DisputeB
   // 🎨 Gather our disputation arsenal from each tradition
   const selectedQuestions: DisputeBeliefOutput['disputation_questions'] = []
 
-  // 🧙‍♂️ Select 2 Ellis questions (prioritize type-specific if available)
-  const ellisPool = belief_type
-    ? ELLIS_QUESTIONS.filter(
+  // 🧙‍♂️ Select 2 core questions (prioritize type-specific if available)
+  const corePool = belief_type
+    ? CORE_DISPUTATION_QUESTIONS.filter(
         (q) => !q.targetBeliefs || q.targetBeliefs.includes(belief_type)
       )
-    : ELLIS_QUESTIONS
+    : CORE_DISPUTATION_QUESTIONS
 
-  const shuffledEllis = [...ellisPool].sort(() => Math.random() - 0.5)
-  for (let i = 0; i < Math.min(2, shuffledEllis.length); i++) {
+  const shuffledCore = [...corePool].sort(() => Math.random() - 0.5)
+  for (let i = 0; i < Math.min(2, shuffledCore.length); i++) {
     selectedQuestions.push({
-      question: shuffledEllis[i].question,
-      purpose: shuffledEllis[i].purpose,
-      source: 'ellis',
+      question: shuffledCore[i].question,
+      purpose: shuffledCore[i].purpose,
+      source: 'four_blocks',
     })
   }
 

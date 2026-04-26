@@ -37,7 +37,7 @@ flowchart LR
 2. Anxiety - The Formula and cure  
 3. Depression - The Formula and cure
 4. Guilt - The Formula and cure
-5. The ABCs of emotion creation (Albert Ellis REBT)
+5. The ABCs of emotion creation
 6. The Seven Irrational Beliefs
 7. Zen/Mindfulness practices
 
@@ -154,9 +154,9 @@ async function POST(request) {
 ### 3.2 System Prompt Template
 
 ```
-You are a compassionate guide helping people understand and manage 
-their emotions using the "Four Blocks" framework from Dr. Vincent Parr's 
-work, influenced by Albert Ellis's Rational Emotive Behavior Therapy (REBT).
+You are a compassionate guide helping people understand and manage
+their emotions using the "Four Blocks" framework from Dr. Vincent E. Parr's
+work.
 
 The Four Blocks to happiness are: Anger, Anxiety, Depression, and Guilt.
 

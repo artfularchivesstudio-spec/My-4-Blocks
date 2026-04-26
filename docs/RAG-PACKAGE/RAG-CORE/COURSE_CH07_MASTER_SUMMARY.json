@@ -1,0 +1,474 @@
+{
+  "document_type": "course_content",
+  "title": "Four Blocks Course — Chapter 07: Master Summary — You Only Have Four Problems",
+  "subtitle": "Complete Chapter-by-Chapter Overview of Dr. Parr's My Four Blocks Course",
+  "version": "1.0",
+  "category": "master_summary",
+  "source": "Dr. Vincent E. Parr — My Four Blocks Course",
+  "audience": "general",
+  "purpose": "Provides a complete orientating overview of all chapters in the course. Serves as the primary RAG entry point for general course queries and cross-chapter retrieval.",
+  "chunks": [
+    {
+      "id": "CH07_MASTER_PREFACE",
+      "title": "Preface — Course Foundation and Purpose",
+      "content": "The book is inspired by teachings from Dr. Albert Ellis (Rational Emotive Behavior Therapy) and Zen Priest Steve Hagen. It identifies four emotional blocks to happiness: Anger, Anxiety, Depression, and Guilt. These blocks are created by irrational beliefs and thought patterns, which can be disputed and replaced with rational thinking. The book aims to provide practical tools to eliminate emotional suffering and achieve peace and contentment.",
+      "tags": [
+        "preface",
+        "REBT",
+        "Ellis",
+        "four_blocks",
+        "irrational_beliefs",
+        "overview"
+      ],
+      "keywords": [
+        "preface",
+        "Albert Ellis",
+        "REBT",
+        "Zen",
+        "Steve Hagen",
+        "four blocks",
+        "anger",
+        "anxiety",
+        "depression",
+        "guilt",
+        "irrational beliefs"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH1_MENTAL_CONTAMINATION",
+      "title": "Chapter 1 Summary — Mental Contamination",
+      "key_idea": "Nothing and no one has ever upset you. Emotions are internally caused by beliefs and thoughts, not by external events.",
+      "concepts": [
+        {
+          "concept": "Negative Feedback Superhighway",
+          "description": "A cycle of distressing thoughts, feelings, behaviors, and physiological effects that reinforce each other."
+        },
+        {
+          "concept": "The Narrator",
+          "description": "The reactive, ego-driven part of the mind that assigns meaning to events."
+        },
+        {
+          "concept": "The Observer",
+          "description": "The mindful, non-reactive part of the mind that simply observes without judgment."
+        }
+      ],
+      "goal": "Train the Observer to notice irrational beliefs and let go of mental contamination.",
+      "tags": [
+        "mental_contamination",
+        "narrator",
+        "observer",
+        "negative_feedback_loop",
+        "chapter_1"
+      ],
+      "keywords": [
+        "mental contamination",
+        "narrator",
+        "observer",
+        "negative feedback superhighway",
+        "irrational beliefs",
+        "chapter 1"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH2_THREE_INSIGHTS",
+      "title": "Chapter 2 Summary — Three Insights to a Mind of Peace",
+      "insights": [
+        "You create and maintain 100% of your thoughts, feelings, and behavior.",
+        "Become aware of how you create your emotions using the ABC model: Activating Event, Belief, Consequence.",
+        "Learn to dispute and let go of negative emotions rapidly using rational thinking."
+      ],
+      "tags": [
+        "three_insights",
+        "ABC_model",
+        "emotional_responsibility",
+        "chapter_2"
+      ],
+      "keywords": [
+        "three insights",
+        "100 percent",
+        "ABC model",
+        "dispute",
+        "rational thinking",
+        "chapter 2"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH3_ABCS",
+      "title": "Chapter 3 Summary — The ABCs of How Emotions Are Created",
+      "abc_model": {
+        "A": "Activating Event — external situation or thought",
+        "B": "Belief — rational or irrational",
+        "C": "Consequence — emotional, behavioral, physiological response"
+      },
+      "key_concepts": [
+        "A-to-C Thinking: incorrectly blaming external events for emotions.",
+        "Rational Beliefs: accept reality as it is, even if unpleasant.",
+        "Irrational Beliefs: reject reality and demand it be different, leading to emotional disturbance."
+      ],
+      "tags": [
+        "ABC_model",
+        "A_to_C_thinking",
+        "rational_beliefs",
+        "irrational_beliefs",
+        "chapter_3"
+      ],
+      "keywords": [
+        "ABC model",
+        "activating event",
+        "belief",
+        "consequence",
+        "A-to-C thinking",
+        "rational beliefs",
+        "chapter 3"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH4_SEVEN_IRRATIONAL_BELIEFS",
+      "title": "Chapter 4 Summary — Seven Irrational Beliefs",
+      "beliefs": [
+        "It Statements: blaming external events for emotions.",
+        "Awfulizing: exaggerating unpleasantness to extremes.",
+        "I Can't Stand It: believing you cannot tolerate a situation.",
+        "Shoulds, Musts, and Demands: unrealistic expectations of yourself, others, or the world.",
+        "Rating: judging yourself or others as good or bad, worthwhile or worthless.",
+        "Absolutistic Thinking: using extreme terms like always or never.",
+        "The Idea of Entitlement: believing you deserve or do not deserve something."
+      ],
+      "tags": [
+        "seven_irrational_beliefs",
+        "chapter_4"
+      ],
+      "keywords": [
+        "seven irrational beliefs",
+        "it statements",
+        "awfulizing",
+        "ICSI",
+        "shoulds",
+        "rating",
+        "absolutistic thinking",
+        "entitlement",
+        "chapter 4"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH5_ANGER",
+      "title": "Chapter 5 Summary — Formula for Anger",
+      "formula": "Anger = Egocentric Thinking + Should",
+      "components": [
+        "Egocentric Thinking: believing the world should conform to your preferences.",
+        "Should: demanding reality be different than it is."
+      ],
+      "solution": "Dispute irrational beliefs and replace them with rational preferences.",
+      "tags": [
+        "anger",
+        "formula",
+        "egocentric_thinking",
+        "should",
+        "chapter_5"
+      ],
+      "keywords": [
+        "anger formula",
+        "egocentric thinking",
+        "should",
+        "rational preference",
+        "chapter 5"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH6_ANXIETY",
+      "title": "Chapter 6 Summary — Formula for Anxiety",
+      "formula": "Anxiety = What If? + Awfulizing + I Can't Stand It",
+      "components": [
+        "What If: projecting fears into a future that does not exist.",
+        "Awfulizing: exaggerating the negative consequences of imagined events.",
+        "I Can't Stand It: believing you cannot tolerate the imagined outcome."
+      ],
+      "solution": "Dispute irrational beliefs, confront fears, and practice the Centering Breath.",
+      "tags": [
+        "anxiety",
+        "formula",
+        "what_if",
+        "awfulizing",
+        "ICSI",
+        "chapter_6"
+      ],
+      "keywords": [
+        "anxiety formula",
+        "what if",
+        "awfulizing",
+        "I can't stand it",
+        "centering breath",
+        "chapter 6"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH7_DEPRESSION",
+      "title": "Chapter 7 Summary — Formula for Depression",
+      "formula": "Depression = Hopelessness + Helplessness + Need",
+      "components": [
+        "Hopelessness: negative outlook on past, present, and future.",
+        "Helplessness: feeling powerless to change your situation.",
+        "Need: believing you require something such as love or success to be happy."
+      ],
+      "solution": "Identify and dispute irrational beliefs, especially the false Need.",
+      "tags": [
+        "depression",
+        "formula",
+        "hopelessness",
+        "helplessness",
+        "need",
+        "chapter_7"
+      ],
+      "keywords": [
+        "depression formula",
+        "hopelessness",
+        "helplessness",
+        "need",
+        "pseudo-need",
+        "chapter 7"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH8_GUILT",
+      "title": "Chapter 8 Summary — Formula for Guilt",
+      "formula": "Guilt = Wrongness + Worthlessness",
+      "components": [
+        "Wrongness: believing you have done something wrong.",
+        "Worthlessness: rating yourself as inferior because of your actions."
+      ],
+      "solution": "Dispute the BS equation (Behavior does not equal Self) and practice unconditional self-acceptance.",
+      "tags": [
+        "guilt",
+        "formula",
+        "wrongness",
+        "worthlessness",
+        "BS_equation",
+        "chapter_8"
+      ],
+      "keywords": [
+        "guilt formula",
+        "wrongness",
+        "worthlessness",
+        "BS equation",
+        "behavior not self",
+        "unconditional self-acceptance",
+        "chapter 8"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH9_HAPPINESS",
+      "title": "Chapter 9 Summary — Formulas for Happiness",
+      "formulas": [
+        {
+          "label": "Short Formula",
+          "formula": "100% Acceptance = 0% Disturbance"
+        },
+        {
+          "label": "Long Formula",
+          "formula": "Happiness = Unconditional Self-Acceptance + Unconditional Acceptance of Others and the World + Staying Now"
+        },
+        {
+          "label": "Corollary",
+          "formula": "Greater Happiness = Happiness + Creative Absorption – Hassle Factor"
+        }
+      ],
+      "solution": "Accept reality as it is, practice mindfulness, and engage in creative, fulfilling activities.",
+      "tags": [
+        "happiness",
+        "formula",
+        "acceptance",
+        "staying_now",
+        "chapter_9"
+      ],
+      "keywords": [
+        "happiness formula",
+        "100% acceptance",
+        "unconditional self-acceptance",
+        "staying now",
+        "creative absorption",
+        "hassle factor",
+        "chapter 9"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH10_MEDITATION",
+      "title": "Chapter 10 Summary — Why Zen Meditation is Essential Mind Training",
+      "key_concepts": [
+        "Zen Meditation: a practice of awareness and mindfulness that trains the Observer.",
+        "Benefits: observing thoughts without reacting, letting go of mental chatter, and embracing impermanence.",
+        "Centering Breath: a technique to calm the mind and body through deep, intentional breathing."
+      ],
+      "tags": [
+        "meditation",
+        "zen",
+        "observer",
+        "centering_breath",
+        "chapter_10"
+      ],
+      "keywords": [
+        "zen meditation",
+        "observer",
+        "centering breath",
+        "mindfulness",
+        "impermanence",
+        "chapter 10"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH11_HEALTHY_BODY",
+      "title": "Chapter 11 Summary — Healthy Body, Healthy Mind",
+      "key_concepts": [
+        "Sleep: essential for mental and physical health. Aim for 7 to 8.5 hours of quality sleep.",
+        "Exercise: promotes mental clarity, reduces stress, and improves mood.",
+        "Nutrition: a healthy gut supports emotional and cognitive health. Eat nutritious foods, stay hydrated, and create a calm mealtime environment."
+      ],
+      "tags": [
+        "healthy_body",
+        "sleep",
+        "exercise",
+        "nutrition",
+        "chapter_11"
+      ],
+      "keywords": [
+        "sleep",
+        "exercise",
+        "nutrition",
+        "gut health",
+        "mealtime",
+        "mental clarity",
+        "chapter 11"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_CH12_OX_HERDING",
+      "title": "Chapter 12 Summary — Lessons from the 10 Ox-Herding Pictures",
+      "overview": "A series of Zen illustrations and poems depicting the journey toward enlightenment.",
+      "pictures": [
+        "Picture 1 — Searching for the Ox: seeking answers outside oneself.",
+        "Picture 2 — Seeing the Traces: recognizing signs of the path.",
+        "Picture 3 — Seeing the Ox: catching sight of the truth within.",
+        "Picture 4 — Catching the Ox: using discipline to overcome bad habits.",
+        "Picture 5 — Herding the Ox: living in greater awareness and harmony.",
+        "Picture 6 — Coming Home on the Ox's Back: experiencing joy and creative energy.",
+        "Picture 7 — The Ox Forgotten, Leaving the Man Alone: realizing the unity of practice and realization.",
+        "Picture 8 — The Ox and the Man Both Gone Out of Sight: awareness of interconnectedness and emptiness.",
+        "Picture 9 — Returning to the Origin, Back to the Source: finding the ultimate in the ordinary.",
+        "Picture 10 — Entering the City with Bliss-Bestowing Hands: sharing enlightenment with the world."
+      ],
+      "tags": [
+        "ox_herding",
+        "zen",
+        "enlightenment",
+        "acceptance",
+        "chapter_12"
+      ],
+      "keywords": [
+        "ox herding",
+        "zen",
+        "enlightenment",
+        "discipline",
+        "acceptance",
+        "present moment",
+        "chapter 12"
+      ]
+    },
+    {
+      "id": "CH07_MASTER_EPILOGUE",
+      "title": "Epilogue — Closing Principles",
+      "content": "Embrace the whole of life, including its joys and sorrows. Live in the present moment, as it is all we truly have.",
+      "tags": [
+        "epilogue",
+        "present_moment",
+        "acceptance",
+        "happiness"
+      ],
+      "keywords": [
+        "epilogue",
+        "present moment",
+        "joys",
+        "sorrows",
+        "acceptance",
+        "life"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve_for_general_course_queries": [
+      "CH07_MASTER_PREFACE"
+    ],
+    "retrieve_by_context": [
+      {
+        "context": "mental contamination OR narrator OR observer",
+        "chunks": [
+          "CH07_MASTER_CH1_MENTAL_CONTAMINATION"
+        ]
+      },
+      {
+        "context": "three insights OR emotional responsibility",
+        "chunks": [
+          "CH07_MASTER_CH2_THREE_INSIGHTS"
+        ]
+      },
+      {
+        "context": "ABC model OR activating event OR A-to-C thinking",
+        "chunks": [
+          "CH07_MASTER_CH3_ABCS"
+        ]
+      },
+      {
+        "context": "seven irrational beliefs OR awfulizing OR shoulds OR rating OR entitlement",
+        "chunks": [
+          "CH07_MASTER_CH4_SEVEN_IRRATIONAL_BELIEFS"
+        ]
+      },
+      {
+        "context": "anger formula OR egocentric thinking",
+        "chunks": [
+          "CH07_MASTER_CH5_ANGER"
+        ]
+      },
+      {
+        "context": "anxiety formula OR what if OR ICSI",
+        "chunks": [
+          "CH07_MASTER_CH6_ANXIETY"
+        ]
+      },
+      {
+        "context": "depression formula OR hopelessness OR helplessness OR need",
+        "chunks": [
+          "CH07_MASTER_CH7_DEPRESSION"
+        ]
+      },
+      {
+        "context": "guilt formula OR wrongness OR worthlessness OR BS equation",
+        "chunks": [
+          "CH07_MASTER_CH8_GUILT"
+        ]
+      },
+      {
+        "context": "happiness formula OR acceptance OR staying now OR creative absorption",
+        "chunks": [
+          "CH07_MASTER_CH9_HAPPINESS"
+        ]
+      },
+      {
+        "context": "zen meditation OR centering breath OR observer training",
+        "chunks": [
+          "CH07_MASTER_CH10_MEDITATION"
+        ]
+      },
+      {
+        "context": "sleep OR exercise OR nutrition OR healthy body",
+        "chunks": [
+          "CH07_MASTER_CH11_HEALTHY_BODY"
+        ]
+      },
+      {
+        "context": "ox herding OR zen pictures OR enlightenment",
+        "chunks": [
+          "CH07_MASTER_CH12_OX_HERDING"
+        ]
+      }
+    ]
+  }
+}

@@ -130,19 +130,19 @@ export default function FAQPage() {
       items: [
         {
           question: 'What is My 4 Blocks?',
-          answer: 'My 4 Blocks is an AI-powered emotional wellness companion based on Cognitive Behavioral Therapy (CBT) and Rational Emotive Behavior Therapy (REBT). It helps you understand and transform difficult emotions by identifying the four emotional blocks — Anger, Anxiety, Depression, and Guilt — and the thought patterns that create them.'
+          answer: 'My 4 Blocks is an AI-powered emotional wellness companion based on the Four Blocks framework by Dr. Vincent E. Parr, Ph.D. It helps you understand and transform difficult emotions by identifying the four emotional blocks — Anger, Anxiety, Depression, and Guilt — and the thought patterns that create them.'
         },
         {
           question: 'Is this a replacement for therapy?',
-          answer: 'No, My 4 Blocks is an educational and self-help tool, not a replacement for professional mental health care. It\'s designed to complement therapy by helping you understand CBT/REBT principles between sessions, or as a starting point for self-exploration. If you\'re experiencing severe distress, please reach out to a qualified mental health professional.'
+          answer: 'No, My 4 Blocks is an educational and self-help tool, not a replacement for professional mental health care. It\'s designed to complement therapy by helping you understand the Four Blocks principles between sessions, or as a starting point for self-exploration. If you\'re experiencing severe distress, please reach out to a qualified mental health professional.'
         },
         {
           question: 'Who is Dr. Vincent E. Parr?',
-          answer: 'Dr. Vincent E. Parr is a psychologist who spent 25+ years developing and teaching the "4 Blocks" methodology, a practical application of Albert Ellis\'s REBT principles. His work simplifies complex psychological concepts into an accessible framework that anyone can use to understand their emotional patterns.'
+          answer: 'Dr. Vincent E. Parr, Ph.D. is a psychologist who spent 25+ years developing and teaching the "Four Blocks" methodology. His work simplifies complex psychological concepts into an accessible framework that anyone can use to understand their emotional patterns.'
         },
         {
-          question: 'What is CBT/REBT?',
-          answer: 'Cognitive Behavioral Therapy (CBT) and Rational Emotive Behavior Therapy (REBT) are evidence-based psychological approaches that focus on the connection between thoughts, emotions, and behaviors. REBT, developed by Dr. Albert Ellis, teaches that it\'s not events that upset us, but our beliefs about those events. By identifying and challenging irrational beliefs, we can transform our emotional responses.'
+          question: 'What is the Four Blocks framework?',
+          answer: 'The Four Blocks framework is an evidence-based approach that focuses on the connection between thoughts, emotions, and behaviors. It teaches that it\'s not events that upset us, but our beliefs about those events. By identifying and challenging irrational beliefs, we can transform our emotional responses.'
         }
       ]
     },
@@ -196,11 +196,11 @@ export default function FAQPage() {
         },
         {
           question: 'Where can I find a therapist?',
-          answer: 'You can find a qualified therapist through resources like Psychology Today\'s therapist directory (psychologytoday.com), the Albert Ellis Institute (albertellis.org), or by asking your primary care physician for a referral. Look for therapists who specialize in CBT or REBT for approaches aligned with My 4 Blocks.'
+          answer: 'You can find a qualified therapist through resources like Psychology Today\'s therapist directory (psychologytoday.com) or by asking your primary care physician for a referral. Look for therapists who specialize in cognitive behavioral approaches aligned with My 4 Blocks.'
         },
         {
-          question: 'How can I learn more about CBT?',
-          answer: 'Great resources include "A Guide to Rational Living" by Albert Ellis, "Feeling Good" by David Burns, and the Albert Ellis Institute website. Many therapists also offer CBT workbooks and courses. My 4 Blocks itself is designed to teach CBT/REBT principles through practice.'
+          question: 'How can I learn more about the Four Blocks?',
+          answer: 'Great resources include "You Only Have Four Problems" by Dr. Vincent E. Parr and "Feeling Good" by David Burns. My 4 Blocks itself is designed to teach the Four Blocks principles through practice.'
         }
       ]
     }

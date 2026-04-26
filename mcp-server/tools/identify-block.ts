@@ -32,7 +32,7 @@ interface BlockIndicators {
  *
  * Each block carries its own vocabulary, its own way of speaking pain.
  * These patterns are the decoder ring for emotional distress.
- * (Ellis would be proud... or mildly exasperated, same thing really 🙃)
+ * (Dr. Parr would be proud... or mildly exasperated, same thing really 🙃)
  */
 const BLOCK_INDICATORS: Record<EmotionalBlock, BlockIndicators> = {
   anger: {

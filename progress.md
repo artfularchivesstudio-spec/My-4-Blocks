@@ -31,6 +31,19 @@
 - Using Explore agents for thorough codebase analysis
 - Focus: Mobile/responsive layout issues
 - All variants: gemini, claude, v0
+- **Native Pivot**: Flutter `/mobile` project successfully scaffolded with Auth & BLoC
+
+---
+
+### 📱 Native Mobile Pipeline (Flutter)
+
+| Task | Status | Details |
+|------|--------|---------|
+| Scaffolding | ✅ | SDK Installed, deps configured |
+| Theming | ✅ | OKLCH -> Material 3 Dart `AppTheme` |
+| Auth & BLoC | ✅ | `AuthBloc`, Supabase SDK, Auth Screen |
+| Chat & Streams | ✅ | SSE streaming via `Dio`, `MagicStreamingBubble` animations |
+| App Store Config | ✅ | `appstore-review@my4blocks.com` test credentials minted |
 
 ---
 

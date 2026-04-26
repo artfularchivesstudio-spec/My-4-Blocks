@@ -144,21 +144,21 @@ This tool reveals the hidden demand or irrational thinking pattern causing distr
 
   inputSchema: FindBeliefInputSchema,
   outputSchema: FindBeliefOutputSchema,
-  categories: ['analysis', 'cbt', 'rebt', 'abc-model'],
+  categories: ['analysis', 'four-blocks', 'abc-model'],
 }
 
 /**
  * ⚔️ dispute_belief - Generate disputation questions for challenging beliefs
  *
  * Use this when a belief has been identified and the user is ready to
- * challenge it with REBT disputation questions.
+ * challenge it with disputation questions from the Four Blocks framework.
  */
 export const disputeBeliefTool: ToolDefinition<
   typeof DisputeBeliefInputSchema,
   typeof DisputeBeliefOutputSchema
 > = {
   name: 'dispute_belief',
-  description: `Generate REBT disputation questions to challenge an identified irrational belief.
+  description: `Generate Four Blocks disputation questions to challenge an identified irrational belief.
 
 Use this when:
 - A specific belief has been identified and articulated
@@ -170,7 +170,7 @@ Do NOT use when:
 - The user is in crisis and needs support rather than cognitive work
 - The user is resistant to examining their beliefs (validate first)
 
-Returns questions from Ellis, Byron Katie, and Stoic traditions along with a rational alternative.`,
+Returns questions from the Four Blocks framework, Byron Katie, and Stoic traditions along with a rational alternative.`,
 
   annotations: {
     readOnlyHint: true, // 🌟 Provides questions only - doesn't change state
@@ -180,7 +180,7 @@ Returns questions from Ellis, Byron Katie, and Stoic traditions along with a rat
 
   inputSchema: DisputeBeliefInputSchema,
   outputSchema: DisputeBeliefOutputSchema,
-  categories: ['therapeutic', 'rebt', 'disputation', 'byron-katie'],
+  categories: ['therapeutic', 'four-blocks', 'disputation', 'byron-katie'],
 }
 
 /**

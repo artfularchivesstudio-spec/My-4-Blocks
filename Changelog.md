@@ -4,6 +4,64 @@
 
 ---
 
+## 📅 April 26, 2026
+
+### 📚 "Docs, RAG Packs, and a Cleaner Training Lawn"
+
+*Release notes from the session that synced the README with the repo, surfaced the RAG asset packages, and corralled documentation before shipping.*
+
+---
+
+**The Vibe:** We brought public-facing documentation in line with what the tree actually contains: a larger hybrid-RAG story (embeddings at 331 runtime chunks in `shared/data/embeddings.json`), curated JSON libraries under `docs/RAG-PACKAGE/`, a handoff chunk set for GEPA/DSPy work under `docs/GEPA-DSPy-m1/`, the Flutter `mobile/` app, and the Four Blocks–aligned copy across web variants and MCP tools. Legacy flat files under `content/training/*.txt` were retired in favor of the unified curriculum shape (`content/training/batch-1/`, `content/unified-knowledge-base.json`).
+
+**What We Documented & Aligned:**
+
+- **Root README** — Chunk counts, project structure, and pointers to RAG/GEPA docs; deployments and App Store review notes stay accurate.
+- **Changelog** — This entry; journal style, reverse-chronological; no edits to older entries.
+- **RAG & eval assets** — `docs/RAG-PACKAGE/RAG-CORE/` (constitutions, course JSON, behavioral libraries) and `docs/RAG-PACKAGE/RAG-LIBRARIES/` (scenario and pattern libraries) are first-class in the map.
+- **GEPA/DSPy dataset** — `docs/GEPA-DSPy-m1/refined-rag-dataset v1/README.txt` plus chapter JSON/TXT for chapters 1–9 (120 chunks) as audit ground truth.
+- **MCP server** — Tool copy and metadata aligned with Four Blocks naming; `mcp-server/` tools and registry stay in sync.
+- **V0 / shared stack** — Shared `keywordSearch`, `responseBlueprints`, chat/realtime APIs, and A/B testing routes stay mirrored across `shared/`, `v0/shared/`, `claude/shared/`, `gemini/shared/`; v0 includes eval and version API routes for contributors when enabled.
+
+**TODO (carry-forward):**
+
+- Keep embedding `total_chunks` in `shared/data/embeddings.json` and the README in sync when the next batch ingests new training data.
+- Optional: link `v0/app/eval/` from the root README once eval UX is stable for contributors.
+
+**Reflection:** Documentation is the handshake between the codebase and the next human; this pass makes that handshake match what ships. 🧱✨
+
+---
+
+## 📅 April 12, 2026
+
+### 📱 "The Native Pivot: Moving Four Blocks into your Pocket"
+
+*A reflective journal entry from when we brought therapeutic chat to iOS and Android*
+
+---
+
+**The Vibe:** Today we embarked on translating the Next.js web experience into a native Flutter application. We wanted the pure, bespoke UI from `v0` with smooth animations, while laying down a robust mobile foundation.
+
+**What We Created:**
+
+🍏 **Native Flutter Application** (`/mobile/`)
+
+- Setup Flutter SDK locally within the ecosystem.
+- Integrated `flutter_animate` to recreate the floating, glowing feel of the streaming bubble in native UI.
+- Implemented `flutter_bloc` state management with `equatable`.
+- GoRouter for declarative tab/screen navigation.
+- Native `Dio` streams extracting Server-Sent Events (SSE) from the Next.js backend.
+
+🔒 **Supabase Authentication**
+
+- Shifted toward email/password sign-in and registration for the ecosystem.
+- Crafted an interactive splash screen and auto-login flows.
+- Provisioned test accounts for App Store Connect reviews.
+
+**The Test Credentials:** We registered a test user for the App Store Review team: `appstore-review@my4blocks.com` / `Review4Blocks2026!` *(if email confirmations are on, may require "Auto Confirm" in Supabase).*
+
+---
+
 ## 📅 February 16, 2026
 
 ### 🧘 "The Great Purification: When Four Blocks Became Truly Its Own Thing"

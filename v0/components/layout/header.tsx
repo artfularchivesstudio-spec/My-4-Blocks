@@ -28,6 +28,7 @@ const navigationLinks: NavigationLink[] = [
   { href: '/about', label: 'About' },
   { href: '/book', label: 'The Book' },
   { href: '/faq', label: 'FAQ' },
+  { href: '/eval', label: 'v2 Eval' },
   { href: '/privacy', label: 'Privacy' },
 ]
 

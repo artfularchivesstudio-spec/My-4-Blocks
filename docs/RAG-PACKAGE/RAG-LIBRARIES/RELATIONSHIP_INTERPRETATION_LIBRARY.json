@@ -1,0 +1,62 @@
+{
+  "library_id": "RELATIONSHIP_INTERPRETATION_LIBRARY",
+  "version": "1.0",
+  "description": "The My4Blocks Relationship Interpretation Library. Serves as the interpretation layer within the RAG pipeline for relationship-specific emotional distress. Bridges raw user messages to Dr. Parr's clinical formulas by categorizing relationship context, detecting emotional blocks, and routing to appropriate formula-based responses.",
+  "core_principle": "Relationships themselves do not create emotional suffering. Suffering arises from the expectations and interpretations the user attaches to relationship events. Nothing and no one else can cause your thoughts and feelings — First Insight.",
+  "strategic_goal": "Guide the user from rigid demands ('My partner must treat me this way') to rational preferences ('I strongly prefer they treat me this way') — reducing emotional intensity while preserving the actual connection.",
+  "relationship_contexts": [
+    {
+      "context_id": "interpersonal",
+      "label": "Interpersonal",
+      "description": "Interactions with friends, family members, coworkers, neighbors, and authority figures. Lower emotional investment than romantic but still capable of triggering all four blocks."
+    },
+    {
+      "context_id": "romantic",
+      "label": "Romantic",
+      "description": "High-investment partnerships involving dating, committed relationships, marriage, or breakups. Highest emotional stakes — most likely to activate strong Should beliefs and Fear of Abandonment patterns."
+    }
+  ],
+  "emotional_pattern_mapping": {
+    "anger": {
+      "formula": "A = ET + S",
+      "relationship_pattern": "The belief that a partner, friend, family member, or coworker should behave differently than they are behaving. A rigid expectation being violated.",
+      "irrational_core": "Egocentric Thinking — demanding another fallible human being conform to a personal standard.",
+      "rational_replacement": "I would strongly prefer they treat me this way, but people are imperfect Fallible Human Beings."
+    },
+    "anxiety": {
+      "formula": "AX = WI + AW + ICSI",
+      "relationship_pattern": "The fear of losing connection, rejection, or abandonment. What If thinking about the future of the relationship.",
+      "irrational_core": "Projecting a future loss that has not occurred and treating it as a current catastrophe.",
+      "rational_replacement": "The future of this relationship is a story. I stay in the Now and handle facts as they arrive."
+    },
+    "guilt": {
+      "formula": "G = W1 + W2",
+      "relationship_pattern": "The belief that one has violated personal values within the partnership — 'I shouldn't have said that' — leading to self-rating as a bad partner or friend.",
+      "irrational_core": "BS Equation — treating behavior as equal to Self-worth.",
+      "rational_replacement": "My behavior was unhelpful (B=B) but I am not a bad person (B does not equal S). I am a Fallible Human Being."
+    },
+    "depression": {
+      "formula": "D = H1 + H2 + N",
+      "relationship_pattern": "The interpretation that a meaningful connection has been lost or is permanently hopeless — triggered by breakups, betrayals, emotional withdrawal, or social exclusion.",
+      "irrational_core": "Treating connection as a Need rather than a Want, generating Hopelessness and Helplessness.",
+      "rational_replacement": "I want this connection, but I do not need it to survive or have worth. I accept this loss as part of the 10,000 sorrows."
+    }
+  },
+  "routing_rules": {
+    "step_1_classify_type": "Determine whether the context is Interpersonal (friends, family, coworkers, authority figures) or Romantic (dating, marriage, breakups).",
+    "step_2_detect_trigger": "Identify which of the Four Blocks is being activated — Anger, Anxiety, Guilt, or Depression.",
+    "step_3_detect_stage": "Determine the event stage — Pre-event (anticipatory anxiety), During-event (active anger or overwhelm), or Post-event (guilt, depression, mental contamination).",
+    "step_4_route_response": "Retrieve the correct Four Blocks formula and Option C behavioral guidance. Route the user from blaming the other person toward identifying the internal thought triggering the emotion."
+  },
+  "rigid_vs_flexible_logic_gate": {
+    "rigid_belief_pattern": "Demanding Philosophy — Musts, Shoulds, and absolute requirements placed on another person's behavior.",
+    "flexible_belief_pattern": "Desiring Philosophy — Strong preferences held without demand. Accepting fallibility in self and others.",
+    "transition_protocol": "Identify the Should or Must. Replace with 'I would strongly prefer.' Acknowledge the other person as a Fallible Human Being. Return to the Observer."
+  },
+  "implementation_notes": {
+    "pipeline_position": "Interpretation layer — runs after similarity match against scenario anchors and before formula-based response generation.",
+    "do_not": "Do not attempt to solve the relationship. Do not take sides. Do not validate demands. Do not generate advice that increases dependency on external validation.",
+    "do": "Foster emotional awareness. Help the user identify their internal interpretation. Route to the correct formula. Guide toward Unconditional Self-Acceptance and Unconditional Acceptance of Others.",
+    "companion_library": "RELATIONSHIP_TRIGGER_LIBRARY — Top 25 pre-verified trigger responses for the most common relationship scenarios."
+  }
+}

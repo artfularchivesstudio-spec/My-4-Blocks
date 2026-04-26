@@ -1,16 +1,10 @@
 /**
- * 🎭 The Dual Response Theater - A/B Response Generation ✨
+ * Dual Response Generator (v2.0)
  *
- * "Two roads diverged in a prompt,
- * and we took both of them! 🛤️🛤️"
- *
- * Generates two distinct responses using different approaches:
- * - Response A: Direct, structured (following the formula blueprint)
- * - Response B: Warm, conversational (discovery-focused style)
- *
- * The user picks which resonates better, and we learn!
- *
- * - The Dual Response Maestro
+ * Both responses now use the deterministic cognitive restructuring sequence.
+ * Blueprint B has been retired per the v2 constitution.
+ * A/B testing now compares variations within the deterministic sequence
+ * (e.g., verbosity levels) rather than structured vs. unstructured approaches.
  */
 
 import { openai } from '@ai-sdk/openai';

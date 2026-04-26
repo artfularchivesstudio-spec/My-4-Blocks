@@ -248,15 +248,17 @@ export async function POST(req: Request) {
     const endTime = Date.now();
 
     // 💾 Store for A/B analysis - every battle must be recorded for posterity! 📊
-    const abTestId = storeABTest(query, responseA, responseB, {
-      modelA: 'gpt-4o',
-      modelB: 'gpt-4o',
-      promptVariantA: 'structured-direct',
-      promptVariantB: 'conversational-warm',
-      detectedBlock: finalBlockType || undefined,
-      responseTimeA: endTime - startTime,
-      responseTimeB: endTime - startTime,
-      tags: ['v0-variant', finalBlockType || 'general'].filter(Boolean) as string[],
+    const abTestId = storeABTest({
+      userQuery: query,
+      responseA,
+      responseB,
+      userChoice: null,
+      metadata: {
+        modelA: 'gpt-4o',
+        modelB: 'gpt-4o',
+        emotionDetected: emotionDetected || undefined,
+        blockType: finalBlockType || undefined,
+      },
     });
 
     const totalTime = endTime - startTime;
@@ -264,8 +266,7 @@ export async function POST(req: Request) {
     console.log(`🆔 A/B Test ID: ${abTestId}`);
     console.log(`📏 Response A: ${responseA.length} chars | Response B: ${responseB.length} chars`);
 
-    // 🎁 Return both responses for the user to choose
-    // Like presenting two paths in the Yellow Wood! 🍂
+    // Return both responses for the user to choose
     return new Response(
       JSON.stringify({
         abTestId,
@@ -275,12 +276,12 @@ export async function POST(req: Request) {
         },
         metadata: {
           variantA: {
-            name: 'Structured Cognitive Guidance',
-            description: 'Step-by-step methodical approach with clear framework application',
+            name: 'Deterministic Cognitive Restructuring',
+            description: 'Canonical Four Blocks response sequence: Validate, Formula, Map, Restructure, Protect, Question',
           },
           variantB: {
-            name: 'Warm Conversational Guidance',
-            description: 'Natural, exploratory approach with gentle framework weaving',
+            name: 'Deterministic Cognitive Restructuring (Variation)',
+            description: 'Same canonical sequence with variation in delivery tone',
           },
         },
         context: {

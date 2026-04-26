@@ -1,0 +1,144 @@
+{
+  "library_id": "COGNITIVE_DISTORTION_DETECTION_LIBRARY",
+  "version": "1.0",
+  "description": "The My4Blocks Cognitive Distortion Detection Library. Built upon Dr. Parr's Seven Irrational Beliefs — the primary thinking patterns that trigger emotional suffering in the Four Blocks framework. Used for RAG routing, distortion identification, and user awareness. Build this library last — it requires all other libraries to be in place first.",
+  "core_reference": "Dr. Parr's Seven Irrational Beliefs — the foundational cognitive distortions underlying all four emotional blocks.",
+  "total_distortions": 7,
+  "source": "NotebookLM cross-reference against My4Blocks methodology backbone",
+  "distortions": [
+    {
+      "distortion_id": "CD001",
+      "distortion_name": "It Statements — External Blaming",
+      "definition": "Believing that someone or something outside of the self is responsible for one's internal emotional state. Assigning cause-and-effect power to external events rather than accepting 100% responsibility for internal reactions.",
+      "formula_reference": ["three_insights", "insight_1_responsibility", "abc_model"],
+      "four_blocks_connection": ["anger", "anxiety", "depression", "guilt"],
+      "irrational_core": "A-to-C thinking — the belief that the Activating Event directly causes the emotional Consequence, bypassing the Belief entirely.",
+      "example_thoughts": [
+        "He made me so angry when he cut me off in traffic.",
+        "This slow computer is really ticking me off.",
+        "She ruined my whole day with that comment."
+      ],
+      "detection_language": ["made me feel", "made me angry", "is making me", "caused me to", "ruined my"],
+      "rational_replacement": "Nothing and no one else can cause my thoughts and feelings. The event happened, and I am the one creating my internal response to it. I am 100% responsible for my emotional reaction.",
+      "awareness_prompt": "You are describing the event as the cause of your feeling. The event is the A — your belief about it is the B — your emotion is the C. What are you telling yourself about what happened?"
+    },
+    {
+      "distortion_id": "CD002",
+      "distortion_name": "Awfulizing — Catastrophizing",
+      "definition": "Exaggerating an unpleasant situation until it is perceived as 100% negative, catastrophic, or off the scale of human suffering. Treating a bad situation as the worst possible outcome.",
+      "formula_reference": ["anxiety_formula", "awfulizing"],
+      "four_blocks_connection": ["anxiety", "depression"],
+      "irrational_core": "The belief that a situation is not merely bad but catastrophically, unbearably, irredeemably awful — treating inconvenience as catastrophe.",
+      "example_thoughts": [
+        "It would be horrible if my partner didn't love me anymore.",
+        "Losing this job would be a total disaster.",
+        "If I fail this exam my life is over."
+      ],
+      "detection_language": ["horrible", "disaster", "catastrophe", "awful", "terrible", "the worst", "my life is over", "everything is ruined"],
+      "rational_replacement": "This situation is very unpleasant and inconvenient, but it is not 100% awful. On a scale of 0 to 100%, it could always be worse. I can stand unpleasant things.",
+      "awareness_prompt": "You are rating this situation as a catastrophe. How awful is it really on a scale of 0 to 100%? What would 100% awful actually look like? Is this situation truly there?"
+    },
+    {
+      "distortion_id": "CD003",
+      "distortion_name": "I Can't Stand It — ICSI — Low Frustration Tolerance",
+      "definition": "The false belief that one cannot survive, endure, or function under current unpleasant conditions. Claiming that a situation is unendurable when the evidence — being alive and present — proves otherwise.",
+      "formula_reference": ["anxiety_formula", "icsi", "low_frustration_tolerance"],
+      "four_blocks_connection": ["anxiety", "anger"],
+      "irrational_core": "Treating temporary discomfort as permanent unendurability. The paradox is that the user is always standing whatever they claim they cannot stand.",
+      "example_thoughts": [
+        "I just can't handle this pressure.",
+        "I can't take it anymore — something is going to snap.",
+        "I can't stand being treated this way."
+      ],
+      "detection_language": ["can't stand", "can't handle", "can't take it", "can't bear", "I'm going to break", "this is unbearable", "I can't cope"],
+      "rational_replacement": "I have stood every single thing that has ever happened to me in my life up until this second. I am standing this right now and I will live through it.",
+      "awareness_prompt": "You said you cannot stand this. But you are standing it right now — which is proof that you can. What would it look like to simply accept the discomfort rather than fight it?"
+    },
+    {
+      "distortion_id": "CD004",
+      "distortion_name": "Shoulds Musts and Demands — SMDs — Demandingness",
+      "definition": "Turning a rational preference into a rigid, absolutistic demand on the self, others, or the world. Arguing with reality as it is rather than accepting it and working from acceptance.",
+      "formula_reference": ["anger_formula", "egocentric_thinking", "should_belief", "demanding_vs_desiring_philosophy"],
+      "four_blocks_connection": ["anger", "guilt", "anxiety"],
+      "irrational_core": "The belief that reality must conform to personal preferences — that there is a law of the universe requiring people and circumstances to be different than they are.",
+      "example_thoughts": [
+        "I must perform perfectly at work.",
+        "People should be better drivers.",
+        "My partner must treat me with more respect.",
+        "I shouldn't have made that mistake."
+      ],
+      "detection_language": ["must", "should", "have to", "need to", "ought to", "shouldn't", "mustn't", "they have no right to"],
+      "rational_replacement": "Everything that happens today should happen because all trillions of conditions for it to occur were met. I would prefer things to be different, but they are as they are. I replace the demand with a preference.",
+      "awareness_prompt": "You are using a Should or a Must. Is that a preference or a demand? What would happen to your emotional state if you changed 'they must' to 'I would strongly prefer they'?"
+    },
+    {
+      "distortion_id": "CD005",
+      "distortion_name": "Rating — Global Self and Other Condemnation",
+      "definition": "Assigning a global label of worth or worthlessness to oneself or another person based on a single behavior, mistake, or trait. Treating a complex, ever-changing human being as definable by one action.",
+      "formula_reference": ["guilt_formula", "bs_equation", "unconditional_self_acceptance", "unconditional_acceptance_of_others"],
+      "four_blocks_connection": ["guilt", "depression", "anger"],
+      "irrational_core": "The BS Equation — Behavior equals Self (B = S). The belief that a person's worth can be rated at all — up or down — based on performance or behavior.",
+      "example_thoughts": [
+        "I'm a total failure because my marriage ended.",
+        "He is a worthless person for breaking that promise.",
+        "I'm stupid for making that mistake.",
+        "She is a bad person."
+      ],
+      "detection_language": ["I'm a failure", "I'm worthless", "I'm stupid", "I'm bad", "he is worthless", "she is a bad person", "I'm a loser", "what a terrible person"],
+      "rational_replacement": "Behavior equals Behavior (B=B) but Behavior does not equal the Self (B does not equal S). I accept myself and others as Fallible Human Beings regardless of our traits or acts.",
+      "awareness_prompt": "You are rating your entire Self based on one behavior. Can a complex human being — an ever-changing system of trillions of cells and experiences — be reduced to one label? What would Unconditional Self-Acceptance look like here?"
+    },
+    {
+      "distortion_id": "CD006",
+      "distortion_name": "Absolutistic Thinking — Overgeneralization",
+      "definition": "Using extreme terms to describe conditions as permanent or unchanging. Viewing the world in black-and-white extremes — always, never, everything, nothing — that deny the ever-changing nature of reality.",
+      "formula_reference": ["depression_formula", "hopelessness", "staying_now", "absolutistic_thinking"],
+      "four_blocks_connection": ["depression", "anxiety"],
+      "irrational_core": "Hopelessness (H1) — the belief that current negative conditions are permanent and unchangeable. Denying the ever-changing nature of reality.",
+      "example_thoughts": [
+        "I'll always be alone.",
+        "Nothing ever works out for me.",
+        "I'll never be happy.",
+        "Everything always goes wrong."
+      ],
+      "detection_language": ["always", "never", "everything", "nothing", "forever", "no one ever", "I'll never", "it will always be this way"],
+      "rational_replacement": "Reality is an ever-changing system and nothing is permanent. This is my experience in this moment, but I cannot predict that it will always be this way. Staying Now.",
+      "awareness_prompt": "You used an absolute — always or never. Is that literally true? Has there ever been a single exception? Reality is an ever-changing system. What if this moment is just this moment — not forever?"
+    },
+    {
+      "distortion_id": "CD007",
+      "distortion_name": "The Idea of Entitlement — Specialness",
+      "definition": "The egocentric belief that one is uniquely deserving of respect, convenience, fair treatment, or special consideration simply because of who they are. Demanding the universe operate according to personal preferences.",
+      "formula_reference": ["anger_formula", "egocentric_thinking", "entitlement", "seven_irrational_beliefs"],
+      "four_blocks_connection": ["anger"],
+      "irrational_core": "Egocentric Thinking (ET) — the belief that the universe is arranged around the self and must deliver preferred conditions as a matter of right.",
+      "example_thoughts": [
+        "I am entitled to better treatment than this.",
+        "I deserve respect from my coworkers.",
+        "After everything I've done, I deserve more.",
+        "People should know better than to treat me this way."
+      ],
+      "detection_language": ["I deserve", "I'm entitled to", "I have a right to", "after everything I've done", "I shouldn't have to deal with this", "how dare they"],
+      "rational_replacement": "The universe does not give a damn about me or what happens to me. I would prefer to be treated well, but I am not entitled to it as a law of nature. I replace entitlement with preference.",
+      "awareness_prompt": "You believe you are entitled to this treatment. What is the law of the universe that guarantees you this? Could you hold this as a strong preference rather than a right — and notice how your emotional state shifts?"
+    }
+  ],
+  "routing_logic": {
+    "detection_method": "Match user language against detection_language arrays for each distortion. Multiple distortions may be active simultaneously.",
+    "primary_routing": "Identify distortion first → confirm formula reference → deliver rational replacement → apply awareness prompt if user is receptive.",
+    "multi_distortion_protocol": "When multiple distortions are detected, address the most emotionally activated one first. Sequence: ICSI → Awfulizing → SMDs → Rating → Absolutistic → Entitlement → It Statements.",
+    "formula_return_rule": "Every distortion detection must route back to the applicable Four Blocks formula. Detection without formula application is incomplete."
+  },
+  "implementation_notes": {
+    "build_order": "This library is built last. All scenario libraries, trigger libraries, relationship libraries, and the emotional pattern memory library must be in place before this library is ingested.",
+    "pipeline_position": "Runs as secondary detection layer after scenario matching. Adds distortion-level specificity to the emotional pattern already identified.",
+    "source_tool": "NotebookLM — cross-referenced against My4Blocks methodology backbone",
+    "companion_libraries": [
+      "EMOTION_DETECTION_TRIGGER_LIBRARY",
+      "CIVILIAN_SCENARIO_LIBRARY series",
+      "FIRST_RESPONDER_SCENARIO_LIBRARY series",
+      "RELATIONSHIP_INTERPRETATION_LIBRARY",
+      "EMOTIONAL_PATTERN_MEMORY_LIBRARY"
+    ]
+  }
+}

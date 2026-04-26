@@ -178,7 +178,7 @@ The Four Emotional Blocks:
    - Self-forgiveness practices
 
 Plus:
-- 📚 The ABCs of emotion creation (Albert Ellis REBT)
+- 📚 The ABCs of emotion creation
 - ✨ The Seven Irrational Beliefs
 - 🧘 Zen mindfulness practices
 ```

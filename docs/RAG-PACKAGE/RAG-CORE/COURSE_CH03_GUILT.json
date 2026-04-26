@@ -1,0 +1,283 @@
+{
+  "document_type": "course_content",
+  "title": "Four Blocks Course — Chapter 03: Guilt",
+  "subtitle": "Formula, Mental Contamination, Disputation Process, and Chapters 1–5 Applied to Guilt",
+  "version": "1.0",
+  "category": "guilt",
+  "source": "Dr. Vincent E. Parr — My Four Blocks Course",
+  "audience": "general",
+  "chunks": [
+    {
+      "id": "CH03_GUILT_MENTAL_CONTAMINATION",
+      "title": "Chapter 1 — Mental Contamination Applied to Guilt",
+      "key_concept": "Guilt arises from mental contamination — mistaking thoughts and beliefs for facts.",
+      "application": "Guilt is caused by rejection of the self, where a person believes they are inherently bad or worthless because of something they did or did not do. Example: I forgot my friend's birthday so I am a terrible person. This equates behavior with self-worth, which is mental contamination.",
+      "solution": "Train the Observer to notice self-critical thoughts and recognize them as irrational beliefs. Let go of mental contamination by observing and disputing these beliefs.",
+      "tags": [
+        "guilt",
+        "mental_contamination",
+        "self_rejection",
+        "observer",
+        "self_worth"
+      ],
+      "keywords": [
+        "mental contamination",
+        "guilt",
+        "self-rejection",
+        "observer",
+        "irrational beliefs",
+        "self-worth",
+        "behavior equals identity"
+      ]
+    },
+    {
+      "id": "CH03_GUILT_THREE_INSIGHTS",
+      "title": "Chapter 2 — Three Insights Applied to Guilt",
+      "insights": [
+        {
+          "insight": "Insight 1 — You Create 100% of Your Guilt",
+          "application": "Guilt is not caused by external events but by beliefs about those events. Example: I feel guilty because I made a mistake. Dispute: I feel guilty because I believe making a mistake means I am a bad person.",
+          "key_takeaway": "You are responsible for your guilt because you create it through your thoughts and beliefs."
+        },
+        {
+          "insight": "Insight 2 — Become Aware of How You Create Guilt",
+          "application": "Use the ABC Model to trace guilt to its source. A = forgetting your friend's birthday. B = I should have remembered and I am a bad friend for forgetting. C = guilt.",
+          "key_takeaway": "Becoming aware of your beliefs allows you to identify and dispute the irrational thoughts that fuel guilt."
+        },
+        {
+          "insight": "Insight 3 — Dispute and Let Go Rapidly",
+          "application": "Dispute the irrational belief causing guilt. Replace: I am a bad friend for forgetting. With: I made a mistake but I am still a good person who can apologize and make amends.",
+          "key_takeaway": "Disputing irrational beliefs allows you to release guilt and replace it with self-compassion and accountability."
+        }
+      ],
+      "tags": [
+        "guilt",
+        "three_insights",
+        "ABC_model",
+        "disputation",
+        "emotional_responsibility"
+      ],
+      "keywords": [
+        "three insights",
+        "guilt",
+        "emotional responsibility",
+        "ABC model",
+        "dispute",
+        "self-compassion"
+      ]
+    },
+    {
+      "id": "CH03_GUILT_ABCS",
+      "title": "Chapter 3 — The ABCs Applied to Guilt",
+      "key_concept": "Emotions are created through the ABC Model. A = Activating Event. B = Belief. C = Consequence.",
+      "example": {
+        "A": "Forgetting your friend's birthday",
+        "B": "I am a bad person for forgetting.",
+        "C": "Guilt, shame, self-loathing"
+      },
+      "application": "Guilt is caused by A-to-C thinking, where the activating event is mistakenly believed to directly cause guilt. In reality it is the belief (B) about the event that creates the emotional consequence (C).",
+      "solution": "Train the mind to identify and dispute irrational beliefs at B to change the emotional response at C.",
+      "tags": [
+        "guilt",
+        "ABC_model",
+        "activating_event",
+        "belief",
+        "consequence"
+      ],
+      "keywords": [
+        "ABC model",
+        "guilt",
+        "activating event",
+        "belief",
+        "consequence",
+        "A-to-C thinking",
+        "shame"
+      ]
+    },
+    {
+      "id": "CH03_GUILT_SEVEN_IRRATIONAL_BELIEFS",
+      "title": "Chapter 4 — Seven Irrational Beliefs Applied to Guilt",
+      "key_concept": "Guilt is caused by irrational beliefs. Each of the seven beliefs can fuel guilt and must be disputed.",
+      "beliefs_applied": [
+        {
+          "belief": "It Statements",
+          "example": "Forgetting my friend's birthday made me feel guilty!",
+          "dispute": "Forgetting the birthday did not make me feel guilty. My thoughts about forgetting it are creating my guilt."
+        },
+        {
+          "belief": "Awfulizing",
+          "example": "Forgetting my friend's birthday is awful!",
+          "dispute": "Forgetting is unpleasant but not awful. I can apologize and make it right."
+        },
+        {
+          "belief": "I Can't Stand It",
+          "example": "I cannot stand how bad I feel about forgetting!",
+          "dispute": "I do not like how I feel but I can stand it. I have stood worse before."
+        },
+        {
+          "belief": "Shoulds, Musts, and Demands",
+          "example": "I should never forget important dates!",
+          "dispute": "I would prefer to remember important dates but I am human and I make mistakes."
+        },
+        {
+          "belief": "Rating",
+          "example": "I forgot my friend's birthday so I am a bad person.",
+          "dispute": "Forgetting a birthday does not make me a bad person. It is just one mistake."
+        },
+        {
+          "belief": "Absolutistic Thinking",
+          "example": "I always mess up important things!",
+          "dispute": "I do not always mess up. I have done many things right before."
+        },
+        {
+          "belief": "Entitlement",
+          "example": "I deserve to feel bad for forgetting my friend's birthday!",
+          "dispute": "I made a mistake but punishing myself will not help. I can apologize and move forward."
+        }
+      ],
+      "tags": [
+        "guilt",
+        "seven_irrational_beliefs",
+        "disputation"
+      ],
+      "keywords": [
+        "seven irrational beliefs",
+        "guilt",
+        "it statements",
+        "awfulizing",
+        "ICSI",
+        "shoulds",
+        "rating",
+        "absolutistic thinking",
+        "entitlement"
+      ]
+    },
+    {
+      "id": "CH03_GUILT_FORMULA",
+      "title": "Chapter 5 — Formula for Guilt",
+      "formula": "G = W1 + W2",
+      "expanded": "Guilt = Wrongness + Worthlessness",
+      "components": [
+        {
+          "id": "W1",
+          "label": "Wrongness",
+          "definition": "Believing you did something wrong and attaching a should to it.",
+          "example": "I should not have forgotten my friend's birthday.",
+          "dispute": "I forgot, so I should have forgotten given all conditions at the time. I can apologize and make amends."
+        },
+        {
+          "id": "W2",
+          "label": "Worthlessness",
+          "definition": "Believing your wrong behavior makes you a bad person.",
+          "example": "I forgot my friend's birthday so I am a terrible person.",
+          "dispute": "Forgetting a birthday does not make me a terrible person. It just means I made a mistake."
+        }
+      ],
+      "bs_equation": {
+        "label": "The BS Equation — Behavior Equals Self",
+        "definition": "Guilt is caused by the irrational equation: Behavior = Self. This equates behavior with self-worth. If you make a mistake, you believe you are a bad person.",
+        "example": "I forgot my friend's birthday so I am a bad person.",
+        "dispute": "My behavior does not define me. I made a mistake but I am still a good person."
+      },
+      "tags": [
+        "guilt",
+        "formula",
+        "wrongness",
+        "worthlessness",
+        "BS_equation",
+        "four_blocks"
+      ],
+      "keywords": [
+        "guilt formula",
+        "G = W1 + W2",
+        "wrongness",
+        "worthlessness",
+        "BS equation",
+        "behavior equals self",
+        "self-worth"
+      ]
+    },
+    {
+      "id": "CH03_GUILT_INTEGRATED_SUMMARY",
+      "title": "Guilt — Chapters 1–5 Integrated Summary",
+      "integrated_steps": [
+        {
+          "source": "Mental Contamination",
+          "action": "Recognize that guilt is caused by beliefs, not the event itself."
+        },
+        {
+          "source": "Three Insights",
+          "action": "Accept responsibility for guilt, understand how beliefs create it, and learn to dispute and let go of those beliefs."
+        },
+        {
+          "source": "ABCs",
+          "action": "Identify the activating event (A), the belief (B), and the consequence (C). Focus on disputing the belief."
+        },
+        {
+          "source": "Seven Irrational Beliefs",
+          "action": "Look for irrational beliefs like shoulds, awfulizing, and ICSI and dispute them with rational thinking."
+        },
+        {
+          "source": "Guilt Formula",
+          "action": "Identify feelings of wrongness and worthlessness. Dispute them with rational thinking and replace them with self-compassion."
+        }
+      ],
+      "closing_principle": "By applying these principles you can reduce guilt, let go of self-punishing thought patterns, and cultivate a mind of peace and self-acceptance.",
+      "tags": [
+        "guilt",
+        "summary",
+        "cross_chapter",
+        "integrated",
+        "four_blocks"
+      ],
+      "keywords": [
+        "guilt summary",
+        "chapters 1-5",
+        "integrated",
+        "mental contamination",
+        "ABC model",
+        "irrational beliefs",
+        "guilt formula",
+        "self-compassion"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve_for_guilt_queries": [
+      "CH03_GUILT_FORMULA",
+      "CH03_GUILT_INTEGRATED_SUMMARY"
+    ],
+    "retrieve_by_context": [
+      {
+        "context": "mental_contamination AND guilt",
+        "chunks": [
+          "CH03_GUILT_MENTAL_CONTAMINATION"
+        ]
+      },
+      {
+        "context": "three insights AND guilt",
+        "chunks": [
+          "CH03_GUILT_THREE_INSIGHTS"
+        ]
+      },
+      {
+        "context": "ABC model AND guilt",
+        "chunks": [
+          "CH03_GUILT_ABCS"
+        ]
+      },
+      {
+        "context": "seven irrational beliefs AND guilt",
+        "chunks": [
+          "CH03_GUILT_SEVEN_IRRATIONAL_BELIEFS"
+        ]
+      },
+      {
+        "context": "guilt formula OR wrongness OR worthlessness OR BS equation",
+        "chunks": [
+          "CH03_GUILT_FORMULA"
+        ]
+      }
+    ]
+  }
+}

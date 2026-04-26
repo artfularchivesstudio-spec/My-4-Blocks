@@ -6,7 +6,7 @@ import './globals.css'
  * 🎭 ChatKit Home Layout — "Where the Four Blocks Meet Conversation" 🌿✨
  *
  * A therapeutic ChatKit experience powered by OpenAI and guided by
- * Dr. Vincent E. Parr's CBT/REBT framework. Transform Anger, Anxiety,
+ * Dr. Vincent E. Parr's Four Blocks framework. Transform Anger, Anxiety,
  * Depression, and Guilt into peace and understanding.
  *
  * ChatKit Runtime: https://cdn.platform.openai.com/deployments/chatkit/chatkit.js
@@ -16,8 +16,8 @@ import './globals.css'
  */
 export const metadata: Metadata = {
   title: 'My 4 Blocks | Transform Your Emotions',
-  description: 'An AI-powered companion that helps you understand and transform Anger, Anxiety, Depression, and Guilt into peace. Based on CBT/REBT principles by Dr. Vincent E. Parr.',
-  keywords: ['mental wellness', 'CBT', 'REBT', 'emotional health', 'anger management', 'anxiety relief', 'four blocks'],
+  description: 'An AI-powered companion that helps you understand and transform Anger, Anxiety, Depression, and Guilt into peace. Based on the Four Blocks methodology by Dr. Vincent E. Parr.',
+  keywords: ['mental wellness', 'four blocks', 'emotional health', 'anger management', 'anxiety relief', 'Dr. Vincent Parr'],
   authors: [{ name: 'Dr. Vincent E. Parr' }],
   openGraph: {
     title: 'My 4 Blocks | Transform Your Emotions',

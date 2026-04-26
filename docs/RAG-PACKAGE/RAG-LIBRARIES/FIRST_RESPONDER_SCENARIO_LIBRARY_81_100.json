@@ -1,0 +1,222 @@
+{
+  "library_id": "FIRST_RESPONDER_SCENARIO_LIBRARY_81_100",
+  "version": "1.0",
+  "description": "First Responder Scenario Library — scenarios 81 through 100. Universal First Responder scenarios applicable across all first responder roles. Each scenario includes activating event, likely emotions, Four Blocks methodology fix, and rational redirection protocol for RAG ingestion.",
+  "total_scenarios": 20,
+  "roles_covered": ["universal_first_responder"],
+  "source": "NotebookLM cross-reference against My4Blocks methodology backbone",
+  "scenarios": [
+    {
+      "scenario_id": "FR081",
+      "role": "universal_first_responder",
+      "activating_event": "Lying in bed replaying details of a difficult call.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "the_narrator"],
+      "methodology_fix": "Identify Mental Contamination. The call is in the past. The replaying is the Narrator creating a story, not reality.",
+      "rational_redirection": "These are just thoughts, not facts. Use the Centering Breath to stop the story. Inhale, exhale, and think 'Let go.'"
+    },
+    {
+      "scenario_id": "FR082",
+      "role": "universal_first_responder",
+      "activating_event": "Anticipating a shift where something serious might happen.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "staying_now"],
+      "methodology_fix": "Anxiety Formula (AX = WI + AW + ICSI). This is a What If projection into a future that does not exist.",
+      "rational_redirection": "The future is an illusion. Only Staying Now is real. You have stood 100% of your shifts so far — you will stand this one too."
+    },
+    {
+      "scenario_id": "FR083",
+      "role": "universal_first_responder",
+      "activating_event": "Feeling emotionally drained after multiple intense calls.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "helplessness"],
+      "methodology_fix": "Depression Formula (D = H1 + H2 + N). Ensure the user is not labeling themselves as helpless (H2) or generating a story that the fatigue is permanent.",
+      "rational_redirection": "I am physically tired, which is a fact. I do not need a different reality to be okay. I accept this fatigue without the story that it will never end."
+    },
+    {
+      "scenario_id": "FR084",
+      "role": "universal_first_responder",
+      "activating_event": "Frustration with coworkers during a stressful response.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "fallible_human_beings"],
+      "methodology_fix": "Anger Formula (A = ET + S). The user is demanding (Should) that fallible coworkers be perfect.",
+      "rational_redirection": "My coworkers are Fallible Human Beings. I would prefer they were more efficient, but demanding it only disturbs me."
+    },
+    {
+      "scenario_id": "FR085",
+      "role": "universal_first_responder",
+      "activating_event": "Thinking about whether different decisions could have changed the outcome.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "bs_equation", "behavior_equals_self"],
+      "methodology_fix": "BS Equation (Behavior = Self). The user is rating the decision as wrong and the self as worthless. Behavior does not equal Self.",
+      "rational_redirection": "The outcome happened because trillions of conditions were met. Behavior equals Behavior. I can learn from the call without rating my Self."
+    },
+    {
+      "scenario_id": "FR086",
+      "role": "universal_first_responder",
+      "activating_event": "Feeling overwhelmed while multiple emergencies occur simultaneously.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anxiety_formula", "icsi", "just_this"],
+      "methodology_fix": "I Can't Stand It (ICSI). The belief that the pressure is unendurable.",
+      "rational_redirection": "If I truly could not stand this, I would be dead. I am standing it. Focus on 'Just This' — one task in this one moment."
+    },
+    {
+      "scenario_id": "FR087",
+      "role": "universal_first_responder",
+      "activating_event": "Difficulty mentally disconnecting from work while at home.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "the_narrator", "the_observer", "abc_model"],
+      "methodology_fix": "Mental Contamination. The user is confusing the Job (Activating Event) with the Story (Belief). The job ended. The contamination continues.",
+      "rational_redirection": "The job is an Activating Event. My thoughts are my responsibility. I choose to be an Observer of my thoughts rather than a victim of them."
+    },
+    {
+      "scenario_id": "FR088",
+      "role": "universal_first_responder",
+      "activating_event": "Becoming irritated by small inconveniences during a stressful shift.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief"],
+      "methodology_fix": "Egocentric Thinking (ET). The demand that reality bend to personal convenience.",
+      "rational_redirection": "Small inconveniences exist because the conditions for them exist. I would prefer clear sailing, but I accept reality as it is."
+    },
+    {
+      "scenario_id": "FR089",
+      "role": "universal_first_responder",
+      "activating_event": "Feeling pressure to always remain calm during emergencies.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["seven_irrational_beliefs", "absolutistic_thinking", "shoulds_musts_demands"],
+      "methodology_fix": "Absolutistic Thinking (Always/Never) and Shoulds/Musts/Demands. The belief that perfect calm is a non-negotiable requirement.",
+      "rational_redirection": "There is no law that I must be perfectly calm. I would prefer to be calm to be effective, but I accept my human reactions."
+    },
+    {
+      "scenario_id": "FR090",
+      "role": "universal_first_responder",
+      "activating_event": "Feeling responsible for outcomes that were beyond personal control.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "three_insights", "insight_1_responsibility"],
+      "methodology_fix": "Insight 1 (100% Responsibility). The user is responsible for their response, not for the trillions of conditions that produced the outcome.",
+      "rational_redirection": "The universe does not bend to my Shoulds. The outcome is as it is because the conditions were met. I am responsible for my response, not the universe."
+    },
+    {
+      "scenario_id": "FR091",
+      "role": "universal_first_responder",
+      "activating_event": "Replaying conversations or decisions made during an incident.",
+      "likely_emotions": ["anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "the_narrator", "the_observer", "cognitive_stoppage"],
+      "methodology_fix": "The Narrator. Replaying is a cognitive habit that requires Cognitive Stoppage to interrupt.",
+      "rational_redirection": "Stop. This is the Narrator talking. What are the facts? The incident is over. I return to the Observer."
+    },
+    {
+      "scenario_id": "FR092",
+      "role": "universal_first_responder",
+      "activating_event": "Feeling emotionally detached after traumatic exposure.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "helplessness", "worthlessness"],
+      "methodology_fix": "Helplessness (H2). The belief that the detachment is permanent or a sign of being broken or worthless.",
+      "rational_redirection": "Detachment is a temporary state of the mind. I accept this feeling without rating myself as broken or worthless."
+    },
+    {
+      "scenario_id": "FR093",
+      "role": "universal_first_responder",
+      "activating_event": "Anticipating criticism or second-guessing from supervisors.",
+      "likely_emotions": ["anxiety", "guilt"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "guilt_formula", "need_for_approval", "seven_irrational_beliefs"],
+      "methodology_fix": "Need for Approval. The user is treating a supervisor's opinion as a necessity for their sense of worth.",
+      "rational_redirection": "Approval is a want, not a need. I would prefer my supervisor to value my work, but I can be okay even if they do not."
+    },
+    {
+      "scenario_id": "FR094",
+      "role": "universal_first_responder",
+      "activating_event": "Conflict between responders about how to handle an incident.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "should_belief", "fallible_human_beings"],
+      "methodology_fix": "Shoulds/Demands. The user is insisting others handle the situation exactly as they demand — a should belief directed at colleagues.",
+      "rational_redirection": "I would prefer they saw it my way, but they do not. I accept their fallibility and focus on solving the practical problem in front of us."
+    },
+    {
+      "scenario_id": "FR095",
+      "role": "universal_first_responder",
+      "activating_event": "Feeling overwhelmed by the emotional impact of victims' distress.",
+      "likely_emotions": ["depression"],
+      "stage": "during_event",
+      "four_blocks_reference": ["depression_formula", "other_pity", "mental_contamination"],
+      "methodology_fix": "Other Pity. The user is taking on the victims' disturbance as their own emotional reality.",
+      "rational_redirection": "I can have compassion for their suffering without creating my own disturbance. I am most helpful when I remain calm."
+    },
+    {
+      "scenario_id": "FR096",
+      "role": "universal_first_responder",
+      "activating_event": "Mind remains on high alert during off-hours for potential emergencies.",
+      "likely_emotions": ["anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "what_if_thinking", "the_narrator", "centering_breath"],
+      "methodology_fix": "Mental Contamination and What If thinking. The Narrator is scanning for threat patterns to protect the user — but the threat is not present.",
+      "rational_redirection": "There is no emergency right now. I am safe. I use the Centering Breath to let go of the alert state."
+    },
+    {
+      "scenario_id": "FR097",
+      "role": "universal_first_responder",
+      "activating_event": "Frustration when the public misunderstands or disrespects the job.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "entitlement", "seven_irrational_beliefs"],
+      "methodology_fix": "Entitlement. The belief that first responders deserve a specific level of public understanding and respect — a should belief about others' behavior.",
+      "rational_redirection": "The public acts out of ignorance or their own disturbance. I would prefer they understood, but I do not need their understanding to do my job."
+    },
+    {
+      "scenario_id": "FR098",
+      "role": "universal_first_responder",
+      "activating_event": "Thinking about the suffering witnessed during a shift.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "non_acceptance_of_reality", "ten_thousand_sorrows"],
+      "methodology_fix": "Non-acceptance of Reality. The user is arguing with the sorrows of the world rather than accepting them as part of the full human experience.",
+      "rational_redirection": "Life is 10,000 joys and 10,000 sorrows. This suffering is part of the 10,000 sorrows. I accept it because it exists."
+    },
+    {
+      "scenario_id": "FR099",
+      "role": "universal_first_responder",
+      "activating_event": "Feeling uncertain about what the next emergency call may involve.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "fear_of_uncertainty", "staying_now"],
+      "methodology_fix": "Fear of Uncertainty. The What If of the unknown is generating anticipatory anxiety about a future that has not yet occurred.",
+      "rational_redirection": "I cannot predict the future. I stay in the Now and trust my training to handle whatever arrives."
+    },
+    {
+      "scenario_id": "FR100",
+      "role": "universal_first_responder",
+      "activating_event": "Reflecting on a long career of difficult calls and cumulative emotional experiences.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "awfulizing", "mental_contamination", "ox_forgotten"],
+      "methodology_fix": "Awfulizing the Past. The user is rating an entire career as catastrophic rather than accepting the full spectrum of experience it contained.",
+      "rational_redirection": "My career has been exactly as it was. I accept the whole of it. I am now in the Ox Forgotten stage — returning to the simplicity of ordinary life."
+    }
+  ],
+  "implementation_notes": {
+    "previous_file": "FIRST_RESPONDER_SCENARIO_LIBRARY_61_80 — Nurse/ER scenarios",
+    "source_tool": "NotebookLM — cross-referenced against My4Blocks methodology backbone PDF",
+    "enhanced_fields": "This file includes methodology_fix and rational_redirection fields not present in earlier scenario files. These fields feed directly into the behavior response layer.",
+    "routing_note": "Match scenario context to user input → identify stage → apply methodology fix → deliver rational redirection through appropriate personality layer",
+    "note_on_format": "FR081-FR100 include richer methodology detail than FF001-PO040. Consider backfilling methodology_fix and rational_redirection fields into earlier scenario files in a future build pass.",
+    "stage_routing": {
+      "pre_event": "Route to anticipatory anxiety or pre-event behavior responses",
+      "during_event": "Route to active coping — SOS method, grounding, immediate regulation",
+      "post_event": "Route to processing responses — mental contamination protocol, formula application, rational redirection"
+    }
+  }
+}

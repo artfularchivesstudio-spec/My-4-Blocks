@@ -75,7 +75,7 @@ const categoryIcons: Record<ConceptCategory, React.ReactNode> = {
 }
 
 /**
- * 🌟 The Concept Card Component - Where CBT/REBT wisdom gets cozy
+ * 🌟 The Concept Card Component - Where Four Blocks wisdom gets cozy
  *
  * A compact, inline-friendly card that presents bite-sized cognitive concepts
  * during conversation. Think of it as a fortune cookie, but actually helpful

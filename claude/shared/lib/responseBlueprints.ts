@@ -51,7 +51,7 @@ export interface BlueprintConfig {
 
 // ═══════════════════════════════════════════════════════════════════════════
 // 📘 RESPONSE BLUEPRINT A: The Structured Approach
-// "The Methodical Maestro" - Step by step, like a cognitive behavioral waltz
+// "The Methodical Maestro" - Step by step, like a Four Blocks waltz
 // ═══════════════════════════════════════════════════════════════════════════
 
 /**
@@ -171,7 +171,7 @@ Examples by block:
  * - Offers the shift as an invitation (not a correction)
  * - Ends with curiosity (leaving space for their wisdom)
  *
- * Think of it as the trusted friend who happens to know CBT.
+ * Think of it as the trusted friend who happens to know the Four Blocks.
  * The cozy armchair of emotional guidance!
  */
 export const RESPONSE_BLUEPRINT_B = `## Response Blueprint B: Warm Conversational Guidance

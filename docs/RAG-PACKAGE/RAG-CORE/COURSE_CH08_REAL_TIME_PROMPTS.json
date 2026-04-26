@@ -1,0 +1,389 @@
+{
+  "document_type": "course_content",
+  "title": "Four Blocks Course — Chapter 08: Real-Time Use Case Prompts",
+  "subtitle": "Categorized Prompt Library for Implementing My Four Blocks in Real-Time Interactions",
+  "version": "1.0",
+  "category": "implementation",
+  "source": "Dr. Vincent E. Parr — My Four Blocks Course",
+  "audience": "general",
+  "purpose": "Provides a structured prompt library for real-time emotional intervention across all four blocks and supporting practices. Estimated 40-55 prompts across 8 use case categories.",
+  "chunks": [
+    {
+      "id": "CH08_PROMPTS_EMOTIONAL_AWARENESS",
+      "title": "Use Case 1 — Emotional Awareness and Identification",
+      "description": "These prompts help users identify their emotional state and the underlying causes of their emotions.",
+      "prompt_count": "5-10 prompts",
+      "prompts": [
+        "How are you feeling right now? Describe your emotions in a few words.",
+        "What happened recently that might have triggered this feeling?",
+        "What thoughts are running through your mind about this situation?",
+        "Are you experiencing Anger, Anxiety, Depression, or Guilt? If so, which one?",
+        "What physical sensations are you noticing in your body right now?",
+        "What are you telling yourself about this situation?",
+        "What is your belief about this event? Is it rational or irrational?",
+        "What would you prefer to happen in this situation?",
+        "What is one thing you can accept about this moment?",
+        "What would you like to feel instead?"
+      ],
+      "use_case": "Daily check-ins and initial emotional triage",
+      "tags": [
+        "prompts",
+        "emotional_awareness",
+        "triage",
+        "identification",
+        "real_time"
+      ],
+      "keywords": [
+        "emotional awareness",
+        "triage",
+        "identify emotion",
+        "check-in",
+        "physical sensations",
+        "belief",
+        "what are you feeling"
+      ]
+    },
+    {
+      "id": "CH08_PROMPTS_DISPUTING",
+      "title": "Use Case 2 — Disputing Irrational Beliefs",
+      "description": "These prompts guide users through disputing irrational beliefs using the ABC model and the 4 Steps to Disputing.",
+      "prompt_count": "5-10 prompts",
+      "prompts": [
+        "What is the activating event that triggered your emotions?",
+        "What belief are you holding about this event?",
+        "What are the consequences of this belief? How does it make you feel?",
+        "Is this belief true? Can you prove it?",
+        "Is this belief absolutely true? Is there room for error?",
+        "If you keep thinking this way, how will you feel?",
+        "If you let go of this thought, how would you feel?",
+        "What realistic preference can you replace this belief with?",
+        "What would acceptance of this situation look like?",
+        "What action can you take to address the practical problem without emotional disturbance?"
+      ],
+      "use_case": "Core disputation process for any emotional disturbance",
+      "tags": [
+        "prompts",
+        "disputation",
+        "ABC_model",
+        "irrational_beliefs",
+        "rational_preference"
+      ],
+      "keywords": [
+        "disputing",
+        "ABC model",
+        "activating event",
+        "belief",
+        "consequence",
+        "rational preference",
+        "acceptance",
+        "4 steps"
+      ]
+    },
+    {
+      "id": "CH08_PROMPTS_ANGER",
+      "title": "Use Case 3 — Managing Anger",
+      "description": "These prompts help users identify and manage anger using the Anger formula: A = ET + S.",
+      "prompt_count": "5-7 prompts",
+      "prompts": [
+        "What are you angry about right now?",
+        "What are you telling yourself about this situation?",
+        "What is the Should or Must you are holding onto?",
+        "Why do you believe this situation should be different?",
+        "What would acceptance of this situation look like?",
+        "What rational preference can you replace your Should with?",
+        "What action can you take to resolve this situation calmly?"
+      ],
+      "formula_reference": "A = ET + S (Anger = Egocentric Thinking + Should)",
+      "use_case": "Crisis management and real-time anger intervention",
+      "tags": [
+        "prompts",
+        "anger",
+        "should",
+        "egocentric_thinking",
+        "acceptance",
+        "real_time"
+      ],
+      "keywords": [
+        "anger prompts",
+        "should",
+        "must",
+        "acceptance",
+        "rational preference",
+        "calm action"
+      ]
+    },
+    {
+      "id": "CH08_PROMPTS_ANXIETY",
+      "title": "Use Case 4 — Managing Anxiety",
+      "description": "These prompts help users identify and manage anxiety using the Anxiety formula: AX = WI + AW + ICSI.",
+      "prompt_count": "5-7 prompts",
+      "prompts": [
+        "What are you feeling anxious about right now?",
+        "What is the What If scenario you are imagining?",
+        "What are you Awfulizing about this situation?",
+        "Why do you believe you cannot stand this situation?",
+        "What is the likelihood of your What If scenario actually happening?",
+        "What would acceptance of this situation look like?",
+        "What action can you take to confront your fear?"
+      ],
+      "formula_reference": "AX = WI + AW + ICSI (Anxiety = What If + Awfulizing + I Can't Stand It)",
+      "use_case": "Crisis management and real-time anxiety intervention",
+      "tags": [
+        "prompts",
+        "anxiety",
+        "what_if",
+        "awfulizing",
+        "ICSI",
+        "acceptance",
+        "real_time"
+      ],
+      "keywords": [
+        "anxiety prompts",
+        "what if",
+        "awfulizing",
+        "I can't stand it",
+        "likelihood",
+        "acceptance",
+        "confront fear"
+      ]
+    },
+    {
+      "id": "CH08_PROMPTS_DEPRESSION",
+      "title": "Use Case 5 — Managing Depression",
+      "description": "These prompts help users identify and manage depression using the Depression formula: D = H1 + H2 + N.",
+      "prompt_count": "5-7 prompts",
+      "prompts": [
+        "What are you feeling hopeless about?",
+        "What are you feeling helpless about?",
+        "What do you believe you need in order to be happy?",
+        "Why do you believe this situation is hopeless?",
+        "Why do you believe you are helpless to change this situation?",
+        "What would acceptance of this situation look like?",
+        "What action can you take to improve your situation?"
+      ],
+      "formula_reference": "D = H1 + H2 + N (Depression = Hopelessness + Helplessness + Need)",
+      "use_case": "Crisis management and real-time depression intervention",
+      "tags": [
+        "prompts",
+        "depression",
+        "hopelessness",
+        "helplessness",
+        "need",
+        "acceptance",
+        "real_time"
+      ],
+      "keywords": [
+        "depression prompts",
+        "hopeless",
+        "helpless",
+        "need",
+        "acceptance",
+        "improve situation"
+      ]
+    },
+    {
+      "id": "CH08_PROMPTS_GUILT",
+      "title": "Use Case 6 — Managing Guilt",
+      "description": "These prompts help users identify and manage guilt using the Guilt formula: G = W1 + W2.",
+      "prompt_count": "5-7 prompts",
+      "prompts": [
+        "What are you feeling guilty about?",
+        "What do you believe you did wrong?",
+        "Why do you believe this action makes you a bad person?",
+        "What is the rational truth about your behavior?",
+        "What would unconditional self-acceptance look like in this situation?",
+        "What action can you take to make amends or move forward?",
+        "What can you learn from this experience?"
+      ],
+      "formula_reference": "G = W1 + W2 (Guilt = Wrongness + Worthlessness)",
+      "use_case": "Crisis management and real-time guilt intervention",
+      "tags": [
+        "prompts",
+        "guilt",
+        "wrongness",
+        "worthlessness",
+        "self_acceptance",
+        "real_time"
+      ],
+      "keywords": [
+        "guilt prompts",
+        "wrongness",
+        "worthlessness",
+        "bad person",
+        "self-acceptance",
+        "make amends",
+        "learn"
+      ]
+    },
+    {
+      "id": "CH08_PROMPTS_HAPPINESS",
+      "title": "Use Case 7 — Building Happiness and Contentment",
+      "description": "These prompts help users cultivate happiness using the Happiness formulas.",
+      "prompt_count": "5-10 prompts",
+      "prompts": [
+        "What are you grateful for right now?",
+        "What can you accept about this moment?",
+        "What irrational beliefs can you let go of to feel more peaceful?",
+        "What creative activity can you engage in today?",
+        "What is one hassle you can reduce in your life?",
+        "What action can you take to improve your physical health today?",
+        "What is one thing you can do to stay present in this moment?",
+        "What does unconditional self-acceptance look like for you?",
+        "What does unconditional acceptance of others look like in your life?",
+        "What is one thing you can do to bring joy to someone else today?"
+      ],
+      "formula_reference": "Happiness = USA + UAOW + SN | Greater Happiness = Happiness + Creative Absorption – Hassle Factor",
+      "use_case": "Daily wellness, proactive emotional maintenance, and happiness cultivation",
+      "tags": [
+        "prompts",
+        "happiness",
+        "acceptance",
+        "gratitude",
+        "creative_absorption",
+        "staying_now"
+      ],
+      "keywords": [
+        "happiness prompts",
+        "gratitude",
+        "acceptance",
+        "creative activity",
+        "hassle factor",
+        "unconditional self-acceptance",
+        "staying now",
+        "joy"
+      ]
+    },
+    {
+      "id": "CH08_PROMPTS_MEDITATION",
+      "title": "Use Case 8 — Zen Meditation and Mindfulness",
+      "description": "These prompts help users practice mindfulness and meditation to train the Observer.",
+      "prompt_count": "5-7 prompts",
+      "prompts": [
+        "Take a deep breath. What are you feeling right now?",
+        "What thoughts are passing through your mind? Observe them without judgment.",
+        "What physical sensations are you noticing in your body?",
+        "What does letting go of this thought or feeling look like?",
+        "What can you hear, see, smell, or feel in this moment?",
+        "What does it mean to accept this moment as it is?",
+        "What is one thing you can do to connect to the present moment?"
+      ],
+      "use_case": "Guided meditation, mindfulness practice, and Observer training",
+      "tags": [
+        "prompts",
+        "meditation",
+        "mindfulness",
+        "observer",
+        "present_moment",
+        "centering_breath"
+      ],
+      "keywords": [
+        "meditation prompts",
+        "observer",
+        "mindfulness",
+        "physical sensations",
+        "let go",
+        "present moment",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "CH08_PROMPTS_IMPLEMENTATION_GUIDE",
+      "title": "Real-Time Implementation Guide",
+      "total_prompts": "Estimated 40-55 prompts across all 8 use case categories.",
+      "use_case_recommendations": [
+        {
+          "use_case": "Daily Check-Ins",
+          "recommendation": "Use prompts from Emotional Awareness and Identification to help users start their day with clarity."
+        },
+        {
+          "use_case": "Crisis Management",
+          "recommendation": "Provide prompts for managing Anger, Anxiety, Depression, and Guilt during moments of emotional distress."
+        },
+        {
+          "use_case": "Guided Meditation",
+          "recommendation": "Use Zen Meditation prompts to help users practice mindfulness and calm their mind and body."
+        },
+        {
+          "use_case": "Happiness Building",
+          "recommendation": "Use Happiness prompts for proactive daily emotional maintenance and cultivating contentment."
+        },
+        {
+          "use_case": "Disputation Practice",
+          "recommendation": "Use Disputing Irrational Beliefs prompts whenever a specific formula emotion has been identified to guide the user through the full ABC disputation process."
+        }
+      ],
+      "tags": [
+        "implementation",
+        "real_time",
+        "use_cases",
+        "guide",
+        "four_blocks"
+      ],
+      "keywords": [
+        "implementation guide",
+        "daily check-in",
+        "crisis management",
+        "guided meditation",
+        "happiness building",
+        "disputation practice",
+        "real-time use cases"
+      ]
+    }
+  ],
+  "retrieval_rules": {
+    "always_retrieve_for_prompt_queries": [
+      "CH08_PROMPTS_EMOTIONAL_AWARENESS",
+      "CH08_PROMPTS_IMPLEMENTATION_GUIDE"
+    ],
+    "retrieve_by_context": [
+      {
+        "context": "prompts AND anger",
+        "chunks": [
+          "CH08_PROMPTS_ANGER"
+        ]
+      },
+      {
+        "context": "prompts AND anxiety",
+        "chunks": [
+          "CH08_PROMPTS_ANXIETY"
+        ]
+      },
+      {
+        "context": "prompts AND depression",
+        "chunks": [
+          "CH08_PROMPTS_DEPRESSION"
+        ]
+      },
+      {
+        "context": "prompts AND guilt",
+        "chunks": [
+          "CH08_PROMPTS_GUILT"
+        ]
+      },
+      {
+        "context": "prompts AND happiness OR contentment",
+        "chunks": [
+          "CH08_PROMPTS_HAPPINESS"
+        ]
+      },
+      {
+        "context": "prompts AND meditation OR mindfulness",
+        "chunks": [
+          "CH08_PROMPTS_MEDITATION"
+        ]
+      },
+      {
+        "context": "disputing OR ABC model AND prompts",
+        "chunks": [
+          "CH08_PROMPTS_DISPUTING"
+        ]
+      },
+      {
+        "context": "real-time implementation OR use cases OR daily check-in OR crisis management",
+        "chunks": [
+          "CH08_PROMPTS_IMPLEMENTATION_GUIDE"
+        ]
+      }
+    ]
+  }
+}

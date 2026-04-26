@@ -9,7 +9,7 @@ import Link from 'next/link'
  * 📘 The Book Page - Honoring the source material
  *
  * Provides context about Dr. Vincent E. Parr's "You Only Have Four Problems"
- * and the lineage of CBT/REBT thought that informs this app. 📚✨
+ * and the lineage of cognitive behavioral thought that informs this app. 📚✨
  */
 export default function BookPage() {
   return (
@@ -48,10 +48,9 @@ export default function BookPage() {
                 not caused by external events, but by our own <em>beliefs</em> about those events.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Drawing on decades of research in Cognitive Behavioral Therapy (CBT) and
-                Rational Emotive Behavior Therapy (REBT), Dr. Parr provides practical
-                tools for identifying and disputing the irrational beliefs that create
-                emotional disturbance.
+                Drawing on decades of clinical experience and cognitive behavioral principles,
+                Dr. Parr provides practical tools for identifying and disputing the irrational
+                beliefs that create emotional disturbance.
               </p>
             </section>
 
@@ -78,19 +77,13 @@ export default function BookPage() {
               </p>
               <ul className="space-y-4 text-muted-foreground">
                 <li>
-                  <strong className="text-foreground">Dr. Albert Ellis</strong> — founder of
-                  Rational Emotive Behavior Therapy (REBT), who first identified the ABC
-                  model of emotions.
-                </li>
-                <li>
-                  <strong className="text-foreground">Dr. Aaron Beck</strong> — founder of
-                  Cognitive Behavioral Therapy (CBT), whose work on cognitive distortions
-                  transformed psychology.
-                </li>
-                <li>
                   <strong className="text-foreground">The Stoic philosophers</strong> —
                   Epictetus, Marcus Aurelius, and Seneca, who taught that our judgments
                   about events, not the events themselves, cause our suffering.
+                </li>
+                <li>
+                  <strong className="text-foreground">Rational-Emotive approaches</strong> —
+                  Evidence-based methods that focus on how thoughts shape emotions and behavior.
                 </li>
                 <li>
                   <strong className="text-foreground">Byron Katie</strong> — whose &quot;The

@@ -1,0 +1,196 @@
+{
+  "library_id": "RELATIONSHIP_TRIGGER_SCENARIO_LIBRARY",
+  "version": "1.0",
+  "description": "Relationship Trigger Scenario Library. Categorized into Romantic and Interpersonal contexts. Each trigger maps the activating event to its emotional formula and rational methodology fix. Companion to RELATIONSHIP_TRIGGER_LIBRARY (Top 25) and RELATIONSHIP_INTERPRETATION_LIBRARY.",
+  "total_triggers": 18,
+  "source": "NotebookLM cross-reference against My4Blocks methodology backbone and Relationship Interpretation Library",
+  "categories": ["romantic", "interpersonal"],
+  "triggers": [
+    {
+      "trigger_id": "RSL001",
+      "category": "romantic",
+      "trigger_label": "Partner not responding to messages",
+      "likely_emotions": ["anxiety", "anger", "depression"],
+      "stage": "during_event",
+      "four_blocks_reference": ["mental_contamination", "the_narrator", "should_belief", "centering_breath"],
+      "methodology_fix": "Mental Contamination. The silence is the Activating Event. The distress is caused by the Narrator's story — 'They are ignoring me' — not by the silence itself.",
+      "rational_redirection": "Use the Centering Breath to stop the story. Replace the demand 'They must respond now' with a preference: 'I would prefer a quick response, but I do not need it to be okay.'"
+    },
+    {
+      "trigger_id": "RSL002",
+      "category": "romantic",
+      "trigger_label": "Fear partner may leave",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "staying_now"],
+      "methodology_fix": "Anxiety Formula (AX = WI + AW + ICSI). The fear is a What If projection into a future that does not yet exist.",
+      "rational_redirection": "Practice Staying Now. The fear is a story about a future that has not occurred. Focus on the reality of the present moment."
+    },
+    {
+      "trigger_id": "RSL003",
+      "category": "romantic",
+      "trigger_label": "Argument with partner",
+      "likely_emotions": ["anger", "guilt", "anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["three_insights", "insight_1_responsibility", "abc_model", "should_belief"],
+      "methodology_fix": "First Insight — 100% Responsibility. The user creates 100% of their emotional reaction to the argument. The argument is the Activating Event, not the cause.",
+      "rational_redirection": "You create 100% of your emotional reaction. Use the ABC Model to identify the Should belief that triggered the anger or guilt."
+    },
+    {
+      "trigger_id": "RSL004",
+      "category": "romantic",
+      "trigger_label": "Feeling rejected by partner",
+      "likely_emotions": ["depression", "anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "pseudo_need", "non_acceptance_of_reality"],
+      "methodology_fix": "Depression Formula (D = H1 + H2 + N) — Pseudo-Need. The user is treating the partner's approval as a necessity for their worth.",
+      "rational_redirection": "Identify the Need for constant approval and recognize it as a Want. Apply 100% Acceptance equals 0% Disturbance to the current situation."
+    },
+    {
+      "trigger_id": "RSL005",
+      "category": "romantic",
+      "trigger_label": "Jealousy — suspecting interest in others",
+      "likely_emotions": ["anxiety", "anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "the_observer"],
+      "methodology_fix": "Egocentric Thinking (ET). Jealousy stems from a demand that the partner's attention must be focused exclusively on the user.",
+      "rational_redirection": "Shift to the Observer mind. Watch these jealous thoughts without clinging to them as facts. The demand for exclusive attention is a should belief, not a right."
+    },
+    {
+      "trigger_id": "RSL006",
+      "category": "romantic",
+      "trigger_label": "Suspected betrayal or cheating",
+      "likely_emotions": ["anger", "anxiety", "depression"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "awfulizing", "ten_thousand_sorrows", "icsi"],
+      "methodology_fix": "Awfulizing. Suspicion is a story. If betrayal becomes fact it is one of the 10,000 sorrows — but catastrophizing an unproven future only creates present suffering.",
+      "rational_redirection": "Suspicion is a story. If betrayal is confirmed it is one of the 10,000 sorrows. You can stand the unpleasantness. Do not catastrophize an unproven future."
+    },
+    {
+      "trigger_id": "RSL007",
+      "category": "romantic",
+      "trigger_label": "Partner criticism",
+      "likely_emotions": ["anger", "guilt"],
+      "stage": "during_event",
+      "four_blocks_reference": ["unconditional_self_acceptance", "bs_equation", "rating"],
+      "methodology_fix": "Unconditional Self-Acceptance (USA). The partner is rating behavior — not the Self. Behavior does not equal Self-worth.",
+      "rational_redirection": "Separate your Behavior from your Self. They may rate your behavior as inadequate, but that does not make you a worthless person."
+    },
+    {
+      "trigger_id": "RSL008",
+      "category": "romantic",
+      "trigger_label": "Communication breakdown — feeling misunderstood",
+      "likely_emotions": ["anger", "depression"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "shoulds_musts_demands", "fallible_human_beings"],
+      "methodology_fix": "Shoulds/Musts/Demands (SMDs). The user is demanding their partner understand them — an impossible standard placed on another fallible person.",
+      "rational_redirection": "Replace the demand 'They should understand me' with the rational preference: 'I would like them to understand, but they are a Fallible Human Being who currently does not.'"
+    },
+    {
+      "trigger_id": "RSL009",
+      "category": "romantic",
+      "trigger_label": "Breakup or relationship ending",
+      "likely_emotions": ["depression", "anxiety", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "rational_should", "non_acceptance_of_reality", "three_insights"],
+      "methodology_fix": "The Rational Should. The relationship ended because the conditions for it to end were met. Non-acceptance of this reality creates and sustains the Block of Depression.",
+      "rational_redirection": "The relationship ended because the conditions for it to end were met. Acceptance is not endorsement — but it is necessary to stop the Block of Depression."
+    },
+    {
+      "trigger_id": "RSL010",
+      "category": "romantic",
+      "trigger_label": "Partner emotional withdrawal",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "during_event",
+      "four_blocks_reference": ["depression_formula", "hopelessness", "helplessness", "other_pity"],
+      "methodology_fix": "Hopelessness (H1) and Helplessness (H2). The user is treating the partner's emotional distance as a permanent catastrophe and generating helplessness about it.",
+      "rational_redirection": "Distance is a current fact, not a permanent catastrophe. Avoid Other Pity. Focus on your own internal peace — you cannot force another person's emotional state."
+    },
+    {
+      "trigger_id": "RSL011",
+      "category": "interpersonal",
+      "trigger_label": "Argument with friend",
+      "likely_emotions": ["anger", "guilt"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "fallible_human_beings"],
+      "methodology_fix": "Anger Formula (A = ET + S). The user is applying a Should to the friend's behavior — demanding they not have said or done what they said or did.",
+      "rational_redirection": "Replace the Should — 'They shouldn't have said that' — with a rational preference: 'I would have preferred they didn't say that, but they are a Fallible Human Being.'"
+    },
+    {
+      "trigger_id": "RSL012",
+      "category": "interpersonal",
+      "trigger_label": "Friend ignoring messages — feeling excluded",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anxiety_formula", "depression_formula", "need_for_approval", "pseudo_need"],
+      "methodology_fix": "Need for Approval. The user is treating social acknowledgment as a necessity for their worth rather than a preference.",
+      "rational_redirection": "Approval is a Want, not a Need for survival or worth. I accept that my friend is not responding right now without the story that it means something about my value."
+    },
+    {
+      "trigger_id": "RSL013",
+      "category": "interpersonal",
+      "trigger_label": "Coworker criticism",
+      "likely_emotions": ["anger", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "rating", "bs_equation", "unconditional_self_acceptance"],
+      "methodology_fix": "Rating. The user is at risk of accepting the coworker's rating of their behavior as a global rating of their Self.",
+      "rational_redirection": "Rate the work behavior — Behavior equals Behavior — but do not rate the person. Behavior does not equal Self."
+    },
+    {
+      "trigger_id": "RSL014",
+      "category": "interpersonal",
+      "trigger_label": "Conflict with supervisor — unfair treatment",
+      "likely_emotions": ["anger", "anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "entitlement", "shoulds_musts_demands", "low_frustration_tolerance"],
+      "methodology_fix": "Entitlement. The demand for fairness from a supervisor is an irrational Should/Must/Demand. Fairness is a preference, not a right.",
+      "rational_redirection": "The demand for fairness is an irrational SMD. Accept the Hassle Factor of a difficult supervisor without the emotional rage. I would prefer fair treatment, but I do not need it."
+    },
+    {
+      "trigger_id": "RSL015",
+      "category": "interpersonal",
+      "trigger_label": "Family disagreement",
+      "likely_emotions": ["anger", "guilt", "depression"],
+      "stage": "during_event",
+      "four_blocks_reference": ["abc_model", "anger_formula", "guilt_formula", "depression_formula"],
+      "methodology_fix": "ABC Model. The family behavior is the Activating Event (A). The irrational Belief (B) about how family must behave is creating the emotional Consequence (C).",
+      "rational_redirection": "Identify the irrational belief you are holding about your family member that is creating your distress. The family member is the A — your belief is the B — your emotion is the C."
+    },
+    {
+      "trigger_id": "RSL016",
+      "category": "interpersonal",
+      "trigger_label": "Feeling disrespected",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "entitlement", "fallible_human_beings"],
+      "methodology_fix": "Egocentric Thinking (ET). The user is demanding respect as a necessity — treating another person's opinion as a requirement for their worth.",
+      "rational_redirection": "Disrespect is an opinion, not a fact about your worth. You do not need respect from another Fallible Human Being to be a person of value."
+    },
+    {
+      "trigger_id": "RSL017",
+      "category": "interpersonal",
+      "trigger_label": "Trust broken by friend — betrayal",
+      "likely_emotions": ["anger", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "depression_formula", "unconditional_acceptance_of_others", "disturbance_ignorance"],
+      "methodology_fix": "Unconditional Acceptance of Others and the World (UAOW). The friend acted from ignorance or their own disturbance — not from a judgment of the user's worth.",
+      "rational_redirection": "People are fallible and often act out of ignorance or disturbance. Accept their fallibility to find your own peace. Their betrayal is one of the 10,000 sorrows."
+    },
+    {
+      "trigger_id": "RSL018",
+      "category": "interpersonal",
+      "trigger_label": "Rumors or gossip",
+      "likely_emotions": ["anger", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "the_narrator", "cognitive_stoppage"],
+      "methodology_fix": "Mental Contamination. The gossip is the Activating Event. The ongoing distress is caused by the Narrator replaying the rumors rather than letting them pass.",
+      "rational_redirection": "Gossip is the dust of every day. Use Cognitive Stoppage to stop replaying the rumors. Return to the Observer. Their words say more about them than about you."
+    }
+  ],
+  "implementation_notes": {
+    "companion_libraries": ["RELATIONSHIP_INTERPRETATION_LIBRARY", "RELATIONSHIP_TRIGGER_LIBRARY"],
+    "routing_note": "Use this library for context-specific pattern matching when relationship type is confirmed. Route through RELATIONSHIP_INTERPRETATION_LIBRARY routing rules first.",
+    "source_tool": "NotebookLM — cross-referenced against My4Blocks methodology backbone and Relationship Interpretation Library",
+    "note": "This library provides categorical coverage (Romantic vs Interpersonal). RELATIONSHIP_TRIGGER_LIBRARY provides the Top 25 most common specific trigger phrases. Both libraries work together as the full relationship response layer."
+  }
+}

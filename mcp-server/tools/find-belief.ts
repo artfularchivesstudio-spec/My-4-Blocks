@@ -6,7 +6,7 @@
  * We are archaeologists of the psyche, gently brushing away
  * the sediment of reactivity to reveal the fossil of belief."
  *
- * This tool implements the ABC Model of Rational Emotive Behavior Therapy (REBT):
+ * This tool implements the ABC Model from Dr. Parr's Four Blocks framework:
  *   A - Activating Event (what happened)
  *   B - Belief (what we tell ourselves)
  *   C - Consequence (the emotional/behavioral result)
@@ -177,7 +177,7 @@ function extractActivatingEvent(situation: string): string {
  *
  * Analyzes the self-talk and situation to determine which of the
  * seven irrational belief types is most prominent.
- * Think of it as a sorting hat for cognitive distortions! 🎩✨
+ * Think of it as a sorting hat for irrational beliefs! 🎩✨
  *
  * @param selfTalk - What the user tells themselves
  * @param emotionalResponse - How they feel
@@ -354,7 +354,7 @@ function excavateUnderlyingDemand(
  * // Returns the hidden belief: entitlement + the demand for fairness
  * ```
  *
- * Fun fact: Ellis called his approach "rational" not because emotions are
+ * Fun fact: This approach is called "rational" not because emotions are
  * bad, but because irrational beliefs CREATE unnecessary suffering.
  * We're not becoming robots - we're becoming free! 🤖➡️🦋
  */

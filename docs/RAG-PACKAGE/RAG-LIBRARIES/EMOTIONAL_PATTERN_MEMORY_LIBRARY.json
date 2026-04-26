@@ -1,0 +1,223 @@
+{
+  "library_id": "EMOTIONAL_PATTERN_MEMORY_LIBRARY",
+  "version": "1.0",
+  "description": "The My4Blocks Emotional Pattern Memory Library. Stores lightweight behavioral memory for each user to enable pattern recognition and personalized responses over time. Primary goal is fostering awareness of emotional habits — not medical diagnosis. All observations route back to the Four Blocks formulas.",
+  "core_principle": "The mind develops habits. This library identifies those habits and returns the user to their Internal Master — always grounding observations in the Four Blocks formulas.",
+  "user_memory_record": {
+    "schema_description": "Single emotional memory record maintained per user. Updated on every interaction.",
+    "fields": {
+      "user_identity": {
+        "user_id": {
+          "type": "string",
+          "description": "Unique identifier for the user."
+        },
+        "profile_type": {
+          "type": "string",
+          "enum": ["civilian", "veteran", "police", "fire", "ems", "nurse"],
+          "description": "User category. Determines which scenario library and personality layer is applied."
+        }
+      },
+      "emotion_frequency": {
+        "description": "Running counters tracking how often each of the Four Blocks emotional formulas appears in conversation.",
+        "fields": {
+          "anger_count": {
+            "type": "integer",
+            "default": 0,
+            "formula": "A = ET + S"
+          },
+          "anxiety_count": {
+            "type": "integer",
+            "default": 0,
+            "formula": "AX = WI + AW + ICSI"
+          },
+          "depression_count": {
+            "type": "integer",
+            "default": 0,
+            "formula": "D = H1 + H2 + N"
+          },
+          "guilt_count": {
+            "type": "integer",
+            "default": 0,
+            "formula": "G = W1 + W2"
+          }
+        }
+      },
+      "dominant_emotions": {
+        "primary_emotion": {
+          "type": "string",
+          "enum": ["anger", "anxiety", "depression", "guilt", "undetermined"],
+          "description": "Emotion with the highest frequency count. Recalculated on every interaction update."
+        },
+        "secondary_emotion": {
+          "type": "string",
+          "enum": ["anger", "anxiety", "depression", "guilt", "none", "undetermined"],
+          "description": "Emotion with the second highest frequency count. Recalculated on every interaction update."
+        }
+      },
+      "emotional_stage_tracking": {
+        "description": "Monitors when emotional patterns occur relative to an activating event.",
+        "fields": {
+          "pre_event_count": {
+            "type": "integer",
+            "default": 0,
+            "description": "Anticipatory emotional patterns — anxiety before an event occurs."
+          },
+          "during_event_count": {
+            "type": "integer",
+            "default": 0,
+            "description": "Active emotional patterns during an event — anger, overwhelm, ICSI."
+          },
+          "post_event_count": {
+            "type": "integer",
+            "default": 0,
+            "description": "Reflective or replay patterns after an event — guilt, depression, mental contamination."
+          }
+        }
+      },
+      "trigger_category_tracking": {
+        "description": "Tracks situational categories that commonly trigger emotional responses for this user.",
+        "fields": {
+          "work_count": {"type": "integer", "default": 0},
+          "family_count": {"type": "integer", "default": 0},
+          "relationships_count": {"type": "integer", "default": 0},
+          "health_count": {"type": "integer", "default": 0},
+          "performance_count": {"type": "integer", "default": 0},
+          "uncertainty_count": {"type": "integer", "default": 0},
+          "financial_count": {"type": "integer", "default": 0},
+          "trauma_memory_count": {"type": "integer", "default": 0},
+          "conflict_authority_count": {"type": "integer", "default": 0},
+          "social_group_count": {"type": "integer", "default": 0}
+        }
+      },
+      "activating_event_patterns": {
+        "description": "Short descriptions of recurring situations mentioned by the user. Maximum 10 most recent patterns stored.",
+        "type": "array",
+        "max_items": 10,
+        "item_schema": {
+          "pattern_description": {
+            "type": "string",
+            "description": "Short description of recurring activating event. Example: 'fear of making mistakes on calls' or 'family disagreements at dinner'.",
+            "max_length": 100
+          },
+          "frequency": {
+            "type": "integer",
+            "description": "Number of times this pattern has appeared in conversation."
+          },
+          "associated_emotion": {
+            "type": "string",
+            "enum": ["anger", "anxiety", "depression", "guilt"]
+          }
+        }
+      },
+      "recent_emotional_state": {
+        "description": "Snapshot of the most recently detected emotional state.",
+        "fields": {
+          "last_detected_emotion": {
+            "type": "string",
+            "enum": ["anger", "anxiety", "depression", "guilt", "none"]
+          },
+          "last_detected_stage": {
+            "type": "string",
+            "enum": ["pre_event", "during_event", "post_event", "none"]
+          },
+          "last_detected_trigger": {
+            "type": "string",
+            "enum": ["work", "family", "relationships", "health", "performance", "uncertainty", "financial", "trauma_memory", "conflict_authority", "social_group", "none"]
+          },
+          "last_interaction_timestamp": {
+            "type": "string",
+            "format": "ISO 8601",
+            "description": "Timestamp of most recent interaction."
+          }
+        }
+      },
+      "engagement_metrics": {
+        "description": "Tracks overall engagement and progress within the My4Blocks system.",
+        "fields": {
+          "total_interaction_count": {
+            "type": "integer",
+            "default": 0,
+            "description": "Total number of interactions logged for this user."
+          },
+          "last_interaction_date": {
+            "type": "string",
+            "format": "ISO 8601 date",
+            "description": "Date of most recent interaction."
+          },
+          "learning_cycle_day": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 36,
+            "default": 0,
+            "description": "Current day within the 36-day My4Blocks learning cycle."
+          },
+          "reflection_prompts_answered": {
+            "type": "integer",
+            "default": 0,
+            "description": "Number of reflection prompts the user has responded to."
+          }
+        }
+      }
+    }
+  },
+  "update_protocol": {
+    "description": "Executed on every user message. Four-step update cycle.",
+    "steps": [
+      {
+        "step": 1,
+        "name": "detection",
+        "action": "Identify emotional category (anger/anxiety/depression/guilt), event stage (pre/during/post), and trigger category using the specialized scenario and trigger libraries."
+      },
+      {
+        "step": 2,
+        "name": "counting",
+        "action": "Increment the appropriate frequency counters — emotion_frequency, emotional_stage_tracking, trigger_category_tracking."
+      },
+      {
+        "step": 3,
+        "name": "recalculation",
+        "action": "Update recent_emotional_state with latest detection. Recalculate dominant_emotions.primary_emotion and secondary_emotion based on updated frequency counts."
+      },
+      {
+        "step": 4,
+        "name": "lightweight_maintenance",
+        "action": "Store counts and short pattern descriptions only. Do not store full conversation transcripts. Do not store sensitive personal data. Trim activating_event_patterns to 10 most recent items if limit exceeded."
+      }
+    ]
+  },
+  "personalization_and_awareness": {
+    "pattern_observation_protocol": {
+      "description": "When a recurring pattern is detected, the AI may surface an awareness observation to the user.",
+      "framing_rule": "All observations must be framed as awareness prompts — never as diagnoses. Example: 'I notice anxiety tends to come up for you before work situations. The mind develops habits — let's look at what it is telling you.'",
+      "formula_return_rule": "Every pattern observation must return the user to the applicable Four Blocks formula. Awareness without the formula is incomplete."
+    },
+    "pattern_detection_threshold": {
+      "description": "Minimum frequency before a pattern observation is surfaced to the user.",
+      "minimum_occurrences": 3,
+      "reasoning": "Avoids premature pattern labeling from insufficient data."
+    }
+  },
+  "downstream_integration": {
+    "emotional_pattern_dashboard": {
+      "description": "Memory data feeds the Emotional Pattern Dashboard where users visualize dominant emotion patterns, common triggers, and overall progress in the My4Blocks system.",
+      "data_fields_used": ["emotion_frequency", "dominant_emotions", "trigger_category_tracking", "engagement_metrics", "activating_event_patterns"]
+    }
+  },
+  "storage_constraints": {
+    "data_type": "Counts and short descriptions only — no full transcripts",
+    "sensitive_data": "Never store sensitive personal data",
+    "activating_event_patterns_limit": 10,
+    "purpose_boundary": "Pattern recognition and awareness only — not medical diagnosis"
+  },
+  "four_blocks_formula_anchors": {
+    "anger": "A = ET + S",
+    "anxiety": "AX = WI + AW + ICSI",
+    "depression": "D = H1 + H2 + N",
+    "guilt": "G = W1 + W2"
+  },
+  "implementation_notes": {
+    "position_in_pipeline": "Runs in parallel with scenario and trigger matching. Updated after every response cycle. Feeds downstream into the Dashboard.",
+    "profile_type_routing": "Profile type determines which scenario library is prioritized in matching — civilian vs. first responder sub-types.",
+    "companion_libraries": ["EMOTION_DETECTION_TRIGGER_LIBRARY", "CIVILIAN_SCENARIO_LIBRARY", "FIRST_RESPONDER_SCENARIO_LIBRARY", "RELATIONSHIP_INTERPRETATION_LIBRARY", "EMOTIONAL_PATTERN_DASHBOARD"]
+  }
+}

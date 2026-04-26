@@ -1,0 +1,223 @@
+{
+  "library_id": "CIVILIAN_SCENARIO_LIBRARY_41_60",
+  "version": "1.0",
+  "description": "Civilian Everyday Life Scenario Library — scenarios 41 through 60. Covers family dynamics, parenting, caregiving, and relationship stress. Each scenario includes activating event, likely emotions, Four Blocks methodology fix, and rational redirection protocol for RAG ingestion.",
+  "total_scenarios": 20,
+  "roles_covered": ["civilian"],
+  "source": "NotebookLM cross-reference against My4Blocks methodology backbone",
+  "scenarios": [
+    {
+      "scenario_id": "CIV041",
+      "role": "civilian",
+      "activating_event": "Feeling frustrated when a child repeatedly ignores instructions or behaves poorly.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "seven_irrational_beliefs", "egocentric_thinking", "fallible_human_beings"],
+      "methodology_fix": "Anger Formula (A = ET + S) and Seven Irrational Beliefs. The parent is demanding the child behave in accordance with their standard — a should belief about a developing, fallible young person.",
+      "rational_redirection": "Children are Fallible Human Beings in development. I would prefer they followed instructions, but demanding it only disturbs me. I address the behavior calmly and accept that children act exactly as they should given their current stage of development."
+    },
+    {
+      "scenario_id": "CIV042",
+      "role": "civilian",
+      "activating_event": "Worrying about a child's safety when they are away from home.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "staying_now", "centering_breath"],
+      "methodology_fix": "Anxiety Formula (AX = WI + AW + ICSI) — What If thinking. The parent is projecting danger onto a future that has not occurred and treating the possibility as a certainty.",
+      "rational_redirection": "My child is not in danger right now — that is a story in my head. I cannot control every condition of their world. Staying Now. Use the Centering Breath and let go of the What If."
+    },
+    {
+      "scenario_id": "CIV043",
+      "role": "civilian",
+      "activating_event": "Feeling guilty after losing patience with a family member.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "wrongness", "worthlessness", "bs_equation", "fallible_human_beings"],
+      "methodology_fix": "Guilt Formula (G = W1 + W2). The user is rating their loss of patience as Wrongness and attaching Worthlessness to themselves as a parent or family member.",
+      "rational_redirection": "My reaction was unhelpful — Behavior equals Behavior. I am not a bad person for losing patience. I am a Fallible Human Being. I apologize where needed, learn, and refuse the story that one reaction defines my worth."
+    },
+    {
+      "scenario_id": "CIV044",
+      "role": "civilian",
+      "activating_event": "Feeling overwhelmed while caring for an aging parent or seriously ill relative.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "depression_formula", "icsi", "just_this"],
+      "methodology_fix": "SOS Method and Depression Formula (D = H1 + H2 + N). The user is overwhelmed by the totality of caregiving and generating helplessness and hopelessness about the situation.",
+      "rational_redirection": "I am standing this right now — which proves I can stand it. Use the SOS Method to identify what I am telling myself about the situation. Focus on just this task in this moment. I do not need to solve everything at once."
+    },
+    {
+      "scenario_id": "CIV045",
+      "role": "civilian",
+      "activating_event": "Replaying an argument with a spouse or partner long after it has ended.",
+      "likely_emotions": ["anger", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "the_narrator", "cognitive_stoppage", "the_observer"],
+      "methodology_fix": "Mental Contamination. The Narrator is replaying the argument and generating ongoing disturbance from an event that is already in the past.",
+      "rational_redirection": "Stop. This is the Narrator running the movie again. The argument is over. I am 100% responsible for continuing to replay it. Use Cognitive Stoppage and return to the Observer."
+    },
+    {
+      "scenario_id": "CIV046",
+      "role": "civilian",
+      "activating_event": "Feeling anxious about an upcoming medical appointment or potential diagnosis.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "mental_contamination", "what_if_thinking", "awfulizing", "staying_now"],
+      "methodology_fix": "Anxiety Formula and Mental Contamination — What If and Awfulizing. The Narrator is building a worst-case medical story before any facts are known.",
+      "rational_redirection": "The diagnosis does not exist yet. The horror story in my head is not reality. Staying Now. I will handle the facts when they arrive. Use the Centering Breath and return to this moment."
+    },
+    {
+      "scenario_id": "CIV047",
+      "role": "civilian",
+      "activating_event": "Feeling discouraged when efforts to improve a relationship do not seem to be working.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "hopelessness", "helplessness", "shoulds_musts_demands"],
+      "methodology_fix": "Depression Formula (D = H1 + H2 + N) — Hopelessness and Helplessness. The user is treating slow relationship progress as evidence that improvement is impossible.",
+      "rational_redirection": "My efforts have not produced the result I wanted — that is a fact. My belief that it will never change is just a story. Hard is not the same as impossible. I continue to act effectively and accept the other person's fallibility."
+    },
+    {
+      "scenario_id": "CIV048",
+      "role": "civilian",
+      "activating_event": "Becoming irritated when household responsibilities are not shared fairly.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "entitlement"],
+      "methodology_fix": "Anger Formula (A = ET + S) — Egocentric Thinking and Entitlement. The user is demanding that household responsibilities be distributed according to their personal standard of fairness.",
+      "rational_redirection": "I would prefer the responsibilities were shared more evenly, but demanding it only disturbs me. I address the practical problem directly and accept that my standard of fairness is not a universal law."
+    },
+    {
+      "scenario_id": "CIV049",
+      "role": "civilian",
+      "activating_event": "Feeling guilty about not spending enough time with loved ones due to work demands.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "bs_equation", "worthlessness", "unconditional_self_acceptance"],
+      "methodology_fix": "Guilt Formula (G = W1 + W2) and BS Equation. The user is rating themselves as a bad family member based on time allocation rather than rating the specific behavior.",
+      "rational_redirection": "I want to spend more time with them, but not doing so does not make me worthless. Behavior equals Behavior. I adjust what I can and practice Unconditional Self-Acceptance."
+    },
+    {
+      "scenario_id": "CIV050",
+      "role": "civilian",
+      "activating_event": "Feeling anxious about a child's future success and overall well-being.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "awfulizing", "staying_now"],
+      "methodology_fix": "Anxiety Formula — What If thinking and Awfulizing. The parent is projecting future failure or harm onto a child's life that has not yet unfolded.",
+      "rational_redirection": "My child's future is not determined yet. The story I am telling is not reality. Staying Now. I focus on being present and supportive today rather than being an emotional prisoner of a future that has not happened."
+    },
+    {
+      "scenario_id": "CIV051",
+      "role": "civilian",
+      "activating_event": "Becoming frustrated when a partner does not understand or acknowledge feelings.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "need_for_approval", "fallible_human_beings"],
+      "methodology_fix": "Anger Formula (A = ET + S) and Need for Approval. The user is demanding emotional acknowledgment from their partner — treating understanding as a necessity rather than a preference.",
+      "rational_redirection": "I would prefer my partner understood me, but demanding it only disturbs me. They are a Fallible Human Being with their own limitations. I communicate clearly and accept their fallibility."
+    },
+    {
+      "scenario_id": "CIV052",
+      "role": "civilian",
+      "activating_event": "Feeling emotionally drained from consistently supporting others while neglecting personal needs.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "three_insights", "helplessness", "pseudo_need"],
+      "methodology_fix": "Depression Formula and Three Insights — Insight 1. The user is 100% responsible for the pattern of neglecting their own needs. Helplessness is being generated about a pattern that is within their power to change.",
+      "rational_redirection": "I am tired because I have given without replenishing. This is a fact, not a permanent state. I accept 100% responsibility for adjusting how I give. I cannot pour from an empty vessel."
+    },
+    {
+      "scenario_id": "CIV053",
+      "role": "civilian",
+      "activating_event": "Worrying about making the wrong parenting decision.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "shoulds_musts_demands", "fear_of_uncertainty", "fallible_human_beings"],
+      "methodology_fix": "Anxiety Formula — Shoulds/Musts/Demands and Fear of Uncertainty. The parent is demanding perfect parenting decisions — an impossible standard applied to an inherently uncertain process.",
+      "rational_redirection": "There is no perfect parenting decision. I am a Fallible Human Being making the best choice I can with the information I have. Uncertainty is a fact of parenting, not a threat."
+    },
+    {
+      "scenario_id": "CIV054",
+      "role": "civilian",
+      "activating_event": "Feeling regret after saying something hurtful to someone close.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "bs_equation", "wrongness", "worthlessness", "mental_contamination"],
+      "methodology_fix": "Guilt Formula (G = W1 + W2). The user is rating hurtful words as Wrongness and attaching Worthlessness to themselves as a person for having said them.",
+      "rational_redirection": "My words were hurtful — Behavior equals Behavior. I am not a bad person for a moment of human fallibility. I apologize sincerely, repair what I can, and refuse the story that one moment defines my worth."
+    },
+    {
+      "scenario_id": "CIV055",
+      "role": "civilian",
+      "activating_event": "Becoming angry when family plans are disrupted or ignored by others.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "entitlement"],
+      "methodology_fix": "Anger Formula (A = ET + S) — Egocentric Thinking and Should belief. The user is demanding that family members honor plans according to their personal standard.",
+      "rational_redirection": "I would have preferred the plans were honored, but demanding it only disturbs me. Family members are Fallible Human Beings. I address the disruption directly and accept the fallibility."
+    },
+    {
+      "scenario_id": "CIV056",
+      "role": "civilian",
+      "activating_event": "Feeling sad when important relationships seem distant or emotionally disconnected.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "hopelessness", "namelessness", "non_acceptance_of_reality"],
+      "methodology_fix": "Depression Formula (D = H1 + H2 + N) — Hopelessness and Namelessness. The user is treating the current disconnection as a permanent state and generating a story about the relationship being lost.",
+      "rational_redirection": "Distance in relationships is a current state, not a permanent verdict. I accept the disconnection as it is right now without the story that it will last forever. I take one small step toward connection today."
+    },
+    {
+      "scenario_id": "CIV057",
+      "role": "civilian",
+      "activating_event": "Feeling anxious about balancing family responsibilities with work demands simultaneously.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "anxiety_formula", "icsi", "just_this"],
+      "methodology_fix": "SOS Method and Anxiety Formula — I Can't Stand It (ICSI). The user is treating the totality of simultaneous demands as unendurable rather than focusing on the single task in front of them.",
+      "rational_redirection": "I am standing this right now — that is proof I can stand it. Use the SOS Method. Focus on just this one responsibility in this one moment. I am not required to solve everything simultaneously."
+    },
+    {
+      "scenario_id": "CIV058",
+      "role": "civilian",
+      "activating_event": "Thinking repeatedly about a mistake made in caring for a loved one.",
+      "likely_emotions": ["guilt", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "guilt_formula", "the_narrator", "cognitive_stoppage", "bs_equation"],
+      "methodology_fix": "Mental Contamination and Guilt Formula. The Narrator is replaying the caregiving mistake and the user is applying the BS Equation — treating the mistake as evidence of their inadequacy as a caregiver.",
+      "rational_redirection": "Stop. This is the Narrator. The mistake happened because the conditions for it were met. I am a Fallible Human Being doing my best. Behavior equals Behavior. I learn from it and return to the Observer."
+    },
+    {
+      "scenario_id": "CIV059",
+      "role": "civilian",
+      "activating_event": "Feeling frustrated when others do not appreciate the personal sacrifices made for the family.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "seven_irrational_beliefs", "egocentric_thinking", "entitlement"],
+      "methodology_fix": "Anger Formula (A = ET + S) — Seven Irrational Beliefs and Entitlement. The user is demanding recognition and gratitude for sacrifices — a should belief about how others must respond to their efforts.",
+      "rational_redirection": "I would prefer my sacrifices were acknowledged, but demanding gratitude only disturbs me. Others act according to their own awareness and limitations. I choose to give from my values, not from the expectation of return."
+    },
+    {
+      "scenario_id": "CIV060",
+      "role": "civilian",
+      "activating_event": "Feeling overwhelmed by the emotional weight of consistently supporting others through their problems.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["depression_formula", "sos_method", "other_pity", "helplessness", "icsi"],
+      "methodology_fix": "Depression Formula and SOS Method — Other Pity. The user is absorbing others' disturbance as their own emotional burden and generating helplessness about the accumulated weight.",
+      "rational_redirection": "I can have compassion for others' struggles without carrying them as my own. Use the SOS Method. I am most helpful when I am grounded. I am responsible for my emotional state, not for solving everyone else's problems."
+    }
+  ],
+  "implementation_notes": {
+    "library_context": "Civilian Scenario Library — family, parenting, and caregiving scenarios. This batch covers the most emotionally complex civilian contexts.",
+    "previous_file": "CIVILIAN_SCENARIO_LIBRARY_21_40",
+    "next_file": "CIVILIAN_SCENARIO_LIBRARY_61_80",
+    "source_tool": "NotebookLM — raw scenario structure provided, methodology fix and rational redirection built by Claude against Four Blocks methodology",
+    "enhanced_fields": "Includes methodology_fix and rational_redirection fields consistent with full library format",
+    "routing_note": "Match scenario context to user input → identify stage → apply methodology fix → deliver rational redirection through civilian personality layer",
+    "stage_routing": {
+      "pre_event": "Route to anticipatory anxiety or pre-event behavior responses",
+      "during_event": "Route to active coping — SOS method, centering breath, just this task",
+      "post_event": "Route to processing responses — mental contamination protocol, formula application, rational redirection"
+    }
+  }
+}

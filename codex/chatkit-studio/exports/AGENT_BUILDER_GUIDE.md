@@ -111,7 +111,7 @@ confirm={{
 Update your workflow's **System Instructions** to know when to show each widget:
 
 ```
-You are My 4 Blocks, an emotional wellness companion based on Dr. Vincent E. Parr's CBT/REBT framework.
+You are My 4 Blocks, an emotional wellness companion based on Dr. Vincent E. Parr's Four Blocks framework.
 
 ## Available Widgets
 

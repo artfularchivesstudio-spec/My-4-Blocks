@@ -1,0 +1,223 @@
+{
+  "library_id": "CIVILIAN_SCENARIO_LIBRARY_1_20",
+  "version": "1.0",
+  "description": "Civilian Everyday Life Scenario Library — scenarios 1 through 20. Covers workplace stress, interpersonal dynamics, personal performance, daily frustrations, and goal-setting. Each scenario includes activating event, likely emotions, Four Blocks methodology fix, and rational redirection protocol for RAG ingestion.",
+  "total_scenarios": 20,
+  "roles_covered": ["civilian"],
+  "source": "NotebookLM cross-reference against My4Blocks methodology backbone",
+  "scenarios": [
+    {
+      "scenario_id": "CIV001",
+      "role": "civilian",
+      "activating_event": "Feeling pressure to perform perfectly before an important work meeting or presentation.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "shoulds_musts_demands", "need_for_approval", "three_insights"],
+      "methodology_fix": "Need for Approval and Anxiety Formula (AX = WI + AW + ICSI). The user is demanding perfect performance — a must belief that creates anticipatory anxiety.",
+      "rational_redirection": "I would prefer to perform well, but there is no law that I must be perfect. I am a Fallible Human Being. Use the Centering Breath to stop the Narrator's What If story and return to the present."
+    },
+    {
+      "scenario_id": "CIV002",
+      "role": "civilian",
+      "activating_event": "Receiving criticism from a manager or colleague that feels personal and unfair.",
+      "likely_emotions": ["anger", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "bs_equation", "unconditional_self_acceptance", "need_for_approval"],
+      "methodology_fix": "BS Equation (B = S). The user is treating criticism of their behavior as a verdict on their worth as a person.",
+      "rational_redirection": "Their criticism is about the behavior, not the Self. I rate the behavior — Behavior equals Behavior. I accept myself unconditionally regardless of their opinion."
+    },
+    {
+      "scenario_id": "CIV003",
+      "role": "civilian",
+      "activating_event": "Worrying about a conflict with a friend or family member and what might happen next.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "staying_now", "the_narrator"],
+      "methodology_fix": "Anxiety Formula — What If thinking (WI). The Narrator is projecting a future conflict scenario that has not yet occurred.",
+      "rational_redirection": "Staying Now. I will handle what arrives when it arrives. The conflict in my head is a story, not reality. I return to the Observer."
+    },
+    {
+      "scenario_id": "CIV004",
+      "role": "civilian",
+      "activating_event": "Feeling frustrated when a coworker behaves rudely or inconsiderately.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "disturbance_ignorance"],
+      "methodology_fix": "Anger Formula (A = ET + S). The user is demanding that a fallible coworker behave according to their personal standard.",
+      "rational_redirection": "They are acting from ignorance or their own disturbance. I would prefer they were more considerate, but I do not need them to be to remain okay."
+    },
+    {
+      "scenario_id": "CIV005",
+      "role": "civilian",
+      "activating_event": "Feeling overwhelmed when multiple problems or demands arrive at the same time.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anxiety_formula", "icsi", "just_this", "centering_breath"],
+      "methodology_fix": "I Can't Stand It (ICSI). The belief that the volume of simultaneous demands is unendurable.",
+      "rational_redirection": "I am standing this right now — which proves I can stand it. Focus on just this one task. One breath at a time. I am not required to solve everything at once."
+    },
+    {
+      "scenario_id": "CIV006",
+      "role": "civilian",
+      "activating_event": "Feeling guilty or ashamed after making a mistake at work.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "bs_equation", "should_belief", "fallible_human_beings"],
+      "methodology_fix": "BS Equation (B = S) and Shoulds/Musts/Demands. The user is rating the mistake as proof they are a bad or inadequate person.",
+      "rational_redirection": "The mistake should have happened because it did — the conditions for it were met. I am a Fallible Human Being. Behavior equals Behavior. I learn from it and move forward."
+    },
+    {
+      "scenario_id": "CIV007",
+      "role": "civilian",
+      "activating_event": "Anxiety after receiving unexpected medical news or awaiting test results.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "awfulizing", "staying_now"],
+      "methodology_fix": "Anxiety Formula — What If (WI) and Awfulizing (AW). The Narrator is constructing worst-case medical scenarios that do not yet exist.",
+      "rational_redirection": "Staying Now. I will handle the facts when they arrive. The horror story in my head is not real. Use the Centering Breath and return to this moment."
+    },
+    {
+      "scenario_id": "CIV008",
+      "role": "civilian",
+      "activating_event": "Feeling disrespected or dismissed during a conversation with someone important to them.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "need_for_approval", "entitlement"],
+      "methodology_fix": "Egocentric Thinking (ET) and Need for Approval. The user is demanding acknowledgment and respect from another fallible human being.",
+      "rational_redirection": "I would prefer to be heard and respected, but I do not need their acknowledgment to maintain my worth. Their dismissal is their limitation, not a verdict on my value."
+    },
+    {
+      "scenario_id": "CIV009",
+      "role": "civilian",
+      "activating_event": "Feeling hopeless when a personal goal feels increasingly out of reach.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "hopelessness", "pseudo_need", "namelessness"],
+      "methodology_fix": "Depression Formula (D = H1 + H2 + N) — Pseudo-Need. The user believes they need this goal to be fulfilled to be happy or worthy.",
+      "rational_redirection": "I want this goal, but I do not need it to function or to have worth. I choose to be an Observer of my disappointment rather than a victim of it."
+    },
+    {
+      "scenario_id": "CIV010",
+      "role": "civilian",
+      "activating_event": "Feeling intense pressure before a high-stakes performance, exam, or evaluation.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "shoulds_musts_demands", "fallible_human_beings", "staying_now"],
+      "methodology_fix": "Shoulds/Musts/Demands — the user is applying a must to their own performance that generates performance anxiety.",
+      "rational_redirection": "I would prefer to perform well, but I am a Fallible Human Being. Total Acceptance of the current moment equals zero disturbance. Staying Now."
+    },
+    {
+      "scenario_id": "CIV011",
+      "role": "civilian",
+      "activating_event": "Becoming angry in traffic when other drivers behave recklessly or inconsiderately.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "disturbance_ignorance"],
+      "methodology_fix": "Anger Formula (A = ET + S). The user is demanding that other drivers comply with their personal standard of behavior.",
+      "rational_redirection": "That driver exists because the conditions for them exist. They are acting from ignorance or their own disturbance. Replace 'This is awful' with 'This is inconvenient.' I prefer better drivers, I do not need them."
+    },
+    {
+      "scenario_id": "CIV012",
+      "role": "civilian",
+      "activating_event": "Feeling inadequate when comparing their life or achievements to others on social media.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "rating", "unconditional_self_acceptance", "bs_equation"],
+      "methodology_fix": "Rating. The user is assigning their worth based on an external comparison against curated social media content.",
+      "rational_redirection": "Comparison is Rating. Their presentation is their reality — not a standard you must meet. I accept my current reality as it is and practice Unconditional Self-Acceptance."
+    },
+    {
+      "scenario_id": "CIV013",
+      "role": "civilian",
+      "activating_event": "Feeling envious or resentful when a friend or colleague achieves something they have been working toward.",
+      "likely_emotions": ["anger", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "depression_formula", "rating", "egocentric_thinking"],
+      "methodology_fix": "Rating and Egocentric Thinking. The user is treating another person's success as evidence of their own inadequacy — comparing life paths that are not comparable.",
+      "rational_redirection": "Their success is their reality. My life is my reality. Comparison is Rating. I accept where I am and focus on what I can do in this moment."
+    },
+    {
+      "scenario_id": "CIV014",
+      "role": "civilian",
+      "activating_event": "Feeling guilt about a past mistake that affected an important relationship.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "bs_equation", "should_belief", "mental_contamination"],
+      "methodology_fix": "BS Equation and Shoulds. The user is rating the mistake as proof of their failure as a person in the relationship — applying an irrational should to unalterable past behavior.",
+      "rational_redirection": "The mistake should have happened because it did — the conditions were met. Behavior equals Behavior. I am not a failure as a person. I repair what I can and refuse to punish myself for being fallible."
+    },
+    {
+      "scenario_id": "CIV015",
+      "role": "civilian",
+      "activating_event": "Feeling overwhelmed by a long list of responsibilities with no clear starting point.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "icsi", "sos_method", "just_this"],
+      "methodology_fix": "I Can't Stand It (ICSI) and SOS Method. The user is telling themselves the totality of the list is unmanageable — treating the whole as the immediate task.",
+      "rational_redirection": "Focus on just this one task. Use the SOS Method to identify what you are telling yourself about the situation. I am standing it one breath at a time."
+    },
+    {
+      "scenario_id": "CIV016",
+      "role": "civilian",
+      "activating_event": "Feeling hopeless after a series of setbacks or failed attempts toward a goal.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "hopelessness", "pseudo_need", "three_insights"],
+      "methodology_fix": "Depression Formula — Hopelessness (H1) and Pseudo-Need (N). The user believes they need the goal to be achieved to experience happiness or worth.",
+      "rational_redirection": "I want success, but I do not need it to function or be okay. The setbacks happened because conditions were met. I choose to be an Observer of my disappointment rather than a victim of it."
+    },
+    {
+      "scenario_id": "CIV017",
+      "role": "civilian",
+      "activating_event": "Feeling angered when someone repeatedly fails to follow through on commitments.",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "fallible_human_beings"],
+      "methodology_fix": "Anger Formula (A = ET + S). The user is demanding that another fallible human being behave reliably according to their standard.",
+      "rational_redirection": "They are acting from ignorance or their own limitations. I would prefer they followed through, but demanding it only disturbs me. I address the behavior and accept the fallibility."
+    },
+    {
+      "scenario_id": "CIV018",
+      "role": "civilian",
+      "activating_event": "Feeling worthless after receiving repeated negative feedback or rejection.",
+      "likely_emotions": ["depression", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "depression_formula", "bs_equation", "unconditional_self_acceptance"],
+      "methodology_fix": "BS Equation and Depression Formula. The user is treating repeated rejection as a global rating of their worth as a person.",
+      "rational_redirection": "I am rating my behavior — Behavior equals Behavior. I accept myself unconditionally regardless of their feedback. Rejection is an event, not a verdict."
+    },
+    {
+      "scenario_id": "CIV019",
+      "role": "civilian",
+      "activating_event": "Feeling anxious and uncertain before starting something new — a job, relationship, or major life change.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "fear_of_uncertainty", "what_if_thinking", "staying_now"],
+      "methodology_fix": "Fear of Uncertainty and What If thinking (WI). The Narrator is generating worst-case projections about a future that has not yet unfolded.",
+      "rational_redirection": "Uncertainty is a fact of life. I cannot predict the future. Staying Now. I make the best decision I can as a Fallible Human Being and trust my ability to handle what arrives."
+    },
+    {
+      "scenario_id": "CIV020",
+      "role": "civilian",
+      "activating_event": "Feeling stuck and unfulfilled when life does not match personal expectations or dreams.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "pseudo_need", "hopelessness", "namelessness", "the_narrator"],
+      "methodology_fix": "Depression Formula — Pseudo-Need (N) and Hopelessness (H1). The user believes they need their life to match a specific vision to be happy or have worth.",
+      "rational_redirection": "This is a Want, not a Need for my survival or worth. The life I have is the life whose conditions were met. I choose to be an Observer of my disappointment and focus on what I can build from where I am."
+    }
+  ],
+  "implementation_notes": {
+    "library_context": "Civilian Scenario Library — everyday life scenarios for non-first-responder users. Covers workplace, interpersonal, performance, daily frustration, and goal-setting contexts.",
+    "next_file": "CIVILIAN_SCENARIO_LIBRARY_21_40",
+    "source_tool": "NotebookLM — cross-referenced against My4Blocks methodology backbone PDF",
+    "notebooklm_note": "NotebookLM returned grouped output with Rational Replacement Table for this batch. Individual scenarios were expanded by Claude from the grouped protocols and cross-reference table.",
+    "enhanced_fields": "Includes methodology_fix and rational_redirection fields consistent with FR081-FR100 and CIVILIAN_SCENARIO_LIBRARY_61_80 format",
+    "routing_note": "Match scenario context to user input → identify stage → apply methodology fix → deliver rational redirection through civilian personality layer",
+    "stage_routing": {
+      "pre_event": "Route to anticipatory anxiety or pre-event behavior responses",
+      "during_event": "Route to active coping — SOS method, centering breath, just this task",
+      "post_event": "Route to processing responses — mental contamination protocol, formula application, rational redirection"
+    }
+  }
+}

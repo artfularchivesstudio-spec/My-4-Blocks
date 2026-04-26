@@ -12,7 +12,7 @@ import type { EmbeddedChunk, ScoredChunk } from "./types";
 /**
  * 🚫 Common stopwords to filter out
  * These words appear everywhere and don't help with relevance.
- * (We keep "should" since it's significant in CBT context!)
+ * (We keep "should" since it's significant in the Four Blocks context!)
  */
 const STOPWORDS = new Set([
   "the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for",
@@ -46,10 +46,10 @@ const EMOTION_KEYWORDS = new Set([
   "empty", "numb", "despair", "meaningless", "pointless",
   // 😔 Guilt signals
   "guilt", "guilty", "shame", "ashamed", "regret", "blame", "fault",
-  // 📚 REBT/CBT concepts
+  // 📚 Four Blocks concepts
   "belief", "beliefs", "irrational", "rational", "dispute", "disputing",
   "abc", "activating", "consequence", "thoughts", "emotions", "feelings",
-  "should", "must", "narrator", "observer"
+  "should", "must", "narrator", "observer", "blocks", "four"
 ]);
 
 /**

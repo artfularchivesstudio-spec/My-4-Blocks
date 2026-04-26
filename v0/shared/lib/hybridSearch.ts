@@ -113,12 +113,39 @@ export function hybridSearch(
     }
   }
 
-  // 🎯 Apply block type boost if detected
+  // Apply block type boost if detected
   if (detectedBlock) {
     for (const [, value] of mergedScores) {
       if (value.chunk.block_type === detectedBlock) {
         value.hybridScore *= 1.2; // 20% boost for matching block
       }
+    }
+  }
+
+  // v2.0: Constitution-first priority boosting
+  // Constitution chunks always get highest retrieval weight when
+  // emotional language is detected. This ensures the formulas and
+  // anti-drift rules are always present in the context.
+  const constitutionBlockTypes = new Set([
+    "Constitution", "Mental Contamination", "Irrational Beliefs",
+    "ABCs", "Three Insights", "Happiness", "Validation",
+  ]);
+  const hasEmotionalContent = Boolean(detectedBlock);
+
+  for (const [, value] of mergedScores) {
+    // Boost by priority field if present (v2 chunks)
+    if (value.chunk.priority === "constitution") {
+      value.hybridScore *= hasEmotionalContent ? 1.5 : 1.3;
+    } else if (value.chunk.priority === "course") {
+      value.hybridScore *= 1.1;
+    } else if (value.chunk.priority === "behavioral") {
+      value.hybridScore *= hasEmotionalContent ? 1.15 : 1.05;
+    }
+
+    // Also boost by block_type for backward compatibility with
+    // chunks that don't have the priority field yet
+    if (!value.chunk.priority && constitutionBlockTypes.has(value.chunk.block_type)) {
+      value.hybridScore *= hasEmotionalContent ? 1.3 : 1.15;
     }
   }
 

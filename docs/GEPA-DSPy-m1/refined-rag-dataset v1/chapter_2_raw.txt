@@ -1,0 +1,73 @@
+MY4BLOCKS RAG DATASET — CHAPTER 2 RAW EXTRACTION
+Chapter: Chapter 2 — The Three Insights To A Mind Of Peace
+Total Chunks: 7
+Extraction Date: 2026-04-15
+========================================================
+
+
+[CHUNK 01]
+CONCEPT: The Four Blocks to Happiness — Definition and Overview
+TYPE: definition
+REFERENCES: The Seven Irrational Beliefs; The Formula for Anger; The Formula for Anxiety; The Formula for Depression; The Formula for Guilt
+
+No matter what the thousands of presenting problems were, people mainly feel four negative emotions: Anger, Anxiety, Depression, and Guilt. Our perceptions and behaviors vary widely, but the negative emotions connecting the two are common to us all. And even though many different things influence people's happiness, we all create our unhappiness in exactly the same way. I call these the four blocks to happiness and inner peace because they are the four things that can stop you from feeling good. These are the main causes of your suffering! All emotional upset—what we often refer to as stress or 'disturbance'—is created by these four emotional blocks which can be broken down into four formulas and seven irrational beliefs.
+
+--------------------------------------------------------
+
+[CHUNK 02]
+CONCEPT: The Three Insights — Overview
+TYPE: framework
+REFERENCES: The ABCs of How Emotions are Created; The Seven Irrational Beliefs; The Formula for Anger; The Formula for Anxiety; The Formula for Depression; The Formula for Guilt
+
+There are three basic insights into the human condition that help us become more aware of how we upset ourselves. These insights are the fundamental building blocks to a rational mind. Without these insights, it's practically impossible for you to be happy or content in your lifetime.
+
+--------------------------------------------------------
+
+[CHUNK 03]
+CONCEPT: The First Insight — 100% Responsibility for Thoughts, Feelings, and Behavior
+TYPE: framework
+REFERENCES: Core Premise — Emotions Are Internally Caused (Chapter 1); The ABCs of How Emotions are Created; Mental Contamination (Chapter 1)
+
+You create and maintain 100% of your thoughts, feelings, and behavior. The first insight may seem startlingly simple, but it is a profound statement: this means nothing and no one else can cause your thoughts and feelings. Someone can hurt you physically, but they can't hurt you emotionally because it's not the outside world that causes your emotions. Your beliefs about these events cause your emotions, and no one can make you think a thought. Understanding that you are 100% responsible for 100% of your thoughts, emotions, and behaviors is the first step to freedom.
+
+--------------------------------------------------------
+
+[CHUNK 04]
+CONCEPT: Internal vs. External Control — Key Distinction
+TYPE: distinction
+REFERENCES: The First Insight; Core Premise — Emotions Are Internally Caused (Chapter 1)
+
+Most people have only one strategy for happiness—trying to control the conditions of the outside world, whether it's with money, romantic relationships, a drug addiction, politics or religion. This does not work because the only thing we have control over is our thoughts, feelings, and behavior. The outside and inside world is in constant state of flux, flow, and change. In fact, change is the only constant. We cannot control the outside conditions that are always changing, just as we cannot control other people or situations. The only thing we have a great deal of control over, or as I prefer, 'mastery' over is our internal world.
+
+--------------------------------------------------------
+
+[CHUNK 05]
+CONCEPT: Blaming — Definition and Clinical Consequence
+TYPE: definition
+REFERENCES: The First Insight; The Seven Irrational Beliefs
+
+If you don't take responsibility for controlling your own thoughts, emotions, and behavior, not only do you block out happiness, but you will always look for someone or something to blame; others, your bad luck, or yourself for your problems and feelings. Blaming is disturbance! And it is the executioner of love! No love survives blaming! You may stay in your relationship, but all the love dies primarily because of blaming. You cannot change for the better while continuing to blame everything and everyone else for how you feel right now.
+
+--------------------------------------------------------
+
+[CHUNK 06]
+CONCEPT: The Second Insight — Awareness of How You Create Your Emotions
+TYPE: framework
+REFERENCES: The ABCs of How Emotions are Created; The Seven Irrational Beliefs; The Narrator (Chapter 1)
+
+It is essential to become aware of how you create your emotions. The second insight is what the next chapter is all about, the ABCs of emotional disturbance, as created by my mentor Dr. Albert Ellis in the early 1950s. These ABCs are as fundamental as the ABCs you were taught in school, but these will have an even greater impact on you because they determine whether you live a life of peace or of struggle. Much as the ABCs you learned as a kid help you identify words and sentences; the ABCs of emotions will help you identify irrational beliefs and the stories your Narrator is telling you. You will begin to understand how those stories, conceptions, and beliefs affect your state of mind and how to red-flag them by listening for key words and phrases. It's essential that you recognize irrational beliefs before you can begin to dispute them. You can understand how and why you create your emotions and feelings as simply as ABC and knowing the equations for Anger, Anxiety, Depression, and Guilt.
+
+--------------------------------------------------------
+
+[CHUNK 07]
+CONCEPT: The Third Insight — Dispute and Let Go of Negative Emotions Rapidly
+TYPE: framework
+REFERENCES: The Formula for Anger; The Formula for Anxiety; The Formula for Depression; The Formula for Guilt; The Narrator vs. The Observer (Chapter 1)
+
+It is essential to learn how to dispute and let go of your negative emotions rapidly. The third insight is the key to removing the four blocks. The four formulas I present for identifying and disputing Anger, Anxiety, Depression and Guilt will help you learn to challenge the stories your Narrator tells you and rely instead on accepting the information you receive from your Observer. The formulas for the four blocks will show you how to receive information from your Observer without conceptions and beliefs that lead to emotional disturbance. You will learn tools and techniques that help you turn Anger, Anxiety, Depression and Guilt into peace, acceptance, and contentment. In this way, you can have a life of meaning and minimal struggle even through the tough times.
+
+--------------------------------------------------------
+
+END OF CHAPTER 2 RAW EXTRACTION
+Total Chunks: 7
+Types represented: definition (2), framework (4), distinction (1)

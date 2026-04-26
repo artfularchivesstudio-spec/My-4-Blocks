@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "description": "My4Blocks Emotional Education Library - Unified Training Data",
-  "source": "REBT/CBT Training Curriculum",
+  "source": "Four Blocks Training Curriculum",
   "total_chunks": 86,
   "chapters": [
     { "code": "ANG", "name": "Anger", "count": 9 },

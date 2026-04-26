@@ -1,0 +1,223 @@
+{
+  "library_id": "FIRST_RESPONDER_SCENARIO_LIBRARY_61_80",
+  "version": "1.0",
+  "description": "First Responder Scenario Library — scenarios 61 through 80. Nurse and ER healthcare worker activating events. Each scenario includes activating event, likely emotions, Four Blocks methodology fix, and rational redirection protocol for RAG ingestion.",
+  "total_scenarios": 20,
+  "roles_covered": ["nurse_er"],
+  "source": "NotebookLM cross-reference against My4Blocks methodology backbone",
+  "scenarios": [
+    {
+      "scenario_id": "NUR061",
+      "role": "nurse_er",
+      "activating_event": "Patient condition deteriorates rapidly despite clinical intervention.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "anxiety_formula", "centering_breath", "just_this"],
+      "methodology_fix": "SOS Method and Anxiety Formula (AX = WI + AW + ICSI). The nurse is generating a story about the outcome before it has occurred.",
+      "rational_redirection": "Stop the story. Use the Centering Breath and focus on just this clinical task in this moment. One action at a time."
+    },
+    {
+      "scenario_id": "NUR062",
+      "role": "nurse_er",
+      "activating_event": "A patient dies despite the team's best efforts during a resuscitation attempt. The nurse keeps replaying the sequence of events afterward.",
+      "likely_emotions": ["guilt", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "mental_contamination", "abc_model", "bs_equation"],
+      "methodology_fix": "Guilt Formula (G = W1 + W2) and the BS Equation (B = S). The nurse is rating the death as their failure and attaching worthlessness to the self for the outcome.",
+      "rational_redirection": "The death was the result of trillions of conditions being met. Your behavior in the resuscitation does not equal your worth as a human being. Behavior equals Behavior. You are not the outcome."
+    },
+    {
+      "scenario_id": "NUR063",
+      "role": "nurse_er",
+      "activating_event": "Arriving for a shift knowing the floor is critically understaffed.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "mental_contamination", "the_narrator", "the_observer"],
+      "methodology_fix": "Anxiety Formula and Mental Contamination. The overwhelmed shift is a future story the Narrator is generating before the shift has even begun.",
+      "rational_redirection": "You are not on the floor yet. The overwhelm is a story. Return to the Observer. You have stood every shift you have ever worked — you will stand this one."
+    },
+    {
+      "scenario_id": "NUR064",
+      "role": "nurse_er",
+      "activating_event": "A patient becomes verbally aggressive and abusive during treatment.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "seven_irrational_beliefs", "fallible_human_beings", "disturbance_ignorance"],
+      "methodology_fix": "Anger Formula (A = ET + S) and Seven Irrational Beliefs. The nurse is demanding the patient behave differently — a should belief about a person acting from disturbance.",
+      "rational_redirection": "This patient is acting from disturbance or ignorance, not from a judgment of your worth. I would prefer they were calm, but I do not need them to be calm to do my job."
+    },
+    {
+      "scenario_id": "NUR065",
+      "role": "nurse_er",
+      "activating_event": "A family member of a patient becomes verbally aggressive and blames the nurse for a poor outcome.",
+      "likely_emotions": ["guilt", "anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["guilt_formula", "anger_formula", "three_insights", "insight_1_responsibility"],
+      "methodology_fix": "Insight 1 — 100% Responsibility. The family's blame is an external Activating Event. The nurse creates their own emotional response to it.",
+      "rational_redirection": "Their blame is their disturbance expressing itself. I am responsible for my response, not for their grief. I can have compassion for their pain without accepting their verdict."
+    },
+    {
+      "scenario_id": "NUR066",
+      "role": "nurse_er",
+      "activating_event": "Managing multiple critical patients simultaneously during a surge in the ER.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "anxiety_formula", "icsi"],
+      "methodology_fix": "I Can't Stand It (ICSI). The belief that the pressure is unendurable — but the nurse is standing it in real time.",
+      "rational_redirection": "You are standing this pressure right now. That is proof you can stand it. Focus on just this patient. Just this task. Just this moment."
+    },
+    {
+      "scenario_id": "NUR067",
+      "role": "nurse_er",
+      "activating_event": "Replaying a clinical decision made under pressure, wondering if a different choice would have changed the patient outcome.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "three_insights", "the_narrator", "cognitive_stoppage"],
+      "methodology_fix": "Mental Contamination and Three Insights. The Narrator is replaying the event as a movie — but the event is in the past and unalterable.",
+      "rational_redirection": "Stop. The Narrator is running the movie again. The event is over. What are the facts? You made the best decision available under those conditions. Behavior equals Behavior."
+    },
+    {
+      "scenario_id": "NUR068",
+      "role": "nurse_er",
+      "activating_event": "Conflict with a physician over a patient care decision.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "fallible_human_beings"],
+      "methodology_fix": "Anger Formula (A = ET + S). The nurse is applying a should belief that the physician must agree with or defer to their clinical judgment.",
+      "rational_redirection": "Physicians are Fallible Human Beings. I would prefer they agreed with my assessment, but demanding agreement only disturbs me. Focus on the patient. Advocate clearly. Accept the fallibility."
+    },
+    {
+      "scenario_id": "NUR069",
+      "role": "nurse_er",
+      "activating_event": "Witnessing a traumatic pediatric case with a poor outcome.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "anxiety_formula", "other_pity", "compassion"],
+      "methodology_fix": "Mental Contamination and Other Pity. The nurse is taking on the child's suffering as their own disturbance rather than holding compassion without contamination.",
+      "rational_redirection": "I can grieve this loss without creating my own depression. Compassion means I care deeply — not that I absorb their tragedy into my identity. I am most useful when I remain grounded."
+    },
+    {
+      "scenario_id": "NUR070",
+      "role": "nurse_er",
+      "activating_event": "Feeling responsible after a medication error is discovered.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "mental_contamination", "bs_equation", "wrongness", "worthlessness"],
+      "methodology_fix": "Guilt Formula (G = W1 + W2) and BS Equation. The nurse is rating the error as wrong and attaching worthlessness to themselves as a person for having made it.",
+      "rational_redirection": "The error was unhelpful — Behavior equals Behavior. You are not the error. Report it, correct it, learn from it, and refuse the story that one mistake defines your worth."
+    },
+    {
+      "scenario_id": "NUR071",
+      "role": "nurse_er",
+      "activating_event": "Anticipating a night shift in the ER after hearing reports of a mass casualty event incoming.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "what_if_thinking", "staying_now"],
+      "methodology_fix": "What If thinking (WI). The nurse is projecting into a future that has not yet arrived and generating anxiety about conditions that don't yet exist.",
+      "rational_redirection": "You can only handle this shift one moment at a time. The mass casualty event is not here yet. Stay in the Now. Your training will handle what arrives."
+    },
+    {
+      "scenario_id": "NUR072",
+      "role": "nurse_er",
+      "activating_event": "Witnessing the emotional devastation of a patient's family during a terminal diagnosis conversation.",
+      "likely_emotions": ["depression"],
+      "stage": "during_event",
+      "four_blocks_reference": ["depression_formula", "mental_contamination", "ten_thousand_sorrows"],
+      "methodology_fix": "Mental Contamination and non-acceptance of reality. The nurse is absorbing the family's grief as their own rather than accepting it as part of the full spectrum of human experience.",
+      "rational_redirection": "Life contains 10,000 joys and 10,000 sorrows. This is one of the sorrows. I accept it because it exists. I can hold space for their grief without drowning in it."
+    },
+    {
+      "scenario_id": "NUR073",
+      "role": "nurse_er",
+      "activating_event": "Feeling overwhelmed by simultaneous demands from multiple patients and staff.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "centering_breath", "just_this", "icsi"],
+      "methodology_fix": "SOS Method — the nurse is generating a story about the totality of all demands rather than focusing on the single task in front of them.",
+      "rational_redirection": "Focus on just this case. Use the Centering Breath — inhale, exhale, let go. One task. One patient. One moment."
+    },
+    {
+      "scenario_id": "NUR074",
+      "role": "nurse_er",
+      "activating_event": "Thinking about whether a different clinical decision could have improved a patient outcome.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "mental_contamination", "bs_equation", "three_insights"],
+      "methodology_fix": "Guilt Formula and Mental Contamination. The nurse is constructing a counterfactual reality where a different decision would have changed the outcome — and condemning themselves for not having made it.",
+      "rational_redirection": "The outcome happened as it did because the conditions were met. You made the best decision available with the information you had. The outcome does not equal your worth."
+    },
+    {
+      "scenario_id": "NUR075",
+      "role": "nurse_er",
+      "activating_event": "A patient expresses suicidal ideation and the nurse feels uncertain and pressured about the right course of action.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "anxiety_formula", "icsi", "egocentric_thinking"],
+      "methodology_fix": "Anxiety Formula and Egocentric Thinking. The nurse is demanding certainty about the right action — a should belief about their own performance under pressure.",
+      "rational_redirection": "There is no law that says I must have the perfect response. I follow protocol, I stay present, and I trust my training. I would prefer to feel certain, but I accept my human uncertainty."
+    },
+    {
+      "scenario_id": "NUR076",
+      "role": "nurse_er",
+      "activating_event": "Feeling emotionally numb after consecutive shifts with high patient mortality.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "three_insights", "namelessness", "helplessness"],
+      "methodology_fix": "Depression Formula and Three Insights. The nurse is interpreting emotional numbness as a permanent or defining state rather than a temporary response to cumulative stress.",
+      "rational_redirection": "Numbness is a temporary state of the mind — not a verdict about who you are. Observe it without rating yourself. This too will pass as you restore your resources."
+    },
+    {
+      "scenario_id": "NUR077",
+      "role": "nurse_er",
+      "activating_event": "Anticipating criticism or second-guessing from charge nurses or hospital administration.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula", "seven_irrational_beliefs", "need_for_approval"],
+      "methodology_fix": "Seven Irrational Beliefs — Need for Approval. The nurse is treating supervisory approval as a necessity for their sense of worth and safety.",
+      "rational_redirection": "Approval is a want, not a need. I would prefer my supervisors value my work, but I can be okay even if they do not. My worth does not live in their opinion."
+    },
+    {
+      "scenario_id": "NUR078",
+      "role": "nurse_er",
+      "activating_event": "Difficulty mentally disconnecting from a distressing patient case while at home with family.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "the_narrator", "cognitive_stoppage", "the_observer"],
+      "methodology_fix": "Mental Contamination. The Narrator is replaying the case after the shift has ended — contaminating the home environment with the job.",
+      "rational_redirection": "Stop. This is the Narrator. The shift is over. Use Cognitive Stoppage and return to the Observer. Your family is in front of you. Be here."
+    },
+    {
+      "scenario_id": "NUR079",
+      "role": "nurse_er",
+      "activating_event": "Feeling that systemic hospital failures make it impossible to deliver the standard of care the nurse believes is right.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "egocentric_thinking", "should_belief", "low_frustration_tolerance"],
+      "methodology_fix": "Anger Formula (A = ET + S). The nurse is demanding that hospital systems operate differently than they do — a should belief directed at institutional conditions.",
+      "rational_redirection": "These systems are exactly as they are because the conditions for them exist. I accept the hassle without the rage. I advocate for change and deliver the best care possible within the reality in front of me."
+    },
+    {
+      "scenario_id": "NUR080",
+      "role": "nurse_er",
+      "activating_event": "Reflecting on years of accumulated trauma exposure and questioning whether continuing in the profession is sustainable.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "mental_contamination", "three_insights", "hopelessness", "centering_breath"],
+      "methodology_fix": "Depression Formula and Mental Contamination. The nurse is Awfulizing the accumulated past and projecting hopelessness onto the future — rating an entire career as unsustainable.",
+      "rational_redirection": "Your career has been exactly as it has been. You have stood every shift so far. Use the Centering Breath — inhale, exhale, let go of the weight of the accumulated story. Return to this moment. This is where your answer lives."
+    }
+  ],
+  "implementation_notes": {
+    "previous_file": "FIRST_RESPONDER_SCENARIO_LIBRARY_41_60 — EMS/Paramedic scenarios",
+    "next_file": "FIRST_RESPONDER_SCENARIO_LIBRARY_81_100 — Universal Responder scenarios",
+    "source_tool": "NotebookLM — cross-referenced against My4Blocks methodology backbone PDF",
+    "note_on_ids": "NotebookLM returned these scenarios as NUR061-NUR080. These correspond to FR061-FR080 in the build sequence.",
+    "enhanced_fields": "Includes methodology_fix and rational_redirection fields consistent with FR081-FR100 format",
+    "routing_note": "Match scenario context to user input → identify stage → apply methodology fix → deliver rational redirection through nurse/healthcare personality layer",
+    "stage_routing": {
+      "pre_event": "Route to anticipatory anxiety or pre-event behavior responses",
+      "during_event": "Route to active coping — SOS method, centering breath, just this task",
+      "post_event": "Route to processing responses — mental contamination protocol, formula application, rational redirection"
+    }
+  }
+}

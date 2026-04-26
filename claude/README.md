@@ -173,7 +173,7 @@ Based on the teachings of "You Only Have Four Problems" by Dr. Vincent E. Parr. 
 ## 🙏 Credits
 
 - **Book**: "You Only Have Four Problems" by Dr. Vincent E. Parr
-- **Inspiration**: Albert Ellis's Rational Emotive Behavior Therapy (REBT)
+- **Framework**: The Four Blocks cognitive approach
 - **Practices**: Zen mindfulness and Buddhist philosophy
 
 ---

@@ -38,7 +38,7 @@ import Link from 'next/link'
  * and the Seven Irrational Beliefs reveal their true nature."
  *
  * This comprehensive page unfolds like an ancient scroll, revealing the
- * full depth of CBT/REBT wisdom through expandable accordion sections.
+ * full depth of the Four Blocks wisdom through expandable accordion sections.
  * Each concept is color-coded, carefully explained, and ready to illuminate.
  *
  * - The Spellbinding Museum Director of Cognitive Clarity 🧙‍♂️
@@ -320,8 +320,8 @@ const sevenIrrationalBeliefs: IrrationalBelief[] = [
 
 // 🎭 Disputation techniques - The wizard's toolkit
 const disputationTechniques = {
-  ellis: {
-    title: "Ellis's REBT Questions",
+  fourBlocks: {
+    title: "The Four Blocks Questions",
     subtitle: 'The Scientific Method for Beliefs',
     questions: [
       {
@@ -449,10 +449,9 @@ export default function FrameworkPage() {
                 The ABC Model
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Developed by Dr. Albert Ellis, the ABC Model is the cornerstone of Rational
-                Emotive Behavior Therapy (REBT). It reveals how our{' '}
-                <strong className="text-foreground">beliefs</strong>, not events, create our
-                emotional responses.
+                The ABC Model is the cornerstone of the Four Blocks methodology. It reveals
+                how our <strong className="text-foreground">beliefs</strong>, not events,
+                create our emotional responses.
               </p>
 
               <Accordion
@@ -759,7 +758,7 @@ export default function FrameworkPage() {
                 The Seven Irrational Beliefs
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                These are the core cognitive distortions that generate emotional suffering. Learn
+                These are the core irrational thinking patterns that generate emotional suffering. Learn
                 to recognize them, and you gain the power to dispute and dissolve them.
               </p>
 
@@ -827,9 +826,9 @@ export default function FrameworkPage() {
               </p>
 
               <Accordion type="single" collapsible className="space-y-3">
-                {/* Ellis's REBT Questions */}
+                {/* Four Blocks Questions */}
                 <AccordionItem
-                  value="ellis"
+                  value="fourBlocks"
                   className="border border-border rounded-xl px-4 bg-card/50"
                 >
                   <AccordionTrigger className="hover:no-underline">
@@ -837,22 +836,22 @@ export default function FrameworkPage() {
                       <RefreshCw className="h-5 w-5 text-muted-foreground" />
                       <div className="text-left">
                         <span className="font-medium text-foreground">
-                          {disputationTechniques.ellis.title}
+                          {disputationTechniques.fourBlocks.title}
                         </span>
                         <span className="text-muted-foreground text-sm hidden sm:inline">
                           {' '}
-                          — {disputationTechniques.ellis.subtitle}
+                          — {disputationTechniques.fourBlocks.subtitle}
                         </span>
                       </div>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
                     <p className="mb-4">
-                      Dr. Albert Ellis developed these questions to systematically challenge
+                      Dr. Parr developed these questions to systematically challenge
                       irrational beliefs. Apply them rigorously to any disturbing thought.
                     </p>
                     <div className="space-y-3">
-                      {disputationTechniques.ellis.questions.map((q, i) => (
+                      {disputationTechniques.fourBlocks.questions.map((q, i) => (
                         <div key={i} className="bg-muted/30 rounded-lg p-4">
                           <p className="font-medium text-foreground mb-1">
                             {i + 1}. {q.question}
@@ -941,7 +940,7 @@ export default function FrameworkPage() {
                   <AccordionContent className="text-muted-foreground">
                     <p className="mb-4">
                       The ancient Stoics (Marcus Aurelius, Seneca, Epictetus) developed
-                      powerful mental frameworks that align beautifully with modern CBT.
+                      powerful mental frameworks that align beautifully with the Four Blocks approach.
                     </p>
                     <div className="space-y-4">
                       {disputationTechniques.stoic.principles.map((p, i) => (

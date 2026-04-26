@@ -1,0 +1,1430 @@
+{
+  "library_id": "EMOTION_DETECTION_TRIGGER_LIBRARY",
+  "version": "1.0",
+  "description": "200 natural language trigger phrases mapped to the Four Blocks emotional formulas. Used by the system to classify incoming messages into the correct emotional block before routing to behavior and course layers.",
+  "routing_note": "Scan incoming message → match trigger phrase or semantic equivalent → classify emotion → route to correct formula layer.",
+  "formulas": {
+    "anger": "A = ET + S — Egocentric Thinking + Should Belief",
+    "anxiety": "AX = WI + AW + ICSI — What If + Awfulizing + I Can't Stand It",
+    "depression": "D = H1 + H2 + N — Hopelessness + Helplessness + Namelessness",
+    "guilt": "G = W1 + W2 — Wrongness + Worthlessness"
+  },
+  "triggers": [
+    {
+      "id": 1,
+      "trigger_phrase": "this shouldn't be happening",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Reflects a should belief (S) — the mind is demanding reality be different than it is, producing anger when that demand is unmet."
+    },
+    {
+      "id": 2,
+      "trigger_phrase": "this is bullshit",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Strong egocentric thinking (ET) — the situation is being judged as wrong or unfair from a self-referential lens, fueling anger."
+    },
+    {
+      "id": 3,
+      "trigger_phrase": "this isn't fair",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "A should belief (S) about fairness — the mind holds an expectation that things should be fair, and anger arises when that expectation is violated."
+    },
+    {
+      "id": 4,
+      "trigger_phrase": "they shouldn't have done that",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "A should belief (S) directed at another person — the mind demands others behave differently, producing anger when they don't."
+    },
+    {
+      "id": 5,
+      "trigger_phrase": "why would they do that",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) — the mind cannot reconcile another's behavior with its own expectations, generating anger and confusion."
+    },
+    {
+      "id": 6,
+      "trigger_phrase": "this pisses me off",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Direct anger expression rooted in a violated expectation (S) — the situation does not match what the mind believes should be true."
+    },
+    {
+      "id": 7,
+      "trigger_phrase": "I'm furious right now",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "High-intensity anger response — egocentric thinking (ET) is amplifying a should belief (S) into a peak emotional state."
+    },
+    {
+      "id": 8,
+      "trigger_phrase": "I'm so angry",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "General anger expression indicating an active should belief (S) — the mind is holding a demand that has gone unmet."
+    },
+    {
+      "id": 9,
+      "trigger_phrase": "that really pissed me off",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Retrospective anger — egocentric thinking (ET) reviewing a past event and judging it against a should belief (S)."
+    },
+    {
+      "id": 10,
+      "trigger_phrase": "this makes no sense",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "The mind is applying egocentric thinking (ET) — demanding reality conform to its own logic, and generating anger when it doesn't."
+    },
+    {
+      "id": 11,
+      "trigger_phrase": "that's ridiculous",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) dismissing a situation as unacceptable — a should belief (S) about how things ought to be is being violated."
+    },
+    {
+      "id": 12,
+      "trigger_phrase": "this is unacceptable",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Strong should belief (S) — the mind has a firm expectation about standards of behavior or outcome and is rejecting the current reality."
+    },
+    {
+      "id": 13,
+      "trigger_phrase": "I can't believe they did that",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) — the mind expected different behavior from others and is generating anger at the violation of that expectation."
+    },
+    {
+      "id": 14,
+      "trigger_phrase": "they should know better",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "A should belief (S) projected onto others — the mind demands a standard of awareness or behavior that was not met."
+    },
+    {
+      "id": 15,
+      "trigger_phrase": "that's completely wrong",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) applying a moral or logical judgment — paired with a should belief (S) that the situation be different."
+    },
+    {
+      "id": 16,
+      "trigger_phrase": "this is driving me crazy",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Escalating anger rooted in a persistent should belief (S) — the mind keeps demanding change and the situation keeps refusing to comply."
+    },
+    {
+      "id": 17,
+      "trigger_phrase": "that's not how this should work",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Direct should belief (S) — the mind has a specific expectation about process or outcome that is not being honored."
+    },
+    {
+      "id": 18,
+      "trigger_phrase": "this is so frustrating",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Frustration-based anger — egocentric thinking (ET) is generating resistance to reality not matching a held expectation (S)."
+    },
+    {
+      "id": 19,
+      "trigger_phrase": "they had no right to do that",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Strong should belief (S) about another's behavior — the mind is applying a rule it believes should govern others' actions."
+    },
+    {
+      "id": 20,
+      "trigger_phrase": "this is infuriating",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "High-intensity anger — egocentric thinking (ET) amplifying a should belief (S) into peak frustration and rage."
+    },
+    {
+      "id": 21,
+      "trigger_phrase": "why is this happening",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) rejecting current reality — the mind demands an explanation because it believes this should not be occurring."
+    },
+    {
+      "id": 22,
+      "trigger_phrase": "I can't stand this",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Should belief (S) combined with intolerance — the mind is demanding the situation change and refusing to accept it as it is."
+    },
+    {
+      "id": 23,
+      "trigger_phrase": "this is making me mad",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Active anger response — a should belief (S) is being violated in real time, generating anger as the emotional output."
+    },
+    {
+      "id": 24,
+      "trigger_phrase": "they don't care at all",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) interpreting others' behavior through a self-referential lens — paired with a should belief (S) that they should care."
+    },
+    {
+      "id": 25,
+      "trigger_phrase": "this is completely stupid",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) dismissing reality — the mind is judging the situation against an internal standard (S) it believes should be met."
+    },
+    {
+      "id": 26,
+      "trigger_phrase": "that's unbelievable",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) — the mind cannot reconcile what happened with what it expected (S), generating anger and disbelief."
+    },
+    {
+      "id": 27,
+      "trigger_phrase": "I'm losing my patience",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Should belief (S) being worn down — the mind has demanded change repeatedly without result, escalating toward peak anger."
+    },
+    {
+      "id": 28,
+      "trigger_phrase": "I'm about to snap",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Peak anger threshold — egocentric thinking (ET) and accumulated should beliefs (S) have pushed the emotional state to a breaking point."
+    },
+    {
+      "id": 29,
+      "trigger_phrase": "this situation is ridiculous",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) rejecting the situation — a should belief (S) about how things ought to be is producing anger at the current reality."
+    },
+    {
+      "id": 30,
+      "trigger_phrase": "they keep doing the same thing",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Repeated should belief (S) violation — the mind expected behavior to change and it hasn't, intensifying anger with each repetition."
+    },
+    {
+      "id": 31,
+      "trigger_phrase": "nobody listens",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Should belief (S) that others should pay attention — egocentric thinking (ET) interprets the lack of response as a personal rejection."
+    },
+    {
+      "id": 32,
+      "trigger_phrase": "they're screwing everything up",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) judging others' performance against an internal standard (S) — anger arises when that standard isn't met."
+    },
+    {
+      "id": 33,
+      "trigger_phrase": "I'm fed up with this",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Accumulated should belief (S) violations — the mind has reached a saturation point where anger is the dominant emotional response."
+    },
+    {
+      "id": 34,
+      "trigger_phrase": "I can't deal with this anymore",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Should belief (S) exhaustion — the mind has demanded change without result and is now expressing peak frustration and resistance."
+    },
+    {
+      "id": 35,
+      "trigger_phrase": "I'm getting really irritated",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Early to mid-stage anger — a should belief (S) is being actively violated and egocentric thinking (ET) is amplifying the irritation."
+    },
+    {
+      "id": 36,
+      "trigger_phrase": "I'm sick of this",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Saturation-level anger — repeated should belief (S) violations have produced a strong rejection of the current situation."
+    },
+    {
+      "id": 37,
+      "trigger_phrase": "this is outrageous",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "High-intensity egocentric thinking (ET) — the mind is judging the situation as a severe violation of a should belief (S)."
+    },
+    {
+      "id": 38,
+      "trigger_phrase": "I've had enough",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Peak should belief (S) exhaustion — the mind has reached a limit and is expressing that no further violations will be tolerated."
+    },
+    {
+      "id": 39,
+      "trigger_phrase": "this is completely unfair",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Strong should belief (S) about fairness — egocentric thinking (ET) is applying a personal standard of justice to the situation."
+    },
+    {
+      "id": 40,
+      "trigger_phrase": "they never do what they should",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Persistent should belief (S) directed at others — the mind holds a rule about how others should behave and anger builds with each violation."
+    },
+    {
+      "id": 41,
+      "trigger_phrase": "I'm tired of this nonsense",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Accumulated should belief (S) fatigue — the mind has repeatedly demanded change and anger is the result of continued unmet expectations."
+    },
+    {
+      "id": 42,
+      "trigger_phrase": "someone needs to fix this",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Should belief (S) demanding external action — egocentric thinking (ET) expects others to resolve a situation the mind has judged as unacceptable."
+    },
+    {
+      "id": 43,
+      "trigger_phrase": "this situation is insane",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) rejecting reality as irrational — a should belief (S) about logic or order is being severely violated."
+    },
+    {
+      "id": 44,
+      "trigger_phrase": "I'm ready to explode",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Peak anger state — egocentric thinking (ET) and should beliefs (S) have accumulated to a critical emotional threshold."
+    },
+    {
+      "id": 45,
+      "trigger_phrase": "I'm beyond frustrated",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Extreme frustration-based anger — should beliefs (S) have been violated repeatedly and egocentric thinking (ET) is sustaining the emotional intensity."
+    },
+    {
+      "id": 46,
+      "trigger_phrase": "I'm angry about what happened",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Retrospective anger — egocentric thinking (ET) reviewing a past event through a should belief (S) about how it should have gone differently."
+    },
+    {
+      "id": 47,
+      "trigger_phrase": "they messed everything up",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Egocentric thinking (ET) judging others' actions — paired with a should belief (S) that they should have performed or behaved differently."
+    },
+    {
+      "id": 48,
+      "trigger_phrase": "this is totally wrong",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Strong should belief (S) — the mind is applying an internal standard of right and wrong and judging the situation as a clear violation."
+    },
+    {
+      "id": 49,
+      "trigger_phrase": "why can't people do their job",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Should belief (S) about performance standards — egocentric thinking (ET) expects others to meet a specific standard and anger arises when they don't."
+    },
+    {
+      "id": 50,
+      "trigger_phrase": "I'm really pissed",
+      "emotion": "anger",
+      "formula": "A = ET + S",
+      "explanation": "Direct high-intensity anger expression — egocentric thinking (ET) and a violated should belief (S) are producing a strong emotional response."
+    },
+    {
+      "id": 51,
+      "trigger_phrase": "what if something goes wrong",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Classic what if thinking (WI) — the mind is projecting into the future, imagining a negative outcome and beginning to awfulize (AW) around it."
+    },
+    {
+      "id": 52,
+      "trigger_phrase": "I'm worried about tomorrow",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Future-oriented what if thinking (WI) — the mind is anticipating a negative outcome and generating anxiety about an event that has not yet occurred."
+    },
+    {
+      "id": 53,
+      "trigger_phrase": "I can't stop thinking about it",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Rumination pattern — what if thinking (WI) has locked the mind in a loop, with awfulizing (AW) sustaining the anxiety cycle."
+    },
+    {
+      "id": 54,
+      "trigger_phrase": "I feel nervous",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Early anxiety signal — what if thinking (WI) is active and the mind is beginning to anticipate a negative outcome it believes it cannot handle (ICSI)."
+    },
+    {
+      "id": 55,
+      "trigger_phrase": "something bad might happen",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Awfulizing (AW) — the mind is predicting a negative future outcome and treating the possibility as a near-certainty."
+    },
+    {
+      "id": 56,
+      "trigger_phrase": "I'm scared about what's coming",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Future-oriented fear — what if thinking (WI) combined with awfulizing (AW) about an anticipated event the mind believes it cannot cope with (ICSI)."
+    },
+    {
+      "id": 57,
+      "trigger_phrase": "I can't relax right now",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anxiety sustained by what if thinking (WI) — the mind cannot disengage from anticipated negative outcomes, preventing relaxation."
+    },
+    {
+      "id": 58,
+      "trigger_phrase": "I keep thinking about the worst case",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Direct awfulizing (AW) — the mind is fixating on the worst possible outcome and treating it as the most likely reality."
+    },
+    {
+      "id": 59,
+      "trigger_phrase": "what if I mess this up",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "What if thinking (WI) focused on personal failure — paired with awfulizing (AW) and the belief that failure would be intolerable (ICSI)."
+    },
+    {
+      "id": 60,
+      "trigger_phrase": "I'm stressing about this",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Active anxiety response — what if thinking (WI) is generating stress around an anticipated outcome the mind is treating as threatening."
+    },
+    {
+      "id": 61,
+      "trigger_phrase": "my mind won't stop racing",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anxiety loop — what if thinking (WI) and awfulizing (AW) are cycling rapidly, preventing the mind from settling."
+    },
+    {
+      "id": 62,
+      "trigger_phrase": "I feel on edge",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Sustained anxiety state — the mind is in a state of anticipatory tension driven by what if thinking (WI) about potential negative outcomes."
+    },
+    {
+      "id": 63,
+      "trigger_phrase": "I can't calm down",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anxiety sustaining itself through ICSI — the mind believes it cannot tolerate the current emotional state or anticipated outcome."
+    },
+    {
+      "id": 64,
+      "trigger_phrase": "I'm anxious about this",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Direct anxiety identification — what if thinking (WI) is active around a specific situation the mind is treating as potentially catastrophic (AW)."
+    },
+    {
+      "id": 65,
+      "trigger_phrase": "what if this falls apart",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "What if thinking (WI) projecting collapse — awfulizing (AW) is treating a possible negative outcome as a near-certain catastrophe."
+    },
+    {
+      "id": 66,
+      "trigger_phrase": "something feels off",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Early what if thinking (WI) — the mind is sensing an undefined threat and beginning to anticipate a negative outcome."
+    },
+    {
+      "id": 67,
+      "trigger_phrase": "I keep replaying what might happen",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Future-oriented rumination — what if thinking (WI) combined with awfulizing (AW) is creating a mental rehearsal loop of negative scenarios."
+    },
+    {
+      "id": 68,
+      "trigger_phrase": "I'm tense right now",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Physical anxiety expression — what if thinking (WI) is producing a somatic tension response as the mind anticipates a negative outcome."
+    },
+    {
+      "id": 69,
+      "trigger_phrase": "I'm afraid of what could happen",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Future-oriented fear rooted in what if thinking (WI) — awfulizing (AW) is treating a possible outcome as something intolerable (ICSI)."
+    },
+    {
+      "id": 70,
+      "trigger_phrase": "I can't stop worrying",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Sustained anxiety loop — what if thinking (WI) and awfulizing (AW) are cycling without resolution, sustained by ICSI."
+    },
+    {
+      "id": 71,
+      "trigger_phrase": "I feel like something bad is coming",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anticipatory awfulizing (AW) — the mind is treating an undefined future threat as imminent and certain."
+    },
+    {
+      "id": 72,
+      "trigger_phrase": "my stomach is in knots",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Somatic anxiety expression — what if thinking (WI) and awfulizing (AW) are producing a physical manifestation of anticipatory anxiety."
+    },
+    {
+      "id": 73,
+      "trigger_phrase": "I feel overwhelmed",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "ICSI response — the mind believes it cannot handle the current or anticipated demands, generating overwhelm as the emotional output."
+    },
+    {
+      "id": 74,
+      "trigger_phrase": "I'm really nervous",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Active anxiety — what if thinking (WI) is driving nervousness about an anticipated outcome the mind is treating as threatening."
+    },
+    {
+      "id": 75,
+      "trigger_phrase": "I feel uneasy",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Low-level anxiety — early what if thinking (WI) producing unease about an undefined or anticipated negative outcome."
+    },
+    {
+      "id": 76,
+      "trigger_phrase": "I'm afraid I'll screw this up",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "What if thinking (WI) focused on personal failure — ICSI belief that failure would be intolerable, with awfulizing (AW) amplifying the fear."
+    },
+    {
+      "id": 77,
+      "trigger_phrase": "I'm afraid of making a mistake",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Performance anxiety — what if thinking (WI) about error, combined with awfulizing (AW) and ICSI belief that a mistake cannot be tolerated."
+    },
+    {
+      "id": 78,
+      "trigger_phrase": "I feel pressure building",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Escalating anxiety — what if thinking (WI) and awfulizing (AW) are intensifying as an anticipated event approaches."
+    },
+    {
+      "id": 79,
+      "trigger_phrase": "I feel like I'm losing control",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "ICSI response — the mind believes it cannot manage the current situation, generating anxiety around loss of control."
+    },
+    {
+      "id": 80,
+      "trigger_phrase": "I'm worried about the outcome",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Future-oriented what if thinking (WI) — the mind is anticipating a negative outcome and treating it as something it cannot handle (ICSI)."
+    },
+    {
+      "id": 81,
+      "trigger_phrase": "I'm overthinking everything",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "What if thinking (WI) in overdrive — the mind is generating multiple negative scenarios and awfulizing (AW) across all of them simultaneously."
+    },
+    {
+      "id": 82,
+      "trigger_phrase": "I can't shut my mind off",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anxiety loop sustained by ICSI — the mind cannot disengage from what if thinking (WI) and believes it cannot tolerate the uncertainty."
+    },
+    {
+      "id": 83,
+      "trigger_phrase": "I keep imagining bad scenarios",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Awfulizing (AW) in active cycle — the mind is generating and dwelling on worst-case what if (WI) scenarios."
+    },
+    {
+      "id": 84,
+      "trigger_phrase": "my thoughts won't stop",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Sustained anxiety loop — what if thinking (WI) and awfulizing (AW) are cycling without resolution, sustained by the ICSI belief."
+    },
+    {
+      "id": 85,
+      "trigger_phrase": "I feel tense all over",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Full-body somatic anxiety — what if thinking (WI) and awfulizing (AW) have produced a systemic physical tension response."
+    },
+    {
+      "id": 86,
+      "trigger_phrase": "I'm afraid things will go wrong",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "What if thinking (WI) projecting negative outcomes — awfulizing (AW) is treating those outcomes as catastrophic and intolerable (ICSI)."
+    },
+    {
+      "id": 87,
+      "trigger_phrase": "I feel jittery",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Physical anxiety manifestation — what if thinking (WI) producing somatic agitation as the mind anticipates a threatening outcome."
+    },
+    {
+      "id": 88,
+      "trigger_phrase": "I'm expecting something bad",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Awfulizing (AW) as anticipation — the mind has moved from what if (WI) to treating a negative outcome as essentially certain."
+    },
+    {
+      "id": 89,
+      "trigger_phrase": "I feel restless",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anxiety-driven restlessness — what if thinking (WI) is producing an inability to settle as the mind scans for potential threats."
+    },
+    {
+      "id": 90,
+      "trigger_phrase": "my mind keeps spinning",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anxiety loop — what if thinking (WI) and awfulizing (AW) cycling rapidly, sustained by ICSI belief that the uncertainty is intolerable."
+    },
+    {
+      "id": 91,
+      "trigger_phrase": "I can't focus because of worry",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anxiety consuming cognitive resources — what if thinking (WI) is dominant enough to prevent present-moment focus."
+    },
+    {
+      "id": 92,
+      "trigger_phrase": "I feel panicked",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Peak anxiety — awfulizing (AW) and ICSI have combined into a full panic response, with what if thinking (WI) driving the trigger."
+    },
+    {
+      "id": 93,
+      "trigger_phrase": "I'm afraid of what's next",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Future-oriented what if thinking (WI) — the mind is anticipating an undefined threat ahead and awfulizing (AW) around its potential severity."
+    },
+    {
+      "id": 94,
+      "trigger_phrase": "I feel uneasy about this situation",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Situational anxiety — what if thinking (WI) is producing unease about a specific current context the mind is treating as potentially threatening."
+    },
+    {
+      "id": 95,
+      "trigger_phrase": "something doesn't feel right",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Early threat detection anxiety — what if thinking (WI) is active around an undefined signal, beginning the awfulizing (AW) cycle."
+    },
+    {
+      "id": 96,
+      "trigger_phrase": "I'm nervous about what will happen",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anticipatory anxiety — what if thinking (WI) about a future event combined with awfulizing (AW) and ICSI about the potential outcome."
+    },
+    {
+      "id": 97,
+      "trigger_phrase": "I feel like I'm bracing for something",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Anticipatory tension — the mind is in a state of readiness for a negative outcome it has generated through what if thinking (WI) and awfulizing (AW)."
+    },
+    {
+      "id": 98,
+      "trigger_phrase": "I'm anxious about the future",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Broad future-oriented anxiety — what if thinking (WI) applied to an open-ended timeline, with awfulizing (AW) treating uncertainty as threatening."
+    },
+    {
+      "id": 99,
+      "trigger_phrase": "I'm worried I'll fail",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Performance-based what if thinking (WI) — ICSI belief that failure is intolerable, with awfulizing (AW) amplifying the anticipated consequences."
+    },
+    {
+      "id": 100,
+      "trigger_phrase": "I feel like everything could go wrong",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "explanation": "Generalized awfulizing (AW) — what if thinking (WI) has expanded to encompass all possible outcomes, with ICSI sustaining the anxiety cycle."
+    },
+    {
+      "id": 101,
+      "trigger_phrase": "what's the point",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Hopelessness (H1) and namelessness (N) combined — the mind sees no value or purpose in effort, reflecting a core depression belief."
+    },
+    {
+      "id": 102,
+      "trigger_phrase": "nothing will change",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Pure hopelessness (H1) — the mind believes the future is fixed and negative, with no possibility of improvement."
+    },
+    {
+      "id": 103,
+      "trigger_phrase": "I feel hopeless",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Direct hopelessness (H1) expression — the mind has concluded that positive change is impossible."
+    },
+    {
+      "id": 104,
+      "trigger_phrase": "I'm exhausted by everything",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) and namelessness (N) — the mind believes it lacks the resources to cope with demands it perceives as endless and unresolvable."
+    },
+    {
+      "id": 105,
+      "trigger_phrase": "I can't do this anymore",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) at peak — the mind believes it has exhausted its capacity to continue and sees no path forward (H1)."
+    },
+    {
+      "id": 106,
+      "trigger_phrase": "I feel drained",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) expression — the mind perceives itself as depleted of the resources needed to engage with life effectively."
+    },
+    {
+      "id": 107,
+      "trigger_phrase": "everything feels pointless",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) and hopelessness (H1) — the mind has lost connection to purpose or meaning, a core feature of the depression block."
+    },
+    {
+      "id": 108,
+      "trigger_phrase": "nothing seems to matter",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) dominant — the mind has disconnected from value and meaning, generating emotional flatness and depression."
+    },
+    {
+      "id": 109,
+      "trigger_phrase": "I don't see a way forward",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Hopelessness (H1) — the mind cannot perceive a positive future, closing off the possibility of change or progress."
+    },
+    {
+      "id": 110,
+      "trigger_phrase": "things will never get better",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Pure hopelessness (H1) — the mind has made a permanent negative prediction about the future, a hallmark of the depression formula."
+    },
+    {
+      "id": 111,
+      "trigger_phrase": "I feel stuck",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) — the mind believes it cannot move forward or change its circumstances, producing the stuck feeling of depression."
+    },
+    {
+      "id": 112,
+      "trigger_phrase": "I feel numb",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) — the mind has disconnected from emotional experience, producing the affective flatness associated with depression."
+    },
+    {
+      "id": 113,
+      "trigger_phrase": "I don't have the energy for this",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) — the mind perceives a depletion of internal resources, making engagement feel impossible."
+    },
+    {
+      "id": 114,
+      "trigger_phrase": "I feel empty",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) — a core depression signal where the mind has lost connection to meaning, purpose, and emotional vitality."
+    },
+    {
+      "id": 115,
+      "trigger_phrase": "I feel defeated",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Hopelessness (H1) and helplessness (H2) combined — the mind believes effort is futile and that it lacks the capacity to change the outcome."
+    },
+    {
+      "id": 116,
+      "trigger_phrase": "everything feels heavy",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Somatic depression expression — helplessness (H2) and namelessness (N) producing a physical sense of weight and burden."
+    },
+    {
+      "id": 117,
+      "trigger_phrase": "I'm just tired of trying",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) at saturation — the mind has concluded that effort produces no change (H1), making continued trying feel pointless."
+    },
+    {
+      "id": 118,
+      "trigger_phrase": "I don't see any hope",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Direct hopelessness (H1) — the mind has closed off the possibility of positive change, a defining feature of the depression block."
+    },
+    {
+      "id": 119,
+      "trigger_phrase": "this will never improve",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Hopelessness (H1) as a permanent prediction — the mind has decided the future is fixed and negative with no room for improvement."
+    },
+    {
+      "id": 120,
+      "trigger_phrase": "I'm overwhelmed by life",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) — the mind perceives life's demands as exceeding its capacity to cope, generating depression-based overwhelm."
+    },
+    {
+      "id": 121,
+      "trigger_phrase": "I feel broken",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Deep helplessness (H2) and namelessness (N) — the mind perceives itself as fundamentally damaged and unable to function or recover."
+    },
+    {
+      "id": 122,
+      "trigger_phrase": "I'm worn out",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) — depletion of internal resources, with the mind perceiving no replenishment available (H1)."
+    },
+    {
+      "id": 123,
+      "trigger_phrase": "I don't care anymore",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) and hopelessness (H1) — the mind has disconnected from investment in outcomes, reflecting deep depression."
+    },
+    {
+      "id": 124,
+      "trigger_phrase": "everything feels dark",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Pervasive hopelessness (H1) — the mind is interpreting all experience through a negative lens with no visible path to lightness or relief."
+    },
+    {
+      "id": 125,
+      "trigger_phrase": "I feel like giving up",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Hopelessness (H1) and helplessness (H2) at peak — the mind has concluded that continued effort is futile and that nothing will change."
+    },
+    {
+      "id": 126,
+      "trigger_phrase": "I feel alone",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) — disconnection from others and from a sense of belonging, a core depression experience."
+    },
+    {
+      "id": 127,
+      "trigger_phrase": "I can't find motivation",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) and namelessness (N) — the mind has lost connection to purpose (N) and believes it cannot generate the energy to act (H2)."
+    },
+    {
+      "id": 128,
+      "trigger_phrase": "nothing excites me anymore",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) — anhedonia signal, the mind has lost access to positive emotional engagement with life."
+    },
+    {
+      "id": 129,
+      "trigger_phrase": "I feel like I'm sinking",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Progressive helplessness (H2) — the mind perceives itself as losing ground with no ability to arrest the decline (H1)."
+    },
+    {
+      "id": 130,
+      "trigger_phrase": "I don't feel like myself",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) — loss of identity connection, a significant depression signal where the sense of self has become disconnected."
+    },
+    {
+      "id": 131,
+      "trigger_phrase": "I feel like a failure",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) combined with namelessness (N) — the mind has generalized specific failures into a global identity conclusion."
+    },
+    {
+      "id": 132,
+      "trigger_phrase": "I'm tired of fighting",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) at saturation — the mind has expended its perceived resources in resistance and sees no path to change (H1)."
+    },
+    {
+      "id": 133,
+      "trigger_phrase": "I feel like I'm losing everything",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Hopelessness (H1) and helplessness (H2) — the mind is perceiving progressive loss with no ability to stop it."
+    },
+    {
+      "id": 134,
+      "trigger_phrase": "I feel lost",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) — loss of direction and purpose, with hopelessness (H1) preventing the mind from locating a path forward."
+    },
+    {
+      "id": 135,
+      "trigger_phrase": "I don't know what to do anymore",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) — the mind perceives itself as without viable options or the capacity to identify a solution."
+    },
+    {
+      "id": 136,
+      "trigger_phrase": "I feel disconnected",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) — disconnection from self, others, and meaning, a core signal of the depression block."
+    },
+    {
+      "id": 137,
+      "trigger_phrase": "I feel defeated by this",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Situational hopelessness (H1) and helplessness (H2) — the mind has concluded that a specific challenge has overcome its capacity to respond."
+    },
+    {
+      "id": 138,
+      "trigger_phrase": "everything feels overwhelming",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) — the mind perceives all demands as exceeding its capacity, generating depression-based overwhelm."
+    },
+    {
+      "id": 139,
+      "trigger_phrase": "I feel like I'm drowning",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Peak helplessness (H2) — the mind perceives itself as submerged by demands with no ability to surface or recover (H1)."
+    },
+    {
+      "id": 140,
+      "trigger_phrase": "I feel like there's no way out",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Hopelessness (H1) at its most acute — the mind has closed off all perceived exits from the current painful state."
+    },
+    {
+      "id": 141,
+      "trigger_phrase": "nothing makes me happy anymore",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) — anhedonia, the loss of access to positive emotional states, a defining feature of the depression block."
+    },
+    {
+      "id": 142,
+      "trigger_phrase": "I feel like I'm fading",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Progressive namelessness (N) — the sense of self and vitality is diminishing, with hopelessness (H1) preventing recovery."
+    },
+    {
+      "id": 143,
+      "trigger_phrase": "I feel emotionally drained",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) — emotional resources perceived as depleted, with no path to replenishment visible (H1)."
+    },
+    {
+      "id": 144,
+      "trigger_phrase": "I feel like nothing matters",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) — the mind has lost connection to value and meaning, producing emotional detachment and depression."
+    },
+    {
+      "id": 145,
+      "trigger_phrase": "everything feels pointless right now",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Namelessness (N) with situational framing — the mind is currently unable to access purpose or meaning in any area of experience."
+    },
+    {
+      "id": 146,
+      "trigger_phrase": "I feel stuck in this",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Helplessness (H2) — the mind perceives itself as unable to change its current circumstance, with hopelessness (H1) closing off future possibilities."
+    },
+    {
+      "id": 147,
+      "trigger_phrase": "I feel like there's no solution",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Hopelessness (H1) — the mind cannot identify a resolution pathway, reinforcing helplessness (H2) and deepening depression."
+    },
+    {
+      "id": 148,
+      "trigger_phrase": "I feel like things are hopeless",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Direct hopelessness (H1) — the mind has concluded the situation is without remedy, a central feature of the depression block."
+    },
+    {
+      "id": 149,
+      "trigger_phrase": "I feel completely worn down",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Deep helplessness (H2) — the mind perceives total depletion of coping resources, with no visible path to restoration (H1)."
+    },
+    {
+      "id": 150,
+      "trigger_phrase": "I feel like giving up trying",
+      "emotion": "depression",
+      "formula": "D = H1 + H2 + N",
+      "explanation": "Hopelessness (H1) and helplessness (H2) at peak — the mind has concluded that effort produces no change and that it lacks the capacity to continue."
+    },
+    {
+      "id": 151,
+      "trigger_phrase": "I should have done something different",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) — the mind has judged a past action as incorrect, combined with worthlessness (W2) as the self is condemned for the perceived error."
+    },
+    {
+      "id": 152,
+      "trigger_phrase": "I shouldn't have done that",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Direct wrongness (W1) — the mind is applying a should belief to a past action, with worthlessness (W2) attaching to the self for having done it."
+    },
+    {
+      "id": 153,
+      "trigger_phrase": "this is my fault",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) and worthlessness (W2) — the mind has assigned full responsibility for a negative outcome to the self and is condemning itself for it."
+    },
+    {
+      "id": 154,
+      "trigger_phrase": "I messed everything up",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) generalized — the mind has expanded a specific error into a global judgment, with worthlessness (W2) following the condemnation."
+    },
+    {
+      "id": 155,
+      "trigger_phrase": "I can't forgive myself",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Worthlessness (W2) sustained — the mind has judged the wrongness (W1) as unforgivable, locking the guilt cycle in place."
+    },
+    {
+      "id": 156,
+      "trigger_phrase": "I failed them",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) directed at impact on others — worthlessness (W2) follows as the mind condemns itself for not meeting a perceived obligation."
+    },
+    {
+      "id": 157,
+      "trigger_phrase": "I should have known better",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) applied retroactively — the mind is holding itself to a standard it believes it should have met, with worthlessness (W2) as the consequence."
+    },
+    {
+      "id": 158,
+      "trigger_phrase": "I made the wrong decision",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about a specific choice — worthlessness (W2) attaches as the mind condemns itself for the decision made."
+    },
+    {
+      "id": 159,
+      "trigger_phrase": "I regret what happened",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) in retrospect — the mind is reviewing a past event through a guilt lens, with worthlessness (W2) sustaining the emotional pain."
+    },
+    {
+      "id": 160,
+      "trigger_phrase": "I wish I had done something else",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) — the mind is comparing actual behavior to an imagined correct behavior, generating guilt through the gap between the two."
+    },
+    {
+      "id": 161,
+      "trigger_phrase": "I keep replaying what I did",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Guilt rumination loop — wrongness (W1) is driving repeated mental review of a past action, with worthlessness (W2) sustaining the cycle."
+    },
+    {
+      "id": 162,
+      "trigger_phrase": "I can't stop thinking about my mistake",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Guilt loop sustained by worthlessness (W2) — the mind cannot release the wrongness (W1) judgment because it has attached self-condemnation to it."
+    },
+    {
+      "id": 163,
+      "trigger_phrase": "I blame myself",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Direct self-attribution of wrongness (W1) — worthlessness (W2) follows as the self is held responsible and condemned."
+    },
+    {
+      "id": 164,
+      "trigger_phrase": "I feel responsible",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) through ownership — the mind has assigned itself responsibility for a negative outcome, with worthlessness (W2) beginning to attach."
+    },
+    {
+      "id": 165,
+      "trigger_phrase": "I shouldn't have said that",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about a specific action — the mind is judging words spoken as incorrect and attaching worthlessness (W2) to having said them."
+    },
+    {
+      "id": 166,
+      "trigger_phrase": "I shouldn't have let that happen",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about inaction — the mind is holding itself responsible for failing to prevent an outcome, with worthlessness (W2) as the self-judgment."
+    },
+    {
+      "id": 167,
+      "trigger_phrase": "I should have acted sooner",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about timing — the mind is judging its response as too slow, with worthlessness (W2) attaching to the perceived failure to act."
+    },
+    {
+      "id": 168,
+      "trigger_phrase": "I feel terrible about it",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Guilt as emotional pain — wrongness (W1) about a past action combined with worthlessness (W2) producing a sustained negative emotional state."
+    },
+    {
+      "id": 169,
+      "trigger_phrase": "I made a mistake",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) acknowledged — if worthlessness (W2) attaches, the acknowledgment moves from healthy remorse into guilt."
+    },
+    {
+      "id": 170,
+      "trigger_phrase": "I feel like I let everyone down",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) generalized to all relationships — worthlessness (W2) intensifies as the mind expands the scope of perceived failure."
+    },
+    {
+      "id": 171,
+      "trigger_phrase": "I could have prevented it",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Counterfactual wrongness (W1) — the mind is creating an alternative reality in which it acted differently, condemning itself for not having done so (W2)."
+    },
+    {
+      "id": 172,
+      "trigger_phrase": "I feel ashamed",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Worthlessness (W2) dominant — shame is guilt that has fully internalized into identity, where wrongness (W1) has become a statement about the self."
+    },
+    {
+      "id": 173,
+      "trigger_phrase": "I wish I could take it back",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) with reversal impulse — the mind is rejecting a past action and applying worthlessness (W2) for having taken it."
+    },
+    {
+      "id": 174,
+      "trigger_phrase": "I feel like I failed",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) as global failure — worthlessness (W2) attaches as the mind condemns itself for not meeting an expected standard."
+    },
+    {
+      "id": 175,
+      "trigger_phrase": "I keep thinking about what I did wrong",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Guilt rumination — wrongness (W1) is driving repeated review of a past action, with worthlessness (W2) sustaining the emotional loop."
+    },
+    {
+      "id": 176,
+      "trigger_phrase": "I feel like it's all on me",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Total wrongness (W1) ownership — the mind has assigned full responsibility to itself, with worthlessness (W2) following the complete self-attribution."
+    },
+    {
+      "id": 177,
+      "trigger_phrase": "I'm responsible for this",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) through direct responsibility claim — worthlessness (W2) is the emotional consequence of owning the negative outcome fully."
+    },
+    {
+      "id": 178,
+      "trigger_phrase": "I wish I handled it differently",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about approach — the mind is comparing actual behavior to an imagined correct behavior, generating guilt through the perceived gap."
+    },
+    {
+      "id": 179,
+      "trigger_phrase": "I should have done more",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about effort — the mind is judging its contribution as insufficient, with worthlessness (W2) attaching to the perceived inadequacy."
+    },
+    {
+      "id": 180,
+      "trigger_phrase": "I keep blaming myself",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Sustained guilt loop — wrongness (W1) is being reinforced repeatedly, with worthlessness (W2) deepening with each cycle of self-blame."
+    },
+    {
+      "id": 181,
+      "trigger_phrase": "I feel bad about what happened",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) producing emotional pain — if worthlessness (W2) is present, this crosses from remorse into guilt."
+    },
+    {
+      "id": 182,
+      "trigger_phrase": "I feel like I disappointed everyone",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) directed at relational impact — worthlessness (W2) intensifies as the scope of perceived disappointment expands."
+    },
+    {
+      "id": 183,
+      "trigger_phrase": "I should have been better",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) as global self-standard — the mind is holding itself to an ideal it did not meet, with worthlessness (W2) as the consequence of falling short."
+    },
+    {
+      "id": 184,
+      "trigger_phrase": "I wish I could redo that moment",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) driving reversal impulse — the mind is rejecting a past moment and applying worthlessness (W2) for not having acted differently."
+    },
+    {
+      "id": 185,
+      "trigger_phrase": "I can't stop thinking about my decision",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Decision-based guilt rumination — wrongness (W1) about a specific choice is cycling with worthlessness (W2) sustaining the loop."
+    },
+    {
+      "id": 186,
+      "trigger_phrase": "I feel like I made everything worse",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about impact — the mind is judging its actions as having caused harm, with worthlessness (W2) as the self-condemnation for that impact."
+    },
+    {
+      "id": 187,
+      "trigger_phrase": "I regret my choice",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about a specific decision — worthlessness (W2) attaches as the mind condemns itself for having made that choice."
+    },
+    {
+      "id": 188,
+      "trigger_phrase": "I feel like I let someone down",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) directed at a specific relationship — worthlessness (W2) follows as the mind holds itself responsible for the perceived failure."
+    },
+    {
+      "id": 189,
+      "trigger_phrase": "I wish I had reacted differently",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about a reactive response — the mind is judging its reaction as incorrect and applying worthlessness (W2) for having reacted that way."
+    },
+    {
+      "id": 190,
+      "trigger_phrase": "I feel like I caused this",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) through causal attribution — the mind has assigned itself as the source of a negative outcome, with worthlessness (W2) following that assignment."
+    },
+    {
+      "id": 191,
+      "trigger_phrase": "I'm beating myself up over it",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Sustained worthlessness (W2) — the mind is actively and repeatedly applying self-condemnation for a perceived wrongness (W1)."
+    },
+    {
+      "id": 192,
+      "trigger_phrase": "I feel like I failed the situation",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about situational response — the mind is judging its handling of a specific event as inadequate, with worthlessness (W2) as the self-judgment."
+    },
+    {
+      "id": 193,
+      "trigger_phrase": "I should have handled it better",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about performance — the mind is holding itself to a standard it did not meet, with worthlessness (W2) attaching to the perceived failure."
+    },
+    {
+      "id": 194,
+      "trigger_phrase": "I feel guilty about what happened",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Direct guilt identification — wrongness (W1) about a past event combined with worthlessness (W2) producing sustained guilt as the emotional state."
+    },
+    {
+      "id": 195,
+      "trigger_phrase": "I can't shake the feeling I messed up",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Persistent guilt — wrongness (W1) has become entrenched, with worthlessness (W2) preventing release of the self-condemnation."
+    },
+    {
+      "id": 196,
+      "trigger_phrase": "I keep questioning my actions",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) driving review loop — the mind is repeatedly examining past behavior through a guilt lens, with worthlessness (W2) sustaining the questioning."
+    },
+    {
+      "id": 197,
+      "trigger_phrase": "I feel like I didn't do enough",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) about effort or contribution — the mind is judging its actions as insufficient, with worthlessness (W2) attaching to the perceived shortfall."
+    },
+    {
+      "id": 198,
+      "trigger_phrase": "I feel responsible for the outcome",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Wrongness (W1) through outcome ownership — the mind has assigned itself full responsibility for a negative result, with worthlessness (W2) following."
+    },
+    {
+      "id": 199,
+      "trigger_phrase": "I can't stop blaming myself",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Sustained guilt loop — wrongness (W1) is being reinforced continuously, with worthlessness (W2) deepening with each cycle of self-blame."
+    },
+    {
+      "id": 200,
+      "trigger_phrase": "I feel like it's my fault",
+      "emotion": "guilt",
+      "formula": "G = W1 + W2",
+      "explanation": "Direct fault attribution — wrongness (W1) combined with worthlessness (W2) as the mind assigns itself full responsibility for a negative outcome."
+    }
+  ],
+  "implementation_notes": {
+    "total_triggers": 200,
+    "anger_range": "1-50",
+    "anxiety_range": "51-100",
+    "depression_range": "101-150",
+    "guilt_range": "151-200",
+    "routing_sequence": "Scan message → match trigger or semantic equivalent → classify emotion → route to formula layer → apply behavior layer → apply personality layer → deliver response",
+    "semantic_matching_note": "Triggers are representative phrases. System should match semantic equivalents, not exact strings only.",
+    "example_routing": {
+      "user_input": "What if I screw this up tomorrow?",
+      "matched_trigger": "what if I mess this up",
+      "emotion": "anxiety",
+      "formula": "AX = WI + AW + ICSI",
+      "next_layer": "anxiety behavior response"
+    }
+  }
+}

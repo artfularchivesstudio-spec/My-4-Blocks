@@ -105,6 +105,7 @@ export {
   getABTest,
   clearABData,
   type ABTestEntry,
+  type ABStats,
 } from "./abTesting";
 
 // 🎭 Dual Response Generation - The cosmic fork

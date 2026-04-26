@@ -155,7 +155,7 @@ describe('Keyword Search', () => {
 
   it('should return undefined for neutral queries', () => {
     expect(detectBlockFromQuery('Tell me about the ABC model')).toBeUndefined();
-    expect(detectBlockFromQuery('What is REBT?')).toBeUndefined();
+    expect(detectBlockFromQuery('What is the Four Blocks framework?')).toBeUndefined();
   });
 
   it('should find relevant chunks by keywords', () => {

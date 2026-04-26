@@ -1,0 +1,343 @@
+{
+  "library_id": "FIRST_RESPONDER_SCENARIO_LIBRARY_1_40",
+  "version": "1.0",
+  "description": "First Responder Scenario Library — scenarios 1 through 40. Covers firefighter (FF001–FF020) and police (PO021–PO040) activating events. Each scenario includes role, activating event, likely emotions, stage, and Four Blocks methodology references for RAG routing.",
+  "total_scenarios": 40,
+  "roles_covered": ["firefighter", "police"],
+  "stages": {
+    "pre_event": "Anticipatory emotional state before an event occurs",
+    "during_event": "Emotional state active while the event is unfolding",
+    "post_event": "Emotional state following the conclusion of an event"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "FF001",
+      "role": "firefighter",
+      "activating_event": "Responded to a structure fire where a victim could not be saved. The firefighter keeps replaying the scene afterward.",
+      "likely_emotions": ["guilt", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "guilt_formula", "abc_model"]
+    },
+    {
+      "scenario_id": "FF002",
+      "role": "firefighter",
+      "activating_event": "Arrives at a call involving an injured child. Emotional intensity rises immediately.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "anxiety_formula"]
+    },
+    {
+      "scenario_id": "FF003",
+      "role": "firefighter",
+      "activating_event": "Waiting for a call late at night, anticipating something serious may happen.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["mental_contamination", "anxiety_formula"]
+    },
+    {
+      "scenario_id": "FF004",
+      "role": "firefighter",
+      "activating_event": "A teammate makes a mistake during a response causing frustration within the crew.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula", "seven_irrational_beliefs"]
+    },
+    {
+      "scenario_id": "FF005",
+      "role": "firefighter",
+      "activating_event": "After a long shift with multiple difficult calls, the firefighter feels emotionally drained.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["depression_formula", "three_insights"]
+    },
+    {
+      "scenario_id": "FF006",
+      "role": "firefighter",
+      "activating_event": "Equipment failure during a response creates tension and frustration.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula"]
+    },
+    {
+      "scenario_id": "FF007",
+      "role": "firefighter",
+      "activating_event": "Thinking about whether a different decision at a scene could have changed the outcome.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "mental_contamination"]
+    },
+    {
+      "scenario_id": "FF008",
+      "role": "firefighter",
+      "activating_event": "Responding to a multi-vehicle accident with chaotic conditions.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method"]
+    },
+    {
+      "scenario_id": "FF009",
+      "role": "firefighter",
+      "activating_event": "Conflict with a superior officer after a response.",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula"]
+    },
+    {
+      "scenario_id": "FF010",
+      "role": "firefighter",
+      "activating_event": "Anticipating a difficult shift after hearing about several major incidents earlier in the day.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula"]
+    },
+    {
+      "scenario_id": "FF011",
+      "role": "firefighter",
+      "activating_event": "Feeling responsible for the outcome of a rescue attempt that didn't succeed.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula"]
+    },
+    {
+      "scenario_id": "FF012",
+      "role": "firefighter",
+      "activating_event": "A close call where the firefighter narrowly avoids injury.",
+      "likely_emotions": ["anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination"]
+    },
+    {
+      "scenario_id": "FF013",
+      "role": "firefighter",
+      "activating_event": "Frustration during a training exercise when others are not taking it seriously.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula"]
+    },
+    {
+      "scenario_id": "FF014",
+      "role": "firefighter",
+      "activating_event": "Replaying the sounds and images from a particularly intense fire scene.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination"]
+    },
+    {
+      "scenario_id": "FF015",
+      "role": "firefighter",
+      "activating_event": "Being criticized after a call despite doing everything possible.",
+      "likely_emotions": ["anger", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "guilt_formula"]
+    },
+    {
+      "scenario_id": "FF016",
+      "role": "firefighter",
+      "activating_event": "Feeling overwhelmed by the volume of emergency calls during a shift.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method"]
+    },
+    {
+      "scenario_id": "FF017",
+      "role": "firefighter",
+      "activating_event": "Seeing the emotional impact of a tragedy on family members at the scene.",
+      "likely_emotions": ["depression"],
+      "stage": "during_event",
+      "four_blocks_reference": ["mental_contamination"]
+    },
+    {
+      "scenario_id": "FF018",
+      "role": "firefighter",
+      "activating_event": "Feeling pressure to perform perfectly in front of senior crew members.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["seven_irrational_beliefs"]
+    },
+    {
+      "scenario_id": "FF019",
+      "role": "firefighter",
+      "activating_event": "Reflecting on a difficult call while trying to sleep after a shift.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination"]
+    },
+    {
+      "scenario_id": "FF020",
+      "role": "firefighter",
+      "activating_event": "Frustration when a call turns out to be a false alarm after a high-intensity response.",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula"]
+    },
+    {
+      "scenario_id": "PO021",
+      "role": "police",
+      "activating_event": "Suspect becomes aggressive during a traffic stop.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula"]
+    },
+    {
+      "scenario_id": "PO022",
+      "role": "police",
+      "activating_event": "Responding to a domestic dispute where emotions are high.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method"]
+    },
+    {
+      "scenario_id": "PO023",
+      "role": "police",
+      "activating_event": "After an arrest, the officer questions whether they handled the situation correctly.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula"]
+    },
+    {
+      "scenario_id": "PO024",
+      "role": "police",
+      "activating_event": "Anticipating a dangerous shift in a high-crime area.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anxiety_formula"]
+    },
+    {
+      "scenario_id": "PO025",
+      "role": "police",
+      "activating_event": "Frustration with a suspect who repeatedly refuses instructions.",
+      "likely_emotions": ["anger"],
+      "stage": "during_event",
+      "four_blocks_reference": ["anger_formula"]
+    },
+    {
+      "scenario_id": "PO026",
+      "role": "police",
+      "activating_event": "Reviewing bodycam footage after a tense encounter.",
+      "likely_emotions": ["anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination"]
+    },
+    {
+      "scenario_id": "PO027",
+      "role": "police",
+      "activating_event": "Internal conflict between officers over how a call was handled.",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula"]
+    },
+    {
+      "scenario_id": "PO028",
+      "role": "police",
+      "activating_event": "Witnessing trauma at a crime scene.",
+      "likely_emotions": ["depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination"]
+    },
+    {
+      "scenario_id": "PO029",
+      "role": "police",
+      "activating_event": "Waiting for backup during a risky situation.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method"]
+    },
+    {
+      "scenario_id": "PO030",
+      "role": "police",
+      "activating_event": "Replaying a shooting incident after the shift ends.",
+      "likely_emotions": ["anxiety", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination"]
+    },
+    {
+      "scenario_id": "PO031",
+      "role": "police",
+      "activating_event": "Officer receives a formal complaint from a civilian following a routine stop. Feels the complaint is unjust.",
+      "likely_emotions": ["anger"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "seven_irrational_beliefs"]
+    },
+    {
+      "scenario_id": "PO032",
+      "role": "police",
+      "activating_event": "Responding to a call involving a child in danger. Emotional intensity escalates immediately upon arrival.",
+      "likely_emotions": ["anxiety"],
+      "stage": "during_event",
+      "four_blocks_reference": ["sos_method", "anxiety_formula"]
+    },
+    {
+      "scenario_id": "PO033",
+      "role": "police",
+      "activating_event": "Officer is involved in a use-of-force incident and begins second-guessing the decision afterward.",
+      "likely_emotions": ["guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "mental_contamination"]
+    },
+    {
+      "scenario_id": "PO034",
+      "role": "police",
+      "activating_event": "Colleague is injured on duty. Officer who was present begins replaying whether they could have prevented it.",
+      "likely_emotions": ["guilt", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["guilt_formula", "mental_contamination"]
+    },
+    {
+      "scenario_id": "PO035",
+      "role": "police",
+      "activating_event": "Tension builds during roll call after a controversial department policy is announced.",
+      "likely_emotions": ["anger"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["anger_formula", "seven_irrational_beliefs"]
+    },
+    {
+      "scenario_id": "PO036",
+      "role": "police",
+      "activating_event": "Officer arrives at a suicide scene. Images persist after the shift ends.",
+      "likely_emotions": ["depression", "anxiety"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "depression_formula"]
+    },
+    {
+      "scenario_id": "PO037",
+      "role": "police",
+      "activating_event": "Suspect evades arrest after a prolonged chase. Officer feels the outcome reflects on their performance.",
+      "likely_emotions": ["anger", "guilt"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "guilt_formula"]
+    },
+    {
+      "scenario_id": "PO038",
+      "role": "police",
+      "activating_event": "Officer is passed over for a promotion they felt was deserved. Resentment builds toward leadership.",
+      "likely_emotions": ["anger", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["anger_formula", "depression_formula", "seven_irrational_beliefs"]
+    },
+    {
+      "scenario_id": "PO039",
+      "role": "police",
+      "activating_event": "Responding to a call in a neighborhood where a previous traumatic incident occurred. Anticipatory stress builds during the drive.",
+      "likely_emotions": ["anxiety"],
+      "stage": "pre_event",
+      "four_blocks_reference": ["mental_contamination", "anxiety_formula"]
+    },
+    {
+      "scenario_id": "PO040",
+      "role": "police",
+      "activating_event": "Officer completes a high-risk warrant execution without incident but feels unsettled and unable to decompress afterward.",
+      "likely_emotions": ["anxiety", "depression"],
+      "stage": "post_event",
+      "four_blocks_reference": ["mental_contamination", "three_insights"]
+    }
+  ],
+  "implementation_notes": {
+    "next_file": "FIRST_RESPONDER_SCENARIO_LIBRARY_41_60 — EMS/Paramedic scenarios",
+    "routing_note": "Match scenario context to user input → identify stage → route to appropriate formula and behavior layer → apply personality layer",
+    "stage_routing": {
+      "pre_event": "Route to anticipatory anxiety or pre-event behavior responses",
+      "during_event": "Route to active coping — SOS method, grounding, immediate regulation",
+      "post_event": "Route to processing responses — mental contamination protocol, formula application, reflection"
+    }
+  }
+}

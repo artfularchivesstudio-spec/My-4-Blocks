@@ -96,25 +96,36 @@ export function recordChoice(id: string, choice: 'A' | 'B'): boolean {
  *
  * @returns Statistics about all recorded A/B tests
  */
-export function getABStats(): {
+export interface ABStats {
   total: number;
   withChoice: number;
   aWins: number;
   bWins: number;
   aWinPercentage: number;
   bWinPercentage: number;
-} {
+  /** Alias for aWinPercentage */
+  aWinRate: number;
+  /** Alias for bWinPercentage */
+  bWinRate: number;
+}
+
+export function getABStats(): ABStats {
   const withChoice = abTestData.filter((e) => e.userChoice !== null);
   const aWins = withChoice.filter((e) => e.userChoice === 'A').length;
   const bWins = withChoice.filter((e) => e.userChoice === 'B').length;
+
+  const aWinPercentage = withChoice.length > 0 ? Math.round((aWins / withChoice.length) * 100) : 0;
+  const bWinPercentage = withChoice.length > 0 ? Math.round((bWins / withChoice.length) * 100) : 0;
 
   return {
     total: abTestData.length,
     withChoice: withChoice.length,
     aWins,
     bWins,
-    aWinPercentage: withChoice.length > 0 ? Math.round((aWins / withChoice.length) * 100) : 0,
-    bWinPercentage: withChoice.length > 0 ? Math.round((bWins / withChoice.length) * 100) : 0,
+    aWinPercentage,
+    bWinPercentage,
+    aWinRate: aWinPercentage,
+    bWinRate: bWinPercentage,
   };
 }
 
