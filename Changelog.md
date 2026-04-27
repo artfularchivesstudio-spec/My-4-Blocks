@@ -4,6 +4,88 @@
 
 ---
 
+## 📅 April 27, 2026 (The Golden Hour)
+
+### 🎁 "The Freemium Gateway: Where Anonymous Souls Become Recognized"
+
+*As dawn breaks on this marathon session, we've bridged the gap between casual curiosity and committed connection. The web app now extends a gentle hand to every wanderer: "Try three messages. Feel the wisdom. Then, if it resonates, save your journey." No hard paywalls, no forced registrations—just authentic value exchange. Meanwhile, the foundation for authenticated persistence is laid with SSR-safe Supabase Auth, cookie-based sessions, and conversion-optimized flows that mirror our mobile app's grace.*
+
+**The Vibe:** That rare moment when technical architecture and user psychology dance in perfect harmony. We're not gatekeeping; we're inviting.
+
+**What We Crafted:**
+
+- **The 3-Message Anonymous Trial** (`components/chat/chat-container.tsx`)
+    - **Gentle Counter** — Uses `useTrialCounter` hook to track user messages (not assistant responses, just user sends).
+    - **Soft Conversion Prompt** — After 3 messages, `TrialPrompt` appears with dismissible card offering:
+        - "Create Free Account" (primary CTA)
+        - "Sign In" (secondary CTA for returning users)
+        - "Continue without saving →" (respectful dismissal)
+    - **Framer Motion Magic** — Smooth entrance/exit animations with `AnimatePresence` for that premium feel.
+    - **Persistent Anonymous Access** — Main route `/` remains fully public. No middleware blocking. The prompt is a suggestion, not a wall.
+
+- **Full Supabase Auth Stack** (18 new files, 1177 lines)
+    - **SSR-Safe Clients** (`lib/supabase/client.ts`, `server.ts`, `middleware.ts`)
+        - Browser client with singleton pattern for Client Components
+        - Server client using Next.js `cookies()` API for Server Components/Actions
+        - Middleware client for route protection with cookie synchronization
+    - **Server Actions** (`app/auth/actions.ts`)
+        - `signUpAction` — Email + password with metadata (full_name), returns "Check your email" state
+        - `signInAction` — Direct login with `signInWithPassword`
+        - `signOutAction` — Clear session, revalidate paths
+        - `verifyOtpAction` — 6-digit email verification (matches mobile flow)
+        - `resetPasswordAction` — Initiate password recovery
+        - `updatePasswordAction` — Complete password reset
+    - **Auth UI Components** (`components/auth/`)
+        - `AuthProvider` — React context wrapping `onAuthStateChange` for real-time auth awareness
+        - `LoginForm` — Clean centered card with error handling, loading states
+        - `SignupForm` — Full name + email + password, instant "Check Your Email" success state
+        - `VerifyOtpForm` — 6-digit InputOTP component with `input-otp` library integration
+        - `TrialPrompt` — The star of the show: conversion-optimized prompt card
+    - **Auth Pages** (App Router)
+        - `/login` — Returning user gateway
+        - `/signup` — New user onboarding  
+        - `/verify-otp?email=` — Email confirmation (reads email from query param)
+    - **Middleware Protection** (`middleware.ts`)
+        - Protected routes: `/dashboard`, `/history`, `/settings`, `/profile` (redirect unauthenticated to /login)
+        - Auth route redirects: `/login`, `/signup` redirect authenticated users to `/`
+        - Public routes: `/`, `/about`, `/faq`, etc. remain fully accessible
+    - **Email Confirmation Handler** (`app/api/auth/confirm/route.ts`)
+        - Receives Supabase confirmation links, exchanges `token_hash` for session
+        - Redirects with `?verified=true` query param for welcome UI
+
+- **Mobile Auth Verification**
+    - Confirmed mobile app has full Supabase Auth implementation in `mobile/lib/features/auth/`
+    - Repository pattern with `AuthRepository` (signInWithEmail, signUpWithEmail, verifyOTP, signOut)
+    - BLoC pattern with `AuthBloc` managing `AuthInitial`, `AuthLoading`, `Authenticated`, `AuthNeedsVerification`, `Unauthenticated`, `AuthError` states
+    - UI in `auth_screen.dart` with email, password, and OTP verification forms
+    - **Flow parity achieved:** Web and mobile now share identical auth patterns
+
+- **Vercel Production Deployment**
+    - Build completed in 43 seconds, 558 dependencies resolved
+    - New routes prerendered: `/login`, `/signup`, `/verify-otp`
+    - Middleware registered as Proxy (dynamic route handling)
+    - **Live URLs:**
+        - Production: https://my4blocks-eqz5iqbw6-gsinghdevs-projects.vercel.app
+        - Alias: https://my4blocks.vercel.app
+
+**Architecture Highlights:**
+- **@supabase/ssr** — The modern way to do Supabase Auth in Next.js App Router
+- **Server Actions** — All auth mutations happen server-side with automatic cookie management
+- **Cookie-based sessions** — HTTP-only, Secure, SameSite=strict (no localStorage vulnerabilities)
+- **Middleware as bouncer** — Fast path rejection for protected routes, not heavy SSR checks
+- **Progressive enhancement** — Auth works without JavaScript (form posts to Server Actions), enhanced with JS for UX polish
+
+**What Remains TODO:**
+- Add actual `/dashboard` page for authenticated users (currently redirects to `/`)
+- Persist chat history to Supabase (currently anonymous chats are ephemeral)
+- Add OAuth providers (Google, Apple) for one-tap signup
+- A/B test the 3-message threshold vs 5-message vs 1-message
+- Add welcome email post-verification
+
+**Reflection:** This auth system embodies the Four Blocks philosophy—gentle, understanding, non-judgmental. We're not forcing users to commit before they experience value. Three messages is enough to feel the warmth of Dr. Parr's wisdom. After that, the invitation to save their journey feels natural, not transactional. The best conversion flows don't feel like conversion flows—they feel like genuine care for the user's experience. 🧱✨
+
+---
+
 ## 📅 April 27, 2026 (Witching Hour)
 
 ### 🩹 "The MinimumOSVersion Heist: Patching Flutter's Phantom Plist"
