@@ -80,8 +80,8 @@ export async function generateDualResponses(
     metadata: {
       emotionDetected,
       blockType,
-      modelA: 'gpt-4o',
-      modelB: 'gpt-4o',
+      modelA: 'gpt-4o-2024-08-06',
+      modelB: 'gpt-4o-2024-08-06',
     },
   });
 
@@ -121,7 +121,7 @@ async function generateResponse(
 
   try {
     const result = await generateText({
-      model: openai('gpt-4o'),
+      model: openai('gpt-4o-2024-08-06'),
       system: blueprintPrompt + contextSection,
       messages: [
         ...history.map((m) => ({

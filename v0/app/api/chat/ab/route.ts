@@ -163,7 +163,7 @@ async function generateResponse(
   history: Array<{ role: 'user' | 'assistant'; content: string }>
 ): Promise<string> {
   const result = await generateText({
-    model: openai('gpt-4o'),
+    model: openai('gpt-4o-2024-08-06'),
     system: systemPrompt,
     messages: [...history, { role: 'user' as const, content: query }],
     temperature: 0.7, // 🌡️ Just right - not too robotic, not too chaotic
@@ -249,7 +249,7 @@ export async function POST(req: Request) {
     // 🌊 Generate BOTH responses in parallel - the gladiator showdown begins! ⚔️
     // Promise.all is our colosseum - may the best response win!
     console.log('🏟️ Generating dual responses in parallel...');
-    const model = adminConfig.model || 'gpt-4o';
+    const model = adminConfig.model || 'gpt-4o-2024-08-06';
     const temperature = adminConfig.temperature ?? 0.7;
 
     const [responseA, responseB] = await Promise.all([

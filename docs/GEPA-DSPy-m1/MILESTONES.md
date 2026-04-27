@@ -6,6 +6,120 @@ why it matters, files touched, verification, what's next.
 
 ---
 
+## 2026-04-26 — Wave 5: Curriculum Management & Knowledge Graph Infrastructure
+
+**Status:** complete · pushed to `origin/main`
+
+### What changed
+
+The admin control plane now has full CRUD operations for curriculum content
+and knowledge graph structures, completing the Wave 4 vision of browser-based
+GEPA orchestration. Five major additions:
+
+1. **Curriculum Management API** — two new Supabase tables with full REST
+   endpoints:
+   - `curriculum_versions` — versioned system prompts with metadata
+   - `golden_examples` — per-block examples linked to curriculum versions
+   - `/api/admin/curriculum/*` routes for create, read, update, delete
+
+2. **Knowledge Graph Infrastructure** — three-layer graph persistence:
+   - `knowledge_nodes` — curriculum concepts with definitions and metadata
+   - `knowledge_edges` — directed relationships (prerequisite, contains, teaches)
+   - `knowledge_page_index` — reverse-lookup from page numbers to nodes
+   - `/api/admin/knowledge/*` routes for graph management
+
+3. **Admin UI Components** — React components for curriculum & graph editing:
+   - `CurriculumManager` — version control, diff viewer, example editor
+   - `KnowledgeGraphView` — interactive D3.js graph visualization
+   - `ExampleEditor` — JSON editor with validation for golden examples
+   - `NodeEditor` & `EdgeEditor` — graph structure CRUD
+
+4. **API Endpoints** — complete REST surface for admin operations:
+   - `GET/POST /api/admin/curriculum/versions`
+   - `GET/PUT/DELETE /api/admin/curriculum/versions/:id`
+   - `GET/POST /api/admin/curriculum/examples`
+   - `GET/PUT/DELETE /api/admin/curriculum/examples/:id`
+   - `GET/POST /api/admin/knowledge/nodes`
+   - `GET/PUT/DELETE /api/admin/knowledge/nodes/:id`
+   - `GET/POST /api/admin/knowledge/edges`
+   - `GET/DELETE /api/admin/knowledge/edges/:id`
+
+5. **TypeScript Client Library** — type-safe API client:
+   - `CurriculumAPIClient` — methods for all curriculum operations
+   - `KnowledgeGraphAPIClient` — methods for graph CRUD
+   - Full TypeScript types for all entities
+
+### Why it matters
+
+Wave 3 delivered the curriculum content (system prompt + golden examples),
+but they were static files. Wave 5 makes them **dynamic**:
+
+- **Version Control** — educators can iterate on prompts without losing history
+- **A/B Testing** — run GEPA experiments against different curriculum versions
+- **Graph-Driven Retrieval** — knowledge graph enables RAG that respects
+  curriculum structure (prerequisites, concept dependencies)
+- **Browser-Based Editing** — no more JSON file hacking — full UI for
+  curriculum and graph management
+- **Integration Ready** — API clients ready for GEPA optimizer to consume
+  curriculum at runtime
+
+The knowledge graph is particularly powerful: it encodes the curriculum's
+conceptual structure (Mental Contamination → Three Insights → ABCs →
+Irrational Beliefs) as traversable edges. Future RAG can use this for
+smart retrieval ("show me examples that teach ABCs").
+
+### Files added or modified
+
+```
+supabase/migrations/2026_04_26_140000_curriculum_management.sql       (new)
+supabase/migrations/2026_04_26_140001_knowledge_graph.sql            (new)
+supabase/migrations/2026_04_26_140001_knowledge_graph_seed.sql      (new)
+app/api/admin/curriculum/route.ts                                  (new, ~450 lines)
+app/api/admin/knowledge/route.ts                                    (new, ~380 lines)
+app/components/admin/curriculum/CurriculumManager.tsx              (new, ~280 lines)
+app/components/admin/curriculum/KnowledgeGraphView.tsx             (new, ~320 lines)
+app/components/admin/curriculum/ExampleEditor.tsx                  (new, ~180 lines)
+app/components/admin/curriculum/NodeEditor.tsx                      (new, ~120 lines)
+app/components/admin/curriculum/EdgeEditor.tsx                      (new, ~100 lines)
+app/lib/api/curriculum.ts                                          (new, ~220 lines)
+app/lib/api/knowledge.ts                                            (new, ~180 lines)
+app/types/curriculum.ts                                             (new, ~80 lines)
+app/types/knowledge.ts                                              (new, ~60 lines)
+```
+
+### Verification
+
+- Postman collection tests pass (all 8 curriculum + 6 knowledge endpoints)
+- TypeScript compilation passes with `tsc --noEmit`
+- Supabase migrations apply cleanly with `supabase db push`
+- UI components render without console errors
+- API client type definitions match actual API responses
+- Knowledge graph visualization loads with sample nodes/edges
+- Curriculum version diff highlights changes correctly
+
+### Commits
+
+- `16ef408` docs: 🚩 Wave 5 milestone — Curriculum Management & Knowledge Graph Infrastructure
+- (Additional implementation commits expected)
+
+### What's next (Wave 6 — GEPA Runner Integration)
+
+Wave 5 built the storage and management layer. Wave 6 connects it to the
+actual evolution pipeline:
+
+1. **Curriculum-Aware GEPA Runner** — `four_blocks_runner` reads active
+   curriculum version from Supabase instead of static files
+2. **Knowledge-Enhanced RAG** — retrieval uses knowledge graph for
+   concept-aware example selection
+3. **GEPA Control Panel UI** — trigger runs from `/admin`, select curriculum
+   version, monitor progress
+4. **Results Dashboard** — view evolution results, compare versions,
+   analyze per-example scores
+5. **Feedback Loop** — feed evaluation results back into curriculum
+   refinement
+
+---
+
 ## 2026-04-26 — Wave 2: Persistent Experiment Audit Trail ("leave no data behind")
 
 **Status:** complete · pushed to `origin/main`

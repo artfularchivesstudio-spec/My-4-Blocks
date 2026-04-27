@@ -57,7 +57,7 @@ export async function POST(req: Request) {
 
     // 🌟 Configuration for this variant - merged with Admin overrides!
     const config: ChatConfig = {
-      model: adminConfig.model || 'gpt-4o', // 🧠 Upgraded for A/B testing - deeper reasoning for emotional guidance!
+      model: adminConfig.model || 'gpt-4o-2024-08-06', // 🧠 Upgraded for A/B testing - deeper reasoning for emotional guidance!
       temperature: adminConfig.temperature ?? 0.7,
       ragEnabled: adminConfig.ragEnabled ?? true,
       ragTopK: adminConfig.ragTopK ?? 5,

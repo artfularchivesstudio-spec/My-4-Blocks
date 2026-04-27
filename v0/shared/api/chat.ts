@@ -234,9 +234,9 @@ const DEFAULT_CONFIG: Required<ChatConfig> = {
   ragEnabled: true,
   ragTopK: 5,
   systemPrompt: SYSTEM_PROMPT,
-  dspyOptimizerModel: 'openai/gpt-4o',
+  dspyOptimizerModel: 'openai/gpt-4o-2024-08-06',
   dspyEvalModel: 'openai/gpt-4o-mini',
-  dspyJudgeModel: 'openai/gpt-4o',
+  dspyJudgeModel: 'openai/gpt-4o-2024-08-06',
 };
 
 /**

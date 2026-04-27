@@ -19,6 +19,7 @@ import { Switch } from '@/components/ui/switch'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { Badge } from '@/components/ui/badge'
 import { useToast } from '@/components/ui/use-toast'
 import { Settings, Loader2, Save, Sparkles, Zap } from 'lucide-react'
 import { getActiveConfig, saveConfig } from '@/lib/admin-config'
@@ -32,9 +33,9 @@ export function ConfigTab() {
     ragEnabled: true,
     ragTopK: 5,
     systemPrompt: SYSTEM_PROMPT,
-    dspyOptimizerModel: 'openai/gpt-4o',
+    dspyOptimizerModel: 'openai/gpt-4o-2024-08-06',
     dspyEvalModel: 'openai/gpt-4o-mini',
-    dspyJudgeModel: 'openai/gpt-4o',
+    dspyJudgeModel: 'openai/gpt-4o-2024-08-06',
   })
   const [isLoading, setIsLoading] = useState(true)
   const [isSaving, setIsSaving] = useState(false)
@@ -137,7 +138,7 @@ export function ConfigTab() {
                   <SelectValue placeholder="Select a model" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="gpt-4o">GPT-4o (Most Intelligent)</SelectItem>
+                  <SelectItem value="gpt-4o-2024-08-06">GPT-4o (Most Intelligent)</SelectItem>
                   <SelectItem value="gpt-4o-mini">GPT-4o-mini (Fast & Efficient)</SelectItem>
                   <SelectItem value="gpt-4-turbo">GPT-4 Turbo (Legacy Precision)</SelectItem>
                 </SelectContent>
@@ -217,7 +218,7 @@ export function ConfigTab() {
                 id="optimizer-model"
                 value={config.dspyOptimizerModel || ''}
                 onChange={(e) => setConfig({ ...config, dspyOptimizerModel: e.target.value })}
-                placeholder="openai/gpt-4o"
+                placeholder="openai/gpt-4o-2024-08-06"
                 className="bg-background"
               />
               <p className="text-[10px] text-muted-foreground">The muse that optimizes the system.</p>
@@ -241,7 +242,7 @@ export function ConfigTab() {
                 id="judge-model"
                 value={config.dspyJudgeModel || ''}
                 onChange={(e) => setConfig({ ...config, dspyJudgeModel: e.target.value })}
-                placeholder="openai/gpt-4o"
+                placeholder="openai/gpt-4o-2024-08-06"
                 className="bg-background"
               />
               <p className="text-[10px] text-muted-foreground">The final arbiter of truth.</p>
@@ -261,7 +262,7 @@ export function ConfigTab() {
           </div>
           <Textarea
             id="system-prompt"
-            value={config.systemPrompt}
+            value={config.systemPrompt || ''}
             onChange={(e) => setConfig({ ...config, systemPrompt: e.target.value })}
             placeholder="Enter the foundational rules of the system..."
             className="min-h-[300px] font-mono text-xs leading-relaxed bg-background resize-y shadow-inner border-primary/10"
