@@ -1,13 +1,13 @@
 # 🧱 System Reconciliation One-Pager: April 26, 2026 ✨
 
 ## 🎯 Executive Summary
-Today we successfully completed a major architectural upgrade that bridges the gap between raw psychological training data and real-time operational control. The system now features a centralized **Admin Sanctuary** (`/admin`) that acts as the source of truth for the entire ecosystem, allowing for hot-swapping models, prompts, and training data without manual code deployments.
+Today we successfully completed a major architectural upgrade that bridges the gap between raw psychological training data and real-time operational control. The system now features a centralized **Admin Portal** (`/admin`) that acts as the source of truth for the entire ecosystem, allowing for hot-swapping models, prompts, and training data without manual code deployments.
 
 ---
 
 ## 🏗️ Major Architectural Milestones
 
-### 1. The Admin Sanctuary (`/admin`)
+### 1. The Admin Portal (`/admin`)
 - **Security**: Password-protected gateway (`admin123`) with session persistence.
 - **Dynamic Config**: Real-time control over GPT-4o model selection, temperature, and RAG retrieval parameters (Top-K).
 - **The Constitution**: A live editor for the `System Prompt`, ensuring all UI variants (Claude, Gemini, V0) stay aligned with the latest psychological refinements.
@@ -62,4 +62,4 @@ Today we successfully completed a major architectural upgrade that bridges the g
 **Admin Portal**: [https://my4blocks.vercel.app/admin](https://my4blocks.vercel.app/admin)  
 **TestFlight**: [https://testflight.apple.com/join/Ay3BWxKW](https://testflight.apple.com/join/Ay3BWxKW)
 
-**✨ The digital sanctuary is now truly whole. Technical precision and artistic beauty are in perfect harmony. ✨**
+**✨ The digital portal is now truly whole. Technical precision and artistic beauty are in perfect harmony. ✨**

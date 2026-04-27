@@ -143,7 +143,7 @@ export async function GET(request: NextRequest) {
       supabase
         .from('knowledge_nodes')
         .select('*')
-        .in('id', nodesList.length > 0 ? nodesList : ['00000000-0000-0000-0000-000000000000']), // Handle empty
+        .in('id', nodesList.length > 0 ? nodesList : ['00000000-0000-0000-0000-000000000000'])
         .is('deleted_at', null),
       supabase
         .from('knowledge_edges')
