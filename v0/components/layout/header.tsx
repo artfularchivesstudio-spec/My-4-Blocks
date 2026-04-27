@@ -181,7 +181,7 @@ export function Header({ onReset }: HeaderProps) {
         </button>
       </div>
 
-      {/* 📱 Mobile Menu - The Sliding Sanctuary of Navigation */}
+      {/* 📱 Mobile Menu - The Sliding Portal of Navigation */}
       <div
         className={cn(
           'md:hidden overflow-hidden transition-all duration-300 ease-in-out',

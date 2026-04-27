@@ -10,7 +10,7 @@
 - ✅ **Unified Knowledge Base**: 331 chunks of Dr. Parr's distilled wisdom.
 
 ## 🏛️ **Phase 2: The Command Center (COMPLETED)**
-- ✅ **Admin Sanctuary**: Password-protected `/admin` dashboard.
+- ✅ **Admin Portal**: Password-protected `/admin` dashboard.
 - ✅ **Dynamic Configuration**: Real-time control via Supabase and active config API.
 - ✅ **GEPA Visualization**: Reports and Knowledge Graph integrated into Admin.
 
@@ -18,7 +18,7 @@
 - ✅ **Mobile UI Alchemy**: Lottie animations and artisanal motion.
 - ✅ **The Place of Wonder**: Sparkling message bubbles and serene splash screens.
 - ✅ **Theme Unification**: DM Sans + Cormorant Garamond across all devices.
-- ✅ **TestFlight Ascent**: Version `1.0.1+2` prepared for launch.
+- ✅ **TestFlight Ascent**: Version 1.0.2+3 prepared for launch.
 
 ## 🧬 **Phase 4: Deep Evolution (COMPLETED)**
 - ✅ **The Digital Chronicles**: Documented every detail of the GEPA/DSPy runs in `RUN_HISTORY.md`.
@@ -30,10 +30,10 @@
 - 🏗️ **Local Embeddings for Mobile**: Implementing Transformers.js on-device for 100% private retrieval.
 - 🏗️ **Haptic Rituals**: Adding tactile feedback to the "Place of Wonder".
 
-## 🌐 **Phase 5: The Global Sanctuary (FUTURE)**
+## 🌐 **Phase 5: The Global Portal (FUTURE)**
 - 🔮 **Multi-User History Persistence**: Synced chat history across web and mobile.
 - 🔮 **The Virtual Counselor**: Advanced multi-agent chains for complex case analysis.
 
 ---
 
-**✨ The gates are opening, and the pocket sanctuary is ready for its first seekers. ✨**
+**✨ The gates are opening, and the pocket companion is ready for its first seekers. ✨**

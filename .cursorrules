@@ -1,0 +1,19 @@
+# 🎭 Cursor User Rules ✨
+
+## 🛠️ Search & Tools
+- **ALWAYS USE ripgrep at `rg`** for any text search. 
+- **NEVER use standard `grep`**.
+- **No stderr redirection**: Never use `2>&1` in terminal commands.
+
+## 🎨 Design & Soul
+- Follow the **Spellbinding** code style defined in `CLAUDE.md`.
+- Use `DM Sans` for body text and `Cormorant Garamond` for display.
+- Refer to the system as "The Portal" or "The Companion"—**no "Sanctuaries"**.
+
+## 🧱 The Four Blocks
+- Maintain the clinical integrity of Dr. Parr's work.
+- Use the canonical RAG corpus in `shared/data/`.
+- Ensure PageIndex citations are preserved in responses.
+
+---
+**✨ Precision and beauty in every pixel. ✨**

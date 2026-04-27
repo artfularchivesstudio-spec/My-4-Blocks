@@ -24,7 +24,7 @@ export default function Home() {
       <AmbientBackground />
       <Header onReset={handleReset} />
       
-      {/* 🌟 The Enchanted App Invitation - A Portal to the Pocket Sanctuary */}
+      {/* 🌟 The Enchanted App Invitation - A Portal to the Pocket Companion */}
       {showInvite && (
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-[90%] max-w-md animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <div className="bg-primary/95 backdrop-blur-2xl border border-primary-foreground/30 rounded-2xl p-5 shadow-[0_12px_48px_rgba(0,0,0,0.2)] flex items-center justify-between gap-4 group cursor-pointer hover:bg-primary transition-all duration-500 overflow-hidden">
@@ -37,7 +37,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-base font-semibold text-primary-foreground flex items-center gap-2">
-                  The Pocket Sanctuary <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
+                  The Pocket Companion <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
                 </h3>
                 <p className="text-sm text-primary-foreground/90 leading-snug">Experience the magic of My 4 Blocks anywhere. Join the TestFlight today!</p>
               </div>

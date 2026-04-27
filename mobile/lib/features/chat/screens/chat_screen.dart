@@ -40,7 +40,7 @@ class _ChatScreenState extends State<ChatScreen> {
     Share.share(buffer.toString(), subject: 'My 4 Blocks Chat History');
   }
 
-  // 🌐 The Portal to Mastery - Accessing the Admin Sanctuary
+  // 🌐 The Portal to Mastery - Accessing the Admin Portal
   Future<void> _openAdmin() async {
     final url = Uri.parse('https://my4blocks.vercel.app/admin');
     if (await canLaunchUrl(url)) {

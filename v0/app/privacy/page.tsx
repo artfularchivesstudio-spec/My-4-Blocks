@@ -21,7 +21,7 @@ export default function PrivacyPage() {
       <Header />
       <main className="flex-1 overflow-y-auto custom-scrollbar">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          {/* 🌟 Hero - The Grand Entrance to Our Privacy Sanctuary */}
+          {/* 🌟 Hero - The Grand Entrance to Our Privacy Portal */}
           <div className="text-center mb-12">
             <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-foreground mb-4">
               Privacy Policy

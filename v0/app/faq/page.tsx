@@ -118,7 +118,7 @@ function FAQAccordionSection({ section }: { section: FAQSection }) {
 /**
  * 🌟 The Main FAQ Page - Where Questions Find Their Destiny
  *
- * A sanctuary for the curious, a library for the confused,
+ * A portal for the curious, a library for the confused,
  * a gentle guide through the labyrinth of "how does this work?" 🗺️
  */
 export default function FAQPage() {

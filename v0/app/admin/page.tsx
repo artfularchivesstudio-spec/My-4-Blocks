@@ -1,7 +1,7 @@
 'use client'
 
 /**
- * 🎭 The Admin Sanctuary - The Gilded Gates of System Mastery
+ * 🎭 The Admin Portal - The Gilded Gates of System Mastery
  *
  * "Beyond these thresholds lie the levers of reality, 
  * where the Four Blocks are balanced and the digital muses 
@@ -48,7 +48,7 @@ export default function AdminPage() {
     // In production, this would be checked against a server-side session or a secure environment variable
     const ADMIN_SECRET = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || 'admin123'
     
-    if (password === ADMIN_SECRET || true) {
+    if (password === ADMIN_SECRET) {
       console.log('🎉 ✨ AUTHENTICATION MASTERPIECE COMPLETE!')
       setIsAuthenticated(true)
       localStorage.setItem('admin_authenticated', 'true')
@@ -81,7 +81,7 @@ export default function AdminPage() {
             <div className="mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
               <Lock className="w-6 h-6 text-primary" />
             </div>
-            <CardTitle className="text-2xl font-serif">Admin Sanctuary</CardTitle>
+            <CardTitle className="text-2xl font-serif">Admin Portal</CardTitle>
             <CardDescription>Enter the secret word to access the inner sanctum.</CardDescription>
           </CardHeader>
           <CardContent>
@@ -107,7 +107,7 @@ export default function AdminPage() {
                   className="w-full text-muted-foreground"
                   onClick={() => window.location.href = '/'}
                 >
-                  Return to Sanctuary Home
+                  Return to Home
                 </Button>
               </div>
             </form>
@@ -126,7 +126,7 @@ export default function AdminPage() {
             <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
               <Settings className="w-5 h-5 text-primary-foreground" />
             </div>
-            <h1 className="text-xl font-serif font-semibold tracking-tight">Admin Sanctuary</h1>
+            <h1 className="text-xl font-serif font-semibold tracking-tight">Admin Portal</h1>
           </div>
           <div className="flex items-center gap-4">
             <Button 

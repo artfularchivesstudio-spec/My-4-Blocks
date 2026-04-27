@@ -6,6 +6,70 @@ why it matters, files touched, verification, what's next.
 
 ---
 
+## 2026-04-26 — Wave 4: First Curriculum-Grounded Evolution Run
+
+**Status:** complete · recorded in `experiment.json`
+
+### What changed
+
+Executed the first end-to-end GEPA evolution run using the actual Four Blocks
+curriculum data. This run moved beyond the "github-code-review" demo and
+targeted the core **Four Blocks Companion** skill.
+
+1. **New Skill Created** — `docs/GEPA-DSPy-m1/hermes-agent/skills/domain/four-blocks-companion/SKILL.md`
+   materialized from the v1 system prompt constitution.
+2. **Hybrid Dataset Prepared** — Combined 40 hand-written golden examples
+   (Anger, Anxiety, Depression, Guilt) with 39 synthetic examples generated
+   from the new **Chapter 0 (Front Matter)**, **Chapter 10 (Zen)**, and
+   **Chapter 11 (Healthy Body)** chunks. Total: 79 evaluation examples.
+3. **High-Fidelity Run** — Configured with the requested model trinity:
+   - **Optimizer:** `openai/gpt-4o` (the architect)
+   - **Evaluator:** `openai/gpt-4o-mini` (the actor)
+   - **Judge:** `openai/gpt-4o` (the critic)
+4. **Audit Trail** — Run `9b2993a7...` captured into the `run_latest/` output
+   directory with full per-iteration traces and judge feedback.
+
+### Results (Run 9b2993a7)
+
+| Metric | Baseline | Evolved | Delta |
+|--------|----------|---------|-------|
+| Holdout Score (LLM-Judge) | 0.433 | 0.416 | **-0.017** |
+| Skill Size | 11,220 | 11,220 | 0 |
+| Time | — | 27.8m | — |
+
+**Reflection:** While the evolved score showed a slight regression (-0.017),
+this run successfully validated the **data pipeline** for the full curriculum.
+The regression suggests the current system prompt (v1) is already quite
+strong or that GEPA needs more than 10 iterations to find meaningful
+improvements in this specific clinical domain. The "Chapter 10/11" additions
+in the dataset were correctly handled by the pipeline.
+
+### Files added or modified
+
+```
+docs/GEPA-DSPy-m1/hermes-agent/skills/domain/four-blocks-companion/SKILL.md (new)
+docs/GEPA-DSPy-m1/hermes-agent-self-evolution/datasets/skills/four-blocks-companion/golden.jsonl (new)
+docs/GEPA-DSPy-m1/hermes-agent-self-evolution/output/run_latest/four-blocks-companion/20260426_235939__9b2993a7.../ (new)
+docs/GEPA-DSPy-m1/MILESTONES.md (modified)
+```
+
+### Verification
+
+- `experiment.json` contains 38 iterations of candidates and evaluations.
+- `evolved_skill.md` passed all constraint checks (size, growth, structure).
+- Judge feedback for failure cases (score < 0.5) is now available for manual
+  prompt tuning.
+
+### What's next
+
+- Analyze judge feedback from the regression cases to identify where v1
+  prompting is failing the rubric.
+- Experiment with higher iteration counts (20–50) or specialized "block"
+  optimizers (e.g. one evolution run per emotional block).
+- Wire the output of this run into the Admin Sanctuary UI (Wave 4 completion).
+
+---
+
 ## 2026-04-26 — Wave 5: Curriculum Management & Knowledge Graph Infrastructure
 
 **Status:** complete · pushed to `origin/main`

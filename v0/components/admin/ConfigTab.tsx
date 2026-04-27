@@ -250,7 +250,7 @@ export function ConfigTab() {
           </div>
         </div>
 
-        {/* 📜 System Prompt Sanctuary */}
+        {/* 📜 System Prompt Console */}
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <Label htmlFor="system-prompt" className="text-sm font-medium flex items-center gap-2">
