@@ -6,6 +6,7 @@ import { ChatMessage } from './chat-message'
 import { ChatInput, type ChatInputHandle } from './chat-input'
 import { SuggestedPrompts } from './suggested-prompts'
 import { WelcomeHeader } from './welcome-header'
+import { TrialPrompt, useTrialCounter } from '@/components/auth/trial-prompt'
 import { cn } from '@/lib/utils'
 import { Sparkles, ArrowDown } from 'lucide-react'
 
@@ -36,6 +37,9 @@ export function ChatContainer() {
   const [showScrollToLatest, setShowScrollToLatest] = useState(false)
   const [pulseScrollButton, setPulseScrollButton] = useState(false)
   const [showCelebration, setShowCelebration] = useState(false)
+
+  // 🎁 The Trial Journey - Count user messages for gentle conversion prompt
+  const { userMessageCount, isDismissed, incrementCount, dismiss } = useTrialCounter()
 
   const { messages, sendMessage, status, data } = useChat()
 
@@ -180,7 +184,9 @@ export function ChatContainer() {
   const handleSendMessage = useCallback(async (text: string) => {
     setThinkingMessage(THINKING_MESSAGES[0])
     sendMessage({ text })
-  }, [sendMessage])
+    // 🎁 Increment trial counter on each user message
+    incrementCount()
+  }, [sendMessage, incrementCount])
 
 
 
@@ -301,6 +307,12 @@ export function ChatContainer() {
           )}
         />
       </button>
+
+      {/* 🎁 The Trial Prompt - Gentle conversion after 3 messages */}
+      <TrialPrompt 
+        messageCount={userMessageCount} 
+        onDismiss={dismiss} 
+      />
     </div>
   )
 }

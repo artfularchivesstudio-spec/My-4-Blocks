@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Cormorant_Garamond, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
 const dmSans = DM_Sans({ 
@@ -87,6 +88,8 @@ export default function RootLayout({
         </a>
         {children}
         <Analytics />
+        {/* ⚡ The Speed Oracle — Measuring the velocity of our digital enchantments */}
+        <SpeedInsights />
       </body>
     </html>
   )
