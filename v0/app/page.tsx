@@ -55,7 +55,7 @@ export default function Home() {
                 e.stopPropagation()
                 setShowInvite(false)
               }}
-              className="absolute -top-2 -right-2 w-6 h-6 bg-background/80 backdrop-blur-md border border-border rounded-full flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+              className="absolute top-2 right-2 w-6 h-6 bg-primary-foreground/10 hover:bg-primary-foreground/20 backdrop-blur-md border border-primary-foreground/20 rounded-full flex items-center justify-center text-primary-foreground/60 hover:text-primary-foreground transition-colors z-20"
             >
               <span className="sr-only">Close</span>
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
