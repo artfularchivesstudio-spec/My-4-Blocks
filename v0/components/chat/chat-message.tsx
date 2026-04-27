@@ -155,14 +155,18 @@ function formatMessage(text: string): string {
       listType = null
     }
 
-    // Empty line = paragraph break
+    // Empty line = paragraph break (but be conservative - max one consecutive)
     if (line.trim() === '') {
       if (inList) {
         htmlLines.push(listType === 'ol' ? '</ol>' : '</ul>')
         inList = false
         listType = null
       }
-      htmlLines.push('<br />')
+      // Only add paragraph break if previous line wasn't also empty (prevents excessive spacing)
+      const prevLine = htmlLines[htmlLines.length - 1]
+      if (prevLine !== '<br />' && prevLine !== '<p class="my-3"></p>') {
+        htmlLines.push('<p class="my-3"></p>')
+      }
       continue
     }
 

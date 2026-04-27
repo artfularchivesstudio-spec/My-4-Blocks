@@ -6,14 +6,25 @@ import { AmbientBackground } from '@/components/layout/ambient-background'
 import { Sparkles, ArrowRight, Smartphone } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
+const INVITE_DISMISS_KEY = 'my4blocks_pocket_companion_dismissed'
+
 export default function Home() {
   const [showInvite, setShowInvite] = useState(false)
 
   useEffect(() => {
-    // Show the invite after a short delay for a "magical" entrance
-    const timer = setTimeout(() => setShowInvite(true), 1500)
-    return () => clearTimeout(timer)
+    // Check if user has previously dismissed the invite
+    const isDismissed = localStorage.getItem(INVITE_DISMISS_KEY) === 'true'
+    if (!isDismissed) {
+      // Show the invite after a short delay for a "magical" entrance
+      const timer = setTimeout(() => setShowInvite(true), 1500)
+      return () => clearTimeout(timer)
+    }
   }, [])
+
+  const handleDismiss = () => {
+    setShowInvite(false)
+    localStorage.setItem(INVITE_DISMISS_KEY, 'true')
+  }
 
   const handleReset = () => {
     window.location.reload()
@@ -53,7 +64,7 @@ export default function Home() {
             <button 
               onClick={(e) => {
                 e.stopPropagation()
-                setShowInvite(false)
+                handleDismiss()
               }}
               className="absolute top-2 right-2 w-6 h-6 bg-primary-foreground/10 hover:bg-primary-foreground/20 backdrop-blur-md border border-primary-foreground/20 rounded-full flex items-center justify-center text-primary-foreground/60 hover:text-primary-foreground transition-colors z-20"
             >

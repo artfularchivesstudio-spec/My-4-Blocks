@@ -11,9 +11,12 @@
  */
 
 import { cn } from '@/lib/utils'
-import { Menu, X, RefreshCcw, MessageCircle } from 'lucide-react'
+import { Menu, X, RefreshCcw, MessageCircle, User, LogOut } from 'lucide-react'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
+import { useAuth } from '@/components/auth/auth-provider'
+import Link from 'next/link'
+import { signOutAction } from '@/app/auth/actions'
 
 // 🌟 The Sacred Navigation Routes - Our Cosmic Roadmap
 interface NavigationLink {
@@ -58,6 +61,9 @@ export function Header({ onReset }: HeaderProps) {
 
   // 🗺️ The current path - our GPS in the digital wilderness
   const pathname = usePathname()
+
+  // 👤 Auth state - know thy user
+  const { user, isAuthenticated } = useAuth()
 
   // 🌙 The Mobile Navigation Click Handler - Closes the menu when a seeker finds their path
   const handleMobileNavClick = () => {
@@ -154,6 +160,38 @@ export function Header({ onReset }: HeaderProps) {
               <span className="hidden lg:inline">Chat</span>
             </a>
           )}
+
+          {/* 👤 Auth Button - Gateway to Identity */}
+          {isAuthenticated ? (
+            <div className="flex items-center gap-2 ml-2">
+              <button
+                onClick={() => signOutAction()}
+                className={cn(
+                  'flex items-center gap-2 px-3 py-2 rounded-lg',
+                  'text-sm text-muted-foreground',
+                  'hover:bg-accent hover:text-accent-foreground',
+                  'transition-all duration-200'
+                )}
+                title="Sign out"
+              >
+                <LogOut className="h-4 w-4" />
+                <span className="hidden lg:inline">Sign Out</span>
+              </button>
+            </div>
+          ) : (
+            <Link
+              href="/login"
+              className={cn(
+                'flex items-center gap-2 px-3 py-2 rounded-lg ml-2',
+                'text-sm font-medium text-muted-foreground',
+                'hover:text-foreground hover:bg-accent',
+                'transition-all duration-200'
+              )}
+            >
+              <User className="h-4 w-4" />
+              <span className="hidden lg:inline">Sign In</span>
+            </Link>
+          )}
         </nav>
 
         {/* 📱 Mobile Menu Button - The Hamburger of Destiny */}
@@ -243,6 +281,39 @@ export function Header({ onReset }: HeaderProps) {
                 <MessageCircle className="h-4 w-4" />
                 Chat
               </a>
+            )}
+          </div>
+
+          {/* 👤 Mobile Auth Section - Identity in the Palm of Your Hand */}
+          <div className="pt-2 mt-2 border-t border-border">
+            {isAuthenticated ? (
+              <button
+                onClick={() => {
+                  signOutAction()
+                  setIsMenuOpen(false)
+                }}
+                className={cn(
+                  'flex items-center gap-2 w-full px-4 py-3 rounded-lg',
+                  'text-sm text-foreground',
+                  'hover:bg-accent transition-colors'
+                )}
+              >
+                <LogOut className="h-4 w-4" />
+                Sign Out
+              </button>
+            ) : (
+              <Link
+                href="/login"
+                onClick={handleMobileNavClick}
+                className={cn(
+                  'flex items-center gap-2 w-full px-4 py-3 rounded-lg',
+                  'text-sm font-medium text-primary',
+                  'hover:bg-accent transition-colors'
+                )}
+              >
+                <User className="h-4 w-4" />
+                Sign In / Create Account
+              </Link>
             )}
           </div>
         </nav>

@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Cormorant_Garamond, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { AuthProvider } from '@/components/auth/auth-provider'
 import './globals.css'
 
 const dmSans = DM_Sans({ 
@@ -86,7 +87,9 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        {children}
+        <AuthProvider>
+          {children}
+        </AuthProvider>
         <Analytics />
         {/* ⚡ The Speed Oracle — Measuring the velocity of our digital enchantments */}
         <SpeedInsights />
