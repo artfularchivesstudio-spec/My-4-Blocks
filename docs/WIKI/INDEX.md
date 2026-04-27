@@ -12,7 +12,7 @@
 
 Welcome, seeker of wisdom! You have entered the living library of the My 4 Blocks project—a tapestry of clinical rigor, ancient stillness, and self-evolving intelligence.
 
-This Wiki is more than a collection of documents; it is a **Graph-Based Knowledge Sanctuary**. It captures not only the "what" of our methodology but the "how" and the "who" that bind it all together.
+This Wiki is more than a collection of documents; it is a **Graph-Based Knowledge Portal**. It captures not only the "what" of our methodology but the "how" and the "who" that bind it all together.
 
 ---
 
@@ -23,7 +23,7 @@ This Wiki is more than a collection of documents; it is a **Graph-Based Knowledg
 | [**People**](./People/INDEX.md) | The masters and mentors who charted the path. |
 | [**The Four Blocks**](./Blocks/INDEX.md) | The primary obstacles to human happiness. |
 | [**Core Concepts**](./Concepts/INDEX.md) | The mental architecture of our reality. |
-| [**Meta Evolution**](./Meta/INDEX.md) | The self-evolving digital soul of this sanctuary. |
+| [**Meta Evolution**](./Meta/INDEX.md) | The self-evolving digital soul of this portal. |
 
 ---
 

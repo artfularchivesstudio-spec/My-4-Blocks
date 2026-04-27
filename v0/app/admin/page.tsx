@@ -16,13 +16,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { Lock, Settings, Database, FileText, Network, ShieldCheck, MessageSquare, Book, Map } from 'lucide-react'
+import { Lock, Settings, Database, FileText, Network, ShieldCheck, MessageSquare, Book, Map, FlaskConical } from 'lucide-react'
 import { ConfigTab } from '@/components/admin/ConfigTab'
 import { TrainingDataTab } from '@/components/admin/TrainingDataTab'
 import { GEPAReportsTab } from '@/components/admin/GEPAReportsTab'
 import { KnowledgeGraphTab } from '@/components/admin/KnowledgeGraphTab'
 import { GraphWikiTab } from '@/components/admin/GraphWikiTab'
 import { PageIndexTab } from '@/components/admin/PageIndexTab'
+import { ABTestingTab } from '@/components/admin/ABTestingTab'
 
 export default function AdminPage() {
   // ... rest of the code ...
@@ -159,7 +160,7 @@ export default function AdminPage() {
           </div>
 
           <Tabs defaultValue="config" className="w-full space-y-6">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-6 h-auto p-1 bg-muted/50 border">
+            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-7 h-auto p-1 bg-muted/50 border">
               <TabsTrigger value="config" className="py-2 gap-2">
                 <Settings className="w-4 h-4" />
                 Configuration
@@ -171,6 +172,10 @@ export default function AdminPage() {
               <TabsTrigger value="reports" className="py-2 gap-2">
                 <FileText className="w-4 h-4" />
                 GEPA Reports
+              </TabsTrigger>
+              <TabsTrigger value="abtesting" className="py-2 gap-2">
+                <FlaskConical className="w-4 h-4" />
+                A/B Arena
               </TabsTrigger>
               <TabsTrigger value="wiki" className="py-2 gap-2">
                 <Book className="w-4 h-4" />
@@ -196,6 +201,10 @@ export default function AdminPage() {
             
             <TabsContent value="reports" className="mt-0">
               <GEPAReportsTab />
+            </TabsContent>
+
+            <TabsContent value="abtesting" className="mt-0">
+              <ABTestingTab />
             </TabsContent>
 
             <TabsContent value="wiki" className="mt-0">

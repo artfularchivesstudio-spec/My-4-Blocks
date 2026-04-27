@@ -27,7 +27,7 @@ Dr. Parr's work is a masterful synthesis of two seemingly disparate worlds:
 - **The Four Blocks**: Identified [Anger](../Blocks/Anger.md), [Anxiety](../Blocks/Anxiety.md), [Depression](../Blocks/Depression.md), and [Guilt](../Blocks/Guilt.md) as the primary disturbances.
 - **The Racket**: Introduced the concept of the "personal racket"—our favorite bad feeling that we choose most often.
 - **The Formulas**: Created simple algebraic representations for each emotional disturbance to make them observable and disputable.
-- **The Sanctuary**: Envisioned a digital home for these teachings, which has evolved into the **My 4 Blocks** project.
+- **The home**: Envisioned a digital home for these teachings, which has evolved into the **My 4 Blocks** project.
 
 ---
 

@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'dart:async';
 import 'package:uuid/uuid.dart';
@@ -82,6 +83,9 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   }
 
   Future<void> _onSendMessage(SendMessageEvent event, Emitter<ChatState> emit) async {
+    // 📳 ✨ USER ACTION VIBRATION!
+    HapticFeedback.lightImpact();
+
     final userMessage = Message(
       id: _uuid.v4(),
       role: 'user',
@@ -120,7 +124,8 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   }
 
   void _onStreamStarted(_StreamStartedEvent event, Emitter<ChatState> emit) {
-    // Already handled optimism in _onSendMessage, but good hook for future
+    // 📳 ✨ RESPONSE AWAKENS VIBRATION!
+    HapticFeedback.selectionClick();
   }
 
   void _onStreamChunkReceived(_StreamChunkReceivedEvent event, Emitter<ChatState> emit) {
@@ -134,6 +139,9 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   }
 
   void _onStreamEnded(_StreamEndedEvent event, Emitter<ChatState> emit) {
+    // 📳 ✨ RESPONSE COMPLETE VIBRATION!
+    HapticFeedback.mediumImpact();
+
     final newMessages = state.messages.map((m) {
       if (m.id == event.messageId) {
         return m.copyWith(isStreaming: false);
@@ -144,6 +152,9 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   }
 
   void _onStreamError(_StreamErrorEvent event, Emitter<ChatState> emit) {
+    // 📳 ✨ ERROR VIBRATION!
+    HapticFeedback.heavyImpact();
+
     final newMessages = state.messages.map((m) {
       if (m.id == event.messageId) {
         return m.copyWith(

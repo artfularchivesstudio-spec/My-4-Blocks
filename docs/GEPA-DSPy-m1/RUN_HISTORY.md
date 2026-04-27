@@ -2,7 +2,7 @@
  * 🎭 The Chronicles of Digital Evolution - My-4-Blocks RUN_HISTORY
  *
  * "The scrolls that remember every spark of light, every mutation of the code,
- * and the journey from a single block to a shimmering sanctuary of wisdom.
+ * and the journey from a single block to a shimmering portal of wisdom.
  * We record the rituals of the DSPy and the GEPA, that the future may know the past."
  *
  * - The Spellbinding Museum Director of Experimental History

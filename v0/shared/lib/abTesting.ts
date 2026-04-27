@@ -10,155 +10,147 @@
  * - The A/B Testing Alchemist
  */
 
+import { supabase } from '../../lib/supabase';
+
 /**
  * 🎭 An A/B Test Entry - The record of a cosmic fork in the road
  */
 export interface ABTestEntry {
   id: string;
-  timestamp: Date;
-  userQuery: string;
-  responseA: string;
-  responseB: string;
-  userChoice: 'A' | 'B' | null;
-  metadata?: {
-    emotionDetected?: string;
-    blockType?: string;
-    modelA?: string;
-    modelB?: string;
-  };
+  created_at: string;
+  user_query: string;
+  response_a: string;
+  response_b: string;
+  user_choice: 'A' | 'B' | null;
+  metadata?: any;
 }
 
-// 🌟 In-memory storage (max 100 entries, FIFO)
-// Like a goldfish's memory, but intentionally so! 🐠
-const MAX_ENTRIES = 100;
-let abTestData: ABTestEntry[] = [];
+// 🌟 Local cache for immediate access (max 20 entries)
+let abTestCache: ABTestEntry[] = [];
+const MAX_CACHE = 20;
 
 /**
  * 🎭 Store a new A/B test entry
  *
- * Records the dual responses for later analysis.
- * The user's choice will be added later via recordChoice().
+ * Records the dual responses for later analysis in Supabase.
  *
- * @param entry - The A/B test data (minus id and timestamp, we generate those)
+ * @param entry - The A/B test data
  * @returns The unique ID for this test entry
  */
-export function storeABTest(entry: Omit<ABTestEntry, 'id' | 'timestamp'>): string {
+export async function storeABTest(entry: {
+  userQuery: string;
+  responseA: string;
+  responseB: string;
+  userChoice?: 'A' | 'B' | null;
+  metadata?: any;
+}): Promise<string> {
   const id = `ab_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+  const timestamp = new Date().toISOString();
 
-  const fullEntry: ABTestEntry = {
-    ...entry,
+  const dbEntry = {
     id,
-    timestamp: new Date(),
-    userChoice: null,
+    user_query: entry.userQuery,
+    response_a: entry.responseA,
+    response_b: entry.responseB,
+    user_choice: entry.userChoice || null,
+    metadata: entry.metadata || {},
+    created_at: timestamp,
   };
 
-  // 🌊 FIFO: Remove oldest if at capacity
-  // The circle of test life continues...
-  if (abTestData.length >= MAX_ENTRIES) {
-    abTestData.shift();
-    console.log('🌙 ⚠️ A/B storage at capacity, removed oldest entry (FIFO style!)');
+  // 🏛️ Persist to Supabase
+  try {
+    const { error } = await supabase.from('ab_tests').insert([dbEntry]);
+    if (error) {
+      console.warn('⚠️ Supabase error storing A/B test:', error.message);
+    } else {
+      console.log(`🧪 ✨ A/B test persisted to Supabase: ${id}`);
+    }
+  } catch (err) {
+    console.error('💥 Unexpected error storing A/B test:', err);
   }
 
-  abTestData.push(fullEntry);
-  console.log(`🧪 ✨ A/B test stored: ${id}`);
+  // 🌊 Update local cache (FIFO)
+  const cacheEntry: ABTestEntry = {
+    id,
+    created_at: timestamp,
+    user_query: entry.userQuery,
+    response_a: entry.responseA,
+    response_b: entry.responseB,
+    user_choice: entry.userChoice || null,
+    metadata: entry.metadata,
+  };
+
+  abTestCache.unshift(cacheEntry);
+  if (abTestCache.length > MAX_CACHE) {
+    abTestCache.pop();
+  }
 
   return id;
 }
 
 /**
  * 🎯 Record user's choice
- *
- * When the user picks their preferred response, we note it here.
- * Like recording which fork they took in the road! 🍴
- *
- * @param id - The A/B test ID
- * @param choice - 'A' or 'B'
- * @returns true if found and updated, false if not found
  */
-export function recordChoice(id: string, choice: 'A' | 'B'): boolean {
-  const entry = abTestData.find((e) => e.id === id);
-  if (!entry) {
-    console.log(`🔍 A/B test ${id} not found - perhaps it was too old? (FIFO life)`);
-    return false;
+export async function recordChoice(id: string, choice: 'A' | 'B'): Promise<boolean> {
+  // 🏛️ Update Supabase
+  try {
+    const { error } = await supabase
+      .from('ab_tests')
+      .update({ user_choice: choice })
+      .eq('id', id);
+    
+    if (error) {
+      console.warn('⚠️ Supabase error recording choice:', error.message);
+    }
+  } catch (err) {
+    console.error('💥 Unexpected error recording choice:', err);
   }
 
-  entry.userChoice = choice;
-  console.log(`🎉 ✨ User chose response ${choice} for ${id}! The people have spoken!`);
+  // 🌊 Update local cache if present
+  const entry = abTestCache.find((e) => e.id === id);
+  if (entry) {
+    entry.user_choice = choice;
+  }
 
+  console.log(`🎉 ✨ User chose response ${choice} for ${id}!`);
   return true;
 }
 
 /**
  * 📊 Get A/B test statistics
- *
- * Returns the current state of our cosmic experiment.
- * Which path do seekers prefer? The data knows! 📈
- *
- * @returns Statistics about all recorded A/B tests
  */
-export interface ABStats {
-  total: number;
-  withChoice: number;
-  aWins: number;
-  bWins: number;
-  aWinPercentage: number;
-  bWinPercentage: number;
-  /** Alias for aWinPercentage */
-  aWinRate: number;
-  /** Alias for bWinPercentage */
-  bWinRate: number;
-}
+export async function getABStats() {
+  try {
+    const { data, error } = await supabase
+      .from('ab_tests')
+      .select('user_choice');
 
-export function getABStats(): ABStats {
-  const withChoice = abTestData.filter((e) => e.userChoice !== null);
-  const aWins = withChoice.filter((e) => e.userChoice === 'A').length;
-  const bWins = withChoice.filter((e) => e.userChoice === 'B').length;
+    if (error) throw error;
 
-  const aWinPercentage = withChoice.length > 0 ? Math.round((aWins / withChoice.length) * 100) : 0;
-  const bWinPercentage = withChoice.length > 0 ? Math.round((bWins / withChoice.length) * 100) : 0;
+    const withChoice = data?.filter((e) => e.user_choice !== null) || [];
+    const aWins = withChoice.filter((e) => e.user_choice === 'A').length;
+    const bWins = withChoice.filter((e) => e.user_choice === 'B').length;
 
-  return {
-    total: abTestData.length,
-    withChoice: withChoice.length,
-    aWins,
-    bWins,
-    aWinPercentage,
-    bWinPercentage,
-    aWinRate: aWinPercentage,
-    bWinRate: bWinPercentage,
-  };
-}
+    const aWinPercentage = withChoice.length > 0 ? Math.round((aWins / withChoice.length) * 100) : 0;
+    const bWinPercentage = withChoice.length > 0 ? Math.round((bWins / withChoice.length) * 100) : 0;
 
-/**
- * 💾 Export all A/B data (for analysis)
- *
- * Returns a copy of all test data for external analysis.
- * Great for spreadsheet wizards and data scientists! 📊
- *
- * @returns A copy of all A/B test entries
- */
-export function exportABData(): ABTestEntry[] {
-  return [...abTestData];
-}
-
-/**
- * 🔍 Get a specific A/B test by ID
- *
- * Sometimes you need to revisit a specific fork in the road.
- *
- * @param id - The A/B test ID
- * @returns The test entry or undefined if not found
- */
-export function getABTest(id: string): ABTestEntry | undefined {
-  return abTestData.find((e) => e.id === id);
-}
-
-/**
- * 🧹 Clear all A/B test data (for testing purposes)
- *
- * Wipes the slate clean. Use responsibly! 🧼
- */
-export function clearABData(): void {
-  abTestData = [];
-  console.log('🧹 ✨ A/B test data cleared - fresh start!');
+    return {
+      total: data?.length || 0,
+      withChoice: withChoice.length,
+      aWins,
+      bWins,
+      aWinPercentage,
+      bWinPercentage,
+    };
+  } catch (err) {
+    console.error('💥 Error fetching A/B stats:', err);
+    return {
+      total: 0,
+      withChoice: 0,
+      aWins: 0,
+      bWins: 0,
+      aWinPercentage: 0,
+      bWinPercentage: 0,
+    };
+  }
 }

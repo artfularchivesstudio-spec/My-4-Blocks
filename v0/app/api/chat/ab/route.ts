@@ -272,7 +272,7 @@ export async function POST(req: Request) {
     const endTime = Date.now();
 
     // 💾 Store for A/B analysis - every battle must be recorded for posterity! 📊
-    const abTestId = storeABTest({
+    const abTestId = await storeABTest({
       userQuery: query,
       responseA,
       responseB,

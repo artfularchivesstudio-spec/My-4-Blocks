@@ -7,7 +7,7 @@
 ## 🚀 **TestFlight & Deployment**
 - [x] **External Review**: Submit version 1.0.2+3 for Apple's external TestFlight review.
 - [x] **Invite Link**: Replace the placeholder TestFlight link with the actual ritual gateway URL: https://testflight.apple.com/join/Ay3BWxKW.
-- [ ] **Analytics Ritual**: Monitor the "Enchanted Invitation" click-through rates on the web sanctuary.
+- [ ] **Analytics Ritual**: Monitor the "Enchanted Invitation" click-through rates on the web portal.
 
 ## 📱 **The Mobile Portal**
 - [ ] **Haptic Feedback**: Add `HapticFeedback.mediumImpact()` to message arrival and send rituals.

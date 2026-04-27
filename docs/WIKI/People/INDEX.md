@@ -1,5 +1,5 @@
 /**
- * 🎭 People INDEX - The Masters of the Sanctuary ✨
+ * 🎭 People INDEX - The Masters of the Portal ✨
  */
 
 # 🧙‍♂️ The People ✨

@@ -17,7 +17,7 @@ Hermes undergoes a "self-evolution ritual" where it:
 1.  **Ingests**: Collects data from [**Training Data**](../../content/training) and [**RAG Datasets**](../../docs/GEPA-DSPy-m1/refined-rag-dataset%20v1).
 2.  **Evaluates**: Scores its current performance against "Golden Examples."
 3.  **Mutates**: Generates new prompts and skill variants using [**DSPy**](../Meta/GEPA.md).
-4.  **Ascends**: Implements the improved variants into the production sanctuary.
+4.  **Ascends**: Implements the improved variants into the production portal.
 
 ---
 
@@ -43,5 +43,5 @@ One of the most notable achievements of the Hermes Agent is the evolution of its
 
 - **Orchestrated by**: [[GEPA]]
 - **Powered by**: [[DSPy]], [[OpenAI GPT-5.5]]
-- **Protector of**: [[The My 4 Blocks Sanctuary]]
+- **Protector of**: [[The My 4 Blocks Portal]]
 - **Refines**: [[RAG Enhanced Responses]]

@@ -6,7 +6,7 @@ An AI-powered emotional education platform based on Dr. Vincent E. Parr's book *
 
 ## ✨ Features
 
-### 🛠️ Admin Sanctuary
+### 🛠️ Admin Portal
 - **System Mastery Portal**: Password-protected `/admin` dashboard for real-time system orchestration.
 - **Graph Wiki & PageIndex**: Specialized tabs for browsing the Karpathy-style knowledge graph and hierarchical book index.
 - **Dynamic Configuration**: Hot-swappable LLM models (GPT-4o/mini/turbo), temperature control, and RAG Top-K tuning.

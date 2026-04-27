@@ -20,6 +20,18 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional, Set
 from datetime import datetime
 
+# 🎨 Load environment variables from .env.local
+try:
+    from dotenv import load_dotenv
+    env_path = Path(__file__).parent.parent / ".env.local"
+    if env_path.exists():
+        load_dotenv(env_path)
+        print(f"🔮 ✨ Loaded environment from {env_path}")
+    else:
+        print(f"🌙 ⚠️ No .env.local found at {env_path}")
+except ImportError:
+    print("🌙 ⚠️ python-dotenv not installed - using system env vars")
+
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -35,7 +47,8 @@ except ImportError:
 SYSTEM_PROMPT_PATH = Path("/Users/admin/Developer/My-4-Blocks/docs/GEPA-DSPy-m1/four_blocks_runner/curriculum/system_prompt.md")
 GOLDEN_EXAMPLES_PATH = Path("/Users/admin/Developer/My-4-Blocks/docs/GEPA-DSPy-m1/four_blocks_runner/curriculum/anger/golden_examples.json")
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://your-project.supabase.co")
-SUPABASE_KEY = os.getenv("SUPABASE_ANON_KEY", "")
+# 🎨 Check multiple possible env var names for the anon key
+SUPABASE_KEY = os.getenv("SUPABASE_ANON_KEY") or os.getenv("SUPABASE_KEY") or os.getenv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY", "")
 
 
 class KnowledgeGraphIngestor:
@@ -87,7 +100,7 @@ class KnowledgeGraphIngestor:
 
         # Pattern 3: Capitalized phrases in lists
         # (e.g., "- The ABC Model: Antecedent, Belief, Consequence")
-        list_pattern = r'^-\s+([A-Z][^:\n]+(?:?:[^\n]*)?)'
+        list_pattern = r'^-\s+([A-Z][^:\n]+(?:[^\n]*)?)'
         list_items = re.findall(list_pattern, content, re.MULTILINE)
 
         # Combine and deduplicate
@@ -182,18 +195,20 @@ class KnowledgeGraphIngestor:
         # Extract scenarios
         for example in examples:
             example_id = example.get('id', 'unknown')
-            task_input = example.get('task_input', {})
-            expected = example.get('expected_behavior', {})
+            task_input = example.get('task_input', '')
+            expected = example.get('expected_behavior', '')
             category = example.get('category', 'general')
             difficulty = example.get('difficulty', 'medium')
 
             # Create scenario node
+            # 🎨 Create a brief description from the task input (first 100 chars)
+            task_input_preview = task_input[:100] + '...' if len(task_input) > 100 else task_input
             scenario = {
                 'slug': example_id.lower(),
                 'title': f"{category} Example {example_id}",
                 'node_type': 'scenario',
                 'content': json.dumps(example, indent=2),
-                'description': f"Golden example: {task_input.get('summary', 'No summary')}",
+                'description': f"Golden example: {task_input_preview}",
                 'metadata': {
                     'category': category,
                     'difficulty': difficulty,
@@ -210,28 +225,27 @@ class KnowledgeGraphIngestor:
 
             self.scenarios.append(scenario)
 
-            # Extract rubrics from expected behavior
-            if isinstance(expected, dict):
-                for key, value in expected.items():
-                    rubric = {
-                        'slug': f"{example_id}-{self._slugify(key)}",
-                        'title': f"{key} (from {example_id})",
-                        'node_type': 'rubric',
-                        'content': json.dumps(value, indent=2),
-                        'description': f"Evaluation criterion for {example_id}",
-                        'metadata': {
-                            'scenario_id': example_id,
-                            'criterion': key,
-                            'expected_value': value
-                        },
-                        'source_type': 'golden_example',
-                        'source_file': 'golden_examples.json',
-                        'confidence': 'high',
-                        'contested': False,
-                        'tags': [category, 'rubric']
-                    }
+            # 🎨 Create a rubric node from expected behavior string
+            # Since expected_behavior is a string (response guidance), create one rubric per example
+            rubric = {
+                'slug': f"{example_id}-rubric",
+                'title': f"Response Criteria (from {example_id})",
+                'node_type': 'rubric',
+                'content': expected,
+                'description': f"Evaluation criteria for {example_id}",
+                'metadata': {
+                    'scenario_id': example_id,
+                    'criterion': 'response_quality',
+                    'expected_guidance': expected
+                },
+                'source_type': 'golden_example',
+                'source_file': 'golden_examples.json',
+                'confidence': 'high',
+                'contested': False,
+                'tags': [category, 'rubric']
+            }
 
-                    self.rubrics.append(rubric)
+            self.rubrics.append(rubric)
 
         print(f"🎉 ✨ Extracted {len(self.scenarios)} scenarios and {len(self.rubrics)} rubrics!")
 

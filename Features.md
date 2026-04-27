@@ -48,6 +48,6 @@
 - **The Celebratory Burst**: A radiant visual ritual (CSS animation) that awakens when the system finds deep interconnected wisdom in the Graph Wiki.
 - **The Citation Sparkle**: Artisanal tooltips and subtle animations for cited page numbers, allowing Seekers to trace wisdom back to its source with ease.
 - **Interactive Constellation**: Enhanced Knowledge Graph in the Admin Portal with dynamic node highlighting and focus effects.
-- **Prominent TestFlight Portal**: A shimmering, high-fidelity invitation to the pocket sanctuary with direct TestFlight access.
+- **Prominent TestFlight Portal**: A shimmering, high-fidelity invitation to the pocket companion with direct TestFlight access.
 
 ---

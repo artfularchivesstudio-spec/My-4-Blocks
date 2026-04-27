@@ -2,7 +2,7 @@
  * 🎭 GEPA - The Architect of Digital Evolution ✨
  *
  * "The genetic weaver that tests, learns, and builds a better 
- * version of the sanctuary's mind with every iteration."
+ * version of the portal's mind with every iteration."
  */
 
 # 🧬 GEPA Optimizer ✨
