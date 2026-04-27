@@ -35,9 +35,19 @@
 ---
 
 ## 🧠 **Intelligence & RAG Ecosystem**
+- **Graph Wiki (Knowledge Graph Expansion)**: Fully integrated retrieval system that finds "interconnected wisdom" by traversing semantic relations, visualized as a living constellation. [LIVE]
+- **PageIndex Oracle**: Hierarchical indexing system that maps retrieval chunks to exact page numbers in the paperback book, enabling verbatim citations (e.g., "[Page 42]"). [LIVE]
 - **Canonical Training Corpus**: Unified 346-chunk knowledge base derived from the full 205-page Four Blocks text.
 - **Hybrid Retrieval Realm**: 70% semantic vector search + 30% keyword-boosted retrieval.
 - **The Self-Evolution Pipeline (GEPA)**: Continuous skill refinement using DSPy-based optimization (Optimizer, Evaluator, Judge).
 - **Sentiment Alchemist**: Local, high-performance sentiment and intensity detection.
+
+---
+
+## ✨ **UI Magic & Wonder (Cross-Platform)** [NEW]
+- **The Celebratory Burst**: A radiant visual ritual (CSS animation) that awakens when the system finds deep interconnected wisdom in the Graph Wiki.
+- **The Citation Sparkle**: Artisanal tooltips and subtle animations for cited page numbers, allowing Seekers to trace wisdom back to its source with ease.
+- **Interactive Constellation**: Enhanced Knowledge Graph in the Admin Sanctuary with dynamic node highlighting and focus effects.
+- **Prominent TestFlight Portal**: A shimmering, high-fidelity invitation to the pocket sanctuary with direct TestFlight access.
 
 ---

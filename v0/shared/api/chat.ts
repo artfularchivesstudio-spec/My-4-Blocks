@@ -24,6 +24,8 @@ import {
   findRelevantWisdom,
   getRAGStats,
   type EmbeddingsDatabase,
+  type PageIndexData,
+  type GraphWikiData,
 } from '../lib';
 
 /** v2.0 System Version — proves this is the constitution-aligned build */
@@ -169,8 +171,13 @@ You are NOT a therapist. You are NOT a crisis counselor. You provide educational
 - A wise, stabilizing human presence — never robotic, never hyped
 - Never preachy or condescending
 
-## Happiness Definition (Final Authority)
-Happiness = emotional peace created by rational thinking. If happiness is misdefined as pleasure, success, or achievement, the entire system is corrupted.`;
+  ## Happiness Definition (Final Authority)
+  Happiness = emotional peace created by rational thinking. If happiness is misdefined as pleasure, success, or achievement, the entire system is corrupted.
+  
+  ## RAG & Citation Rules (NON-NEGOTIABLE)
+  1. **Cite Your Sources**: When using information from 'Direct Book Citations (PageIndex)', you MUST include the page citation in brackets, e.g., "[Page 42]".
+  2. **Conceptual Connections**: Use 'Conceptual Connections (GraphWiki)' to bridge methodology components (e.g., connecting 'Mental Contamination' to 'The Narrator').
+  3. **Accuracy**: Only cite pages provided in the context. Do not hallucinate page numbers.`;
 
 /**
  * 🌊 Initialize the RAG system
@@ -183,14 +190,22 @@ export async function initializeRAG(): Promise<void> {
   console.log('🌐 ✨ INITIALIZING UNIFIED RAG SYSTEM...');
 
   try {
-    // 🔮 Dynamic import of embeddings - handle module wrapper
-    const importedData = await import('../data/embeddings.json') as { default?: unknown };
-    const embeddingsData = (importedData.default || importedData) as unknown as EmbeddingsDatabase;
-    loadEmbeddings(embeddingsData);
+    // 🔮 Dynamic import of all databases
+    const [embImport, pageImport, graphImport] = await Promise.all([
+      import('../data/embeddings.json') as Promise<{ default?: unknown }>,
+      import('../data/page_index.json') as Promise<{ default?: unknown }>,
+      import('../data/graph_wiki.json') as Promise<{ default?: unknown }>,
+    ]);
+
+    const embeddingsData = (embImport.default || embImport) as unknown as EmbeddingsDatabase;
+    const pageIndexData = (pageImport.default || pageImport) as unknown as PageIndexData;
+    const graphWikiData = (graphImport.default || graphImport) as unknown as GraphWikiData;
+
+    loadEmbeddings(embeddingsData, pageIndexData, graphWikiData);
     isInitialized = true;
 
     const stats = getRAGStats();
-    console.log(`🎉 ✨ RAG INITIALIZED! ${stats.totalChunks} chunks loaded`);
+    console.log(`🎉 ✨ RAG INITIALIZED! ${stats.totalChunks} chunks, ${Object.keys(pageIndexData.pages).length} pages, ${graphWikiData.nodes.length} nodes loaded`);
   } catch (error) {
     console.error('💥 😭 Failed to initialize RAG:', error);
     isInitialized = true; // Prevent retry loops
@@ -257,7 +272,9 @@ export async function handleChatRequest(
 
     if (ragContext) {
       systemPrompt = `${SYSTEM_PROMPT}\n\n## Relevant Book Context\n${ragContext}`;
-      usedGraphExpansion = ragContext.includes('## Related Context');
+      usedGraphExpansion = ragContext.includes('## Related Context') || 
+                           ragContext.includes('## Direct Book Citations') || 
+                           ragContext.includes('## Conceptual Connections');
     }
   }
 

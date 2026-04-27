@@ -251,9 +251,14 @@ export function ConfigTab() {
 
         {/* 📜 System Prompt Sanctuary */}
         <div className="space-y-3">
-          <Label htmlFor="system-prompt" className="text-sm font-medium flex items-center gap-2">
-            System Prompt Конституция (Constitution)
-          </Label>
+          <div className="flex items-center justify-between">
+            <Label htmlFor="system-prompt" className="text-sm font-medium flex items-center gap-2">
+              System Prompt Конституция (Constitution)
+            </Label>
+            <Badge variant="outline" className="text-[10px] uppercase tracking-widest bg-amber-500/10 text-amber-600 border-amber-500/20">
+              Absolute Source of Truth
+            </Badge>
+          </div>
           <Textarea
             id="system-prompt"
             value={config.systemPrompt}

@@ -35,7 +35,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
  * - The Spellbinding Museum Director of Data
  */
 export function TrainingDataTab() {
-  const [files, setFiles] = useState<string[]>([])
+  const [files, setFiles] = useState<any[]>([])
   const [selectedFile, setSelectedFile] = useState<string | null>(null)
   const [content, setContent] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -50,9 +50,12 @@ export function TrainingDataTab() {
     try {
       const response = await fetch('/api/admin/data')
       const data = await response.json()
-      if (data.files) {
-        setFiles(data.files)
-        console.log(`🎉 ✨ SUMMONING COMPLETE! ${data.files.length} scrolls retrieved.`)
+      if (data.entries) {
+        setFiles(data.entries)
+        console.log(`🎉 ✨ SUMMONING COMPLETE! ${data.entries.length} scrolls retrieved.`)
+      } else if (data.files) {
+        // Fallback for older API shape
+        setFiles(data.files.map((f: string) => ({ path: f, corpus: 'legacy' })))
       }
     } catch (creativeChallenge) {
       console.error('💥 😭 API QUEST TEMPORARILY HALTED!', creativeChallenge)
@@ -198,28 +201,40 @@ export function TrainingDataTab() {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead className="w-[80%]">File Path</TableHead>
+                  <TableHead className="w-[60%]">File Path</TableHead>
+                  <TableHead className="w-[20%]">Corpus</TableHead>
                   <TableHead className="text-right">Actions</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {files.length === 0 && !isLoading ? (
                   <TableRow>
-                    <TableCell colSpan={2} className="h-24 text-center">
+                    <TableCell colSpan={3} className="h-24 text-center">
                       🌙 The archives are currently at peace (empty).
                     </TableCell>
                   </TableRow>
                 ) : (
                   files.map((file) => (
-                    <TableRow key={file} className="group">
+                    <TableRow key={file.path} className="group">
                       <TableCell className="font-medium">
                         <div className="flex items-center gap-2">
                           <FileJson className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                          <span className="truncate max-w-[500px]" title={file}>{file}</span>
+                          <span className="truncate max-w-[400px]" title={file.path}>{file.path}</span>
                         </div>
                       </TableCell>
+                      <TableCell>
+                        <Badge 
+                          variant={file.corpus === 'v1' ? 'default' : 'outline'}
+                          className={
+                            file.corpus === 'v1' ? 'bg-amber-500 hover:bg-amber-600' : 
+                            file.corpus === 'gepa-datasets' ? 'bg-blue-500 hover:bg-blue-600' : ''
+                          }
+                        >
+                          {file.corpus === 'v1' ? '✨ Golden (v1)' : file.corpus}
+                        </Badge>
+                      </TableCell>
                       <TableCell className="text-right">
-                        <Button variant="ghost" size="sm" onClick={() => handleEditFile(file)}>
+                        <Button variant="ghost" size="sm" onClick={() => handleEditFile(file.path)}>
                           <Edit2 className="w-4 h-4 mr-2" />
                           Edit
                         </Button>

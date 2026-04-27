@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { FileText, ChevronRight, Loader2, Download, ExternalLink, Calendar, Clock, BarChart3 } from 'lucide-react'
+import { FileText, ChevronRight, Loader2, Download, ExternalLink, Calendar, Clock, BarChart3, History } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Badge } from '@/components/ui/badge'
 import { format } from 'date-fns'
+import ReactMarkdown from 'react-markdown'
 
 interface ReportFile {
   name: string
@@ -51,7 +52,19 @@ export function GEPAReportsTab() {
         return { id, date: mtime, files: files.sort((a, b) => a.name.localeCompare(b.name)) }
       }).sort((a, b) => b.date.getTime() - a.date.getTime())
 
-      setReports(sortedGroups)
+      // 📜 Add RUN_HISTORY.md as a special group at the top
+      const historyGroup: ReportGroup = {
+        id: 'CHRONICLES',
+        date: new Date(),
+        files: [{
+          name: 'RUN_HISTORY.md',
+          path: 'docs/GEPA-DSPy-m1/RUN_HISTORY.md',
+          size: 0,
+          mtime: new Date().toISOString()
+        }]
+      }
+
+      setReports([historyGroup, ...sortedGroups])
     } catch (error) {
       console.error('Failed to fetch reports:', error)
     } finally {
@@ -63,7 +76,12 @@ export function GEPAReportsTab() {
     setSelectedFile(file)
     setLoadingContent(true)
     try {
-      const response = await fetch(`/api/admin/reports?path=${encodeURIComponent(file.path)}`)
+      // 🔮 Determine which API to use based on the path
+      const apiUrl = file.path.startsWith('docs/GEPA-DSPy-m1/hermes-agent-self-evolution/output')
+        ? `/api/admin/reports?path=${encodeURIComponent(file.path)}`
+        : `/api/admin/data?path=${encodeURIComponent(file.path)}`
+
+      const response = await fetch(apiUrl)
       const data = await response.json()
       setFileContent(data.content || 'No content found.')
     } catch (error) {
@@ -100,7 +118,12 @@ export function GEPAReportsTab() {
                   <div key={group.id} className="p-4 space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="font-medium text-sm truncate max-w-[150px]" title={group.id}>
-                        {group.id}
+                        {group.id === 'CHRONICLES' ? (
+                          <div className="flex items-center gap-2 text-primary">
+                            <History className="w-4 h-4" />
+                            <span>Chronicles</span>
+                          </div>
+                        ) : group.id}
                       </span>
                       <span className="text-xs text-muted-foreground">
                         {format(group.date, 'MMM d, HH:mm')}
@@ -169,9 +192,15 @@ export function GEPAReportsTab() {
               </div>
             ) : fileContent ? (
               <div className="p-6">
-                <pre className="text-sm font-mono whitespace-pre-wrap break-words bg-muted/50 p-4 rounded-lg border">
-                  {fileContent}
-                </pre>
+                {selectedFile?.name.endsWith('.md') ? (
+                  <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-serif prose-a:text-primary">
+                    <ReactMarkdown>{fileContent}</ReactMarkdown>
+                  </div>
+                ) : (
+                  <pre className="text-sm font-mono whitespace-pre-wrap break-words bg-muted/50 p-4 rounded-lg border">
+                    {fileContent}
+                  </pre>
+                )}
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center h-64 text-muted-foreground p-8">

@@ -8,6 +8,7 @@ An AI-powered emotional education platform based on Dr. Vincent E. Parr's book *
 
 ### 🛠️ Admin Sanctuary
 - **System Mastery Portal**: Password-protected `/admin` dashboard for real-time system orchestration.
+- **Graph Wiki & PageIndex**: Specialized tabs for browsing the Karpathy-style knowledge graph and hierarchical book index.
 - **Dynamic Configuration**: Hot-swappable LLM models (GPT-4o/mini/turbo), temperature control, and RAG Top-K tuning.
 - **Constitution Editor**: Live editing of the `System Prompt` (the core laws of the Four Blocks guide).
 - **Dataset Orchestration**: In-browser manager for the `content/training/` corpus with JSON validation and file uploads.
@@ -15,7 +16,8 @@ An AI-powered emotional education platform based on Dr. Vincent E. Parr's book *
 
 ### 💬 Chat Mode
 - **Three UI Variants**: Claude, Gemini, V0 — same intelligence, different aesthetics
-- **Hybrid RAG Search**: 70% semantic + 30% keyword matching
+- **Hybrid RAG + Graph Expansion**: 70% semantic + 30% keyword matching, enhanced by **Graph Wiki** conceptual traversal.
+- **PageIndex Citations**: Intelligent citation system referencing exact page numbers from the canonical book (e.g., "[Page 42]").
 - **346 Retrievable Chunks**: Expanded RAG over `shared/data/embeddings.json` (now includes Preface, Introduction, Ch 10 Zen, and Ch 11 Healthy Body)
 - **Streaming Responses**: Real-time token streaming via GPT-4o-mini (overridable via Admin)
 

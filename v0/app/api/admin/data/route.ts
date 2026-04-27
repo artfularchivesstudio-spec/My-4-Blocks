@@ -19,7 +19,7 @@ import path from 'path';
  */
 
 // 🎭 Corpus tag — which sacred archive a file belongs to
-type CorpusTag = 'legacy' | 'v1' | 'gepa-datasets';
+type CorpusTag = 'legacy' | 'v1' | 'gepa-datasets' | 'wiki' | 'gepa-history' | 'page-index';
 
 // 🌟 A permitted corpus root — its tag and relative path beneath the repo
 interface CorpusRoot {
@@ -34,13 +34,16 @@ interface CorpusEntry {
   size?: number;
 }
 
-// 🏰 The three permitted corpus roots — relative paths from the repo root.
+// 🏰 The permitted corpus roots — relative paths from the repo root.
 //    Note the literal space before "v1" in the second entry; that is intentional
 //    and must be preserved exactly as the directory is named on disk.
 const CORPUS_ROOTS: CorpusRoot[] = [
   { corpus: 'legacy',         relPath: 'content/training' },
   { corpus: 'v1',             relPath: 'docs/GEPA-DSPy-m1/refined-rag-dataset v1' },
   { corpus: 'gepa-datasets',  relPath: 'docs/GEPA-DSPy-m1/hermes-agent-self-evolution/datasets' },
+  { corpus: 'wiki',           relPath: 'docs/WIKI' },
+  { corpus: 'gepa-history',   relPath: 'docs/GEPA-DSPy-m1' },
+  { corpus: 'page-index',     relPath: 'shared/data' },
 ];
 
 // 💎 Only these extensions are interesting — everything else (PDFs, binaries, .DS_Store)
@@ -73,7 +76,7 @@ function resolveAgainstAllowedRoots(
 // 📜 The Standard 403 Banishment — same shape for read AND write rejections
 function banishedResponse() {
   return NextResponse.json(
-    { error: 'Path not in allowed corpus roots: legacy training, v1, or gepa-datasets' },
+    { error: 'Path not in allowed corpus roots: legacy training, v1, gepa-datasets, wiki, gepa-history, or page-index' },
     { status: 403 }
   );
 }

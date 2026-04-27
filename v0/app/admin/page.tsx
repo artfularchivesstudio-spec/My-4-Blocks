@@ -16,11 +16,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { Lock, Settings, Database, FileText, Network, ShieldCheck, MessageSquare } from 'lucide-react'
+import { Lock, Settings, Database, FileText, Network, ShieldCheck, MessageSquare, Book, Map } from 'lucide-react'
 import { ConfigTab } from '@/components/admin/ConfigTab'
 import { TrainingDataTab } from '@/components/admin/TrainingDataTab'
 import { GEPAReportsTab } from '@/components/admin/GEPAReportsTab'
 import { KnowledgeGraphTab } from '@/components/admin/KnowledgeGraphTab'
+import { GraphWikiTab } from '@/components/admin/GraphWikiTab'
+import { PageIndexTab } from '@/components/admin/PageIndexTab'
 
 export default function AdminPage() {
   // ... rest of the code ...
@@ -145,13 +147,19 @@ export default function AdminPage() {
 
       <main className="container mx-auto py-8 px-4">
         <div className="grid gap-8">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-3xl font-serif font-bold">System Mastery</h2>
-            <p className="text-muted-foreground">Orchestrate the Four Blocks intelligence and training ecosystem.</p>
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div className="flex flex-col gap-2">
+              <h2 className="text-3xl font-serif font-bold">System Mastery</h2>
+              <p className="text-muted-foreground">Orchestrate the Four Blocks intelligence and training ecosystem.</p>
+            </div>
+            <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20 shadow-sm">
+              <ShieldCheck className="w-4 h-4 text-primary" />
+              <span className="text-xs font-medium text-primary uppercase tracking-wider">Source of Truth Verified</span>
+            </div>
           </div>
 
           <Tabs defaultValue="config" className="w-full space-y-6">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 h-auto p-1 bg-muted/50 border">
+            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-6 h-auto p-1 bg-muted/50 border">
               <TabsTrigger value="config" className="py-2 gap-2">
                 <Settings className="w-4 h-4" />
                 Configuration
@@ -163,6 +171,14 @@ export default function AdminPage() {
               <TabsTrigger value="reports" className="py-2 gap-2">
                 <FileText className="w-4 h-4" />
                 GEPA Reports
+              </TabsTrigger>
+              <TabsTrigger value="wiki" className="py-2 gap-2">
+                <Book className="w-4 h-4" />
+                Graph Wiki
+              </TabsTrigger>
+              <TabsTrigger value="pageindex" className="py-2 gap-2">
+                <Map className="w-4 h-4" />
+                PageIndex
               </TabsTrigger>
               <TabsTrigger value="graph" className="py-2 gap-2">
                 <Network className="w-4 h-4" />
@@ -180,6 +196,14 @@ export default function AdminPage() {
             
             <TabsContent value="reports" className="mt-0">
               <GEPAReportsTab />
+            </TabsContent>
+
+            <TabsContent value="wiki" className="mt-0">
+              <GraphWikiTab />
+            </TabsContent>
+
+            <TabsContent value="pageindex" className="mt-0">
+              <PageIndexTab />
             </TabsContent>
             
             <TabsContent value="graph" className="mt-0">

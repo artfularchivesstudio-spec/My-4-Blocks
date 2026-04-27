@@ -18,6 +18,8 @@ export {
   retrieveKeywordOnly,
   getRAGContext,
   findRelevantWisdom,
+  findRelevantPageIndex,
+  findRelevantGraphConnections,
   getRAGStats,
 } from "./rag";
 

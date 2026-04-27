@@ -35,10 +35,22 @@ export function ChatContainer() {
   const [thinkingMessage, setThinkingMessage] = useState(THINKING_MESSAGES[0])
   const [showScrollToLatest, setShowScrollToLatest] = useState(false)
   const [pulseScrollButton, setPulseScrollButton] = useState(false)
+  const [showCelebration, setShowCelebration] = useState(false)
 
+  const { messages, sendMessage, status, data } = useChat()
 
-
-  const { messages, sendMessage, status } = useChat()
+  // 🕸️ Listen for Graph Expansion signals from the cosmic RAG orchestrator
+  useEffect(() => {
+    if (!data) return
+    
+    const hasGraphExpansion = data.some((item: any) => item?.type === 'graph-expansion-used')
+    if (hasGraphExpansion && !showCelebration) {
+      console.log('🎉 ✨ GRAPH WIKI CELEBRATION AWAKENS!')
+      setShowCelebration(true)
+      const timer = setTimeout(() => setShowCelebration(false), 3000)
+      return () => clearTimeout(timer)
+    }
+  }, [data, showCelebration])
 
   const isLoading = status === 'streaming' || status === 'submitted'
   const streamingAssistantMessageId =
@@ -173,7 +185,18 @@ export function ChatContainer() {
 
 
   return (
-    <div className="flex flex-col h-full min-h-0">
+    <div className="flex flex-col h-full min-h-0 relative">
+      {/* ✨ The Celebratory Portal - Awakens when the Graph Wiki finds deep wisdom */}
+      {showCelebration && (
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+          <div className="celebratory-burst" />
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDuration: '2s' }} />
+          <div className="absolute top-1/2 right-1/4 w-3 h-3 bg-anger rounded-full animate-ping" style={{ animationDuration: '3s' }} />
+          <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-depression rounded-full animate-ping" style={{ animationDuration: '2.5s' }} />
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-guilt rounded-full animate-ping" style={{ animationDuration: '1.8s' }} />
+        </div>
+      )}
+
       {/* Messages area */}
       <div
         ref={scrollContainerRef}

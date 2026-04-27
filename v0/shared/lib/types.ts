@@ -67,6 +67,48 @@ export interface EmbeddingsDatabase {
 }
 
 /**
+ * 📚 Page Index Data structure
+ */
+export interface PageIndexData {
+  title: string;
+  pages: { [key: number]: string };
+  tree: PageIndexNode;
+}
+
+export interface PageIndexNode {
+  title: string;
+  node_id: string;
+  start_page: number;
+  end_page: number;
+  summary: string;
+  nodes?: PageIndexNode[];
+}
+
+/**
+ * 🕸️ Graph Wiki Data structure
+ */
+export interface GraphWikiData {
+  version: string;
+  project: string;
+  description: string;
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+}
+
+export interface GraphNode {
+  id: string;
+  label: string;
+  category: string;
+  description: string;
+}
+
+export interface GraphEdge {
+  source: string;
+  target: string;
+  relation: string;
+}
+
+/**
  * 📚 Chapter information
  */
 export interface ChapterInfo {
