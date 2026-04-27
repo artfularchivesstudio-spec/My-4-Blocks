@@ -18,7 +18,8 @@
 - ✅ **Mobile UI Alchemy**: Lottie animations and artisanal motion.
 - ✅ **The Place of Wonder**: Sparkling message bubbles and serene splash screens.
 - ✅ **Theme Unification**: DM Sans + Cormorant Garamond across all devices.
-- ✅ **TestFlight Ascent**: Version 1.0.2+3 prepared for launch.
+- ✅ **TestFlight Ascent**: Build `1.0.0 (2)` uploaded April 27, 2026 at 12:19 AM (bundle id `com.binarybros.my4blocks`, awaiting Apple processing).
+- ✅ **Self-Healing iOS Build**: Permanent `Fix App.framework MinimumOSVersion` build phase ensures Flutter's phantom-plist regression can never re-break TestFlight uploads.
 
 ## 🧬 **Phase 4: Deep Evolution (COMPLETED)**
 - ✅ **The Digital Chronicles**: Documented every detail of the GEPA/DSPy runs in `RUN_HISTORY.md`.

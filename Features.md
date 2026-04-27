@@ -17,7 +17,8 @@
 ---
 
 ## 📱 **The Enchanted Mobile Portal** [UPDATED]
-- **TestFlight Ready**: Version 1.0.2+3 prepared for the first wave of external seekers.
+- **TestFlight Build Live**: `1.0.0 (2)` uploaded to App Store Connect on April 27, 2026 (bundle id `com.binarybros.my4blocks`, Team `5Y7NBCKHJP`). Join link: [https://testflight.apple.com/join/Ay3BWxKW](https://testflight.apple.com/join/Ay3BWxKW).
+- **Self-Healing Build Pipeline**: A custom Xcode Run Script phase auto-injects `MinimumOSVersion` into `App.framework/Info.plist` and re-codesigns it after every build, immunizing the project against the Flutter framework-plist regression that breaks TestFlight validation.
 - **A Place of Wonder**: High-fidelity UI magic with Lottie animations (Lotus bloom, meditation pulses) and artisanal motion.
 - **The Shimmering Message Bubble**: Glowing, pulsing interface for streaming responses with a "sparkling" arrival ritual.
 - **Exportable Wisdom**: Markdown-formatted chronicle sharing via native system sharing.
